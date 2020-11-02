@@ -6,7 +6,10 @@
 
   <ItemGroup>
     <Folder Include="Contract\" />
-    <Folder Include="DTOs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PG.Models\PG.Models.csproj" />
   </ItemGroup>
 
 </Project>

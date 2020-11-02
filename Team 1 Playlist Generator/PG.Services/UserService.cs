@@ -4,7 +4,8 @@ using System.Text;
 
 namespace PG.Services
 {
-    public class UserService
+    public class UserService // To have id we need to put Identity first 
     {
+
     }
 }

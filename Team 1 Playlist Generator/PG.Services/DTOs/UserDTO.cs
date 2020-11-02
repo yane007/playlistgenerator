@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PG.Services
+namespace PG.Services.DTOs
 {
-    public class AlbumService
+   public class UserDTO
     {
-
-
     }
 }
