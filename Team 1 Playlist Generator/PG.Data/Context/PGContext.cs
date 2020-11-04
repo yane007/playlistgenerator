@@ -6,11 +6,19 @@ using System;
 
 namespace PG.Data.Context
 {
-    public class PGContext //Add Identity
+    public class PGContext : DbContext//Add Identity
     {
         public DbSet<Album> Albums { get; set; }
-        public DbSet<Artist> Artists { get; set; }
+        public DbSet<Creator> Creators { get; set; }
         public DbSet<Playlist> Playlists { get; set; }
         public DbSet<Song> Songs { get; set; }
+        public PGContext(DbContextOptions<PGContext> options) : base(options)
+        {
+
+        }
+        public PGContext()
+        {
+
+        }
     }
 }
