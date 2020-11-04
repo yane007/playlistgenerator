@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PG.Data.Context;
 
 namespace PG.Data.Migrations
 {
     [DbContext(typeof(PGDbContext))]
-    partial class PGContextModelSnapshot : ModelSnapshot
+    [Migration("20201104060722_AddedGenres")]
+    partial class AddedGenres
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -240,9 +242,6 @@ namespace PG.Data.Migrations
                     b.Property<string>("Md5_image")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Songs")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(30)")
@@ -381,7 +380,7 @@ namespace PG.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("AlbumId")
+                    b.Property<int?>("AlbumId")
                         .HasColumnType("int");
 
                     b.Property<int?>("ArtistId")
@@ -528,9 +527,7 @@ namespace PG.Data.Migrations
                 {
                     b.HasOne("PG.Models.Album", "Album")
                         .WithMany()
-                        .HasForeignKey("AlbumId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("AlbumId");
 
                     b.HasOne("PG.Models.Creator", "Artist")
                         .WithMany()

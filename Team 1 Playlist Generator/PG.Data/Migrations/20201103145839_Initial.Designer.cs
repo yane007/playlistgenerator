@@ -9,7 +9,7 @@ using PG.Data.Context;
 
 namespace PG.Data.Migrations
 {
-    [DbContext(typeof(PGContext))]
+    [DbContext(typeof(PGDbContext))]
     [Migration("20201103145839_Initial")]
     partial class Initial
     {
