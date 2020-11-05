@@ -14,11 +14,6 @@ namespace PG.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(maxLength: 30, nullable: false),
                     Cover = table.Column<string>(nullable: true),
-                    Cover_small = table.Column<string>(nullable: true),
-                    Cover_medium = table.Column<string>(nullable: true),
-                    Cover_big = table.Column<string>(nullable: true),
-                    Cover_xl = table.Column<string>(nullable: true),
-                    Md5_image = table.Column<string>(nullable: true),
                     Tracklist = table.Column<string>(nullable: true),
                     Type = table.Column<string>(nullable: true)
                 },
@@ -43,6 +38,19 @@ namespace PG.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Genres",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Genres", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "User",
                 columns: table => new
                 {
@@ -64,21 +72,12 @@ namespace PG.Data.Migrations
                     Title = table.Column<string>(maxLength: 50, nullable: false),
                     Description = table.Column<string>(nullable: true),
                     Duration = table.Column<int>(nullable: false),
-                    Is_loved_track = table.Column<bool>(nullable: false),
-                    Collaborative = table.Column<bool>(nullable: false),
-                    Nb_tracks = table.Column<int>(nullable: false),
                     Fans = table.Column<int>(nullable: false),
                     Link = table.Column<string>(nullable: true),
                     Share = table.Column<string>(nullable: true),
                     picture = table.Column<string>(nullable: true),
-                    Picture_small = table.Column<string>(nullable: true),
-                    Picture_medium = table.Column<string>(nullable: true),
-                    Picture_big = table.Column<string>(nullable: true),
-                    Picture_xl = table.Column<string>(nullable: true),
-                    Checksum = table.Column<string>(nullable: true),
                     Tracklist = table.Column<string>(nullable: true),
                     Creation_date = table.Column<string>(nullable: true),
-                    Md5_image = table.Column<string>(nullable: true),
                     CreatorId = table.Column<int>(nullable: true),
                     Type = table.Column<string>(nullable: true),
                     UserId = table.Column<int>(nullable: false)
@@ -106,23 +105,16 @@ namespace PG.Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Readable = table.Column<bool>(nullable: false),
-                    Title = table.Column<string>(maxLength: 50, nullable: false),
-                    Title_short = table.Column<string>(nullable: true),
-                    Title_version = table.Column<string>(nullable: true),
+                    Title = table.Column<string>(maxLength: 200, nullable: false),
                     Link = table.Column<string>(nullable: true),
                     Duration = table.Column<int>(nullable: false),
                     Rank = table.Column<int>(nullable: false),
-                    Explicit_lyrics = table.Column<bool>(nullable: false),
-                    Explicit_content_lyrics = table.Column<int>(nullable: false),
-                    Explicit_content_cover = table.Column<int>(nullable: false),
                     Preview = table.Column<string>(nullable: true),
-                    Md5_image = table.Column<string>(nullable: true),
-                    Time_add = table.Column<int>(nullable: false),
-                    ArtistId = table.Column<int>(nullable: true),
-                    AlbumId = table.Column<int>(nullable: true),
                     Type = table.Column<string>(nullable: true),
-                    PlaylistId = table.Column<int>(nullable: false)
+                    ArtistId = table.Column<int>(nullable: false),
+                    PlaylistId = table.Column<int>(nullable: true),
+                    GenreId = table.Column<int>(nullable: false),
+                    AlbumId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -138,13 +130,19 @@ namespace PG.Data.Migrations
                         column: x => x.ArtistId,
                         principalTable: "Creators",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Songs_Genres_GenreId",
+                        column: x => x.GenreId,
+                        principalTable: "Genres",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Songs_Playlists_PlaylistId",
                         column: x => x.PlaylistId,
                         principalTable: "Playlists",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
@@ -168,6 +166,11 @@ namespace PG.Data.Migrations
                 column: "ArtistId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Songs_GenreId",
+                table: "Songs",
+                column: "GenreId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Songs_PlaylistId",
                 table: "Songs",
                 column: "PlaylistId");
@@ -180,6 +183,9 @@ namespace PG.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "Albums");
+
+            migrationBuilder.DropTable(
+                name: "Genres");
 
             migrationBuilder.DropTable(
                 name: "Playlists");

@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PG.Data.Context;
+using PG.Services;
 
 namespace PG.Web
 {
@@ -25,6 +26,8 @@ namespace PG.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddScoped<DeezerAPIService>();
 
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<PGDbContext>(options => options.UseSqlServer(connectionString));

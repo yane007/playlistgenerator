@@ -3,17 +3,15 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PG.Data.Context;
 
 namespace PG.Data.Migrations
 {
     [DbContext(typeof(PGDbContext))]
-    [Migration("20201103145839_Initial")]
-    partial class Initial
+    partial class PGDbContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -29,21 +27,6 @@ namespace PG.Data.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Cover")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Cover_big")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Cover_medium")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Cover_small")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Cover_xl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Md5_image")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
@@ -83,18 +66,27 @@ namespace PG.Data.Migrations
                     b.ToTable("Creators");
                 });
 
-            modelBuilder.Entity("PG.Models.Playlist", b =>
+            modelBuilder.Entity("PG.Models.Genre", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Checksum")
+                    b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("Collaborative")
-                        .HasColumnType("bit");
+                    b.HasKey("Id");
+
+                    b.ToTable("Genres");
+                });
+
+            modelBuilder.Entity("PG.Models.Playlist", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Creation_date")
                         .HasColumnType("nvarchar(max)");
@@ -111,28 +103,7 @@ namespace PG.Data.Migrations
                     b.Property<int>("Fans")
                         .HasColumnType("int");
 
-                    b.Property<bool>("Is_loved_track")
-                        .HasColumnType("bit");
-
                     b.Property<string>("Link")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Md5_image")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Nb_tracks")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Picture_big")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Picture_medium")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Picture_small")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Picture_xl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Share")
@@ -174,28 +145,19 @@ namespace PG.Data.Migrations
                     b.Property<int?>("AlbumId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("ArtistId")
+                    b.Property<int>("ArtistId")
                         .HasColumnType("int");
 
                     b.Property<int>("Duration")
                         .HasColumnType("int");
 
-                    b.Property<int>("Explicit_content_cover")
+                    b.Property<int>("GenreId")
                         .HasColumnType("int");
-
-                    b.Property<int>("Explicit_content_lyrics")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("Explicit_lyrics")
-                        .HasColumnType("bit");
 
                     b.Property<string>("Link")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Md5_image")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PlaylistId")
+                    b.Property<int?>("PlaylistId")
                         .HasColumnType("int");
 
                     b.Property<string>("Preview")
@@ -204,22 +166,10 @@ namespace PG.Data.Migrations
                     b.Property<int>("Rank")
                         .HasColumnType("int");
 
-                    b.Property<bool>("Readable")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("Time_add")
-                        .HasColumnType("int");
-
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
-
-                    b.Property<string>("Title_short")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Title_version")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.Property<string>("Type")
                         .HasColumnType("nvarchar(max)");
@@ -229,6 +179,8 @@ namespace PG.Data.Migrations
                     b.HasIndex("AlbumId");
 
                     b.HasIndex("ArtistId");
+
+                    b.HasIndex("GenreId");
 
                     b.HasIndex("PlaylistId");
 
@@ -265,19 +217,25 @@ namespace PG.Data.Migrations
 
             modelBuilder.Entity("PG.Models.Song", b =>
                 {
-                    b.HasOne("PG.Models.Album", "Album")
-                        .WithMany()
+                    b.HasOne("PG.Models.Album", null)
+                        .WithMany("Songs")
                         .HasForeignKey("AlbumId");
 
                     b.HasOne("PG.Models.Creator", "Artist")
                         .WithMany()
-                        .HasForeignKey("ArtistId");
+                        .HasForeignKey("ArtistId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("PG.Models.Genre", "Genre")
+                        .WithMany()
+                        .HasForeignKey("GenreId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("PG.Models.Playlist", "Playlist")
                         .WithMany("Songs")
-                        .HasForeignKey("PlaylistId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("PlaylistId");
                 });
 #pragma warning restore 612, 618
         }

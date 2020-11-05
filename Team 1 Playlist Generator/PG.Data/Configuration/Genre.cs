@@ -2,12 +2,11 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using PG.Models;
 
-
 namespace PG.Data.Configuration
 {
-    public class CreatorConfig : IEntityTypeConfiguration<Creator>
+    public class Genre : IEntityTypeConfiguration<Genre>
     {
-        public void Configure(EntityTypeBuilder<Creator> builder)
+        public void Configure(EntityTypeBuilder<Genre> builder)
         {
             //builder.HasKey(x => x.Id);
         }

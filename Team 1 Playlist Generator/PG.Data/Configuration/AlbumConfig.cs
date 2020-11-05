@@ -12,7 +12,7 @@ namespace PG.Data.Configuration
     {
         public void Configure(EntityTypeBuilder<Album> builder)
         {
-            builder.HasKey(x => x.Id);
+            //builder.HasKey(x => x.Id);
         }
     }
 }

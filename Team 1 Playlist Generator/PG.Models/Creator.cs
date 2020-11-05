@@ -1,21 +1,19 @@
 ﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PG.Models
 {
     public class Creator
     {
         [Key]
-        [JsonProperty("id")]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonProperty("tracklsit")]
         public string Tracklist { get; set; }
 
-        [JsonProperty("type")]
         public string Type { get; set; }
     }
 }
