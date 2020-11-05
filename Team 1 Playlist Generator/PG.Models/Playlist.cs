@@ -1,15 +1,12 @@
 ﻿using Newtonsoft.Json;
+using PG.Models.Abstract;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PG.Models
 {
-    public class Playlist
+    public class Playlist : IdAndIsDeleted
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
 
         [Required]
         [MinLength(3), MaxLength(50)]
@@ -31,11 +28,13 @@ namespace PG.Models
 
         public string Creation_date { get; set; }
 
-        public Creator Creator { get; set; }
-
+        public Artist Artist { get; set; }
+         
         public string Type { get; set; }
 
-        public ICollection<Song> Songs { get; set; } = new List<Song>();
+        public ICollection<PlaylistAndSongRelation> PlaylistAndSongRelation { get; set; } = new List<PlaylistAndSongRelation>();
+
+        public ICollection<Genre> Genres { get; set; } = new List<Genre>();
 
 
         public int UserId { get; set; }

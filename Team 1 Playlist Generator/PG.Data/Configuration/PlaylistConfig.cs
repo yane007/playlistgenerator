@@ -9,13 +9,13 @@ namespace PG.Data.Configuration
     {
         public void Configure(EntityTypeBuilder<Playlist> builder)
         {
-           // builder.HasKey(x => x.Id);
+            builder.HasKey(x => x.Id);
 
-            //One to many   User - Playlsits
-            //builder.HasOne(x => x.User)
-                //.WithMany(x => x.Playlists)
-                //.HasForeignKey(x => x.UserId)
-                //.OnDelete(DeleteBehavior.Restrict);
+            //One to many User - Playlsits
+            builder.HasOne(x => x.User)
+                .WithMany(x => x.Playlists)
+                .HasForeignKey(x => x.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

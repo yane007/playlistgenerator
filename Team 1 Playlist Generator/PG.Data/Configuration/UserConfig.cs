@@ -8,7 +8,7 @@ namespace PG.Data.Configuration
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            //builder.HasKey(x => x.Id);
+            builder.HasKey(x => x.Id);
         }
     }
 }

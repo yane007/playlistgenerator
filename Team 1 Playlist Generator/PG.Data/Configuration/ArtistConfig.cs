@@ -2,13 +2,14 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using PG.Models;
 
+
 namespace PG.Data.Configuration
 {
-    public class Genre : IEntityTypeConfiguration<Genre>
+    public class ArtistConfig : IEntityTypeConfiguration<Artist>
     {
-        public void Configure(EntityTypeBuilder<Genre> builder)
+        public void Configure(EntityTypeBuilder<Artist> builder)
         {
-            //builder.HasKey(x => x.Id);
+            builder.HasKey(x => x.Id);
         }
     }
 }

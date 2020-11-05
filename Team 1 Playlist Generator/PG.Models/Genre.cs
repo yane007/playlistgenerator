@@ -1,16 +1,9 @@
-﻿using Newtonsoft.Json;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using PG.Models.Abstract;
 
 namespace PG.Models
 {
-    public class Genre
+    public class Genre : IdAndIsDeleted
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
-
         public string Name { get; set; }
     }
 

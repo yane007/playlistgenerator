@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using PG.Services.DTOs.Abstract;
 
 namespace PG.Services.DTOs
 {
-   public class UserDTO
+   public class UserDTO : IdAndDeletedDTO
     {
     }
 }

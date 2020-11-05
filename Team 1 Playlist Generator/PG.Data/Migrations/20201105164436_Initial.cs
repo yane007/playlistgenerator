@@ -7,47 +7,19 @@ namespace PG.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Albums",
+                name: "Artist",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(maxLength: 30, nullable: false),
-                    Cover = table.Column<string>(nullable: true),
-                    Tracklist = table.Column<string>(nullable: true),
-                    Type = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Albums", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Creators",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    IsDeleted = table.Column<bool>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     Tracklist = table.Column<string>(nullable: true),
                     Type = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Creators", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Genres",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Genres", x => x.Id);
+                    table.PrimaryKey("PK_Artist", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -69,6 +41,7 @@ namespace PG.Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    IsDeleted = table.Column<bool>(nullable: false),
                     Title = table.Column<string>(maxLength: 50, nullable: false),
                     Description = table.Column<string>(nullable: true),
                     Duration = table.Column<int>(nullable: false),
@@ -78,7 +51,7 @@ namespace PG.Data.Migrations
                     picture = table.Column<string>(nullable: true),
                     Tracklist = table.Column<string>(nullable: true),
                     Creation_date = table.Column<string>(nullable: true),
-                    CreatorId = table.Column<int>(nullable: true),
+                    ArtistId = table.Column<int>(nullable: true),
                     Type = table.Column<string>(nullable: true),
                     UserId = table.Column<int>(nullable: false)
                 },
@@ -86,9 +59,9 @@ namespace PG.Data.Migrations
                 {
                     table.PrimaryKey("PK_Playlists", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Playlists_Creators_CreatorId",
-                        column: x => x.CreatorId,
-                        principalTable: "Creators",
+                        name: "FK_Playlists_Artist_ArtistId",
+                        column: x => x.ArtistId,
+                        principalTable: "Artist",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
@@ -100,35 +73,47 @@ namespace PG.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Genres",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    IsDeleted = table.Column<bool>(nullable: false),
+                    Name = table.Column<string>(nullable: true),
+                    PlaylistId = table.Column<int>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Genres", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Genres_Playlists_PlaylistId",
+                        column: x => x.PlaylistId,
+                        principalTable: "Playlists",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Songs",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    IsDeleted = table.Column<bool>(nullable: false),
                     Title = table.Column<string>(maxLength: 200, nullable: false),
-                    Link = table.Column<string>(nullable: true),
                     Duration = table.Column<int>(nullable: false),
                     Rank = table.Column<int>(nullable: false),
                     Preview = table.Column<string>(nullable: true),
-                    Type = table.Column<string>(nullable: true),
                     ArtistId = table.Column<int>(nullable: false),
-                    PlaylistId = table.Column<int>(nullable: true),
-                    GenreId = table.Column<int>(nullable: false),
-                    AlbumId = table.Column<int>(nullable: true)
+                    GenreId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Songs", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Songs_Albums_AlbumId",
-                        column: x => x.AlbumId,
-                        principalTable: "Albums",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Songs_Creators_ArtistId",
+                        name: "FK_Songs_Artist_ArtistId",
                         column: x => x.ArtistId,
-                        principalTable: "Creators",
+                        principalTable: "Artist",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -137,28 +122,59 @@ namespace PG.Data.Migrations
                         principalTable: "Genres",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "PlaylistAndSongRelations",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    IsDeleted = table.Column<bool>(nullable: false),
+                    PlaylistId = table.Column<int>(nullable: false),
+                    SongId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PlaylistAndSongRelations", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Songs_Playlists_PlaylistId",
+                        name: "FK_PlaylistAndSongRelations_Playlists_PlaylistId",
                         column: x => x.PlaylistId,
                         principalTable: "Playlists",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_PlaylistAndSongRelations_Songs_SongId",
+                        column: x => x.SongId,
+                        principalTable: "Songs",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Playlists_CreatorId",
+                name: "IX_Genres_PlaylistId",
+                table: "Genres",
+                column: "PlaylistId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_PlaylistAndSongRelations_PlaylistId",
+                table: "PlaylistAndSongRelations",
+                column: "PlaylistId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_PlaylistAndSongRelations_SongId",
+                table: "PlaylistAndSongRelations",
+                column: "SongId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Playlists_ArtistId",
                 table: "Playlists",
-                column: "CreatorId");
+                column: "ArtistId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Playlists_UserId",
                 table: "Playlists",
                 column: "UserId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Songs_AlbumId",
-                table: "Songs",
-                column: "AlbumId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Songs_ArtistId",
@@ -169,20 +185,15 @@ namespace PG.Data.Migrations
                 name: "IX_Songs_GenreId",
                 table: "Songs",
                 column: "GenreId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Songs_PlaylistId",
-                table: "Songs",
-                column: "PlaylistId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Songs");
+                name: "PlaylistAndSongRelations");
 
             migrationBuilder.DropTable(
-                name: "Albums");
+                name: "Songs");
 
             migrationBuilder.DropTable(
                 name: "Genres");
@@ -191,7 +202,7 @@ namespace PG.Data.Migrations
                 name: "Playlists");
 
             migrationBuilder.DropTable(
-                name: "Creators");
+                name: "Artist");
 
             migrationBuilder.DropTable(
                 name: "User");

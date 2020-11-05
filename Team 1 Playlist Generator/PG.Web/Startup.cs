@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PG.Data.Context;
 using PG.Services;
+using PG.Services.Contract;
 
 namespace PG.Web
 {
@@ -27,7 +28,11 @@ namespace PG.Web
         {
             services.AddControllersWithViews();
 
-            services.AddScoped<DeezerAPIService>();
+            services.AddScoped<IDeezerAPIService, DeezerAPIService>();
+            services.AddScoped<IArtistService, ArtistService>();
+            services.AddScoped<IGenreService, GenreService>();
+            services.AddScoped<IPlaylistService, PlaylistService>();
+            services.AddScoped<ISongService, SongService>();
 
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<PGDbContext>(options => options.UseSqlServer(connectionString));

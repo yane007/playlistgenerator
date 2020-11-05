@@ -1,14 +1,11 @@
-﻿using PG.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using PG.Services.DTOs.Abstract;
 
 namespace PG.Services.DTOs
 {
-    public class ArtistDTO
+    public class ArtistDTO : IdAndDeletedDTO
     {
-        public int Id { get; set; }
         public string Name { get; set; }
-        public ICollection<Song> Songs { get; set; } = new List<Song>();
+        public string Tracklist { get; set; }
+        public string Type { get; set; }
     }
 }
