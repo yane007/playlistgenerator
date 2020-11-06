@@ -73,9 +73,6 @@ namespace PG.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("ArtistId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Creation_date")
                         .HasColumnType("nvarchar(max)");
 
@@ -92,6 +89,9 @@ namespace PG.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Link")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Picture")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Share")
@@ -111,12 +111,7 @@ namespace PG.Data.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.Property<string>("picture")
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("ArtistId");
 
                     b.HasIndex("UserId");
 
@@ -211,10 +206,6 @@ namespace PG.Data.Migrations
 
             modelBuilder.Entity("PG.Models.Playlist", b =>
                 {
-                    b.HasOne("PG.Models.Artist", "Artist")
-                        .WithMany()
-                        .HasForeignKey("ArtistId");
-
                     b.HasOne("PG.Models.User", "User")
                         .WithMany("Playlists")
                         .HasForeignKey("UserId")

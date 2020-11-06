@@ -48,22 +48,15 @@ namespace PG.Data.Migrations
                     Fans = table.Column<int>(nullable: false),
                     Link = table.Column<string>(nullable: true),
                     Share = table.Column<string>(nullable: true),
-                    picture = table.Column<string>(nullable: true),
+                    Picture = table.Column<string>(nullable: true),
                     Tracklist = table.Column<string>(nullable: true),
                     Creation_date = table.Column<string>(nullable: true),
-                    ArtistId = table.Column<int>(nullable: true),
                     Type = table.Column<string>(nullable: true),
                     UserId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Playlists", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Playlists_Artist_ArtistId",
-                        column: x => x.ArtistId,
-                        principalTable: "Artist",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Playlists_User_UserId",
                         column: x => x.UserId,
@@ -167,11 +160,6 @@ namespace PG.Data.Migrations
                 column: "SongId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Playlists_ArtistId",
-                table: "Playlists",
-                column: "ArtistId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Playlists_UserId",
                 table: "Playlists",
                 column: "UserId");
@@ -196,13 +184,13 @@ namespace PG.Data.Migrations
                 name: "Songs");
 
             migrationBuilder.DropTable(
+                name: "Artist");
+
+            migrationBuilder.DropTable(
                 name: "Genres");
 
             migrationBuilder.DropTable(
                 name: "Playlists");
-
-            migrationBuilder.DropTable(
-                name: "Artist");
 
             migrationBuilder.DropTable(
                 name: "User");
