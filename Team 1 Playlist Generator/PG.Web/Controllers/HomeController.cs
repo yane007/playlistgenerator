@@ -1,28 +1,25 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using PG.Data.Context;
-using PG.Services.Contract;
+using Microsoft.Extensions.Logging;
 using PG.Web.Models;
 
 namespace PG.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly PGDbContext _context;
-        private readonly IDeezerAPIService _apiService;
+        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(PGDbContext context, IDeezerAPIService apiService)
+        public HomeController(ILogger<HomeController> logger)
         {
-            _context = context;
-            _apiService = apiService;
+            _logger = logger;
         }
 
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-
-            await GetAlbumAsync();
-
             return View();
         }
 
@@ -36,18 +33,5 @@ namespace PG.Web.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
-
-
-
-        [NonAction]
-        public async Task GetAlbumAsync()
-        {
-            await _apiService.ExtractSongsFromPlaylists("pop");
-            await _apiService.ExtractSongsFromPlaylists("rock");
-            await _apiService.ExtractSongsFromPlaylists("metal");
-        }
-
-
     }
 }
