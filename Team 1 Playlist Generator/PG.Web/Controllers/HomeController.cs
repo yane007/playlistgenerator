@@ -1,25 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Diagnostics;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using PG.Data.Context;
+using PG.Models;
+using PG.Services.Contract;
 using PG.Web.Models;
 
 namespace PG.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly PGDbContext _context;
+        private readonly IDeezerAPIService _apiService;
+        private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(PGDbContext context, IDeezerAPIService apiService, 
+            UserManager<User> userManager, SignInManager<User> signInManager,
+            RoleManager<IdentityRole> roleManager)
         {
-            _logger = logger;
+            _context = context;
+            _apiService = apiService;
+            this._userManager = userManager;
+            this._signInManager = signInManager;
+            this._roleManager = roleManager;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            await GetAlbumAsync();
+
+            //await _roleManager.CreateAsync(new IdentityRole("user"));
+            //await _roleManager.CreateAsync(new IdentityRole("admin"));
+
             return View();
         }
 
@@ -33,5 +48,14 @@ namespace PG.Web.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        [NonAction]
+        public async Task GetAlbumAsync()
+        {
+            await _apiService.ExtractSongsFromPlaylists("pop");
+            await _apiService.ExtractSongsFromPlaylists("rock");
+            await _apiService.ExtractSongsFromPlaylists("metal");
+        }
+
     }
 }

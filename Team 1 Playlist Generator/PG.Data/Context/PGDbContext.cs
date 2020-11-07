@@ -6,7 +6,7 @@ using System;
 
 namespace PG.Data.Context
 {
-    public class PGDbContext : DbContext//Add Identity
+    public class PGDbContext : IdentityDbContext
     {
         public DbSet<Artist> Artist { get; set; }
         public DbSet<Playlist> Playlists { get; set; }
