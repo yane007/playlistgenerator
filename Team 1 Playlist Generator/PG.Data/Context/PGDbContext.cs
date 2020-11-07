@@ -12,7 +12,7 @@ namespace PG.Data.Context
         public DbSet<Playlist> Playlists { get; set; }
         public DbSet<Song> Songs { get; set; }
         public DbSet<Genre> Genres { get; set; }
-        public DbSet<PlaylistAndSongRelation> PlaylistAndSongRelations { get; set; }
+        public DbSet<PlaylistsSongs> PlaylistAndSongRelations { get; set; }
         
         public PGDbContext(DbContextOptions<PGDbContext> options) : base(options)
         {

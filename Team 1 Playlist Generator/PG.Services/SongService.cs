@@ -1,40 +1,144 @@
-﻿using PG.Services.Contract;
+﻿using Microsoft.EntityFrameworkCore;
+using PG.Data.Context;
+using PG.Models;
+using PG.Services.Contract;
 using PG.Services.DTOs;
+using PG.Services.Mappers;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace PG.Services
 {
     public class SongService : ISongService
     {
-        public Task<SongDTO> Create(SongDTO songDTO)
+        private readonly PGDbContext _context;
+
+        public SongService(PGDbContext context)
         {
-            throw new System.NotImplementedException();
+            this._context = context;
         }
 
-        public Task<bool> Delete(int id)
+
+        public async Task<SongDTO> Create(SongDTO songDTO)
         {
-            throw new System.NotImplementedException();
+            if (songDTO == null)
+            {
+                throw new ArgumentNullException("Null Playlist");
+            }
+            if (songDTO.Title.Length > 50)
+            {
+                throw new ArgumentOutOfRangeException("Song's title needs to be shorter than 50 characters.");
+            }
+
+            var existingPlaylist = _context.Songs.FirstOrDefaultAsync(x => x.Title == songDTO.Title);
+            if (existingPlaylist != null)
+            {
+                throw new ArgumentException($"Song with name '{songDTO.Title}' already exists.");
+            }
+
+            _context.Songs.Add(songDTO.ToModel());
+            await _context.SaveChangesAsync();
+
+            return songDTO;
         }
 
-        public Task<IEnumerable<SongDTO>> GetAllSongs()
+        public async Task<IEnumerable<SongDTO>> GetAllSongs()
         {
-            throw new System.NotImplementedException();
+            var playlists = await _context.Songs
+                              .Where(x => x.IsDeleted == false)
+                              .Select(x => x.ToDTO())
+                              .ToListAsync();
+
+            return playlists;
         }
 
-        public Task<SongDTO> GetSongById(int id)
+        public async Task<IEnumerable<SongDTO>> GetSongsByArtist(int artistId)
         {
-            throw new System.NotImplementedException();
+            var playlists = await _context.Songs
+                              .Where(x => x.ArtistId == artistId && x.IsDeleted == false)
+                              .Select(x => x.ToDTO())
+                              .ToListAsync();
+
+            return playlists;
         }
 
-        public Task<IEnumerable<SongDTO>> GetSongsByUser(int userId)
+        public async Task<SongDTO> GetSongById(int id)
         {
-            throw new System.NotImplementedException();
+            var song = await _context.Songs.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
+            if (song == null)
+            {
+                throw new ArgumentNullException($"Song with id {id} was not found.");
+            }
+
+            return song.ToDTO();
         }
 
-        public Task<SongDTO> Update(int id, SongDTO songDTO)
+        public async Task<SongDTO> Update(int id, SongDTO songDTO)
         {
-            throw new System.NotImplementedException();
+            var song = await _context.Songs.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
+            if (song == null)
+            {
+                throw new ArgumentNullException($"Song with id {id} was not found.");
+            }
+
+            song.Title = songDTO.Title;
+            song.Duration = songDTO.Duration;
+            song.Rank = songDTO.Rank;
+            song.Preview = songDTO.Preview;
+            song.ArtistId = songDTO.ArtistId;
+            song.GenreId = songDTO.GenreId;
+
+            await _context.SaveChangesAsync();
+
+            return songDTO;
+        }
+
+        public async Task<bool> Delete(int id)
+        {
+            var expectedSong = await _context.Songs.FirstOrDefaultAsync(x => x.Id == id);
+            if (expectedSong == null)
+            {
+                throw new ArgumentNullException($"Song with id {id} was not found.");
+            }
+            if (expectedSong.IsDeleted == true)
+            {
+                throw new ArgumentException($"Song with id {id} is already deleted.");
+            }
+
+            expectedSong.IsDeleted = true;
+            await _context.SaveChangesAsync();
+
+            return true;
+        }
+
+        public async Task<bool> AddSongToPlaylisy(int songId, int playlistId)
+        {
+            var relation = new PlaylistsSongs { SongId = songId, PlaylistId = playlistId };
+
+            //Playlsit part
+            var playlist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == playlistId && x.IsDeleted == false);
+            if (playlist == null)
+            {
+                throw new ArgumentNullException($"Platlist with id {playlistId} was not found.");
+            }
+            playlist.PlaylistsSongs.Add(relation);
+            //-------------
+
+            //Song part
+            var song = await _context.Songs.FirstOrDefaultAsync(x => x.Id == songId && x.IsDeleted == false);
+            if (song == null)
+            {
+                throw new ArgumentNullException($"Song with id {songId} was not found.");
+            }
+            song.PlaylistsSongs.Add(relation);
+            //---------
+
+            _context.PlaylistAndSongRelations.Add(relation);
+            await _context.SaveChangesAsync();
+
+            return true;
         }
     }
 }

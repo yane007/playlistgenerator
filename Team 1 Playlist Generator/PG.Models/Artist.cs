@@ -1,16 +1,17 @@
-﻿using Newtonsoft.Json;
-using PG.Models.Abstract;
+﻿using PG.Models.Abstract;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PG.Models
 {
     public class Artist : IdAndIsDeleted
     {
+        [MaxLength(100)]
         public string Name { get; set; }
 
+        [MaxLength(300)]
         public string Tracklist { get; set; }
 
+        [MaxLength(50)]
         public string Type { get; set; }
     }
 }

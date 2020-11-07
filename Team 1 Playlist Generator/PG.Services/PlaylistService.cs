@@ -14,10 +14,12 @@ namespace PG.Services
     public class PlaylistService : IPlaylistService
     {
         private PGDbContext _context;
+
         public PlaylistService(PGDbContext context)
         {
             _context = context;
         }
+
 
         public async Task<PlaylistDTO> Create(PlaylistDTO playlistDTO)
         {
@@ -25,14 +27,75 @@ namespace PG.Services
             {
                 throw new ArgumentNullException("Null Playlist");
             }
-            if (playlistDTO.Title.Length < 3 && playlistDTO.Title.Length > 50)
+            if (playlistDTO.Title.Length > 50)
             {
-                throw new ArgumentOutOfRangeException("Playlist's title needs to be between 3 and 50 characters.");
+                throw new ArgumentOutOfRangeException("Playlist's title needs to be shorter than 50 characters.");
             }
 
-            Playlist playlist = PlaylistMapper.ToModel(playlistDTO);
+            var existingPlaylist = _context.Playlists.FirstOrDefaultAsync(x => x.Title == playlistDTO.Title);
+            if (existingPlaylist != null)
+            {
+                throw new ArgumentException($"Playlist with name '{playlistDTO.Title}' already exists.");
+            }
 
-            await _context.Playlists.AddAsync(playlist);
+            Playlist playlist = playlistDTO.ToModel();
+
+            _context.Playlists.Add(playlist);
+            await _context.SaveChangesAsync();
+
+            return playlistDTO;
+        }
+
+        public async Task<IEnumerable<PlaylistDTO>> GetAllPlaylists()
+        {
+            var playlists = await _context.Playlists
+                                          .Where(x => x.IsDeleted == false)
+                                          .Select(x => x.ToDTO())
+                                          .ToListAsync();
+
+            return playlists;
+        }
+
+        public async Task<IEnumerable<PlaylistDTO>> GetPlaylistsByUser(int id)
+        {
+            var playlists = await _context.Playlists
+                                          .Where(x => x.UserId == id && x.IsDeleted == false)
+                                          .Select(x => x.ToDTO())
+                                          .ToListAsync();
+
+            return playlists;
+        }
+
+        public async Task<PlaylistDTO> GetPlaylistById(int id)
+        {
+            var playlist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
+            if (playlist == null)
+            {
+                throw new ArgumentNullException($"Platlist with id {id} was not found.");
+            }
+
+            return playlist.ToDTO();
+        }
+
+        public async Task<PlaylistDTO> Update(int id, PlaylistDTO playlistDTO)
+        {
+            var playlist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
+            if (playlist == null)
+            {
+                throw new ArgumentNullException($"Platlist with id {id} was not found.");
+            }
+
+            playlist.Title = playlistDTO.Title;
+            playlist.Description = playlistDTO.Description;
+            playlist.Duration = playlistDTO.Duration;
+            playlist.Fans = playlistDTO.Fans;
+            playlist.Link = playlistDTO.Link;
+            playlist.Share = playlistDTO.Share;
+            playlist.Picture = playlistDTO.Picture;
+            playlist.Tracklist = playlistDTO.Tracklist;
+            playlist.Creation_date = playlistDTO.Creation_date;
+            playlist.Type = playlistDTO.Type;
+
             await _context.SaveChangesAsync();
 
             return playlistDTO;
@@ -56,64 +119,5 @@ namespace PG.Services
             return true;
         }
 
-        public async Task<IEnumerable<PlaylistDTO>> GetAllPlaylists()
-        {
-            var playlists = await _context.Playlists
-                                          .Where(x => x.IsDeleted == true)
-                                          .Select(x => PlaylistMapper.ToDTO(x))
-                                          .ToListAsync();
-
-            return playlists;
-        }
-
-        public async Task<IEnumerable<PlaylistDTO>> GetPlaylistsByUser(int id)
-        {
-            var playlists = await _context.Playlists
-                                          .Include(x => x.UserId)
-                                          .Where(x => x.IsDeleted == true && x.UserId == id)
-                                          .Select(x => PlaylistMapper.ToDTO(x))
-                                          .ToListAsync();
-
-            return playlists;
-        }
-
-        public async Task<PlaylistDTO> GetPlaylistById(int id)
-        {
-            var playlist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == id);
-
-            if (playlist == null)
-            {
-                throw new ArgumentNullException($"Platlist with id {id} was not found.");
-            }
-
-            return PlaylistMapper.ToDTO(playlist);
-        }
-
-
-
-        public async Task<PlaylistDTO> Update(int id, PlaylistDTO playlistDTO)
-        {
-            var playlist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == id);
-
-            if (playlist == null)
-            {
-                throw new ArgumentNullException($"Platlist with id {id} was not found.");
-            }
-
-            playlist.Title = playlistDTO.Title;
-            playlist.Description = playlistDTO.Description;
-            playlist.Duration = playlistDTO.Duration;
-            playlist.Fans = playlistDTO.Fans;
-            playlist.Link = playlistDTO.Link;
-            playlist.Share = playlistDTO.Share;
-            playlist.Picture = playlistDTO.Picture;
-            playlist.Tracklist = playlistDTO.Tracklist;
-            playlist.Creation_date = playlistDTO.Creation_date;
-            playlist.Type = playlistDTO.Type;
-
-            await _context.SaveChangesAsync();
-
-            return playlistDTO;
-        }
     }
 }

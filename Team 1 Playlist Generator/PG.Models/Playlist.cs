@@ -9,33 +9,40 @@ namespace PG.Models
     {
 
         [Required]
-        [MinLength(3), MaxLength(50)]
-        public string Title             { get; set; }
+        [MaxLength(50)]
+        public string Title { get; set; }
 
-        public string Description           { get; set; }
+        [MaxLength(800)]
+        public string Description { get; set; }
 
-        public int    Duration          { get; set; }
+        public int Duration { get; set; }
 
-        public int    Fans          { get; set; }
+        public int Fans { get; set; }
 
-        public string Link          { get; set; }
+        [MaxLength(300)]
+        public string Link { get; set; }
 
-        public string Share             { get; set; }
+        [MaxLength(300)]
+        public string Share { get; set; }
 
-        public string Picture           { get; set; }
+        [MaxLength(300)]
+        public string Picture { get; set; }
 
-        public string Tracklist             { get; set; }
+        [MaxLength(300)]
+        public string Tracklist { get; set; }
 
-        public string Creation_date         { get; set; }
-         
-        public string Type              { get; set; }
+        [MaxLength(300)]
+        public string Creation_date { get; set; }
 
-        public ICollection<PlaylistAndSongRelation> PlaylistAndSongRelation { get; set; } = new List<PlaylistAndSongRelation>();
+        [MaxLength(50)]
+        public string Type { get; set; }
+
+        public ICollection<PlaylistsSongs> PlaylistsSongs { get; set; } = new List<PlaylistsSongs>();
 
         public ICollection<Genre> Genres { get; set; } = new List<Genre>();
 
-
         public int UserId { get; set; }
+
         public User User { get; set; }
 
 

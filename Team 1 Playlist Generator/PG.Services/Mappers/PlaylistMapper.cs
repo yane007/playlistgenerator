@@ -8,23 +8,23 @@ namespace PG.Services.Mappers
 {
     public static class PlaylistMapper
     {
-        public static PlaylistDTO ToDTO(Playlist playlistDTO)
+        public static PlaylistDTO ToDTO(this Playlist playlist)
         {
             return new PlaylistDTO()
             {
-                Title = playlistDTO.Title,
-                Description = playlistDTO.Description,
-                Duration = playlistDTO.Duration,
-                Fans = playlistDTO.Fans,
-                Link = playlistDTO.Link,
-                Share = playlistDTO.Share,
-                Picture = playlistDTO.Picture,
-                Tracklist = playlistDTO.Tracklist,
-                Creation_date = playlistDTO.Creation_date,
-                Type = playlistDTO.Type,
+                Title = playlist.Title,
+                Description = playlist.Description,
+                Duration = playlist.Duration,
+                Fans = playlist.Fans,
+                Link = playlist.Link,
+                Share = playlist.Share,
+                Picture = playlist.Picture,
+                Tracklist = playlist.Tracklist,
+                Creation_date = playlist.Creation_date,
+                Type = playlist.Type,
             };
         }
-        public static Playlist ToModel(PlaylistDTO playlistDTO)
+        public static Playlist ToModel(this PlaylistDTO playlistDTO)
         {
             return new Playlist()
             {
