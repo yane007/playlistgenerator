@@ -13,7 +13,7 @@ namespace PG.Services
 {
     public class PlaylistService : IPlaylistService
     {
-        private PGDbContext _context;
+        private readonly PGDbContext _context;
 
         public PlaylistService(PGDbContext context)
         {
@@ -35,7 +35,7 @@ namespace PG.Services
             var existingPlaylist = _context.Playlists.FirstOrDefaultAsync(x => x.Title == playlistDTO.Title);
             if (existingPlaylist != null)
             {
-                throw new ArgumentException($"Playlist with name '{playlistDTO.Title}' already exists.");
+                throw new ArgumentException($"Playlist with title '{playlistDTO.Title}' already exists.");
             }
 
             Playlist playlist = playlistDTO.ToModel();
@@ -48,22 +48,18 @@ namespace PG.Services
 
         public async Task<IEnumerable<PlaylistDTO>> GetAllPlaylists()
         {
-            var playlists = await _context.Playlists
-                                          .Where(x => x.IsDeleted == false)
-                                          .Select(x => x.ToDTO())
-                                          .ToListAsync();
-
-            return playlists;
+            return await _context.Playlists
+                                 .Where(x => x.IsDeleted == false)
+                                 .Select(x => x.ToDTO())
+                                 .ToListAsync();
         }
 
         public async Task<IEnumerable<PlaylistDTO>> GetPlaylistsByUser(int id)
         {
-            var playlists = await _context.Playlists
-                                          .Where(x => x.UserId == id && x.IsDeleted == false)
-                                          .Select(x => x.ToDTO())
-                                          .ToListAsync();
-
-            return playlists;
+            return await _context.Playlists
+                                 .Where(x => x.UserId == id && x.IsDeleted == false)
+                                 .Select(x => x.ToDTO())
+                                 .ToListAsync();
         }
 
         public async Task<PlaylistDTO> GetPlaylistById(int id)

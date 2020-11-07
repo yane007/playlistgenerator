@@ -35,7 +35,7 @@ namespace PG.Services
             var existingPlaylist = _context.Songs.FirstOrDefaultAsync(x => x.Title == songDTO.Title);
             if (existingPlaylist != null)
             {
-                throw new ArgumentException($"Song with name '{songDTO.Title}' already exists.");
+                throw new ArgumentException($"Song with title '{songDTO.Title}' already exists.");
             }
 
             _context.Songs.Add(songDTO.ToModel());
@@ -46,22 +46,18 @@ namespace PG.Services
 
         public async Task<IEnumerable<SongDTO>> GetAllSongs()
         {
-            var playlists = await _context.Songs
-                              .Where(x => x.IsDeleted == false)
-                              .Select(x => x.ToDTO())
-                              .ToListAsync();
-
-            return playlists;
+            return await _context.Songs
+                                 .Where(x => x.IsDeleted == false)
+                                 .Select(x => x.ToDTO())
+                                 .ToListAsync();
         }
 
         public async Task<IEnumerable<SongDTO>> GetSongsByArtist(int artistId)
         {
-            var playlists = await _context.Songs
-                              .Where(x => x.ArtistId == artistId && x.IsDeleted == false)
-                              .Select(x => x.ToDTO())
-                              .ToListAsync();
-
-            return playlists;
+            return await _context.Songs
+                                 .Where(x => x.ArtistId == artistId && x.IsDeleted == false)
+                                 .Select(x => x.ToDTO())
+                                 .ToListAsync();
         }
 
         public async Task<SongDTO> GetSongById(int id)
