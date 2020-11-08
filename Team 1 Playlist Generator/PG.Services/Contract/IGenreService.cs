@@ -1,7 +1,5 @@
 ﻿using PG.Services.DTOs;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace PG.Services.Contract

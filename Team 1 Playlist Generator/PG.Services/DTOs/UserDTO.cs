@@ -2,7 +2,7 @@
 
 namespace PG.Services.DTOs
 {
-   public class UserDTO : IdAndDeletedDTO
+   public class UserDTO : EntityDTO
     {
     }
 }

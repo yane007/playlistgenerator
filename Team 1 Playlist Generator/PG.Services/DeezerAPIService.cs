@@ -103,10 +103,11 @@ namespace PG.Services
                                     GenreId = expectedGenre.Id,
                                     ArtistId = expectedArtist.Id,
                                 });
-                                await _context.SaveChangesAsync();
+                                
                             }
 
                         }
+                        await _context.SaveChangesAsync();
                         //-----------------------------------------------------------------------------------
                         System.Threading.Thread.Sleep(1000);
                     }

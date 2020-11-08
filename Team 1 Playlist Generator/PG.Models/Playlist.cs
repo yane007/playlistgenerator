@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PG.Models
 {
-    public class Playlist : IdAndIsDeleted
+    public class Playlist : Entity
     {
 
         [Required]

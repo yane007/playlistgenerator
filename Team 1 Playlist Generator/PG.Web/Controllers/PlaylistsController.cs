@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PG.Services.Contract;
 using PG.Services.DTOs;
-using PG.Web.Models;
 using PG.Web.Models.Mappers;
 
 namespace PG.Web.Controllers
@@ -20,12 +17,15 @@ namespace PG.Web.Controllers
         {
             this._playlistService = playlistService;
             this._genreService = genreService;
+
         }
         public async Task<IActionResult> Index()
         {
             var playlistsDTOs = await _playlistService.GetAllPlaylists();
 
             var playlistsViewModels = playlistsDTOs.Select(x => x.ToViewModel());
+
+            await _playlistService.GeneratePlaylist(new PlaylistDTO() { Title = "The 5 song playlist"});
 
             return View(playlistsViewModels);
         }

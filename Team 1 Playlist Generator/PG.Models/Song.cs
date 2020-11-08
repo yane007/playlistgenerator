@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 namespace PG.Models
 {
-    public class Song : IdAndIsDeleted
+    public class Song : Entity
     {
         [Required]
         [MaxLength(200)]

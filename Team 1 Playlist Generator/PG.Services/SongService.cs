@@ -106,35 +106,7 @@ namespace PG.Services
             expectedSong.IsDeleted = true;
             await _context.SaveChangesAsync();
 
-            return true;
-        }
-
-        public async Task<bool> AddSongToPlaylisy(int songId, int playlistId)
-        {
-            var relation = new PlaylistsSongs { SongId = songId, PlaylistId = playlistId };
-
-            //Playlsit part
-            var playlist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == playlistId && x.IsDeleted == false);
-            if (playlist == null)
-            {
-                throw new ArgumentNullException($"Platlist with id {playlistId} was not found.");
-            }
-            playlist.PlaylistsSongs.Add(relation);
-            //-------------
-
-            //Song part
-            var song = await _context.Songs.FirstOrDefaultAsync(x => x.Id == songId && x.IsDeleted == false);
-            if (song == null)
-            {
-                throw new ArgumentNullException($"Song with id {songId} was not found.");
-            }
-            song.PlaylistsSongs.Add(relation);
-            //---------
-
-            _context.PlaylistAndSongRelations.Add(relation);
-            await _context.SaveChangesAsync();
-
-            return true;
+            return true; 
         }
     }
 }

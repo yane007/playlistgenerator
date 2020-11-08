@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PG.Models
 {
-    public class Artist : IdAndIsDeleted
+    public class Artist : Entity
     {
         [MaxLength(100)]
         public string Name { get; set; }

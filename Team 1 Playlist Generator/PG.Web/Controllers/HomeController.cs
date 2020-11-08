@@ -16,22 +16,29 @@ namespace PG.Web.Controllers
     public class HomeController : Controller
     {
         private readonly PGDbContext _context;
-        private readonly IDeezerAPIService _apiService;
         private readonly IPlaylistService _playlistService;
+        private readonly IDeezerAPIService _apiService;
+        private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
-        public HomeController(PGDbContext context, IDeezerAPIService apiService, IPlaylistService playlistService)
+
+        public HomeController(PGDbContext context, IDeezerAPIService apiService, IPlaylistService playlistService,
+            UserManager<User> userManager, SignInManager<User> signInManager,
+            RoleManager<IdentityRole> roleManager)
         {
             _context = context;
             _apiService = apiService;
             _playlistService = playlistService;
+            _roleManager = roleManager;
         }
 
         public async Task<IActionResult> Index()
         {
             await GetAlbumAsync();
 
-            //await _roleManager.CreateAsync(new IdentityRole("user"));
-            //await _roleManager.CreateAsync(new IdentityRole("admin"));
+            await _roleManager.CreateAsync(new IdentityRole("user"));
+            await _roleManager.CreateAsync(new IdentityRole("admin"));
 
 
             IEnumerable<PlaylistDTO> playlistsDTOs = await _playlistService.GetAllPlaylists();

@@ -2,7 +2,7 @@
 
 namespace PG.Services.DTOs
 {
-    public class ArtistDTO : IdAndDeletedDTO
+    public class ArtistDTO : EntityDTO
     {
         public string Name { get; set; }
 

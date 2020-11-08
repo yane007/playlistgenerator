@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PG.Models
 {
-    public class PlaylistsSongs : IdAndIsDeleted
+    public class PlaylistsSongs : Entity
     {
         [Required]
         public int PlaylistId { get; set; }

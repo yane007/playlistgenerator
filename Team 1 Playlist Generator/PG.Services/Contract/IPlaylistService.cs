@@ -1,7 +1,5 @@
 ﻿using PG.Services.DTOs;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace PG.Services.Contract
@@ -14,5 +12,6 @@ namespace PG.Services.Contract
         Task<PlaylistDTO> GetPlaylistById(int id);
         Task<PlaylistDTO> Update(int id, PlaylistDTO playlistDTO);
         Task<bool> Delete(int id);
+        Task<bool> GeneratePlaylist(PlaylistDTO playlist);
     }
-}   
+}

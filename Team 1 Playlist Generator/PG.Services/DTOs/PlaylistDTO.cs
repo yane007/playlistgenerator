@@ -3,7 +3,7 @@ using PG.Services.DTOs.Abstract;
 
 namespace PG.Services.DTOs
 {
-    public class PlaylistDTO : IdAndDeletedDTO
+    public class PlaylistDTO : EntityDTO
     {
         public string Title { get; set; }
 

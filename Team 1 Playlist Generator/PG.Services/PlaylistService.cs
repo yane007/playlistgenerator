@@ -115,5 +115,24 @@ namespace PG.Services
             return true;
         }
 
+        public async Task<bool> GeneratePlaylist(PlaylistDTO playlist)
+        {
+            var addingPlaylist = await _context.Playlists.AddAsync(playlist.ToModel());
+            var playlistAdded = addingPlaylist.Entity;
+
+            //Algorithm
+            var result = _context.Songs.Take(5);
+
+            foreach (var song in result)
+            {
+                var relation = new PlaylistsSongs { SongId = song.Id, PlaylistId = playlistAdded.Id };
+                playlistAdded.PlaylistsSongs.Add(relation);
+                song.PlaylistsSongs.Add(relation);
+            }
+
+            await _context.SaveChangesAsync();
+
+            return true;
+        }
     }
 }
