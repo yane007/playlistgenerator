@@ -10,7 +10,7 @@ using PG.Data.Context;
 namespace PG.Data.Migrations
 {
     [DbContext(typeof(PGDbContext))]
-    [Migration("20201106161017_Initial")]
+    [Migration("20201108180537_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -238,13 +238,16 @@ namespace PG.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
 
                     b.Property<string>("Tracklist")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(300)")
+                        .HasMaxLength(300);
 
                     b.Property<string>("Type")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.HasKey("Id");
 
@@ -262,7 +265,8 @@ namespace PG.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.Property<int?>("PlaylistId")
                         .HasColumnType("int");
@@ -282,10 +286,12 @@ namespace PG.Data.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Creation_date")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(300)")
+                        .HasMaxLength(300);
 
                     b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(800)")
+                        .HasMaxLength(800);
 
                     b.Property<int>("Duration")
                         .HasColumnType("int");
@@ -297,13 +303,16 @@ namespace PG.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Link")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(300)")
+                        .HasMaxLength(300);
 
                     b.Property<string>("Picture")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(300)")
+                        .HasMaxLength(300);
 
                     b.Property<string>("Share")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(300)")
+                        .HasMaxLength(300);
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -311,10 +320,12 @@ namespace PG.Data.Migrations
                         .HasMaxLength(50);
 
                     b.Property<string>("Tracklist")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(300)")
+                        .HasMaxLength(300);
 
                     b.Property<string>("Type")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");
@@ -329,7 +340,7 @@ namespace PG.Data.Migrations
                     b.ToTable("Playlists");
                 });
 
-            modelBuilder.Entity("PG.Models.PlaylistAndSongRelation", b =>
+            modelBuilder.Entity("PG.Models.PlaylistsSongs", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -374,7 +385,8 @@ namespace PG.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Preview")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(300)")
+                        .HasMaxLength(300);
 
                     b.Property<int>("Rank")
                         .HasColumnType("int");
@@ -468,16 +480,16 @@ namespace PG.Data.Migrations
                         .HasForeignKey("UserId1");
                 });
 
-            modelBuilder.Entity("PG.Models.PlaylistAndSongRelation", b =>
+            modelBuilder.Entity("PG.Models.PlaylistsSongs", b =>
                 {
                     b.HasOne("PG.Models.Playlist", "Playlist")
-                        .WithMany("PlaylistAndSongRelation")
+                        .WithMany("PlaylistsSongs")
                         .HasForeignKey("PlaylistId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("PG.Models.Song", "Song")
-                        .WithMany("PlaylistAndSongRelation")
+                        .WithMany("PlaylistsSongs")
                         .HasForeignKey("SongId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

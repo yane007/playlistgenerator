@@ -14,9 +14,9 @@ namespace PG.Data.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     IsDeleted = table.Column<bool>(nullable: false),
-                    Name = table.Column<string>(nullable: true),
-                    Tracklist = table.Column<string>(nullable: true),
-                    Type = table.Column<string>(nullable: true)
+                    Name = table.Column<string>(maxLength: 100, nullable: true),
+                    Tracklist = table.Column<string>(maxLength: 300, nullable: true),
+                    Type = table.Column<string>(maxLength: 50, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -178,15 +178,15 @@ namespace PG.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     IsDeleted = table.Column<bool>(nullable: false),
                     Title = table.Column<string>(maxLength: 50, nullable: false),
-                    Description = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(maxLength: 800, nullable: true),
                     Duration = table.Column<int>(nullable: false),
                     Fans = table.Column<int>(nullable: false),
-                    Link = table.Column<string>(nullable: true),
-                    Share = table.Column<string>(nullable: true),
-                    Picture = table.Column<string>(nullable: true),
-                    Tracklist = table.Column<string>(nullable: true),
-                    Creation_date = table.Column<string>(nullable: true),
-                    Type = table.Column<string>(nullable: true),
+                    Link = table.Column<string>(maxLength: 300, nullable: true),
+                    Share = table.Column<string>(maxLength: 300, nullable: true),
+                    Picture = table.Column<string>(maxLength: 300, nullable: true),
+                    Tracklist = table.Column<string>(maxLength: 300, nullable: true),
+                    Creation_date = table.Column<string>(maxLength: 300, nullable: true),
+                    Type = table.Column<string>(maxLength: 50, nullable: true),
                     UserId = table.Column<int>(nullable: false),
                     UserId1 = table.Column<string>(nullable: true)
                 },
@@ -208,7 +208,7 @@ namespace PG.Data.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     IsDeleted = table.Column<bool>(nullable: false),
-                    Name = table.Column<string>(nullable: true),
+                    Name = table.Column<string>(maxLength: 50, nullable: true),
                     PlaylistId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
@@ -232,7 +232,7 @@ namespace PG.Data.Migrations
                     Title = table.Column<string>(maxLength: 200, nullable: false),
                     Duration = table.Column<int>(nullable: false),
                     Rank = table.Column<int>(nullable: false),
-                    Preview = table.Column<string>(nullable: true),
+                    Preview = table.Column<string>(maxLength: 300, nullable: true),
                     ArtistId = table.Column<int>(nullable: false),
                     GenreId = table.Column<int>(nullable: false)
                 },

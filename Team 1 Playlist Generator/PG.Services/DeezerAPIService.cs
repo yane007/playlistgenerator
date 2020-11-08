@@ -54,9 +54,9 @@ namespace PG.Services
                 }
                 //-----------------------------------------------------------------------------------
 
-                foreach (var playlist in result.data)
+                foreach (var playlist in result.Data)
                 {
-                    using (var response2 = await client.GetAsync(playlist.tracklist))
+                    using (var response2 = await client.GetAsync(playlist.Tracklist))
                     {
                         var responseAsString2 = await response2.Content.ReadAsStringAsync();
 
@@ -64,41 +64,41 @@ namespace PG.Services
 
                         //-----------------------------------------------------------------------------------
                         //We start adding a Song to the DB. We need to map SongAPI to Song && check if the CreatorAPI Id is alredy on our DB
-                        foreach (var song in result2.data)
+                        foreach (var song in result2.Data)
                         {
 
-                            if (song.preview == null || song.preview.Length < 5)
+                            if (song.Preview == null || song.Preview.Length < 5)
                             {
                                 continue;
                             }
 
                             //-----------------------------------------------------------------------------------
                             //Find the Artist, if not exists create new and savechanges
-                            var expectedArtist = await _context.Artist.FirstOrDefaultAsync(x => x.Name == song.artist.name);
+                            var expectedArtist = await _context.Artist.FirstOrDefaultAsync(x => x.Name == song.Artist.Name);
                             if (expectedArtist == null)
                             {
                                 await _context.Artist.AddAsync(new Artist()
                                 {
-                                    Name = song.artist.name,
-                                    Tracklist = song.artist.tracklist,
-                                    Type = song.artist.type
+                                    Name = song.Artist.Name,
+                                    Tracklist = song.Artist.Tracklist,
+                                    Type = song.Artist.Type
                                 });
 
                                 await _context.SaveChangesAsync();
-                                expectedArtist = await _context.Artist.FirstOrDefaultAsync(x => x.Name == song.artist.name);
+                                expectedArtist = await _context.Artist.FirstOrDefaultAsync(x => x.Name == song.Artist.Name);
                             }
                             //-----------------------------------------------------------------------------------
 
-                            var isSongNull = await _context.Songs.FirstOrDefaultAsync(x => x.Title == song.title);
+                            var isSongNull = await _context.Songs.FirstOrDefaultAsync(x => x.Title == song.Title);
                             if (isSongNull == null)
                             {
                                 await _context.Songs.AddAsync(new Song()
                                 {
 
-                                    Title = song.title,
-                                    Duration = song.duration,
-                                    Rank = song.rank,
-                                    Preview = song.preview,
+                                    Title = song.Title,
+                                    Duration = song.Duration,
+                                    Rank = song.Rank,
+                                    Preview = song.Preview,
 
                                     GenreId = expectedGenre.Id,
                                     ArtistId = expectedArtist.Id,

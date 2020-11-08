@@ -4,8 +4,8 @@ namespace PG.Services.MappingModelsAPI
 {
     public class QueryPlaylistsAPI
     {
-        public List<PlaylistLinkAPI> data { get; set; }
-        public int total { get; set; }
-        public string next { get; set; }
+        public List<PlaylistLinkAPI> Data { get; set; }
+        public int Total { get; set; }
+        public string Next { get; set; }
     }
 }
