@@ -10,7 +10,7 @@ using PG.Data.Context;
 namespace PG.Data.Migrations
 {
     [DbContext(typeof(PGDbContext))]
-    [Migration("20201108180537_Initial")]
+    [Migration("20201109093452_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -362,7 +362,7 @@ namespace PG.Data.Migrations
 
                     b.HasIndex("SongId");
 
-                    b.ToTable("PlaylistAndSongRelations");
+                    b.ToTable("PlaylistSongs");
                 });
 
             modelBuilder.Entity("PG.Models.Song", b =>

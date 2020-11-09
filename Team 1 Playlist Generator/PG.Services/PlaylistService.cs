@@ -127,7 +127,6 @@ namespace PG.Services
             {
                 var relation = new PlaylistsSongs { SongId = song.Id, PlaylistId = playlistAdded.Id };
                 playlistAdded.PlaylistsSongs.Add(relation);
-                song.PlaylistsSongs.Add(relation);
             }
 
             await _context.SaveChangesAsync();

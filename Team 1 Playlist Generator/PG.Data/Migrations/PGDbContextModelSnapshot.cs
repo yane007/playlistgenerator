@@ -360,7 +360,7 @@ namespace PG.Data.Migrations
 
                     b.HasIndex("SongId");
 
-                    b.ToTable("PlaylistAndSongRelations");
+                    b.ToTable("PlaylistSongs");
                 });
 
             modelBuilder.Entity("PG.Models.Song", b =>
