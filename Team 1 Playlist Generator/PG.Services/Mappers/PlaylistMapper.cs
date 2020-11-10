@@ -22,6 +22,7 @@ namespace PG.Services.Mappers
                 Tracklist = playlist.Tracklist,
                 Creation_date = playlist.Creation_date,
                 Type = playlist.Type,
+                PlaylistsSongs = playlist.PlaylistsSongs,
             };
         }
         public static Playlist ToModel(this PlaylistDTO playlistDTO)
@@ -38,6 +39,7 @@ namespace PG.Services.Mappers
                 Tracklist = playlistDTO.Tracklist,
                 Creation_date = playlistDTO.Creation_date,
                 Type = playlistDTO.Type,
+                PlaylistsSongs = playlistDTO.PlaylistsSongs,
             };
         }
     }

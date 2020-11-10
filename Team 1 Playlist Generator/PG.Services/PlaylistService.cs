@@ -49,6 +49,8 @@ namespace PG.Services
         public async Task<IEnumerable<PlaylistDTO>> GetAllPlaylists()
         {
             return await _context.Playlists
+                                 .Include(x => x.PlaylistsSongs)
+                                 .ThenInclude(x => x.Song)
                                  .Where(x => x.IsDeleted == false)
                                  .Select(x => x.ToDTO())
                                  .ToListAsync();
@@ -57,6 +59,8 @@ namespace PG.Services
         public async Task<IEnumerable<PlaylistDTO>> GetPlaylistsByUser(int id)
         {
             return await _context.Playlists
+                                 .Include(x => x.PlaylistsSongs)
+                                 .ThenInclude(x => x.Song)
                                  .Where(x => x.UserId == id && x.IsDeleted == false)
                                  .Select(x => x.ToDTO())
                                  .ToListAsync();
@@ -64,7 +68,11 @@ namespace PG.Services
 
         public async Task<PlaylistDTO> GetPlaylistById(int id)
         {
-            var playlist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
+            var playlist = await _context.Playlists
+                                 .Include(x => x.PlaylistsSongs)
+                                 .ThenInclude(x => x.Song)
+                                 .FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
+
             if (playlist == null)
             {
                 throw new ArgumentNullException($"Platlist with id {id} was not found.");
@@ -117,8 +125,8 @@ namespace PG.Services
 
         public async Task<bool> GeneratePlaylist(PlaylistDTO playlist)
         {
-            var addingPlaylist = await _context.Playlists.AddAsync(playlist.ToModel());
-            var playlistAdded = addingPlaylist.Entity;
+            var playlistToAdd = await _context.Playlists.AddAsync(playlist.ToModel());
+            var playlistAdded = playlistToAdd.Entity;
 
             //Algorithm
             var result = _context.Songs.Take(5);

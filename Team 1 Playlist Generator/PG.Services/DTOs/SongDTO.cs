@@ -17,5 +17,6 @@ namespace PG.Services.DTOs
         public int ArtistId { get; set; }
 
         public int GenreId { get; set; }
+
     }
 }
