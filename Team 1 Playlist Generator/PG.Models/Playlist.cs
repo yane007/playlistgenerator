@@ -17,6 +17,8 @@ namespace PG.Models
 
         public int Duration { get; set; }
 
+        public int Rank { get; set; }
+
         public int Fans { get; set; }
 
         [MaxLength(300)]

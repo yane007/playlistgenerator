@@ -308,6 +308,9 @@ namespace PG.Data.Migrations
                         .HasColumnType("nvarchar(300)")
                         .HasMaxLength(300);
 
+                    b.Property<int>("Rank")
+                        .HasColumnType("int");
+
                     b.Property<string>("Share")
                         .HasColumnType("nvarchar(300)")
                         .HasMaxLength(300);

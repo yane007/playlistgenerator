@@ -18,6 +18,7 @@ namespace PG.Services.Mappers
                 Preview = song.Preview,
                 ArtistId = song.ArtistId,
                 GenreId = song.GenreId,
+                Id = song.Id
             };
         }
         public static Song ToModel(this SongDTO songDTO)
@@ -30,6 +31,7 @@ namespace PG.Services.Mappers
                 Preview = songDTO.Preview,
                 ArtistId = songDTO.ArtistId,
                 GenreId = songDTO.GenreId,
+                Id = songDTO.Id
             };
         }
     }

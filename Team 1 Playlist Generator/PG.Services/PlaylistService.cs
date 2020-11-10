@@ -75,7 +75,7 @@ namespace PG.Services
 
             if (playlist == null)
             {
-                throw new ArgumentNullException($"Platlist with id {id} was not found.");
+                throw new ArgumentNullException($"Playlist with id {id} was not found.");
             }
 
             return playlist.ToDTO();
@@ -86,7 +86,7 @@ namespace PG.Services
             var playlist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
             if (playlist == null)
             {
-                throw new ArgumentNullException($"Platlist with id {id} was not found.");
+                throw new ArgumentNullException($"Playlist with id {id} was not found.");
             }
 
             playlist.Title = playlistDTO.Title;
@@ -110,11 +110,11 @@ namespace PG.Services
             var expectedPlaylist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == id);
             if (expectedPlaylist == null)
             {
-                throw new ArgumentNullException($"Platlist with id {id} was not found.");
+                throw new ArgumentNullException($"Playlist with id {id} was not found.");
             }
-            if (expectedPlaylist.IsDeleted == true)
+            if (expectedPlaylist.IsDeleted)
             {
-                throw new ArgumentException($"Platlist with id {id} is already deleted.");
+                throw new ArgumentException($"Playlist with id {id} is already deleted.");
             }
 
             expectedPlaylist.IsDeleted = true;
@@ -135,6 +135,7 @@ namespace PG.Services
             {
                 var relation = new PlaylistsSongs { SongId = song.Id, PlaylistId = playlistAdded.Id };
                 playlistAdded.PlaylistsSongs.Add(relation);
+                song.PlaylistsSongs.Add(relation);
             }
 
             await _context.SaveChangesAsync();

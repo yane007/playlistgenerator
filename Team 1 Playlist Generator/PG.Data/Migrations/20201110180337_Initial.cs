@@ -180,6 +180,7 @@ namespace PG.Data.Migrations
                     Title = table.Column<string>(maxLength: 50, nullable: false),
                     Description = table.Column<string>(maxLength: 800, nullable: true),
                     Duration = table.Column<int>(nullable: false),
+                    Rank = table.Column<int>(nullable: false),
                     Fans = table.Column<int>(nullable: false),
                     Link = table.Column<string>(maxLength: 300, nullable: true),
                     Share = table.Column<string>(maxLength: 300, nullable: true),
@@ -254,7 +255,7 @@ namespace PG.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "PlaylistAndSongRelations",
+                name: "PlaylistSongs",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -265,15 +266,15 @@ namespace PG.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_PlaylistAndSongRelations", x => x.Id);
+                    table.PrimaryKey("PK_PlaylistSongs", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_PlaylistAndSongRelations_Playlists_PlaylistId",
+                        name: "FK_PlaylistSongs_Playlists_PlaylistId",
                         column: x => x.PlaylistId,
                         principalTable: "Playlists",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_PlaylistAndSongRelations_Songs_SongId",
+                        name: "FK_PlaylistSongs_Songs_SongId",
                         column: x => x.SongId,
                         principalTable: "Songs",
                         principalColumn: "Id",
@@ -325,19 +326,19 @@ namespace PG.Data.Migrations
                 column: "PlaylistId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PlaylistAndSongRelations_PlaylistId",
-                table: "PlaylistAndSongRelations",
-                column: "PlaylistId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_PlaylistAndSongRelations_SongId",
-                table: "PlaylistAndSongRelations",
-                column: "SongId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Playlists_UserId1",
                 table: "Playlists",
                 column: "UserId1");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_PlaylistSongs_PlaylistId",
+                table: "PlaylistSongs",
+                column: "PlaylistId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_PlaylistSongs_SongId",
+                table: "PlaylistSongs",
+                column: "SongId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Songs_ArtistId",
@@ -368,7 +369,7 @@ namespace PG.Data.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "PlaylistAndSongRelations");
+                name: "PlaylistSongs");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
