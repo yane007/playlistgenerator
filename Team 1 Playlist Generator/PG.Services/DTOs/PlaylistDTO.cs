@@ -1,5 +1,6 @@
 ﻿using PG.Models;
 using PG.Services.DTOs.Abstract;
+using System.Collections.Generic;
 
 namespace PG.Services.DTOs
 {
@@ -26,5 +27,7 @@ namespace PG.Services.DTOs
         public string Type { get; set; }
 
         public int UserId { get; set; }
+
+        public ICollection<PlaylistsSongs> PlaylistsSongs { get; set; } = new List<PlaylistsSongs>();
     }
 }

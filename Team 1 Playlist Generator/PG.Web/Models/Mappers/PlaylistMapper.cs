@@ -23,6 +23,7 @@ namespace PG.Web.Models.Mappers
                 Tracklist = playlistDTO.Tracklist,
                 Creation_date = playlistDTO.Creation_date,
                 Type = playlistDTO.Type,
+                PlaylistsSongs = playlistDTO.PlaylistsSongs,
             };
         }
     }

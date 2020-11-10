@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="APIControllers\" />
+    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
   <ItemGroup>
