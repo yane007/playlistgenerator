@@ -8,6 +8,21 @@ namespace PG.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Albums",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    IsDeleted = table.Column<bool>(nullable: false),
+                    Name = table.Column<string>(maxLength: 50, nullable: true),
+                    SongId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Albums", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Artist",
                 columns: table => new
                 {
@@ -235,11 +250,18 @@ namespace PG.Data.Migrations
                     Rank = table.Column<int>(nullable: false),
                     Preview = table.Column<string>(maxLength: 300, nullable: true),
                     ArtistId = table.Column<int>(nullable: false),
-                    GenreId = table.Column<int>(nullable: false)
+                    GenreId = table.Column<int>(nullable: false),
+                    AlbumId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Songs", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Songs_Albums_AlbumId",
+                        column: x => x.AlbumId,
+                        principalTable: "Albums",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Songs_Artist_ArtistId",
                         column: x => x.ArtistId,
@@ -341,6 +363,11 @@ namespace PG.Data.Migrations
                 column: "SongId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Songs_AlbumId",
+                table: "Songs",
+                column: "AlbumId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Songs_ArtistId",
                 table: "Songs",
                 column: "ArtistId");
@@ -376,6 +403,9 @@ namespace PG.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "Songs");
+
+            migrationBuilder.DropTable(
+                name: "Albums");
 
             migrationBuilder.DropTable(
                 name: "Artist");

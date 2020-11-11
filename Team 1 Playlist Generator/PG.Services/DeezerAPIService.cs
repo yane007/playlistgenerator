@@ -5,7 +5,8 @@ using PG.Models;
 using PG.Services.Contract;
 using PG.Services.MappingModelsAPI; 
 using System.Linq;
-using System.Net.Http; 
+using System.Net.Http;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 
 namespace PG.Services
@@ -27,6 +28,10 @@ namespace PG.Services
         /// <returns></returns>
         public async Task ExtractSongsFromPlaylists(string genreString) 
         {
+            var album = new Album { Name = "Album1" };
+            await _context.Albums.AddAsync(album);
+            await _context.SaveChangesAsync();
+
             genreString = genreString.ToLower();
             var dbGenreName = await _context.Genres.FirstOrDefaultAsync(x => x.Name == genreString);
 
@@ -102,6 +107,7 @@ namespace PG.Services
 
                                     GenreId = expectedGenre.Id,
                                     ArtistId = expectedArtist.Id,
+                                    AlbumId = 1
                                 });
                                 
                             }

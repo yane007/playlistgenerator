@@ -225,6 +225,28 @@ namespace PG.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("PG.Models.Album", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<int>("SongId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Albums");
+                });
+
             modelBuilder.Entity("PG.Models.Artist", b =>
                 {
                     b.Property<int>("Id")
@@ -373,6 +395,9 @@ namespace PG.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("AlbumId")
+                        .HasColumnType("int");
+
                     b.Property<int>("ArtistId")
                         .HasColumnType("int");
 
@@ -398,6 +423,8 @@ namespace PG.Data.Migrations
                         .HasMaxLength(200);
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AlbumId");
 
                     b.HasIndex("ArtistId");
 
@@ -498,6 +525,12 @@ namespace PG.Data.Migrations
 
             modelBuilder.Entity("PG.Models.Song", b =>
                 {
+                    b.HasOne("PG.Models.Album", "Album")
+                        .WithMany("Songs")
+                        .HasForeignKey("AlbumId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("PG.Models.Artist", "Artist")
                         .WithMany()
                         .HasForeignKey("ArtistId")
