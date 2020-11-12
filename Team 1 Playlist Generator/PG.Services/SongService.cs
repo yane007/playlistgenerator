@@ -38,7 +38,7 @@ namespace PG.Services
                 throw new ArgumentException($"Song with title '{songDTO.Title}' already exists.");
             }
 
-            _context.Songs.Add(songDTO.ToModel());
+            _context.Songs.Add(songDTO.ToEntity());
             await _context.SaveChangesAsync();
 
             return songDTO;

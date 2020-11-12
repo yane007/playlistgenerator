@@ -21,7 +21,7 @@ namespace PG.Services.Mappers
                 Id = song.Id
             };
         }
-        public static Song ToModel(this SongDTO songDTO)
+        public static Song ToEntity(this SongDTO songDTO)
         {
             return new Song()
             {

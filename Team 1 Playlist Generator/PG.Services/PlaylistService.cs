@@ -38,7 +38,7 @@ namespace PG.Services
                 throw new ArgumentException($"Playlist with title '{playlistDTO.Title}' already exists.");
             }
 
-            Playlist playlist = playlistDTO.ToModel();
+            Playlist playlist = playlistDTO.ToEntity();
 
             _context.Playlists.Add(playlist);
             await _context.SaveChangesAsync();
@@ -125,7 +125,7 @@ namespace PG.Services
 
         public async Task<bool> GeneratePlaylist(PlaylistDTO playlist)
         {
-            var playlistToAdd = await _context.Playlists.AddAsync(playlist.ToModel());
+            var playlistToAdd = await _context.Playlists.AddAsync(playlist.ToEntity());
             var playlistAdded = playlistToAdd.Entity;
 
             //Algorithm

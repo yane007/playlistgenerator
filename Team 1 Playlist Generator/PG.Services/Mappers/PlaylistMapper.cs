@@ -26,7 +26,7 @@ namespace PG.Services.Mappers
                 Id = playlist.Id
             };
         }
-        public static Playlist ToModel(this PlaylistDTO playlistDTO)
+        public static Playlist ToEntity(this PlaylistDTO playlistDTO)
         {
             return new Playlist()
             {

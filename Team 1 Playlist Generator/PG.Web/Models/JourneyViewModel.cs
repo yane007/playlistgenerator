@@ -5,9 +5,10 @@ using System.Threading.Tasks;
 
 namespace PG.Web.Models
 {
-    public class GenreViewModel
+    public class JourneyViewModel
     {
-        public string Name { get; set; }
+        public string StartLocation { get; set; }
+        public string EndLocation { get; set; }
 
     }
 }

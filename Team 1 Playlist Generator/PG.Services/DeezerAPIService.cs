@@ -35,10 +35,10 @@ namespace PG.Services
             genreString = genreString.ToLower();
             var dbGenreName = await _context.Genres.FirstOrDefaultAsync(x => x.Name == genreString);
 
-            if (!(dbGenreName == null))
-            {
-                return;
-            }
+            //if (!(dbGenreName == null))
+            //{
+            //    return;
+            //}
 
             var client = new HttpClient();
 
@@ -94,8 +94,8 @@ namespace PG.Services
                             }
                             //-----------------------------------------------------------------------------------
 
-                            var isSongNull = await _context.Songs.FirstOrDefaultAsync(x => x.Title == song.Title);
-                            if (isSongNull == null)
+                           // var isSongNull = await _context.Songs.FirstOrDefaultAsync(x => x.Title == song.Title);
+                            if (true)
                             {
                                 await _context.Songs.AddAsync(new Song()
                                 {

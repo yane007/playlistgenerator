@@ -1,0 +1,25 @@
+﻿@model JourneyViewModel
+@{
+    ViewData["Title"] = "GenerateDuration";
+}
+<h1>@ViewData["Title"]</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="StartLocation"></label>
+        <input asp-for="StartLocation" class="form-control" />
+        <span asp-validation-for="StartLocation" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EndLocation"></label>
+        <input asp-for="EndLocation" class="form-control" />
+        <span asp-validation-for="EndLocation" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Calculate Duration</button>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

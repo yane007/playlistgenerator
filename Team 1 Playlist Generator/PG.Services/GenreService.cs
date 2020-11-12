@@ -36,7 +36,7 @@ namespace PG.Services
                 throw new ArgumentException($"Genre with name '{genreDTO.Name}' already exists.");
             }
 
-            _context.Genres.Add(genreDTO.ToModel());
+            _context.Genres.Add(genreDTO.ToEntity());
             await _context.SaveChangesAsync();
 
             return genreDTO;

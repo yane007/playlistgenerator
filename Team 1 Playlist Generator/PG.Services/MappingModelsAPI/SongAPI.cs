@@ -6,7 +6,6 @@ namespace PG.Services.MappingModelsAPI
 {
     public class SongAPI
     {
-        [JsonProperty("title")]
         public string Title { get; set; }
 
         [JsonProperty("link")]

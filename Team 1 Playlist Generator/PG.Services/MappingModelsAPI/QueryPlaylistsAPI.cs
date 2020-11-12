@@ -5,13 +5,13 @@ namespace PG.Services.MappingModelsAPI
 {
     public class QueryPlaylistsAPI
     {
-        [JsonProperty("data")]
+        //[JsonProperty("data")]
         public List<PlaylistLinkAPI> Data { get; set; }
 
-        [JsonProperty("total")]
+        //[JsonProperty("total")]
         public int Total { get; set; }
 
-        [JsonProperty("next")]
+        //[JsonProperty("next")]
         public string Next { get; set; }
     }
 }

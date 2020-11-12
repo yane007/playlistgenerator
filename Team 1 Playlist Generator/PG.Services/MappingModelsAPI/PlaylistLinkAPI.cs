@@ -5,10 +5,10 @@ namespace PG.Services.MappingModelsAPI
 {
     public class PlaylistLinkAPI
     {
-        [JsonProperty("title")]
+        //[JsonProperty("title")]
         public string Title { get; set; }
 
-        [JsonProperty("tracklist")]
+        //[JsonProperty("tracklist")]
         public string Tracklist { get; set; }
     }
 }

@@ -15,7 +15,7 @@ namespace PG.Services.Mappers
                 Name = genre.Name
             };
         }
-        public static Genre ToModel(this GenreDTO genreDTO)
+        public static Genre ToEntity(this GenreDTO genreDTO)
         {
             return new Genre()
             {

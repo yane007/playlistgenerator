@@ -17,7 +17,7 @@ namespace PG.Services.Mappers
                 Type = artist.Type
             };
         }
-        public static Artist ToModel(this ArtistDTO artistDTO)
+        public static Artist ToEntity(this ArtistDTO artistDTO)
         {
             return new Artist()
             {
