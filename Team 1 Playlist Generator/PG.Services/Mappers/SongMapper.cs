@@ -12,26 +12,26 @@ namespace PG.Services.Mappers
         {
             return new SongDTO()
             {
+                Id = song.Id,
                 Title = song.Title,
                 Duration = song.Duration,
                 Rank = song.Rank,
                 Preview = song.Preview,
                 ArtistId = song.ArtistId,
                 GenreId = song.GenreId,
-                Id = song.Id
             };
         }
         public static Song ToEntity(this SongDTO songDTO)
         {
             return new Song()
             {
+                Id = songDTO.Id,
                 Title = songDTO.Title,
                 Duration = songDTO.Duration,
                 Rank = songDTO.Rank,
                 Preview = songDTO.Preview,
                 ArtistId = songDTO.ArtistId,
                 GenreId = songDTO.GenreId,
-                Id = songDTO.Id
             };
         }
     }

@@ -12,6 +12,7 @@ namespace PG.Services.Mappers
         {
             return new PlaylistDTO()
             {
+                Id = playlist.Id,
                 Title = playlist.Title,
                 Description = playlist.Description,
                 Duration = playlist.Duration,
@@ -23,7 +24,6 @@ namespace PG.Services.Mappers
                 Creation_date = playlist.Creation_date,
                 Type = playlist.Type,
                 PlaylistsSongs = playlist.PlaylistsSongs,
-                Id = playlist.Id
             };
         }
         public static Playlist ToEntity(this PlaylistDTO playlistDTO)
