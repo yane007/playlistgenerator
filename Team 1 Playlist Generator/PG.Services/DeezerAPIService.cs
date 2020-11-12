@@ -35,10 +35,10 @@ namespace PG.Services
             genreString = genreString.ToLower();
             var dbGenreName = await _context.Genres.FirstOrDefaultAsync(x => x.Name == genreString);
 
-            //if (!(dbGenreName == null))
-            //{
-            //    return;
-            //}
+            if (!(dbGenreName == null))
+            {
+                return;
+            }
 
             var client = new HttpClient();
 

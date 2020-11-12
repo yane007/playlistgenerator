@@ -35,14 +35,13 @@ namespace PG.Web.Controllers
 
         public async Task<IActionResult> Index()
         {
-            await GetAlbumAsync();
+            //await GetAlbumAsync();
 
             await _roleManager.CreateAsync(new IdentityRole("user"));
             await _roleManager.CreateAsync(new IdentityRole("admin"));
 
 
             IEnumerable<PlaylistDTO> playlistsDTOs = await _playlistService.GetAllPlaylists();
-
             IEnumerable<PlaylistViewModel> playlistsViewModels = playlistsDTOs.Select(x => x.ToViewModel());
 
             return View(playlistsViewModels);

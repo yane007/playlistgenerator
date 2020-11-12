@@ -12,6 +12,6 @@ namespace PG.Services.Contract
         Task<PlaylistDTO> GetPlaylistById(int id);
         Task<PlaylistDTO> Update(int id, PlaylistDTO playlistDTO);
         Task<bool> Delete(int id);
-        Task<bool> GeneratePlaylist(PlaylistDTO playlist);
+        Task<int> GeneratePlaylist(PlaylistDTO playlist);
     }
 }

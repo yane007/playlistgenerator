@@ -26,13 +26,8 @@ namespace PG.Web.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var playlistsDTOs = await _playlistService.GetAllPlaylists();
 
-            var playlistsViewModels = playlistsDTOs.Select(x => x.ToViewModel());
-
-            await _playlistService.GeneratePlaylist(new PlaylistDTO() { Title = "The 5 song playlist"});
-
-            return View(playlistsViewModels);
+            return View();
         }
 
         [Authorize]
