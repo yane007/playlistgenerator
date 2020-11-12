@@ -14,118 +14,106 @@ namespace PG.Web.APIControllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SongsController : ControllerBase
+    public class GenresController : ControllerBase
     {
-        private readonly ISongService songService;
+        private readonly IGenreService genreService;
 
-        public SongsController(ISongService songService)
+        public GenresController(IGenreService genreService)
         {
-            this.songService = songService;
+            this.genreService = genreService;
         }
 
-        //GET api/songs
+        //GET api/genres
         [HttpGet("")]
         public async Task<IActionResult> Get()
         {
-            IEnumerable<SongDTO> songs;
+            IEnumerable<GenreDTO> genres;
             try
             {
-                songs = await this.songService.GetAllSongs();
+                genres = await this.genreService.GetAllGenres();
             }
             catch (Exception)
             {
                 return NotFound();
             }
-            return Ok(songs);
+            return Ok(genres);
         }
 
-        //GET api/songs/id
+        //GET api/genres/id
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            SongDTO song;
+            GenreDTO genre;
             try
             {
-                song = await this.songService.GetSongById(id);
+                genre = await this.genreService.GetGenreById(id);
             }
             catch (Exception)
             {
                 return NotFound();
             }
-            return Ok(song);
+            return Ok(genre);
         }
 
-        //POST api/songs
+        //POST api/genres
         [HttpPost("")]
-        public async Task<IActionResult> Post([FromBody] SongViewModel model)
+        public async Task<IActionResult> Post([FromBody] GenreViewModel model)
         {
             if (model == null)
             {
                 return BadRequest();
             }
 
-            var songDTO = new SongDTO
+            var genreDTO = new GenreDTO
             {
                 Id = model.Id,
-                Title = model.Title,
-                Link = model.Link,
-                Duration = model.Duration,
-                Rank = model.Rank,
-                Preview = model.Preview,
-                ArtistId = model.ArtistId,
-                GenreId = model.GenreId
+                Name = model.Name
             };
 
-            SongDTO song;
+            GenreDTO genre;
             try
             {
-                song = await this.songService.Create(songDTO);
+                genre = await this.genreService.Create(genreDTO);
             }
             catch (Exception)
             {
                 return BadRequest();
             }
-            return Created("post", song);
+            return Created("post", genre);
         }
 
-        //PUT api/songs/id
+        //PUT api/genres/id
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] SongViewModel model)
+        public async Task<IActionResult> Put(int id, [FromBody] GenreViewModel model)
         {
             if (id < 1 || model == null)
             {
                 return BadRequest("Invalid input");
             }
 
-            var songDTO = new SongDTO
+            var genreDTO = new GenreDTO
             {
                 Id = model.Id,
-                Title = model.Title,
-                Link = model.Link,
-                Duration = model.Duration,
-                Rank = model.Rank,
-                Preview = model.Preview,
-                ArtistId = model.ArtistId,
-                GenreId = model.GenreId
+                Name = model.Name
             };
 
-            SongDTO updatedSongDTO;
+            GenreDTO updatedGenreDTO;
             try
             {
-                updatedSongDTO = await this.songService.Update(id, songDTO);
+                updatedGenreDTO = await this.genreService.Update(id, genreDTO);
             }
             catch (Exception)
             {
                 return NotFound();
             }
-            return Ok(updatedSongDTO);
+            return Ok(updatedGenreDTO);
         }
 
         //DELETE api/songs/id
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var result = await this.songService.Delete(id);
+            var result = await this.genreService.Delete(id);
 
             if (result == true)
             {

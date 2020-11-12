@@ -12,6 +12,7 @@ namespace PG.Services.Mappers
         {
             return new GenreDTO()
             {
+                Id = genre.Id,
                 Name = genre.Name
             };
         }
@@ -19,6 +20,7 @@ namespace PG.Services.Mappers
         {
             return new Genre()
             {
+                Id = genreDTO.Id,
                 Name = genreDTO.Name
             };
         }
