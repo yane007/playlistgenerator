@@ -136,8 +136,8 @@ namespace PG.Services
 
 
             //TODO: 
-            double metalPercentage = 100 / 100.0;
-            double rockPercentage = 0 / 100.0;
+            double metalPercentage = 20 / 100.0;
+            double rockPercentage = 80 / 100.0;
             double popPercentage = 0 / 100.0;
 
             bool useTopTracks = true;
@@ -148,20 +148,36 @@ namespace PG.Services
             if (useTopTracks == true && allowSameArtist == true)
             {
 
+                //var metalSongs = _context.Songs.Where(x => x.Genre.Name == "metal" && x.Rank == 100000).ToList();
+                //(List<Song> songs, int[] offsetsNew) metal = ExtractSongs(tripTime, offsetsMeteal[0], offsetsMeteal[1], metalPercentage, metalSongs);
+
+
+                //var rockSongs = _context.Songs.Where(x => x.Genre.Name == "rock" && x.Rank == 100000).ToList();
+                //offsetsRock[0] += metal.offsetsNew[0];
+                //offsetsRock[1] += metal.offsetsNew[1];
+                //(List<Song> songs, int[] offsetsNew) rock = ExtractSongs(tripTime, offsetsRock[0], offsetsRock[1], rockPercentage, rockSongs);
+
+
+                //var popSongs = _context.Songs.Where(x => x.Genre.Name == "pop" && x.Rank == 100000).ToList();
+                //offsetsPop[0] += rock.offsetsNew[0];
+                //offsetsPop[1] += rock.offsetsNew[1];
+                //(List<Song> songs, int[] offsetsNew) pop = ExtractSongs(tripTime, offsetsPop[0], offsetsPop[1], popPercentage, popSongs);
+                var popSongs = _context.Songs.Where(x => x.Genre.Name == "pop" && x.Rank == 100000).ToList();
+                (List<Song> songs, int[] offsetsNew) pop = ExtractSongs(tripTime, offsetsPop[0], offsetsPop[1], popPercentage, popSongs);
+
+
                 var metalSongs = _context.Songs.Where(x => x.Genre.Name == "metal" && x.Rank == 100000).ToList();
+                offsetsPop[0] += pop.offsetsNew[0];
+                offsetsPop[1] += pop.offsetsNew[1];
                 (List<Song> songs, int[] offsetsNew) metal = ExtractSongs(tripTime, offsetsMeteal[0], offsetsMeteal[1], metalPercentage, metalSongs);
 
-
                 var rockSongs = _context.Songs.Where(x => x.Genre.Name == "rock" && x.Rank == 100000).ToList();
-                offsetsRock[0] += metal.offsetsNew[0];
-                offsetsRock[1] += metal.offsetsNew[1];
+                offsetsRock[0] += pop.offsetsNew[0];
+                offsetsRock[1] += pop.offsetsNew[1];
                 (List<Song> songs, int[] offsetsNew) rock = ExtractSongs(tripTime, offsetsRock[0], offsetsRock[1], rockPercentage, rockSongs);
 
 
-                var popSongs = _context.Songs.Where(x => x.Genre.Name == "pop" && x.Rank == 100000).ToList();
-                offsetsPop[0] += rock.offsetsNew[0];
-                offsetsPop[1] += rock.offsetsNew[1];
-                (List<Song> songs, int[] offsetsNew) pop = ExtractSongs(tripTime, offsetsPop[0], offsetsPop[1], popPercentage, popSongs);
+
 
                 foreach (var item in metal.songs)
                 {
@@ -250,6 +266,7 @@ namespace PG.Services
             }
 
 
+
             int realTotalDuration = 0;
             foreach (var song in playlistWithSongs)
             {
@@ -266,7 +283,7 @@ namespace PG.Services
             await _context.SaveChangesAsync();
         }
 
-        private static (List<Song>, int[]) ExtractSongs(int tripTime, int allowedOffsetLess, int allowedOffsetMore, double popPercentage, List<Song> result)
+        private static (List<Song>, int[]) ExtractSongs(int tripTime, int allowedOffsetLess, int allowedOffsetMore, double percentage, List<Song> result)
         {
             if (result.Count() == 0)
             {
@@ -276,8 +293,8 @@ namespace PG.Services
             }
             Shuffle(result);
 
-            //Процентите не трябва да са по-малки от 0.X
-            int secondsAllowed = (int)(tripTime * popPercentage);
+
+            int secondsAllowed = (int)(tripTime * percentage);
 
             int count = 0;
             var shuffledResult = result.TakeWhile(x => (count = count + x.Duration) <= secondsAllowed).ToList();
@@ -304,6 +321,7 @@ namespace PG.Services
                 while (true)
                 {
                     int newSongDuration = songsToTryAdd.ToList()[0].Duration;
+
                     //ако надвиши максимума изцяло, взимаме друга песен
                     if (newSongDuration > allowedOffsetLess + allowedOffsetMore)
                     {
@@ -315,8 +333,6 @@ namespace PG.Services
 
                             shuffledResult.RemoveAt(shuffledResult.Count() - 1);
                             songsCount = shuffledResult.Count();
-
-
                         }
                         else
                         {

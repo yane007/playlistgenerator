@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using PG.Models.Abstract;
+﻿using PG.Models.Abstract;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 

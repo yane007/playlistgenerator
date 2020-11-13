@@ -54,7 +54,7 @@ namespace PG.Web.Controllers
         [Authorize]
         public async Task<IActionResult> Create(bool test = true)
         {
-            for (int i = 0; i < 1000; i++)
+            for (int i = 0; i < 100; i++)
             {
                 await _playlistService.GeneratePlaylist(new PlaylistDTO() { Title = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff") });
                 Thread.Sleep(100);
