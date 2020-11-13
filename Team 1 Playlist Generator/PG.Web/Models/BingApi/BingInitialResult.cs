@@ -8,7 +8,7 @@ namespace DeezerApiData.Models.BingApi
 {
     public class BingInitialResult
     {
-        //[JsonPropertyName("resourceSets")]
+        [JsonPropertyName("resourceSets")]
         public IEnumerable<BingResource> BingResources { get; set; }
     }
 }

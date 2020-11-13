@@ -4,7 +4,7 @@ namespace DeezerApiData.Models.BingApi.LocationBingApi
 {
     public class LocationResource
     {
-       // [JsonPropertyName("point")]
+       [JsonPropertyName("point")]
         public ResourcePoint ResourcePoint { get; set; }
     }
 }

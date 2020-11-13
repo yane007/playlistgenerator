@@ -104,7 +104,7 @@ namespace PG.Web.Controllers
 
             var distance = distanceResult.BingResources.First().TravelResultsCollections.First().Results.First().TravelDuration;
 
-            return View(distance);
+            return new JsonResult(distance);
         }
     }
 }

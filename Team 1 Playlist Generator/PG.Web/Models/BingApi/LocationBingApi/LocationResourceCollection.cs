@@ -6,7 +6,7 @@ namespace DeezerApiData.Models.BingApi.LocationBingApi
 {
     public class LocationResourceCollection
     {
-       // [JsonPropertyName("resources")]
+       [JsonPropertyName("resources")]
         public IEnumerable<LocationResource> LocationResources { get; set; }        
     }
 }

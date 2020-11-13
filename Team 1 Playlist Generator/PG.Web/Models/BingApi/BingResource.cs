@@ -6,7 +6,7 @@ namespace DeezerApiData.Models.BingApi
 {
     public class BingResource
     {
-       // [JsonPropertyName("resources")]
+        [JsonPropertyName("resources")]
         public IEnumerable<TravelResultsCollection> TravelResultsCollections { get; set; }
     }
 }
