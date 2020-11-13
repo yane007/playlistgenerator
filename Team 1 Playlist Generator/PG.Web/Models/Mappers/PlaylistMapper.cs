@@ -26,5 +26,23 @@ namespace PG.Web.Models.Mappers
                 PlaylistsSongs = playlistDTO.PlaylistsSongs,
             };
         }
+
+        public static PlaylistDTO ToDTO(this PlaylistViewModel playlistViewModel)
+        {
+            return new PlaylistDTO()
+            {
+                Title = playlistViewModel.Title,
+                Description = playlistViewModel.Description,
+                Duration = playlistViewModel.Duration,
+                Fans = playlistViewModel.Fans,
+                Link = playlistViewModel.Link,
+                Share = playlistViewModel.Share,
+                Picture = playlistViewModel.Picture,
+                Tracklist = playlistViewModel.Tracklist,
+                Creation_date = playlistViewModel.Creation_date,
+                Type = playlistViewModel.Type,
+                PlaylistsSongs = playlistViewModel.PlaylistsSongs,
+            };
+        }
     }
 }

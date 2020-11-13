@@ -38,10 +38,10 @@ namespace PG.Services
                 throw new ArgumentException($"Song with title '{songDTO.Title}' already exists.");
             }
 
-            _context.Songs.Add(songDTO.ToEntity());
+            var song = await _context.Songs.AddAsync(songDTO.ToEntity());
             await _context.SaveChangesAsync();
 
-            return songDTO;
+            return song.Entity.ToDTO();
         }
 
         public async Task<IEnumerable<SongDTO>> GetAllSongs()
@@ -88,10 +88,10 @@ namespace PG.Services
 
             await _context.SaveChangesAsync();
 
-            return songDTO;
+            return song.ToDTO();
         }
 
-        public async Task<bool> Delete(int id)
+        public async Task Delete(int id)
         {
             var expectedSong = await _context.Songs.FirstOrDefaultAsync(x => x.Id == id);
             if (expectedSong == null)
@@ -105,8 +105,6 @@ namespace PG.Services
 
             expectedSong.IsDeleted = true;
             await _context.SaveChangesAsync();
-
-            return true; 
         }
     }
 }

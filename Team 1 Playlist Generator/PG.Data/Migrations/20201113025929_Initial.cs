@@ -282,7 +282,6 @@ namespace PG.Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    IsDeleted = table.Column<bool>(nullable: false),
                     PlaylistId = table.Column<int>(nullable: false),
                     SongId = table.Column<int>(nullable: false)
                 },

@@ -35,7 +35,7 @@ namespace PG.Web.Controllers
 
         public async Task<IActionResult> Index()
         {
-            //await GetAlbumAsync();
+            await GetAlbumAsync();
 
             await _roleManager.CreateAsync(new IdentityRole("user"));
             await _roleManager.CreateAsync(new IdentityRole("admin"));
@@ -62,8 +62,8 @@ namespace PG.Web.Controllers
         public async Task GetAlbumAsync()
         {
             await _apiService.ExtractSongsFromPlaylists("pop");
-            //await _apiService.ExtractSongsFromPlaylists("rock");
-            //await _apiService.ExtractSongsFromPlaylists("metal");
+            await _apiService.ExtractSongsFromPlaylists("rock");
+            await _apiService.ExtractSongsFromPlaylists("metal");
         }
 
     }

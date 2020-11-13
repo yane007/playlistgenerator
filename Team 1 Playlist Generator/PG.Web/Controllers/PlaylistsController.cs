@@ -1,6 +1,8 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Net.Http;
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using DeezerApiData.Models.BingApi;
 using DeezerApiData.Models.BingApi.LocationBingApi;
@@ -38,11 +40,27 @@ namespace PG.Web.Controllers
                 Response.Redirect("Login.aspx");
             }
 
+
+            //await _playlistService.GeneratePlaylist(new PlaylistDTO() { Title = "The 5 song playlist" });
+
             var genresDTOs = await _genreService.GetAllGenres();
 
             var genresViewModels = genresDTOs.Select(x => x.ToViewModel());
 
             return View(genresViewModels);
+        }
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> Create(bool test = true)
+        {
+            for (int i = 0; i < 1000; i++)
+            {
+                await _playlistService.GeneratePlaylist(new PlaylistDTO() { Title = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff") });
+                Thread.Sleep(100);
+            }
+            
+            return RedirectToAction("Index");
         }
         public IActionResult FindDuration()
         {

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PG.Data.Context;
+using PG.Models;
 using PG.Services.Contract;
 using PG.Services.DTOs;
 using PG.Services.Mappers;
@@ -18,6 +19,8 @@ namespace PG.Services
         {
             this._context = context;
         }
+
+
         public async Task<ArtistDTO> Create(ArtistDTO artistDTO)
         {
             if (artistDTO == null)
@@ -35,13 +38,13 @@ namespace PG.Services
                 throw new ArgumentException($"Genre with name '{artistDTO.Name}' already exists.");
             }
 
-            _context.Artist.Add(artistDTO.ToEntity());
+            var artist = await _context.Artist.AddAsync(artistDTO.ToEntity());
             await _context.SaveChangesAsync();
 
-            return artistDTO;
+            return artist.Entity.ToDTO();
         }
 
-        public async Task<bool> Delete(int id)
+        public async Task Delete(int id)
         {
             var expectedArtist = await _context.Artist.FirstOrDefaultAsync(x => x.Id == id);
             if (expectedArtist == null)
@@ -55,8 +58,6 @@ namespace PG.Services
 
             expectedArtist.IsDeleted = true;
             await _context.SaveChangesAsync();
-
-            return true;
         }
 
         public async Task<IEnumerable<ArtistDTO>> GetAllArtists()
@@ -91,7 +92,7 @@ namespace PG.Services
 
             await _context.SaveChangesAsync();
 
-            return artistDTO;
+            return artist.ToDTO();
         }
     }
 }

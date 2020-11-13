@@ -1,4 +1,5 @@
-﻿using PG.Services.DTOs;
+﻿using PG.Models;
+using PG.Services.DTOs;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -10,6 +11,6 @@ namespace PG.Services.Contract
         Task<ArtistDTO> GetArtistById(int id);
         Task<IEnumerable<ArtistDTO>> GetAllArtists();
         Task<ArtistDTO> Update(int id, ArtistDTO artistDTO);
-        Task<bool> Delete(int id);
+        Task Delete(int id);
     }
 }

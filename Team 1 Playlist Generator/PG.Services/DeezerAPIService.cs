@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 using PG.Data.Context;
 using PG.Models;
 using PG.Services.Contract;
-using PG.Services.MappingModelsAPI; 
+using PG.Services.MappingModelsAPI;
 using System.Linq;
 using System.Net.Http;
 using System.Security.Cryptography.X509Certificates;
@@ -26,11 +26,14 @@ namespace PG.Services
         /// Creates new Creator/Artist accordingly to the song's specifications.
         /// </summary>
         /// <returns></returns>
-        public async Task ExtractSongsFromPlaylists(string genreString) 
+        public async Task ExtractSongsFromPlaylists(string genreString)
         {
+
             var album = new Album { Name = "Album1" };
-            await _context.Albums.AddAsync(album);
             await _context.SaveChangesAsync();
+
+            var a = await _context.Albums.AddAsync(album);
+
 
             genreString = genreString.ToLower();
             var dbGenreName = await _context.Genres.FirstOrDefaultAsync(x => x.Name == genreString);
@@ -47,7 +50,7 @@ namespace PG.Services
                 var responseAsString = await response.Content.ReadAsStringAsync();
 
                 var result = JsonConvert.DeserializeObject<QueryPlaylistsAPI>(responseAsString);
-                 
+
                 //-----------------------------------------------------------------------------------
                 //Get genre, if not found we create one. We need its Id for assinging it to a song.
                 var expectedGenre = _context.Genres.FirstOrDefault(x => x.Name.ToLower().Equals(genreString));
@@ -94,8 +97,8 @@ namespace PG.Services
                             }
                             //-----------------------------------------------------------------------------------
 
-                           // var isSongNull = await _context.Songs.FirstOrDefaultAsync(x => x.Title == song.Title);
-                            if (true)
+                            var isSongNull = await _context.Songs.FirstOrDefaultAsync(x => x.Title == song.Title);
+                            if (isSongNull == null)
                             {
                                 await _context.Songs.AddAsync(new Song()
                                 {
@@ -107,9 +110,9 @@ namespace PG.Services
 
                                     GenreId = expectedGenre.Id,
                                     ArtistId = expectedArtist.Id,
-                                    AlbumId = 1
+                                    AlbumId = a.Entity.Id
                                 });
-                                
+
                             }
 
                         }

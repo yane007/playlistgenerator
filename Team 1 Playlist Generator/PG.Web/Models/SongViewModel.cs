@@ -8,22 +8,6 @@ namespace PG.Web.Models
 {
     public class SongViewModel
     {
-        public SongViewModel()
-        {
-
-        }
-        public SongViewModel(SongDTO song)
-        {
-            Id = song.Id;
-            Title = song.Title;
-            Link = song.Link;
-            Duration = song.Duration;
-            Rank = song.Rank;
-            Preview = song.Preview;
-            ArtistId = song.ArtistId;
-            GenreId = song.GenreId;
-        }
-
         public int Id { get; set; }
 
         public string Title { get; set; }

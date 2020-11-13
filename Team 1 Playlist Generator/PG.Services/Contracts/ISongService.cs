@@ -11,6 +11,6 @@ namespace PG.Services.Contract
         Task<IEnumerable<SongDTO>> GetSongsByArtist(int artistId);
         Task<SongDTO> GetSongById(int id);
         Task<SongDTO> Update(int id, SongDTO songDTO);
-        Task<bool> Delete(int id);
+        Task Delete(int id);
     }
 }

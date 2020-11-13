@@ -21,7 +21,7 @@ namespace PG.Services
         }
 
 
-        public async Task<PlaylistDTO> Create(PlaylistDTO playlistDTO)
+        public async Task<Playlist> Create(PlaylistDTO playlistDTO)
         {
             if (playlistDTO == null)
             {
@@ -32,18 +32,18 @@ namespace PG.Services
                 throw new ArgumentOutOfRangeException("Playlist's title needs to be shorter than 50 characters.");
             }
 
-            var existingPlaylist = _context.Playlists.FirstOrDefaultAsync(x => x.Title == playlistDTO.Title);
+            var existingPlaylist = await _context.Playlists.FirstOrDefaultAsync(x => x.Title == playlistDTO.Title);
             if (existingPlaylist != null)
             {
                 throw new ArgumentException($"Playlist with title '{playlistDTO.Title}' already exists.");
             }
 
-            Playlist playlist = playlistDTO.ToEntity();
+            Playlist playlistToAdd = playlistDTO.ToEntity();
 
-            _context.Playlists.Add(playlist);
+            var playlist = await _context.Playlists.AddAsync(playlistToAdd);
             await _context.SaveChangesAsync();
 
-            return playlistDTO;
+            return playlist.Entity;
         }
 
         public async Task<IEnumerable<PlaylistDTO>> GetAllPlaylists()
@@ -102,10 +102,10 @@ namespace PG.Services
 
             await _context.SaveChangesAsync();
 
-            return playlistDTO;
+            return playlist.ToDTO();
         }
 
-        public async Task<bool> Delete(int id)
+        public async Task Delete(int id)
         {
             var expectedPlaylist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == id);
             if (expectedPlaylist == null)
@@ -119,16 +119,13 @@ namespace PG.Services
 
             expectedPlaylist.IsDeleted = true;
             await _context.SaveChangesAsync();
-
-            return true;
         }
 
-        public async Task<int> GeneratePlaylist(PlaylistDTO playlist)
+        public async Task GeneratePlaylist(PlaylistDTO playlist)
         {
-            var playlistToAdd = await _context.Playlists.AddAsync(playlist.ToEntity());
-            var playlistAdded = playlistToAdd.Entity;
+            var playlistAdded = await Create(playlist);
 
-            int tripTime = 9800;
+            int tripTime = 10000;
             int allowedOffsetMore = 5 * 60; // 5 Min +
             int allowedOffsetLess = 5 * 60; // 5 Min -
 
@@ -139,9 +136,9 @@ namespace PG.Services
 
 
             //TODO: 
-            double metalPercentage = 80 / 100.0;
+            double metalPercentage = 100 / 100.0;
             double rockPercentage = 0 / 100.0;
-            double popPercentage = 20 / 100.0;
+            double popPercentage = 0 / 100.0;
 
             bool useTopTracks = true;
             bool allowSameArtist = true;
@@ -267,7 +264,6 @@ namespace PG.Services
             playlistAdded.Duration = realTotalDuration;
 
             await _context.SaveChangesAsync();
-            return realTotalDuration;
         }
 
         private static (List<Song>, int[]) ExtractSongs(int tripTime, int allowedOffsetLess, int allowedOffsetMore, double popPercentage, List<Song> result)
@@ -312,12 +308,19 @@ namespace PG.Services
                     if (newSongDuration > allowedOffsetLess + allowedOffsetMore)
                     {
                         songsCount++;
-                        var songsToTryAdd2 = result.Skip(songsCount).Take(1);
+                        var songsToTryAdd2 = result.Skip(songsCount);
                         if (songsToTryAdd2 == null || songsToTryAdd2.Count() == 0)
                         {
-                            int[] offsets = { allowedOffsetLess -= secondsAllowed - songsDuration, allowedOffsetMore };
+                            //няма песен която да пасва
 
-                            return (shuffledResult, offsets);
+                            shuffledResult.RemoveAt(shuffledResult.Count() - 1);
+                            songsCount = shuffledResult.Count();
+
+
+                        }
+                        else
+                        {
+                            songsToTryAdd = songsToTryAdd2;
                         }
                         continue;
                     }
@@ -326,15 +329,16 @@ namespace PG.Services
                         //setvame pesenta, vliza v diapazona
                         shuffledResult.Add(songsToTryAdd.First());
 
-                        if (newSongDuration >= allowedOffsetLess)
+                        int newSongDuration2 = songsToTryAdd.First().Duration;
+
+                        if (newSongDuration2 >= allowedOffsetLess)
                         {
+                            allowedOffsetMore -= (newSongDuration2 - allowedOffsetLess);
                             allowedOffsetLess = 0;
-                            //TODO:              \/
-                            allowedOffsetMore -= 300 - newSongDuration;
                         }
                         else
                         {
-                            allowedOffsetLess -= newSongDuration;
+                            allowedOffsetLess -= songsToTryAdd.First().Duration;
                         }
                         int[] offsets = { allowedOffsetLess, allowedOffsetMore };
 
@@ -345,11 +349,15 @@ namespace PG.Services
                 }
 
             }
+            else
+            {
+                int[] arr = { allowedOffsetLess += secondsAllowed-songsDuration, allowedOffsetMore };
+
+                return (shuffledResult, arr);
+            }
 
 
-            int[] arr = { allowedOffsetLess, allowedOffsetMore };
 
-            return (shuffledResult, arr);
         }
 
         private static (List<Song>, int[]) ExtractSongsUniqueArtist(int tripTime, int allowedOffsetLess,
@@ -440,7 +448,7 @@ namespace PG.Services
         //Това не трябва да е тука, ама за сега ще е :D
         private static readonly Random rng = new Random();
 
-        public static void Shuffle<T>(IList<T> list)
+        private static void Shuffle<T>(IList<T> list)
         {
             int n = list.Count;
             while (n > 1)

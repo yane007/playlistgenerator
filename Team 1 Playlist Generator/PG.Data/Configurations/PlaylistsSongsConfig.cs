@@ -3,16 +3,15 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using PG.Models;
 using System;
 using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-namespace PG.Data.Configuration
+namespace PG.Data.Configurations
 {
-    public class PlaylistAndSongRelationConfig : IEntityTypeConfiguration<PlaylistsSongs>
+    public class PlaylistsSongsConfig : IEntityTypeConfiguration<PlaylistsSongs>
     {
         public void Configure(EntityTypeBuilder<PlaylistsSongs> builder)
         {
-            builder.HasKey(z => new { z.PlaylistId, z.SongId});
+            builder.HasKey(z => new { z.PlaylistId, z.SongId });
 
             //One to many PlaylistAndSongRelations - Song
             builder.HasOne(z => z.Song)
@@ -27,4 +26,5 @@ namespace PG.Data.Configuration
                 .OnDelete(DeleteBehavior.Restrict);
         }
     }
+
 }

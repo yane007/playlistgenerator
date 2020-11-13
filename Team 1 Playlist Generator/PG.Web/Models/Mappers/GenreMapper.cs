@@ -15,5 +15,13 @@ namespace PG.Web.Models.Mappers
                 Name = genreDTO.Name,
             };
         }
+
+        public static GenreDTO ToDTO(this GenreViewModel genreDTO)
+        {
+            return new GenreDTO()
+            {
+                Name = genreDTO.Name,
+            };
+        }
     }
 }

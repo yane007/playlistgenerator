@@ -16,13 +16,13 @@ else
 {
     @foreach (var item in Model)
     {
-        <p>@item.Title</p>
+        <p>@item.Title | Duration of: @item.Duration</p>
 
         @foreach (var song in item.PlaylistsSongs)
         {
             <div style="display: flex; flex-direction:row">
                 <p>@song.Song.Title : </p>
-                <p>@song.Song.Preview</p>
+                <a href=@song.Song.Preview>Click to play</a>
             </div>
         }
     }
