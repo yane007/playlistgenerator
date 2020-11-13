@@ -4,7 +4,7 @@ namespace DeezerApiData.Models.BingApi
 {
     public class TravelResult
     {
-      //  [JsonPropertyName("travelDuration")]
+      [JsonPropertyName("travelDuration")]
         public int TravelDuration { get; set; }
     }
 }

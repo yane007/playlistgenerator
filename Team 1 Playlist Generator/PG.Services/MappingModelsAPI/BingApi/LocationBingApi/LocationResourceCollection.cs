@@ -4,9 +4,9 @@ using System.Text.Json.Serialization;
 
 namespace DeezerApiData.Models.BingApi.LocationBingApi
 {
-    public class ResourcePoint
+    public class LocationResourceCollection
     {
-       // [JsonPropertyName("coordinates")]
-        public IEnumerable<decimal> Coordinates { get; set; }
+       [JsonPropertyName("resources")]
+        public IEnumerable<LocationResource> LocationResources { get; set; }        
     }
 }
