@@ -47,7 +47,12 @@ namespace PG.Web.Controllers
 
             var genresViewModels = genresDTOs.Select(x => x.ToViewModel());
 
-            return View(genresViewModels);
+            var playlistGenerator = new PlaylistGeneratorViewModel();
+
+            playlistGenerator.ganres = genresViewModels.ToList();
+
+
+            return View(playlistGenerator);
         }
 
         [HttpPost]
@@ -68,7 +73,7 @@ namespace PG.Web.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> FindDuration(JourneyViewModel model)
+        public async Task<IActionResult> FindDuration(PlaylistGeneratorViewModel model)
         {
             var startingUrl = $"https://dev.virtualearth.net/REST/v1/Locations/{model.StartLocation}?key=AqYHIDdNVo4xufKpBNAuFfBrGtqJw_fJm45HlPU25Mrc-YSBHO8VcDK5zuHaXt4D";
             var endingUrl = $"https://dev.virtualearth.net/REST/v1/Locations/{model.EndLocation}?key=AqYHIDdNVo4xufKpBNAuFfBrGtqJw_fJm45HlPU25Mrc-YSBHO8VcDK5zuHaXt4D";
