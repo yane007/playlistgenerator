@@ -8,11 +8,11 @@ namespace PG.Web.APIControllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class APIGenresController : ControllerBase
+    public class GenresController : ControllerBase
     {
         private readonly IGenreService _genreService;
 
-        public APIGenresController(IGenreService genreService)
+        public GenresController(IGenreService genreService)
         {
             _genreService = genreService;
         }
@@ -37,7 +37,7 @@ namespace PG.Web.APIControllers
 
         //POST api/genres
         [HttpPost("")]
-        public async Task<IActionResult> Create([FromBody] GenreViewModel model)
+        public async Task<IActionResult> CreateGenre([FromBody] GenreViewModel model)
         {
             var genre = await _genreService.Create(model.ToDTO());
 
@@ -46,7 +46,7 @@ namespace PG.Web.APIControllers
 
         //PUT api/genres/id
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] GenreViewModel model)
+        public async Task<IActionResult> UpdateGenre(int id, [FromBody] GenreViewModel model)
         {
             var genre = await _genreService.Update(id, model.ToDTO());
 
@@ -55,7 +55,7 @@ namespace PG.Web.APIControllers
 
         //DELETE api/songs/id
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> DeleteGenre(int id)
         {
             await _genreService.Delete(id);
 

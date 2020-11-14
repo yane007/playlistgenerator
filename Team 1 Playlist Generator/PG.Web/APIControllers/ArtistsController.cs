@@ -9,11 +9,11 @@ namespace PG.Web.APIControllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class APIArtistsController : ControllerBase
+    public class ArtistsController : ControllerBase
     {
         private readonly IArtistService _artistService;
 
-        public APIArtistsController(IArtistService artistService)
+        public ArtistsController(IArtistService artistService)
         {
             _artistService = artistService;
         }
@@ -38,7 +38,7 @@ namespace PG.Web.APIControllers
 
         //POST api/artists
         [HttpPost("")]
-        public async Task<IActionResult> Create([FromBody] ArtistViewModel model)
+        public async Task<IActionResult> CreateArtist([FromBody] ArtistViewModel model)
         {
             var createdArtist = await _artistService.Create(model.ToDTO());
 
@@ -47,7 +47,7 @@ namespace PG.Web.APIControllers
 
         //PUT api/artists/id
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] ArtistViewModel artistModel)
+        public async Task<IActionResult> UpdateArtist(int id, [FromBody] ArtistViewModel artistModel)
         {
             var artist = await _artistService.Update(id, artistModel.ToDTO());
 
@@ -56,7 +56,7 @@ namespace PG.Web.APIControllers
 
         //DELETE api/artists/id
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> DeleteArtist(int id)
         {
             await _artistService.Delete(id);
 

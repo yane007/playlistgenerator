@@ -51,7 +51,7 @@ namespace PG.Services
             {
                 throw new ArgumentNullException($"Artist with id {id} was not found.");
             }
-            if (expectedArtist.IsDeleted == true)
+            if (expectedArtist.IsDeleted)
             {
                 throw new ArgumentException($"Artist with id {id} is already deleted.");
             }

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PG.Models.Abstract
 {
-    public class Entity
+    public abstract class Entity
     {
         //[Key]
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]

@@ -9,11 +9,11 @@ namespace PG.Web.APIControllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class APISongsController : ControllerBase
+    public class SongsController : ControllerBase
     {
         private readonly ISongService _songService;
 
-        public APISongsController(ISongService songService)
+        public SongsController(ISongService songService)
         {
             _songService = songService;
         }
@@ -38,7 +38,7 @@ namespace PG.Web.APIControllers
 
         //POST api/songs
         [HttpPost("")]
-        public async Task<IActionResult> Create([FromBody] SongViewModel model)
+        public async Task<IActionResult> CreateSong([FromBody] SongViewModel model)
         {
             var song = await _songService.Create(model.ToDTO());
 
@@ -47,7 +47,7 @@ namespace PG.Web.APIControllers
 
         //PUT api/songs/id
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] SongViewModel model)
+        public async Task<IActionResult> UpdateSong(int id, [FromBody] SongViewModel model)
         {
             var song = await _songService.Update(id, model.ToDTO());
 
@@ -56,7 +56,7 @@ namespace PG.Web.APIControllers
 
         //DELETE api/songs/id
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> DeleteSong(int id)
         {
             await _songService.Delete(id);
 

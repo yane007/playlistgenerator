@@ -9,11 +9,11 @@ namespace PG.Web.APIControllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class APIPlaylistsController : ControllerBase
+    public class PlaylistsController : ControllerBase
     {
         private readonly IPlaylistService _playlistService;
 
-        public APIPlaylistsController(IPlaylistService playlistService)
+        public PlaylistsController(IPlaylistService playlistService)
         {
             _playlistService = playlistService;
         }
@@ -38,7 +38,7 @@ namespace PG.Web.APIControllers
 
         //POST api/playlists
         [HttpPost("")]
-        public async Task<IActionResult> Create([FromBody] PlaylistViewModel model)
+        public async Task<IActionResult> CreatePlaylist([FromBody] PlaylistViewModel model)
         {
             var playlist = await _playlistService.Create(model.ToDTO());
 
@@ -47,7 +47,7 @@ namespace PG.Web.APIControllers
 
         //PUT api/playlists/id
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] PlaylistViewModel model)
+        public async Task<IActionResult> UpdatePlaylist(int id, [FromBody] PlaylistViewModel model)
         {
             var playlist = await _playlistService.Update(id, model.ToDTO());
 
@@ -56,7 +56,7 @@ namespace PG.Web.APIControllers
 
         //DELETE api/playlists/id
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> DeletePlaylist(int id)
         {
             await _playlistService.Delete(id);
 

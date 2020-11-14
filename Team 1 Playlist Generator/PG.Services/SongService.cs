@@ -98,7 +98,7 @@ namespace PG.Services
             {
                 throw new ArgumentNullException($"Song with id {id} was not found.");
             }
-            if (expectedSong.IsDeleted == true)
+            if (expectedSong.IsDeleted)
             {
                 throw new ArgumentException($"Song with id {id} is already deleted.");
             }
