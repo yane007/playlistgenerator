@@ -1,5 +1,4 @@
-﻿using PG.Models;
-using PG.Services.DTOs;
+﻿using PG.Services.DTOs;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

@@ -1,13 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PG.Data.Context;
-using PG.Models;
 using PG.Services.Contract;
 using PG.Services.DTOs;
 using PG.Services.Mappers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace PG.Services
@@ -63,7 +61,7 @@ namespace PG.Services
 
         public async Task<IEnumerable<GenreDTO>> GetAllGenres()
         {
-            return await  _context.Genres.Where(x => x.IsDeleted == false)
+            return await _context.Genres.Where(x => x.IsDeleted == false)
                                   .Select(x => x.ToDTO())
                                   .ToListAsync();
         }

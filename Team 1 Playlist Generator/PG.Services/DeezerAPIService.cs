@@ -112,14 +112,12 @@ namespace PG.Services
                                     ArtistId = expectedArtist.Id,
                                     AlbumId = a.Entity.Id
                                 });
-
                             }
-
                         }
                         await _context.SaveChangesAsync();
                         //-----------------------------------------------------------------------------------
-                        System.Threading.Thread.Sleep(1000);
                     }
+                    System.Threading.Thread.Sleep(150);
                 }
             }
         }

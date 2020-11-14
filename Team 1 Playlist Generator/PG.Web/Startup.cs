@@ -38,6 +38,8 @@ namespace PG.Web
             services.AddScoped<IGenreService, GenreService>();
             services.AddScoped<IPlaylistService, PlaylistService>();
             services.AddScoped<ISongService, SongService>();
+            services.AddScoped<IBingMapsAPIService, BingMapsAPIService>();
+
 
 
             services.AddDefaultIdentity<User>().AddRoles<IdentityRole>().AddEntityFrameworkStores<PGDbContext>();

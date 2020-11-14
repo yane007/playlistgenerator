@@ -90,15 +90,15 @@ namespace PG.Services
             }
 
             playlist.Title = playlistDTO.Title;
-            playlist.Description = playlistDTO.Description;
+            //playlist.Description = playlistDTO.Description;
             playlist.Duration = playlistDTO.Duration;
-            playlist.Fans = playlistDTO.Fans;
-            playlist.Link = playlistDTO.Link;
-            playlist.Share = playlistDTO.Share;
+            //playlist.Fans = playlistDTO.Fans;
+            //playlist.Link = playlistDTO.Link;
+            //playlist.Share = playlistDTO.Share;
             playlist.Picture = playlistDTO.Picture;
-            playlist.Tracklist = playlistDTO.Tracklist;
-            playlist.Creation_date = playlistDTO.Creation_date;
-            playlist.Type = playlistDTO.Type;
+            //playlist.Tracklist = playlistDTO.Tracklist;
+            //playlist.Creation_date = playlistDTO.Creation_date;
+            //playlist.Type = playlistDTO.Type;
 
             await _context.SaveChangesAsync();
 
@@ -121,145 +121,196 @@ namespace PG.Services
             await _context.SaveChangesAsync();
         }
 
-        public async Task GeneratePlaylist(PlaylistDTO playlist)
+        public async Task GeneratePlaylist(int timeForTrip, string playlistName, int metalPercentagee,
+            int rockPercentagee, int popPercentagee, bool topTracks, bool sameArtist)
         {
-            var playlistAdded = await Create(playlist);
+            var playlistAdded = await Create(new PlaylistDTO { Title = playlistName });
 
-            int tripTime = 10000;
+            int tripTime = timeForTrip;
             int allowedOffsetMore = 5 * 60; // 5 Min +
             int allowedOffsetLess = 5 * 60; // 5 Min -
 
             //TODO: 
-            int[] offsetsMeteal = { allowedOffsetLess / 2, allowedOffsetMore / 2 };
-            int[] offsetsRock = { 0, 0 };
-            int[] offsetsPop = { allowedOffsetLess / 2, allowedOffsetMore / 2 };
+            int[] offsetsMeteal = { 0, 0 };
+            if (metalPercentagee != 0)
+            {
+                offsetsMeteal[0] = allowedOffsetLess / 2;
+                offsetsMeteal[1] = allowedOffsetMore / 2;
+            }
 
+            int[] offsetsRock = { 0, 0 };
+            if (rockPercentagee != 0)
+            {
+                offsetsRock[0] = allowedOffsetLess / 2;
+                offsetsRock[1] = allowedOffsetMore / 2;
+            }
+
+            int[] offsetsPop = { 0, 0 };
+            if (popPercentagee != 0)
+            {
+                offsetsPop[0] = allowedOffsetLess / 2;
+                offsetsPop[1] = allowedOffsetMore / 2;
+            }
 
             //TODO: 
-            double metalPercentage = 20 / 100.0;
-            double rockPercentage = 80 / 100.0;
-            double popPercentage = 0 / 100.0;
+            double metalPercentage = metalPercentagee / 100.0;
+            double rockPercentage = rockPercentagee / 100.0;
+            double popPercentage = popPercentagee / 100.0;
 
-            bool useTopTracks = true;
-            bool allowSameArtist = true;
+            bool useTopTracks = topTracks;
+            bool allowSameArtist = sameArtist;
 
             List<Song> playlistWithSongs = new List<Song>();
 
             if (useTopTracks == true && allowSameArtist == true)
             {
+                var metalSongs = new List<Song>();
+                if (offsetsMeteal[0] != 0 && offsetsMeteal[1] != 0)
+                {
+                    metalSongs = _context.Songs.Where(x => x.Genre.Name == "metal" && x.Rank >= 100000).ToList();
+                }
+                List<Song> metal = ExtractSongs(tripTime, offsetsMeteal[0], offsetsMeteal[1], metalPercentage, metalSongs);
 
-                //var metalSongs = _context.Songs.Where(x => x.Genre.Name == "metal" && x.Rank == 100000).ToList();
-                //(List<Song> songs, int[] offsetsNew) metal = ExtractSongs(tripTime, offsetsMeteal[0], offsetsMeteal[1], metalPercentage, metalSongs);
+                var rockSongs = new List<Song>();
+                if (offsetsRock[0] != 0 && offsetsRock[1] != 0)
+                {
+                    rockSongs = _context.Songs.Where(x => x.Genre.Name == "rock" && x.Rank >= 100000).ToList();
+                }
+                List<Song> rock = ExtractSongs(tripTime, offsetsRock[0], offsetsRock[1], rockPercentage, rockSongs);
 
-
-                //var rockSongs = _context.Songs.Where(x => x.Genre.Name == "rock" && x.Rank == 100000).ToList();
-                //offsetsRock[0] += metal.offsetsNew[0];
-                //offsetsRock[1] += metal.offsetsNew[1];
-                //(List<Song> songs, int[] offsetsNew) rock = ExtractSongs(tripTime, offsetsRock[0], offsetsRock[1], rockPercentage, rockSongs);
-
-
-                //var popSongs = _context.Songs.Where(x => x.Genre.Name == "pop" && x.Rank == 100000).ToList();
-                //offsetsPop[0] += rock.offsetsNew[0];
-                //offsetsPop[1] += rock.offsetsNew[1];
-                //(List<Song> songs, int[] offsetsNew) pop = ExtractSongs(tripTime, offsetsPop[0], offsetsPop[1], popPercentage, popSongs);
-                var popSongs = _context.Songs.Where(x => x.Genre.Name == "pop" && x.Rank == 100000).ToList();
-                (List<Song> songs, int[] offsetsNew) pop = ExtractSongs(tripTime, offsetsPop[0], offsetsPop[1], popPercentage, popSongs);
-
-
-                var metalSongs = _context.Songs.Where(x => x.Genre.Name == "metal" && x.Rank == 100000).ToList();
-                offsetsPop[0] += pop.offsetsNew[0];
-                offsetsPop[1] += pop.offsetsNew[1];
-                (List<Song> songs, int[] offsetsNew) metal = ExtractSongs(tripTime, offsetsMeteal[0], offsetsMeteal[1], metalPercentage, metalSongs);
-
-                var rockSongs = _context.Songs.Where(x => x.Genre.Name == "rock" && x.Rank == 100000).ToList();
-                offsetsRock[0] += pop.offsetsNew[0];
-                offsetsRock[1] += pop.offsetsNew[1];
-                (List<Song> songs, int[] offsetsNew) rock = ExtractSongs(tripTime, offsetsRock[0], offsetsRock[1], rockPercentage, rockSongs);
+                var popSongs = new List<Song>();
+                if (offsetsPop[0] != 0 && offsetsPop[1] != 0)
+                {
+                    popSongs = _context.Songs.Where(x => x.Genre.Name == "pop" && x.Rank >= 100000).ToList();
+                }
+                List<Song> pop = ExtractSongs(tripTime, offsetsPop[0], offsetsPop[1], popPercentage, popSongs);
 
 
-
-
-                foreach (var item in metal.songs)
+                foreach (var item in metal)
                 {
                     playlistWithSongs.Add(item);
                 }
-                foreach (var item in rock.songs)
+                foreach (var item in rock)
                 {
                     playlistWithSongs.Add(item);
                 }
-                foreach (var item in pop.songs)
+                foreach (var item in pop)
                 {
                     playlistWithSongs.Add(item);
                 }
             }
             else if (useTopTracks == true && allowSameArtist == false)
             {
-                var metalSongs = _context.Songs.Where(x => x.Genre.Name == "metal" && x.Rank == 100000).ToList();
-                (List<Song> songs, int[] offsetsNew) metal = ExtractSongsUniqueArtist(tripTime, allowedOffsetLess, allowedOffsetMore, metalPercentage, metalSongs);
+                var metalSongs = new List<Song>();
+                if (offsetsMeteal[0] != 0 && offsetsMeteal[1] != 0)
+                {
+                    metalSongs = _context.Songs.Where(x => x.Genre.Name == "metal" && x.Rank >= 100000).ToList();
+                }
+                List<Song>metal = ExtractSongsUniqueArtist(tripTime, offsetsMeteal[0], offsetsMeteal[1], metalPercentage, metalSongs);
 
-                var rockSongs = _context.Songs.Where(x => x.Genre.Name == "rock" && x.Rank == 100000).ToList();
-                (List<Song> songs, int[] offsetsNew) rock = ExtractSongsUniqueArtist(tripTime, allowedOffsetLess, allowedOffsetMore, rockPercentage, rockSongs);
 
-                var popSongs = _context.Songs.Where(x => x.Genre.Name == "pop" && x.Rank == 100000).ToList();
-                (List<Song> songs, int[] offsetsNew) pop = ExtractSongsUniqueArtist(tripTime, allowedOffsetLess, allowedOffsetMore, popPercentage, popSongs);
+                var rockSongs = new List<Song>();
+                if (offsetsRock[0] != 0 && offsetsRock[1] != 0)
+                {
+                    rockSongs = _context.Songs.Where(x => x.Genre.Name == "rock" && x.Rank >= 100000).ToList();
+                }
+                List<Song> rock = ExtractSongsUniqueArtist(tripTime, offsetsRock[0], offsetsRock[1], rockPercentage, rockSongs);
 
-                foreach (var item in metal.songs)
+
+                var popSongs = new List<Song>();
+                if (offsetsPop[0] != 0 && offsetsPop[1] != 0)
+                {
+                    popSongs = _context.Songs.Where(x => x.Genre.Name == "pop" && x.Rank >= 100000).ToList();
+                }
+                List<Song> pop = ExtractSongsUniqueArtist(tripTime, offsetsPop[0], offsetsPop[1], popPercentage, popSongs);
+
+
+
+                foreach (var item in metal)
                 {
                     playlistWithSongs.Add(item);
                 }
-                foreach (var item in rock.songs)
+                foreach (var item in rock)
                 {
                     playlistWithSongs.Add(item);
                 }
-                foreach (var item in pop.songs)
+                foreach (var item in pop)
                 {
                     playlistWithSongs.Add(item);
                 }
             }
             else if (useTopTracks == false && allowSameArtist == true)
             {
-                var metalSongs = _context.Songs.Where(x => x.Genre.Name == "metal").ToList();
-                (List<Song> songs, int[] offsetsNew) metal = ExtractSongs(tripTime, allowedOffsetLess, allowedOffsetMore, metalPercentage, metalSongs);
+                var metalSongs = new List<Song>();
+                if (offsetsMeteal[0] != 0 && offsetsMeteal[1] != 0)
+                {
+                    metalSongs = _context.Songs.Where(x => x.Genre.Name == "metal").ToList();
+                }
+                List<Song> metal = ExtractSongs(tripTime, offsetsMeteal[0], offsetsMeteal[1], metalPercentage, metalSongs);
 
-                var rockSongs = _context.Songs.Where(x => x.Genre.Name == "rock").ToList();
-                (List<Song> songs, int[] offsetsNew) rock = ExtractSongs(tripTime, allowedOffsetLess, allowedOffsetMore, rockPercentage, rockSongs);
+                var rockSongs = new List<Song>();
+                if (offsetsRock[0] != 0 && offsetsRock[1] != 0)
+                {
+                    rockSongs = _context.Songs.Where(x => x.Genre.Name == "rock").ToList();
+                }
+                List<Song> rock = ExtractSongs(tripTime, offsetsRock[0], offsetsRock[1], rockPercentage, rockSongs);
 
-                var popSongs = _context.Songs.Where(x => x.Genre.Name == "pop").ToList();
-                (List<Song> songs, int[] offsetsNew) pop = ExtractSongs(tripTime, allowedOffsetLess, allowedOffsetMore, popPercentage, popSongs);
+                var popSongs = new List<Song>();
+                if (offsetsPop[0] != 0 && offsetsPop[1] != 0)
+                {
+                    popSongs = _context.Songs.Where(x => x.Genre.Name == "pop").ToList();
+                }
+                List<Song> pop = ExtractSongs(tripTime, offsetsPop[0], offsetsPop[1], popPercentage, popSongs);
 
-                foreach (var item in metal.songs)
+
+                foreach (var item in metal)
                 {
                     playlistWithSongs.Add(item);
                 }
-                foreach (var item in rock.songs)
+                foreach (var item in rock)
                 {
                     playlistWithSongs.Add(item);
                 }
-                foreach (var item in pop.songs)
+                foreach (var item in pop)
                 {
                     playlistWithSongs.Add(item);
                 }
             }
             else
             {
-                var metalSongs = _context.Songs.Where(x => x.Genre.Name == "metal").ToList();
-                (List<Song> songs, int[] offsetsNew) metal = ExtractSongsUniqueArtist(tripTime, allowedOffsetLess, allowedOffsetMore, metalPercentage, metalSongs);
+                var metalSongs = new List<Song>();
+                if (offsetsMeteal[0] != 0 && offsetsMeteal[1] != 0)
+                {
+                    metalSongs = _context.Songs.Where(x => x.Genre.Name == "metal").ToList();
+                }
+                List<Song> metal = ExtractSongsUniqueArtist(tripTime, offsetsMeteal[0], offsetsMeteal[1], metalPercentage, metalSongs);
 
-                var rockSongs = _context.Songs.Where(x => x.Genre.Name == "rock").ToList();
-                (List<Song> songs, int[] offsetsNew) rock = ExtractSongsUniqueArtist(tripTime, allowedOffsetLess, allowedOffsetMore, rockPercentage, rockSongs);
 
-                var popSongs = _context.Songs.Where(x => x.Genre.Name == "pop").ToList();
-                (List<Song> songs, int[] offsetsNew) pop = ExtractSongsUniqueArtist(tripTime, allowedOffsetLess, allowedOffsetMore, popPercentage, popSongs);
+                var rockSongs = new List<Song>();
+                if (offsetsRock[0] != 0 && offsetsRock[1] != 0)
+                {
+                    rockSongs = _context.Songs.Where(x => x.Genre.Name == "rock").ToList();
+                }
+                List<Song> rock = ExtractSongsUniqueArtist(tripTime, offsetsRock[0], offsetsRock[1], rockPercentage, rockSongs);
 
-                foreach (var item in metal.songs)
+
+                var popSongs = new List<Song>();
+                if (offsetsPop[0] != 0 && offsetsPop[1] != 0)
+                {
+                    popSongs = _context.Songs.Where(x => x.Genre.Name == "pop").ToList();
+                }
+                List<Song> pop = ExtractSongsUniqueArtist(tripTime, offsetsPop[0], offsetsPop[1], popPercentage, popSongs);
+
+
+                foreach (var item in metal)
                 {
                     playlistWithSongs.Add(item);
                 }
-                foreach (var item in rock.songs)
+                foreach (var item in rock)
                 {
                     playlistWithSongs.Add(item);
                 }
-                foreach (var item in pop.songs)
+                foreach (var item in pop)
                 {
                     playlistWithSongs.Add(item);
                 }
@@ -283,181 +334,83 @@ namespace PG.Services
             await _context.SaveChangesAsync();
         }
 
-        private static (List<Song>, int[]) ExtractSongs(int tripTime, int allowedOffsetLess, int allowedOffsetMore, double percentage, List<Song> result)
+        private static List<Song> ExtractSongs(int tripTime, int allowedOffsetLess, int allowedOffsetMore, double percentage, List<Song> result)
         {
             if (result.Count() == 0)
             {
-                int[] res = { allowedOffsetLess, allowedOffsetMore };
-
-                return (result, res);
+                return result;
             }
+
             Shuffle(result);
 
 
             int secondsAllowed = (int)(tripTime * percentage);
 
             int count = 0;
-            var shuffledResult = result.TakeWhile(x => (count = count + x.Duration) <= secondsAllowed).ToList();
+            List<Song> shuffledResult = new List<Song>();
 
-
-            int songsDuration = 0;
-            foreach (Song song in shuffledResult)
+            foreach (var song in result)
             {
-                songsDuration += song.Duration;
-            }
-
-            //Ако времето на песните е по-малко от минималното добавяме песен която влиза в диапазона 
-            if (songsDuration < secondsAllowed - allowedOffsetLess)
-            {
-                int songsCount = shuffledResult.Count();
-
-                var songsToTryAdd = result.Skip(songsCount).Take(1);
-                if (songsToTryAdd == null || songsToTryAdd.Count() == 0)
+                if (count > secondsAllowed - allowedOffsetLess && count < secondsAllowed + allowedOffsetMore)//добре сме и влизаме в диапазона
                 {
-                    int[] offsets = { allowedOffsetLess -= secondsAllowed - songsDuration, allowedOffsetMore };
-
-                    return (shuffledResult, offsets);
-                }
-                while (true)
-                {
-                    int newSongDuration = songsToTryAdd.ToList()[0].Duration;
-
-                    //ако надвиши максимума изцяло, взимаме друга песен
-                    if (newSongDuration > allowedOffsetLess + allowedOffsetMore)
-                    {
-                        songsCount++;
-                        var songsToTryAdd2 = result.Skip(songsCount);
-                        if (songsToTryAdd2 == null || songsToTryAdd2.Count() == 0)
-                        {
-                            //няма песен която да пасва
-
-                            shuffledResult.RemoveAt(shuffledResult.Count() - 1);
-                            songsCount = shuffledResult.Count();
-                        }
-                        else
-                        {
-                            songsToTryAdd = songsToTryAdd2;
-                        }
-                        continue;
-                    }
-                    else
-                    {
-                        //setvame pesenta, vliza v diapazona
-                        shuffledResult.Add(songsToTryAdd.First());
-
-                        int newSongDuration2 = songsToTryAdd.First().Duration;
-
-                        if (newSongDuration2 >= allowedOffsetLess)
-                        {
-                            allowedOffsetMore -= (newSongDuration2 - allowedOffsetLess);
-                            allowedOffsetLess = 0;
-                        }
-                        else
-                        {
-                            allowedOffsetLess -= songsToTryAdd.First().Duration;
-                        }
-                        int[] offsets = { allowedOffsetLess, allowedOffsetMore };
-
-
-                        return (shuffledResult, offsets);
-
-                    }
+                    break;
                 }
 
+                if (count > secondsAllowed + allowedOffsetMore)
+                {
+                    var toRemove = shuffledResult.Last();
+                    count -= toRemove.Duration;
+
+                    shuffledResult.Remove(toRemove);
+                    continue;
+                }
+
+                shuffledResult.Add(song);
+                count += song.Duration;
+
             }
-            else
-            {
-                int[] arr = { allowedOffsetLess += secondsAllowed-songsDuration, allowedOffsetMore };
 
-                return (shuffledResult, arr);
-            }
-
-
-
+            return shuffledResult;
         }
 
-        private static (List<Song>, int[]) ExtractSongsUniqueArtist(int tripTime, int allowedOffsetLess,
-            int allowedOffsetMore, double popPercentage, List<Song> incomingList)
+        private static List<Song> ExtractSongsUniqueArtist(int tripTime, int allowedOffsetLess, int allowedOffsetMore, double percentage, List<Song> result)
         {
-            if (incomingList.Count() == 0)
+            if (result.Count() == 0)
             {
-                int[] res = { allowedOffsetLess, allowedOffsetMore };
-
-                return (incomingList, res);
+                return result;
             }
-            Shuffle(incomingList);
 
-            //Процентите не трябва да са по-малки от 0.X
-            int secondsAllowed = (int)(tripTime * popPercentage);
+            Shuffle(result);
+
+
+            int secondsAllowed = (int)(tripTime * percentage);
 
             int count = 0;
-            var result = incomingList.TakeWhile(x => (count = count + x.Duration) <= secondsAllowed).ToDictionary(x => x.Artist);
+            Dictionary<int, Song> shuffledResult = new Dictionary<int, Song>();
 
-
-            int songsDuration = 0;
-            foreach (Song song in result.Values)
+            foreach (var song in result)
             {
-                songsDuration += song.Duration;
-            }
-
-            //Ако времето на песните е по-малко от минималното добавяме песен която влиза в диапазона 
-            if (songsDuration < secondsAllowed - allowedOffsetLess)
-            {
-                int songsCount = result.Count();
-
-                var songsToTryAdd = incomingList.Skip(songsCount).Take(1);
-                if (songsToTryAdd == null || songsToTryAdd.Count() == 0)
+                if (count > secondsAllowed - allowedOffsetLess && count < secondsAllowed + allowedOffsetMore)//добре сме и влизаме в диапазона
                 {
-                    int[] offsets = { allowedOffsetLess -= secondsAllowed - songsDuration, allowedOffsetMore };
-
-                    return (result.Values.ToList(), offsets);
-                }
-                while (true)
-                {
-                    int newSongDuration = songsToTryAdd.ToList()[0].Duration;
-                    //ако надвиши максимума изцяло, взимаме друга песен
-                    if (newSongDuration > allowedOffsetLess + allowedOffsetMore)
-                    {
-                        songsCount++;
-                        var songsToTryAdd2 = incomingList.Skip(songsCount).Take(1);
-                        if (songsToTryAdd2 == null || songsToTryAdd2.Count() == 0)
-                        {
-                            int[] offsets = { allowedOffsetLess -= secondsAllowed - songsDuration, allowedOffsetMore };
-
-                            return (result.Values.ToList(), offsets);
-                        }
-                        continue;
-                    }
-                    else
-                    {
-                        //setvame pesenta, vliza v diapazona
-                        var toAdd = songsToTryAdd.First();
-                        result.Add(toAdd.Artist, toAdd);
-
-                        if (newSongDuration >= allowedOffsetLess)
-                        {
-                            allowedOffsetLess = 0;
-                            //TODO:              \/
-                            allowedOffsetMore -= 300 - newSongDuration;
-                        }
-                        else
-                        {
-                            allowedOffsetLess -= newSongDuration;
-                        }
-                        int[] offsets = { allowedOffsetLess, allowedOffsetMore };
-
-
-                        return (result.Values.ToList(), offsets);
-
-                    }
+                    break;
                 }
 
+                if (count > secondsAllowed + allowedOffsetMore)
+                {
+                    var toRemove = shuffledResult.Values.Last();
+                    count -= toRemove.Duration;
+
+                    shuffledResult.Remove(toRemove.ArtistId);
+                    continue;
+                }
+
+                if (shuffledResult.TryAdd(song.ArtistId, song))
+                {
+                    count += song.Duration;
+                }
             }
 
-
-            int[] arr = { allowedOffsetLess, allowedOffsetMore };
-
-            return (result.Values.ToList(), arr);
+            return shuffledResult.Values.ToList();
         }
 
 

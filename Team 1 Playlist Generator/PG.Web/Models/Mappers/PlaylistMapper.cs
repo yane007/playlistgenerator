@@ -14,15 +14,15 @@ namespace PG.Web.Models.Mappers
             return new PlaylistViewModel()
             {
                 Title = playlistDTO.Title,
-                Description = playlistDTO.Description,
+                //Description = playlistDTO.Description,
                 Duration = playlistDTO.Duration,
-                Fans = playlistDTO.Fans,
-                Link = playlistDTO.Link,
-                Share = playlistDTO.Share,
+                //Fans = playlistDTO.Fans,
+                //Link = playlistDTO.Link,
+                //Share = playlistDTO.Share,
                 Picture = playlistDTO.Picture,
-                Tracklist = playlistDTO.Tracklist,
-                Creation_date = playlistDTO.Creation_date,
-                Type = playlistDTO.Type,
+                //Tracklist = playlistDTO.Tracklist,
+                //Creation_date = playlistDTO.Creation_date,
+                //Type = playlistDTO.Type,
                 PlaylistsSongs = playlistDTO.PlaylistsSongs,
             };
         }
@@ -32,15 +32,15 @@ namespace PG.Web.Models.Mappers
             return new PlaylistDTO()
             {
                 Title = playlistViewModel.Title,
-                Description = playlistViewModel.Description,
+                //Description = playlistViewModel.Description,
                 Duration = playlistViewModel.Duration,
-                Fans = playlistViewModel.Fans,
-                Link = playlistViewModel.Link,
-                Share = playlistViewModel.Share,
+                //Fans = playlistViewModel.Fans,
+                //Link = playlistViewModel.Link,
+                //Share = playlistViewModel.Share,
                 Picture = playlistViewModel.Picture,
-                Tracklist = playlistViewModel.Tracklist,
-                Creation_date = playlistViewModel.Creation_date,
-                Type = playlistViewModel.Type,
+                //Tracklist = playlistViewModel.Tracklist,
+                //Creation_date = playlistViewModel.Creation_date,
+                //Type = playlistViewModel.Type,
                 PlaylistsSongs = playlistViewModel.PlaylistsSongs,
             };
         }

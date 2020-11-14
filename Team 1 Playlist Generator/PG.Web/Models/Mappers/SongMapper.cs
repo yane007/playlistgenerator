@@ -13,11 +13,11 @@ namespace PG.Web.Models.Mappers
             return new SongViewModel()
             {
                 Title = songDTO.Title,
-                Duration = songDTO.Duration,
+                //Duration = songDTO.Duration,
                 Rank = songDTO.Rank,
                 Preview = songDTO.Preview,
-                ArtistId = songDTO.ArtistId,
-                GenreId = songDTO.GenreId,
+                //ArtistId = songDTO.ArtistId,
+                //GenreId = songDTO.GenreId,
             };
         }
 
@@ -26,11 +26,11 @@ namespace PG.Web.Models.Mappers
             return new SongDTO()
             {
                 Title = songViewModel.Title,
-                Duration = songViewModel.Duration,
+                //Duration = songViewModel.Duration,
                 Rank = songViewModel.Rank,
                 Preview = songViewModel.Preview,
-                ArtistId = songViewModel.ArtistId,
-                GenreId = songViewModel.GenreId,
+                //ArtistId = songViewModel.ArtistId,
+                //GenreId = songViewModel.GenreId,
             };
         }
     }

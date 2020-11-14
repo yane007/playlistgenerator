@@ -13,6 +13,6 @@ namespace PG.Services.Contract
         Task<PlaylistDTO> GetPlaylistById(int id);
         Task<PlaylistDTO> Update(int id, PlaylistDTO playlistDTO);
         Task Delete(int id);
-        Task GeneratePlaylist(PlaylistDTO playlist);
+        Task GeneratePlaylist(int tripTime, string playlistName, int metalPercentage, int rockPercentage, int popPercentage, bool topTracks, bool sameArtist);
     }
 }

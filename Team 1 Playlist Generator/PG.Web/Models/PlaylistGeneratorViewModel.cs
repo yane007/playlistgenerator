@@ -10,16 +10,27 @@ namespace PG.Web.Models
     {
         public PlaylistGeneratorViewModel()
         {
-            ganres = new List<GenreViewModel>();
+            Genres = new List<GenreViewModel>();
         }
-        public List<GenreViewModel> ganres  { get; set; }
+
+        public List<GenreViewModel> Genres  { get; set; }
+
         public string StartLocation { get; set; }
+
         public string EndLocation { get; set; }
-        public int metal { get; set; }
-        public int rock { get; set; }
-        public int pop { get; set; }
-        public bool topTracks { get; set; }
-        public bool sameArtist { get; set; }
+
+        public string PlaylistName { get; set; }
+
+        public int Metal { get; set; }
+
+        public int Rock { get; set; }
+
+        public int Pop { get; set; }
+
+        public bool TopTracks { get; set; }
+
+        public bool SameArtist { get; set; }
+
 
     }
 }

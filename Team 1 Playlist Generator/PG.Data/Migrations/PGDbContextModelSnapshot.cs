@@ -305,48 +305,18 @@ namespace PG.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Creation_date")
-                        .HasColumnType("nvarchar(300)")
-                        .HasMaxLength(300);
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(800)")
-                        .HasMaxLength(800);
-
                     b.Property<int>("Duration")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Fans")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<string>("Link")
-                        .HasColumnType("nvarchar(300)")
-                        .HasMaxLength(300);
-
                     b.Property<string>("Picture")
-                        .HasColumnType("nvarchar(300)")
-                        .HasMaxLength(300);
-
-                    b.Property<int>("Rank")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Share")
                         .HasColumnType("nvarchar(300)")
                         .HasMaxLength(300);
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
-
-                    b.Property<string>("Tracklist")
-                        .HasColumnType("nvarchar(300)")
-                        .HasMaxLength(300);
-
-                    b.Property<string>("Type")
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 

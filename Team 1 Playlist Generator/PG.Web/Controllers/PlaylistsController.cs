@@ -19,12 +19,13 @@ namespace PG.Web.Controllers
     {
         private readonly IPlaylistService _playlistService;
         private readonly IGenreService _genreService;
+        private readonly IBingMapsAPIService _bingMapsAPIService;
 
-        public PlaylistsController(IPlaylistService playlistService, IGenreService genreService)
+        public PlaylistsController(IPlaylistService playlistService, IGenreService genreService, IBingMapsAPIService bingMapsAPIService)
         {
-            this._playlistService = playlistService;
-            this._genreService = genreService;
-
+            _playlistService = playlistService;
+            _genreService = genreService;
+            _bingMapsAPIService = bingMapsAPIService;
         }
         public async Task<IActionResult> Index()
         {
@@ -49,7 +50,7 @@ namespace PG.Web.Controllers
 
             var playlistGenerator = new PlaylistGeneratorViewModel();
 
-            playlistGenerator.ganres = genresViewModels.ToList();
+            playlistGenerator.Genres = genresViewModels.ToList();
 
 
             return View(playlistGenerator);
@@ -57,12 +58,17 @@ namespace PG.Web.Controllers
 
         [HttpPost]
         [Authorize]
-        public async Task<IActionResult> Create(bool test = true)
+        public async Task<IActionResult> Create(PlaylistGeneratorViewModel formInput)
         {
-            for (int i = 0; i < 100; i++)
+            int tripTime = 10000;
+                //await _bingMapsAPIService.FindDuration(formInput.StartLocation, formInput.EndLocation);
+
+            for (int i = 0; i < 100; i++) 
             {
-                await _playlistService.GeneratePlaylist(new PlaylistDTO() { Title = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff") });
-                Thread.Sleep(100);
+                await _playlistService.GeneratePlaylist(tripTime, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"), 
+                    formInput.Metal, formInput.Rock, formInput.Pop, formInput.TopTracks, formInput.SameArtist);
+
+                Thread.Sleep(10);
             }
             
             return RedirectToAction("Index");
@@ -72,44 +78,6 @@ namespace PG.Web.Controllers
             return View();
         }
 
-        [HttpPost]
-        public async Task<IActionResult> FindDuration(PlaylistGeneratorViewModel model)
-        {
-            var startingUrl = $"https://dev.virtualearth.net/REST/v1/Locations/{model.StartLocation}?key=AqYHIDdNVo4xufKpBNAuFfBrGtqJw_fJm45HlPU25Mrc-YSBHO8VcDK5zuHaXt4D";
-            var endingUrl = $"https://dev.virtualearth.net/REST/v1/Locations/{model.EndLocation}?key=AqYHIDdNVo4xufKpBNAuFfBrGtqJw_fJm45HlPU25Mrc-YSBHO8VcDK5zuHaXt4D";
-
-            HttpClient client = new HttpClient();
-
-            var response = await client.GetAsync(startingUrl);
-
-            var jsonResult = await response.Content.ReadAsStringAsync();
-
-            var resultObject = JsonSerializer.Deserialize<LocationBingResult>(jsonResult);
-
-            var startingCoordinates = resultObject.LocationResourceCollection.First().LocationResources.First().ResourcePoint.Coordinates;
-
-            response = await client.GetAsync(endingUrl);
-
-            jsonResult = await response.Content.ReadAsStringAsync();
-
-            resultObject = JsonSerializer.Deserialize<LocationBingResult>(jsonResult);
-
-            var endingCoordinates = resultObject.LocationResourceCollection.First().LocationResources.First().ResourcePoint.Coordinates;
-
-            var startCoords = $"{startingCoordinates.First()},{startingCoordinates.Last()}";
-            var endCoords = $"{endingCoordinates.First()},{endingCoordinates.Last()}";
-
-            var distanceMatrixDurationUrl = $"https://dev.virtualearth.net/REST/v1/Routes/DistanceMatrix?timeUnit=second&origins={startCoords}&destinations={endCoords}&travelMode=driving&key=AqYHIDdNVo4xufKpBNAuFfBrGtqJw_fJm45HlPU25Mrc-YSBHO8VcDK5zuHaXt4D";
-
-            response = await client.GetAsync(distanceMatrixDurationUrl);
-
-            jsonResult = await response.Content.ReadAsStringAsync();
-
-            var distanceResult = JsonSerializer.Deserialize<BingInitialResult>(jsonResult);
-
-            var distance = distanceResult.BingResources.First().TravelResultsCollections.First().Results.First().TravelDuration;
-
-            return new JsonResult(distance);
-        }
+        
     }
 }

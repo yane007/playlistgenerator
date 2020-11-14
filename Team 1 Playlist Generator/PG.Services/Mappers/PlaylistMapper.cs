@@ -14,15 +14,15 @@ namespace PG.Services.Mappers
             {
                 Id = playlist.Id,
                 Title = playlist.Title,
-                Description = playlist.Description,
+                //Description = playlist.Description,
                 Duration = playlist.Duration,
-                Fans = playlist.Fans,
-                Link = playlist.Link,
-                Share = playlist.Share,
-                Picture = playlist.Picture,
-                Tracklist = playlist.Tracklist,
-                Creation_date = playlist.Creation_date,
-                Type = playlist.Type,
+                //Fans = playlist.Fans,
+                //Link = playlist.Link,
+                //Share = playlist.Share,
+                //Picture = playlist.Picture,
+                //Tracklist = playlist.Tracklist,
+                //Creation_date = playlist.Creation_date,
+                //Type = playlist.Type,
                 PlaylistsSongs = playlist.PlaylistsSongs,
             };
         }
@@ -31,15 +31,15 @@ namespace PG.Services.Mappers
             return new Playlist()
             {
                 Title = playlistDTO.Title,
-                Description = playlistDTO.Description,
+                //Description = playlistDTO.Description,
                 Duration = playlistDTO.Duration,
-                Fans = playlistDTO.Fans,
-                Link = playlistDTO.Link,
-                Share = playlistDTO.Share,
-                Picture = playlistDTO.Picture,
-                Tracklist = playlistDTO.Tracklist,
-                Creation_date = playlistDTO.Creation_date,
-                Type = playlistDTO.Type,
+                //Fans = playlistDTO.Fans,
+                //Link = playlistDTO.Link,
+                //Share = playlistDTO.Share,
+                //Picture = playlistDTO.Picture,
+                //Tracklist = playlistDTO.Tracklist,
+                //Creation_date = playlistDTO.Creation_date,
+                //Type = playlistDTO.Type,
                 PlaylistsSongs = playlistDTO.PlaylistsSongs,
                 Id = playlistDTO.Id
             };
