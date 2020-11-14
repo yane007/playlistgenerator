@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PG.Services.Contract;
 using PG.Web.Models;
 using PG.Web.Models.Mappers;
@@ -8,6 +9,7 @@ namespace PG.Web.APIControllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class GenresController : ControllerBase
     {
         private readonly IGenreService _genreService;
@@ -37,6 +39,7 @@ namespace PG.Web.APIControllers
 
         //POST api/genres
         [HttpPost("")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> CreateGenre([FromBody] GenreViewModel model)
         {
             var genre = await _genreService.Create(model.ToDTO());
@@ -46,6 +49,7 @@ namespace PG.Web.APIControllers
 
         //PUT api/genres/id
         [HttpPut("{id}")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> UpdateGenre(int id, [FromBody] GenreViewModel model)
         {
             var genre = await _genreService.Update(id, model.ToDTO());
@@ -55,6 +59,7 @@ namespace PG.Web.APIControllers
 
         //DELETE api/songs/id
         [HttpDelete("{id}")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> DeleteGenre(int id)
         {
             await _genreService.Delete(id);

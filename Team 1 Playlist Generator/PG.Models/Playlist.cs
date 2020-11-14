@@ -6,6 +6,11 @@ namespace PG.Models
 {
     public class Playlist : Entity
     {
+        public Playlist()
+        {
+            PlaylistsSongs = new List<PlaylistsSongs>();
+            Genres = new List<Genre>();
+        }
 
         [Required]
         [MaxLength(50)]
@@ -16,14 +21,12 @@ namespace PG.Models
         [MaxLength(300)]
         public string Picture { get; set; }
 
-        public ICollection<PlaylistsSongs> PlaylistsSongs { get; set; } = new List<PlaylistsSongs>();
-
-        public ICollection<Genre> Genres { get; set; } = new List<Genre>();
-
         public int UserId { get; set; }
 
         public User User { get; set; }
 
+        public ICollection<PlaylistsSongs> PlaylistsSongs { get; set; }
 
+        public ICollection<Genre> Genres { get; set; }
     }
 }

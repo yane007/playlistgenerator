@@ -75,11 +75,21 @@ namespace PG.Web.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
+                string role = string.Empty;
+                if (_userManager.Users.Any())
+                {
+                    role = "user";
+                }
+                else
+                {
+                    role = "admin";
+                }
+
                 var user = new User { UserName = Input.Email, Email = Input.Email };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
-                    await _userManager.AddToRoleAsync(user, "user");
+                    await _userManager.AddToRoleAsync(user, role);
 
                     _logger.LogInformation("User created a new account with password.");
 

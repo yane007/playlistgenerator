@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PG.Services.Contract;
 using PG.Services.Mappers;
 using PG.Web.Models;
@@ -9,6 +10,7 @@ namespace PG.Web.APIControllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class PlaylistsController : ControllerBase
     {
         private readonly IPlaylistService _playlistService;

@@ -14,8 +14,8 @@ namespace PG.Data.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     IsDeleted = table.Column<bool>(nullable: false),
-                    Name = table.Column<string>(maxLength: 50, nullable: true),
-                    SongId = table.Column<int>(nullable: false)
+                    Title = table.Column<string>(maxLength: 500, nullable: true),
+                    Tracklist = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -272,14 +272,12 @@ namespace PG.Data.Migrations
                 name: "PlaylistSongs",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
                     PlaylistId = table.Column<int>(nullable: false),
                     SongId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_PlaylistSongs", x => x.Id);
+                    table.PrimaryKey("PK_PlaylistSongs", x => new { x.PlaylistId, x.SongId });
                     table.ForeignKey(
                         name: "FK_PlaylistSongs_Playlists_PlaylistId",
                         column: x => x.PlaylistId,
@@ -342,11 +340,6 @@ namespace PG.Data.Migrations
                 name: "IX_Playlists_UserId1",
                 table: "Playlists",
                 column: "UserId1");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_PlaylistSongs_PlaylistId",
-                table: "PlaylistSongs",
-                column: "PlaylistId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_PlaylistSongs_SongId",

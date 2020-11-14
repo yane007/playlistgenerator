@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using PG.Data.Configurations;
 using PG.Models;
 
 namespace PG.Data.Context
@@ -20,6 +21,12 @@ namespace PG.Data.Context
         public PGDbContext()
         {
 
+        }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.ApplyConfiguration(new PlaylistsSongsConfig());
+
+            base.OnModelCreating(builder);
         }
     }
 }

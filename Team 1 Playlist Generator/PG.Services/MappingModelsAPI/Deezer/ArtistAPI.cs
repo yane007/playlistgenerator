@@ -1,8 +1,4 @@
-﻿
-
-using Newtonsoft.Json;
-
-namespace PG.Services.MappingModelsAPI
+﻿namespace PG.Services.MappingModelsAPI
 {
     public class ArtistAPI
     {

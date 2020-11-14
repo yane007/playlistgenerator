@@ -10,7 +10,7 @@ using PG.Data.Context;
 namespace PG.Data.Migrations
 {
     [DbContext(typeof(PGDbContext))]
-    [Migration("20201113184909_Initial")]
+    [Migration("20201114135057_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -237,12 +237,12 @@ namespace PG.Data.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(500)")
+                        .HasMaxLength(500);
 
-                    b.Property<int>("SongId")
-                        .HasColumnType("int");
+                    b.Property<string>("Tracklist")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -337,20 +337,13 @@ namespace PG.Data.Migrations
 
             modelBuilder.Entity("PG.Models.PlaylistsSongs", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
                     b.Property<int>("PlaylistId")
                         .HasColumnType("int");
 
                     b.Property<int>("SongId")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("PlaylistId");
+                    b.HasKey("PlaylistId", "SongId");
 
                     b.HasIndex("SongId");
 

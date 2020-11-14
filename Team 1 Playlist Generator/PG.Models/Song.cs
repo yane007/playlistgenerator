@@ -1,10 +1,16 @@
 ﻿using PG.Models.Abstract;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+
 namespace PG.Models
 {
     public class Song : Entity
     {
+        public Song()
+        {
+            PlaylistsSongs = new List<PlaylistsSongs>();
+        }
+
         [Required]
         [MaxLength(200)]
         public string Title { get; set; }
@@ -16,10 +22,8 @@ namespace PG.Models
         [MaxLength(300)]
         public string Preview { get; set; }
 
-
         public Artist Artist { get; set; }
         public int ArtistId { get; set; }
-
 
         public Genre Genre { get; set; }
         public int GenreId { get; set; }
@@ -27,7 +31,6 @@ namespace PG.Models
         public Album Album { get; set; }
         public int AlbumId { get; set; }
 
-
-        public ICollection<PlaylistsSongs> PlaylistsSongs { get; set; } = new List<PlaylistsSongs>();
+        public ICollection<PlaylistsSongs> PlaylistsSongs { get; set; }
     }
 }

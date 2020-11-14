@@ -1,6 +1,6 @@
-﻿namespace PG.Services.MappingModelsAPI
+﻿namespace PG.Services.MappingModelsAPI.Deezer
 {
-    public class PlaylistLinkAPI
+    public class AlbumAPI
     {
         public string Title { get; set; }
 

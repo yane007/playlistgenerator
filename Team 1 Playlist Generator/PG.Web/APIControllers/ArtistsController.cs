@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PG.Services.Contract;
 using PG.Services.Mappers;
 using PG.Web.Models;
@@ -9,6 +10,7 @@ namespace PG.Web.APIControllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ArtistsController : ControllerBase
     {
         private readonly IArtistService _artistService;
@@ -38,6 +40,7 @@ namespace PG.Web.APIControllers
 
         //POST api/artists
         [HttpPost("")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> CreateArtist([FromBody] ArtistViewModel model)
         {
             var createdArtist = await _artistService.Create(model.ToDTO());
@@ -47,6 +50,7 @@ namespace PG.Web.APIControllers
 
         //PUT api/artists/id
         [HttpPut("{id}")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> UpdateArtist(int id, [FromBody] ArtistViewModel artistModel)
         {
             var artist = await _artistService.Update(id, artistModel.ToDTO());
@@ -56,6 +60,7 @@ namespace PG.Web.APIControllers
 
         //DELETE api/artists/id
         [HttpDelete("{id}")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> DeleteArtist(int id)
         {
             await _artistService.Delete(id);

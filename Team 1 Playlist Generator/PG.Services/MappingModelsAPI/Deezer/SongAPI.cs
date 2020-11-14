@@ -1,6 +1,4 @@
-﻿
-
-using Newtonsoft.Json;
+﻿using PG.Services.MappingModelsAPI.Deezer;
 
 namespace PG.Services.MappingModelsAPI
 {
@@ -19,5 +17,7 @@ namespace PG.Services.MappingModelsAPI
         public ArtistAPI Artist { get; set; }
 
         public int GenreId { get; set; }
+
+        public AlbumAPI Album { get; set; }
     }
 }

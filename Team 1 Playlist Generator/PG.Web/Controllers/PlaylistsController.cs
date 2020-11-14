@@ -41,9 +41,6 @@ namespace PG.Web.Controllers
                 Response.Redirect("Login.aspx");
             }
 
-
-            //await _playlistService.GeneratePlaylist(new PlaylistDTO() { Title = "The 5 song playlist" });
-
             var genresDTOs = await _genreService.GetAllGenres();
 
             var genresViewModels = genresDTOs.Select(x => x.ToViewModel());
@@ -60,10 +57,15 @@ namespace PG.Web.Controllers
         [Authorize]
         public async Task<IActionResult> Create(PlaylistGeneratorViewModel formInput)
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                Response.Redirect("Login.aspx");
+            }
+
             int tripTime = 10000;
                 //await _bingMapsAPIService.FindDuration(formInput.StartLocation, formInput.EndLocation);
 
-            for (int i = 0; i < 100; i++) 
+            for (int i = 0; i < 1; i++) 
             {
                 await _playlistService.GeneratePlaylist(tripTime, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"), 
                     formInput.Metal, formInput.Rock, formInput.Pop, formInput.TopTracks, formInput.SameArtist);
@@ -72,12 +74,6 @@ namespace PG.Web.Controllers
             }
             
             return RedirectToAction("Index");
-        }
-        public IActionResult FindDuration()
-        {
-            return View();
-        }
-
-        
+        }        
     }
 }

@@ -6,11 +6,16 @@ namespace PG.Models
 {
     public class Album : Entity
     {
-        [MaxLength(50)]
-        public string Name { get; set; }
+        public Album()
+        {
+            Songs = new List<Song>();
+        }
 
-        public int SongId { get; set; }
-        public ICollection<Song> Songs { get; set; } = new List<Song>();
+        [MaxLength(500)]
+        public string Title { get; set; }
+
+        public string Tracklist { get; set; }
+
+        public IList<Song> Songs { get; set; }
     }
-
 }

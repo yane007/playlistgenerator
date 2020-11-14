@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.Collections.Generic; 
+﻿using System.Collections.Generic;
 
 namespace PG.Services.MappingModelsAPI
 {
@@ -7,6 +6,6 @@ namespace PG.Services.MappingModelsAPI
     {
         public int Total { get; set; }
 
-        public List<SongAPI> Data{ get; set; }
+        public List<SongAPI> Data { get; set; }
     }
 }
