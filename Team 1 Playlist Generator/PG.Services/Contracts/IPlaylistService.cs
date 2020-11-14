@@ -9,10 +9,11 @@ namespace PG.Services.Contract
     {
         Task<Playlist> Create(PlaylistDTO playlistDTO);
         Task<IEnumerable<PlaylistDTO>> GetAllPlaylists();
-        Task<IEnumerable<PlaylistDTO>> GetPlaylistsByUser(int userId);
+        Task<IEnumerable<PlaylistDTO>> GetPlaylistsByUser(string userId);
         Task<PlaylistDTO> GetPlaylistById(int id);
         Task<PlaylistDTO> Update(int id, PlaylistDTO playlistDTO);
         Task Delete(int id);
-        Task GeneratePlaylist(int tripTime, string playlistName, int metalPercentage, int rockPercentage, int popPercentage, bool topTracks, bool sameArtist);
+        Task GeneratePlaylist(int tripTime, string playlistName, int metalPercentage, 
+            int rockPercentage, int popPercentage, bool topTracks, bool sameArtist, string userId);
     }
 }

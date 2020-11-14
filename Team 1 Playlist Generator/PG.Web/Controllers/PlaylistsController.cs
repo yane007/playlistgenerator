@@ -1,17 +1,14 @@
-﻿using System;
-using System.Linq;
-using System.Net.Http;
-using System.Text.Json;
-using System.Threading;
-using System.Threading.Tasks;
-using DeezerApiData.Models.BingApi;
-using DeezerApiData.Models.BingApi.LocationBingApi;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using PG.Models;
 using PG.Services.Contract;
-using PG.Services.DTOs;
 using PG.Web.Models;
 using PG.Web.Models.Mappers;
+using System;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace PG.Web.Controllers
 {
@@ -20,12 +17,15 @@ namespace PG.Web.Controllers
         private readonly IPlaylistService _playlistService;
         private readonly IGenreService _genreService;
         private readonly IBingMapsAPIService _bingMapsAPIService;
+        private readonly UserManager<User> _userManager;
 
-        public PlaylistsController(IPlaylistService playlistService, IGenreService genreService, IBingMapsAPIService bingMapsAPIService)
+        public PlaylistsController(IPlaylistService playlistService, IGenreService genreService, IBingMapsAPIService bingMapsAPIService, 
+            UserManager<User> userManager)
         {
             _playlistService = playlistService;
             _genreService = genreService;
             _bingMapsAPIService = bingMapsAPIService;
+            this._userManager = userManager;
         }
         public async Task<IActionResult> Index()
         {
@@ -63,17 +63,19 @@ namespace PG.Web.Controllers
             }
 
             int tripTime = 10000;
-                //await _bingMapsAPIService.FindDuration(formInput.StartLocation, formInput.EndLocation);
+            //await _bingMapsAPIService.FindDuration(formInput.StartLocation, formInput.EndLocation);
 
-            for (int i = 0; i < 1; i++) 
+            var user = await _userManager.GetUserAsync(User);
+
+            for (int i = 0; i < 1; i++)
             {
-                await _playlistService.GeneratePlaylist(tripTime, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"), 
-                    formInput.Metal, formInput.Rock, formInput.Pop, formInput.TopTracks, formInput.SameArtist);
+                await _playlistService.GeneratePlaylist(tripTime, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"),
+                    formInput.Metal, formInput.Rock, formInput.Pop, formInput.TopTracks, formInput.SameArtist, user.Id);
 
                 Thread.Sleep(10);
             }
-            
+
             return RedirectToAction("Index");
-        }        
+        }
     }
 }

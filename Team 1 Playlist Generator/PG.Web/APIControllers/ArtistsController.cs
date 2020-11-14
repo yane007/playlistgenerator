@@ -40,7 +40,7 @@ namespace PG.Web.APIControllers
 
         //POST api/artists
         [HttpPost("")]
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin")]    
         public async Task<IActionResult> CreateArtist([FromBody] ArtistViewModel model)
         {
             var createdArtist = await _artistService.Create(model.ToDTO());

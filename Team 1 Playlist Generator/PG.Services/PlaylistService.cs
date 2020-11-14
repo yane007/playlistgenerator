@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using PG.Data.Context;
 using PG.Models;
 using PG.Services.Contract;
@@ -8,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+
 
 namespace PG.Services
 {
@@ -56,7 +58,7 @@ namespace PG.Services
                                  .ToListAsync();
         }
 
-        public async Task<IEnumerable<PlaylistDTO>> GetPlaylistsByUser(int id)
+        public async Task<IEnumerable<PlaylistDTO>> GetPlaylistsByUser(string id)
         {
             return await _context.Playlists
                                  .Include(x => x.PlaylistsSongs)
@@ -122,7 +124,7 @@ namespace PG.Services
         }
 
         public async Task GeneratePlaylist(int timeForTrip, string playlistName, int metalPercentagee,
-            int rockPercentagee, int popPercentagee, bool topTracks, bool sameArtist)
+            int rockPercentagee, int popPercentagee, bool topTracks, bool sameArtist, string userId)
         {
             var playlistAdded = await Create(new PlaylistDTO { Title = playlistName });
 
@@ -330,6 +332,8 @@ namespace PG.Services
             }
 
             playlistAdded.Duration = realTotalDuration;
+            playlistAdded.UserId = userId;
+
 
             await _context.SaveChangesAsync();
         }
@@ -351,7 +355,7 @@ namespace PG.Services
 
             foreach (var song in result)
             {
-                if (count > secondsAllowed - allowedOffsetLess && count < secondsAllowed + allowedOffsetMore)//добре сме и влизаме в диапазона
+                if (count > secondsAllowed - allowedOffsetLess && count < secondsAllowed + allowedOffsetMore)
                 {
                     break;
                 }

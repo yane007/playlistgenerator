@@ -5,7 +5,7 @@ using PG.Models;
 
 namespace PG.Data.Context
 {
-    public class PGDbContext : IdentityDbContext
+    public class PGDbContext : IdentityDbContext<User>
     {
         public DbSet<Artist> Artist { get; set; }
         public DbSet<Playlist> Playlists { get; set; }
