@@ -21,6 +21,7 @@ namespace PG.Models
         [MaxLength(300)]
         public string Picture { get; set; }
 
+        public int Rank { get; set; }
 
         public string UserId { get; set; }
 

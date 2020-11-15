@@ -46,7 +46,7 @@ namespace PG.Web
 
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<PGDbContext>(options => options.UseSqlServer(connectionString));
-
+            services.AddSwaggerGen();
             services.AddRazorPages();
         }
 
@@ -62,6 +62,12 @@ namespace PG.Web
                 app.UseExceptionHandler("/Home/Error");
             }
             app.UseStaticFiles();
+            app.UseSwagger();
+            app.UseSwaggerUI(x =>
+            {
+                x.DefaultModelsExpandDepth(-1);
+                x.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
 
             app.UseRouting();
 
