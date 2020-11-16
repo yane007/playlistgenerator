@@ -5,6 +5,7 @@ using PG.Models;
 using PG.Services.Contract;
 using PG.Services.DTOs;
 using PG.Services.Mappers;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,6 +44,8 @@ namespace PG.Services
             Playlist playlistToAdd = playlistDTO.ToEntity();
 
             var playlist = await _context.Playlists.AddAsync(playlistToAdd);
+            Log.Logger.Information($"Playlist with title '{playlist.Entity.Title}' has been created.");
+
             await _context.SaveChangesAsync();
 
             return playlist.Entity;
@@ -132,26 +135,44 @@ namespace PG.Services
             int allowedOffsetMore = 5 * 60; // 5 Min +
             int allowedOffsetLess = 5 * 60; // 5 Min -
 
+
+            int genresSelected = 0;
+
+            if (metalPercentagee != 0)
+            {
+                genresSelected++;
+            }
+
+            if (rockPercentagee != 0)
+            {
+                genresSelected++;
+            }
+
+            if (popPercentagee != 0)
+            {
+                genresSelected++;
+            }
+
             //TODO: 
             int[] offsetsMeteal = { 0, 0 };
             if (metalPercentagee != 0)
             {
-                offsetsMeteal[0] = allowedOffsetLess / 2;
-                offsetsMeteal[1] = allowedOffsetMore / 2;
+                offsetsMeteal[0] = allowedOffsetLess / genresSelected;
+                offsetsMeteal[1] = allowedOffsetMore / genresSelected;
             }
 
             int[] offsetsRock = { 0, 0 };
             if (rockPercentagee != 0)
             {
-                offsetsRock[0] = allowedOffsetLess / 2;
-                offsetsRock[1] = allowedOffsetMore / 2;
+                offsetsRock[0] = allowedOffsetLess / genresSelected;
+                offsetsRock[1] = allowedOffsetMore / genresSelected;
             }
 
             int[] offsetsPop = { 0, 0 };
             if (popPercentagee != 0)
             {
-                offsetsPop[0] = allowedOffsetLess / 2;
-                offsetsPop[1] = allowedOffsetMore / 2;
+                offsetsPop[0] = allowedOffsetLess / genresSelected;
+                offsetsPop[1] = allowedOffsetMore / genresSelected;
             }
 
             //TODO: 

@@ -4,6 +4,8 @@ using PG.Models;
 using PG.Services.Contract;
 using PG.Services.DTOs;
 using PG.Services.Mappers;
+using Serilog;
+using Serilog.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +16,7 @@ namespace PG.Services
     public class SongService : ISongService
     {
         private readonly PGDbContext _context;
+
 
         public SongService(PGDbContext context)
         {

@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -13,6 +9,7 @@ using PG.Data.Context;
 using PG.Models;
 using PG.Services;
 using PG.Services.Contract;
+using Serilog;
 
 namespace PG.Web
 {
@@ -62,6 +59,9 @@ namespace PG.Web
                 app.UseExceptionHandler("/Home/Error");
             }
             app.UseStaticFiles();
+            
+            app.UseSerilogRequestLogging();
+
             app.UseSwagger();
             app.UseSwaggerUI(x =>
             {
@@ -81,6 +81,8 @@ namespace PG.Web
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
+
+
         }
     }
 }
