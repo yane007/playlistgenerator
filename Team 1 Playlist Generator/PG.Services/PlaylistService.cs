@@ -153,7 +153,7 @@ namespace PG.Services
                 genresSelected++;
             }
 
-            //TODO: 
+
             int[] offsetsMeteal = { 0, 0 };
             if (metalPercentagee != 0)
             {
@@ -359,6 +359,8 @@ namespace PG.Services
             await _context.SaveChangesAsync();
         }
 
+
+
         private static List<Song> ExtractSongs(int tripTime, int allowedOffsetLess, int allowedOffsetMore, double percentage, List<Song> result)
         {
             if (result.Count() == 0)
@@ -415,7 +417,7 @@ namespace PG.Services
 
             foreach (var song in result)
             {
-                if (count > secondsAllowed - allowedOffsetLess && count < secondsAllowed + allowedOffsetMore)//добре сме и влизаме в диапазона
+                if (count > secondsAllowed - allowedOffsetLess && count < secondsAllowed + allowedOffsetMore)
                 {
                     break;
                 }

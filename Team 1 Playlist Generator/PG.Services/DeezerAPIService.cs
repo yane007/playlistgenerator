@@ -104,7 +104,7 @@ namespace PG.Services
                                     Duration = song.Duration,
                                     Rank = song.Rank,
                                     Preview = song.Preview,
-
+                                    Link = song.Link,
                                     GenreId = expectedGenre.Id,
                                     ArtistId = expectedArtist.Id,
                                     AlbumId = expectedAlbum.Id
