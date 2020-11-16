@@ -10,7 +10,7 @@ using PG.Data.Context;
 namespace PG.Data.Migrations
 {
     [DbContext(typeof(PGDbContext))]
-    [Migration("20201115190237_Initial")]
+    [Migration("20201116140718_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -264,6 +264,21 @@ namespace PG.Data.Migrations
                     b.ToTable("Playlists");
                 });
 
+            modelBuilder.Entity("PG.Models.PlaylistsGenres", b =>
+                {
+                    b.Property<int>("PlaylistId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("GenreId")
+                        .HasColumnType("int");
+
+                    b.HasKey("PlaylistId", "GenreId");
+
+                    b.HasIndex("GenreId");
+
+                    b.ToTable("PlaylistsGenres");
+                });
+
             modelBuilder.Entity("PG.Models.PlaylistsSongs", b =>
                 {
                     b.Property<int>("PlaylistId")
@@ -455,6 +470,21 @@ namespace PG.Data.Migrations
                     b.HasOne("PG.Models.User", "User")
                         .WithMany("Playlists")
                         .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("PG.Models.PlaylistsGenres", b =>
+                {
+                    b.HasOne("PG.Models.Genre", "Genre")
+                        .WithMany("PlaylistsGenres")
+                        .HasForeignKey("GenreId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("PG.Models.Playlist", "Playlist")
+                        .WithMany("PlaylistsGenres")
+                        .HasForeignKey("PlaylistId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("PG.Models.PlaylistsSongs", b =>

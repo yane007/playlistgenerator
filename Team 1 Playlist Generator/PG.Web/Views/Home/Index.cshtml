@@ -23,16 +23,16 @@ else
             <thead>
                 <tr>
                     <th scope="col">@item.Title</th>
-                    <th scope="col">@item.Duration</th>
+                    <th scope="col">@item.DurationInHours</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach (var song in item.PlaylistsSongs)
+                @foreach (var song in item.Songs)
                 {
                     <tr>
-                        <td>@song.Song.Title</td>
-                        <td>@song.Song.Duration</td>
-                        <td><a href=@song.Song.Preview>Click to play</a></td>
+                        <td>@song.Title</td>
+                        <td>@song.DurationInMinutes</td>
+                        <td><a href=@song.Preview>Click to play</a></td>
                     </tr>
                 }
 

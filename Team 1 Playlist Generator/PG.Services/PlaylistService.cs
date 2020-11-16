@@ -127,7 +127,7 @@ namespace PG.Services
         }
 
         public async Task GeneratePlaylist(int timeForTrip, string playlistName, int metalPercentagee,
-            int rockPercentagee, int popPercentagee, bool topTracks, bool sameArtist, string userId)
+            int rockPercentagee, int popPercentagee, bool topTracks, bool sameArtist, User user)
         {
             var playlistAdded = await Create(new PlaylistDTO { Title = playlistName });
 
@@ -353,8 +353,8 @@ namespace PG.Services
             }
 
             playlistAdded.Duration = realTotalDuration;
-            playlistAdded.UserId = userId;
-
+            playlistAdded.UserId = user.Id;
+            user.Playlists.Add(playlistAdded);
 
             await _context.SaveChangesAsync();
         }

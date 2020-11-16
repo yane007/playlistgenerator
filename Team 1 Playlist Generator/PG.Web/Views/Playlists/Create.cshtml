@@ -28,7 +28,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" style="background-color: #c2ffb3" ;>From:</span>
                             </div>
-                            <input type="text" class="form-control" aria-describedby="button-addon2" />
+                            <input asp-for="@Model.StartLocation" type="text" class="form-control" aria-describedby="button-addon2" />
                             <div class="input-group-append">
                                 <button class="btn btn-outline-secondary" type="button" id="button-addon2">Map</button>
                             </div>
@@ -37,7 +37,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" style="background-color:#c2ffb3">To:</span>
                             </div>
-                            <input type="text" class="form-control" aria-describedby="button-addon2">
+                            <input asp-for="@Model.EndLocation" type="text" class="form-control" aria-describedby="button-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-outline-secondary" type="button" id="button-addon2">Map</button>
                             </div>

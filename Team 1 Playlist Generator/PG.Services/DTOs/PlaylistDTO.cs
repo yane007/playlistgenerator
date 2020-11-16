@@ -8,13 +8,9 @@ namespace PG.Services.DTOs
     {
         public string Title { get; set; }
 
-        public string Description { get; set; }
-
         public int Duration { get; set; }
 
         public string Picture { get; set; }
-
-        public int UserId { get; set; }
 
         public ICollection<PlaylistsSongs> PlaylistsSongs { get; set; } = new List<PlaylistsSongs>();
     }

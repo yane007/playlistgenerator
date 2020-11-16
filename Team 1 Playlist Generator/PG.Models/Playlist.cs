@@ -29,6 +29,8 @@ namespace PG.Models
 
         public ICollection<PlaylistsSongs> PlaylistsSongs { get; set; }
 
+        public ICollection<PlaylistsGenres> PlaylistsGenres { get; set; }
+
         public ICollection<Genre> Genres { get; set; }
     }
 }

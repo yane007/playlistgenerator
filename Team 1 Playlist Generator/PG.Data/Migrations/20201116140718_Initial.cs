@@ -230,6 +230,30 @@ namespace PG.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "PlaylistsGenres",
+                columns: table => new
+                {
+                    PlaylistId = table.Column<int>(nullable: false),
+                    GenreId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PlaylistsGenres", x => new { x.PlaylistId, x.GenreId });
+                    table.ForeignKey(
+                        name: "FK_PlaylistsGenres_Genres_GenreId",
+                        column: x => x.GenreId,
+                        principalTable: "Genres",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_PlaylistsGenres_Playlists_PlaylistId",
+                        column: x => x.PlaylistId,
+                        principalTable: "Playlists",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Songs",
                 columns: table => new
                 {
@@ -341,6 +365,11 @@ namespace PG.Data.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_PlaylistsGenres_GenreId",
+                table: "PlaylistsGenres",
+                column: "GenreId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_PlaylistSongs_SongId",
                 table: "PlaylistSongs",
                 column: "SongId");
@@ -377,6 +406,9 @@ namespace PG.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "PlaylistsGenres");
 
             migrationBuilder.DropTable(
                 name: "PlaylistSongs");

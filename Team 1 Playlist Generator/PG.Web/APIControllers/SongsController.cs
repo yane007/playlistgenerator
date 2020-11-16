@@ -4,13 +4,13 @@ using PG.Services.Contract;
 using PG.Services.Mappers;
 using PG.Web.Models;
 using PG.Web.Models.Mappers;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace PG.Web.APIControllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class SongsController : ControllerBase
     {
         private readonly ISongService _songService;
@@ -26,7 +26,9 @@ namespace PG.Web.APIControllers
         {
             var songs = await _songService.GetAllSongs();
 
-            return Ok(songs);
+            var songsViewModels = songs.Select(x => x.ToViewModel());
+
+            return Ok(songsViewModels);
         }
 
         //GET api/songs/id
@@ -35,7 +37,9 @@ namespace PG.Web.APIControllers
         {
             var song = await _songService.GetSongById(id);
 
-            return Ok(song.ToViewModel());
+            var songViewModels = song.ToViewModel();
+
+            return Ok(songViewModels);
         }
 
         //POST api/songs
@@ -45,7 +49,9 @@ namespace PG.Web.APIControllers
         {
             var song = await _songService.Create(model.ToDTO());
 
-            return Created("post", song.ToViewModel());
+            var songViewModel = song.ToViewModel();
+
+            return Created("post", songViewModel);
         }
 
         //PUT api/songs/id
@@ -55,7 +61,9 @@ namespace PG.Web.APIControllers
         {
             var song = await _songService.Update(id, model.ToDTO());
 
-            return Ok(song);
+            var songViewModel = song.ToViewModel();
+
+            return Ok(songViewModel);
         }
 
         //DELETE api/songs/id

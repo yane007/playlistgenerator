@@ -12,7 +12,5 @@ namespace PG.Models
 
         public bool IsDeleted { get; set; }
         public ICollection<Playlist> Playlists { get; set; }
-
-
     }
 }

@@ -62,15 +62,14 @@ namespace PG.Web.Controllers
                 Response.Redirect("Login.aspx");
             }
 
-            int tripTime = 10000;
-            //await _bingMapsAPIService.FindDuration(formInput.StartLocation, formInput.EndLocation);
+            int tripTime = await _bingMapsAPIService.FindDuration(formInput.StartLocation, formInput.EndLocation);
 
             var user = await _userManager.GetUserAsync(User);
 
             for (int i = 0; i < 1; i++)
             {
                 await _playlistService.GeneratePlaylist(tripTime, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"),
-                    formInput.Metal, formInput.Rock, formInput.Pop, formInput.TopTracks, formInput.SameArtist, user.Id);
+                    formInput.Metal, formInput.Rock, formInput.Pop, formInput.TopTracks, formInput.SameArtist, user);
 
                 Thread.Sleep(10);
             }
