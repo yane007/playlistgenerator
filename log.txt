@@ -483,3 +483,1823 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 11/18/2020 14:56:43 HTTP "GET" "/" responded 200 in 25.4150 ms
 11/18/2020 14:56:44 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 24.4775 ms
 11/18/2020 14:56:44 HTTP "GET" "/Playlists" responded 200 in 19.1187 ms
+11/18/2020 16:24:23 Application starting up
+11/18/2020 16:24:25 - Getting index page -
+11/18/2020 16:25:04 Role "21e96754-5af5-4b4b-83d2-11a51e30902d" validation failed: "DuplicateRoleName".
+11/18/2020 16:25:04 Role "239492a3-f38c-4f60-ae2d-0bc0bf32d4bd" validation failed: "DuplicateRoleName".
+11/18/2020 16:25:04 HTTP "GET" "/" responded 200 in 40553.6988 ms
+11/18/2020 16:29:32 - Getting index page -
+11/18/2020 16:29:32 Role "57942fff-ae2b-4bfc-ace1-f2281f9e3734" validation failed: "DuplicateRoleName".
+11/18/2020 16:29:32 Role "d7d5d7f6-ca4b-434e-9b90-538f50967840" validation failed: "DuplicateRoleName".
+11/18/2020 16:29:33 HTTP "GET" "/" responded 200 in 64.4334 ms
+11/18/2020 16:29:38 HTTP "GET" "/Playlists" responded 200 in 30.7196 ms
+11/18/2020 16:29:38 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 14.9964 ms
+11/18/2020 16:29:39 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 11.8734 ms
+11/18/2020 16:29:39 HTTP "GET" "/Playlists/Create" responded 200 in 42.5031 ms
+11/18/2020 16:29:39 HTTP "GET" "/Playlists/Create/ws" responded 200 in 4.9306 ms
+11/18/2020 16:29:40 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 6.6288 ms
+11/18/2020 16:29:41 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 7.3725 ms
+11/18/2020 16:29:41 HTTP "GET" "/Playlists" responded 200 in 6.4933 ms
+11/18/2020 16:29:42 - Getting index page -
+11/18/2020 16:29:42 Role "85b4eac1-3bea-4e6c-9145-1d50fff7c82b" validation failed: "DuplicateRoleName".
+11/18/2020 16:29:42 Role "bbab95ef-f061-4e65-ba2b-0990672a98ff" validation failed: "DuplicateRoleName".
+11/18/2020 16:29:42 HTTP "GET" "/" responded 200 in 10.4131 ms
+11/18/2020 16:29:42 HTTP "GET" "/Playlists" responded 200 in 5.0696 ms
+11/18/2020 16:29:43 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 5.8310 ms
+11/18/2020 16:29:43 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 5.3278 ms
+11/18/2020 16:29:43 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 5.7456 ms
+11/18/2020 16:30:32 Application starting up
+11/18/2020 16:30:32 - Getting index page -
+11/18/2020 16:30:33 Role "9320d56c-b7b8-4e75-ad99-edfa516e1ebd" validation failed: "DuplicateRoleName".
+11/18/2020 16:30:33 Role "4b9144db-49aa-4658-8186-27d1faf08c07" validation failed: "DuplicateRoleName".
+11/18/2020 16:30:34 HTTP "GET" "/" responded 200 in 1198.9226 ms
+11/18/2020 16:30:42 HTTP "GET" "/Playlists" responded 200 in 43.2509 ms
+11/18/2020 16:30:42 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 31.7865 ms
+11/18/2020 16:30:44 HTTP "GET" "/Playlists/Create" responded 200 in 46.6514 ms
+11/18/2020 16:30:44 HTTP "GET" "/Playlists/Create/ws" responded 200 in 6.4329 ms
+11/18/2020 16:30:49 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 20.0414 ms
+11/18/2020 16:30:50 HTTP "GET" "/Playlists" responded 200 in 7.5892 ms
+11/18/2020 16:30:50 - Getting index page -
+11/18/2020 16:30:50 Role "e92b354b-f53a-4e2f-80cc-8ab8a2ae59df" validation failed: "DuplicateRoleName".
+11/18/2020 16:30:50 Role "3133ec62-8309-417e-9c23-8cfcb4aa162d" validation failed: "DuplicateRoleName".
+11/18/2020 16:30:50 HTTP "GET" "/" responded 200 in 16.5283 ms
+11/18/2020 16:30:51 HTTP "GET" "/Playlists" responded 200 in 6.8509 ms
+11/18/2020 16:30:51 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 9.8350 ms
+11/18/2020 16:30:51 HTTP "GET" "/Playlists" responded 200 in 7.8370 ms
+11/18/2020 16:30:52 - Getting index page -
+11/18/2020 16:30:52 Role "88311f2e-39f2-47e6-837d-9deeea974a7b" validation failed: "DuplicateRoleName".
+11/18/2020 16:30:52 Role "0af6c42c-d205-4f9c-931b-e528b029b5d7" validation failed: "DuplicateRoleName".
+11/18/2020 16:30:52 HTTP "GET" "/" responded 200 in 13.7838 ms
+11/18/2020 16:31:19 Application starting up
+11/18/2020 16:31:20 - Getting index page -
+11/18/2020 16:31:21 Role "9f46c9de-616a-425d-bf6f-4a0b9a64923a" validation failed: "DuplicateRoleName".
+11/18/2020 16:31:21 Role "0794af2b-a347-421f-b37a-50042d7721d3" validation failed: "DuplicateRoleName".
+11/18/2020 16:31:21 HTTP "GET" "/" responded 200 in 1252.3544 ms
+11/18/2020 16:33:20 Application starting up
+11/18/2020 16:33:21 - Getting index page -
+11/18/2020 16:33:22 Role "9b4be9a2-4ce6-431f-9ed6-2e564234cfa2" validation failed: "DuplicateRoleName".
+11/18/2020 16:33:22 Role "d14f8e2f-f02c-4bdc-bfaa-b167dd558548" validation failed: "DuplicateRoleName".
+11/18/2020 16:33:22 HTTP "GET" "/" responded 200 in 1200.8582 ms
+11/18/2020 16:34:11 Application starting up
+11/18/2020 16:34:12 - Getting index page -
+11/18/2020 16:34:13 Role "5c2a26ad-f193-4b7c-86cd-5f77822be04a" validation failed: "DuplicateRoleName".
+11/18/2020 16:34:13 Role "ec87db8f-6cf2-48e7-b352-f4e32f47ae9c" validation failed: "DuplicateRoleName".
+11/18/2020 16:34:13 HTTP "GET" "/" responded 200 in 1199.8514 ms
+11/18/2020 16:35:48 Application starting up
+11/18/2020 16:35:48 - Getting index page -
+11/18/2020 16:35:49 Role "bdc5f67b-fb0f-4ece-aa02-1a189f883268" validation failed: "DuplicateRoleName".
+11/18/2020 16:35:49 Role "d64aa26a-0392-45f2-b900-377aed066c45" validation failed: "DuplicateRoleName".
+11/18/2020 16:35:49 HTTP "GET" "/" responded 200 in 1187.4827 ms
+11/18/2020 16:35:58 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 52.4263 ms
+11/18/2020 16:35:59 HTTP "GET" "/Playlists" responded 200 in 30.7967 ms
+11/18/2020 16:36:00 - Getting index page -
+11/18/2020 16:36:00 Role "209bc896-d2e8-413f-83cc-998d7189c115" validation failed: "DuplicateRoleName".
+11/18/2020 16:36:00 Role "e3b873b9-f03e-40fb-8eb5-77cc1e6e54ee" validation failed: "DuplicateRoleName".
+11/18/2020 16:36:00 HTTP "GET" "/" responded 200 in 16.2274 ms
+11/18/2020 16:43:26 Application starting up
+11/18/2020 16:43:28 - Getting index page -
+11/18/2020 16:43:29 Role "c22dd975-7f7c-41e5-baa9-afb2d806b4e6" validation failed: "DuplicateRoleName".
+11/18/2020 16:43:29 Role "4b5e4d0a-82d7-43b8-ba8c-1b24c7f2920a" validation failed: "DuplicateRoleName".
+11/18/2020 16:43:29 HTTP "GET" "/" responded 200 in 1598.3926 ms
+11/18/2020 16:47:06 Application starting up
+11/18/2020 16:47:07 - Getting index page -
+11/18/2020 16:47:08 Role "f1e406bd-3340-436d-906e-5ab496f804a0" validation failed: "DuplicateRoleName".
+11/18/2020 16:47:08 Role "e0324155-6b66-44d1-8e36-2c6c00b6f413" validation failed: "DuplicateRoleName".
+11/18/2020 16:47:08 HTTP "GET" "/" responded 200 in 1269.9326 ms
+11/18/2020 16:47:11 HTTP "GET" "/Playlists/ShowById" responded 500 in 23.9103 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.Int32.Parse(String s)
+   at PG.Web.Controllers.PlaylistsController.ShowById(String id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/18/2020 16:47:11 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.Int32.Parse(String s)
+   at PG.Web.Controllers.PlaylistsController.ShowById(String id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/18/2020 16:47:27 Application starting up
+11/18/2020 16:47:29 - Getting index page -
+11/18/2020 16:47:30 Role "71303758-b4d0-4e05-9907-29a695e85aee" validation failed: "DuplicateRoleName".
+11/18/2020 16:47:30 Role "42ce6286-f58a-45ce-8186-7c3cd839cead" validation failed: "DuplicateRoleName".
+11/18/2020 16:47:30 HTTP "GET" "/" responded 200 in 1482.5184 ms
+11/18/2020 16:47:48 Application starting up
+11/18/2020 16:48:11 Application starting up
+11/18/2020 16:48:13 - Getting index page -
+11/18/2020 16:48:14 Role "30b52732-31bb-4684-8129-ceb33bcb6021" validation failed: "DuplicateRoleName".
+11/18/2020 16:48:14 Role "0b4d562f-b49a-4ac0-a109-bafdd541d8ac" validation failed: "DuplicateRoleName".
+11/18/2020 16:48:14 HTTP "GET" "/" responded 200 in 1533.8826 ms
+11/18/2020 16:48:24 HTTP "GET" "/Playlists/ShowById" responded 500 in 8034.1831 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 86
+   at PG.Web.Controllers.PlaylistsController.ShowById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/18/2020 16:48:24 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 86
+   at PG.Web.Controllers.PlaylistsController.ShowById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/18/2020 16:49:13 Application starting up
+11/18/2020 16:49:14 - Getting index page -
+11/18/2020 16:49:15 Role "1a7566fa-93ab-4ad3-997c-ffdf28b9a3c4" validation failed: "DuplicateRoleName".
+11/18/2020 16:49:15 Role "86593d99-dd5e-4e90-a710-a2bba8f3d518" validation failed: "DuplicateRoleName".
+11/18/2020 16:49:15 HTTP "GET" "/" responded 200 in 1200.6747 ms
+11/18/2020 16:50:07 Application starting up
+11/18/2020 16:50:08 - Getting index page -
+11/18/2020 16:50:09 Role "5321775a-fd96-4321-8659-736f46882c9f" validation failed: "DuplicateRoleName".
+11/18/2020 16:50:09 Role "88989161-b25f-45fb-8771-87b3ef92f4d4" validation failed: "DuplicateRoleName".
+11/18/2020 16:50:09 HTTP "GET" "/" responded 200 in 1205.0060 ms
+11/18/2020 16:50:10 HTTP "GET" "/Playlists/ShowById" responded 500 in 60.0949 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 86
+   at PG.Web.Controllers.PlaylistsController.ShowById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/18/2020 16:50:10 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 86
+   at PG.Web.Controllers.PlaylistsController.ShowById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/18/2020 16:50:11 - Getting index page -
+11/18/2020 16:50:11 Role "328e3f66-8b90-44f3-aa79-eb9e05376226" validation failed: "DuplicateRoleName".
+11/18/2020 16:50:11 Role "8602c469-2407-4b9f-9633-94b2e5754d7e" validation failed: "DuplicateRoleName".
+11/18/2020 16:50:11 HTTP "GET" "/" responded 200 in 33.5817 ms
+11/18/2020 16:50:12 HTTP "GET" "/Playlists/ShowById" responded 500 in 6.5357 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 86
+   at PG.Web.Controllers.PlaylistsController.ShowById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/18/2020 16:50:12 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 86
+   at PG.Web.Controllers.PlaylistsController.ShowById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 70
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/18/2020 16:50:15 - Getting index page -
+11/18/2020 16:50:15 Role "9b472d10-37f3-4f70-9a2e-93a8c63996a4" validation failed: "DuplicateRoleName".
+11/18/2020 16:50:15 Role "569b9f52-caed-40a6-9ebf-93641eb6d271" validation failed: "DuplicateRoleName".
+11/18/2020 16:50:15 HTTP "GET" "/" responded 200 in 34.8829 ms
+11/18/2020 16:50:47 Application starting up
+11/18/2020 16:50:48 - Getting index page -
+11/18/2020 16:50:49 Role "bca5dbfd-cb39-4d4c-a273-33e4c9a3005a" validation failed: "DuplicateRoleName".
+11/18/2020 16:50:49 Role "fbe9bb02-2154-4cb3-a5d8-6ffef2341c62" validation failed: "DuplicateRoleName".
+11/18/2020 16:50:50 HTTP "GET" "/" responded 200 in 1470.2964 ms
+11/18/2020 16:51:03 HTTP "GET" "/Playlists/ShowById/3" responded 200 in 11508.5677 ms
+11/18/2020 16:53:13 Application starting up
+11/18/2020 16:53:14 - Getting index page -
+11/18/2020 16:53:15 Role "b35557c2-3536-45dc-b674-c45dcee5ec2a" validation failed: "DuplicateRoleName".
+11/18/2020 16:53:15 Role "0de9fb1c-6ea0-4fac-b7e6-dcd5c1b5b891" validation failed: "DuplicateRoleName".
+11/18/2020 16:53:15 HTTP "GET" "/" responded 200 in 1333.8992 ms
+11/18/2020 16:53:17 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 73.8885 ms
+11/18/2020 16:53:20 - Getting index page -
+11/18/2020 16:53:20 Role "5612b351-e2d8-4bde-a6cd-f30be5e22e32" validation failed: "DuplicateRoleName".
+11/18/2020 16:53:20 Role "500718d4-fc6b-45eb-9fbf-a2759ae95b25" validation failed: "DuplicateRoleName".
+11/18/2020 16:53:20 HTTP "GET" "/" responded 200 in 38.3443 ms
+11/18/2020 16:53:20 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 10.0388 ms
+11/18/2020 16:53:21 - Getting index page -
+11/18/2020 16:53:21 Role "d11e3282-a60e-4f2a-add3-c9587f774f33" validation failed: "DuplicateRoleName".
+11/18/2020 16:53:21 Role "68d89162-a9e0-47b8-96a6-3dff6406f99c" validation failed: "DuplicateRoleName".
+11/18/2020 16:53:22 HTTP "GET" "/" responded 200 in 47.1272 ms
+11/18/2020 16:56:52 Application starting up
+11/18/2020 16:56:54 - Getting index page -
+11/18/2020 16:56:54 Role "b7ce994f-8e68-4550-af8d-4578bf9196c0" validation failed: "DuplicateRoleName".
+11/18/2020 16:56:54 Role "8a270d60-75b1-4b9d-96c4-fddd34f8324a" validation failed: "DuplicateRoleName".
+11/18/2020 16:56:54 HTTP "GET" "/" responded 200 in 1335.5540 ms
+11/18/2020 16:56:55 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 78.8563 ms
+11/18/2020 16:57:02 - Getting index page -
+11/18/2020 16:57:02 Role "554a3fbb-d6c6-4e3d-bde3-7dd074c44315" validation failed: "DuplicateRoleName".
+11/18/2020 16:57:02 Role "c465fa46-c618-4b16-92b6-1b5a31d95773" validation failed: "DuplicateRoleName".
+11/18/2020 16:57:02 HTTP "GET" "/" responded 200 in 31.9187 ms
+11/18/2020 16:57:03 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 11.2802 ms
+11/18/2020 16:57:21 - Getting index page -
+11/18/2020 16:57:21 Role "1bd9765d-0290-46d4-9d29-6d7daa9dcb78" validation failed: "DuplicateRoleName".
+11/18/2020 16:57:21 Role "d1c63dac-e948-4050-906e-a65c266e30ab" validation failed: "DuplicateRoleName".
+11/18/2020 16:57:21 HTTP "GET" "/" responded 200 in 28.5772 ms
+11/18/2020 16:57:22 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 18.7005 ms
+11/18/2020 16:57:24 - Getting index page -
+11/18/2020 16:57:24 Role "4d86ddd4-ba9c-4c41-ab5d-31b71b144835" validation failed: "DuplicateRoleName".
+11/18/2020 16:57:24 Role "b8ed72c8-535e-40dc-b6c6-3f3a73626965" validation failed: "DuplicateRoleName".
+11/18/2020 16:57:24 HTTP "GET" "/" responded 200 in 15.3202 ms
+11/18/2020 16:57:25 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 12.3863 ms
+11/18/2020 16:57:26 - Getting index page -
+11/18/2020 16:57:26 Role "adaccf00-9a18-46a4-8182-39a09e28cab8" validation failed: "DuplicateRoleName".
+11/18/2020 16:57:26 Role "1423fb14-38b3-49c6-a748-ddd8abc2c04f" validation failed: "DuplicateRoleName".
+11/18/2020 16:57:26 HTTP "GET" "/" responded 200 in 17.1039 ms
+11/18/2020 16:57:31 - Getting index page -
+11/18/2020 16:57:31 Role "e652e4f0-3550-4867-b9d9-336b70c837a3" validation failed: "DuplicateRoleName".
+11/18/2020 16:57:31 Role "ed75dfa8-5be3-436f-b348-ef6416929f3a" validation failed: "DuplicateRoleName".
+11/18/2020 16:57:31 HTTP "GET" "/" responded 200 in 14.0543 ms
+11/18/2020 16:57:32 HTTP "GET" "/Playlists/Playlist/3" responded 302 in 2.5371 ms
+11/18/2020 16:57:33 HTTP "GET" "/Identity/Account/Login?ReturnUrl=%2FPlaylists%2FPlaylist%2F3" responded 200 in 69.1372 ms
+11/18/2020 16:57:36 HTTP "GET" "/Playlists/Playlist/3" responded 302 in 0.8328 ms
+11/18/2020 16:57:36 HTTP "GET" "/Identity/Account/Login?ReturnUrl=%2FPlaylists%2FPlaylist%2F3" responded 200 in 7.7513 ms
+11/18/2020 16:58:14 Application starting up
+11/18/2020 16:58:15 - Getting index page -
+11/18/2020 16:58:16 Role "fc872ca5-1c36-437a-bd92-f8c1f202b4a3" validation failed: "DuplicateRoleName".
+11/18/2020 16:58:16 Role "384956ff-d33f-40ed-85a6-54ece9ae0ae9" validation failed: "DuplicateRoleName".
+11/18/2020 16:58:16 HTTP "GET" "/" responded 200 in 1227.9421 ms
+11/18/2020 16:58:19 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 39.9506 ms
+11/18/2020 16:58:19 - Getting index page -
+11/18/2020 16:58:19 Role "b74ccdb1-9a79-474b-aaef-08be37167902" validation failed: "DuplicateRoleName".
+11/18/2020 16:58:19 Role "3ee1395e-13f1-4c3f-bb07-5c2111b067af" validation failed: "DuplicateRoleName".
+11/18/2020 16:58:19 HTTP "GET" "/" responded 200 in 45.1443 ms
+11/18/2020 16:58:22 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 37.4855 ms
+11/18/2020 16:58:57 Application starting up
+11/18/2020 16:58:58 - Getting index page -
+11/18/2020 16:58:59 Role "c57563a3-d7b2-415d-aeaa-8731a8d9082c" validation failed: "DuplicateRoleName".
+11/18/2020 16:58:59 Role "a501da35-2ea6-4fc4-9194-25b54ccffbbb" validation failed: "DuplicateRoleName".
+11/18/2020 16:58:59 HTTP "GET" "/" responded 200 in 1227.5012 ms
+11/18/2020 16:59:01 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 71.1668 ms
+11/18/2020 16:59:43 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 16.7842 ms
+11/18/2020 17:03:46 Application starting up
+11/18/2020 17:03:47 - Getting index page -
+11/18/2020 17:03:48 HTTP "GET" "/" responded 200 in 1246.2991 ms
+11/18/2020 17:03:51 HTTP "GET" "/Identity/Account/Login" responded 200 in 84.7689 ms
+11/18/2020 17:03:52 User logged in.
+11/18/2020 17:03:52 HTTP "POST" "/Identity/Account/Login" responded 302 in 146.5891 ms
+11/18/2020 17:03:52 - Getting index page -
+11/18/2020 17:03:52 HTTP "GET" "/" responded 200 in 19.4180 ms
+11/18/2020 17:03:54 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 22.6796 ms
+11/18/2020 17:03:56 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 34.3722 ms
+11/18/2020 17:04:01 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 11.6716 ms
+11/18/2020 17:38:54 Application starting up
+11/18/2020 17:38:56 - Getting index page -
+11/18/2020 17:38:56 Role "0ba6ba82-49ef-4811-87ea-1e1d651c5ea1" validation failed: "DuplicateRoleName".
+11/18/2020 17:38:56 Role "5fe9a13f-45d5-4879-920f-5733125e127b" validation failed: "DuplicateRoleName".
+11/18/2020 17:38:56 HTTP "GET" "/" responded 200 in 1321.4536 ms
+11/18/2020 17:38:58 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 66.1729 ms
+11/18/2020 17:39:18 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 24.2573 ms
+11/18/2020 17:39:59 HTTP "GET" "/api/Playlists/3" responded 200 in 94.2692 ms
+11/18/2020 17:41:22 Application starting up
+11/18/2020 17:41:23 - Getting index page -
+11/18/2020 17:41:24 Role "383e032f-cd74-4d71-8c95-8820fa6c5d2e" validation failed: "DuplicateRoleName".
+11/18/2020 17:41:24 Role "a0d4d743-80a1-4cae-b2de-c542dc26b6de" validation failed: "DuplicateRoleName".
+11/18/2020 17:41:24 HTTP "GET" "/" responded 200 in 1282.1315 ms
+11/18/2020 17:41:26 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 71.2437 ms
+11/18/2020 17:41:30 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 28.0489 ms
+11/18/2020 17:41:36 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 21.0052 ms
+11/18/2020 17:41:39 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 9.6630 ms
+11/18/2020 17:41:42 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 8.4362 ms
+11/18/2020 17:41:45 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 7.5872 ms
+11/18/2020 17:41:48 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 7.5496 ms
+11/18/2020 17:41:51 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 11.0124 ms
+11/18/2020 17:41:53 - Getting index page -
+11/18/2020 17:41:53 Role "0f2abfe9-42d1-4ae8-b894-032e2dca42ad" validation failed: "DuplicateRoleName".
+11/18/2020 17:41:53 Role "73735bd5-8449-48b4-8b32-491d8bebed3b" validation failed: "DuplicateRoleName".
+11/18/2020 17:41:53 HTTP "GET" "/" responded 200 in 24.4116 ms
+11/18/2020 17:41:54 HTTP "GET" "/Playlists/Create" responded 200 in 43.4091 ms
+11/18/2020 17:41:54 HTTP "GET" "/Playlists/Create/ws" responded 200 in 6.3669 ms
+11/18/2020 17:42:12 HTTP "POST" "/Playlists/Create" responded 500 in 1942.8155 ms
+System.ArgumentException: Playlist with title 'Futblok qko' already exists.
+   at PG.Services.PlaylistService.Create(PlaylistDTO playlistDTO) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 44
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistName, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 132
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/18/2020 17:42:12 An unhandled exception has occurred while executing the request.
+System.ArgumentException: Playlist with title 'Futblok qko' already exists.
+   at PG.Services.PlaylistService.Create(PlaylistDTO playlistDTO) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 44
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistName, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 132
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/18/2020 17:42:14 HTTP "GET" "/Playlists/Create" responded 200 in 7.5900 ms
+11/18/2020 17:42:14 HTTP "GET" "/Playlists/Create/ws" responded 200 in 5.4224 ms
+11/18/2020 17:43:58 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 27.9088 ms
+11/18/2020 17:43:58 - Getting index page -
+11/18/2020 17:43:58 Role "c6ec4d86-dcd6-42b2-b50c-b0f665a39428" validation failed: "DuplicateRoleName".
+11/18/2020 17:43:58 Role "4172e8e0-170d-4e90-8945-eb33ac234d20" validation failed: "DuplicateRoleName".
+11/18/2020 17:43:58 HTTP "GET" "/" responded 200 in 22.8206 ms
+11/18/2020 17:44:00 HTTP "GET" "/Identity/Account/Register" responded 200 in 43.3136 ms
+11/18/2020 17:45:21 HTTP "GET" "/Identity/Account/Register" responded 200 in 5.1887 ms
+11/18/2020 17:48:24 Application starting up
+11/18/2020 17:48:25 - Getting index page -
+11/18/2020 17:48:26 Role "e87095de-a4f1-40fa-855d-c9a4432629e7" validation failed: "DuplicateRoleName".
+11/18/2020 17:48:26 Role "0c273234-7350-4b4f-a972-17045ace17e1" validation failed: "DuplicateRoleName".
+11/18/2020 17:48:27 HTTP "GET" "/" responded 200 in 1309.3407 ms
+11/18/2020 17:48:28 HTTP "GET" "/Identity/Account/Register" responded 200 in 84.1732 ms
+11/18/2020 17:48:29 HTTP "GET" "/Identity/Account/Login" responded 200 in 45.2038 ms
+11/18/2020 17:48:30 User logged in.
+11/18/2020 17:48:30 HTTP "POST" "/Identity/Account/Login" responded 302 in 124.4949 ms
+11/18/2020 17:48:30 - Getting index page -
+11/18/2020 17:48:30 Role "120296c1-6949-457a-ad87-71427a1fc146" validation failed: "DuplicateRoleName".
+11/18/2020 17:48:30 Role "148913ae-41b5-4b6e-8dae-f7b7196f5581" validation failed: "DuplicateRoleName".
+11/18/2020 17:48:30 HTTP "GET" "/" responded 200 in 25.4894 ms
+11/18/2020 17:48:32 HTTP "GET" "/Playlists/Create" responded 200 in 45.3868 ms
+11/18/2020 17:48:32 HTTP "GET" "/Playlists/Create/ws" responded 200 in 9.3046 ms
+11/18/2020 17:48:40 HTTP "POST" "/Playlists/Create" responded 500 in 358.6633 ms
+System.Text.Json.JsonException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& readStack, JsonReaderException ex)
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   at System.Text.Json.JsonSerializer.ReadCore(Type returnType, JsonSerializerOptions options, Utf8JsonReader& reader)
+   at System.Text.Json.JsonSerializer.Deserialize(String json, Type returnType, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at PG.Services.BingMapsAPIService.FindDuration(String start, String end) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\BingMapsAPIService.cs:line 33
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 85
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/18/2020 17:48:40 An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& readStack, JsonReaderException ex)
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   at System.Text.Json.JsonSerializer.ReadCore(Type returnType, JsonSerializerOptions options, Utf8JsonReader& reader)
+   at System.Text.Json.JsonSerializer.Deserialize(String json, Type returnType, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at PG.Services.BingMapsAPIService.FindDuration(String start, String end) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\BingMapsAPIService.cs:line 33
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 85
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/18/2020 17:48:41 HTTP "GET" "/Playlists/Create" responded 200 in 17.3141 ms
+11/18/2020 17:48:41 HTTP "GET" "/Playlists/Create/ws" responded 200 in 9.3641 ms
+11/18/2020 17:49:41 Application starting up
+11/18/2020 17:49:42 - Getting index page -
+11/18/2020 17:49:43 Role "66ad49e4-ea67-4683-8d57-c586d8428010" validation failed: "DuplicateRoleName".
+11/18/2020 17:49:43 Role "6f44a323-da36-4cdf-99d5-1ba0834bf913" validation failed: "DuplicateRoleName".
+11/18/2020 17:49:43 HTTP "GET" "/" responded 200 in 1288.3032 ms
+11/18/2020 17:49:44 HTTP "GET" "/Playlists/Create" responded 200 in 82.0431 ms
+11/18/2020 17:49:44 HTTP "GET" "/Playlists/Create/ws" responded 200 in 24.3760 ms
+11/18/2020 17:49:51 HTTP "POST" "/Playlists/Create" responded 500 in 394.1644 ms
+System.Text.Json.JsonException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& readStack, JsonReaderException ex)
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   at System.Text.Json.JsonSerializer.ReadCore(Type returnType, JsonSerializerOptions options, Utf8JsonReader& reader)
+   at System.Text.Json.JsonSerializer.Deserialize(String json, Type returnType, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at PG.Services.BingMapsAPIService.FindDuration(String start, String end) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\BingMapsAPIService.cs:line 33
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 85
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/18/2020 17:49:51 An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& readStack, JsonReaderException ex)
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   at System.Text.Json.JsonSerializer.ReadCore(Type returnType, JsonSerializerOptions options, Utf8JsonReader& reader)
+   at System.Text.Json.JsonSerializer.Deserialize(String json, Type returnType, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at PG.Services.BingMapsAPIService.FindDuration(String start, String end) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\BingMapsAPIService.cs:line 33
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 85
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/18/2020 17:49:51 HTTP "GET" "/Playlists/Create" responded 200 in 8.8633 ms
+11/18/2020 17:49:51 HTTP "GET" "/Playlists/Create/ws" responded 200 in 4.1545 ms
+11/18/2020 17:50:14 Application starting up
+11/18/2020 17:50:15 - Getting index page -
+11/18/2020 17:50:16 Role "2b01625b-b6fb-4211-9ad9-1f121acbd3ff" validation failed: "DuplicateRoleName".
+11/18/2020 17:50:16 Role "6ead7e25-33e9-4b57-8ef9-d72a09bad5fe" validation failed: "DuplicateRoleName".
+11/18/2020 17:50:16 HTTP "GET" "/" responded 200 in 1259.1736 ms
+11/18/2020 17:50:18 HTTP "GET" "/Playlists/Create" responded 200 in 81.2075 ms
+11/18/2020 17:50:18 HTTP "GET" "/Playlists/Create/ws" responded 200 in 23.1049 ms
+11/18/2020 17:50:35 Playlist with title 'Koda' has been created.
+11/18/2020 17:50:37 HTTP "POST" "/Playlists/Create" responded 302 in 2593.3815 ms
+11/18/2020 17:50:37 HTTP "GET" "/Playlists" responded 200 in 14.8885 ms
+11/18/2020 17:50:51 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 36.9172 ms
+11/18/2020 17:50:54 HTTP "GET" "/Playlists" responded 200 in 16.7644 ms
+11/18/2020 17:51:44 Application starting up
+11/18/2020 17:51:46 - Getting index page -
+11/18/2020 17:51:46 Role "0a6d6f8d-3a5c-43fd-9782-8375bb97cf3c" validation failed: "DuplicateRoleName".
+11/18/2020 17:51:47 Role "2edd0615-be0b-4f73-a10e-94192837abba" validation failed: "DuplicateRoleName".
+11/18/2020 17:51:47 HTTP "GET" "/" responded 200 in 1296.6309 ms
+11/18/2020 17:51:49 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 50.2312 ms
+11/18/2020 17:51:53 HTTP "GET" "/Playlists" responded 200 in 42.0590 ms
+11/18/2020 17:52:26 Application starting up
+11/18/2020 17:52:27 - Getting index page -
+11/18/2020 17:52:28 Role "9b43778d-02ea-4260-8258-a7f916abf3f5" validation failed: "DuplicateRoleName".
+11/18/2020 17:52:28 Role "32fb8c26-5310-434b-8b36-057422ab1c26" validation failed: "DuplicateRoleName".
+11/18/2020 17:52:28 HTTP "GET" "/" responded 200 in 1260.9347 ms
+11/18/2020 17:52:31 HTTP "GET" "/Playlists" responded 200 in 52.4620 ms
+11/18/2020 17:52:32 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 44.7649 ms
+11/18/2020 17:52:33 HTTP "GET" "/Playlists/Create" responded 200 in 53.6796 ms
+11/18/2020 17:52:33 HTTP "GET" "/Playlists/Create/ws" responded 200 in 7.9411 ms
+11/18/2020 17:52:34 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 25.5664 ms
+11/18/2020 17:52:34 HTTP "GET" "/Playlists" responded 200 in 9.3672 ms
+11/18/2020 17:52:35 - Getting index page -
+11/18/2020 17:52:35 Role "b32d2aae-970e-448e-b433-98ff1eb91e8d" validation failed: "DuplicateRoleName".
+11/18/2020 17:52:35 Role "6b82c31f-ce9c-4abf-ad6c-baef2e1b2f01" validation failed: "DuplicateRoleName".
+11/18/2020 17:52:35 HTTP "GET" "/" responded 200 in 19.1733 ms
+11/18/2020 17:52:36 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 45.1013 ms
+11/18/2020 17:52:38 - Getting index page -
+11/18/2020 17:52:38 Role "64749324-bb0d-4a3f-97a5-bd1807038bf5" validation failed: "DuplicateRoleName".
+11/18/2020 17:52:38 Role "d622477b-fa46-4f22-89b8-a1007ca19b05" validation failed: "DuplicateRoleName".
+11/18/2020 17:52:38 HTTP "GET" "/" responded 200 in 17.5001 ms
+11/18/2020 17:52:43 HTTP "GET" "/Playlists" responded 200 in 11.2129 ms
+11/18/2020 17:56:10 Application starting up
+11/18/2020 17:56:11 - Getting index page -
+11/18/2020 17:56:12 Role "e51aacfe-fb9c-42d2-8ded-e8a79d1f5e39" validation failed: "DuplicateRoleName".
+11/18/2020 17:56:12 Role "a2b2d289-cc4e-4ba3-b0e2-50cf9916271c" validation failed: "DuplicateRoleName".
+11/18/2020 17:56:12 HTTP "GET" "/" responded 200 in 1199.5001 ms
+11/18/2020 17:56:22 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 71.9857 ms
+11/18/2020 17:56:22 - Getting index page -
+11/18/2020 17:56:22 Role "89113719-04a9-45f8-8274-9803c4a5b8e8" validation failed: "DuplicateRoleName".
+11/18/2020 17:56:22 Role "6099dea3-fbc4-42c1-ba58-db69be0b2fc6" validation failed: "DuplicateRoleName".
+11/18/2020 17:56:22 HTTP "GET" "/" responded 200 in 38.3176 ms
+11/18/2020 17:56:25 HTTP "GET" "/Playlists/Playlist/5" responded 200 in 13.1889 ms
+11/18/2020 17:56:53 - Getting index page -
+11/18/2020 17:56:53 Role "932a584d-2d9d-453b-ad06-9b001ab5bde5" validation failed: "DuplicateRoleName".
+11/18/2020 17:56:53 Role "65f86667-44d1-416e-ae50-77c6b0eedc12" validation failed: "DuplicateRoleName".
+11/18/2020 17:56:53 HTTP "GET" "/" responded 200 in 45.5010 ms
+11/18/2020 17:57:57 HTTP "GET" "/Playlists/Create" responded 200 in 55.6249 ms
+11/18/2020 17:57:57 HTTP "GET" "/Playlists/Create/ws" responded 200 in 6.5631 ms
+11/18/2020 17:58:11 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 27.6427 ms
+11/18/2020 17:58:11 - Getting index page -
+11/18/2020 17:58:11 Role "73f2145e-2a46-4db8-9767-c62a5c3596e4" validation failed: "DuplicateRoleName".
+11/18/2020 17:58:11 Role "1f7ae854-15e9-467f-ac9c-6753ab3a395d" validation failed: "DuplicateRoleName".
+11/18/2020 17:58:11 HTTP "GET" "/" responded 200 in 19.7291 ms
+11/18/2020 17:58:13 HTTP "GET" "/Playlists" responded 200 in 17.8592 ms
+11/18/2020 17:58:14 - Getting index page -
+11/18/2020 17:58:14 Role "e373e13a-b6b8-435e-a7ac-59113bd81c1a" validation failed: "DuplicateRoleName".
+11/18/2020 17:58:14 Role "d6b9f718-6c4c-47f5-9071-5ee6af64238c" validation failed: "DuplicateRoleName".
+11/18/2020 17:58:14 HTTP "GET" "/" responded 200 in 20.4107 ms
+11/18/2020 17:58:14 HTTP "GET" "/Playlists" responded 200 in 7.5350 ms
+11/18/2020 17:58:17 HTTP "GET" "/Identity/Account/Login" responded 200 in 44.0277 ms
+11/18/2020 17:58:18 User logged in.
+11/18/2020 17:58:18 HTTP "POST" "/Identity/Account/Login" responded 302 in 98.4610 ms
+11/18/2020 17:58:18 - Getting index page -
+11/18/2020 17:58:18 Role "0bb4c498-58e7-4952-ae30-16e8753a120c" validation failed: "DuplicateRoleName".
+11/18/2020 17:58:18 Role "1deee9aa-54ef-43ec-a8c9-55d4c1a72686" validation failed: "DuplicateRoleName".
+11/18/2020 17:58:18 HTTP "GET" "/" responded 200 in 11.1839 ms
+11/18/2020 17:58:20 HTTP "GET" "/Playlists/Create" responded 200 in 8.9623 ms
+11/18/2020 17:58:20 HTTP "GET" "/Playlists/Create/ws" responded 200 in 9.7464 ms
+11/18/2020 17:58:22 - Getting index page -
+11/18/2020 17:58:22 Role "d41fb683-a284-4c52-ba3d-b725430b5a29" validation failed: "DuplicateRoleName".
+11/18/2020 17:58:22 Role "42c467da-70b2-4b5d-8897-be712f3e7f1a" validation failed: "DuplicateRoleName".
+11/18/2020 17:58:22 HTTP "GET" "/" responded 200 in 14.2347 ms
+11/18/2020 18:10:11 Application starting up
+11/18/2020 18:10:12 - Getting index page -
+11/18/2020 18:10:14 Role "d0b4dd4a-fcd8-4d5c-bc25-a005f2a81bf3" validation failed: "DuplicateRoleName".
+11/18/2020 18:10:14 Role "4c443b2a-e042-4958-9c0c-f70c6a540f07" validation failed: "DuplicateRoleName".
+11/18/2020 18:10:14 HTTP "GET" "/" responded 200 in 1693.0512 ms
+11/18/2020 18:10:17 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 77.3797 ms
+11/18/2020 18:10:18 - Getting index page -
+11/18/2020 18:10:18 Role "17672597-30f8-40f2-95e0-d4d8c5232e01" validation failed: "DuplicateRoleName".
+11/18/2020 18:10:18 Role "c94ffe27-de68-4733-a864-3fb507e6e080" validation failed: "DuplicateRoleName".
+11/18/2020 18:10:18 HTTP "GET" "/" responded 200 in 40.2699 ms
+11/18/2020 18:11:26 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 18.1394 ms
+11/18/2020 18:12:27 - Getting index page -
+11/18/2020 18:12:27 Role "ffbe4422-c9e8-48df-849d-e61ed7f790bb" validation failed: "DuplicateRoleName".
+11/18/2020 18:12:27 Role "10e09c64-ea05-457f-8f78-97d9b90f9910" validation failed: "DuplicateRoleName".
+11/18/2020 18:12:27 HTTP "GET" "/" responded 200 in 40.0958 ms
+11/18/2020 18:12:27 - Getting index page -
+11/18/2020 18:12:27 Role "00c77be4-f9dc-48c3-831f-3e154048331a" validation failed: "DuplicateRoleName".
+11/18/2020 18:12:27 Role "af61ab81-63a7-4de6-954f-d1add3782a5e" validation failed: "DuplicateRoleName".
+11/18/2020 18:12:27 HTTP "GET" "/" responded 200 in 19.7667 ms
+11/18/2020 18:13:36 Application starting up
+11/18/2020 18:13:37 - Getting index page -
+11/18/2020 18:13:38 Role "4be2aa32-76e8-4626-96c4-aa7b84ef602c" validation failed: "DuplicateRoleName".
+11/18/2020 18:13:38 Role "6aa272a0-e341-4af7-b172-950b8f91a65c" validation failed: "DuplicateRoleName".
+11/18/2020 18:13:38 HTTP "GET" "/" responded 200 in 1395.5125 ms
+11/18/2020 18:14:42 Application starting up
+11/18/2020 18:14:43 - Getting index page -
+11/18/2020 18:14:44 Role "49f5070b-6561-45d1-a7bc-9b65cf4db52a" validation failed: "DuplicateRoleName".
+11/18/2020 18:14:44 Role "dfeb685b-e222-41a5-80d0-3c9d9470348f" validation failed: "DuplicateRoleName".
+11/18/2020 18:14:44 HTTP "GET" "/" responded 200 in 1318.5993 ms
+11/18/2020 18:17:40 Application starting up
+11/18/2020 18:17:41 - Getting index page -
+11/18/2020 18:17:42 Role "67b0c6f0-af6e-433a-bb12-39d84a75118f" validation failed: "DuplicateRoleName".
+11/18/2020 18:17:42 Role "f3c8d97f-9302-4bcd-9662-a8c42a8dd5d8" validation failed: "DuplicateRoleName".
+11/18/2020 18:17:43 HTTP "GET" "/" responded 200 in 1440.6556 ms
+11/18/2020 18:17:53 Application starting up
+11/18/2020 18:17:55 - Getting index page -
+11/18/2020 18:17:56 Role "f52a7c14-a61c-4d18-8304-f9c5ad36a59c" validation failed: "DuplicateRoleName".
+11/18/2020 18:17:56 Role "af742621-93ae-4b88-af17-0ff71c998700" validation failed: "DuplicateRoleName".
+11/18/2020 18:17:56 HTTP "GET" "/" responded 200 in 1321.0191 ms
+11/18/2020 18:19:33 Application starting up
+11/18/2020 18:19:34 - Getting index page -
+11/18/2020 18:19:35 Role "8adca807-2d45-4631-a07e-c1a88d3eb9fd" validation failed: "DuplicateRoleName".
+11/18/2020 18:19:35 Role "e144ff14-451d-483a-a37e-11c97b0f811e" validation failed: "DuplicateRoleName".
+11/18/2020 18:19:35 HTTP "GET" "/" responded 200 in 1369.8718 ms
+11/18/2020 18:21:56 Application starting up
+11/18/2020 18:21:57 - Getting index page -
+11/18/2020 18:21:58 Role "f5afcbfe-6923-4275-bc0a-3a758f32f8a7" validation failed: "DuplicateRoleName".
+11/18/2020 18:21:58 Role "e81073b3-1ca0-4a44-a85e-01ef49b179e5" validation failed: "DuplicateRoleName".
+11/18/2020 18:21:58 HTTP "GET" "/" responded 200 in 1380.0748 ms
+11/18/2020 18:22:26 Application starting up
+11/18/2020 18:22:27 - Getting index page -
+11/18/2020 18:22:28 Role "5e520b4d-ca74-400f-bf52-b5cc0aaf0e76" validation failed: "DuplicateRoleName".
+11/18/2020 18:22:28 Role "dc81a2d0-5dc2-423c-8966-0a430a3f1564" validation failed: "DuplicateRoleName".
+11/18/2020 18:22:28 HTTP "GET" "/" responded 200 in 1352.3404 ms
+11/18/2020 18:23:48 Application starting up
+11/18/2020 18:23:49 - Getting index page -
+11/18/2020 18:23:50 Role "811c4e88-08fc-4f66-bf52-d9024a77ac85" validation failed: "DuplicateRoleName".
+11/18/2020 18:23:50 Role "a788c01e-5d5d-4020-bc7f-f4294147f1a1" validation failed: "DuplicateRoleName".
+11/18/2020 18:23:50 HTTP "GET" "/" responded 200 in 1329.5328 ms
+11/18/2020 18:24:16 Application starting up
+11/18/2020 18:24:17 - Getting index page -
+11/18/2020 18:24:18 Role "0bdd7ae8-1b8c-477a-9398-fc071b3362ad" validation failed: "DuplicateRoleName".
+11/18/2020 18:24:18 Role "814b465f-dc50-448f-b032-bb135063d3ce" validation failed: "DuplicateRoleName".
+11/18/2020 18:24:18 HTTP "GET" "/" responded 200 in 1394.7402 ms
+11/18/2020 18:25:31 Application starting up
+11/18/2020 18:25:33 - Getting index page -
+11/18/2020 18:25:34 Role "10e397da-da4d-4af3-afb2-7f3765e13622" validation failed: "DuplicateRoleName".
+11/18/2020 18:25:34 Role "7d6b3b67-684a-4959-9e0e-6f6ac842896c" validation failed: "DuplicateRoleName".
+11/18/2020 18:25:34 HTTP "GET" "/" responded 200 in 1344.1752 ms
+11/18/2020 18:26:04 Application starting up
+11/18/2020 18:26:05 - Getting index page -
+11/18/2020 18:26:06 Role "18a276a6-08f8-49c5-99e1-c017fa6cc4d9" validation failed: "DuplicateRoleName".
+11/18/2020 18:26:06 Role "1d313e29-b5bf-4431-b315-03c26a451140" validation failed: "DuplicateRoleName".
+11/18/2020 18:26:06 HTTP "GET" "/" responded 200 in 1553.1678 ms
+11/18/2020 18:27:15 Application starting up
+11/18/2020 18:27:16 - Getting index page -
+11/18/2020 18:27:17 Role "69a00475-d01a-4fb3-8158-473219a9ab15" validation failed: "DuplicateRoleName".
+11/18/2020 18:27:17 Role "5d5969f5-ddb6-4ec0-983a-2ffaf43108f6" validation failed: "DuplicateRoleName".
+11/18/2020 18:27:18 HTTP "GET" "/" responded 200 in 1390.6247 ms
+11/18/2020 18:29:05 Application starting up
+11/18/2020 18:29:08 - Getting index page -
+11/18/2020 18:29:08 Role "8ef6c67f-ac14-4575-9b09-c7515e127978" validation failed: "DuplicateRoleName".
+11/18/2020 18:29:08 Role "c5bcf12e-14c7-41c2-991d-7af61ee4d136" validation failed: "DuplicateRoleName".
+11/18/2020 18:29:08 HTTP "GET" "/" responded 200 in 1520.9967 ms
+11/18/2020 18:29:36 Application starting up
+11/18/2020 18:29:38 - Getting index page -
+11/18/2020 18:29:39 Role "19a989f2-0283-4fe2-80d4-7103d4923d79" validation failed: "DuplicateRoleName".
+11/18/2020 18:29:39 Role "fa036a83-5ddf-4784-84f9-ec389a91e5fe" validation failed: "DuplicateRoleName".
+11/18/2020 18:29:39 HTTP "GET" "/" responded 200 in 1513.7469 ms
+11/18/2020 18:30:00 Application starting up
+11/18/2020 18:30:02 - Getting index page -
+11/18/2020 18:30:03 Role "bd37b59f-b28a-4fd2-9ef9-f5259ba23b2c" validation failed: "DuplicateRoleName".
+11/18/2020 18:30:03 Role "3ba55dd0-3d1d-4807-bc3a-27c2268e8ce2" validation failed: "DuplicateRoleName".
+11/18/2020 18:30:03 HTTP "GET" "/" responded 200 in 1399.5477 ms
+11/18/2020 18:31:40 Application starting up
+11/18/2020 18:31:41 - Getting index page -
+11/18/2020 18:31:42 Role "23882e46-54d0-416a-878b-32029085835f" validation failed: "DuplicateRoleName".
+11/18/2020 18:31:42 Role "b2b11876-ef1f-4163-b73f-816c0c2b7128" validation failed: "DuplicateRoleName".
+11/18/2020 18:31:42 HTTP "GET" "/" responded 200 in 1394.1474 ms
+11/18/2020 18:33:13 Application starting up
+11/18/2020 18:33:14 - Getting index page -
+11/18/2020 18:33:15 Role "87df3905-4b78-4999-b75e-8bd6b3411619" validation failed: "DuplicateRoleName".
+11/18/2020 18:33:15 Role "5660f9f1-a0fa-437b-9f96-1fb36ddb8591" validation failed: "DuplicateRoleName".
+11/18/2020 18:33:16 HTTP "GET" "/" responded 200 in 1408.2176 ms
+11/18/2020 18:33:44 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 74.5476 ms
+11/18/2020 18:33:45 - Getting index page -
+11/18/2020 18:33:45 Role "2e14d552-1275-4007-8672-50c0abb14b3f" validation failed: "DuplicateRoleName".
+11/18/2020 18:33:45 Role "357d3b38-b73c-4f6e-afe0-0c3caa28618c" validation failed: "DuplicateRoleName".
+11/18/2020 18:33:45 HTTP "GET" "/" responded 200 in 36.3826 ms
+11/18/2020 18:35:40 Application starting up
+11/18/2020 18:35:41 - Getting index page -
+11/18/2020 18:35:42 Role "73c46d73-a917-43e3-8b28-d81868cd5bfc" validation failed: "DuplicateRoleName".
+11/18/2020 18:35:42 Role "7c7db1a6-ad68-488e-8f7f-63c2afdd0538" validation failed: "DuplicateRoleName".
+11/18/2020 18:35:42 HTTP "GET" "/" responded 200 in 1434.7879 ms
+11/18/2020 18:37:20 Application starting up
+11/18/2020 18:37:21 - Getting index page -
+11/18/2020 18:37:22 Role "44f4e6be-2bb8-41dc-ae04-741066f6963c" validation failed: "DuplicateRoleName".
+11/18/2020 18:37:22 Role "7243cd28-cc1b-4850-9b8c-5483948ac1d0" validation failed: "DuplicateRoleName".
+11/18/2020 18:37:23 HTTP "GET" "/" responded 200 in 1444.8957 ms
+11/18/2020 18:38:24 Application starting up
+11/18/2020 18:38:25 - Getting index page -
+11/18/2020 18:38:26 Role "0ef5829e-1704-48ab-bcfb-d5119a397383" validation failed: "DuplicateRoleName".
+11/18/2020 18:38:26 Role "494f6f77-6a20-470f-8bdf-67025a50d11b" validation failed: "DuplicateRoleName".
+11/18/2020 18:38:26 HTTP "GET" "/" responded 200 in 1383.9914 ms
+11/18/2020 18:39:00 Application starting up
+11/18/2020 18:39:01 - Getting index page -
+11/18/2020 18:39:02 Role "52d5c06d-b582-472e-b499-16d9c984bd1a" validation failed: "DuplicateRoleName".
+11/18/2020 18:39:02 Role "25dd3a72-1123-47c2-ae36-fc03eb994882" validation failed: "DuplicateRoleName".
+11/18/2020 18:39:02 HTTP "GET" "/" responded 200 in 1437.4532 ms
+11/18/2020 18:39:35 Application starting up
+11/18/2020 18:39:36 - Getting index page -
+11/18/2020 18:39:37 Role "67628ea9-e033-4e48-a8d2-b4610ad41982" validation failed: "DuplicateRoleName".
+11/18/2020 18:39:37 Role "d8a28564-3b03-4254-ad91-82d79a6ca2f7" validation failed: "DuplicateRoleName".
+11/18/2020 18:39:38 HTTP "GET" "/" responded 200 in 1411.2999 ms
+11/18/2020 18:39:52 Application starting up
+11/18/2020 18:39:53 - Getting index page -
+11/18/2020 18:39:54 Role "85dbec61-c999-4f39-9dea-7c8c0cfddcde" validation failed: "DuplicateRoleName".
+11/18/2020 18:39:54 Role "6bf7161d-f223-4d67-af95-bef25baa0558" validation failed: "DuplicateRoleName".
+11/18/2020 18:39:54 HTTP "GET" "/" responded 200 in 1357.3430 ms
+11/18/2020 18:44:37 Application starting up
+11/18/2020 18:44:38 - Getting index page -
+11/18/2020 18:44:39 Role "244894d0-1aa5-4936-989d-9bd180e6c83d" validation failed: "DuplicateRoleName".
+11/18/2020 18:44:39 Role "039974f8-bc3a-4b6f-aee2-bbe2d866b545" validation failed: "DuplicateRoleName".
+11/18/2020 18:44:40 HTTP "GET" "/" responded 200 in 1415.8086 ms
+11/18/2020 18:45:19 Application starting up
+11/18/2020 18:45:20 - Getting index page -
+11/18/2020 18:45:21 Role "ea9c76ad-bb6e-4971-bf5f-8d47f048998e" validation failed: "DuplicateRoleName".
+11/18/2020 18:45:21 Role "b814e634-b279-4271-94b9-b01e23a24bef" validation failed: "DuplicateRoleName".
+11/18/2020 18:45:21 HTTP "GET" "/" responded 200 in 1383.6644 ms
+11/18/2020 18:46:42 Application starting up
+11/18/2020 18:46:43 - Getting index page -
+11/18/2020 18:46:44 Role "3422f346-d6fb-4b71-82ed-85ebc707d5a9" validation failed: "DuplicateRoleName".
+11/18/2020 18:46:44 Role "338f53e8-efa8-49d2-b5d0-3f782c7e6bcb" validation failed: "DuplicateRoleName".
+11/18/2020 18:46:45 HTTP "GET" "/" responded 200 in 1408.1787 ms
+11/18/2020 18:47:04 Application starting up
+11/18/2020 18:47:05 - Getting index page -
+11/18/2020 18:47:06 Role "e1fa6545-5367-4b58-9b1a-d886120b4d96" validation failed: "DuplicateRoleName".
+11/18/2020 18:47:06 Role "054f7426-2840-4ec7-8cc3-b298b2ee6c88" validation failed: "DuplicateRoleName".
+11/18/2020 18:47:06 HTTP "GET" "/" responded 200 in 1488.6407 ms
+11/18/2020 18:50:34 Application starting up
+11/18/2020 18:50:36 - Getting index page -
+11/18/2020 18:50:37 Role "6ea60d42-7f2d-4abb-a995-5d1f707daf17" validation failed: "DuplicateRoleName".
+11/18/2020 18:50:37 Role "2c433eed-1090-4e70-880a-9406ce509e9d" validation failed: "DuplicateRoleName".
+11/18/2020 18:50:37 HTTP "GET" "/" responded 200 in 1352.4356 ms
+11/18/2020 18:53:58 Application starting up
+11/18/2020 18:54:00 - Getting index page -
+11/18/2020 18:54:01 Role "e7d4fc07-4331-415f-894e-797818bdb590" validation failed: "DuplicateRoleName".
+11/18/2020 18:54:01 Role "e5ef8ee3-fb72-4606-8a97-41cfea6d4c85" validation failed: "DuplicateRoleName".
+11/18/2020 18:54:01 HTTP "GET" "/" responded 200 in 1568.6124 ms
+11/18/2020 18:55:19 Application starting up
+11/18/2020 18:55:20 - Getting index page -
+11/18/2020 18:55:21 Role "b95ecda2-53f8-4117-8dce-800242120868" validation failed: "DuplicateRoleName".
+11/18/2020 18:55:21 Role "bcc1c3b4-9e45-43f4-9eb2-b76fb7af1b24" validation failed: "DuplicateRoleName".
+11/18/2020 18:55:21 HTTP "GET" "/" responded 200 in 1376.5901 ms
+11/18/2020 18:55:23 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 78.8709 ms
+11/18/2020 18:55:25 - Getting index page -
+11/18/2020 18:55:25 Role "410a6563-5b3d-4aa5-9892-8b77b6f7f6af" validation failed: "DuplicateRoleName".
+11/18/2020 18:55:25 Role "e673cc5f-2cea-462b-8ec2-ab09bf372a4a" validation failed: "DuplicateRoleName".
+11/18/2020 18:55:25 HTTP "GET" "/" responded 200 in 35.1813 ms
+11/18/2020 18:56:34 Application starting up
+11/18/2020 18:56:35 - Getting index page -
+11/18/2020 18:56:36 Role "3b66f23f-74d4-4a4c-8559-842290e83526" validation failed: "DuplicateRoleName".
+11/18/2020 18:56:36 Role "9961996d-8afc-42be-b06f-529384a927bf" validation failed: "DuplicateRoleName".
+11/18/2020 18:56:36 HTTP "GET" "/" responded 200 in 1343.9130 ms
+11/18/2020 18:58:17 Application starting up
+11/18/2020 18:58:18 - Getting index page -
+11/18/2020 18:58:19 Role "71ce799f-b68c-4873-8ef6-67b95b586317" validation failed: "DuplicateRoleName".
+11/18/2020 18:58:19 Role "46fe973e-fb63-499a-ab6b-f8d60b4a52c3" validation failed: "DuplicateRoleName".
+11/18/2020 18:58:19 HTTP "GET" "/" responded 200 in 1360.9369 ms
+11/18/2020 19:04:01 Application starting up
+11/18/2020 19:04:03 - Getting index page -
+11/18/2020 19:04:03 Role "042911fe-de26-4ade-bda1-97db267398a6" validation failed: "DuplicateRoleName".
+11/18/2020 19:04:03 Role "92fde77b-c5c8-46ec-a9cb-d42e911d30d3" validation failed: "DuplicateRoleName".
+11/18/2020 19:04:03 HTTP "GET" "/" responded 200 in 1476.0087 ms
+11/18/2020 19:04:46 Application starting up
+11/18/2020 19:04:47 - Getting index page -
+11/18/2020 19:04:48 Role "b53ec4c7-f6d3-4b7c-8eaa-ebc5a3506103" validation failed: "DuplicateRoleName".
+11/18/2020 19:04:48 Role "aa27882e-7662-4763-9e10-e4e73d70a85a" validation failed: "DuplicateRoleName".
+11/18/2020 19:04:49 HTTP "GET" "/" responded 200 in 1359.0676 ms
+11/18/2020 19:05:05 Application starting up
+11/18/2020 19:05:06 - Getting index page -
+11/18/2020 19:05:07 Role "738f0c36-f17b-4d81-af6a-194292af8989" validation failed: "DuplicateRoleName".
+11/18/2020 19:05:07 Role "39b3fa6a-6fdd-4a2b-bac0-2f6fc442fa46" validation failed: "DuplicateRoleName".
+11/18/2020 19:05:07 HTTP "GET" "/" responded 200 in 1438.8239 ms
+11/18/2020 19:05:14 Application starting up
+11/18/2020 19:05:15 - Getting index page -
+11/18/2020 19:05:16 Role "fbcd0995-dc2d-4e60-90ac-f6e17c1c4a0f" validation failed: "DuplicateRoleName".
+11/18/2020 19:05:16 Role "2acd66bf-e67e-4e6a-9152-58eb10517bfb" validation failed: "DuplicateRoleName".
+11/18/2020 19:05:16 HTTP "GET" "/" responded 200 in 1279.4196 ms
+11/18/2020 19:06:07 Application starting up
+11/18/2020 19:06:08 - Getting index page -
+11/18/2020 19:06:09 Role "ab143875-7306-477f-bc87-e3e29816e7a1" validation failed: "DuplicateRoleName".
+11/18/2020 19:06:09 Role "3b6b1ced-c91b-4b16-be85-d2f2f50c0845" validation failed: "DuplicateRoleName".
+11/18/2020 19:06:09 HTTP "GET" "/" responded 200 in 1373.9141 ms
+11/18/2020 19:07:10 Application starting up
+11/18/2020 19:07:11 - Getting index page -
+11/18/2020 19:07:12 Role "f4c28b2a-1e0b-4e30-9776-5eb7ff7f04d5" validation failed: "DuplicateRoleName".
+11/18/2020 19:07:12 Role "76064080-97f4-43bb-9cc1-9f214fd750d5" validation failed: "DuplicateRoleName".
+11/18/2020 19:07:13 HTTP "GET" "/" responded 200 in 1330.3627 ms
+11/18/2020 19:07:47 Application starting up
+11/18/2020 19:07:49 - Getting index page -
+11/18/2020 19:07:50 Role "b18e8fec-1616-4099-b42f-8c80ab57c556" validation failed: "DuplicateRoleName".
+11/18/2020 19:07:50 Role "a916cacf-6066-40c2-9e69-751ed80776cf" validation failed: "DuplicateRoleName".
+11/18/2020 19:07:50 HTTP "GET" "/" responded 200 in 1287.6441 ms
+11/18/2020 19:07:59 Application starting up
+11/18/2020 19:08:00 - Getting index page -
+11/18/2020 19:08:01 Role "4e230e1f-5bed-4e75-9535-bbd99dd2d8c7" validation failed: "DuplicateRoleName".
+11/18/2020 19:08:01 Role "86e23ec4-ce54-4dd0-806f-a448dd84622b" validation failed: "DuplicateRoleName".
+11/18/2020 19:08:02 HTTP "GET" "/" responded 200 in 1368.2377 ms
+11/18/2020 19:08:26 Application starting up
+11/18/2020 19:08:27 - Getting index page -
+11/18/2020 19:08:28 Role "90d61200-2971-4b87-a7d9-882a27d1366c" validation failed: "DuplicateRoleName".
+11/18/2020 19:08:28 Role "a993b328-b8c5-4c79-be9a-37d74ccd85c2" validation failed: "DuplicateRoleName".
+11/18/2020 19:08:28 HTTP "GET" "/" responded 200 in 1412.1891 ms
+11/18/2020 19:09:06 Application starting up
+11/18/2020 19:09:07 - Getting index page -
+11/18/2020 19:09:08 Role "2c21b7c4-6a38-4753-9b30-c63fc3ac058e" validation failed: "DuplicateRoleName".
+11/18/2020 19:09:08 Role "bf69e288-05ec-4865-9c57-0320f298cb7b" validation failed: "DuplicateRoleName".
+11/18/2020 19:09:08 HTTP "GET" "/" responded 200 in 1538.6454 ms
+11/18/2020 19:09:10 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 75.7403 ms
+11/18/2020 19:09:11 - Getting index page -
+11/18/2020 19:09:11 Role "d8841ce1-9fba-4d23-9b87-ca21542609ba" validation failed: "DuplicateRoleName".
+11/18/2020 19:09:11 Role "ddd8366f-dc08-4860-bc56-5cbe4ed241cc" validation failed: "DuplicateRoleName".
+11/18/2020 19:09:11 HTTP "GET" "/" responded 200 in 45.5906 ms
+11/18/2020 19:13:14 Application starting up
+11/18/2020 19:13:15 - Getting index page -
+11/18/2020 19:13:16 Role "87d669d5-133d-43b6-bd0e-71ff4168df3c" validation failed: "DuplicateRoleName".
+11/18/2020 19:13:16 Role "b0c31200-bc62-4690-8113-5fe481bb3141" validation failed: "DuplicateRoleName".
+11/18/2020 19:13:17 HTTP "GET" "/" responded 200 in 1379.7852 ms
+11/18/2020 19:13:23 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 73.8990 ms
+11/18/2020 19:13:25 - Getting index page -
+11/18/2020 19:13:25 Role "0f771e1b-5290-4704-a564-30eb24aa4a02" validation failed: "DuplicateRoleName".
+11/18/2020 19:13:25 Role "dda4e53c-7dc8-49ae-8824-27d8871b8cee" validation failed: "DuplicateRoleName".
+11/18/2020 19:13:25 HTTP "GET" "/" responded 200 in 36.6795 ms
+11/18/2020 19:13:26 HTTP "GET" "/Playlists/Playlist/5" responded 200 in 9.7584 ms
+11/18/2020 19:28:13 Application starting up
+11/18/2020 19:28:14 - Getting index page -
+11/18/2020 19:28:15 HTTP "GET" "/" responded 500 in 594.1831 ms
+System.InvalidOperationException: A key cannot be configured on 'IdentityRole' because it is a derived type. The key must be configured on the root type 'IdentityRole<string>'. If you did not intend for 'IdentityRole<string>' to be included in the model, ensure that it is not included in a DbSet property on your context, referenced in a configuration call to ModelBuilder, or referenced from a navigation property on a type that is included in the model.
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.EntityType.SetPrimaryKey(IReadOnlyList`1 properties, ConfigurationSource configurationSource)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.InternalEntityTypeBuilder.PrimaryKey(IReadOnlyList`1 properties, ConfigurationSource configurationSource)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.InternalEntityTypeBuilder.PrimaryKey(IReadOnlyList`1 clrMembers, ConfigurationSource configurationSource)
+   at Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1.HasKey(Expression`1 keyExpression)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`8.<>c.<OnModelCreating>b__14_1(EntityTypeBuilder`1 b)
+   at Microsoft.EntityFrameworkCore.ModelBuilder.Entity[TEntity](Action`1 buildAction)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`8.OnModelCreating(ModelBuilder builder)
+   at PG.Data.Context.PGDbContext.OnModelCreating(ModelBuilder builder) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Data\Context\PGDbContext.cs:line 40
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelCustomizer.Customize(ModelBuilder modelBuilder, DbContext context)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, IConventionSetBuilder conventionSetBuilder)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, IConventionSetBuilder conventionSetBuilder)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__7_3(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, LambdaExpression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at PG.Services.DeezerAPIService.ExtractSongsFromPlaylists(String genreString) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\DeezerAPIService.cs:line 32
+   at PG.Web.Controllers.HomeController.GetAlbumAsync() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\HomeController.cs:line 66
+   at PG.Web.Controllers.HomeController.Index() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\HomeController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/18/2020 19:28:15 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: A key cannot be configured on 'IdentityRole' because it is a derived type. The key must be configured on the root type 'IdentityRole<string>'. If you did not intend for 'IdentityRole<string>' to be included in the model, ensure that it is not included in a DbSet property on your context, referenced in a configuration call to ModelBuilder, or referenced from a navigation property on a type that is included in the model.
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.EntityType.SetPrimaryKey(IReadOnlyList`1 properties, ConfigurationSource configurationSource)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.InternalEntityTypeBuilder.PrimaryKey(IReadOnlyList`1 properties, ConfigurationSource configurationSource)
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.InternalEntityTypeBuilder.PrimaryKey(IReadOnlyList`1 clrMembers, ConfigurationSource configurationSource)
+   at Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1.HasKey(Expression`1 keyExpression)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`8.<>c.<OnModelCreating>b__14_1(EntityTypeBuilder`1 b)
+   at Microsoft.EntityFrameworkCore.ModelBuilder.Entity[TEntity](Action`1 buildAction)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`8.OnModelCreating(ModelBuilder builder)
+   at PG.Data.Context.PGDbContext.OnModelCreating(ModelBuilder builder) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Data\Context\PGDbContext.cs:line 40
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelCustomizer.Customize(ModelBuilder modelBuilder, DbContext context)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, IConventionSetBuilder conventionSetBuilder)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, IConventionSetBuilder conventionSetBuilder)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__7_3(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, LambdaExpression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at PG.Services.DeezerAPIService.ExtractSongsFromPlaylists(String genreString) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\DeezerAPIService.cs:line 32
+   at PG.Web.Controllers.HomeController.GetAlbumAsync() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\HomeController.cs:line 66
+   at PG.Web.Controllers.HomeController.Index() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\HomeController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/18/2020 19:37:19 Application starting up
+11/18/2020 19:37:22 - Getting index page -
+11/18/2020 19:37:22 HTTP "GET" "/" responded 200 in 1527.7557 ms
+11/18/2020 19:39:47 Application starting up
+11/18/2020 19:39:48 - Getting index page -
+11/18/2020 19:40:56 HTTP "GET" "/" responded 200 in 67285.1793 ms
+11/18/2020 19:44:02 Application starting up
+11/18/2020 19:44:03 Application startup exception
+System.InvalidOperationException: Scheme already exists: Identity.Application
+   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
+   at Microsoft.AspNetCore.Authentication.AuthenticationBuilder.<>c__DisplayClass4_0`2.<AddSchemeHelper>b__0(AuthenticationOptions o)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+11/18/2020 19:44:03 The application failed to start correctly.
+System.InvalidOperationException: Scheme already exists: Identity.Application
+   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
+   at Microsoft.AspNetCore.Authentication.AuthenticationBuilder.<>c__DisplayClass4_0`2.<AddSchemeHelper>b__0(AuthenticationOptions o)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at PG.Web.Program.Main(String[] args) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Program.cs:line 24
+11/18/2020 19:44:13 Application starting up
+11/18/2020 19:44:13 Application startup exception
+System.InvalidOperationException: Scheme already exists: Identity.Application
+   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
+   at Microsoft.AspNetCore.Authentication.AuthenticationBuilder.<>c__DisplayClass4_0`2.<AddSchemeHelper>b__0(AuthenticationOptions o)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+11/18/2020 19:44:13 The application failed to start correctly.
+System.InvalidOperationException: Scheme already exists: Identity.Application
+   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
+   at Microsoft.AspNetCore.Authentication.AuthenticationBuilder.<>c__DisplayClass4_0`2.<AddSchemeHelper>b__0(AuthenticationOptions o)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at PG.Web.Program.Main(String[] args) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Program.cs:line 24
+11/18/2020 19:44:51 Application starting up
+11/18/2020 19:44:53 Application startup exception
+System.InvalidOperationException: Scheme already exists: Identity.Application
+   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
+   at Microsoft.AspNetCore.Authentication.AuthenticationBuilder.<>c__DisplayClass4_0`2.<AddSchemeHelper>b__0(AuthenticationOptions o)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+11/18/2020 19:44:53 The application failed to start correctly.
+System.InvalidOperationException: Scheme already exists: Identity.Application
+   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
+   at Microsoft.AspNetCore.Authentication.AuthenticationBuilder.<>c__DisplayClass4_0`2.<AddSchemeHelper>b__0(AuthenticationOptions o)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at PG.Web.Program.Main(String[] args) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Program.cs:line 24
+11/18/2020 19:46:19 Application starting up
+11/18/2020 19:46:21 - Getting index page -
+11/18/2020 19:47:27 HTTP "GET" "/" responded 200 in 66855.8814 ms
+11/18/2020 19:47:41 Application starting up
+11/18/2020 19:47:43 - Getting index page -
+11/18/2020 19:48:51 Application starting up
+11/18/2020 19:48:53 - Getting index page -
+11/18/2020 19:50:47 Application starting up
+11/18/2020 19:50:48 - Getting index page -
+11/18/2020 19:50:49 - Getting index page -
+11/18/2020 19:50:49 HTTP "GET" "/" responded 200 in 1301.9981 ms
+11/18/2020 19:50:49 HTTP "GET" "/" responded 200 in 46.4031 ms
+11/18/2020 19:50:51 - Getting index page -
+11/18/2020 19:50:51 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 23.7067 ms
+11/18/2020 19:50:56 - Getting index page -
+11/18/2020 19:50:56 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 19.7620 ms
+11/18/2020 19:50:57 - Getting index page -
+11/18/2020 19:50:57 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 9.4603 ms
+11/18/2020 19:50:57 - Getting index page -
+11/18/2020 19:50:57 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 13.5228 ms
+11/18/2020 19:50:57 - Getting index page -
+11/18/2020 19:50:57 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 8.1675 ms
+11/18/2020 19:50:58 - Getting index page -
+11/18/2020 19:50:58 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 10.0059 ms
+11/18/2020 19:51:04 - Getting index page -
+11/18/2020 19:51:04 HTTP "GET" "/?area=Identity&page=%2FAccount%2FManage%2FIndex" responded 200 in 13.0886 ms
+11/18/2020 19:51:06 HTTP "GET" "/Playlists/Create" responded 200 in 367.4960 ms
+11/18/2020 19:51:07 HTTP "GET" "/Playlists/Create/ws" responded 200 in 11.3074 ms
+11/18/2020 19:51:07 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 12.8579 ms
+11/18/2020 19:51:07 HTTP "GET" "/Playlists" responded 200 in 17.0389 ms
+11/18/2020 19:51:08 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 9.9551 ms
+11/18/2020 19:51:09 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 7.1996 ms
+11/18/2020 19:51:09 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 8.6431 ms
+11/18/2020 19:51:09 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 7.8091 ms
+11/18/2020 19:51:09 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 7.3121 ms
+11/18/2020 19:51:10 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 3.1156 ms
+11/18/2020 19:51:10 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 3.9371 ms
+11/18/2020 19:51:10 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 4.4744 ms
+11/18/2020 19:51:10 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 3.2671 ms
+11/18/2020 19:51:11 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 3.5783 ms
+11/18/2020 19:51:11 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 2.9229 ms
+11/18/2020 19:51:12 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 2.2496 ms
+11/18/2020 19:51:12 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 2.4851 ms
+11/18/2020 19:51:22 - Getting index page -
+11/18/2020 19:51:22 HTTP "GET" "/" responded 200 in 11.7549 ms
+11/18/2020 19:51:33 - Getting index page -
+11/18/2020 19:51:33 HTTP "GET" "/" responded 200 in 9.1562 ms
+11/18/2020 19:51:59 - Getting index page -
+11/18/2020 19:51:59 HTTP "GET" "/" responded 200 in 4.6013 ms
+11/18/2020 19:52:01 HTTP "GET" "/Identity/Account/Login" responded 200 in 59.9317 ms
+11/18/2020 19:52:13 HTTP "POST" "/Identity/Account/Login" responded 200 in 1578.2314 ms
+11/18/2020 19:52:29 HTTP "POST" "/Identity/Account/Login" responded 200 in 7.7320 ms
+11/18/2020 19:52:43 HTTP "POST" "/Identity/Account/Login" responded 200 in 5.2394 ms
+11/18/2020 19:52:49 HTTP "POST" "/Identity/Account/Login" responded 200 in 4.8223 ms
+11/18/2020 19:53:04 HTTP "GET" "/Identity/Account/Register" responded 500 in 17.2588 ms
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.UI.Services.IEmailSender' while attempting to activate 'PG.Web.Areas.Identity.Pages.Account.RegisterModel'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.DefaultPageModelActivatorProvider.<>c__DisplayClass1_0.<CreateActivator>b__0(PageContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.DefaultPageModelFactoryProvider.<>c__DisplayClass3_0.<CreateModelFactory>b__0(PageContext pageContext)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.CreateInstance()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/18/2020 19:53:04 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.UI.Services.IEmailSender' while attempting to activate 'PG.Web.Areas.Identity.Pages.Account.RegisterModel'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.DefaultPageModelActivatorProvider.<>c__DisplayClass1_0.<CreateActivator>b__0(PageContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.DefaultPageModelFactoryProvider.<>c__DisplayClass3_0.<CreateModelFactory>b__0(PageContext pageContext)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.CreateInstance()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/18/2020 19:53:19 HTTP "GET" "/Identity" responded 404 in 0.2441 ms
+11/18/2020 19:53:22 - Getting index page -
+11/18/2020 19:53:22 HTTP "GET" "/" responded 200 in 9.9409 ms
+11/18/2020 19:53:23 HTTP "GET" "/Identity/Account/Register" responded 500 in 0.6760 ms
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.UI.Services.IEmailSender' while attempting to activate 'PG.Web.Areas.Identity.Pages.Account.RegisterModel'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.DefaultPageModelActivatorProvider.<>c__DisplayClass1_0.<CreateActivator>b__0(PageContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.DefaultPageModelFactoryProvider.<>c__DisplayClass3_0.<CreateModelFactory>b__0(PageContext pageContext)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.CreateInstance()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/18/2020 19:53:23 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.UI.Services.IEmailSender' while attempting to activate 'PG.Web.Areas.Identity.Pages.Account.RegisterModel'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.DefaultPageModelActivatorProvider.<>c__DisplayClass1_0.<CreateActivator>b__0(PageContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.DefaultPageModelFactoryProvider.<>c__DisplayClass3_0.<CreateModelFactory>b__0(PageContext pageContext)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.CreateInstance()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/18/2020 19:53:34 - Getting index page -
+11/18/2020 19:53:34 HTTP "GET" "/" responded 200 in 10.3505 ms
+11/18/2020 19:53:36 HTTP "GET" "/Identity/Account/Register" responded 500 in 1.0133 ms
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.UI.Services.IEmailSender' while attempting to activate 'PG.Web.Areas.Identity.Pages.Account.RegisterModel'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.DefaultPageModelActivatorProvider.<>c__DisplayClass1_0.<CreateActivator>b__0(PageContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.DefaultPageModelFactoryProvider.<>c__DisplayClass3_0.<CreateModelFactory>b__0(PageContext pageContext)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.CreateInstance()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/18/2020 19:53:36 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.UI.Services.IEmailSender' while attempting to activate 'PG.Web.Areas.Identity.Pages.Account.RegisterModel'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.DefaultPageModelActivatorProvider.<>c__DisplayClass1_0.<CreateActivator>b__0(PageContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.DefaultPageModelFactoryProvider.<>c__DisplayClass3_0.<CreateModelFactory>b__0(PageContext pageContext)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.CreateInstance()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/18/2020 19:57:18 Application starting up
+11/18/2020 19:57:21 - Getting index page -
+11/18/2020 19:57:26 HTTP "GET" "/" responded 200 in 5207.1673 ms
+11/18/2020 19:57:28 HTTP "GET" "/Identity/Account/Register" responded 200 in 100.1161 ms
+11/18/2020 19:57:33 HTTP "GET" "/Identity/Account/Login" responded 200 in 54.4425 ms
+11/18/2020 19:57:44 HTTP "POST" "/Identity/Account/Login" responded 200 in 69.1229 ms
+11/18/2020 19:57:48 HTTP "GET" "/Identity/Account/Register" responded 200 in 10.9653 ms
+11/18/2020 19:57:55 User created a new account with password.
+11/18/2020 19:57:55 HTTP "POST" "/Identity/Account/Register" responded 500 in 1942.6552 ms
+System.NotSupportedException: No IUserTwoFactorTokenProvider<TUser> named 'Default' is registered.
+   at Microsoft.AspNetCore.Identity.UserManager`1.GenerateUserTokenAsync(TUser user, String tokenProvider, String purpose)
+   at Microsoft.AspNetCore.Identity.UserManager`1.GenerateEmailConfirmationTokenAsync(TUser user)
+   at PG.Web.Areas.Identity.Pages.Account.RegisterModel.OnPostAsync(String returnUrl) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Areas\Identity\Pages\Account\Register.cshtml.cs:line 86
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/18/2020 19:57:55 An unhandled exception has occurred while executing the request.
+System.NotSupportedException: No IUserTwoFactorTokenProvider<TUser> named 'Default' is registered.
+   at Microsoft.AspNetCore.Identity.UserManager`1.GenerateUserTokenAsync(TUser user, String tokenProvider, String purpose)
+   at Microsoft.AspNetCore.Identity.UserManager`1.GenerateEmailConfirmationTokenAsync(TUser user)
+   at PG.Web.Areas.Identity.Pages.Account.RegisterModel.OnPostAsync(String returnUrl) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Areas\Identity\Pages\Account\Register.cshtml.cs:line 86
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/18/2020 19:59:03 Application starting up
+11/18/2020 19:59:05 - Getting index page -
+11/18/2020 19:59:06 HTTP "GET" "/" responded 200 in 1764.6779 ms
+11/18/2020 19:59:07 HTTP "GET" "/Identity/Account/Login" responded 200 in 123.7378 ms
+11/18/2020 19:59:09 HTTP "GET" "/Identity/Account/Register" responded 200 in 31.8053 ms
+11/18/2020 19:59:13 HTTP "GET" "/Identity/Account/Login" responded 200 in 11.2685 ms
+11/18/2020 19:59:20 HTTP "POST" "/Identity/Account/Login" responded 200 in 67.4831 ms
+11/18/2020 19:59:40 Application starting up
+11/18/2020 19:59:42 - Getting index page -
+11/18/2020 19:59:44 HTTP "GET" "/" responded 200 in 1652.5076 ms
+11/18/2020 19:59:45 HTTP "GET" "/Identity/Account/Login" responded 200 in 113.0808 ms
+11/18/2020 20:01:24 HTTP "POST" "/Identity/Account/Login" responded 200 in 90709.6659 ms
+11/18/2020 20:03:53 Application starting up
+11/18/2020 20:03:54 The application failed to start correctly.
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Identity.ISecurityStampValidator Lifetime: Scoped ImplementationType: Microsoft.AspNetCore.Identity.SecurityStampValidator`1[PG.Models.User]': Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IUserStore`1[PG.Models.User]' while attempting to activate 'Microsoft.AspNetCore.Identity.UserManager`1[PG.Models.User]'.) (Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Identity.ITwoFactorSecurityStampValidator Lifetime: Scoped ImplementationType: Microsoft.AspNetCore.Identity.TwoFactorSecurityStampValidator`1[PG.Models.User]': Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IUserStore`1[PG.Models.User]' while attempting to activate 'Microsoft.AspNetCore.Identity.UserManager`1[PG.Models.User]'.) (Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Identity.IUserClaimsPrincipalFactory`1[PG.Models.User] Lifetime: Scoped ImplementationType: Microsoft.AspNetCore.Identity.UserClaimsPrincipalFactory`2[PG.Models.User,Microsoft.AspNetCore.Identity.IdentityRole]': Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IUserStore`1[PG.Models.User]' while attempting to activate 'Microsoft.AspNetCore.Identity.UserManager`1[PG.Models.User]'.) (Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Identity.UserManager`1[PG.Models.User] Lifetime: Scoped ImplementationType: Microsoft.AspNetCore.Identity.UserManager`1[PG.Models.User]': Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IUserStore`1[PG.Models.User]' while attempting to activate 'Microsoft.AspNetCore.Identity.UserManager`1[PG.Models.User]'.) (Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Identity.SignInManager`1[PG.Models.User] Lifetime: Scoped ImplementationType: Microsoft.AspNetCore.Identity.SignInManager`1[PG.Models.User]': Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IUserStore`1[PG.Models.User]' while attempting to activate 'Microsoft.AspNetCore.Identity.UserManager`1[PG.Models.User]'.) (Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Identity.RoleManager`1[Microsoft.AspNetCore.Identity.IdentityRole] Lifetime: Scoped ImplementationType: Microsoft.AspNetCore.Identity.RoleManager`1[Microsoft.AspNetCore.Identity.IdentityRole]': Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IRoleStore`1[Microsoft.AspNetCore.Identity.IdentityRole]' while attempting to activate 'Microsoft.AspNetCore.Identity.RoleManager`1[Microsoft.AspNetCore.Identity.IdentityRole]'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Identity.ISecurityStampValidator Lifetime: Scoped ImplementationType: Microsoft.AspNetCore.Identity.SecurityStampValidator`1[PG.Models.User]': Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IUserStore`1[PG.Models.User]' while attempting to activate 'Microsoft.AspNetCore.Identity.UserManager`1[PG.Models.User]'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IUserStore`1[PG.Models.User]' while attempting to activate 'Microsoft.AspNetCore.Identity.UserManager`1[PG.Models.User]'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.<>c__DisplayClass7_0.<GetCallSite>b__0(Type type)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.<>c__DisplayClass7_0.<GetCallSite>b__0(Type type)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at PG.Web.Program.Main(String[] args) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Program.cs:line 24
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Identity.ITwoFactorSecurityStampValidator Lifetime: Scoped ImplementationType: Microsoft.AspNetCore.Identity.TwoFactorSecurityStampValidator`1[PG.Models.User]': Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IUserStore`1[PG.Models.User]' while attempting to activate 'Microsoft.AspNetCore.Identity.UserManager`1[PG.Models.User]'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IUserStore`1[PG.Models.User]' while attempting to activate 'Microsoft.AspNetCore.Identity.UserManager`1[PG.Models.User]'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.<>c__DisplayClass7_0.<GetCallSite>b__0(Type type)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.<>c__DisplayClass7_0.<GetCallSite>b__0(Type type)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #2) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Identity.IUserClaimsPrincipalFactory`1[PG.Models.User] Lifetime: Scoped ImplementationType: Microsoft.AspNetCore.Identity.UserClaimsPrincipalFactory`2[PG.Models.User,Microsoft.AspNetCore.Identity.IdentityRole]': Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IUserStore`1[PG.Models.User]' while attempting to activate 'Microsoft.AspNetCore.Identity.UserManager`1[PG.Models.User]'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IUserStore`1[PG.Models.User]' while attempting to activate 'Microsoft.AspNetCore.Identity.UserManager`1[PG.Models.User]'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.<>c__DisplayClass7_0.<GetCallSite>b__0(Type type)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #3) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Identity.UserManager`1[PG.Models.User] Lifetime: Scoped ImplementationType: Microsoft.AspNetCore.Identity.UserManager`1[PG.Models.User]': Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IUserStore`1[PG.Models.User]' while attempting to activate 'Microsoft.AspNetCore.Identity.UserManager`1[PG.Models.User]'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IUserStore`1[PG.Models.User]' while attempting to activate 'Microsoft.AspNetCore.Identity.UserManager`1[PG.Models.User]'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #4) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Identity.SignInManager`1[PG.Models.User] Lifetime: Scoped ImplementationType: Microsoft.AspNetCore.Identity.SignInManager`1[PG.Models.User]': Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IUserStore`1[PG.Models.User]' while attempting to activate 'Microsoft.AspNetCore.Identity.UserManager`1[PG.Models.User]'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IUserStore`1[PG.Models.User]' while attempting to activate 'Microsoft.AspNetCore.Identity.UserManager`1[PG.Models.User]'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.<>c__DisplayClass7_0.<GetCallSite>b__0(Type type)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #5) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: Microsoft.AspNetCore.Identity.RoleManager`1[Microsoft.AspNetCore.Identity.IdentityRole] Lifetime: Scoped ImplementationType: Microsoft.AspNetCore.Identity.RoleManager`1[Microsoft.AspNetCore.Identity.IdentityRole]': Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IRoleStore`1[Microsoft.AspNetCore.Identity.IdentityRole]' while attempting to activate 'Microsoft.AspNetCore.Identity.RoleManager`1[Microsoft.AspNetCore.Identity.IdentityRole]'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IRoleStore`1[Microsoft.AspNetCore.Identity.IdentityRole]' while attempting to activate 'Microsoft.AspNetCore.Identity.RoleManager`1[Microsoft.AspNetCore.Identity.IdentityRole]'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+11/18/2020 20:04:07 Application starting up
+11/18/2020 20:04:09 - Getting index page -
+11/18/2020 20:04:10 HTTP "GET" "/" responded 200 in 1763.1632 ms
+11/18/2020 20:05:28 Application starting up
+11/18/2020 20:05:29 - Getting index page -
+11/18/2020 20:05:30 HTTP "GET" "/" responded 200 in 1364.2829 ms
+11/18/2020 20:05:32 HTTP "GET" "/Identity/Account/Login" responded 200 in 89.6756 ms
+11/18/2020 20:05:38 HTTP "POST" "/Identity/Account/Login" responded 200 in 60.5951 ms
+11/18/2020 20:05:47 HTTP "POST" "/Identity/Account/Login" responded 200 in 15.7702 ms
+11/18/2020 20:06:43 Application starting up
+11/18/2020 20:06:44 - Getting index page -
+11/18/2020 20:06:45 HTTP "GET" "/" responded 200 in 1324.8289 ms
+11/18/2020 20:06:47 HTTP "GET" "/Identity/Account/Register" responded 200 in 77.1260 ms
+11/18/2020 20:06:49 HTTP "GET" "/Identity/Account/Login" responded 200 in 39.3275 ms
+11/18/2020 20:06:53 User logged in.
+11/18/2020 20:06:53 HTTP "POST" "/Identity/Account/Login" responded 302 in 1953.3730 ms
+11/18/2020 20:06:53 - Getting index page -
+11/18/2020 20:06:53 HTTP "GET" "/" responded 200 in 18.6260 ms
+11/18/2020 20:07:00 - Getting index page -
+11/18/2020 20:07:00 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 22.7928 ms
+11/18/2020 20:07:03 - Getting index page -
+11/18/2020 20:07:03 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 10.0060 ms
+11/18/2020 20:07:03 - Getting index page -
+11/18/2020 20:07:03 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 9.8669 ms
+11/18/2020 20:07:03 - Getting index page -
+11/18/2020 20:07:03 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 6.7495 ms
+11/18/2020 20:07:04 - Getting index page -
+11/18/2020 20:07:04 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 12.9023 ms
+11/18/2020 20:07:05 - Getting index page -
+11/18/2020 20:07:05 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 8.8187 ms
+11/18/2020 20:07:05 - Getting index page -
+11/18/2020 20:07:05 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 4.8958 ms
+11/18/2020 20:07:05 - Getting index page -
+11/18/2020 20:07:05 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 10.3041 ms
+11/18/2020 20:07:11 - Getting index page -
+11/18/2020 20:07:11 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 10.4119 ms
+11/18/2020 20:07:11 - Getting index page -
+11/18/2020 20:07:11 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 7.6927 ms
+11/18/2020 20:07:12 - Getting index page -
+11/18/2020 20:07:12 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 7.9122 ms
+11/18/2020 20:07:12 - Getting index page -
+11/18/2020 20:07:12 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 7.2858 ms
+11/18/2020 20:07:12 - Getting index page -
+11/18/2020 20:07:12 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 6.3674 ms
+11/18/2020 20:07:12 - Getting index page -
+11/18/2020 20:07:12 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 4.9168 ms
+11/18/2020 20:07:13 - Getting index page -
+11/18/2020 20:07:13 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 6.7884 ms
+11/18/2020 20:10:12 Application starting up
+11/18/2020 20:10:12 HTTP "GET" "/Identity/Account/Login" responded 200 in 264.9884 ms
+11/18/2020 20:10:13 - Getting index page -
+11/18/2020 20:10:14 HTTP "GET" "/" responded 200 in 1103.6504 ms
+11/18/2020 20:10:17 HTTP "GET" "/Identity/Account/Login" responded 200 in 13.7307 ms
+11/18/2020 20:10:41 - Getting index page -
+11/18/2020 20:10:41 HTTP "GET" "/?area=Identity&page=%2FAccount%2FManage%2FIndex" responded 200 in 35.0537 ms
+11/18/2020 20:10:47 User logged in.
+11/18/2020 20:10:47 HTTP "POST" "/Identity/Account/Login" responded 302 in 117.2337 ms
+11/18/2020 20:10:47 - Getting index page -
+11/18/2020 20:10:47 HTTP "GET" "/" responded 200 in 13.0896 ms
+11/18/2020 20:10:54 - Getting index page -
+11/18/2020 20:10:54 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 24.5266 ms
+11/18/2020 20:11:03 - Getting index page -
+11/18/2020 20:11:03 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 16.1044 ms
+11/18/2020 20:11:05 - Getting index page -
+11/18/2020 20:11:05 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 16.8847 ms
+11/18/2020 20:11:06 - Getting index page -
+11/18/2020 20:11:06 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 8.9461 ms
+11/18/2020 20:11:07 - Getting index page -
+11/18/2020 20:11:07 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 10.0305 ms
+11/18/2020 20:11:07 - Getting index page -
+11/18/2020 20:11:07 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 10.6254 ms
+11/18/2020 20:11:07 - Getting index page -
+11/18/2020 20:11:07 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 9.0026 ms
+11/18/2020 20:11:07 - Getting index page -
+11/18/2020 20:11:07 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 8.5791 ms
+11/18/2020 20:11:08 - Getting index page -
+11/18/2020 20:11:08 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 8.8387 ms
+11/18/2020 20:11:08 - Getting index page -
+11/18/2020 20:11:08 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 6.3025 ms
+11/18/2020 20:11:08 - Getting index page -
+11/18/2020 20:11:08 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 10.6918 ms
+11/18/2020 20:11:08 - Getting index page -
+11/18/2020 20:11:08 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 6.0710 ms
+11/18/2020 20:11:08 - Getting index page -
+11/18/2020 20:11:08 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 5.6052 ms
+11/18/2020 20:11:09 - Getting index page -
+11/18/2020 20:11:09 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 4.5421 ms
+11/18/2020 20:11:09 - Getting index page -
+11/18/2020 20:11:09 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 5.6288 ms
+11/18/2020 20:11:09 - Getting index page -
+11/18/2020 20:11:09 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 4.6261 ms
+11/18/2020 20:11:09 - Getting index page -
+11/18/2020 20:11:09 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 4.9447 ms
+11/18/2020 20:11:09 - Getting index page -
+11/18/2020 20:11:09 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 5.7550 ms
+11/18/2020 20:11:10 - Getting index page -
+11/18/2020 20:11:10 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 4.7184 ms
+11/18/2020 20:11:10 - Getting index page -
+11/18/2020 20:11:10 HTTP "POST" "/?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 4.6926 ms
+11/18/2020 20:11:11 - Getting index page -
+11/18/2020 20:11:11 HTTP "GET" "/?area=Identity&page=%2FAccount%2FManage%2FIndex" responded 200 in 5.1657 ms
+11/18/2020 20:11:12 - Getting index page -
+11/18/2020 20:11:12 HTTP "GET" "/?area=Identity&page=%2FAccount%2FManage%2FIndex" responded 200 in 4.3857 ms
+11/18/2020 20:11:12 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 15.5662 ms
+11/18/2020 20:11:13 HTTP "GET" "/Playlists" responded 200 in 10.2910 ms
+11/18/2020 20:11:14 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 4.0985 ms
+11/18/2020 20:11:14 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 2.3977 ms
+11/18/2020 20:11:14 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 3.5084 ms
+11/18/2020 20:11:23 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 3.2440 ms
+11/18/2020 20:11:24 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 2.4402 ms
+11/18/2020 20:11:24 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 2.3126 ms
+11/18/2020 20:11:24 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 1.4937 ms
+11/18/2020 20:11:24 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 1.5711 ms
+11/18/2020 20:11:25 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 1.3736 ms
+11/18/2020 20:11:25 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 1.6448 ms
+11/18/2020 20:11:25 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 1.5400 ms
+11/18/2020 20:11:50 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 1.8970 ms
+11/18/2020 20:11:51 HTTP "POST" "/Playlists?returnUrl=%2F&area=Identity&page=%2FAccount%2FLogout" responded 200 in 2.3855 ms
+11/18/2020 20:13:29 Application starting up
+11/18/2020 20:13:30 - Getting index page -
+11/18/2020 20:13:32 Role "34524e44-3a99-461f-bb12-77a19d72e2c1" validation failed: "DuplicateRoleName".
+11/18/2020 20:13:32 Role "6304e2df-9fc8-44fa-b770-3a730aa11f34" validation failed: "DuplicateRoleName".
+11/18/2020 20:13:32 HTTP "GET" "/" responded 200 in 1571.4319 ms
+11/18/2020 20:13:34 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 41.2195 ms
+11/18/2020 20:13:34 - Getting index page -
+11/18/2020 20:13:34 Role "3151f046-0d20-4389-9b7a-1648c46a8521" validation failed: "DuplicateRoleName".
+11/18/2020 20:13:34 Role "18ba68bb-db85-4fb9-a1ef-c7258dce4918" validation failed: "DuplicateRoleName".
+11/18/2020 20:13:34 HTTP "GET" "/" responded 200 in 43.8383 ms
+11/18/2020 20:13:41 HTTP "GET" "/Identity/Account/Register" responded 200 in 50.5732 ms
+11/18/2020 20:13:50 User created a new account with password.
+11/18/2020 20:13:50 HTTP "POST" "/Identity/Account/Register" responded 302 in 1829.0756 ms
+11/18/2020 20:13:50 - Getting index page -
+11/18/2020 20:13:50 Role "e019b0d4-4488-4d07-bd69-e8f5c3f06a2b" validation failed: "DuplicateRoleName".
+11/18/2020 20:13:50 Role "d1b421d8-ffbe-4dce-b957-18a3c9edfecc" validation failed: "DuplicateRoleName".
+11/18/2020 20:13:50 HTTP "GET" "/" responded 200 in 10.9884 ms
+11/18/2020 20:13:53 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 6.2539 ms
+11/18/2020 20:13:53 - Getting index page -
+11/18/2020 20:13:53 Role "966ff8f1-7e1d-4169-8655-5bf6e6eae3ad" validation failed: "DuplicateRoleName".
+11/18/2020 20:13:53 Role "bf5e83e1-b681-4504-b64c-e7a4dd6a3644" validation failed: "DuplicateRoleName".
+11/18/2020 20:13:53 HTTP "GET" "/" responded 200 in 25.8950 ms
+11/18/2020 20:13:54 HTTP "GET" "/Identity/Account/Login" responded 200 in 36.0226 ms
+11/18/2020 20:13:57 User logged in.
+11/18/2020 20:13:57 HTTP "POST" "/Identity/Account/Login" responded 302 in 29.6475 ms
+11/18/2020 20:13:57 - Getting index page -
+11/18/2020 20:13:57 Role "233b8889-9a55-4eaa-9f7b-0ff944f60b58" validation failed: "DuplicateRoleName".
+11/18/2020 20:13:57 Role "bd7ae63e-12c3-4a75-9425-ac0be28d2915" validation failed: "DuplicateRoleName".
+11/18/2020 20:13:57 HTTP "GET" "/" responded 200 in 10.8297 ms
+11/18/2020 20:14:01 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 3.3388 ms
+11/18/2020 20:14:01 - Getting index page -
+11/18/2020 20:14:01 Role "881a14d7-ae5c-4316-b6fe-a173f4d00f18" validation failed: "DuplicateRoleName".
+11/18/2020 20:14:01 Role "bc0eab3c-309c-4835-b5b1-0df391784623" validation failed: "DuplicateRoleName".
+11/18/2020 20:14:01 HTTP "GET" "/" responded 200 in 18.1024 ms
