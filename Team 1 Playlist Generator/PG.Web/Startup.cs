@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -9,6 +10,7 @@ using PG.Data.Context;
 using PG.Models;
 using PG.Services;
 using PG.Services.Contract;
+using PG.Web.Services;
 using Serilog;
 
 namespace PG.Web
@@ -36,10 +38,20 @@ namespace PG.Web
             services.AddScoped<IPlaylistService, PlaylistService>();
             services.AddScoped<ISongService, SongService>();
             services.AddScoped<IBingMapsAPIService, BingMapsAPIService>();
+            services.AddTransient<IEmailSender, EmailSender>();
 
+            services.AddDefaultIdentity<User>(options =>
+            {
+                options.Password.RequireDigit = false;
+                options.Password.RequiredLength = 6;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireLowercase = false;
+            })
+            .AddRoles<IdentityRole>()
+            .AddEntityFrameworkStores<PGDbContext>()
+            .AddDefaultTokenProviders();
 
-
-            services.AddDefaultIdentity<User>().AddRoles<IdentityRole>().AddEntityFrameworkStores<PGDbContext>();
 
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<PGDbContext>(options => options.UseSqlServer(connectionString));

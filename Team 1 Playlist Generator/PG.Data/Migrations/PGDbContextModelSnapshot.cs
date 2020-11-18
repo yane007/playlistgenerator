@@ -49,14 +49,14 @@ namespace PG.Data.Migrations
                         new
                         {
                             Id = "93ad4deb-b9f7-4a98-9585-8b79963aee55",
-                            ConcurrencyStamp = "afc254c1-871c-4f48-b14e-3c0473e3210e",
+                            ConcurrencyStamp = "58d9b593-1acb-4f69-8ac8-331b69579245",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
                             Id = "6b32cc6d-2fc9-4808-a0a6-b3877bf9a381",
-                            ConcurrencyStamp = "86b14c10-e99a-4786-bdc8-db29d41d96b5",
+                            ConcurrencyStamp = "6fb76f06-44be-4c96-a52d-6e3952091d6c",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -113,10 +113,12 @@ namespace PG.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.Property<string>("ProviderKey")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -149,7 +151,7 @@ namespace PG.Data.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "9c328abd-e9c0-4271-85fb-c7bb7b8adaaf",
+                            UserId = "00000000-0000-0000-0000-000000000000",
                             RoleId = "6b32cc6d-2fc9-4808-a0a6-b3877bf9a381"
                         });
                 });
@@ -160,10 +162,12 @@ namespace PG.Data.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
@@ -424,20 +428,20 @@ namespace PG.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "9c328abd-e9c0-4271-85fb-c7bb7b8adaaf",
+                            Id = "00000000-0000-0000-0000-000000000000",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2bfae7af-4974-4b08-8733-b8f4c00ac807",
-                            Email = "admin@admin.bg",
+                            ConcurrencyStamp = "1f1f061d-3563-4882-ae8f-4c7840cdb50f",
+                            Email = "admin@admin.com",
                             EmailConfirmed = false,
                             IsDeleted = false,
-                            LockoutEnabled = true,
-                            NormalizedEmail = "admin@admin.bg",
-                            NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEAlBGZI52oSpY4AnrPw5c/Q/adOo1hYtdyyEe4NeOlgDX0FQuDPy6mB1dZRGQ/JasA==",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "ADMIN@ADMIN.COM",
+                            NormalizedUserName = "ADMIN@ADMIN.COM",
+                            PasswordHash = "AQAAAAEAACcQAAAAEIEX++CtPEHSVdOvaTeFM4VY/41N79ZETBoDUUtJ22oAiQ6CO2wuNC5bT6cvMUY3yA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "QSV7IPN3NQOB7US3NWWJQV2BOPWLAWQC",
+                            SecurityStamp = "4d9a96a7-30c7-4b8a-bfef-4cbbbee2498f",
                             TwoFactorEnabled = false,
-                            UserName = "Admin"
+                            UserName = "admin@admin.com"
                         });
                 });
 
