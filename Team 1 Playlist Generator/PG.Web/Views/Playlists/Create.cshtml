@@ -9,13 +9,13 @@
         <div class="">
             <form asp-controller="Playlists" asp-action="Create" method="post">
                 <h1>PlaylistGenerator</h1>
-                <div class="d-flex flex-column align-items-center card mt-5" style="background-color:cornflowerblue;width:18rem;margin-top: 100px !important;">
+                <div class="d-flex flex-column align-items-center card mt-5" style="background-color: limegreen;width:18rem;margin-top: 100px !important;">
                     <div class="card-body">
                         <h5 class="rounded" style="
                            position: absolute;
                            margin-top: -35px;
                            margin-left: -50px;
-                           background-color:#3c28a7;
+                           background: #28a745;
                            padding: 5px 10px;
                            color: #fff;
                             /*   /Must be in css folder*/
@@ -26,15 +26,21 @@
                         <p class="card-text">Travel Information:</p>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span asp-for="@Model.StartLocation"class="input-group-text" style="background-color: #b3d7ff" ;>From:</span>
+                                <span class="input-group-text" style="background-color: #c2ffb3" ;>From:</span>
                             </div>
-                            <input type="text" class="form-control" aria-describedby="button-addon2" />
+                            <input asp-for="@Model.StartLocation" type="text" class="form-control" aria-describedby="button-addon2" />
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Map</button>
+                            </div>
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span asp-for="@Model.EndLocation"class="input-group-text" style="background-color:#b3d7ff">To:</span>
+                                <span class="input-group-text" style="background-color:#c2ffb3">To:</span>
                             </div>
-                            <input type="text" class="form-control" aria-describedby="button-addon2">
+                            <input asp-for="@Model.EndLocation" type="text" class="form-control" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Map</button>
+                            </div>
                         </div>
                         <p class="card-text">Preferenses:</p>
 
@@ -43,15 +49,15 @@
                         </div>
                         <div class="form-group">
                             <label asp-for="@Model.Metal" class="control-label"></label>
-                            <input asp-for="@Model.Metal" class="form-control" value="0" />
+                            <input asp-for="@Model.Metal" class="form-control" value="0"/>
                         </div>
                         <div class="form-group">
                             <label asp-for="@Model.Rock" class="control-label"></label>
-                            <input asp-for="@Model.Rock" class="form-control" value="0" />
+                            <input asp-for="@Model.Rock" class="form-control" value="0"/>
                         </div>
                         <div class="form-group">
                             <label asp-for="@Model.Pop" class="control-label"></label>
-                            <input asp-for="@Model.Pop" class="form-control" value="0" />
+                            <input asp-for="@Model.Pop" class="form-control" value="0"/>
                         </div>
 
                     </div>
@@ -59,13 +65,17 @@
                     @Html.EditorFor(x => x.TopTracks)
                     <p>Same artist:</p>
                     @Html.EditorFor(x => x.SameArtist)
+
                     <button type="submit" class="btn btn-primary"
                             style="position:absolute;
-                             margin-top: 630px;
-                           margin-right: -250px;
-                           background: #3c28a7;
+                       margin-top: 400px;
+                           margin-right: -290px;
+                           background: #28a745;
                            padding: 5px 10px;
                            color: #fff;
+
+                        /*   /Must be in css folder*/
+
                       ">
                         Generate
                     </button>
@@ -74,4 +84,55 @@
         </div>
     </div>
 </div>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+        (function () {
+            function refreshCSS() {
+                var sheets = [].slice.call(document.getElementsByTagName("link"));
+                var head = document.getElementsByTagName("head")[0];
+                for (var i = 0; i < sheets.length; ++i) {
+                    var elem = sheets[i];
+                    var parent = elem.parentElement || head;
+                    parent.removeChild(elem);
+                    var rel = elem.rel;
+                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                        var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                        elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                    }
+                    parent.appendChild(elem);
+                }
+            }
+            var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+            var address = protocol + window.location.host + window.location.pathname + '/ws';
+            var socket = new WebSocket(address);
+            socket.onmessage = function (msg) {
+                if (msg.data == 'reload') window.location.reload();
+                else if (msg.data == 'refreshcss') refreshCSS();
+            };
+            if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                console.log('Live reload enabled.');
+                sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+            }
+        })();
+    }
+    else {
+        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+                                            // ]]>
+</script>
+
+@*@foreach (var item in Model)
+    {
+        <p>@item.Name</p>
+    }*@
 

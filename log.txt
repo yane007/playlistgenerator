@@ -12,521 +12,30 @@
 11/16/2020 17:09:25 Role "0b9716a1-5e90-4840-af00-591e98ddec77" validation failed: "DuplicateRoleName".
 11/16/2020 17:09:25 Role "b022e51f-879c-45f4-ba26-d89c3bb1d688" validation failed: "DuplicateRoleName".
 11/16/2020 17:09:25 HTTP "GET" "/" responded 200 in 1231.2395 ms
-11/17/2020 16:24:40 Application starting up
-11/17/2020 16:24:42 Getting index page ---------------------------------------
-11/17/2020 16:25:02 HTTP "GET" "/" responded 200 in 20505.8139 ms
-11/17/2020 17:22:41 Application starting up
-11/17/2020 17:22:42 Getting index page ---------------------------------------
-11/17/2020 17:22:43 Role "30f850c6-c444-4915-b79f-e9506de210d9" validation failed: "DuplicateRoleName".
-11/17/2020 17:22:43 Role "5d245859-a9eb-4f43-a158-5d05acbcbf4d" validation failed: "DuplicateRoleName".
-11/17/2020 17:22:43 HTTP "GET" "/" responded 200 in 1618.6360 ms
-11/17/2020 17:30:25 Application starting up
-11/17/2020 17:30:26 HTTP "GET" "/" responded 500 in 59.3392 ms
-System.ArgumentException: The 'AppId' option must be provided. (Parameter 'AppId')
-   at Microsoft.AspNetCore.Authentication.Facebook.FacebookOptions.Validate()
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationOptions.Validate(String scheme)
-   at Microsoft.AspNetCore.Authentication.AuthenticationBuilder.<>c__DisplayClass4_0`2.<AddSchemeHelper>b__1(TOptions o)
-   at Microsoft.Extensions.Options.ValidateOptions`1.Validate(String name, TOptions options)
-   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
-   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
-   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
-   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
-   at System.Lazy`1.CreateValue()
-   at System.Lazy`1.get_Value()
-   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
-   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
-   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-11/17/2020 17:30:26 An unhandled exception has occurred while executing the request.
-System.ArgumentException: The 'AppId' option must be provided. (Parameter 'AppId')
-   at Microsoft.AspNetCore.Authentication.Facebook.FacebookOptions.Validate()
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationOptions.Validate(String scheme)
-   at Microsoft.AspNetCore.Authentication.AuthenticationBuilder.<>c__DisplayClass4_0`2.<AddSchemeHelper>b__1(TOptions o)
-   at Microsoft.Extensions.Options.ValidateOptions`1.Validate(String name, TOptions options)
-   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
-   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
-   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
-   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
-   at System.Lazy`1.CreateValue()
-   at System.Lazy`1.get_Value()
-   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
-   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
-   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-11/17/2020 17:31:26 Application starting up
-11/17/2020 17:31:36 HTTP "GET" "/" responded 500 in 69.4704 ms
-System.ArgumentException: The 'AppId' option must be provided. (Parameter 'AppId')
-   at Microsoft.AspNetCore.Authentication.Facebook.FacebookOptions.Validate()
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationOptions.Validate(String scheme)
-   at Microsoft.AspNetCore.Authentication.AuthenticationBuilder.<>c__DisplayClass4_0`2.<AddSchemeHelper>b__1(TOptions o)
-   at Microsoft.Extensions.Options.ValidateOptions`1.Validate(String name, TOptions options)
-   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
-   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
-   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
-   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
-   at System.Lazy`1.CreateValue()
-   at System.Lazy`1.get_Value()
-   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
-   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
-   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-11/17/2020 17:31:36 An unhandled exception has occurred while executing the request.
-System.ArgumentException: The 'AppId' option must be provided. (Parameter 'AppId')
-   at Microsoft.AspNetCore.Authentication.Facebook.FacebookOptions.Validate()
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationOptions.Validate(String scheme)
-   at Microsoft.AspNetCore.Authentication.AuthenticationBuilder.<>c__DisplayClass4_0`2.<AddSchemeHelper>b__1(TOptions o)
-   at Microsoft.Extensions.Options.ValidateOptions`1.Validate(String name, TOptions options)
-   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
-   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass11_0.<Get>b__0()
-   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
-   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
-   at System.Lazy`1.CreateValue()
-   at System.Lazy`1.get_Value()
-   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
-   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
-   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-11/17/2020 17:37:23 Application starting up
-11/17/2020 17:37:24 Getting index page ---------------------------------------
-11/17/2020 17:37:25 Role "71e8fd57-ca61-4924-8b02-ceb051ca096e" validation failed: "DuplicateRoleName".
-11/17/2020 17:37:25 Role "102bcd41-847f-4d99-9faf-5f681fc8aea9" validation failed: "DuplicateRoleName".
-11/17/2020 17:37:25 HTTP "GET" "/" responded 200 in 1187.3594 ms
-11/17/2020 17:37:28 HTTP "GET" "/Identity/Account/Register" responded 200 in 88.1318 ms
-11/17/2020 17:37:31 HTTP "POST" "/Identity/Account/ExternalLogin" responded 302 in 36.1115 ms
-11/17/2020 17:37:42 '".AspNetCore.Correlation.Facebook.s6eezZg96EIlm3WtrTd663uRohezeVuObGsAhDZSNZ0"' cookie not found.
-11/17/2020 17:37:42 HTTP "GET" "/signin-facebook?code=AQB0XmH5CR1uXRpxgkihmoLA1RZ72163N2NHyZ2mQFQ7q56dOtb10Sq0jPyPHk-oyrb8qdQcjuDUXMTGwKq247wyU_u2c6l_XbBm0-Gr-92rUVRTbSAvaorAgd5YC_tneFHua_VooQDZcqNiuy2zjsFUUbg4fFUc_6RQuQwGF0GnWuVuz5-UKP5nyY_3OoA-dckqIOoy4BhRFrvAGKHbSAwkpQYMZ_2s7t_2VrNhAbpnxvRBJeNulsRMe5iNbohHXgxvdrsMpZJBKSV3rhdBHILXC_bavzzN0WMnKwFISAWp9EM8eEpE9w7LtiiA71S1Z6x4Tua4W-3A47jgcecfkRm5&state=CfDJ8MsaXX0jV-hCvI0ju1iXlLK2ywS-6T9X5CIcMBQSxhUms1nl3St8BaTV0KoJEx_c23WJySbUY71qlrzNIjLAy9ts5cB0OinIDb2vqgY8owOuAQbh9rtl8wZ5TjElpAEg802sdxvxMemXIQcYn_p-DCKcRy08RTdbGZyQAYwCxbXperavit3hLjPf2TewiyNxqwUMOYxQ0xTRUsIrveIxZXEZCK0ykdYpop4eamQxEzOjoNC3qZMr7hWJOR4bJa2_eE1tuQT6JgGE2HFd49Oc0FRuMorkz5qkj29uKWUMOPCT" responded 500 in 9.8336 ms
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-11/17/2020 17:37:42 An unhandled exception has occurred while executing the request.
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-11/17/2020 17:39:24 Application starting up
-11/17/2020 17:39:26 Getting index page ---------------------------------------
-11/17/2020 17:39:26 Role "6c2c7b13-a074-4b69-95da-6d9f33f05baa" validation failed: "DuplicateRoleName".
-11/17/2020 17:39:26 Role "b862fd65-cf5a-45c1-bea7-ce75110e5357" validation failed: "DuplicateRoleName".
-11/17/2020 17:39:27 HTTP "GET" "/" responded 200 in 1199.7520 ms
-11/17/2020 17:39:29 HTTP "GET" "/Identity/Account/Register" responded 200 in 74.9503 ms
-11/17/2020 17:39:31 HTTP "GET" "/Identity/Account/Login" responded 200 in 40.5149 ms
-11/17/2020 17:39:32 HTTP "POST" "/Identity/Account/ExternalLogin?returnUrl=%2F" responded 302 in 26.0788 ms
-11/17/2020 17:39:32 '".AspNetCore.Correlation.Facebook.wovjxJRcv7ot2-CW6Xp4-GhCXFAYBsYyl4v9sn6FY6M"' cookie not found.
-11/17/2020 17:39:32 HTTP "GET" "/signin-facebook?code=AQBcaGYe1HFBc_vfQOk2yaX_gH2yT5E18CUczIUA46ztjEsxEz6hYW7V3Ka02JA0euvhiSOi3eCiD6Z5R0CJDSxg6evv9g-O5eCSTMg4cJOnNVPO8T12HL704S98IpoE0Wwx8rxReVD_h-JBqeREzjLhAXcyeDQDII0GxpOSwUVeg0xnd91_bCwXROdvDYFu1shlJUcKmfzhpzkik3kVPZ8-G50-OKMFQOZzdMjOp9uAo3dH6I4Jtp5hShW59MfA3XcyUDmnyr6-iZXnRqGMWt1TLZIyAcXvjHEoXw-uLUef-b_gIqbTboOidJOQpJWU8G_L0WagpSBWGn_J-0aSuasH&state=CfDJ8MsaXX0jV-hCvI0ju1iXlLKvTagDAU5wSevo3tHFLG-jQsOs_SJ2S5Q7FWuDqGG3gF2qYgG3WHqhsM7jQMflhIrSgh1Q9WKIgIXO7gFADsh75pLAoomciRGvWlpy-G-OXzOm9nh624QqL1C5nTlLPgsYQq-ZGcOSr4UYKyfMAAiunBYo-2TnchRxI-3qQA5BRCIdveiIOCQP-NBiDuBEieNvxNieuGvVEzYSwaQ17NdQbgFI5uIwq9TaOllzAaNx-C1RqRSFr9KBsb2YtLhEDHmdz-lxQliuypYoU9sKdAxyvL4My9hXnYAw89kjzVsUdA" responded 500 in 7.6900 ms
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-11/17/2020 17:39:32 An unhandled exception has occurred while executing the request.
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-11/17/2020 17:39:37 HTTP "GET" "/Identity/Account/Login" responded 200 in 6.6840 ms
-11/17/2020 17:39:38 HTTP "GET" "/Identity/Account/Register" responded 200 in 9.9840 ms
-11/17/2020 17:39:39 HTTP "POST" "/Identity/Account/ExternalLogin" responded 302 in 3.4207 ms
-11/17/2020 17:39:40 '".AspNetCore.Correlation.Facebook.xiWhfqaET9Brtq7CXfjNsWQLltXihIzhKkEScTOJPI8"' cookie not found.
-11/17/2020 17:39:40 HTTP "GET" "/signin-facebook?code=AQCiu4HMq7kKNYcc6e5WaR5vHDLAs5pO06y0lla44KubyeV-SSk9rL-_qqPt0SFdr_yvjyBr4OCV_x--1bKgjtT6SVpCmDoG1XlxT5eVdN1rQbnjqOXvXAzTJ0YRvM9yJrB3FDDgJ9BzNv8ziAw_51hIs9cnZRDqbOhzK23A16Y53vct3QKOBSsl0EyNVSrNzpP_mmElGiTomRiOxUtIJT-25j18eJd2-Th3XDSLZazqSDOXLNT4Xw18-8KH0rU2Y6-tt-wMFQ2wM8U2t84nBKVNAuqFp_qUAOtgNTipHIX5jsRk9CIHaODJVgu61VJVbkuR8c70nmAQj1GZgnH-qXuX&state=CfDJ8MsaXX0jV-hCvI0ju1iXlLKP5zpGapYPKmOJAT_jJIkUt3Rs5B59H-fDzifCi2cw0LmoUidnMjWeG_vzVyx_N3VOdcURrBn4zwZg-G6TY8onl-0WcUwIWqWZvepZgWOO7LneRM39SBolQJXZnM5aYhG56Hfc70aviHzdjfBIcCi35LVNX0V_cM_7sWLAP4lyhcp6e6wlGqrKnL8KSG1uCLUAUjX_kPn6UxpkQ_BoG-8V_rabzlc2cjoyQN1auE0pv0rMOWKYKabPuDI7NOhoo0-y4Ek0Bjmxw2ZPj0Se0HFp" responded 500 in 3.0344 ms
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-11/17/2020 17:39:40 An unhandled exception has occurred while executing the request.
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-11/17/2020 17:42:44 Getting index page ---------------------------------------
-11/17/2020 17:42:44 Role "e0b42321-74c0-4007-a0a1-a0f31439c301" validation failed: "DuplicateRoleName".
-11/17/2020 17:42:44 Role "65f57281-7738-47db-a134-c487a56ddbf4" validation failed: "DuplicateRoleName".
-11/17/2020 17:42:44 HTTP "GET" "/" responded 200 in 66.5415 ms
-11/17/2020 17:42:46 HTTP "GET" "/Identity/Account/Register" responded 200 in 7.1207 ms
-11/17/2020 17:42:48 HTTP "POST" "/Identity/Account/ExternalLogin" responded 302 in 3.2120 ms
-11/17/2020 17:42:48 '".AspNetCore.Correlation.Facebook.6AO3PhbyJCd7sQRnyJMavFfmAwxx4SnIVW7u-olbMi4"' cookie not found.
-11/17/2020 17:42:48 HTTP "GET" "/signin-facebook?code=AQAWWZaRcOc2sVNy-BCLDD7Tksisy8OxvvZCN_jugiHDugr9BEY6DyB6UxmgDi1m1Lf56Dgl_5-oUrZ-N9jNDiP1mDpmEZu9tDty4QVgiLwN19jYl8JMuN3EZ1wKIGAqp0UJXKRUo1QYYKIkYIrKSxMX3ep8VFGsiw_6Yuu2F9dIjkvQuHHqTRjaLRQa4O6S2HWgwmkVCZuDe2OMRzoI_wHLDmPvhALZc1pQb1A3NQxtlcZLREJlVADPJiogI7CQnd0nbMG3Ddr71RdqQJtSJdsc7dpUdJS6HV8hClYkARVyWM0s2Q2fixJ9MdX4FWxvqk9e5J0BPfcNf7WWCgqktrYR&state=CfDJ8MsaXX0jV-hCvI0ju1iXlLJ3FiwWREfqm0zM0DBsFDgwmJDPL-c0akv-mcCfBRF47o0ZWR7yzKrZOlTUmkpBEJNYg69CiUaTqZBhHVqLHAVAj17BRgxGKwpCbXJEa9o_EWU6ur3zgU2J4xrPZFkQL7ujDw0q-55YQ-srvhP9jjV0gAF8RJQ41ZDFMcLOtxvXQnfrnFurSg2HSFCuP8O2cp0F30cIhSTAmgK_oUEk3-4BF8bu3puD8Q_lluDjtqPzlymcuEL79UR9OZP7xW0uhbEBFVl-B89bfK7pQbuAdk-a" responded 500 in 2.1825 ms
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-11/17/2020 17:42:48 An unhandled exception has occurred while executing the request.
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-11/17/2020 17:45:04 Application starting up
-11/17/2020 17:45:05 Getting index page ---------------------------------------
-11/17/2020 17:45:06 Role "0a922c94-e052-4bfe-8f87-de4875e39aaa" validation failed: "DuplicateRoleName".
-11/17/2020 17:45:06 Role "deaf4e3e-042b-4e02-8b44-be525ba47328" validation failed: "DuplicateRoleName".
-11/17/2020 17:45:06 HTTP "GET" "/" responded 200 in 1180.7689 ms
-11/17/2020 17:45:08 HTTP "GET" "/Identity/Account/Register" responded 200 in 74.0282 ms
-11/17/2020 17:45:09 HTTP "POST" "/Identity/Account/ExternalLogin" responded 302 in 36.8434 ms
-11/17/2020 17:45:09 '".AspNetCore.Correlation.Facebook.uGS-tSiDNjbCojNQ7xTLgMDSW6c8_yHG0aQN7tgaA40"' cookie not found.
-11/17/2020 17:45:09 HTTP "GET" "/signin-facebook?code=AQC_eeuQsivcC2BllCDBq_Vkuk2INyuwT8pOyjiEMT05q_ts0_JRGE9LhPb9HH27vk0llB9iQbKPR_-KWWWajqf-Ti6c0RVjjEcZ3z7HZUQ-aeNOKaNzgYkFUEAR0Rcmb-TkuvlBCM23lSB0zTr-KI1tVIMNdgQUwiEhl8M5IjkFKzwjL7b6k9AovWOXQUIpXvqqD50AZisvviT-aYmshiMtCBDA8Tdj0lm69cntt7TyRgT9evH6xeZfZGkWHc9oOrRI0MzlcsTeH3y9jSu_R1mRvzTPolpqorN9u1lAkB4fN-6jSGeDC_1_newUeq1R84dTGsX1_29D7k0PRjbESc64&state=CfDJ8MsaXX0jV-hCvI0ju1iXlLLZKvdzcHNAL0Yw9RDHQ2AkWdm9OhGVwhL1wAHfVA0_T9r_VGCTGaesZ8Qw0k6Fx_rEazZv_257ihosU7en-50XTFhVAc7WJcILTPOpybl-eqT6CRO2p9N06_bxvpuc1kX_z5aH7C5NG-5bSqYaXjLk-j8MSwjyLFT8SFDAbNnrSSdqfF3-ixmjkUmYg_CLA52U8CVmVugjklX9BVfBGIHl-5bf6nRmIoW-TByu6skBX0MppqRoWzrDxskUtdG_OoCj53qCWP1ToiEJICkblqE5" responded 500 in 7.9473 ms
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-11/17/2020 17:45:09 An unhandled exception has occurred while executing the request.
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-11/17/2020 17:50:33 Application starting up
-11/17/2020 17:50:34 Getting index page ---------------------------------------
-11/17/2020 17:50:35 Role "23cb5878-8a97-4b8a-b834-b6e7764ab832" validation failed: "DuplicateRoleName".
-11/17/2020 17:50:35 Role "3f13a034-f0bb-4f31-8a8c-3b97ab9d5adb" validation failed: "DuplicateRoleName".
-11/17/2020 17:50:35 HTTP "GET" "/" responded 200 in 1162.5219 ms
-11/17/2020 17:50:36 HTTP "GET" "/Identity/Account/Register" responded 200 in 74.9734 ms
-11/17/2020 17:50:37 HTTP "POST" "/Identity/Account/ExternalLogin" responded 302 in 34.6577 ms
-11/17/2020 17:50:37 '".AspNetCore.Correlation.Facebook.F2TWHepdacFlUHiH3G1cHGg-s1E5HB3HEW-KumIJaqE"' cookie not found.
-11/17/2020 17:50:37 HTTP "GET" "/signin-facebook?code=AQCYm85axonuamdYzP0EL9oR5-kRT6qWgqiG_FuyWApH99m3y495ty1Do76rbyAg7fGCzaf1YK7e1PQQlF1o6KTBpLYpGpVTV_lYYWVcq0paqnDIPhau68hcTeVloFx75y6BdffM754ic_jE2CwbxHSpzXS_xq_XP9FlHafxmb7ciPBtfJ6a795y2bRJvu7UpKfuFbkRtWZFBMfSjC6cmysAxFycezsKMT69NSQjAvNrQiF4LeApBJ_yPRvYkfwKE_VpAmgwWLmW3uSgthZJS_O3Nff-0sM9_J86c_iYIzQd2DCp_7sl8GEUvoYsBencWy_iKp1FId8ga5lELyTKDSfT&state=CfDJ8MsaXX0jV-hCvI0ju1iXlLLEk0wWWZutYfTlc7rjbH9Bp4AWuUoS4Ww53ZBcl-yc5BkNGe7ZqZdWwzngEUKcAm1lq2mbh_BSAziJS5Sfm-epNnwd18ygXD3WqxLl596XVcVIGxPOydQwErXM2KddP-oXj2oJ3nHrHZ24Nn4vGQsxVvnTof2W1eYuINP1eWGhvkBH684EBCeIhdVpeaCSODf2msUt6oUN-pzftKfn6Wp1Go_yE8wXwNw2Ev_xaKKoSbI99uSy36Z8NyEXeudNaHGCoEuk8jXAN7tSzMEkntmW" responded 500 in 6.9783 ms
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-11/17/2020 17:50:37 An unhandled exception has occurred while executing the request.
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-11/17/2020 17:51:07 Getting index page ---------------------------------------
-11/17/2020 17:51:07 Role "8d4b3a1c-f978-4f93-adda-8e75d9dbcbc9" validation failed: "DuplicateRoleName".
-11/17/2020 17:51:07 Role "ef6eb841-5ba4-4b4d-9b7d-e3e2c3d6c730" validation failed: "DuplicateRoleName".
-11/17/2020 17:51:07 HTTP "GET" "/" responded 200 in 54.4295 ms
-11/17/2020 17:51:14 Application starting up
-11/17/2020 17:51:15 Getting index page ---------------------------------------
-11/17/2020 17:51:16 Role "e40d4740-e751-43ba-b10e-77154d2e2dc6" validation failed: "DuplicateRoleName".
-11/17/2020 17:51:16 Role "194b9aa8-3545-4fb5-a7c3-766731fb2208" validation failed: "DuplicateRoleName".
-11/17/2020 17:51:16 HTTP "GET" "/" responded 200 in 1190.9006 ms
-11/17/2020 17:51:18 HTTP "GET" "/Identity/Account/Register" responded 200 in 76.1651 ms
-11/17/2020 17:51:19 HTTP "POST" "/Identity/Account/ExternalLogin" responded 302 in 34.2303 ms
-11/17/2020 17:51:19 '".AspNetCore.Correlation.Facebook.IblcCFQetIhUhcmF5BvTtVrQ7ZndLx75iGP9qKtECxY"' cookie not found.
-11/17/2020 17:51:19 HTTP "GET" "/signin-facebook?code=AQD4OuEJdaE7QHrsg09g_RGiY-UbKrwGkprxX57Af8FHHXtZouhDBRh_2z5Z8Md1uHGaXLDxJGW5h44HcSBXjjR_Sdipvoud-vBX1U-MtJdOZgTYtetK_GuMt_gBWRQ3VMsG7UxY1QJaUIxRMauisYf4A6_njkJrhtTesB_sBjuPU7uMYRZgGkzNB7lO8kU4YuhCmN-vFZ-s43XDqjenIBn_9r35ozk13ML9VbSzwZbhlvHqzDBVQXNI0ja-dcEh4ueG23UoF4UTD5gNWShYRaVzvCFuWQhLfgm4ihgtHJvtYim3fXWo8VO_lN3nsUXW8p3alCpWJwl7Md-luw7FqMrT&state=CfDJ8MsaXX0jV-hCvI0ju1iXlLICbTbIi1wzje8QGZ7O-vby77bydIs2msHeKsog2qu2AoKhCLLi1jNLzZ3vNTBs-6UfjOJaWzb5YE5pv4xHw7LxYwA8UB1Lkw593himqeG57AFvgahhg7akvPFoq7Mvs5_pnDKBPo2hLzMkQXuCAyjNl-g6z4JTFSO4odS4XZojWnU-9xqTZC_txOUBeVi9sZQyfKRj2PoBxhXcvtJKzUeEYFDFcmJHtBGlDbkEE9_Zjd95_DdPfgYzr6phmT3eUlmi_29osgIrn0JJximztJsq" responded 500 in 6.7907 ms
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-11/17/2020 17:51:19 An unhandled exception has occurred while executing the request.
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-11/17/2020 18:09:03 Application starting up
-11/17/2020 18:09:04 Getting index page ---------------------------------------
-11/17/2020 18:09:05 Role "a4138800-e042-45fe-85bb-9f21302b1f17" validation failed: "DuplicateRoleName".
-11/17/2020 18:09:05 Role "6b4f4f1d-5fa5-4686-81c3-bb359f0a349b" validation failed: "DuplicateRoleName".
-11/17/2020 18:09:05 HTTP "GET" "/" responded 200 in 1212.8735 ms
-11/17/2020 18:09:07 HTTP "GET" "/Identity/Account/Register" responded 200 in 89.9566 ms
-11/17/2020 18:09:08 HTTP "POST" "/Identity/Account/ExternalLogin" responded 302 in 37.6728 ms
-11/17/2020 18:09:17 '".AspNetCore.Correlation.Google.e3voEifPS2SZA-R5lHVkc7bTK5guK8J25B_eTQXMUiw"' cookie not found.
-11/17/2020 18:09:17 HTTP "GET" "/signin-google?state=CfDJ8MsaXX0jV-hCvI0ju1iXlLJTFlI44tRjxJFh4Hpej1MHzM4gP20HrnIiZX47MkQSrWAqV3pYcHFm_65cWvSOU2kKP1jNPipenK2btV9j8oxDIcjMElI-N5dKIQHKM2rTuTrr_2sCz2n_yme85sua-ZR3MoXaeas2OrmSGqPiyTf5b1X_N8GCAT3zy_9sI8-pjxMwpCFTW5RQqNLbTZk3R7TN9czGcNE4g3aHP0HZZSOeqJiQMcFHYCzeANSfCgiCl0fCVImEibva_SnoxMZQfgowBOUBO81ckW4IbIL4ggJy&code=4%2F0AY0e-g6Jf0gZ1gVsO8G7uVL2TbewFyFDBuDm7JO8tuUA8KdQjeG8FJlCnbqDDTBhwbnOaA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=consent" responded 500 in 7.3731 ms
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-11/17/2020 18:09:17 An unhandled exception has occurred while executing the request.
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-11/17/2020 18:58:31 Application starting up
-11/17/2020 18:58:32 Getting index page ---------------------------------------
-11/17/2020 18:58:35 Role "41405b94-536e-4f6f-9406-71273f14af1a" validation failed: "DuplicateRoleName".
-11/17/2020 18:58:35 Role "09773b93-b375-4df9-9096-11f0c4ab6629" validation failed: "DuplicateRoleName".
-11/17/2020 18:58:35 HTTP "GET" "/" responded 200 in 3066.3906 ms
-11/17/2020 18:58:39 HTTP "GET" "/Playlists" responded 200 in 20.4695 ms
-11/17/2020 18:58:51 HTTP "GET" "/Playlists/Create" responded 302 in 9.0112 ms
-11/17/2020 18:58:52 HTTP "GET" "/Identity/Account/Login?ReturnUrl=%2FPlaylists%2FCreate" responded 200 in 85.5121 ms
-11/17/2020 18:58:56 HTTP "POST" "/Identity/Account/Login?ReturnUrl=%2FPlaylists%2FCreate" responded 200 in 56.3118 ms
-11/17/2020 18:58:59 HTTP "GET" "/Identity/Account/Register" responded 200 in 37.4880 ms
-11/17/2020 18:59:09 User "d9e8d676-051c-4791-90e2-6441b0c382e8" password validation failed: "PasswordRequiresDigit".
-11/17/2020 18:59:09 HTTP "POST" "/Identity/Account/Register" responded 200 in 39.1100 ms
-11/17/2020 18:59:17 User created a new account with password.
-11/17/2020 18:59:17 HTTP "POST" "/Identity/Account/Register" responded 302 in 652.9604 ms
-11/17/2020 18:59:17 Getting index page ---------------------------------------
-11/17/2020 18:59:17 Role "3e678ef1-9d72-4432-b102-2585d3f24195" validation failed: "DuplicateRoleName".
-11/17/2020 18:59:17 Role "f301e49c-5837-4676-9b78-dfbafa34d30f" validation failed: "DuplicateRoleName".
-11/17/2020 18:59:17 HTTP "GET" "/" responded 200 in 16.8798 ms
-11/17/2020 18:59:21 HTTP "GET" "/Playlists" responded 200 in 4.1891 ms
-11/17/2020 18:59:23 HTTP "GET" "/Playlists/Create" responded 200 in 41.7010 ms
-11/17/2020 18:59:23 HTTP "GET" "/Playlists/Create/ws" responded 200 in 6.7783 ms
-11/17/2020 18:59:45 Playlist with title '2020-11-17 18:59:44.967' has been created.
-11/17/2020 18:59:45 HTTP "POST" "/Playlists/Create" responded 302 in 2292.8560 ms
-11/17/2020 18:59:45 HTTP "GET" "/Playlists" responded 200 in 2.2378 ms
-11/17/2020 18:59:47 Getting index page ---------------------------------------
-11/17/2020 18:59:47 Role "ea7123f4-0dad-424c-be30-e8899d1ac814" validation failed: "DuplicateRoleName".
-11/17/2020 18:59:47 Role "40947023-49c7-4993-b47d-6a884ce4a17a" validation failed: "DuplicateRoleName".
-11/17/2020 18:59:47 HTTP "GET" "/" responded 200 in 41.4589 ms
-11/17/2020 19:12:38 Application starting up
-11/17/2020 19:12:39 Getting index page ---------------------------------------
-11/17/2020 19:12:40 Role "3219f00f-f69d-48d5-b622-322463bbf2e1" validation failed: "DuplicateRoleName".
-11/17/2020 19:12:40 Role "3d3964bc-835a-4e9a-a59c-6bc025414524" validation failed: "DuplicateRoleName".
-11/17/2020 19:12:40 HTTP "GET" "/" responded 200 in 1279.8818 ms
-11/17/2020 19:12:43 HTTP "GET" "/Identity/Account/Manage" responded 200 in 153.1067 ms
-11/17/2020 19:12:46 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 29.4931 ms
-11/17/2020 19:12:46 Getting index page ---------------------------------------
-11/17/2020 19:12:46 Role "e32fad66-ecd3-47b9-99e5-349c411266f4" validation failed: "DuplicateRoleName".
-11/17/2020 19:12:46 Role "147cb6c9-d40d-4892-88f2-f342426d15e8" validation failed: "DuplicateRoleName".
-11/17/2020 19:12:46 HTTP "GET" "/" responded 200 in 17.8983 ms
-11/17/2020 19:12:47 HTTP "GET" "/Identity/Account/Register" responded 200 in 29.5282 ms
-11/17/2020 19:12:48 HTTP "POST" "/Identity/Account/ExternalLogin" responded 302 in 22.9379 ms
-11/17/2020 19:12:51 '".AspNetCore.Correlation.Google.Zey8CmKtOVrWRraqVJQdeyuUCFHnwN4JD61J_Jo9Kg4"' cookie not found.
-11/17/2020 19:12:51 HTTP "GET" "/signin-google?state=CfDJ8MsaXX0jV-hCvI0ju1iXlLJYalTGmLGQcqJ2sy5e0KDIgQWlxf1Yap_eyETEbrTvGsUXwVQL1Ji6QtyBVbBpp7tsZkcF40RQWHMbyO73oD5-GEDL0xb98ZMu4DmHeitKCLeuvwhu8VBzv_b7pAQttnAJtGITcdEq8Cl5LOA7RbRU7kr4JbxXS2wTEEwQVJAvsWDDOUak2u6THtbtZ8x74bktlv8LzWlYRHM7TIl27mKbpCP2fH_qKG_q6-hY7C03n45ydIrdqhqwhzFx2LWW11Et2GGatRNgwK9Cm_U3Gmp4&code=4%2F0AY0e-g4XLJlSJszQ68fDjipraI0d4ScAVpuzYhUXZf-eU-_smvoUy4-G8Inepn-85O3Kig&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=consent" responded 500 in 7.0914 ms
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-11/17/2020 19:12:51 An unhandled exception has occurred while executing the request.
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-11/17/2020 19:12:55 HTTP "GET" "/Identity/Account/Register" responded 200 in 8.3021 ms
-11/17/2020 19:12:57 HTTP "GET" "/Playlists" responded 200 in 10.2687 ms
-11/18/2020 09:37:11 Application starting up
-11/18/2020 09:37:15 Application starting up
-11/18/2020 09:37:15 Getting index page ---------------------------------------
-11/18/2020 09:37:16 Role "a41debb7-e108-4311-8e92-342e4f4515dd" validation failed: "DuplicateRoleName".
-11/18/2020 09:37:16 Role "83dadc9f-2a5d-4133-99b2-3b408dd4d1ce" validation failed: "DuplicateRoleName".
-11/18/2020 09:37:16 HTTP "GET" "/" responded 200 in 1257.2138 ms
-11/18/2020 09:37:18 HTTP "GET" "/Playlists" responded 200 in 21.1874 ms
-11/18/2020 09:37:37 Application starting up
-11/18/2020 09:37:38 Getting index page ---------------------------------------
-11/18/2020 09:37:39 Role "c468618e-14b7-4a4e-b509-2dfb47fb7e5d" validation failed: "DuplicateRoleName".
-11/18/2020 09:37:39 Role "aec882cc-3977-42d9-b921-835e16864f98" validation failed: "DuplicateRoleName".
-11/18/2020 09:37:39 HTTP "GET" "/" responded 200 in 1236.9196 ms
-11/18/2020 09:37:41 HTTP "GET" "/Playlists" responded 200 in 19.0366 ms
-11/18/2020 09:38:03 Application starting up
-11/18/2020 09:38:04 Getting index page ---------------------------------------
-11/18/2020 09:38:05 Role "9d01ff2c-c4fb-4be7-b84a-de3627860e1f" validation failed: "DuplicateRoleName".
-11/18/2020 09:38:05 Role "0101c4a1-5e08-4e57-8a18-03a230cbb554" validation failed: "DuplicateRoleName".
-11/18/2020 09:38:05 HTTP "GET" "/" responded 200 in 1193.1822 ms
-11/18/2020 09:38:06 HTTP "GET" "/Playlists" responded 200 in 19.4346 ms
-11/18/2020 09:38:07 HTTP "GET" "/Playlists/Create" responded 302 in 8.2705 ms
-11/18/2020 09:38:07 HTTP "GET" "/Identity/Account/Login?ReturnUrl=%2FPlaylists%2FCreate" responded 200 in 83.4904 ms
-11/18/2020 09:38:09 User logged in.
-11/18/2020 09:38:09 HTTP "POST" "/Identity/Account/Login?ReturnUrl=%2FPlaylists%2FCreate" responded 302 in 133.2640 ms
-11/18/2020 09:38:10 HTTP "GET" "/Playlists/Create" responded 200 in 42.6632 ms
-11/18/2020 09:38:10 HTTP "GET" "/Playlists/Create/ws" responded 200 in 6.5501 ms
-11/18/2020 09:38:31 Application starting up
-11/18/2020 09:38:32 Getting index page ---------------------------------------
-11/18/2020 09:38:33 Role "479b34f8-586e-4efc-bd15-da514d61aaa1" validation failed: "DuplicateRoleName".
-11/18/2020 09:38:33 Role "9f7a3073-905d-4890-8d55-dc827050909f" validation failed: "DuplicateRoleName".
-11/18/2020 09:38:33 HTTP "GET" "/" responded 200 in 1190.1249 ms
-11/18/2020 09:39:18 Application starting up
-11/18/2020 09:39:19 Getting index page ---------------------------------------
-11/18/2020 09:39:20 Role "d356a4f5-2799-4a33-9d68-f92f002b335b" validation failed: "DuplicateRoleName".
-11/18/2020 09:39:20 Role "2961d9c1-db85-4e06-92ac-ceee37012973" validation failed: "DuplicateRoleName".
-11/18/2020 09:39:21 HTTP "GET" "/" responded 500 in 1222.1310 ms
-System.InvalidOperationException: RenderBody has not been called for the page at '/Views/Shared/_Layout.cshtml'. To ignore call IgnoreBody().
-   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
-   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
-   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
-   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
-   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
-   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
-   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
-   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
---- End of stack trace from previous location where exception was thrown ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-11/18/2020 09:39:21 An unhandled exception has occurred while executing the request.
-System.InvalidOperationException: RenderBody has not been called for the page at '/Views/Shared/_Layout.cshtml'. To ignore call IgnoreBody().
-   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
-   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
-   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
-   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
-   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
-   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
-   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
-   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
---- End of stack trace from previous location where exception was thrown ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-11/18/2020 09:40:15 Application starting up
-11/18/2020 09:40:16 Getting index page ---------------------------------------
-11/18/2020 09:40:17 Role "dee5a807-eaa0-4d3f-88c2-3ae4f6b1caef" validation failed: "DuplicateRoleName".
-11/18/2020 09:40:17 Role "4951c1ae-c918-4960-9299-3d0a34f59637" validation failed: "DuplicateRoleName".
-11/18/2020 09:40:17 HTTP "GET" "/" responded 200 in 1216.3534 ms
-11/18/2020 09:40:36 Application starting up
-11/18/2020 09:40:37 Getting index page ---------------------------------------
-11/18/2020 09:40:38 Role "69c64c3c-57fb-4100-a6b4-2247ed8866bc" validation failed: "DuplicateRoleName".
-11/18/2020 09:40:38 Role "3086f9fd-c433-442b-ac09-a2238781dea4" validation failed: "DuplicateRoleName".
-11/18/2020 09:40:38 HTTP "GET" "/" responded 200 in 1198.8104 ms
-11/18/2020 09:40:40 HTTP "GET" "/Playlists" responded 200 in 14.3028 ms
-11/18/2020 09:40:41 HTTP "GET" "/Playlists/Create" responded 200 in 75.4067 ms
-11/18/2020 09:42:33 Application starting up
-11/18/2020 09:42:34 Getting index page ---------------------------------------
-11/18/2020 09:42:35 Role "ffe6a092-4413-4a05-9b21-80a8690b29d4" validation failed: "DuplicateRoleName".
-11/18/2020 09:42:35 Role "3c0deba0-4904-4e39-851f-bbddda32e78c" validation failed: "DuplicateRoleName".
-11/18/2020 09:42:35 HTTP "GET" "/" responded 200 in 1226.4426 ms
-11/18/2020 09:43:32 Application starting up
-11/18/2020 09:43:33 Getting index page ---------------------------------------
-11/18/2020 09:43:34 Role "3831cd81-c755-47b6-b51d-dcbb310e0d12" validation failed: "DuplicateRoleName".
-11/18/2020 09:43:34 Role "027820e1-ff3e-4314-91d0-a4bcc1e4ac03" validation failed: "DuplicateRoleName".
-11/18/2020 09:43:34 HTTP "GET" "/" responded 200 in 1238.5229 ms
-11/18/2020 09:46:54 Application starting up
-11/18/2020 09:46:55 Getting index page ---------------------------------------
-11/18/2020 09:46:56 Role "19397f88-9ef0-45c1-85c5-811f8f3be3a6" validation failed: "DuplicateRoleName".
-11/18/2020 09:46:56 Role "70f0e0f6-87c5-47df-8db7-3c6a9ce5304c" validation failed: "DuplicateRoleName".
-11/18/2020 09:46:56 HTTP "GET" "/" responded 200 in 1288.6669 ms
-11/18/2020 09:51:14 Application starting up
-11/18/2020 09:51:15 Getting index page ---------------------------------------
-11/18/2020 09:51:16 Role "4b44092a-0adc-4593-8255-a277130cd484" validation failed: "DuplicateRoleName".
-11/18/2020 09:51:16 Role "1282c0c4-64dc-4d7e-a8b5-32d5fd0c405b" validation failed: "DuplicateRoleName".
-11/18/2020 09:51:16 HTTP "GET" "/" responded 200 in 1282.9288 ms
-11/18/2020 09:51:22 Getting index page ---------------------------------------
-11/18/2020 09:51:22 Role "c508dfa5-e6c9-4761-be9c-56afac860c21" validation failed: "DuplicateRoleName".
-11/18/2020 09:51:22 Role "aec69aab-1f33-4193-bf32-6b85601b5a26" validation failed: "DuplicateRoleName".
-11/18/2020 09:51:22 HTTP "POST" "/" responded 200 in 40.1980 ms
-11/18/2020 09:51:24 HTTP "GET" "/Playlists" responded 200 in 21.5840 ms
-11/18/2020 09:51:25 HTTP "GET" "/Playlists/Create" responded 200 in 50.3757 ms
-11/18/2020 09:51:39 Playlist with title '2020-11-18 09:51:37.859' has been created.
-11/18/2020 09:51:39 HTTP "POST" "/Playlists/Create" responded 302 in 5283.0218 ms
-11/18/2020 09:51:39 HTTP "GET" "/Playlists" responded 200 in 2.8839 ms
-11/18/2020 09:51:41 Getting index page ---------------------------------------
-11/18/2020 09:51:41 Role "da8226fa-de95-4775-9453-5dd2bbf86aec" validation failed: "DuplicateRoleName".
-11/18/2020 09:51:41 Role "79d7fdfc-2e4f-4730-8bf5-68ea3d604e47" validation failed: "DuplicateRoleName".
-11/18/2020 09:51:41 HTTP "GET" "/" responded 200 in 29.0354 ms
-11/18/2020 09:55:10 Application starting up
-11/18/2020 09:55:11 Getting index page ---------------------------------------
-11/18/2020 09:55:12 Role "2dc9e97d-d54a-42ef-a4fc-287de4a2efd7" validation failed: "DuplicateRoleName".
-11/18/2020 09:55:12 Role "41501890-d541-450f-a435-ecfa2d665957" validation failed: "DuplicateRoleName".
-11/18/2020 09:55:14 HTTP "GET" "/" responded 500 in 2855.8723 ms
-System.InvalidOperationException: The partial view '~Views/Shared/_PlaylistDetails.chstml' was not found. The following locations were searched:
-~Views/Shared/_PlaylistDetails.chstml
-   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.RenderPartialCoreAsync(String partialViewName, Object model, ViewDataDictionary viewData, TextWriter writer)
-   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.PartialAsync(String partialViewName, Object model, ViewDataDictionary viewData)
-   at Microsoft.AspNetCore.Mvc.Rendering.HtmlHelperPartialExtensions.Partial(IHtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
-   at Microsoft.AspNetCore.Mvc.Rendering.HtmlHelperPartialExtensions.Partial(IHtmlHelper htmlHelper, String partialViewName, Object model)
-   at AspNetCore.Views_Home_Index.ExecuteAsync() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Views\Home\Index.cshtml:line 41
+11/18/2020 14:21:40 Application starting up
+11/18/2020 14:21:42 Getting index page ---------------------------------------
+11/18/2020 14:21:43 Role "c8ff9fe1-b7eb-424c-93dd-500817a2d6e7" validation failed: "DuplicateRoleName".
+11/18/2020 14:21:43 Role "af14faca-f029-4585-be80-a8fc306348b2" validation failed: "DuplicateRoleName".
+11/18/2020 14:21:43 HTTP "GET" "/" responded 200 in 1539.4293 ms
+11/18/2020 14:21:48 HTTP "GET" "/Playlists" responded 200 in 24.6296 ms
+11/18/2020 14:21:49 Getting index page ---------------------------------------
+11/18/2020 14:21:49 Role "2c69a186-13e9-4651-ae86-d9ee4898fd95" validation failed: "DuplicateRoleName".
+11/18/2020 14:21:49 Role "01a51fe8-2674-4c61-83bf-82245620a44b" validation failed: "DuplicateRoleName".
+11/18/2020 14:21:49 HTTP "GET" "/" responded 200 in 43.1819 ms
+11/18/2020 14:22:58 Application starting up
+11/18/2020 14:23:00 Getting index page ---------------------------------------
+11/18/2020 14:23:01 Role "c2c18617-01aa-43e2-91c5-b0bb47fe4d9e" validation failed: "DuplicateRoleName".
+11/18/2020 14:23:01 Role "283a5bb1-1153-4528-984e-7bd06ed748e6" validation failed: "DuplicateRoleName".
+11/18/2020 14:23:01 HTTP "GET" "/" responded 200 in 1705.0271 ms
+11/18/2020 14:26:58 Application starting up
+11/18/2020 14:27:00 - Getting index page -
+11/18/2020 14:27:00 Role "e27de87f-f166-4986-b201-3e4caf1f5813" validation failed: "DuplicateRoleName".
+11/18/2020 14:27:00 Role "d19460ef-0619-41b4-bc6c-49ca44352b88" validation failed: "DuplicateRoleName".
+11/18/2020 14:27:00 HTTP "GET" "/" responded 500 in 1075.3467 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+   at AspNetCore.Views_Home_Index.ExecuteAsync() in C:\Users\Yane\Desktop\test\playlist-generator\Team 1 Playlist Generator\PG.Web\Views\Home\Index.cshtml:line 14
    at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
    at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
    at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
@@ -551,14 +60,11 @@ System.InvalidOperationException: The partial view '~Views/Shared/_PlaylistDetai
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-11/18/2020 09:55:14 An unhandled exception has occurred while executing the request.
-System.InvalidOperationException: The partial view '~Views/Shared/_PlaylistDetails.chstml' was not found. The following locations were searched:
-~Views/Shared/_PlaylistDetails.chstml
-   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.RenderPartialCoreAsync(String partialViewName, Object model, ViewDataDictionary viewData, TextWriter writer)
-   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.PartialAsync(String partialViewName, Object model, ViewDataDictionary viewData)
-   at Microsoft.AspNetCore.Mvc.Rendering.HtmlHelperPartialExtensions.Partial(IHtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
-   at Microsoft.AspNetCore.Mvc.Rendering.HtmlHelperPartialExtensions.Partial(IHtmlHelper htmlHelper, String partialViewName, Object model)
-   at AspNetCore.Views_Home_Index.ExecuteAsync() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Views\Home\Index.cshtml:line 41
+11/18/2020 14:27:01 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+   at AspNetCore.Views_Home_Index.ExecuteAsync() in C:\Users\Yane\Desktop\test\playlist-generator\Team 1 Playlist Generator\PG.Web\Views\Home\Index.cshtml:line 14
    at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
    at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
    at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
@@ -584,18 +90,15 @@ System.InvalidOperationException: The partial view '~Views/Shared/_PlaylistDetai
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-11/18/2020 10:07:09 Application starting up
-11/18/2020 10:07:10 Getting index page ---------------------------------------
-11/18/2020 10:07:11 Role "c22a15d1-5f2e-48ec-acd2-40e861b0512f" validation failed: "DuplicateRoleName".
-11/18/2020 10:07:11 Role "3ba0330d-909a-4a82-ad90-f6fdc31f6e14" validation failed: "DuplicateRoleName".
-11/18/2020 10:07:11 HTTP "GET" "/" responded 500 in 1234.8462 ms
-System.InvalidOperationException: The partial view '~Views/Shared/_PlaylistDetails.chstml' was not found. The following locations were searched:
-~Views/Shared/_PlaylistDetails.chstml
-   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.RenderPartialCoreAsync(String partialViewName, Object model, ViewDataDictionary viewData, TextWriter writer)
-   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.PartialAsync(String partialViewName, Object model, ViewDataDictionary viewData)
-   at Microsoft.AspNetCore.Mvc.Rendering.HtmlHelperPartialExtensions.Partial(IHtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
-   at Microsoft.AspNetCore.Mvc.Rendering.HtmlHelperPartialExtensions.Partial(IHtmlHelper htmlHelper, String partialViewName, Object model)
-   at AspNetCore.Views_Home_Index.ExecuteAsync() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Views\Home\Index.cshtml:line 41
+11/18/2020 14:27:57 Application starting up
+11/18/2020 14:27:59 - Getting index page -
+11/18/2020 14:27:59 Role "5af15c8a-ddef-4334-9a8a-2095d255b7a4" validation failed: "DuplicateRoleName".
+11/18/2020 14:27:59 Role "f7a7a21f-13ba-46b2-8be0-2f5b08bef8f3" validation failed: "DuplicateRoleName".
+11/18/2020 14:27:59 HTTP "GET" "/" responded 500 in 1079.5981 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+   at AspNetCore.Views_Home_Index.ExecuteAsync() in C:\Users\Yane\Desktop\test\playlist-generator\Team 1 Playlist Generator\PG.Web\Views\Home\Index.cshtml:line 14
    at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
    at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
    at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
@@ -620,14 +123,11 @@ System.InvalidOperationException: The partial view '~Views/Shared/_PlaylistDetai
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-11/18/2020 10:07:11 An unhandled exception has occurred while executing the request.
-System.InvalidOperationException: The partial view '~Views/Shared/_PlaylistDetails.chstml' was not found. The following locations were searched:
-~Views/Shared/_PlaylistDetails.chstml
-   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.RenderPartialCoreAsync(String partialViewName, Object model, ViewDataDictionary viewData, TextWriter writer)
-   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.PartialAsync(String partialViewName, Object model, ViewDataDictionary viewData)
-   at Microsoft.AspNetCore.Mvc.Rendering.HtmlHelperPartialExtensions.Partial(IHtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
-   at Microsoft.AspNetCore.Mvc.Rendering.HtmlHelperPartialExtensions.Partial(IHtmlHelper htmlHelper, String partialViewName, Object model)
-   at AspNetCore.Views_Home_Index.ExecuteAsync() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Views\Home\Index.cshtml:line 41
+11/18/2020 14:27:59 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+   at AspNetCore.Views_Home_Index.ExecuteAsync() in C:\Users\Yane\Desktop\test\playlist-generator\Team 1 Playlist Generator\PG.Web\Views\Home\Index.cshtml:line 14
    at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
    at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
    at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
@@ -653,75 +153,76 @@ System.InvalidOperationException: The partial view '~Views/Shared/_PlaylistDetai
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-11/18/2020 10:07:32 Application starting up
-11/18/2020 10:07:33 Getting index page ---------------------------------------
-11/18/2020 10:07:34 Role "db6a34cf-7ae8-4c62-8e00-fde4e4db67b5" validation failed: "DuplicateRoleName".
-11/18/2020 10:07:34 Role "e9ecaf87-00dd-4c3d-90e5-275f394760c4" validation failed: "DuplicateRoleName".
-11/18/2020 10:07:34 HTTP "GET" "/" responded 200 in 1354.7050 ms
-11/18/2020 10:07:40 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 39.1943 ms
-11/18/2020 10:07:40 Getting index page ---------------------------------------
-11/18/2020 10:07:40 Role "5fe1d09b-be91-43d4-a2f3-3f947fee8531" validation failed: "DuplicateRoleName".
-11/18/2020 10:07:40 Role "60a63aa3-4b4f-479a-8afa-103ce92dc637" validation failed: "DuplicateRoleName".
-11/18/2020 10:07:40 HTTP "GET" "/" responded 200 in 51.6639 ms
-11/18/2020 10:07:41 HTTP "GET" "/Identity/Account/Register" responded 200 in 44.5767 ms
-11/18/2020 10:07:42 HTTP "POST" "/Identity/Account/ExternalLogin" responded 302 in 25.5183 ms
-11/18/2020 10:07:44 HTTP "GET" "/Identity/Account/Register" responded 200 in 7.4943 ms
-11/18/2020 10:10:35 Getting index page ---------------------------------------
-11/18/2020 10:10:35 Role "cb72d504-304f-4297-80ac-f41cc6a49092" validation failed: "DuplicateRoleName".
-11/18/2020 10:10:35 Role "fb0e8c2a-6779-493f-92d7-d39959b9c730" validation failed: "DuplicateRoleName".
-11/18/2020 10:10:35 HTTP "GET" "/" responded 200 in 51.6468 ms
-11/18/2020 10:10:36 HTTP "GET" "/Identity/Account/Register" responded 200 in 5.1171 ms
-11/18/2020 10:10:37 HTTP "POST" "/Identity/Account/ExternalLogin" responded 302 in 4.1233 ms
-11/18/2020 10:10:40 '".AspNetCore.Correlation.Google.SV8VGWDYMMKIx3yn_usn1gDIe6Mf_L6b7amdomQEivc"' cookie not found.
-11/18/2020 10:10:40 HTTP "GET" "/signin-google?state=CfDJ8MsaXX0jV-hCvI0ju1iXlLKk5ERDcXpCZcs9h2iRSDNlv9eGJMkn7sEBm4bptY650yWKOY8YBmWft8gGs7_IaAX42CmAggo6p_ic5PWdgqqoqQ8elrxV4fmwGqc0XDujKAHr60ClOXQH4sV5PDnd4N7Xfbu4OVXIxcIDpQOTTOv8T7MqNN7fX25lyhlpZm5P_N6J5vXKURfJYKjzcdxBdvU_psX_75yKfCn5Wy_IC7WQERAYb3VNkOmAW9A94Lxr3EvT72OLf7R1Vb2zJw53n9C4jzW_lOkuyLd6WYE2EDct&code=4%2F0AY0e-g7YmdLVb050tW1g7R_IgD6MgoPQfTFVNofFsm0DArBZHwEIbFwqmIi-fdhZ8Z4_IA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=consent" responded 500 in 6.8294 ms
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-11/18/2020 10:10:40 An unhandled exception has occurred while executing the request.
-System.Exception: An error was encountered while handling the remote login.
- ---> System.Exception: Correlation failed.
-   --- End of inner exception stack trace ---
-   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.HandleRequestAsync()
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-11/18/2020 10:14:46 Application starting up
-11/18/2020 10:14:48 Getting index page ---------------------------------------
-11/18/2020 10:14:49 Role "1150e234-c6f2-4cd9-acb3-e29de6ee2a8c" validation failed: "DuplicateRoleName".
-11/18/2020 10:14:49 Role "1d032352-14af-40cb-9c3a-6c8b3d57448e" validation failed: "DuplicateRoleName".
-11/18/2020 10:14:49 HTTP "GET" "/" responded 200 in 1395.9627 ms
-11/18/2020 10:18:49 HTTP "GET" "/Playlists" responded 200 in 20.1929 ms
-11/18/2020 10:18:49 HTTP "GET" "/Playlists/Create" responded 302 in 8.0438 ms
-11/18/2020 10:18:50 HTTP "GET" "/Identity/Account/Login?ReturnUrl=%2FPlaylists%2FCreate" responded 200 in 71.2105 ms
-11/18/2020 10:18:51 User logged in.
-11/18/2020 10:18:51 HTTP "POST" "/Identity/Account/Login?ReturnUrl=%2FPlaylists%2FCreate" responded 302 in 130.0277 ms
-11/18/2020 10:18:51 HTTP "GET" "/Playlists/Create" responded 200 in 42.8055 ms
-11/18/2020 10:47:30 Application starting up
-11/18/2020 10:47:31 Getting index page ---------------------------------------
-11/18/2020 10:47:32 Role "0dc7f205-80d6-4a5b-bcba-f8d62f749081" validation failed: "DuplicateRoleName".
-11/18/2020 10:47:32 Role "5296fbc5-edd7-4358-997e-4d022b90ac59" validation failed: "DuplicateRoleName".
-11/18/2020 10:47:32 HTTP "GET" "/" responded 200 in 1540.9042 ms
-11/18/2020 10:48:25 HTTP "GET" "/Playlists" responded 200 in 16.4226 ms
-11/18/2020 10:56:53 Application starting up
-11/18/2020 10:56:55 Getting index page ---------------------------------------
-11/18/2020 10:56:56 Role "4f92cea5-645b-49ac-8937-6bbf9635a789" validation failed: "DuplicateRoleName".
-11/18/2020 10:56:56 Role "520cc390-778b-4590-b0e6-667b4032b7d3" validation failed: "DuplicateRoleName".
-11/18/2020 10:56:56 HTTP "GET" "/" responded 200 in 1769.8377 ms
-11/18/2020 11:33:02 Application starting up
-11/18/2020 11:33:05 Getting index page ---------------------------------------
-11/18/2020 11:33:05 Role "aab23ccd-2d85-4861-babc-1c4ca1597694" validation failed: "DuplicateRoleName".
-11/18/2020 11:33:05 Role "6d1f7339-b8d6-42d1-8ec1-b842c5d4de78" validation failed: "DuplicateRoleName".
-11/18/2020 11:33:05 HTTP "GET" "/" responded 500 in 1433.2692 ms
-System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
-   at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at PG.Web.Controllers.HomeController.Index() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\HomeController.cs:line 52
+11/18/2020 14:28:23 Application starting up
+11/18/2020 14:28:24 - Getting index page -
+11/18/2020 14:28:25 Role "39663f18-474d-4e8f-b924-fe498e1052f3" validation failed: "DuplicateRoleName".
+11/18/2020 14:28:25 Role "a9c51231-0f63-4d28-ba6f-d0dc4ae8ed1d" validation failed: "DuplicateRoleName".
+11/18/2020 14:28:26 HTTP "GET" "/" responded 200 in 1330.6935 ms
+11/18/2020 14:29:00 Application starting up
+11/18/2020 14:29:01 - Getting index page -
+11/18/2020 14:29:02 Role "35164e3e-df5f-4596-a3b5-2a277c929339" validation failed: "DuplicateRoleName".
+11/18/2020 14:29:02 Role "29ca1d0d-b879-4737-a405-c4d6bc2ce8aa" validation failed: "DuplicateRoleName".
+11/18/2020 14:29:02 HTTP "GET" "/" responded 200 in 1246.3163 ms
+11/18/2020 14:32:45 Application starting up
+11/18/2020 14:32:46 - Getting index page -
+11/18/2020 14:32:48 Role "237971b4-13a1-42c3-8b17-f2ad2dfde272" validation failed: "DuplicateRoleName".
+11/18/2020 14:32:48 Role "caa5bff9-1bc8-49e8-bcd7-fe63d262b89d" validation failed: "DuplicateRoleName".
+11/18/2020 14:32:48 HTTP "GET" "/" responded 200 in 1358.8982 ms
+11/18/2020 14:33:29 Application starting up
+11/18/2020 14:33:30 - Getting index page -
+11/18/2020 14:33:31 Role "07b674db-b887-43c0-89b1-40d6e3b43476" validation failed: "DuplicateRoleName".
+11/18/2020 14:33:31 Role "5da380cd-a9f1-4f56-ab6d-37ed19163796" validation failed: "DuplicateRoleName".
+11/18/2020 14:33:31 HTTP "GET" "/" responded 200 in 1283.3364 ms
+11/18/2020 14:33:35 - Getting index page -
+11/18/2020 14:33:35 Role "ef869b03-8d3b-4ab7-aa81-2a1228b9db99" validation failed: "DuplicateRoleName".
+11/18/2020 14:33:35 Role "9f90306e-dbb5-47c8-9955-26fe7164df4f" validation failed: "DuplicateRoleName".
+11/18/2020 14:33:35 HTTP "GET" "/" responded 200 in 46.3269 ms
+11/18/2020 14:33:36 HTTP "GET" "/Playlists" responded 200 in 26.2345 ms
+11/18/2020 14:33:37 HTTP "GET" "/Identity/Account/Register" responded 200 in 66.2701 ms
+11/18/2020 14:33:38 HTTP "GET" "/Identity/Account/Login" responded 200 in 39.9048 ms
+11/18/2020 14:33:39 HTTP "GET" "/Identity/Account/Login" responded 200 in 8.3091 ms
+11/18/2020 14:33:39 HTTP "GET" "/Playlists" responded 200 in 8.9273 ms
+11/18/2020 14:33:42 HTTP "GET" "/MyPlaylists" responded 404 in 0.7932 ms
+11/18/2020 14:34:07 Application starting up
+11/18/2020 14:34:08 HTTP "GET" "/Playlists/MyPlaylists" responded 302 in 44.5692 ms
+11/18/2020 14:34:08 HTTP "GET" "/Identity/Account/Login?ReturnUrl=%2FPlaylists%2FMyPlaylists" responded 200 in 219.3352 ms
+11/18/2020 14:34:08 - Getting index page -
+11/18/2020 14:34:09 Role "1d350288-e685-42a8-b4a6-a0597702c418" validation failed: "DuplicateRoleName".
+11/18/2020 14:34:09 Role "8bd2f450-f6f4-4b29-ba64-16bcbd709497" validation failed: "DuplicateRoleName".
+11/18/2020 14:34:09 HTTP "GET" "/" responded 200 in 1030.8923 ms
+11/18/2020 14:34:11 HTTP "GET" "/Playlists/MyPlaylists" responded 302 in 2.3744 ms
+11/18/2020 14:34:11 HTTP "GET" "/Identity/Account/Login?ReturnUrl=%2FPlaylists%2FMyPlaylists" responded 200 in 9.6185 ms
+11/18/2020 14:34:13 User logged in.
+11/18/2020 14:34:13 HTTP "POST" "/Identity/Account/Login?ReturnUrl=%2FPlaylists%2FMyPlaylists" responded 302 in 124.9712 ms
+11/18/2020 14:34:13 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 20.4819 ms
+11/18/2020 14:34:16 HTTP "GET" "/Playlists" responded 200 in 20.4549 ms
+11/18/2020 14:35:29 Application starting up
+11/18/2020 14:35:30 - Getting index page -
+11/18/2020 14:35:30 Role "ad17a8b0-5808-45e3-bc4f-72bc46fdf9d5" validation failed: "DuplicateRoleName".
+11/18/2020 14:35:30 Role "94ef9d50-1872-4183-9456-cb14e65aee65" validation failed: "DuplicateRoleName".
+11/18/2020 14:35:30 HTTP "GET" "/Playlists" responded 200 in 1126.9741 ms
+11/18/2020 14:35:30 HTTP "GET" "/" responded 200 in 624.9442 ms
+11/18/2020 14:35:32 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 50.4500 ms
+11/18/2020 14:35:36 HTTP "GET" "/Playlists/MyPlaylists" responded 302 in 3.5220 ms
+11/18/2020 14:35:36 HTTP "GET" "/Identity/Account/Login?ReturnUrl=%2FPlaylists%2FMyPlaylists" responded 200 in 76.2574 ms
+11/18/2020 14:35:39 HTTP "GET" "/Playlists" responded 200 in 8.3378 ms
+11/18/2020 14:35:40 - Getting index page -
+11/18/2020 14:35:40 Role "397e63f2-f3f9-4306-9143-4c14a267fc6d" validation failed: "DuplicateRoleName".
+11/18/2020 14:35:40 Role "df3a79d2-445d-4188-ab9c-9ae54102e46f" validation failed: "DuplicateRoleName".
+11/18/2020 14:35:40 HTTP "GET" "/" responded 200 in 25.0999 ms
+11/18/2020 14:35:41 HTTP "GET" "/Playlists" responded 200 in 6.3369 ms
+11/18/2020 14:35:41 HTTP "GET" "/Playlists" responded 200 in 7.1529 ms
+11/18/2020 14:35:42 - Getting index page -
+11/18/2020 14:35:42 Role "8b1cd8ac-f879-4477-9ca7-502662046809" validation failed: "DuplicateRoleName".
+11/18/2020 14:35:42 Role "4271c3e9-fdc4-4c79-b414-3550f3564e0a" validation failed: "DuplicateRoleName".
+11/18/2020 14:35:42 HTTP "GET" "/" responded 200 in 15.5731 ms
+11/18/2020 14:36:26 HTTP "GET" "/Playlists/Create" responded 200 in 38.6543 ms
+11/18/2020 14:36:26 HTTP "GET" "/Playlists/Create/ws" responded 200 in 5.6294 ms
+11/18/2020 14:36:42 Playlist with title 'Futblok qko' has been created.
+11/18/2020 14:36:44 HTTP "POST" "/Playlists/Create" responded 500 in 3795.7955 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistName, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\test - Copy\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 358
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\test - Copy\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 84
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
@@ -739,57 +240,10 @@ System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-11/18/2020 11:33:05 An unhandled exception has occurred while executing the request.
-System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
-   at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at PG.Web.Controllers.HomeController.Index() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\HomeController.cs:line 52
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-11/18/2020 11:33:44 Application starting up
-11/18/2020 11:33:47 Getting index page ---------------------------------------
-11/18/2020 11:33:47 Role "975b922d-5eeb-42bd-aeab-4fbe8a869b85" validation failed: "DuplicateRoleName".
-11/18/2020 11:33:47 Role "2bc2f27e-9c5b-49ff-a1fa-8e4c132f5407" validation failed: "DuplicateRoleName".
-11/18/2020 11:33:58 HTTP "GET" "/" responded 500 in 11897.1329 ms
-System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
-   at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at PG.Web.Controllers.HomeController.Index() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\HomeController.cs:line 52
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-11/18/2020 11:33:58 An unhandled exception has occurred while executing the request.
-System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
-   at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at PG.Web.Controllers.HomeController.Index() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\HomeController.cs:line 52
+11/18/2020 14:36:44 An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistName, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\test - Copy\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 358
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\test - Copy\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 84
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
@@ -808,179 +262,36 @@ System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-11/18/2020 11:34:04 Application starting up
-11/18/2020 11:34:07 Getting index page ---------------------------------------
-11/18/2020 11:34:07 Role "1a1ad526-181e-4675-8024-79c38064c771" validation failed: "DuplicateRoleName".
-11/18/2020 11:34:08 Role "c7322d18-4e0d-4ba6-85a9-89b161f6c254" validation failed: "DuplicateRoleName".
-11/18/2020 11:39:25 Application starting up
-11/18/2020 11:39:27 - Getting index page -
-11/18/2020 11:39:28 Role "866b2e2b-192f-449d-a635-7ecb82f8d383" validation failed: "DuplicateRoleName".
-11/18/2020 11:39:28 Role "ec630166-36c1-42f7-ab35-f95bdbf95e6a" validation failed: "DuplicateRoleName".
-11/18/2020 11:39:28 HTTP "GET" "/" responded 200 in 1444.1065 ms
-11/18/2020 11:39:49 Application starting up
-11/18/2020 11:39:50 - Getting index page -
-11/18/2020 11:39:51 Role "3eb73849-057a-4522-a2c1-9773cd019962" validation failed: "DuplicateRoleName".
-11/18/2020 11:39:51 Role "bdce02bc-a3a2-41d0-a964-b727a81daeaa" validation failed: "DuplicateRoleName".
-11/18/2020 11:39:51 HTTP "GET" "/" responded 200 in 1317.3625 ms
-11/18/2020 11:39:53 HTTP "GET" "/Identity/Account/Register" responded 200 in 85.3760 ms
-11/18/2020 11:39:54 HTTP "GET" "/Playlists" responded 200 in 15.4018 ms
-11/18/2020 11:39:55 HTTP "GET" "/Playlists/Create" responded 302 in 5.3143 ms
-11/18/2020 11:39:55 HTTP "GET" "/Identity/Account/Login?ReturnUrl=%2FPlaylists%2FCreate" responded 200 in 39.2523 ms
-11/18/2020 11:39:57 HTTP "GET" "/Identity/Account/Register" responded 200 in 5.5385 ms
-11/18/2020 11:40:02 User created a new account with password.
-11/18/2020 11:40:02 HTTP "POST" "/Identity/Account/Register" responded 302 in 2007.8856 ms
-11/18/2020 11:40:02 - Getting index page -
-11/18/2020 11:40:02 Role "2e3c66c6-87ed-4a83-b426-8259cfc32021" validation failed: "DuplicateRoleName".
-11/18/2020 11:40:02 Role "688ed090-dc37-439b-a4b3-151560e00dca" validation failed: "DuplicateRoleName".
-11/18/2020 11:40:02 HTTP "GET" "/" responded 200 in 24.1195 ms
-11/18/2020 11:40:04 HTTP "GET" "/Playlists" responded 200 in 8.2510 ms
-11/18/2020 11:40:05 HTTP "GET" "/Playlists/Create" responded 200 in 40.7746 ms
-11/18/2020 11:40:26 Playlist with title '2020-11-18 11:40:26.721' has been created.
-11/18/2020 11:40:26 HTTP "POST" "/Playlists/Create" responded 302 in 861.0598 ms
-11/18/2020 11:40:26 HTTP "GET" "/Playlists" responded 200 in 2.6735 ms
-11/18/2020 11:40:33 - Getting index page -
-11/18/2020 11:40:33 Role "147b0f60-6205-4172-8e3f-e11471639ccf" validation failed: "DuplicateRoleName".
-11/18/2020 11:40:33 Role "7c22fe50-ab6d-4c3a-92d5-69a8acf2b4dd" validation failed: "DuplicateRoleName".
-11/18/2020 11:40:33 HTTP "GET" "/" responded 200 in 45.3417 ms
-11/18/2020 11:41:46 Application starting up
-11/18/2020 11:41:47 - Getting index page -
-11/18/2020 11:41:48 Role "06b83457-b2e7-4ee8-9c6d-3aa7953811ca" validation failed: "DuplicateRoleName".
-11/18/2020 11:41:48 Role "3a44da5a-7ed2-478a-a3b4-f48a9514e373" validation failed: "DuplicateRoleName".
-11/18/2020 11:41:48 HTTP "GET" "/" responded 200 in 1408.3323 ms
-11/18/2020 11:42:05 Application starting up
-11/18/2020 11:42:06 - Getting index page -
-11/18/2020 11:42:07 Role "10a3cc40-8326-4a0c-ad3a-cd5ab59f562c" validation failed: "DuplicateRoleName".
-11/18/2020 11:42:07 Role "6f324791-e3e2-445e-8e89-ec1f2fe0519e" validation failed: "DuplicateRoleName".
-11/18/2020 11:42:08 HTTP "GET" "/" responded 200 in 1326.9805 ms
-11/18/2020 11:42:34 Application starting up
-11/18/2020 11:42:36 - Getting index page -
-11/18/2020 11:42:37 Role "5db508e8-2a0f-41b1-a562-3874a7bafe7b" validation failed: "DuplicateRoleName".
-11/18/2020 11:42:37 Role "ee740e93-db8e-4ae3-9592-5401211053e5" validation failed: "DuplicateRoleName".
-11/18/2020 11:42:37 HTTP "GET" "/" responded 200 in 1291.8655 ms
-11/18/2020 11:42:40 HTTP "GET" "/Playlists" responded 200 in 15.6368 ms
-11/18/2020 11:42:41 HTTP "GET" "/Playlists/Create" responded 200 in 79.1697 ms
-11/18/2020 11:43:00 Playlist with title 'Qkiq Playlist' has been created.
-11/18/2020 11:43:00 HTTP "POST" "/Playlists/Create" responded 302 in 1286.3626 ms
-11/18/2020 11:43:00 HTTP "GET" "/Playlists" responded 200 in 2.7814 ms
-11/18/2020 11:43:01 - Getting index page -
-11/18/2020 11:43:01 Role "15fe68b9-8641-49e9-bd18-8bb4b5238f64" validation failed: "DuplicateRoleName".
-11/18/2020 11:43:01 Role "9733f45a-a47f-458e-9ac6-71f834ad1454" validation failed: "DuplicateRoleName".
-11/18/2020 11:43:01 HTTP "GET" "/" responded 200 in 29.6036 ms
-11/18/2020 11:43:49 HTTP "GET" "/Playlists" responded 200 in 5.1349 ms
-11/18/2020 11:43:53 HTTP "GET" "/Playlists/Create" responded 200 in 13.5485 ms
-11/18/2020 11:44:05 Playlist with title 'Koda' has been created.
-11/18/2020 11:44:07 HTTP "POST" "/Playlists/Create" responded 302 in 3249.9676 ms
-11/18/2020 11:44:07 HTTP "GET" "/Playlists" responded 200 in 2.7083 ms
-11/18/2020 11:44:09 - Getting index page -
-11/18/2020 11:44:09 Role "d4600877-bc4e-4219-beaf-ae3b412c7aba" validation failed: "DuplicateRoleName".
-11/18/2020 11:44:09 Role "a06c342d-444e-4af2-8f43-9ab424c4fa59" validation failed: "DuplicateRoleName".
-11/18/2020 11:44:09 HTTP "GET" "/" responded 200 in 37.2403 ms
-11/18/2020 11:45:01 - Getting index page -
-11/18/2020 11:45:01 Role "cacae068-fec4-4ae5-b36f-92c725a08bed" validation failed: "DuplicateRoleName".
-11/18/2020 11:45:01 Role "06355e80-c87c-44b7-b9e7-9592261907b2" validation failed: "DuplicateRoleName".
-11/18/2020 11:45:01 HTTP "GET" "/" responded 200 in 48.3462 ms
-11/18/2020 11:45:02 HTTP "GET" "/Playlists" responded 200 in 5.6829 ms
-11/18/2020 11:47:25 Application starting up
-11/18/2020 11:47:26 - Getting index page -
-11/18/2020 11:47:27 Role "1055a763-0df5-43a7-82e7-f74d169f9b96" validation failed: "DuplicateRoleName".
-11/18/2020 11:47:27 Role "6229ecd5-e34b-403c-ad4c-2e91ef794350" validation failed: "DuplicateRoleName".
-11/18/2020 11:47:27 HTTP "GET" "/" responded 200 in 1350.6970 ms
-11/18/2020 11:47:30 HTTP "GET" "/Playlists" responded 200 in 160.1063 ms
-11/18/2020 11:47:33 HTTP "GET" "/Playlists/Create" responded 200 in 68.1480 ms
-11/18/2020 11:47:34 HTTP "GET" "/Playlists" responded 200 in 19.3653 ms
-11/18/2020 11:49:32 Application starting up
-11/18/2020 11:49:34 - Getting index page -
-11/18/2020 11:49:35 Role "69abc762-0ed2-458a-87f8-38a94d690208" validation failed: "DuplicateRoleName".
-11/18/2020 11:49:35 Role "04e8da84-5b2b-41a2-9081-faa2987d4518" validation failed: "DuplicateRoleName".
-11/18/2020 11:49:35 HTTP "GET" "/" responded 200 in 1245.8394 ms
-11/18/2020 11:49:38 HTTP "GET" "/Playlists" responded 200 in 154.7720 ms
-11/18/2020 11:49:46 HTTP "GET" "/Playlists" responded 200 in 42.9014 ms
-11/18/2020 11:49:49 HTTP "GET" "/Playlists" responded 200 in 26.0365 ms
-11/18/2020 11:49:52 - Getting index page -
-11/18/2020 11:49:52 Role "d2d4cb39-7947-4b4b-bab0-d7e2e42420aa" validation failed: "DuplicateRoleName".
-11/18/2020 11:49:52 Role "08715861-fe7d-4844-a4fa-5ce414af356a" validation failed: "DuplicateRoleName".
-11/18/2020 11:49:52 HTTP "GET" "/" responded 200 in 15.1613 ms
-11/18/2020 11:49:53 HTTP "GET" "/Playlists" responded 200 in 13.9848 ms
-11/18/2020 11:50:10 Application starting up
-11/18/2020 11:50:11 - Getting index page -
-11/18/2020 11:50:12 Role "5c784a5c-ed9e-4434-9ec7-1b57ed61ded5" validation failed: "DuplicateRoleName".
-11/18/2020 11:50:12 Role "c1356dbd-99f2-4ae0-b329-0993e2a8adbd" validation failed: "DuplicateRoleName".
-11/18/2020 11:50:12 HTTP "GET" "/" responded 200 in 1161.5491 ms
-11/18/2020 11:50:13 HTTP "GET" "/Playlists" responded 200 in 156.6149 ms
-11/18/2020 11:50:24 Application starting up
-11/18/2020 11:50:25 - Getting index page -
-11/18/2020 11:50:26 Role "6a5eca22-1d23-419a-bc82-dd0280b9af95" validation failed: "DuplicateRoleName".
-11/18/2020 11:50:26 Role "d4eca49d-20ff-4b1f-b03b-a35869aa3a9f" validation failed: "DuplicateRoleName".
-11/18/2020 11:50:26 HTTP "GET" "/" responded 200 in 1174.5810 ms
-11/18/2020 11:50:27 HTTP "GET" "/Playlists" responded 200 in 149.8875 ms
-11/18/2020 11:55:30 Application starting up
-11/18/2020 11:55:31 - Getting index page -
-11/18/2020 11:55:32 Role "24531ea9-8f08-4cb8-9cd7-af962808f48b" validation failed: "DuplicateRoleName".
-11/18/2020 11:55:32 Role "649f1a05-118d-4d4d-b6b7-baf0abb6f0ef" validation failed: "DuplicateRoleName".
-11/18/2020 11:55:32 HTTP "GET" "/" responded 200 in 1175.6318 ms
-11/18/2020 11:55:34 HTTP "GET" "/Playlists" responded 200 in 152.3886 ms
-11/18/2020 11:55:36 HTTP "GET" "/Playlists" responded 200 in 28.1357 ms
-11/18/2020 11:55:38 HTTP "GET" "/Playlists/Create" responded 200 in 56.5559 ms
-11/18/2020 11:55:40 HTTP "GET" "/Playlists" responded 200 in 22.9717 ms
-11/18/2020 11:55:44 - Getting index page -
-11/18/2020 11:55:44 Role "ac8bca89-79e6-4052-9107-1021884d470e" validation failed: "DuplicateRoleName".
-11/18/2020 11:55:44 Role "f2a4bb81-bf2d-4344-b294-1a3cd2e780ed" validation failed: "DuplicateRoleName".
-11/18/2020 11:55:44 HTTP "GET" "/" responded 200 in 14.6305 ms
-11/18/2020 11:55:46 HTTP "GET" "/Playlists" responded 200 in 14.2268 ms
-11/18/2020 11:55:50 HTTP "GET" "/Playlists" responded 200 in 18.5692 ms
-11/18/2020 11:56:04 HTTP "GET" "/Playlists" responded 200 in 14.8982 ms
-11/18/2020 11:56:05 HTTP "GET" "/Playlists" responded 200 in 17.9127 ms
-11/18/2020 11:56:05 HTTP "GET" "/Playlists" responded 200 in 14.4653 ms
-11/18/2020 11:56:06 HTTP "GET" "/Playlists" responded 200 in 9.3761 ms
-11/18/2020 11:56:06 HTTP "GET" "/Playlists" responded 200 in 9.9582 ms
-11/18/2020 11:56:06 HTTP "GET" "/Playlists" responded 200 in 9.1037 ms
-11/18/2020 11:56:07 HTTP "GET" "/Playlists" responded 200 in 10.1579 ms
-11/18/2020 12:01:02 Application starting up
-11/18/2020 12:01:03 - Getting index page -
-11/18/2020 12:01:04 Role "0dabcf29-4245-48e6-a321-17d7d47c8fc3" validation failed: "DuplicateRoleName".
-11/18/2020 12:01:04 Role "f2637672-3ef1-4ccd-95ef-d10d99b77583" validation failed: "DuplicateRoleName".
-11/18/2020 12:01:05 HTTP "GET" "/" responded 200 in 1531.4131 ms
-11/18/2020 12:01:06 HTTP "GET" "/Playlists" responded 200 in 150.5152 ms
-11/18/2020 12:01:09 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 49.5703 ms
-11/18/2020 12:01:09 - Getting index page -
-11/18/2020 12:01:09 Role "889d938b-12bf-4d20-ba41-4ef7b4bd801e" validation failed: "DuplicateRoleName".
-11/18/2020 12:01:09 Role "8468da58-48fc-4f32-9647-273d6e426b3c" validation failed: "DuplicateRoleName".
-11/18/2020 12:01:09 HTTP "GET" "/" responded 200 in 18.5237 ms
-11/18/2020 12:01:46 HTTP "GET" "/Playlists" responded 200 in 19.1184 ms
-11/18/2020 12:01:47 - Getting index page -
-11/18/2020 12:01:47 Role "aec64829-e544-495c-9b7f-d64bbc5f9056" validation failed: "DuplicateRoleName".
-11/18/2020 12:01:47 Role "9a1fecb5-d6a0-4f32-835f-802f7f375a62" validation failed: "DuplicateRoleName".
-11/18/2020 12:01:47 HTTP "GET" "/" responded 200 in 21.5930 ms
-11/18/2020 12:01:48 HTTP "GET" "/Playlists" responded 200 in 16.9130 ms
-11/18/2020 12:01:50 HTTP "GET" "/Identity/Account/Login" responded 200 in 55.0379 ms
-11/18/2020 12:01:51 User logged in.
-11/18/2020 12:01:51 HTTP "POST" "/Identity/Account/Login" responded 302 in 103.0873 ms
-11/18/2020 12:01:51 - Getting index page -
-11/18/2020 12:01:51 Role "b90040a0-a7c9-4ecd-8a0a-ec09ad96129e" validation failed: "DuplicateRoleName".
-11/18/2020 12:01:51 Role "e767a7bb-bdd1-436f-809f-ad2f7b58550a" validation failed: "DuplicateRoleName".
-11/18/2020 12:01:51 HTTP "GET" "/" responded 200 in 9.5558 ms
-11/18/2020 12:01:52 HTTP "GET" "/Playlists" responded 200 in 22.6556 ms
-11/18/2020 12:01:57 HTTP "GET" "/Playlists" responded 200 in 8.9780 ms
-11/18/2020 12:01:57 HTTP "GET" "/Playlists" responded 200 in 8.7535 ms
-11/18/2020 12:02:43 Application starting up
-11/18/2020 12:02:44 - Getting index page -
-11/18/2020 12:02:45 Role "e52e9763-7140-4aa4-b740-c75932ef8def" validation failed: "DuplicateRoleName".
-11/18/2020 12:02:45 Role "adef188a-81a2-4844-a481-8af0e6364a71" validation failed: "DuplicateRoleName".
-11/18/2020 12:02:45 HTTP "GET" "/" responded 200 in 1268.4910 ms
-11/18/2020 12:02:47 The view '"MyPlaylists"' was not found. Searched locations: ["/Views/Playlists/MyPlaylists.cshtml", "/Views/Shared/MyPlaylists.cshtml", "/Pages/Shared/MyPlaylists.cshtml"]
-11/18/2020 12:02:47 HTTP "GET" "/Playlists/MyPlaylists" responded 500 in 159.5427 ms
-System.InvalidOperationException: The view 'MyPlaylists' was not found. The following locations were searched:
-/Views/Playlists/MyPlaylists.cshtml
-/Views/Shared/MyPlaylists.cshtml
-/Pages/Shared/MyPlaylists.cshtml
-   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
-   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
-   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
---- End of stack trace from previous location where exception was thrown ---
+11/18/2020 14:38:15 Application starting up
+11/18/2020 14:38:18 - Getting index page -
+11/18/2020 14:39:37 Application starting up
+11/18/2020 14:39:39 - Getting index page -
+11/18/2020 14:39:56 HTTP "GET" "/" responded 200 in 17181.8073 ms
+11/18/2020 14:40:00 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 44.7918 ms
+11/18/2020 14:40:00 - Getting index page -
+11/18/2020 14:40:00 Role "d5dd5e8c-6953-43ae-aa0b-42396379216b" validation failed: "DuplicateRoleName".
+11/18/2020 14:40:00 Role "59d44cf8-4e56-4023-9940-4ad2fa025507" validation failed: "DuplicateRoleName".
+11/18/2020 14:40:00 HTTP "GET" "/" responded 200 in 46.4162 ms
+11/18/2020 14:40:01 HTTP "GET" "/Identity/Account/Register" responded 200 in 47.8832 ms
+11/18/2020 14:40:05 User created a new account with password.
+11/18/2020 14:40:05 HTTP "POST" "/Identity/Account/Register" responded 302 in 231.7272 ms
+11/18/2020 14:40:05 - Getting index page -
+11/18/2020 14:40:05 Role "60ba1a16-dd68-4d5f-9130-58b416e91274" validation failed: "DuplicateRoleName".
+11/18/2020 14:40:05 Role "e64657ee-6b76-448c-9ffe-0d5a73450f1b" validation failed: "DuplicateRoleName".
+11/18/2020 14:40:05 HTTP "GET" "/" responded 200 in 9.5048 ms
+11/18/2020 14:40:07 HTTP "GET" "/Playlists/Create" responded 200 in 49.6675 ms
+11/18/2020 14:40:07 HTTP "GET" "/Playlists/Create/ws" responded 200 in 5.9151 ms
+11/18/2020 14:40:20 Playlist with title 'Futblok qko' has been created.
+11/18/2020 14:40:20 HTTP "POST" "/Playlists/Create" responded 500 in 1797.9006 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistName, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\test - Copy\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 358
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\test - Copy\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 84
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
@@ -992,19 +303,16 @@ System.InvalidOperationException: The view 'MyPlaylists' was not found. The foll
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-11/18/2020 12:02:47 An unhandled exception has occurred while executing the request.
-System.InvalidOperationException: The view 'MyPlaylists' was not found. The following locations were searched:
-/Views/Playlists/MyPlaylists.cshtml
-/Views/Shared/MyPlaylists.cshtml
-/Pages/Shared/MyPlaylists.cshtml
-   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
-   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
-   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
---- End of stack trace from previous location where exception was thrown ---
+11/18/2020 14:40:20 An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistName, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\test - Copy\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 358
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\test - Copy\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 84
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
@@ -1017,102 +325,161 @@ System.InvalidOperationException: The view 'MyPlaylists' was not found. The foll
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-11/18/2020 12:05:47 Application starting up
-11/18/2020 12:05:48 - Getting index page -
-11/18/2020 12:05:49 Role "8f95ac7d-eb2c-4932-98ee-c159b242d118" validation failed: "DuplicateRoleName".
-11/18/2020 12:05:49 Role "156a2693-45bd-4b70-95dc-22338ebc284c" validation failed: "DuplicateRoleName".
-11/18/2020 12:05:49 HTTP "GET" "/" responded 200 in 1483.2764 ms
-11/18/2020 12:05:52 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 156.0722 ms
-11/18/2020 12:05:54 HTTP "GET" "/Playlists" responded 200 in 34.1740 ms
-11/18/2020 12:05:55 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 15.6714 ms
-11/18/2020 12:05:58 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 23.8174 ms
-11/18/2020 12:06:04 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 39.3325 ms
-11/18/2020 12:06:04 - Getting index page -
-11/18/2020 12:06:04 Role "fd290c13-f00b-4714-ad3a-1a96c72124b9" validation failed: "DuplicateRoleName".
-11/18/2020 12:06:04 Role "35adb8a8-8cfe-4e87-b9d1-292d30259bdc" validation failed: "DuplicateRoleName".
-11/18/2020 12:06:04 HTTP "GET" "/" responded 200 in 10.5450 ms
-11/18/2020 12:06:05 HTTP "GET" "/Identity/Account/Register" responded 200 in 50.2817 ms
-11/18/2020 12:06:11 User created a new account with password.
-11/18/2020 12:06:11 HTTP "POST" "/Identity/Account/Register" responded 302 in 260.9336 ms
-11/18/2020 12:06:11 - Getting index page -
-11/18/2020 12:06:11 Role "00510d7f-fc4d-4a45-aea0-7fa78b4fefae" validation failed: "DuplicateRoleName".
-11/18/2020 12:06:11 Role "54cf5e46-b208-446b-8b9c-e12b4e1f3ddf" validation failed: "DuplicateRoleName".
-11/18/2020 12:06:11 HTTP "GET" "/" responded 200 in 7.8239 ms
-11/18/2020 12:06:12 HTTP "GET" "/Playlists/Create" responded 200 in 38.9149 ms
-11/18/2020 12:06:23 Playlist with title 'Kodaeqwerqwe' has been created.
-11/18/2020 12:06:23 HTTP "POST" "/Playlists/Create" responded 302 in 2290.9014 ms
-11/18/2020 12:06:23 HTTP "GET" "/Playlists" responded 200 in 12.6604 ms
-11/18/2020 12:06:26 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 10.7534 ms
-11/18/2020 12:06:29 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 3.0978 ms
-11/18/2020 12:06:29 - Getting index page -
-11/18/2020 12:06:29 Role "84e2d06d-d731-40c2-ae1c-daf434dff2c7" validation failed: "DuplicateRoleName".
-11/18/2020 12:06:29 Role "697d89d1-793f-48b3-ac15-87b9ac9a8d93" validation failed: "DuplicateRoleName".
-11/18/2020 12:06:29 HTTP "GET" "/" responded 200 in 12.0117 ms
-11/18/2020 12:06:30 HTTP "GET" "/Identity/Account/Login" responded 200 in 32.9958 ms
-11/18/2020 12:06:32 User logged in.
-11/18/2020 12:06:32 HTTP "POST" "/Identity/Account/Login" responded 302 in 32.8060 ms
-11/18/2020 12:06:32 - Getting index page -
-11/18/2020 12:06:32 Role "d8d70121-4489-44c7-88b9-92ce2ba77325" validation failed: "DuplicateRoleName".
-11/18/2020 12:06:32 Role "b37ac8b8-cc5f-402e-81b9-04f266aaba1d" validation failed: "DuplicateRoleName".
-11/18/2020 12:06:32 HTTP "GET" "/" responded 200 in 7.8682 ms
-11/18/2020 12:06:34 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 12.5965 ms
-11/18/2020 12:06:37 HTTP "GET" "/Playlists/Create" responded 200 in 7.9240 ms
-11/18/2020 12:06:38 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 8.7003 ms
-11/18/2020 12:06:39 HTTP "GET" "/Playlists/Create" responded 200 in 10.3593 ms
-11/18/2020 12:07:40 Application starting up
-11/18/2020 12:07:41 - Getting index page -
-11/18/2020 12:07:42 Role "73428a75-9148-4a98-b8f3-4f05189b64c8" validation failed: "DuplicateRoleName".
-11/18/2020 12:07:42 Role "49b31b17-7251-405d-b42b-2b99cd94b79d" validation failed: "DuplicateRoleName".
-11/18/2020 12:07:42 HTTP "GET" "/" responded 200 in 1292.6401 ms
-11/18/2020 12:07:44 HTTP "GET" "/Playlists/Create" responded 200 in 61.7002 ms
-11/18/2020 12:07:55 Application starting up
-11/18/2020 12:07:56 - Getting index page -
-11/18/2020 12:07:57 Role "c625c29a-d7f9-4c44-8a87-2c7564102d2e" validation failed: "DuplicateRoleName".
-11/18/2020 12:07:57 Role "d8841516-bdf6-4c3d-b6c9-8cffa9596dbb" validation failed: "DuplicateRoleName".
-11/18/2020 12:07:57 HTTP "GET" "/" responded 200 in 1207.9151 ms
-11/18/2020 12:07:59 HTTP "GET" "/Playlists/Create" responded 200 in 91.3305 ms
-11/18/2020 12:08:48 Application starting up
-11/18/2020 12:08:49 - Getting index page -
-11/18/2020 12:08:50 Role "f8997e00-0a5b-4afb-b5a0-bf934e270b0e" validation failed: "DuplicateRoleName".
-11/18/2020 12:08:50 Role "7b4ce1ff-0a29-4a8e-bc4a-3b097018f857" validation failed: "DuplicateRoleName".
-11/18/2020 12:08:50 HTTP "GET" "/" responded 200 in 1174.0986 ms
-11/18/2020 12:08:51 HTTP "GET" "/Playlists/Create" responded 200 in 87.1622 ms
-11/18/2020 12:08:52 - Getting index page -
-11/18/2020 12:08:52 Role "43f2cb10-fc7e-4db6-8dc2-4db7dcf745b6" validation failed: "DuplicateRoleName".
-11/18/2020 12:08:52 Role "4128b2f4-df20-41be-8d26-122aac72d4ba" validation failed: "DuplicateRoleName".
-11/18/2020 12:08:52 HTTP "GET" "/" responded 200 in 27.2855 ms
-11/18/2020 12:08:54 HTTP "GET" "/Playlists" responded 200 in 119.4336 ms
-11/18/2020 12:08:58 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 36.8629 ms
-11/18/2020 12:08:58 HTTP "GET" "/Playlists" responded 200 in 22.4668 ms
-11/18/2020 12:08:59 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 14.7562 ms
-11/18/2020 12:08:59 HTTP "GET" "/Playlists" responded 200 in 14.4031 ms
-11/18/2020 12:09:00 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 18.0052 ms
-11/18/2020 12:09:01 HTTP "GET" "/Playlists" responded 200 in 21.4626 ms
-11/18/2020 12:09:03 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 20.8409 ms
-11/18/2020 12:09:04 HTTP "GET" "/Playlists" responded 200 in 15.9223 ms
-11/18/2020 12:09:04 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 24.0658 ms
-11/18/2020 12:09:04 HTTP "GET" "/Playlists" responded 200 in 14.5189 ms
-11/18/2020 12:09:05 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 10.1658 ms
-11/18/2020 12:09:05 HTTP "GET" "/Playlists" responded 200 in 9.9316 ms
-11/18/2020 12:09:07 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 37.2457 ms
-11/18/2020 12:09:07 - Getting index page -
-11/18/2020 12:09:07 Role "fb00a38c-d8a4-4b20-b4c6-c46461130c48" validation failed: "DuplicateRoleName".
-11/18/2020 12:09:07 Role "24f74cc7-31c8-4bbe-a3f9-0fb4ac7cc546" validation failed: "DuplicateRoleName".
-11/18/2020 12:09:07 HTTP "GET" "/" responded 200 in 13.3909 ms
-11/18/2020 12:09:08 HTTP "GET" "/Playlists" responded 200 in 7.7154 ms
-11/18/2020 12:10:29 Application starting up
-11/18/2020 12:10:30 - Getting index page -
-11/18/2020 12:10:31 Role "4934dcac-f2ff-4119-bfa1-39a75534d474" validation failed: "DuplicateRoleName".
-11/18/2020 12:10:31 Role "f45d0e26-8bb9-4eec-82c3-7588d1547481" validation failed: "DuplicateRoleName".
-11/18/2020 12:10:31 HTTP "GET" "/" responded 200 in 1170.1238 ms
-11/18/2020 12:10:33 HTTP "GET" "/Identity/Account/Login" responded 200 in 89.6879 ms
-11/18/2020 12:10:34 User logged in.
-11/18/2020 12:10:34 HTTP "POST" "/Identity/Account/Login" responded 302 in 155.1672 ms
-11/18/2020 12:10:34 - Getting index page -
-11/18/2020 12:10:34 Role "0e872bf6-e9f9-4ffe-b639-d8d0de1d77a4" validation failed: "DuplicateRoleName".
-11/18/2020 12:10:34 Role "da96cc7b-3ee7-455f-9929-56efadc77082" validation failed: "DuplicateRoleName".
-11/18/2020 12:10:34 HTTP "GET" "/" responded 200 in 19.4160 ms
-11/18/2020 12:10:39 HTTP "GET" "/Playlists" responded 200 in 120.2386 ms
-11/18/2020 12:10:40 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 29.6245 ms
-11/18/2020 12:10:42 HTTP "GET" "/Playlists/Create" responded 200 in 36.6142 ms
-11/18/2020 12:10:43 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 22.5760 ms
+11/18/2020 14:41:15 Application starting up
+11/18/2020 14:41:17 - Getting index page -
+11/18/2020 14:41:21 Role "076dce95-4a42-4483-bb12-cc381ec93681" validation failed: "DuplicateRoleName".
+11/18/2020 14:41:21 Role "9f8d40b6-98d6-4eb2-9adf-f197ebb9f98d" validation failed: "DuplicateRoleName".
+11/18/2020 14:41:22 HTTP "GET" "/" responded 200 in 5074.8068 ms
+11/18/2020 14:41:24 HTTP "GET" "/Playlists/Create" responded 200 in 92.8521 ms
+11/18/2020 14:41:24 HTTP "GET" "/Playlists/Create/ws" responded 200 in 29.4838 ms
+11/18/2020 14:41:34 Playlist with title 'Koda' has been created.
+11/18/2020 14:42:07 Application starting up
+11/18/2020 14:42:09 - Getting index page -
+11/18/2020 14:42:10 Role "fa0ec9a4-ae3c-4180-8b82-64b941a844b1" validation failed: "DuplicateRoleName".
+11/18/2020 14:42:10 Role "5cf8f41d-0a37-4952-a0e5-ab9a48ad2d3b" validation failed: "DuplicateRoleName".
+11/18/2020 14:42:10 HTTP "GET" "/" responded 200 in 1352.7478 ms
+11/18/2020 14:42:24 HTTP "GET" "/Playlists/Create" responded 200 in 73.2803 ms
+11/18/2020 14:42:24 HTTP "GET" "/Playlists/Create/ws" responded 200 in 23.7109 ms
+11/18/2020 14:42:34 Playlist with title 'axcs' has been created.
+11/18/2020 14:42:34 HTTP "POST" "/Playlists/Create" responded 302 in 2184.4736 ms
+11/18/2020 14:42:34 HTTP "GET" "/Playlists" responded 200 in 26.3935 ms
+11/18/2020 14:42:39 HTTP "GET" "/Playlists/Create" responded 200 in 11.9581 ms
+11/18/2020 14:42:39 HTTP "GET" "/Playlists/Create/ws" responded 200 in 4.9705 ms
+11/18/2020 14:42:46 Playlist with title 'Futblok qko' has been created.
+11/18/2020 14:42:46 HTTP "POST" "/Playlists/Create" responded 302 in 1014.4324 ms
+11/18/2020 14:42:46 HTTP "GET" "/Playlists" responded 200 in 12.5856 ms
+11/18/2020 14:42:56 HTTP "GET" "/Playlists/Create" responded 200 in 9.1998 ms
+11/18/2020 14:42:56 HTTP "GET" "/Playlists/Create/ws" responded 200 in 4.7695 ms
+11/18/2020 14:42:58 HTTP "GET" "/Playlists" responded 200 in 10.6086 ms
+11/18/2020 14:43:15 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 19.1493 ms
+11/18/2020 14:43:17 HTTP "GET" "/Playlists" responded 200 in 12.8246 ms
+11/18/2020 14:43:18 HTTP "GET" "/Playlists/Create" responded 200 in 7.8779 ms
+11/18/2020 14:43:18 HTTP "GET" "/Playlists/Create/ws" responded 200 in 7.6348 ms
+11/18/2020 14:43:19 HTTP "GET" "/Playlists" responded 200 in 8.9861 ms
+11/18/2020 14:43:19 - Getting index page -
+11/18/2020 14:43:19 Role "110853fe-2fbc-4e27-8181-735d57f5f12f" validation failed: "DuplicateRoleName".
+11/18/2020 14:43:19 Role "ef35e8a5-9859-435d-8ed9-9efd441a2941" validation failed: "DuplicateRoleName".
+11/18/2020 14:43:19 HTTP "GET" "/" responded 200 in 18.5471 ms
+11/18/2020 14:44:18 Application starting up
+11/18/2020 14:44:19 - Getting index page -
+11/18/2020 14:44:20 Role "2861b37b-bcae-4f59-982c-077d988f668b" validation failed: "DuplicateRoleName".
+11/18/2020 14:44:20 Role "121bdcac-7b0a-482f-bdfc-426d43bb5036" validation failed: "DuplicateRoleName".
+11/18/2020 14:44:20 HTTP "GET" "/" responded 200 in 1362.0352 ms
+11/18/2020 14:45:39 Application starting up
+11/18/2020 14:45:40 - Getting index page -
+11/18/2020 14:45:41 Role "347d6a40-33d2-41b5-8a70-9b003b8d58a3" validation failed: "DuplicateRoleName".
+11/18/2020 14:45:41 Role "9df793d0-f696-46f5-b490-3584f63db4d2" validation failed: "DuplicateRoleName".
+11/18/2020 14:45:41 HTTP "GET" "/" responded 200 in 1252.8711 ms
+11/18/2020 14:45:43 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 46.2235 ms
+11/18/2020 14:45:44 HTTP "GET" "/Playlists" responded 200 in 31.0907 ms
+11/18/2020 14:45:45 - Getting index page -
+11/18/2020 14:45:45 Role "27f72f92-19b6-4132-97c6-c4299dd8cf52" validation failed: "DuplicateRoleName".
+11/18/2020 14:45:45 Role "3c6c3142-297e-43e8-a342-9612a5d164d5" validation failed: "DuplicateRoleName".
+11/18/2020 14:45:45 HTTP "GET" "/" responded 200 in 17.7708 ms
+11/18/2020 14:45:45 HTTP "GET" "/Playlists" responded 200 in 19.5280 ms
+11/18/2020 14:45:46 HTTP "GET" "/Playlists/Create" responded 200 in 60.5076 ms
+11/18/2020 14:45:46 HTTP "GET" "/Playlists/Create/ws" responded 200 in 7.5860 ms
+11/18/2020 14:45:54 Application starting up
+11/18/2020 14:45:55 - Getting index page -
+11/18/2020 14:45:56 Role "e41dd226-8a8a-460d-bfdc-03b9793aa38a" validation failed: "DuplicateRoleName".
+11/18/2020 14:45:56 Role "8e460abd-7ee1-42d1-a880-bde79e2ef52b" validation failed: "DuplicateRoleName".
+11/18/2020 14:45:56 HTTP "GET" "/" responded 200 in 1323.9560 ms
+11/18/2020 14:45:59 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 59.1667 ms
+11/18/2020 14:45:59 HTTP "GET" "/Playlists" responded 200 in 35.9658 ms
+11/18/2020 14:46:00 HTTP "GET" "/Playlists/Create" responded 200 in 49.8138 ms
+11/18/2020 14:46:00 HTTP "GET" "/Playlists/Create/ws" responded 200 in 7.1427 ms
+11/18/2020 14:46:01 HTTP "GET" "/Playlists" responded 200 in 20.1383 ms
+11/18/2020 14:46:02 - Getting index page -
+11/18/2020 14:46:02 Role "0abb54bf-2663-49c9-81a0-eb9d96f0ecfc" validation failed: "DuplicateRoleName".
+11/18/2020 14:46:02 Role "8eea5a17-b6a4-44de-8e4b-aea977bcd281" validation failed: "DuplicateRoleName".
+11/18/2020 14:46:02 HTTP "GET" "/" responded 200 in 16.6556 ms
+11/18/2020 14:47:58 Application starting up
+11/18/2020 14:48:00 - Getting index page -
+11/18/2020 14:48:00 Role "102f2eb1-e073-4931-a809-095ed4a05760" validation failed: "DuplicateRoleName".
+11/18/2020 14:48:00 Role "d9e316f4-f683-428a-b206-e58395923e52" validation failed: "DuplicateRoleName".
+11/18/2020 14:48:01 HTTP "GET" "/" responded 200 in 1262.9670 ms
+11/18/2020 14:48:19 Application starting up
+11/18/2020 14:48:20 - Getting index page -
+11/18/2020 14:48:21 Role "18c1d61a-fff1-418d-b5e8-edc18b68584a" validation failed: "DuplicateRoleName".
+11/18/2020 14:48:21 Role "9bf31963-ad7e-4c5f-8262-dc9f7e0fe37d" validation failed: "DuplicateRoleName".
+11/18/2020 14:48:21 HTTP "GET" "/" responded 200 in 1262.3263 ms
+11/18/2020 14:48:31 Application starting up
+11/18/2020 14:48:32 - Getting index page -
+11/18/2020 14:48:33 Role "ffe6878c-1713-4a88-bdd6-57b6c14b3c22" validation failed: "DuplicateRoleName".
+11/18/2020 14:48:33 Role "8aa95587-e040-418e-aeca-7d225687dfbe" validation failed: "DuplicateRoleName".
+11/18/2020 14:48:33 HTTP "GET" "/" responded 200 in 1263.4925 ms
+11/18/2020 14:49:10 Application starting up
+11/18/2020 14:49:11 - Getting index page -
+11/18/2020 14:49:12 Role "a80738b8-6adf-442d-bac9-d6fea2ba806e" validation failed: "DuplicateRoleName".
+11/18/2020 14:49:12 Role "a36b3f18-ea66-4a84-85a5-12e5634e0cc1" validation failed: "DuplicateRoleName".
+11/18/2020 14:49:12 HTTP "GET" "/" responded 200 in 1256.2787 ms
+11/18/2020 14:49:59 Application starting up
+11/18/2020 14:50:00 - Getting index page -
+11/18/2020 14:50:01 Role "2c7ee220-e26f-4ee6-b2a4-9c007214bb69" validation failed: "DuplicateRoleName".
+11/18/2020 14:50:01 Role "61ea03dd-9b30-409d-8dc1-8211ac80fe0b" validation failed: "DuplicateRoleName".
+11/18/2020 14:50:01 HTTP "GET" "/" responded 200 in 1247.7152 ms
+11/18/2020 14:50:09 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 43.9870 ms
+11/18/2020 14:50:09 - Getting index page -
+11/18/2020 14:50:09 Role "279eca82-1e5b-45bc-969f-8f6e2a2a546b" validation failed: "DuplicateRoleName".
+11/18/2020 14:50:09 Role "e8eccfed-182f-4e34-ba74-08cf08712119" validation failed: "DuplicateRoleName".
+11/18/2020 14:50:09 HTTP "GET" "/" responded 200 in 48.5085 ms
+11/18/2020 14:50:29 Application starting up
+11/18/2020 14:50:30 - Getting index page -
+11/18/2020 14:50:31 Role "f0221c91-7e97-4599-bdf8-2ae21d38fa75" validation failed: "DuplicateRoleName".
+11/18/2020 14:50:31 Role "733004ca-07e5-4655-a6ab-a1df9339dd83" validation failed: "DuplicateRoleName".
+11/18/2020 14:50:31 HTTP "GET" "/" responded 200 in 1218.3621 ms
+11/18/2020 14:50:34 HTTP "GET" "/Identity/Account/Register" responded 200 in 84.3042 ms
+11/18/2020 14:50:35 HTTP "GET" "/Identity/Account/Login" responded 200 in 44.3102 ms
+11/18/2020 14:50:36 User logged in.
+11/18/2020 14:50:36 HTTP "POST" "/Identity/Account/Login" responded 302 in 129.0150 ms
+11/18/2020 14:50:36 - Getting index page -
+11/18/2020 14:50:36 Role "03660811-abaf-41cd-a6c7-0e050ec807e1" validation failed: "DuplicateRoleName".
+11/18/2020 14:50:36 Role "472fc9f3-e87e-4ea7-97ed-b90c1e80f600" validation failed: "DuplicateRoleName".
+11/18/2020 14:50:36 HTTP "GET" "/" responded 200 in 24.7052 ms
+11/18/2020 14:50:42 HTTP "GET" "/Playlists/Create" responded 200 in 41.1600 ms
+11/18/2020 14:50:42 HTTP "GET" "/Playlists/Create/ws" responded 200 in 7.5325 ms
+11/18/2020 14:50:43 - Getting index page -
+11/18/2020 14:50:43 Role "6b234609-4442-4059-a2f4-a57806663206" validation failed: "DuplicateRoleName".
+11/18/2020 14:50:43 Role "8d3e52be-4ab1-4161-b500-b3b864eaf83b" validation failed: "DuplicateRoleName".
+11/18/2020 14:50:43 HTTP "GET" "/" responded 200 in 32.4206 ms
+11/18/2020 14:50:43 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 17.3958 ms
+11/18/2020 14:50:45 HTTP "GET" "/Playlists" responded 200 in 18.4232 ms
+11/18/2020 14:50:46 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 11.7013 ms
+11/18/2020 14:50:47 HTTP "GET" "/Playlists/Create" responded 200 in 9.9487 ms
+11/18/2020 14:50:47 HTTP "GET" "/Playlists/Create/ws" responded 200 in 8.0877 ms
+11/18/2020 14:50:48 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 7.5719 ms
+11/18/2020 14:50:49 - Getting index page -
+11/18/2020 14:50:49 Role "95e20302-d7e6-4832-b481-8ab07c0abc45" validation failed: "DuplicateRoleName".
+11/18/2020 14:50:49 Role "b4b516cf-6eb4-4296-a3f7-c2ae301e3656" validation failed: "DuplicateRoleName".
+11/18/2020 14:50:49 HTTP "GET" "/" responded 200 in 16.5944 ms
+11/18/2020 14:51:02 HTTP "GET" "/Playlists/Create" responded 200 in 7.9109 ms
+11/18/2020 14:51:02 HTTP "GET" "/Playlists/Create/ws" responded 200 in 7.0858 ms
+11/18/2020 14:51:08 - Getting index page -
+11/18/2020 14:51:08 Role "6ba46f0b-a70d-4fdc-850d-dd32c73a3c94" validation failed: "DuplicateRoleName".
+11/18/2020 14:51:08 Role "3c86ba4b-f431-4b14-b7af-c6e43aa5033c" validation failed: "DuplicateRoleName".
+11/18/2020 14:51:08 HTTP "GET" "/" responded 200 in 13.5314 ms
+11/18/2020 14:54:27 - Getting index page -
+11/18/2020 14:54:27 Role "85d79a76-ce1c-4b36-9718-5c3777f6d67b" validation failed: "DuplicateRoleName".
+11/18/2020 14:54:27 Role "d18ec00c-769e-4c23-948f-763eda866b7c" validation failed: "DuplicateRoleName".
+11/18/2020 14:54:27 HTTP "GET" "/" responded 200 in 25.5981 ms
+11/18/2020 14:55:31 Application starting up
+11/18/2020 14:55:32 - Getting index page -
+11/18/2020 14:55:33 Role "9eda9f4c-9c03-4941-817b-2c848de0c6eb" validation failed: "DuplicateRoleName".
+11/18/2020 14:55:33 Role "973ff6e4-c037-4fc8-96c5-f70f471356c5" validation failed: "DuplicateRoleName".
+11/18/2020 14:55:33 HTTP "GET" "/" responded 200 in 1353.4809 ms
+11/18/2020 14:55:35 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 48.3937 ms
+11/18/2020 14:55:36 HTTP "GET" "/Playlists" responded 200 in 30.2791 ms
+11/18/2020 14:56:35 Application starting up
+11/18/2020 14:56:37 - Getting index page -
+11/18/2020 14:56:38 Role "8caf75a4-69b1-4b64-a71a-37d442d48a1f" validation failed: "DuplicateRoleName".
+11/18/2020 14:56:38 Role "bbea2797-999b-4d0c-843c-211dbddd3a0e" validation failed: "DuplicateRoleName".
+11/18/2020 14:56:38 HTTP "GET" "/" responded 200 in 1583.4954 ms
+11/18/2020 14:56:42 HTTP "GET" "/Identity/Account/Login" responded 200 in 92.7813 ms
+11/18/2020 14:56:43 User logged in.
+11/18/2020 14:56:43 HTTP "POST" "/Identity/Account/Login" responded 302 in 135.8945 ms
+11/18/2020 14:56:43 - Getting index page -
+11/18/2020 14:56:43 Role "0e18efda-e015-470e-9fd8-7ea2f7e00396" validation failed: "DuplicateRoleName".
+11/18/2020 14:56:43 Role "5dadc198-978c-4938-af80-ab7f17a8dc3a" validation failed: "DuplicateRoleName".
+11/18/2020 14:56:43 HTTP "GET" "/" responded 200 in 25.4150 ms
+11/18/2020 14:56:44 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 24.4775 ms
+11/18/2020 14:56:44 HTTP "GET" "/Playlists" responded 200 in 19.1187 ms

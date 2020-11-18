@@ -43,7 +43,12 @@ namespace PG.Web.Controllers
             await _roleManager.CreateAsync(new IdentityRole("user"));
             await _roleManager.CreateAsync(new IdentityRole("admin"));
 
-            return View();
+
+            //TODO: take top 3 playlists
+            IEnumerable<PlaylistDTO> playlistsDTOs = await _playlistService.GetAllPlaylists();
+            IList<PlaylistViewModel> playlistsViewModels = playlistsDTOs.Take(3).Select(x => x.ToViewModel()).ToList();
+
+            return View(playlistsViewModels);
         }
 
         public IActionResult Privacy()

@@ -10,8 +10,8 @@ using PG.Data.Context;
 namespace PG.Data.Migrations
 {
     [DbContext(typeof(PGDbContext))]
-    [Migration("20201116152919_SongUpdate")]
-    partial class SongUpdate
+    [Migration("20201118123916_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

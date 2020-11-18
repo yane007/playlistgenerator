@@ -66,18 +66,6 @@ namespace PG.Web.Controllers
             return View(playlistGenerator);
         }
         
-        public async Task<IActionResult> PlayPlaylist()
-        {
-
-            var playlistDTOs = await _playlistService.GetAllPlaylists();
-
-            var playlistViewModels = playlistDTOs.Select(x => x.ToViewModel());
-
-            var playlistGenerator = new PlaylistViewModel();
-
-
-            return View(playlistGenerator);
-        }
 
         [HttpPost]
         [Authorize]

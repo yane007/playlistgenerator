@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Authentication.Facebook;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -46,12 +45,6 @@ namespace PG.Web
             services.AddDbContext<PGDbContext>(options => options.UseSqlServer(connectionString));
             services.AddSwaggerGen();
             services.AddRazorPages();
-
-            services.AddAuthentication().AddGoogle(options => 
-            { 
-                options.ClientId = "186065403088-gl0o7c7438g2o3euvlpsk9vh82av1i7t.apps.googleusercontent.com";
-                options.ClientSecret = "F9v-c87L9VBM7EktTfN7QpNN";
-            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
