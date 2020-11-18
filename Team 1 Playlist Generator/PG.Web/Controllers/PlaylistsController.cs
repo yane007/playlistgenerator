@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using PG.Models;
 using PG.Services.Contract;
+using PG.Services.DTOs;
 using PG.Web.Models;
 using PG.Web.Models.Mappers;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -29,8 +31,11 @@ namespace PG.Web.Controllers
         }
         public async Task<IActionResult> Index()
         {
+            IEnumerable<PlaylistDTO> playlistsDTOs = await _playlistService.GetAllPlaylists();
+            IEnumerable<PlaylistViewModel> playlistsViewModels = playlistsDTOs.Select(x => x.ToViewModel());
 
-            return View();
+            return View(playlistsViewModels);
+
         }
 
         [Authorize]
@@ -48,6 +53,19 @@ namespace PG.Web.Controllers
             var playlistGenerator = new PlaylistGeneratorViewModel();
 
             playlistGenerator.Genres = genresViewModels.ToList();
+
+
+            return View(playlistGenerator);
+        }
+        
+        public async Task<IActionResult> PlayPlaylist()
+        {
+
+            var playlistDTOs = await _playlistService.GetAllPlaylists();
+
+            var playlistViewModels = playlistDTOs.Select(x => x.ToViewModel());
+
+            var playlistGenerator = new PlaylistViewModel();
 
 
             return View(playlistGenerator);

@@ -3,42 +3,17 @@
     ViewData["Title"] = "Home Page";
 }
 
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/music1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/717234.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/music2.jpg" alt="Third slide">
+            </div>
+        </div>
+    </div>
 
-
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
-
-@if (Model.Count() == 0)
-{
-    <p>There are no playlists</p>
-}
-else
-{
-    @foreach (var item in Model)
-    {
-        <table class="table table-striped table-dark">
-            <thead>
-                <tr>
-                    <th scope="col">@item.Title</th>
-                    <th scope="col">@item.Duration</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var song in item.PlaylistsSongs)
-                {
-                    <tr>
-                        <td>@song.Song.Title</td>
-                        <td>@song.Song.Duration</td>
-                        <td><a href=@song.Song.Preview>Click to play</a></td>
-                    </tr>
-                }
-
-            </tbody>
-        </table>
-
-
-    }
-}

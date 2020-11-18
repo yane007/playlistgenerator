@@ -1,0 +1,23 @@
+﻿@model IEnumerable<PlaylistViewModel>
+
+@foreach (var item in Model)
+{
+    <table class="table table-striped table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">@item.Title</th>
+                    <th scope="col">@item.Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var song in item.PlaylistsSongs)
+                {
+                    <tr>
+                        <td>@song.Song.Title</td>
+                        <td>@song.Song.Duration</td>
+                        <td><a href=@song.Song.Preview>Click to play</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+}
