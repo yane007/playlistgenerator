@@ -22,6 +22,8 @@ namespace PG.Models
         [MaxLength(300)]
         public string Preview { get; set; }
 
+        public string Link { get; set; }
+
         public Artist Artist { get; set; }
         public int ArtistId { get; set; }
 

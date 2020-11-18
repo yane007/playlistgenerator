@@ -1,0 +1,30 @@
+image: mcr.microsoft.com/dotnet/sdk:3.1
+ 
+stages:
+    - build
+    - test
+ 
+variables:
+    projectDir: "Team 1 Playlist Generator"
+    testProjectDir: "PG.Tests"
+ 
+before_script:
+    - 'cd "$projectDir"'
+    - "dotnet restore"
+ 
+build:
+    stage: build
+    only:
+        refs:
+            - master 
+    script:
+        - "dotnet build"
+ 
+test:
+    stage: test
+    only:
+        refs:
+            - master 
+    script:
+        - 'cd "$testProjectDir"'
+        - "dotnet test"

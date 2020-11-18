@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using PG.Services.Contract;
 using PG.Web.Models;
 using PG.Web.Models.Mappers;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace PG.Web.APIControllers
@@ -25,7 +26,9 @@ namespace PG.Web.APIControllers
         {
             var genres = await _genreService.GetAllGenres();
 
-            return Ok(genres);
+            var genresViewModels = genres.Select(x => x.ToViewModel());
+
+            return Ok(genresViewModels);
         }
 
         //GET api/genres/id
@@ -34,7 +37,9 @@ namespace PG.Web.APIControllers
         {
             var genre = await _genreService.GetGenreById(id);
 
-            return Ok(genre);
+            var genreViewModel = genre.ToViewModel();
+
+            return Ok(genreViewModel);
         }
 
         //POST api/genres
@@ -44,7 +49,9 @@ namespace PG.Web.APIControllers
         {
             var genre = await _genreService.Create(model.ToDTO());
 
-            return Created("post", genre);
+            var genreViewModel = genre.ToViewModel();
+
+            return Created("post", genreViewModel);
         }
 
         //PUT api/genres/id
@@ -54,7 +61,9 @@ namespace PG.Web.APIControllers
         {
             var genre = await _genreService.Update(id, model.ToDTO());
 
-            return Ok(genre);
+            var genreViewModel = genre.ToViewModel();
+
+            return Ok(genreViewModel);
         }
 
         //DELETE api/songs/id

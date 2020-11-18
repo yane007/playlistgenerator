@@ -6,8 +6,6 @@ namespace PG.Services.DTOs
     {
         public string Title { get; set; }
 
-        public string Link { get; set; } 
-
         public int Duration { get; set; } 
 
         public int Rank { get; set; } 

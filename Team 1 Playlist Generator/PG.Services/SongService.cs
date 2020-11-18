@@ -4,6 +4,8 @@ using PG.Models;
 using PG.Services.Contract;
 using PG.Services.DTOs;
 using PG.Services.Mappers;
+using Serilog;
+using Serilog.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +17,7 @@ namespace PG.Services
     {
         private readonly PGDbContext _context;
 
+
         public SongService(PGDbContext context)
         {
             this._context = context;
@@ -25,15 +28,15 @@ namespace PG.Services
         {
             if (songDTO == null)
             {
-                throw new ArgumentNullException("Null Playlist");
+                throw new ArgumentNullException("Null Song");
             }
             if (songDTO.Title.Length > 50)
             {
                 throw new ArgumentOutOfRangeException("Song's title needs to be shorter than 50 characters.");
             }
 
-            var existingPlaylist = _context.Songs.FirstOrDefaultAsync(x => x.Title == songDTO.Title);
-            if (existingPlaylist != null)
+            var existingSong = await _context.Songs.FirstOrDefaultAsync(x => x.Title == songDTO.Title);
+            if (existingSong != null)
             {
                 throw new ArgumentException($"Song with title '{songDTO.Title}' already exists.");
             }

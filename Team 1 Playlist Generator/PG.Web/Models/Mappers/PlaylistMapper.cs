@@ -1,9 +1,7 @@
-﻿using PG.Models;
-using PG.Services.DTOs;
+﻿using PG.Services.DTOs;
+using PG.Services.Mappers;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace PG.Web.Models.Mappers
 {
@@ -11,19 +9,16 @@ namespace PG.Web.Models.Mappers
     {
         public static PlaylistViewModel ToViewModel(this PlaylistDTO playlistDTO)
         {
+            TimeSpan time = TimeSpan.FromSeconds(playlistDTO.Duration);
+
             return new PlaylistViewModel()
             {
+                Id = playlistDTO.Id,
                 Title = playlistDTO.Title,
-                //Description = playlistDTO.Description,
                 Duration = playlistDTO.Duration,
-                //Fans = playlistDTO.Fans,
-                //Link = playlistDTO.Link,
-                //Share = playlistDTO.Share,
+                DurationInHours = time.ToString(@"hh\:mm\:ss"),
                 Picture = playlistDTO.Picture,
-                //Tracklist = playlistDTO.Tracklist,
-                //Creation_date = playlistDTO.Creation_date,
-                //Type = playlistDTO.Type,
-                PlaylistsSongs = playlistDTO.PlaylistsSongs,
+                Songs = playlistDTO.PlaylistsSongs.Select(x => x.Song.ToDTO().ToViewModel()).ToList()
             };
         }
 
@@ -32,16 +27,8 @@ namespace PG.Web.Models.Mappers
             return new PlaylistDTO()
             {
                 Title = playlistViewModel.Title,
-                //Description = playlistViewModel.Description,
                 Duration = playlistViewModel.Duration,
-                //Fans = playlistViewModel.Fans,
-                //Link = playlistViewModel.Link,
-                //Share = playlistViewModel.Share,
                 Picture = playlistViewModel.Picture,
-                //Tracklist = playlistViewModel.Tracklist,
-                //Creation_date = playlistViewModel.Creation_date,
-                //Type = playlistViewModel.Type,
-                PlaylistsSongs = playlistViewModel.PlaylistsSongs,
             };
         }
     }

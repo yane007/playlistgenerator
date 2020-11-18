@@ -31,8 +31,8 @@ namespace PG.Services
                 throw new ArgumentOutOfRangeException("Genre's Name needs to be shorter than 50 characters.");
             }
 
-            var existingPlaylist = _context.Songs.FirstOrDefaultAsync(x => x.Title == genreDTO.Name);
-            if (existingPlaylist != null)
+            var existingGenre = await _context.Genres.FirstOrDefaultAsync(x => x.Name == genreDTO.Name);
+            if (existingGenre != null)
             {
                 throw new ArgumentException($"Genre with name '{genreDTO.Name}' already exists.");
             }

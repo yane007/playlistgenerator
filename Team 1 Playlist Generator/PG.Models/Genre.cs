@@ -1,4 +1,5 @@
 ﻿using PG.Models.Abstract;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace PG.Models
@@ -7,6 +8,8 @@ namespace PG.Models
     {
         [MaxLength(50)]
         public string Name { get; set; }
+
+        public ICollection<PlaylistsGenres> PlaylistsGenres { get; set; }
     }
 
 }

@@ -12,6 +12,10 @@ namespace PG.Web.Models
 
         public string Title { get; set; }
 
+        public int Duration { get; set; }
+
+        public string DurationInMinutes { get; set; }
+
         public int Rank { get; set; }
 
         public string Preview { get; set; }

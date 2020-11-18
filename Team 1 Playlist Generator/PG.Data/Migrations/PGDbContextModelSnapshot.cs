@@ -200,7 +200,7 @@ namespace PG.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Artist");
+                    b.ToTable("Artists");
                 });
 
             modelBuilder.Entity("PG.Models.Genre", b =>
@@ -217,12 +217,7 @@ namespace PG.Data.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
-                    b.Property<int?>("PlaylistId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("PlaylistId");
 
                     b.ToTable("Genres");
                 });
@@ -244,6 +239,9 @@ namespace PG.Data.Migrations
                         .HasColumnType("nvarchar(300)")
                         .HasMaxLength(300);
 
+                    b.Property<int>("Rank")
+                        .HasColumnType("int");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(50)")
@@ -257,6 +255,21 @@ namespace PG.Data.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Playlists");
+                });
+
+            modelBuilder.Entity("PG.Models.PlaylistsGenres", b =>
+                {
+                    b.Property<int>("PlaylistId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("GenreId")
+                        .HasColumnType("int");
+
+                    b.HasKey("PlaylistId", "GenreId");
+
+                    b.HasIndex("GenreId");
+
+                    b.ToTable("PlaylistsGenres");
                 });
 
             modelBuilder.Entity("PG.Models.PlaylistsSongs", b =>
@@ -295,6 +308,9 @@ namespace PG.Data.Migrations
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
+
+                    b.Property<string>("Link")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Preview")
                         .HasColumnType("nvarchar(300)")
@@ -438,18 +454,26 @@ namespace PG.Data.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("PG.Models.Genre", b =>
-                {
-                    b.HasOne("PG.Models.Playlist", null)
-                        .WithMany("Genres")
-                        .HasForeignKey("PlaylistId");
-                });
-
             modelBuilder.Entity("PG.Models.Playlist", b =>
                 {
                     b.HasOne("PG.Models.User", "User")
                         .WithMany("Playlists")
                         .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("PG.Models.PlaylistsGenres", b =>
+                {
+                    b.HasOne("PG.Models.Genre", "Genre")
+                        .WithMany("PlaylistsGenres")
+                        .HasForeignKey("GenreId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("PG.Models.Playlist", "Playlist")
+                        .WithMany("PlaylistsGenres")
+                        .HasForeignKey("PlaylistId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("PG.Models.PlaylistsSongs", b =>

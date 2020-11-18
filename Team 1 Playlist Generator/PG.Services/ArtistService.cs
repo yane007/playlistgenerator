@@ -29,16 +29,16 @@ namespace PG.Services
             }
             if (artistDTO.Name.Length > 100)
             {
-                throw new ArgumentOutOfRangeException("Artist's Name needs to be shorter than 50 characters.");
+                throw new ArgumentOutOfRangeException("Artist's Name needs to be shorter than 100 characters.");
             }
 
-            var existedArtist = _context.Artist.FirstOrDefaultAsync(x => x.Name == artistDTO.Name);
+            var existedArtist = await _context.Artists.FirstOrDefaultAsync(x => x.Name == artistDTO.Name);
             if (existedArtist != null)
             {
-                throw new ArgumentException($"Genre with name '{artistDTO.Name}' already exists.");
+                throw new ArgumentException($"Artist with name '{artistDTO.Name}' already exists.");
             }
 
-            var artist = await _context.Artist.AddAsync(artistDTO.ToEntity());
+            var artist = await _context.Artists.AddAsync(artistDTO.ToEntity());
             await _context.SaveChangesAsync();
 
             return artist.Entity.ToDTO();
@@ -46,7 +46,7 @@ namespace PG.Services
 
         public async Task Delete(int id)
         {
-            var expectedArtist = await _context.Artist.FirstOrDefaultAsync(x => x.Id == id);
+            var expectedArtist = await _context.Artists.FirstOrDefaultAsync(x => x.Id == id);
             if (expectedArtist == null)
             {
                 throw new ArgumentNullException($"Artist with id {id} was not found.");
@@ -62,14 +62,14 @@ namespace PG.Services
 
         public async Task<IEnumerable<ArtistDTO>> GetAllArtists()
         {
-            return await _context.Artist.Where(x => x.IsDeleted == false)
+            return await _context.Artists.Where(x => x.IsDeleted == false)
                                         .Select(x => x.ToDTO())
                                         .ToListAsync();
         }
 
         public async Task<ArtistDTO> GetArtistById(int id)
         {
-            var artist = await _context.Artist.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
+            var artist = await _context.Artists.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
             if (artist == null)
             {
                 throw new ArgumentNullException($"Artist with id {id} was not found.");
@@ -80,7 +80,7 @@ namespace PG.Services
 
         public async Task<ArtistDTO> Update(int id, ArtistDTO artistDTO)
         {
-            var artist = await _context.Artist.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
+            var artist = await _context.Artists.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
             if (artist == null)
             {
                 throw new ArgumentNullException($"Genre with id {id} was not found.");

@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PG.Models", "PG.Models\PG.M
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PG.Services", "PG.Services\PG.Services.csproj", "{FEE017D9-1849-43BB-BF66-1BC5FF074017}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PG.Web", "PG.Web\PG.Web.csproj", "{9AE35829-69AC-4145-8C48-BD7B75B2CA24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PG.Web", "PG.Web\PG.Web.csproj", "{9AE35829-69AC-4145-8C48-BD7B75B2CA24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PG.Tests", "PG.Tests\PG.Tests.csproj", "{93DB4302-FCE2-468F-9928-95C9F60B73B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9AE35829-69AC-4145-8C48-BD7B75B2CA24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AE35829-69AC-4145-8C48-BD7B75B2CA24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AE35829-69AC-4145-8C48-BD7B75B2CA24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93DB4302-FCE2-468F-9928-95C9F60B73B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93DB4302-FCE2-468F-9928-95C9F60B73B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93DB4302-FCE2-468F-9928-95C9F60B73B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93DB4302-FCE2-468F-9928-95C9F60B73B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

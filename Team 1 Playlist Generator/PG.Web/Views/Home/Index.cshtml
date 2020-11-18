@@ -17,3 +17,34 @@
         </div>
     </div>
 
+@if (Model.Count() == 0)
+{
+    <p>There are no playlists</p>
+}
+else
+{
+    @foreach (var item in Model)
+    {
+        <table class="table table-striped table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">@item.Title</th>
+                    <th scope="col">@item.DurationInHours</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var song in item.Songs)
+                {
+                    <tr>
+                        <td>@song.Title</td>
+                        <td>@song.DurationInMinutes</td>
+                        <td><a href=@song.Preview>Click to play</a></td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+
+
+    }
+}

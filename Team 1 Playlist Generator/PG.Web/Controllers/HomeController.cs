@@ -10,6 +10,7 @@ using PG.Services.Contract;
 using PG.Services.DTOs;
 using PG.Web.Models;
 using PG.Web.Models.Mappers;
+using Serilog;
 
 namespace PG.Web.Controllers
 {
@@ -35,6 +36,7 @@ namespace PG.Web.Controllers
 
         public async Task<IActionResult> Index()
         {
+            Log.Logger.Information("Getting index page ---------------------------------------");
             await GetAlbumAsync();
 
             await _roleManager.CreateAsync(new IdentityRole("user"));
@@ -59,8 +61,8 @@ namespace PG.Web.Controllers
         public async Task GetAlbumAsync()
         {
             await _apiService.ExtractSongsFromPlaylists("pop");
-            await _apiService.ExtractSongsFromPlaylists("rock");
-            await _apiService.ExtractSongsFromPlaylists("metal");
+            //await _apiService.ExtractSongsFromPlaylists("rock");
+            //await _apiService.ExtractSongsFromPlaylists("metal");
         }
 
     }

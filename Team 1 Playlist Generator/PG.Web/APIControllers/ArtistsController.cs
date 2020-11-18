@@ -4,6 +4,7 @@ using PG.Services.Contract;
 using PG.Services.Mappers;
 using PG.Web.Models;
 using PG.Web.Models.Mappers;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace PG.Web.APIControllers
@@ -26,6 +27,8 @@ namespace PG.Web.APIControllers
         {
             var artists = await _artistService.GetAllArtists();
 
+            var artistsViewModels = artists.Select(x => x.ToViewModel());
+
             return Ok(artists);
         }
 
@@ -35,7 +38,9 @@ namespace PG.Web.APIControllers
         {
             var artist = await _artistService.GetArtistById(id);
 
-            return Ok(artist);
+            var artistViewModel = artist.ToViewModel();
+
+            return Ok(artistViewModel);
         }
 
         //POST api/artists
@@ -45,7 +50,9 @@ namespace PG.Web.APIControllers
         {
             var createdArtist = await _artistService.Create(model.ToDTO());
 
-            return Created("post", createdArtist);
+            var artistViewModel = createdArtist.ToViewModel();
+
+            return Created("post", artistViewModel);
         }
 
         //PUT api/artists/id
@@ -55,7 +62,9 @@ namespace PG.Web.APIControllers
         {
             var artist = await _artistService.Update(id, artistModel.ToDTO());
 
-            return Ok(artist);
+            var artistViewModel = artist.ToViewModel();
+
+            return Ok(artistViewModel);
         }
 
         //DELETE api/artists/id

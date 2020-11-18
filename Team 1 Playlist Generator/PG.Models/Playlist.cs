@@ -9,7 +9,7 @@ namespace PG.Models
         public Playlist()
         {
             PlaylistsSongs = new List<PlaylistsSongs>();
-            Genres = new List<Genre>();
+            PlaylistsGenres = new List<PlaylistsGenres>();
         }
 
         [Required]
@@ -21,6 +21,7 @@ namespace PG.Models
         [MaxLength(300)]
         public string Picture { get; set; }
 
+        public int Rank { get; set; }
 
         public string UserId { get; set; }
 
@@ -28,6 +29,6 @@ namespace PG.Models
 
         public ICollection<PlaylistsSongs> PlaylistsSongs { get; set; }
 
-        public ICollection<Genre> Genres { get; set; }
+        public ICollection<PlaylistsGenres> PlaylistsGenres { get; set; }
     }
 }

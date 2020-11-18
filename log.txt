@@ -1,0 +1,14 @@
+11/16/2020 16:41:30 Application starting up
+11/16/2020 16:41:30 Getting index page ---------------------------------------
+11/16/2020 16:41:31 Role "fc5d6f88-21e7-4685-abf0-96b056082b52" validation failed: "DuplicateRoleName".
+11/16/2020 16:41:31 Role "b4064e9f-42db-4bb5-ba12-e19f7ef00c93" validation failed: "DuplicateRoleName".
+11/16/2020 16:41:31 HTTP "GET" "/" responded 200 in 1204.1720 ms
+11/16/2020 16:42:07 Getting index page ---------------------------------------
+11/16/2020 16:42:07 Role "60a7a2fd-7efb-409c-bb8a-3a7bed60fb0c" validation failed: "DuplicateRoleName".
+11/16/2020 16:42:07 Role "ca771373-9e9a-4a68-8e8f-cc766ca01e61" validation failed: "DuplicateRoleName".
+11/16/2020 16:42:07 HTTP "GET" "/" responded 200 in 55.8440 ms
+11/16/2020 17:09:23 Application starting up
+11/16/2020 17:09:24 Getting index page ---------------------------------------
+11/16/2020 17:09:25 Role "0b9716a1-5e90-4840-af00-591e98ddec77" validation failed: "DuplicateRoleName".
+11/16/2020 17:09:25 Role "b022e51f-879c-45f4-ba26-d89c3bb1d688" validation failed: "DuplicateRoleName".
+11/16/2020 17:09:25 HTTP "GET" "/" responded 200 in 1231.2395 ms

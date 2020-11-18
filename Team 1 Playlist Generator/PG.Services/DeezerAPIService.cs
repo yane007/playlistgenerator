@@ -68,10 +68,10 @@ namespace PG.Services
                                 continue;
                             }
 
-                            var expectedArtist = await _context.Artist.FirstOrDefaultAsync(x => x.Name == song.Artist.Name);
+                            var expectedArtist = await _context.Artists.FirstOrDefaultAsync(x => x.Name == song.Artist.Name);
                             if (expectedArtist == null)
                             {
-                                var addedArtist = await _context.Artist.AddAsync(new Artist()
+                                var addedArtist = await _context.Artists.AddAsync(new Artist()
                                 {
                                     Name = song.Artist.Name,
                                     Tracklist = song.Artist.Tracklist,
@@ -104,7 +104,7 @@ namespace PG.Services
                                     Duration = song.Duration,
                                     Rank = song.Rank,
                                     Preview = song.Preview,
-
+                                    Link = song.Link,
                                     GenreId = expectedGenre.Id,
                                     ArtistId = expectedArtist.Id,
                                     AlbumId = expectedAlbum.Id

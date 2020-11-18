@@ -8,18 +8,18 @@ namespace PG.Web.Models
 {
     public class PlaylistViewModel
     {
+        public int Id { get; set; }
+
         public string Title { get; set; }
 
         public int Duration { get; set; }
 
+        public string DurationInHours { get; set; }
+
         public int Fans { get; set; }
-
-        public string Link { get; set; }
-
-        public string Share { get; set; }
 
         public string Picture { get; set; }
 
-        public ICollection<PlaylistsSongs> PlaylistsSongs { get; set; } = new List<PlaylistsSongs>();
+        public ICollection<SongViewModel> Songs { get; set; } = new List<SongViewModel>();
     }
 }
