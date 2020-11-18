@@ -3,6 +3,7 @@ using PG.Data.Context;
 using PG.Services.Contract;
 using PG.Services.DTOs;
 using PG.Services.Mappers;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,11 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Moq;
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
 using System;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace PG.Tests.PlaylistServiceShould

@@ -14,6 +14,7 @@ namespace PG.Web.Models.Mappers
             return new PlaylistViewModel()
             {
                 Id = playlistDTO.Id,
+                UserId = playlistDTO.UserId,
                 Title = playlistDTO.Title,
                 Duration = playlistDTO.Duration,
                 DurationInHours = time.ToString(@"hh\:mm\:ss"),

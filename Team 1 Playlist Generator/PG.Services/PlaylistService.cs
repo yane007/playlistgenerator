@@ -355,6 +355,7 @@ namespace PG.Services
             playlistAdded.Duration = realTotalDuration;
             playlistAdded.UserId = user.Id;
             user.Playlists.Add(playlistAdded);
+            playlistAdded.Picture = playlistAdded.PlaylistsSongs.FirstOrDefault(x => x.Song != null).Song.Link;
 
             await _context.SaveChangesAsync();
         }

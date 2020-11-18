@@ -1,13 +1,13 @@
 ﻿@model IList<PlaylistViewModel>
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "View";
 }
 
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken();
-   
+
 
     @if (Model.Count() == 0)
     {

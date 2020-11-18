@@ -20,6 +20,8 @@ namespace PG.Web.Models
 
         public string Picture { get; set; }
 
+        public string UserId { get; set; }
+
         public ICollection<SongViewModel> Songs { get; set; } = new List<SongViewModel>();
     }
 }

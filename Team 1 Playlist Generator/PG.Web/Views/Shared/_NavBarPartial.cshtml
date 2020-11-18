@@ -18,17 +18,18 @@
             <li class="nav-item">
                 <a class="nav-link" asp-controller="Playlists" asp-action="Index">Playlists</a>
             </li>
-            @if (User.IsInRole("Admin"))
+            @if (User.Identity.IsAuthenticated)
             {
                 <li class="nav-item">
-                    <a class="nav-link" asp-controller="Styles" asp-action="Index">Styles</a>
+                    <a class="nav-link" asp-controller="Playlists" asp-action="MyPlaylists">My Playlists</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" asp-controller="Countries" asp-action="Index">Countries</a>
+                    <a class="nav-link" asp-controller="Playlists" asp-action="Create">Create Playlist</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" asp-controller="Admin" asp-action="UsersIndex">Users</a>
-                </li>
+            }
+            @if (User.IsInRole("Admin"))
+            {
+
             }
             <partial name="_LoginPartial" />
         </ul>

@@ -1,8 +1,4 @@
-﻿using PG.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace PG.Web.Models
 {
@@ -13,7 +9,7 @@ namespace PG.Web.Models
             Genres = new List<GenreViewModel>();
         }
 
-        public List<GenreViewModel> Genres  { get; set; }
+        public List<GenreViewModel> Genres { get; set; }
 
         public string StartLocation { get; set; }
 

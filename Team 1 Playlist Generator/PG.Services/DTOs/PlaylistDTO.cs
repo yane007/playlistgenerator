@@ -12,6 +12,8 @@ namespace PG.Services.DTOs
 
         public string Picture { get; set; }
 
+        public string UserId { get; set; }
+
         public ICollection<PlaylistsSongs> PlaylistsSongs { get; set; } = new List<PlaylistsSongs>();
     }
 }

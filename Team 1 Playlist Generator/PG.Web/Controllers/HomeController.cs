@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
@@ -36,17 +37,13 @@ namespace PG.Web.Controllers
 
         public async Task<IActionResult> Index()
         {
-            Log.Logger.Information("Getting index page ---------------------------------------");
+            Log.Logger.Information("- Getting index page -");
             await GetAlbumAsync();
 
             await _roleManager.CreateAsync(new IdentityRole("user"));
             await _roleManager.CreateAsync(new IdentityRole("admin"));
 
-
-            IEnumerable<PlaylistDTO> playlistsDTOs = await _playlistService.GetAllPlaylists();
-            IEnumerable<PlaylistViewModel> playlistsViewModels = playlistsDTOs.Select(x => x.ToViewModel());
-
-            return View(playlistsViewModels);
+            return View();
         }
 
         public IActionResult Privacy()

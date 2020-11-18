@@ -13,6 +13,7 @@ namespace PG.Services.Mappers
             return new PlaylistDTO()
             {
                 Id = playlist.Id,
+                UserId = playlist.UserId,
                 Title = playlist.Title,
                 Duration = playlist.Duration,
                 Picture = playlist.Picture,
@@ -24,6 +25,7 @@ namespace PG.Services.Mappers
             return new Playlist()
             {
                 Id = playlistDTO.Id,
+                UserId = playlistDTO.UserId,
                 Title = playlistDTO.Title,
                 Duration = playlistDTO.Duration,
                 Picture = playlistDTO.Picture,
