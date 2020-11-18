@@ -18,7 +18,10 @@
     {
         @foreach (var item in Model)
         {
-            <p>@item.Title | @item.Duration</p>
+
+            <div class="list-group">
+                @Html.ActionLink($"{item.Title} | {item.DurationInHours} | {item.Id}", "Playlist", "Playlists", new { item.Id })
+            </div>
         }
     }
 }

@@ -2,8 +2,7 @@
 @{
     ViewData["Title"] = "Create";
 }
-<div class="bg-img">
-</div>
+
 <div class="container">
     <div class="d-flex flex-column align-items-center">
         <div class="">
@@ -42,22 +41,24 @@
                                 <button class="btn btn-outline-secondary" type="button" id="button-addon2">Map</button>
                             </div>
                         </div>
-                        <p class="card-text">Preferenses:</p>
+
 
                         <div class="form-group">
-                            <input type="text" asp-for="@Model.PlaylistName">
+                            <label asp-for="@Model.PlaylistName"></label>
+                            <input asp-for="@Model.PlaylistName" class="form-control" />
+                            <span asp-validation-for="@Model.PlaylistName" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <label asp-for="@Model.Metal" class="control-label"></label>
-                            <input asp-for="@Model.Metal" class="form-control" value="0"/>
+                            <input asp-for="@Model.Metal" class="form-control" value="0" />
                         </div>
                         <div class="form-group">
                             <label asp-for="@Model.Rock" class="control-label"></label>
-                            <input asp-for="@Model.Rock" class="form-control" value="0"/>
+                            <input asp-for="@Model.Rock" class="form-control" value="0" />
                         </div>
                         <div class="form-group">
                             <label asp-for="@Model.Pop" class="control-label"></label>
-                            <input asp-for="@Model.Pop" class="form-control" value="0"/>
+                            <input asp-for="@Model.Pop" class="form-control" value="0" />
                         </div>
 
                     </div>

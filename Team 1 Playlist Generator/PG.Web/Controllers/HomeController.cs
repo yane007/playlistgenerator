@@ -40,8 +40,9 @@ namespace PG.Web.Controllers
             Log.Logger.Information("- Getting index page -");
             await GetAlbumAsync();
 
-            await _roleManager.CreateAsync(new IdentityRole("user"));
-            await _roleManager.CreateAsync(new IdentityRole("admin"));
+            //TODO: where to move? 
+            //await _roleManager.CreateAsync(new IdentityRole("user"));
+            //await _roleManager.CreateAsync(new IdentityRole("admin"));
 
 
             //TODO: take top 3 playlists
@@ -65,7 +66,7 @@ namespace PG.Web.Controllers
         [NonAction]
         public async Task GetAlbumAsync()
         {
-            await _apiService.ExtractSongsFromPlaylists("pop");
+            //await _apiService.ExtractSongsFromPlaylists("pop");
             //await _apiService.ExtractSongsFromPlaylists("rock");
             //await _apiService.ExtractSongsFromPlaylists("metal");
         }
