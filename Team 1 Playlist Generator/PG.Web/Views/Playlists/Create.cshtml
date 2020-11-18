@@ -9,13 +9,13 @@
         <div class="">
             <form asp-controller="Playlists" asp-action="Create" method="post">
                 <h1>PlaylistGenerator</h1>
-                <div class="d-flex flex-column align-items-center card mt-5" style="background-color: limegreen;width:18rem;margin-top: 100px !important;">
+                <div class="d-flex flex-column align-items-center card mt-5" style="background-color:cornflowerblue;width:18rem;margin-top: 100px !important;">
                     <div class="card-body">
                         <h5 class="rounded" style="
                            position: absolute;
                            margin-top: -35px;
                            margin-left: -50px;
-                           background: #28a745;
+                           background-color:#3c28a7;
                            padding: 5px 10px;
                            color: #fff;
                             /*   /Must be in css folder*/
@@ -26,21 +26,15 @@
                         <p class="card-text">Travel Information:</p>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" style="background-color: #c2ffb3" ;>From:</span>
+                                <span asp-for="@Model.StartLocation"class="input-group-text" style="background-color: #b3d7ff" ;>From:</span>
                             </div>
-                            <input asp-for="@Model.StartLocation" type="text" class="form-control" aria-describedby="button-addon2" />
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Map</button>
-                            </div>
+                            <input type="text" class="form-control" aria-describedby="button-addon2" />
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" style="background-color:#c2ffb3">To:</span>
+                                <span asp-for="@Model.EndLocation"class="input-group-text" style="background-color:#b3d7ff">To:</span>
                             </div>
-                            <input asp-for="@Model.EndLocation" type="text" class="form-control" aria-describedby="button-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Map</button>
-                            </div>
+                            <input type="text" class="form-control" aria-describedby="button-addon2">
                         </div>
                         <p class="card-text">Preferenses:</p>
 
@@ -49,15 +43,15 @@
                         </div>
                         <div class="form-group">
                             <label asp-for="@Model.Metal" class="control-label"></label>
-                            <input asp-for="@Model.Metal" class="form-control" value="0"/>
+                            <input asp-for="@Model.Metal" class="form-control" value="0" />
                         </div>
                         <div class="form-group">
                             <label asp-for="@Model.Rock" class="control-label"></label>
-                            <input asp-for="@Model.Rock" class="form-control" value="0"/>
+                            <input asp-for="@Model.Rock" class="form-control" value="0" />
                         </div>
                         <div class="form-group">
                             <label asp-for="@Model.Pop" class="control-label"></label>
-                            <input asp-for="@Model.Pop" class="form-control" value="0"/>
+                            <input asp-for="@Model.Pop" class="form-control" value="0" />
                         </div>
 
                     </div>
@@ -65,17 +59,13 @@
                     @Html.EditorFor(x => x.TopTracks)
                     <p>Same artist:</p>
                     @Html.EditorFor(x => x.SameArtist)
-
                     <button type="submit" class="btn btn-primary"
                             style="position:absolute;
-                       margin-top: 400px;
-                           margin-right: -290px;
-                           background: #28a745;
+                             margin-top: 630px;
+                           margin-right: -250px;
+                           background: #3c28a7;
                            padding: 5px 10px;
                            color: #fff;
-
-                        /*   /Must be in css folder*/
-
                       ">
                         Generate
                     </button>
