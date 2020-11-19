@@ -18,14 +18,48 @@
 
     else
     {
-        @foreach (var item in Model)
-        {
 
-            <div class="list-group">
-                @Html.ActionLink($"{item.Title} | {item.DurationInHours} | {item.Id}", "Playlist", "Playlists", new { item.Id })
-            </div>
-        }
+
+        <div class="wrapper">
+
+            @foreach (var item in Model)
+            {
+                <a class="list-group" asp-controller="Playlists" asp-action="Playlist" asp-route-id="@item.Id">@item.Title <br/> @item.DurationInHours</a>
+            }
+
+        </div>
     }
+    <!--
+        grid-template-columns: 1fr 1fr 1fr;
+
+        grid-template-columns: repeat(3, 1fr);
+    -->
+
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            justify-items: center;
+        }
+
+        .list-group {
+            border: 1px solid black;
+            width: 150px;
+            height: 150px;
+            background: url("https://cdn.pixabay.com/photo/2017/03/25/17/55/color-2174045_960_720.png");
+            font-size: medium;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+            margin-bottom: 3vh;
+        }
+
+        .list-group:hover {
+            font-weight: 800;
+            color: black;
+            text-decoration: none;
+        }
+    </style>
 
 
 }

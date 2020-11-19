@@ -44,7 +44,7 @@ namespace PG.Web.APIControllers
 
         //POST api/playlists
         [HttpPost("")]
-        public async Task<IActionResult> CreatePlaylist([FromBody] PlaylistViewModel model)
+        public async Task<IActionResult> CreatePlaylist(PlaylistViewModel model)
         {
             var playlist = await _playlistService.Create(model.ToDTO());
 

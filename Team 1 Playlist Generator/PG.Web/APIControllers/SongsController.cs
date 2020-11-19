@@ -45,7 +45,7 @@ namespace PG.Web.APIControllers
         //POST api/songs
         [HttpPost("")]
         [Authorize(Roles = "admin")]
-        public async Task<IActionResult> CreateSong([FromBody] SongViewModel model)
+        public async Task<IActionResult> CreateSong(SongViewModel model)
         {
             var song = await _songService.Create(model.ToDTO());
 

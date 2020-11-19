@@ -3,53 +3,54 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@using (Html.BeginForm())
+{
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
 
-@if (Model.Count() == 0)
-{
-    <p>There are no playlists</p>
-}
-else
-{
-    @foreach (var item in Model)
+    @if (Model.Count() == 0)
     {
-        <div class="list-group">
-            <div id="inner">
-                @Html.ActionLink($"{item.Title}", "Playlist", "Playlists", new { item.Id }, new { @class = "playlist" })
-            </div>
+        <p>There are no playlists</p>
+    }
+    else
+    {
+
+
+        <div class="wrapper">
+
+            @foreach (var item in Model)
+            {
+                <a class="list-group" asp-controller="Playlists" asp-action="Playlist" asp-route-id="@item.Id">@item.Title <br /> @item.DurationInHours</a>
+            }
+
         </div>
     }
+
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+        }
+
+        .list-group {
+            border: 1px solid black;
+            width: 150px;
+            height: 150px;
+            background: url("https://cdn.pixabay.com/photo/2017/03/25/17/55/color-2174045_960_720.png");
+            font-size: medium;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+        }
+
+            .list-group:hover {
+                font-weight: 800;
+                color: black;
+                text-decoration: none;
+            }
+    </style>
+
 }
-
-
-<style>
-
-    .list-group {
-        position: relative;
-        display: inline-block;
-        border: 1px solid black;
-        width: 150px;
-        height: 150px;
-        padding: 5px;
-        margin-top: 60vh;
-        background: url("https://cdn.pixabay.com/photo/2017/03/25/17/55/color-2174045_960_720.png");
-        margin: 0 10px;
-        top: 60vh;
-        left: 200px;
-        text-align: center;
-    }
-
-    #inner {
-        padding: 5px;
-        background-color: none;
-    }
-
-    .list-group .playlist {
-        color: white;
-        font-size: 1em;
-        font-weight: bolder;
-    }
-</style>

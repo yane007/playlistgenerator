@@ -45,7 +45,7 @@ namespace PG.Web.APIControllers
         //POST api/genres
         [HttpPost("")]
         [Authorize(Roles = "admin")]
-        public async Task<IActionResult> CreateGenre([FromBody] GenreViewModel model)
+        public async Task<IActionResult> CreateGenre(GenreViewModel model)
         {
             var genre = await _genreService.Create(model.ToDTO());
 
