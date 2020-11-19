@@ -10,6 +10,8 @@ namespace PG.Services.DTOs
 
         public int Duration { get; set; }
 
+        public int Rank { get; set; }
+
         public string Picture { get; set; }
 
         public string UserId { get; set; }

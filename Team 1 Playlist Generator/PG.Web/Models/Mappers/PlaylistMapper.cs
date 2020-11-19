@@ -17,6 +17,7 @@ namespace PG.Web.Models.Mappers
                 UserId = playlistDTO.UserId,
                 Title = playlistDTO.Title,
                 Duration = playlistDTO.Duration,
+                Rank = playlistDTO.Rank,
                 DurationInHours = time.ToString(@"hh\:mm\:ss"),
                 Picture = playlistDTO.Picture,
                 Songs = playlistDTO.PlaylistsSongs.Select(x => x.Song.ToDTO().ToViewModel()).ToList()

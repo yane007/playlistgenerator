@@ -2874,3 +2874,133 @@ System.Text.Json.JsonException: The input does not contain any JSON tokens. Expe
 11/19/2020 12:12:35 HTTP "GET" "/Playlists" responded 200 in 29.4216 ms
 11/19/2020 12:12:43 HTTP "GET" "/Playlists/Playlist/2" responded 200 in 31.9015 ms
 11/19/2020 12:12:44 HTTP "GET" "/Playlists" responded 200 in 27.5661 ms
+11/19/2020 18:12:07 Application starting up
+11/19/2020 18:12:11 - Getting index page -
+11/19/2020 18:12:12 HTTP "GET" "/" responded 200 in 1818.0757 ms
+11/19/2020 18:12:14 HTTP "GET" "/Playlists/Create" responded 200 in 87.2146 ms
+11/19/2020 18:12:14 HTTP "GET" "/Playlists/Create/ws" responded 200 in 30.3878 ms
+11/19/2020 18:12:31 Playlist with title 'Koda9' has been created.
+11/19/2020 18:21:03 Application starting up
+11/19/2020 18:21:05 - Getting index page -
+11/19/2020 18:21:06 HTTP "GET" "/" responded 200 in 1504.4949 ms
+11/19/2020 18:21:09 HTTP "GET" "/Playlists/Create" responded 200 in 94.9699 ms
+11/19/2020 18:21:09 HTTP "GET" "/Playlists/Create/ws" responded 200 in 28.6879 ms
+11/19/2020 18:21:32 Playlist with title 'Koda10' has been created.
+11/19/2020 18:22:41 Application starting up
+11/19/2020 18:22:43 - Getting index page -
+11/19/2020 18:22:44 HTTP "GET" "/" responded 200 in 1523.9889 ms
+11/19/2020 18:22:46 HTTP "GET" "/Playlists/Create" responded 200 in 90.1433 ms
+11/19/2020 18:22:46 HTTP "GET" "/Playlists/Create/ws" responded 200 in 28.2321 ms
+11/19/2020 18:22:59 Playlist with title 'Koda11' has been created.
+11/19/2020 18:23:02 HTTP "POST" "/Playlists/Create" responded 302 in 4521.6568 ms
+11/19/2020 18:23:02 HTTP "GET" "/Playlists" responded 200 in 38.9072 ms
+11/19/2020 18:30:21 Application starting up
+11/19/2020 18:30:22 - Getting index page -
+11/19/2020 18:30:24 HTTP "GET" "/" responded 200 in 1283.6505 ms
+11/19/2020 18:30:25 HTTP "GET" "/Playlists/Create" responded 200 in 73.5061 ms
+11/19/2020 18:30:25 HTTP "GET" "/Playlists/Create/ws" responded 200 in 23.2289 ms
+11/19/2020 18:30:37 Playlist with title 'Koda12' has been created.
+11/19/2020 18:30:37 HTTP "POST" "/Playlists/Create" responded 302 in 2100.4267 ms
+11/19/2020 18:30:37 HTTP "GET" "/Playlists" responded 200 in 30.6539 ms
+11/19/2020 18:30:43 HTTP "GET" "/Playlists/Create" responded 200 in 12.2044 ms
+11/19/2020 18:30:43 HTTP "GET" "/Playlists/Create/ws" responded 200 in 5.1909 ms
+11/19/2020 18:30:58 Playlist with title 'Koda13' has been created.
+11/19/2020 18:30:58 HTTP "POST" "/Playlists/Create" responded 302 in 1997.0581 ms
+11/19/2020 18:30:58 HTTP "GET" "/Playlists" responded 200 in 19.3780 ms
+11/19/2020 18:31:16 HTTP "GET" "/Playlists/Playlist/2" responded 200 in 28.1350 ms
+11/19/2020 18:31:17 HTTP "GET" "/Playlists" responded 200 in 27.4712 ms
+11/19/2020 18:31:18 HTTP "GET" "/Playlists/Playlist/2" responded 200 in 6.9878 ms
+11/19/2020 18:31:22 HTTP "GET" "/Playlists" responded 200 in 17.3702 ms
+11/19/2020 18:32:31 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 30.1772 ms
+11/19/2020 18:32:33 HTTP "GET" "/Playlists/Create" responded 200 in 8.9706 ms
+11/19/2020 18:32:33 HTTP "GET" "/Playlists/Create/ws" responded 200 in 5.4833 ms
+11/19/2020 18:32:34 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 19.9400 ms
+11/19/2020 18:32:36 HTTP "GET" "/Playlists" responded 200 in 14.5307 ms
+11/19/2020 18:32:37 - Getting index page -
+11/19/2020 18:32:37 HTTP "GET" "/" responded 200 in 20.8843 ms
+11/19/2020 18:37:55 Application starting up
+11/19/2020 18:37:56 - Getting index page -
+11/19/2020 18:37:57 HTTP "GET" "/" responded 200 in 1291.3091 ms
+11/19/2020 18:37:59 HTTP "GET" "/Playlists" responded 200 in 57.9074 ms
+11/19/2020 18:38:00 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 48.1072 ms
+11/19/2020 18:38:08 HTTP "GET" "/Playlists" responded 200 in 25.9985 ms
+11/19/2020 18:38:12 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 42.3228 ms
+11/19/2020 18:38:14 HTTP "GET" "/Playlists/Create" responded 200 in 48.4084 ms
+11/19/2020 18:38:14 HTTP "GET" "/Playlists/Create/ws" responded 200 in 7.0071 ms
+11/19/2020 18:38:29 HTTP "POST" "/Playlists/Create" responded 500 in 822.9616 ms
+System.ArgumentException: Playlist with title 'Koda13' already exists.
+   at PG.Services.PlaylistService.Create(PlaylistDTO playlistDTO) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 48
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 166
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/19/2020 18:38:29 An unhandled exception has occurred while executing the request.
+System.ArgumentException: Playlist with title 'Koda13' already exists.
+   at PG.Services.PlaylistService.Create(PlaylistDTO playlistDTO) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 48
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 166
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/19/2020 18:38:32 HTTP "GET" "/Playlists/Create" responded 200 in 7.6537 ms
+11/19/2020 18:38:32 HTTP "GET" "/Playlists/Create/ws" responded 200 in 3.6077 ms
+11/19/2020 18:38:39 Playlist with title 'Koda14' has been created.
+11/19/2020 18:38:39 HTTP "POST" "/Playlists/Create" responded 302 in 3280.4368 ms
+11/19/2020 18:38:39 HTTP "GET" "/Playlists" responded 200 in 20.0904 ms
+11/19/2020 18:38:42 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 17.8034 ms
+11/19/2020 18:39:07 HTTP "GET" "/Playlists/Playlist/16" responded 200 in 28.1304 ms
+11/19/2020 18:39:12 HTTP "GET" "/Playlists/Playlist/16" responded 200 in 6.9506 ms
+11/19/2020 18:39:12 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 16.5703 ms
+11/19/2020 18:39:46 Application starting up
+11/19/2020 18:39:48 - Getting index page -
+11/19/2020 18:39:49 HTTP "GET" "/" responded 200 in 1291.7514 ms
+11/19/2020 18:39:52 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 62.1591 ms
+11/19/2020 18:39:54 HTTP "GET" "/Playlists" responded 200 in 48.3848 ms
+11/19/2020 18:39:57 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 31.7352 ms
+11/19/2020 18:40:16 Application starting up
+11/19/2020 18:40:18 - Getting index page -
+11/19/2020 18:40:19 HTTP "GET" "/" responded 200 in 1221.7410 ms
+11/19/2020 18:40:20 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 63.8819 ms
+11/19/2020 18:42:09 Application starting up
+11/19/2020 18:42:10 - Getting index page -
+11/19/2020 18:42:11 HTTP "GET" "/" responded 200 in 1229.3499 ms
+11/19/2020 18:42:12 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 136.6210 ms
+11/19/2020 18:42:21 Application starting up
+11/19/2020 18:42:22 - Getting index page -
+11/19/2020 18:42:23 HTTP "GET" "/" responded 200 in 1209.2427 ms
+11/19/2020 18:42:24 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 70.3843 ms
+11/19/2020 18:47:19 Application starting up
+11/19/2020 18:47:20 - Getting index page -
+11/19/2020 18:47:21 HTTP "GET" "/" responded 200 in 1255.9439 ms
+11/19/2020 18:47:27 HTTP "GET" "/Playlists/Create" responded 200 in 74.6587 ms
+11/19/2020 18:47:27 HTTP "GET" "/Playlists/Create/ws" responded 200 in 23.0908 ms
