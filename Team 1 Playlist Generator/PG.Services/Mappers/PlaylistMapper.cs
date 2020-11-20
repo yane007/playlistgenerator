@@ -16,6 +16,7 @@ namespace PG.Services.Mappers
                 UserId = playlist.UserId,
                 Title = playlist.Title,
                 Duration = playlist.Duration,
+                Rank = playlist.Rank,
                 Picture = playlist.Picture,
                 PlaylistsSongs = playlist.PlaylistsSongs,
             };
@@ -28,6 +29,7 @@ namespace PG.Services.Mappers
                 UserId = playlistDTO.UserId,
                 Title = playlistDTO.Title,
                 Duration = playlistDTO.Duration,
+                Rank = playlistDTO.Rank,
                 Picture = playlistDTO.Picture,
                 PlaylistsSongs = playlistDTO.PlaylistsSongs,
             };

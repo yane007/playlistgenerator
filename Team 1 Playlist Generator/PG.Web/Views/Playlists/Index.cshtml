@@ -18,22 +18,16 @@
 
     else
     {
-
-
         <div class="wrapper">
 
             @foreach (var item in Model)
             {
-                <a class="list-group" asp-controller="Playlists" asp-action="Playlist" asp-route-id="@item.Id">@item.Title <br/> @item.DurationInHours</a>
+                <a class="list-group" asp-controller="Playlists" asp-action="Playlist"
+                   asp-route-id="@item.Id">@item.Title <br /> @item.DurationInHours <br /> @item.Rank</a>
             }
 
         </div>
     }
-    <!--
-        grid-template-columns: 1fr 1fr 1fr;
-
-        grid-template-columns: repeat(3, 1fr);
-    -->
 
     <style>
         .wrapper {
@@ -52,13 +46,14 @@
             color: black;
             text-decoration: none;
             margin-bottom: 3vh;
+            border-radius: 5px;
         }
 
-        .list-group:hover {
-            font-weight: 800;
-            color: black;
-            text-decoration: none;
-        }
+            .list-group:hover {
+                font-weight: 800;
+                color: black;
+                text-decoration: none;
+            }
     </style>
 
 

@@ -14,6 +14,8 @@ namespace PG.Web.Models
 
         public int Duration { get; set; }
 
+        public int Rank { get; set; }
+
         public string DurationInHours { get; set; }
 
         public int Fans { get; set; }

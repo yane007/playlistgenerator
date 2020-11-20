@@ -169,23 +169,20 @@ namespace PG.Services
             int allowedOffsetMore = 5 * 60; // 5 Min +
             int allowedOffsetLess = 5 * 60; // 5 Min -
 
-
-            int genresSelected = 0;
-
+            //TODO: да се приемат колкото и да са
+            var listGenres = new List<Tuple<string, int>>
+            {
+                new Tuple<string, int> ("metal", metalPercentagee),
+                new Tuple<string, int> ("rock", rockPercentagee),
+                new Tuple<string, int> ("pop", popPercentagee),
+            };
 
             //Проверяваме колко genres са селектирани.
-            genresSelected = CheckSelectedGenres(metalPercentagee, rockPercentagee, popPercentagee);
+            int genresSelected = CheckSelectedGenres(listGenres);
 
+            //Лист от имената на всеки жанр, офсетите им, и процентите им.
+            List<Tuple<string, int[], double>> namesOffsetsAndPercentages = SetOffsets(listGenres, allowedOffsetMore, allowedOffsetLess, genresSelected);
 
-            //Сетваме колко процента от тоталните секунди се падат за всеки genre.
-            int[] offsetsMeteal = SetOffsets(metalPercentagee, allowedOffsetMore, allowedOffsetLess, genresSelected);
-            int[] offsetsRock = SetOffsets(rockPercentagee, allowedOffsetMore, allowedOffsetLess, genresSelected);
-            int[] offsetsPop = SetOffsets(popPercentagee, allowedOffsetMore, allowedOffsetLess, genresSelected);
-
-
-            double metalPercentage = metalPercentagee / 100.0;
-            double rockPercentage = rockPercentagee / 100.0;
-            double popPercentage = popPercentagee / 100.0;
 
             bool useTopTracks = topTracks;
             bool allowSameArtist = sameArtist;
@@ -194,66 +191,67 @@ namespace PG.Services
 
             if (useTopTracks && allowSameArtist)
             {
-                var metalSongs = GetGenreSongs(offsetsMeteal, "metal", true);
-                var metal = ExtractSongs(tripTime, offsetsMeteal[0], offsetsMeteal[1], metalPercentage, metalSongs);
+                foreach (var item in namesOffsetsAndPercentages)
+                {
+                    var genreSongs = GetGenreSongs(item.Item2, item.Item1, true);
+                    var extractedSongs = ExtractSongs(tripTime, item.Item2[0], item.Item2[1], item.Item3, genreSongs);
 
-                var rockSongs = GetGenreSongs(offsetsMeteal, "rock", true);
-                var rock = ExtractSongs(tripTime, offsetsRock[0], offsetsRock[1], rockPercentage, rockSongs);
-
-                var popSongs = GetGenreSongs(offsetsMeteal, "pop", true);
-                var pop = ExtractSongs(tripTime, offsetsPop[0], offsetsPop[1], popPercentage, popSongs);
-
-                AddSongsToPlaylist(finalPlaylist, metal, rock, pop);
+                    foreach (var song in extractedSongs)
+                    {
+                        finalPlaylist.Add(song);
+                    }
+                }
 
                 Shuffle(finalPlaylist);
             }
             else if (useTopTracks && allowSameArtist == false)
             {
-                var metalSongs = GetGenreSongs(offsetsMeteal, "metal", true);
-                List<Song> metal = ExtractSongsUniqueArtist(tripTime, offsetsMeteal[0], offsetsMeteal[1], metalPercentage, metalSongs);
+                foreach (var item in namesOffsetsAndPercentages)
+                {
+                    var genreSongs = GetGenreSongs(item.Item2, item.Item1, true);
+                    var extractedSongs = ExtractSongsUniqueArtist(tripTime, item.Item2[0], item.Item2[1], item.Item3, genreSongs);
 
-                var rockSongs = GetGenreSongs(offsetsMeteal, "rock", true);
-                List<Song> rock = ExtractSongsUniqueArtist(tripTime, offsetsRock[0], offsetsRock[1], rockPercentage, rockSongs);
-
-                var popSongs = GetGenreSongs(offsetsMeteal, "pop", true);
-                List<Song> pop = ExtractSongsUniqueArtist(tripTime, offsetsPop[0], offsetsPop[1], popPercentage, popSongs);
-
-                AddSongsToPlaylist(finalPlaylist, metal, rock, pop);
+                    foreach (var song in extractedSongs)
+                    {
+                        finalPlaylist.Add(song);
+                    }
+                }
 
                 Shuffle(finalPlaylist);
             }
             else if (useTopTracks == false && allowSameArtist)
             {
-                var metalSongs = GetGenreSongs(offsetsMeteal, "metal", false);
-                List<Song> metal = ExtractSongs(tripTime, offsetsMeteal[0], offsetsMeteal[1], metalPercentage, metalSongs);
+                foreach (var item in namesOffsetsAndPercentages)
+                {
+                    var genreSongs = GetGenreSongs(item.Item2, item.Item1, false);
+                    var extractedSongs = ExtractSongs(tripTime, item.Item2[0], item.Item2[1], item.Item3, genreSongs);
 
-                var rockSongs = GetGenreSongs(offsetsMeteal, "rock", false);
-                List<Song> rock = ExtractSongs(tripTime, offsetsRock[0], offsetsRock[1], rockPercentage, rockSongs);
-
-                var popSongs = GetGenreSongs(offsetsMeteal, "pop", false);
-                List<Song> pop = ExtractSongs(tripTime, offsetsPop[0], offsetsPop[1], popPercentage, popSongs);
-
-                AddSongsToPlaylist(finalPlaylist, metal, rock, pop);
+                    foreach (var song in extractedSongs)
+                    {
+                        finalPlaylist.Add(song);
+                    }
+                }
 
                 Shuffle(finalPlaylist);
             }
             else
             {
-                var metalSongs = GetGenreSongs(offsetsMeteal, "metal", false);
-                List<Song> metal = ExtractSongsUniqueArtist(tripTime, offsetsMeteal[0], offsetsMeteal[1], metalPercentage, metalSongs);
+                foreach (var item in namesOffsetsAndPercentages)
+                {
+                    var genreSongs = GetGenreSongs(item.Item2, item.Item1, false);
+                    var extractedSongs = ExtractSongsUniqueArtist(tripTime, item.Item2[0], item.Item2[1], item.Item3, genreSongs);
 
-                var rockSongs = GetGenreSongs(offsetsMeteal, "rock", false);
-                List<Song> rock = ExtractSongsUniqueArtist(tripTime, offsetsRock[0], offsetsRock[1], rockPercentage, rockSongs);
-
-                var popSongs = GetGenreSongs(offsetsMeteal, "pop", false);
-                List<Song> pop = ExtractSongsUniqueArtist(tripTime, offsetsPop[0], offsetsPop[1], popPercentage, popSongs);
-
-                AddSongsToPlaylist(finalPlaylist, metal, rock, pop);
+                    foreach (var song in extractedSongs)
+                    {
+                        finalPlaylist.Add(song);
+                    }
+                }
 
                 Shuffle(finalPlaylist);
             }
 
             int realTotalDuration = 0;
+            int totalRank = 0;
             foreach (var song in finalPlaylist)
             {
                 var relation = new PlaylistsSongs() { SongId = song.Id, PlaylistId = databasePlaylist.Id };
@@ -263,15 +261,19 @@ namespace PG.Services
                 song.PlaylistsSongs.Add(relation);
 
                 realTotalDuration += song.Duration;
+                totalRank += song.Rank;
             }
 
             databasePlaylist.Duration = realTotalDuration;
             databasePlaylist.UserId = user.Id;
+            databasePlaylist.Rank = totalRank / finalPlaylist.Count();
+
 
             user.Playlists.Add(databasePlaylist);
 
             await _context.SaveChangesAsync();
         }
+
 
 
 
@@ -373,30 +375,6 @@ namespace PG.Services
 
 
         /// <summary>
-        /// Adds all songs to a List
-        /// </summary>
-        /// <param name="playlistWithSongs">List where all songs will go</param>
-        /// <param name="metal">List of metal songs to be added</param>
-        /// <param name="rock">List of rock songs to be added</param>
-        /// <param name="pop">List of pop songs to be added</param>
-        private static void AddSongsToPlaylist(List<Song> playlistWithSongs, List<Song> metal, List<Song> rock, List<Song> pop)
-        {
-            foreach (var item in metal)
-            {
-                playlistWithSongs.Add(item);
-            }
-            foreach (var item in rock)
-            {
-                playlistWithSongs.Add(item);
-            }
-            foreach (var item in pop)
-            {
-                playlistWithSongs.Add(item);
-            }
-        }
-
-
-        /// <summary>
         /// Get all songs of given genre.
         /// </summary>
         /// <param name="offsets">If 0, returns emty list.</param>
@@ -419,53 +397,58 @@ namespace PG.Services
         }
 
 
+
         /// <summary>
         /// Sets how many seconds offset a genre has
         /// </summary>
-        /// <param name="percentage">If 0, returns {0, 0}</param>
-        /// <param name="allowedOffsetMore"></param>
-        /// <param name="allowedOffsetLess"></param>
-        /// <param name="genre"></param>
+        /// <param name="listGenres"></param>
+        /// <param name="allowedOffsetMore">How much less time is allowed a playlist to be</param>
+        /// <param name="allowedOffsetLess">How much more time is allowed a playlist to be</param>
+        /// <param name="selectedGenres">How any genres are selected</param>
         /// <returns></returns>
-        private static int[] SetOffsets(int percentage, int allowedOffsetMore, int allowedOffsetLess, int genre)
+        private List<Tuple<string, int[], double>> SetOffsets(List<Tuple<string, int>> listGenres, 
+            int allowedOffsetMore, int allowedOffsetLess, int selectedGenres)
         {
-            int[] offcets = { 0, 0 };
-            if (percentage != 0)
+            var toReturn = new List<Tuple<string, int[], double>>();
+
+            foreach (var item in listGenres)
             {
-                offcets[0] = allowedOffsetLess / genre;
-                offcets[1] = allowedOffsetMore / genre;
+                int[] offcets = { 0, 0 };
+                if (item.Item2 != 0)
+                {
+                    offcets[0] = allowedOffsetLess / selectedGenres;
+                    offcets[1] = allowedOffsetMore / selectedGenres;
+                }
+                toReturn.Add(new Tuple<string, int[], double>(item.Item1, offcets, item.Item2 / 100.0) );
             }
 
-            return offcets;
+
+            return toReturn;
         }
 
 
         /// <summary>
         /// Returns how many genres are selected
         /// </summary>
-        /// <param name="metalPercentagee"></param>
-        /// <param name="rockPercentagee"></param>
-        /// <param name="popPercentagee"></param>
+        /// <param name="data"></param>
         /// <returns></returns>
-        private static int CheckSelectedGenres(int metalPercentagee, int rockPercentagee, int popPercentagee)
+        private static int CheckSelectedGenres(List<Tuple<string, int>> data)
         {
             int genresSelected = 0;
 
-            if (metalPercentagee != 0)
+            foreach (var item in data)
             {
-                genresSelected++;
-            }
-            if (rockPercentagee != 0)
-            {
-                genresSelected++;
-            }
-            if (popPercentagee != 0)
-            {
-                genresSelected++;
+                if (item.Item2 != 0)
+                {
+                    genresSelected++;
+                }
             }
 
             return genresSelected;
         }
+
+
+
 
 
         //Това не трябва да е тука, ама за сега ще е :D

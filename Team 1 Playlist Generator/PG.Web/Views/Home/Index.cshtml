@@ -16,13 +16,12 @@
     }
     else
     {
-
-
         <div class="wrapper">
 
             @foreach (var item in Model)
             {
-                <a class="list-group" asp-controller="Playlists" asp-action="Playlist" asp-route-id="@item.Id">@item.Title <br /> @item.DurationInHours</a>
+                <a class="list-group" asp-controller="Playlists" asp-action="Playlist"
+                   asp-route-id="@item.Id">@item.Title <br /> @item.DurationInHours <br /> @item.Rank</a>
             }
 
         </div>
@@ -44,6 +43,8 @@
             text-align: center;
             color: black;
             text-decoration: none;
+            margin-bottom: 3vh;
+            border-radius: 5px;
         }
 
             .list-group:hover {
