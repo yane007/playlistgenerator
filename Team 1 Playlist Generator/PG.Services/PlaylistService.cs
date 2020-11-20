@@ -406,13 +406,20 @@ namespace PG.Services
         /// <param name="allowedOffsetLess">How much more time is allowed a playlist to be</param>
         /// <param name="selectedGenres">How any genres are selected</param>
         /// <returns></returns>
-        private static int[] SetOffsets(int percentage, int allowedOffsetMore, int allowedOffsetLess, int genre)
+        private List<Tuple<string, int[], double>> SetOffsets(List<Tuple<string, int>> listGenres,
+            int allowedOffsetMore, int allowedOffsetLess, int selectedGenres)
         {
-            int[] offcets = { 0, 0 };
-            if (percentage != 0)
+            var toReturn = new List<Tuple<string, int[], double>>();
+
+            foreach (var item in listGenres)
             {
-                offcets[0] = allowedOffsetLess / genre;
-                offcets[1] = allowedOffsetMore / genre;
+                int[] offcets = { 0, 0 };
+                if (item.Item2 != 0)
+                {
+                    offcets[0] = allowedOffsetLess / selectedGenres;
+                    offcets[1] = allowedOffsetMore / selectedGenres;
+                }
+                toReturn.Add(new Tuple<string, int[], double>(item.Item1, offcets, item.Item2 / 100.0));
             }
 
 

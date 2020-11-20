@@ -3201,3 +3201,15 @@ System.ArgumentException: Playlist with title 'Koda13' already exists.
 11/20/2020 14:49:41 HTTP "GET" "/swagger/index.html" responded 200 in 1.8095 ms
 11/20/2020 14:49:41 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 59.3439 ms
 11/20/2020 14:49:44 HTTP "GET" "/api/Artists" responded 401 in 12.1693 ms
+11/20/2020 14:59:24 Application starting up
+11/20/2020 14:59:28 - Getting index page -
+11/20/2020 14:59:30 HTTP "GET" "/" responded 200 in 2791.9547 ms
+11/20/2020 14:59:32 HTTP "GET" "/Identity/Account/Login" responded 200 in 199.5501 ms
+11/20/2020 14:59:35 User logged in.
+11/20/2020 14:59:35 HTTP "POST" "/Identity/Account/Login" responded 302 in 240.5957 ms
+11/20/2020 14:59:35 - Getting index page -
+11/20/2020 14:59:35 HTTP "GET" "/" responded 200 in 52.0172 ms
+11/20/2020 14:59:38 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 66.5553 ms
+11/20/2020 14:59:39 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 29.4124 ms
+11/20/2020 14:59:39 - Getting index page -
+11/20/2020 14:59:39 HTTP "GET" "/" responded 200 in 110.8966 ms
