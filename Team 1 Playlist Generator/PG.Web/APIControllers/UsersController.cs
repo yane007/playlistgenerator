@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PG.Services.Contract;
 using PG.Services.Mappers;
@@ -11,20 +12,22 @@ namespace PG.Web.APIControllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    [Authorize(AuthenticationSchemes = "Identity.Application," + JwtBearerDefaults.AuthenticationScheme)]
     public class UsersController : ControllerBase
     {
-        private readonly IUserService userService;
+        private readonly IUserService _userService;
 
         public UsersController(IUserService userService)
         {
-            this.userService = userService;
+            _userService = userService;
         }
 
-        [HttpGet("all")]
-        public IActionResult Get()
+        [HttpGet("")]
+        public async Task<IActionResult> Get()
         {
-            var users = this.userService.GetAll();
+            var users = await _userService.GetAllRegularUsers();
+            var usersViewModels = users.Select(x => x.ToViewModel());
+
             return Ok(users);
         }
 
@@ -32,7 +35,7 @@ namespace PG.Web.APIControllers
         [AllowAnonymous]
         public IActionResult Authenticate([FromBody] LoginCredentialsModel model)
         {
-            var user = this.userService.Authenticate(model.Username, model.Password);
+            var user = _userService.Authenticate(model.Username, model.Password);
 
             if (user == null)
             {

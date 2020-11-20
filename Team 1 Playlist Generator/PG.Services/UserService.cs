@@ -5,7 +5,9 @@ using Microsoft.IdentityModel.Tokens;
 using PG.Data.Context;
 using PG.Models;
 using PG.Services.Contract;
+using PG.Services.DTOs;
 using PG.Services.Helpers;
+using PG.Services.Mappers;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -29,21 +31,27 @@ namespace PG.Services
             _appSettings = appSettings.Value;
         }
 
-        public async Task<IList<User>> GetAllRegularUsers()
+        public async Task<IList<UserDTO>> GetAllRegularUsers()
         {
-            var regularUsers = new List<User>();
-            var users = this._context.Users.ToList();
-
-            foreach (var u in users)
-            {
-                if (!await this._userManager.IsInRoleAsync(u, "Admin"))
-                {
-                    regularUsers.Add(u);
-                }
-            }
-
-            return regularUsers;
+            return await _context.Users.Where(x => x.IsDeleted == false)
+                                        .Select(x => x.ToDTO())
+                                        .ToListAsync();
         }
+        //public async Task<IList<UserDTO>> GetAllRegularUsers()
+        //{
+        //    var regularUsers = new List<UserDTO>();
+        //    var users = this._context.Users.Select(x => x.ToDTO()).ToList();
+
+        //    foreach (var u in users)
+        //    {
+        //        if (!await this._userManager.IsInRoleAsync(u, "Admin"))
+        //        {
+        //            regularUsers.Add(u);
+        //        }
+        //    }
+
+        //    return regularUsers;
+        //}
 
         public async Task<bool> BanUserById(string id)
         {

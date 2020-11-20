@@ -3004,3 +3004,200 @@ System.ArgumentException: Playlist with title 'Koda13' already exists.
 11/19/2020 18:47:21 HTTP "GET" "/" responded 200 in 1255.9439 ms
 11/19/2020 18:47:27 HTTP "GET" "/Playlists/Create" responded 200 in 74.6587 ms
 11/19/2020 18:47:27 HTTP "GET" "/Playlists/Create/ws" responded 200 in 23.0908 ms
+11/20/2020 12:22:10 Application starting up
+11/20/2020 12:22:16 - Getting index page -
+11/20/2020 12:22:16 HTTP "GET" "/" responded 200 in 2755.0898 ms
+11/20/2020 12:22:28 HTTP "GET" "/api/songs" responded 200 in 375.2143 ms
+11/20/2020 12:23:43 Application starting up
+11/20/2020 12:23:47 - Getting index page -
+11/20/2020 12:23:49 HTTP "GET" "/" responded 200 in 2447.1739 ms
+11/20/2020 12:23:54 HTTP "GET" "/api/songs" responded 200 in 333.1418 ms
+11/20/2020 12:23:59 - Getting index page -
+11/20/2020 12:23:59 HTTP "GET" "/" responded 200 in 142.4183 ms
+11/20/2020 12:24:00 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 85.0122 ms
+11/20/2020 12:24:00 - Getting index page -
+11/20/2020 12:24:00 HTTP "GET" "/" responded 200 in 103.3363 ms
+11/20/2020 12:24:03 HTTP "GET" "/api/songs" responded 401 in 94.2927 ms
+11/20/2020 12:24:10 Application starting up
+11/20/2020 12:24:13 - Getting index page -
+11/20/2020 12:24:15 HTTP "GET" "/" responded 200 in 2525.5057 ms
+11/20/2020 12:25:04 HTTP "GET" "/api/songs" responded 401 in 393.9845 ms
+11/20/2020 12:25:25 HTTP "POST" "/api/users/authenticate" responded 200 in 237.6748 ms
+11/20/2020 12:25:37 HTTP "GET" "/api/artists" responded 401 in 6.8529 ms
+11/20/2020 12:25:42 HTTP "GET" "/api/artists" responded 401 in 3.9978 ms
+11/20/2020 12:26:11 HTTP "GET" "/api/artists" responded 401 in 13.0782 ms
+11/20/2020 12:26:25 HTTP "POST" "/api/users/authenticate" responded 200 in 38.9780 ms
+11/20/2020 12:26:30 HTTP "POST" "/api/users/authenticate" responded 200 in 29.4296 ms
+11/20/2020 12:26:40 HTTP "POST" "/api/users/authenticate" responded 400 in 47.4147 ms
+11/20/2020 12:26:42 HTTP "POST" "/api/users/authenticate" responded 200 in 39.6456 ms
+11/20/2020 12:27:02 HTTP "GET" "/api/users/all" responded 401 in 2.3611 ms
+11/20/2020 12:29:05 Application starting up
+11/20/2020 12:29:09 - Getting index page -
+11/20/2020 12:29:12 HTTP "GET" "/" responded 200 in 2671.0106 ms
+11/20/2020 12:29:13 HTTP "GET" "/Identity/Account/Login" responded 200 in 199.4466 ms
+11/20/2020 12:29:16 User logged in.
+11/20/2020 12:29:16 HTTP "POST" "/Identity/Account/Login" responded 302 in 241.2350 ms
+11/20/2020 12:29:16 - Getting index page -
+11/20/2020 12:29:16 HTTP "GET" "/" responded 200 in 34.0201 ms
+11/20/2020 12:29:21 HTTP "GET" "/Playlists" responded 200 in 56.3065 ms
+11/20/2020 12:29:23 HTTP "GET" "/Playlists" responded 200 in 46.7299 ms
+11/20/2020 12:29:24 - Getting index page -
+11/20/2020 12:29:24 HTTP "GET" "/" responded 200 in 73.9598 ms
+11/20/2020 12:29:41 HTTP "GET" "/api/users/all" responded 200 in 304.3028 ms
+11/20/2020 12:29:50 HTTP "GET" "/api/artists" responded 200 in 142.0569 ms
+11/20/2020 12:36:31 Application starting up
+11/20/2020 12:36:35 - Getting index page -
+11/20/2020 12:36:37 HTTP "GET" "/" responded 200 in 2706.8072 ms
+11/20/2020 12:36:40 HTTP "GET" "/Identity/Account/Login" responded 200 in 180.8942 ms
+11/20/2020 12:36:43 User logged in.
+11/20/2020 12:36:43 HTTP "POST" "/Identity/Account/Login" responded 302 in 261.7584 ms
+11/20/2020 12:36:43 - Getting index page -
+11/20/2020 12:36:43 HTTP "GET" "/" responded 200 in 50.2066 ms
+11/20/2020 12:36:47 - Getting index page -
+11/20/2020 12:36:47 HTTP "GET" "/" responded 200 in 94.6429 ms
+11/20/2020 12:36:48 HTTP "GET" "/Identity/Account/Register" responded 200 in 48.0381 ms
+11/20/2020 12:36:48 HTTP "GET" "/Identity/Account/Login" responded 200 in 9.4912 ms
+11/20/2020 12:40:31 Application starting up
+11/20/2020 12:40:35 - Getting index page -
+11/20/2020 12:40:38 HTTP "GET" "/" responded 200 in 3026.7539 ms
+11/20/2020 12:40:45 HTTP "GET" "/api/artists" responded 200 in 582.8240 ms
+11/20/2020 12:40:50 HTTP "GET" "/api/songs" responded 401 in 17.7004 ms
+11/20/2020 12:40:55 HTTP "GET" "/api/artists" responded 200 in 89.5346 ms
+11/20/2020 12:41:02 HTTP "GET" "/api/songs" responded 401 in 4.8379 ms
+11/20/2020 12:41:17 HTTP "GET" "/api/genres" responded 401 in 3.3130 ms
+11/20/2020 12:41:21 HTTP "GET" "/api/artists" responded 200 in 56.7679 ms
+11/20/2020 12:41:49 HTTP "POST" "/api/users/authenticate" responded 400 in 128.2654 ms
+11/20/2020 12:41:53 HTTP "POST" "/api/users/authenticate" responded 200 in 52.8306 ms
+11/20/2020 12:42:18 HTTP "GET" "/api/artists" responded 200 in 98.6202 ms
+11/20/2020 12:42:23 HTTP "GET" "/api/songs" responded 401 in 3.1531 ms
+11/20/2020 12:42:27 HTTP "GET" "/api/artists" responded 200 in 97.8852 ms
+11/20/2020 12:46:42 Application starting up
+11/20/2020 12:46:46 - Getting index page -
+11/20/2020 12:46:48 HTTP "GET" "/" responded 200 in 2686.1662 ms
+11/20/2020 12:46:50 HTTP "GET" "/Identity/Account/Login" responded 200 in 204.7176 ms
+11/20/2020 12:46:51 HTTP "GET" "/Identity/Account/Register" responded 200 in 43.8659 ms
+11/20/2020 12:46:53 HTTP "GET" "/Identity/Account/Login" responded 200 in 12.1181 ms
+11/20/2020 12:46:56 User logged in.
+11/20/2020 12:46:56 HTTP "POST" "/Identity/Account/Login" responded 302 in 277.4324 ms
+11/20/2020 12:46:56 - Getting index page -
+11/20/2020 12:46:56 HTTP "GET" "/" responded 200 in 59.6569 ms
+11/20/2020 12:47:34 Application starting up
+11/20/2020 12:47:39 - Getting index page -
+11/20/2020 12:47:41 HTTP "GET" "/" responded 200 in 2516.6599 ms
+11/20/2020 12:49:31 Application starting up
+11/20/2020 12:49:35 - Getting index page -
+11/20/2020 12:49:37 HTTP "GET" "/" responded 200 in 2616.3569 ms
+11/20/2020 13:03:26 Application starting up
+11/20/2020 13:03:30 - Getting index page -
+11/20/2020 13:03:32 HTTP "GET" "/" responded 200 in 2497.4427 ms
+11/20/2020 13:03:34 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 104.5566 ms
+11/20/2020 13:03:34 - Getting index page -
+11/20/2020 13:03:34 HTTP "GET" "/" responded 200 in 167.9762 ms
+11/20/2020 13:03:35 HTTP "GET" "/Identity/Account/Login" responded 200 in 115.7873 ms
+11/20/2020 13:03:39 HTTP "POST" "/Identity/Account/Login" responded 200 in 76.1742 ms
+11/20/2020 13:03:47 User logged in.
+11/20/2020 13:03:47 HTTP "POST" "/Identity/Account/Login" responded 302 in 153.6555 ms
+11/20/2020 13:03:47 - Getting index page -
+11/20/2020 13:03:47 HTTP "GET" "/" responded 200 in 32.1501 ms
+11/20/2020 13:03:50 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 4.7771 ms
+11/20/2020 13:03:50 - Getting index page -
+11/20/2020 13:03:50 HTTP "GET" "/" responded 200 in 37.7886 ms
+11/20/2020 13:03:52 HTTP "GET" "/Playlists" responded 200 in 56.5669 ms
+11/20/2020 13:03:58 HTTP "GET" "/Identity/Account/Login" responded 200 in 11.9778 ms
+11/20/2020 13:04:00 User logged in.
+11/20/2020 13:04:00 HTTP "POST" "/Identity/Account/Login" responded 302 in 38.0094 ms
+11/20/2020 13:04:00 - Getting index page -
+11/20/2020 13:04:00 HTTP "GET" "/" responded 200 in 31.5509 ms
+11/20/2020 13:04:03 HTTP "GET" "/Playlists" responded 200 in 45.5220 ms
+11/20/2020 13:04:04 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 47.8273 ms
+11/20/2020 13:04:06 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 24.6182 ms
+11/20/2020 13:04:09 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 10.0900 ms
+11/20/2020 13:04:09 - Getting index page -
+11/20/2020 13:04:10 HTTP "GET" "/" responded 200 in 39.5872 ms
+11/20/2020 13:04:11 HTTP "GET" "/Identity/Account/Register" responded 200 in 51.5206 ms
+11/20/2020 13:04:20 User created a new account with password.
+11/20/2020 13:04:20 HTTP "POST" "/Identity/Account/Register" responded 302 in 340.6848 ms
+11/20/2020 13:04:20 - Getting index page -
+11/20/2020 13:04:20 HTTP "GET" "/" responded 200 in 14.1773 ms
+11/20/2020 13:04:24 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 16.9869 ms
+11/20/2020 13:04:25 HTTP "GET" "/Playlists" responded 200 in 15.1360 ms
+11/20/2020 13:04:27 HTTP "GET" "/Playlists/Create" responded 200 in 66.5383 ms
+11/20/2020 13:04:27 HTTP "GET" "/Playlists/Create/ws" responded 200 in 55.0701 ms
+11/20/2020 13:04:44 Playlist with title 'fasfas' has been created.
+11/20/2020 13:04:44 HTTP "POST" "/Playlists/Create" responded 302 in 2263.6293 ms
+11/20/2020 13:04:44 HTTP "GET" "/Playlists" responded 200 in 16.8061 ms
+11/20/2020 13:04:50 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 23.4902 ms
+11/20/2020 13:04:51 - Getting index page -
+11/20/2020 13:04:51 HTTP "GET" "/" responded 200 in 31.7879 ms
+11/20/2020 13:04:56 HTTP "GET" "/api/songs" responded 200 in 340.9241 ms
+11/20/2020 13:05:00 HTTP "GET" "/api/artists" responded 200 in 193.5174 ms
+11/20/2020 13:05:07 - Getting index page -
+11/20/2020 13:05:07 HTTP "GET" "/" responded 200 in 35.4743 ms
+11/20/2020 13:05:14 HTTP "GET" "/api/artists" responded 200 in 150.0936 ms
+11/20/2020 13:05:18 HTTP "GET" "/api/songs" responded 401 in 8.9077 ms
+11/20/2020 13:07:14 Application starting up
+11/20/2020 13:07:19 - Getting index page -
+11/20/2020 13:07:21 HTTP "GET" "/" responded 200 in 2448.0364 ms
+11/20/2020 13:07:24 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 87.6230 ms
+11/20/2020 13:07:24 - Getting index page -
+11/20/2020 13:07:24 HTTP "GET" "/" responded 200 in 86.2800 ms
+11/20/2020 13:07:24 HTTP "GET" "/Identity/Account/Login" responded 200 in 105.7483 ms
+11/20/2020 13:07:28 User logged in.
+11/20/2020 13:07:28 HTTP "POST" "/Identity/Account/Login" responded 302 in 185.8065 ms
+11/20/2020 13:07:28 - Getting index page -
+11/20/2020 13:07:28 HTTP "GET" "/" responded 200 in 29.6964 ms
+11/20/2020 13:07:32 HTTP "GET" "/api/songs" responded 200 in 377.2020 ms
+11/20/2020 13:07:36 HTTP "GET" "/api/users" responded 404 in 5.5940 ms
+11/20/2020 13:07:45 HTTP "GET" "/api/artists" responded 200 in 96.0656 ms
+11/20/2020 13:08:42 HTTP "GET" "/api/users/all" responded 200 in 51.3141 ms
+11/20/2020 13:10:19 - Getting index page -
+11/20/2020 13:10:19 HTTP "GET" "/" responded 200 in 37.8872 ms
+11/20/2020 13:10:23 HTTP "GET" "/api/songs" responded 200 in 220.5527 ms
+11/20/2020 13:10:31 HTTP "GET" "/api/songs" responded 401 in 12.9592 ms
+11/20/2020 13:10:49 HTTP "POST" "/api/users/authenticate" responded 200 in 85.0950 ms
+11/20/2020 13:11:16 HTTP "GET" "/api/artists" responded 401 in 1.5479 ms
+11/20/2020 13:11:21 HTTP "GET" "/api/artists" responded 200 in 121.1534 ms
+11/20/2020 13:11:35 HTTP "GET" "/api/artists" responded 200 in 89.9162 ms
+11/20/2020 14:38:29 Application starting up
+11/20/2020 14:38:35 - Getting index page -
+11/20/2020 14:38:36 HTTP "GET" "/" responded 200 in 2804.2773 ms
+11/20/2020 14:38:40 HTTP "GET" "/api/songs" responded 200 in 432.7323 ms
+11/20/2020 14:38:43 HTTP "GET" "/api/users" responded 200 in 72.3471 ms
+11/20/2020 14:38:57 HTTP "GET" "/api/users/all" responded 404 in 2.7951 ms
+11/20/2020 14:38:59 HTTP "GET" "/api/users" responded 200 in 15.3934 ms
+11/20/2020 14:40:03 Application starting up
+11/20/2020 14:40:08 - Getting index page -
+11/20/2020 14:40:10 HTTP "GET" "/" responded 200 in 3598.1773 ms
+11/20/2020 14:40:17 HTTP "GET" "/Playlists" responded 200 in 82.2399 ms
+11/20/2020 14:40:18 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 67.9778 ms
+11/20/2020 14:40:19 HTTP "GET" "/Playlists" responded 200 in 127.2957 ms
+11/20/2020 14:40:33 HTTP "POST" "/api/artists" responded 403 in 260.4782 ms
+11/20/2020 14:40:37 HTTP "POST" "/api/artists" responded 403 in 9.3215 ms
+11/20/2020 14:40:46 HTTP "POST" "/api/artists" responded 403 in 3.4335 ms
+11/20/2020 14:40:50 HTTP "POST" "/api/users/authenticate" responded 400 in 165.9163 ms
+11/20/2020 14:40:53 HTTP "POST" "/api/users/authenticate" responded 200 in 64.3926 ms
+11/20/2020 14:41:02 HTTP "GET" "/api/users/" responded 200 in 41.9372 ms
+11/20/2020 14:41:27 HTTP "GET" "/api/songs" responded 200 in 229.8496 ms
+11/20/2020 14:41:34 HTTP "GET" "/api/users/all" responded 404 in 1.0456 ms
+11/20/2020 14:41:41 HTTP "GET" "/api/users/alsla" responded 404 in 0.5886 ms
+11/20/2020 14:41:45 HTTP "GET" "/api/users" responded 200 in 17.9396 ms
+11/20/2020 14:48:38 Application starting up
+11/20/2020 14:48:43 - Getting index page -
+11/20/2020 14:48:46 HTTP "GET" "/" responded 200 in 3475.7944 ms
+11/20/2020 14:48:54 HTTP "GET" "/api/users" responded 200 in 509.3950 ms
+11/20/2020 14:49:04 HTTP "GET" "/api/songs" responded 200 in 276.9560 ms
+11/20/2020 14:49:14 HTTP "GET" "/swagger" responded 301 in 1.3397 ms
+11/20/2020 14:49:14 HTTP "GET" "/swagger/index.html" responded 200 in 43.6194 ms
+11/20/2020 14:49:14 HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 28.7438 ms
+11/20/2020 14:49:14 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 26.0615 ms
+11/20/2020 14:49:15 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 55.0601 ms
+11/20/2020 14:49:16 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 154.1704 ms
+11/20/2020 14:49:19 HTTP "GET" "/api/Artists" responded 200 in 113.3959 ms
+11/20/2020 14:49:37 - Getting index page -
+11/20/2020 14:49:37 HTTP "GET" "/" responded 200 in 63.1160 ms
+11/20/2020 14:49:39 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 89.8392 ms
+11/20/2020 14:49:39 - Getting index page -
+11/20/2020 14:49:39 HTTP "GET" "/" responded 200 in 24.3704 ms
+11/20/2020 14:49:41 HTTP "GET" "/swagger/index.html" responded 200 in 1.8095 ms
+11/20/2020 14:49:41 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 59.3439 ms
+11/20/2020 14:49:44 HTTP "GET" "/api/Artists" responded 401 in 12.1693 ms
