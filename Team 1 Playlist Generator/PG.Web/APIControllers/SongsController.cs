@@ -11,6 +11,7 @@ namespace PG.Web.APIControllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class SongsController : ControllerBase
     {
         private readonly ISongService _songService;

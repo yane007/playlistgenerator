@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -6,12 +7,15 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using PG.Data.Context;
 using PG.Models;
 using PG.Services;
 using PG.Services.Contract;
+using PG.Services.Helpers;
 using PG.Web.Services;
 using Serilog;
+using System.Text;
 
 namespace PG.Web
 {
@@ -31,6 +35,31 @@ namespace PG.Web
                 (x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
                 .AddJsonOptions(opts => opts.JsonSerializerOptions.PropertyNamingPolicy = null);
 
+            // configure strongly typed settings objects
+            var appSettingsSection = this.Configuration.GetSection("AppSettings");
+            services.Configure<AppSettings>(appSettingsSection);
+
+            // configure jwt authentication
+            var appSettings = appSettingsSection.Get<AppSettings>();
+            var key = Encoding.ASCII.GetBytes(appSettings.Secret);
+
+            services.AddAuthentication(config =>
+            {
+                //config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                config.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+                .AddJwtBearer(config =>
+                {
+                    config.RequireHttpsMetadata = false;
+                    config.SaveToken = true;
+                    config.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new SymmetricSecurityKey(key),
+                        ValidateIssuer = false,
+                        ValidateAudience = false
+                    };
+                });
 
             services.AddScoped<IDeezerAPIService, DeezerAPIService>();
             services.AddScoped<IArtistService, ArtistService>();
@@ -39,6 +68,7 @@ namespace PG.Web
             services.AddScoped<ISongService, SongService>();
             services.AddScoped<IBingMapsAPIService, BingMapsAPIService>();
             services.AddTransient<IEmailSender, EmailSender>();
+            services.AddScoped<IUserService, UserService>();
 
             services.AddDefaultIdentity<User>(options =>
             {

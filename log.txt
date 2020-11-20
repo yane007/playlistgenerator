@@ -2874,3 +2874,789 @@ System.Text.Json.JsonException: The input does not contain any JSON tokens. Expe
 11/19/2020 12:12:35 HTTP "GET" "/Playlists" responded 200 in 29.4216 ms
 11/19/2020 12:12:43 HTTP "GET" "/Playlists/Playlist/2" responded 200 in 31.9015 ms
 11/19/2020 12:12:44 HTTP "GET" "/Playlists" responded 200 in 27.5661 ms
+11/19/2020 19:21:51 Application starting up
+11/19/2020 19:21:56 - Getting index page -
+11/19/2020 19:22:12 An error occurred using the connection to database '"PlaylistGeneratorDB"' on server '"DESKTOP-TFOST68"'.
+11/19/2020 19:22:12 An exception occurred while iterating over the results of a query for context type '"PG.Data.Context.PGDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (53): The network path was not found.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20"
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (53): The network path was not found.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+11/19/2020 19:22:13 HTTP "GET" "/" responded 500 in 17540.7091 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (53): The network path was not found.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at PG.Services.DeezerAPIService.ExtractSongsFromPlaylists(String genreString) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\DeezerAPIService.cs:line 32
+   at PG.Web.Controllers.HomeController.GetAlbumAsync() in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\HomeController.cs:line 69
+   at PG.Web.Controllers.HomeController.Index() in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\HomeController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+11/19/2020 19:22:13 An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (53): The network path was not found.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at PG.Services.DeezerAPIService.ExtractSongsFromPlaylists(String genreString) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\DeezerAPIService.cs:line 32
+   at PG.Web.Controllers.HomeController.GetAlbumAsync() in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\HomeController.cs:line 69
+   at PG.Web.Controllers.HomeController.Index() in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\HomeController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+11/19/2020 19:26:03 Application starting up
+11/19/2020 19:26:08 - Getting index page -
+11/19/2020 19:28:19 HTTP "GET" "/" responded 200 in 131902.4112 ms
+11/19/2020 19:28:25 HTTP "GET" "/Identity/Account/Login" responded 200 in 192.0432 ms
+11/19/2020 19:28:27 HTTP "GET" "/Identity/Account/Register" responded 200 in 66.7207 ms
+11/19/2020 19:28:41 Application starting up
+11/19/2020 19:28:44 - Getting index page -
+11/19/2020 19:28:47 HTTP "GET" "/" responded 200 in 3206.2971 ms
+11/19/2020 19:29:37 Application starting up
+11/19/2020 19:29:40 - Getting index page -
+11/19/2020 19:29:44 HTTP "GET" "/" responded 200 in 3575.3062 ms
+11/19/2020 19:29:47 HTTP "GET" "/Identity/Account/Login" responded 200 in 185.5611 ms
+11/19/2020 19:29:51 HTTP "POST" "/Identity/Account/Login" responded 200 in 164.8354 ms
+11/19/2020 19:29:52 HTTP "GET" "/Identity/Account/Register" responded 200 in 52.4727 ms
+11/19/2020 19:29:57 User created a new account with password.
+11/19/2020 19:29:57 HTTP "POST" "/Identity/Account/Register" responded 302 in 799.5179 ms
+11/19/2020 19:29:57 - Getting index page -
+11/19/2020 19:29:57 HTTP "GET" "/" responded 200 in 29.6295 ms
+11/19/2020 19:30:06 HTTP "GET" "/Playlists/Create" responded 200 in 133.1651 ms
+11/19/2020 19:30:06 HTTP "GET" "/Playlists/Create/ws" responded 200 in 79.3718 ms
+11/19/2020 19:30:07 HTTP "GET" "/Playlists" responded 200 in 45.0256 ms
+11/19/2020 19:30:08 HTTP "GET" "/Playlists/Create" responded 200 in 16.7239 ms
+11/19/2020 19:30:08 HTTP "GET" "/Playlists/Create/ws" responded 200 in 10.0921 ms
+11/19/2020 19:30:18 Playlist with title 'Mega Qkiq' has been created.
+11/19/2020 19:30:18 HTTP "POST" "/Playlists/Create" responded 302 in 2332.2094 ms
+11/19/2020 19:30:18 HTTP "GET" "/Playlists" responded 200 in 26.8113 ms
+11/19/2020 19:30:24 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 49.1292 ms
+11/19/2020 19:30:29 HTTP "GET" "/Playlists" responded 200 in 28.9152 ms
+11/19/2020 19:30:30 HTTP "GET" "/Playlists/Create" responded 200 in 15.6944 ms
+11/19/2020 19:30:30 HTTP "GET" "/Playlists/Create/ws" responded 200 in 9.6112 ms
+11/19/2020 19:30:41 Playlist with title 'Eehee' has been created.
+11/19/2020 19:30:41 HTTP "POST" "/Playlists/Create" responded 302 in 1860.6593 ms
+11/19/2020 19:30:41 HTTP "GET" "/Playlists" responded 200 in 12.3408 ms
+11/19/2020 19:30:44 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 32.9741 ms
+11/19/2020 19:30:47 HTTP "GET" "/Playlists/Create" responded 200 in 14.0772 ms
+11/19/2020 19:30:47 HTTP "GET" "/Playlists/Create/ws" responded 200 in 13.3536 ms
+11/19/2020 19:31:05 Playlist with title 'Pop-Only' has been created.
+11/19/2020 19:31:05 HTTP "POST" "/Playlists/Create" responded 302 in 1856.4761 ms
+11/19/2020 19:31:05 HTTP "GET" "/Playlists" responded 200 in 16.2672 ms
+11/19/2020 19:31:08 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 15.6691 ms
+11/19/2020 19:31:09 - Getting index page -
+11/19/2020 19:31:09 HTTP "GET" "/" responded 200 in 25.6634 ms
+11/19/2020 19:31:20 HTTP "GET" "/Playlists/Create" responded 200 in 20.6667 ms
+11/19/2020 19:31:20 HTTP "GET" "/Playlists/Create/ws" responded 200 in 10.9221 ms
+11/19/2020 19:31:39 HTTP "POST" "/Playlists/Create" responded 500 in 1872.5685 ms
+System.ArgumentException: Playlist with title 'Eehee' already exists.
+   at PG.Services.PlaylistService.Create(PlaylistDTO playlistDTO) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 48
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 166
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/19/2020 19:31:39 An unhandled exception has occurred while executing the request.
+System.ArgumentException: Playlist with title 'Eehee' already exists.
+   at PG.Services.PlaylistService.Create(PlaylistDTO playlistDTO) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 48
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 166
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/19/2020 19:31:45 HTTP "GET" "/Playlists/Create" responded 200 in 12.4413 ms
+11/19/2020 19:31:45 HTTP "GET" "/Playlists/Create/ws" responded 200 in 59.8880 ms
+11/19/2020 19:31:47 HTTP "GET" "/Playlists/Create" responded 200 in 13.8937 ms
+11/19/2020 19:31:47 HTTP "GET" "/Playlists/Create/ws" responded 200 in 32.1692 ms
+11/19/2020 19:31:56 Playlist with title 'gsagas' has been created.
+11/19/2020 19:31:56 HTTP "POST" "/Playlists/Create" responded 302 in 2959.4754 ms
+11/19/2020 19:31:56 HTTP "GET" "/Playlists" responded 200 in 18.0007 ms
+11/19/2020 19:32:01 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 15.0978 ms
+11/19/2020 19:32:03 - Getting index page -
+11/19/2020 19:32:03 HTTP "GET" "/" responded 200 in 30.1471 ms
+11/19/2020 19:32:06 - Getting index page -
+11/19/2020 19:32:06 HTTP "GET" "/" responded 200 in 30.8573 ms
+11/19/2020 19:32:06 HTTP "GET" "/Playlists" responded 200 in 11.0588 ms
+11/19/2020 19:32:07 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 11.7081 ms
+11/19/2020 19:32:08 HTTP "GET" "/Playlists/Create" responded 200 in 12.2946 ms
+11/19/2020 19:32:08 HTTP "GET" "/Playlists/Create/ws" responded 200 in 10.1277 ms
+11/19/2020 19:32:10 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 13.7919 ms
+11/19/2020 19:32:22 Application starting up
+11/19/2020 19:32:26 - Getting index page -
+11/19/2020 19:32:29 HTTP "GET" "/" responded 200 in 3436.6325 ms
+11/19/2020 19:32:34 HTTP "GET" "/Playlists/Create" responded 200 in 146.3216 ms
+11/19/2020 19:32:34 HTTP "GET" "/Playlists/Create/ws" responded 200 in 73.4700 ms
+11/19/2020 19:32:51 Playlist with title 'Alelele-POP' has been created.
+11/19/2020 19:32:52 HTTP "POST" "/Playlists/Create" responded 302 in 2445.2943 ms
+11/19/2020 19:32:52 HTTP "GET" "/Playlists" responded 200 in 30.1693 ms
+11/19/2020 19:32:56 HTTP "GET" "/Playlists/Create" responded 200 in 34.5112 ms
+11/19/2020 19:32:56 HTTP "GET" "/Playlists/Create/ws" responded 200 in 34.0077 ms
+11/19/2020 19:32:58 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 31.4765 ms
+11/19/2020 19:33:00 HTTP "GET" "/Playlists/Playlist/5" responded 200 in 57.4174 ms
+11/19/2020 19:33:01 - Getting index page -
+11/19/2020 19:33:01 HTTP "GET" "/" responded 200 in 26.2333 ms
+11/19/2020 19:33:08 HTTP "GET" "/Playlists/Create" responded 200 in 19.4121 ms
+11/19/2020 19:33:08 HTTP "GET" "/Playlists/Create/ws" responded 200 in 28.8028 ms
+11/19/2020 19:33:26 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 17.6841 ms
+11/19/2020 19:33:29 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 21.3867 ms
+11/19/2020 19:33:29 HTTP "GET" "/Playlists" responded 200 in 18.7517 ms
+11/19/2020 19:33:44 - Getting index page -
+11/19/2020 19:33:44 HTTP "GET" "/" responded 200 in 32.8987 ms
+11/19/2020 19:33:56 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 57.7900 ms
+11/19/2020 19:33:56 - Getting index page -
+11/19/2020 19:33:56 HTTP "GET" "/" responded 200 in 21.5401 ms
+11/19/2020 19:33:57 HTTP "GET" "/Identity/Account/Register" responded 200 in 74.2000 ms
+11/19/2020 19:34:01 HTTP "GET" "/Identity/Account/Login" responded 200 in 79.2264 ms
+11/19/2020 19:34:05 User logged in.
+11/19/2020 19:34:05 HTTP "POST" "/Identity/Account/Login" responded 302 in 170.5631 ms
+11/19/2020 19:34:05 - Getting index page -
+11/19/2020 19:34:05 HTTP "GET" "/" responded 200 in 24.1224 ms
+11/19/2020 19:34:07 HTTP "GET" "/Playlists/Create" responded 200 in 16.2267 ms
+11/19/2020 19:34:08 HTTP "GET" "/Playlists/Create/ws" responded 200 in 13.6348 ms
+11/19/2020 19:34:27 Playlist with title 'Pernishko' has been created.
+11/19/2020 19:34:27 HTTP "POST" "/Playlists/Create" responded 302 in 2225.2639 ms
+11/19/2020 19:34:27 HTTP "GET" "/Playlists" responded 200 in 51.1001 ms
+11/19/2020 19:34:37 HTTP "GET" "/Playlists/Create" responded 200 in 15.8948 ms
+11/19/2020 19:34:37 HTTP "GET" "/Playlists/Create/ws" responded 200 in 9.6281 ms
+11/19/2020 19:34:55 Playlist with title '100pop' has been created.
+11/19/2020 19:34:55 HTTP "POST" "/Playlists/Create" responded 302 in 1649.5457 ms
+11/19/2020 19:34:55 HTTP "GET" "/Playlists" responded 200 in 16.2166 ms
+11/19/2020 19:34:59 HTTP "GET" "/Playlists/Create" responded 200 in 13.6995 ms
+11/19/2020 19:34:59 HTTP "GET" "/Playlists/Create/ws" responded 200 in 9.4280 ms
+11/19/2020 19:35:08 Playlist with title 'sfasfasfa' has been created.
+11/19/2020 19:35:08 HTTP "POST" "/Playlists/Create" responded 302 in 1668.2430 ms
+11/19/2020 19:35:08 HTTP "GET" "/Playlists" responded 200 in 16.1906 ms
+11/19/2020 19:35:10 HTTP "GET" "/Playlists/Create" responded 200 in 28.4377 ms
+11/19/2020 19:35:11 HTTP "GET" "/Playlists/Create/ws" responded 200 in 86.6659 ms
+11/19/2020 19:35:19 Playlist with title 'fsasfsafs' has been created.
+11/19/2020 19:35:19 HTTP "POST" "/Playlists/Create" responded 302 in 685.2200 ms
+11/19/2020 19:35:19 HTTP "GET" "/Playlists" responded 200 in 51.9731 ms
+11/19/2020 19:35:24 - Getting index page -
+11/19/2020 19:35:24 HTTP "GET" "/" responded 200 in 30.2040 ms
+11/19/2020 20:14:24 Application starting up
+11/19/2020 20:14:30 - Getting index page -
+11/19/2020 20:14:34 HTTP "GET" "/" responded 200 in 4402.0367 ms
+11/19/2020 20:15:54 Failed executing DbCommand ("20"ms) [Parameters=["@__username_0='?' (Size = 256), @__password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsDeleted], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Token], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE ([a].[UserName] = @__username_0) AND ([a].[PasswordHash] = @__password_1)"
+11/19/2020 20:15:54 An exception occurred while iterating over the results of a query for context type '"PG.Data.Context.PGDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Token'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:2b96ed8f-ccc5-4112-a635-e406d0e50343
+Error Number:207,State:1,Class:16"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Token'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:2b96ed8f-ccc5-4112-a635-e406d0e50343
+Error Number:207,State:1,Class:16
+11/19/2020 20:18:05 Application starting up
+11/19/2020 20:18:09 - Getting index page -
+11/19/2020 20:20:29 HTTP "GET" "/" responded 200 in 139769.2944 ms
+11/19/2020 20:20:46 HTTP "GET" "/Identity/Account/Login" responded 200 in 205.9475 ms
+11/19/2020 20:20:49 User logged in.
+11/19/2020 20:20:49 HTTP "POST" "/Identity/Account/Login" responded 302 in 247.1604 ms
+11/19/2020 20:20:49 - Getting index page -
+11/19/2020 20:20:49 HTTP "GET" "/" responded 200 in 22.8496 ms
+11/19/2020 20:20:51 - Getting index page -
+11/19/2020 20:20:51 HTTP "GET" "/" responded 200 in 26.0259 ms
+11/19/2020 20:20:53 HTTP "GET" "/Identity/Account/Login" responded 200 in 15.2923 ms
+11/19/2020 20:20:57 User logged in.
+11/19/2020 20:20:57 HTTP "POST" "/Identity/Account/Login" responded 302 in 31.8697 ms
+11/19/2020 20:20:57 - Getting index page -
+11/19/2020 20:20:57 HTTP "GET" "/" responded 200 in 14.4311 ms
+11/19/2020 20:21:01 - Getting index page -
+11/19/2020 20:21:01 HTTP "GET" "/" responded 200 in 22.9711 ms
+11/19/2020 20:21:02 HTTP "GET" "/Identity/Account/Register" responded 200 in 57.0960 ms
+11/19/2020 20:21:03 HTTP "GET" "/Playlists" responded 200 in 29.3934 ms
+11/19/2020 20:21:03 - Getting index page -
+11/19/2020 20:21:03 HTTP "GET" "/" responded 200 in 20.0507 ms
+11/19/2020 20:21:04 HTTP "GET" "/Identity/Account/Login" responded 200 in 11.1458 ms
+11/19/2020 20:21:06 HTTP "GET" "/Identity/Account/Register" responded 200 in 8.7739 ms
+11/19/2020 20:21:11 User created a new account with password.
+11/19/2020 20:21:11 HTTP "POST" "/Identity/Account/Register" responded 302 in 238.0993 ms
+11/19/2020 20:21:11 - Getting index page -
+11/19/2020 20:21:11 HTTP "GET" "/" responded 200 in 13.6941 ms
+11/19/2020 20:21:14 - Getting index page -
+11/19/2020 20:21:14 HTTP "GET" "/" responded 200 in 18.6795 ms
+11/19/2020 20:21:18 - Getting index page -
+11/19/2020 20:21:18 HTTP "GET" "/" responded 200 in 18.4898 ms
+11/19/2020 20:21:18 - Getting index page -
+11/19/2020 20:21:18 HTTP "GET" "/" responded 200 in 21.5100 ms
+11/19/2020 20:21:23 HTTP "GET" "/Identity/Account/Register" responded 200 in 9.7118 ms
+11/19/2020 20:21:24 HTTP "GET" "/Playlists" responded 200 in 12.4295 ms
+11/19/2020 20:21:25 - Getting index page -
+11/19/2020 20:21:25 HTTP "GET" "/" responded 200 in 22.5769 ms
+11/19/2020 20:21:25 HTTP "GET" "/Identity/Account/Login" responded 200 in 6.8300 ms
+11/19/2020 20:21:27 HTTP "GET" "/Identity/Account/Register" responded 200 in 6.1129 ms
+11/19/2020 20:21:35 User "e5bac521-11e4-4de6-9402-d2e8b16fc29d" validation failed: "DuplicateUserName".
+11/19/2020 20:21:35 HTTP "POST" "/Identity/Account/Register" responded 200 in 27.6153 ms
+11/19/2020 20:21:37 HTTP "GET" "/Identity/Account/Login" responded 200 in 6.6974 ms
+11/19/2020 20:21:41 User logged in.
+11/19/2020 20:21:41 HTTP "POST" "/Identity/Account/Login" responded 302 in 29.9654 ms
+11/19/2020 20:21:41 - Getting index page -
+11/19/2020 20:21:41 HTTP "GET" "/" responded 200 in 18.5653 ms
+11/19/2020 20:21:58 HTTP "POST" "/api/users/authenticate" responded 400 in 182.0728 ms
+11/19/2020 20:45:40 Application starting up
+11/19/2020 20:45:44 - Getting index page -
+11/19/2020 20:45:48 HTTP "GET" "/" responded 200 in 3925.2868 ms
+11/19/2020 20:45:52 HTTP "GET" "/Identity/Account/Login" responded 200 in 186.9383 ms
+11/19/2020 20:45:57 User logged in.
+11/19/2020 20:45:57 HTTP "POST" "/Identity/Account/Login" responded 302 in 337.1126 ms
+11/19/2020 20:45:57 - Getting index page -
+11/19/2020 20:45:57 HTTP "GET" "/" responded 200 in 24.9896 ms
+11/19/2020 20:46:04 HTTP "POST" "/api/users/authenticate" responded 200 in 466.8718 ms
+11/19/2020 20:48:01 HTTP "GET" "/api/users/all" responded 200 in 107.5522 ms
+11/19/2020 20:55:02 Application starting up
+11/19/2020 20:55:06 - Getting index page -
+11/19/2020 20:55:10 HTTP "GET" "/" responded 200 in 3764.2703 ms
+11/19/2020 20:55:16 HTTP "GET" "/api/users/all" responded 200 in 403.9626 ms
+11/19/2020 20:55:35 HTTP "GET" "/api/songs" responded 200 in 417.8712 ms
+11/19/2020 20:55:43 HTTP "GET" "/api/users" responded 404 in 2.2275 ms
+11/19/2020 20:55:52 HTTP "GET" "/api/users/all" responded 200 in 15.8366 ms
+11/19/2020 20:56:02 HTTP "GET" "/api/users/all" responded 401 in 40.6772 ms
+11/19/2020 20:56:45 HTTP "POST" "/api/users/authenticate" responded 400 in 160.6533 ms
+11/19/2020 20:56:50 HTTP "POST" "/api/users/authenticate" responded 200 in 40.4556 ms
+11/20/2020 09:24:32 Application starting up
+11/20/2020 09:24:37 - Getting index page -
+11/20/2020 09:24:39 HTTP "GET" "/" responded 200 in 3014.8309 ms
+11/20/2020 09:24:48 HTTP "GET" "/api/songs" responded 200 in 560.2561 ms
+11/20/2020 09:24:59 HTTP "GET" "/api/users" responded 404 in 8.4657 ms
+11/20/2020 09:25:08 HTTP "GET" "/api/users/all" responded 401 in 16.7917 ms
+11/20/2020 09:26:03 Application starting up
+11/20/2020 09:26:07 - Getting index page -
+11/20/2020 09:26:11 HTTP "GET" "/" responded 200 in 3801.7442 ms
+11/20/2020 09:26:17 HTTP "GET" "/api/users" responded 404 in 5.6001 ms
+11/20/2020 09:26:21 HTTP "GET" "/api/users/all" responded 200 in 299.7048 ms
+11/20/2020 09:30:28 Application starting up
+11/20/2020 09:30:32 - Getting index page -
+11/20/2020 09:30:36 HTTP "GET" "/" responded 200 in 3959.3550 ms
+11/20/2020 09:30:38 HTTP "GET" "/api/songs" responded 401 in 24.6735 ms
+11/20/2020 09:30:41 HTTP "GET" "/api/artists" responded 401 in 10.3170 ms
+11/20/2020 09:30:59 Application starting up
+11/20/2020 09:31:04 - Getting index page -
+11/20/2020 09:31:07 HTTP "GET" "/" responded 200 in 2765.2144 ms
+11/20/2020 09:31:12 HTTP "GET" "/api/artists" responded 401 in 22.1667 ms
+11/20/2020 09:31:23 HTTP "GET" "/api/artists" responded 401 in 8.1435 ms
+11/20/2020 09:31:41 HTTP "GET" "/api/artists" responded 401 in 4.1940 ms
+11/20/2020 09:32:02 HTTP "POST" "/api/users/authenticate" responded 200 in 541.3967 ms
+11/20/2020 09:32:31 HTTP "GET" "/api/artists" responded 401 in 1.4207 ms
+11/20/2020 09:32:37 HTTP "GET" "/api/artists" responded 200 in 471.5003 ms
+11/20/2020 09:32:53 HTTP "GET" "/api/songs" responded 200 in 307.0505 ms
+11/20/2020 09:33:02 HTTP "GET" "/api/playlists" responded 200 in 31.3217 ms
+11/20/2020 09:33:12 - Getting index page -
+11/20/2020 09:33:12 HTTP "GET" "/" responded 200 in 42.3879 ms
+11/20/2020 09:33:15 HTTP "GET" "/Playlists" responded 200 in 41.2043 ms
+11/20/2020 09:33:16 - Getting index page -
+11/20/2020 09:33:16 HTTP "GET" "/" responded 200 in 19.5220 ms
+11/20/2020 09:33:16 HTTP "GET" "/Playlists" responded 200 in 9.8562 ms
+11/20/2020 09:33:18 HTTP "GET" "/Identity/Account/Login" responded 200 in 170.6389 ms
+11/20/2020 09:33:22 User logged in.
+11/20/2020 09:33:22 HTTP "POST" "/Identity/Account/Login" responded 302 in 186.1875 ms
+11/20/2020 09:33:22 - Getting index page -
+11/20/2020 09:33:22 HTTP "GET" "/" responded 200 in 19.1695 ms
+11/20/2020 09:33:25 HTTP "GET" "/Identity/Account/Login" responded 200 in 21.6901 ms
+11/20/2020 09:33:28 HTTP "GET" "/Identity/Account/Login" responded 200 in 9.6908 ms
+11/20/2020 09:33:29 HTTP "GET" "/Playlists" responded 200 in 14.3343 ms
+11/20/2020 09:33:30 - Getting index page -
+11/20/2020 09:33:31 HTTP "GET" "/" responded 200 in 28.9796 ms
+11/20/2020 09:33:41 HTTP "GET" "/Identity/Account/Login" responded 200 in 11.7179 ms
+11/20/2020 09:33:46 HTTP "GET" "/Identity/Account/Register" responded 200 in 48.3417 ms
+11/20/2020 09:33:52 User "d89cd3b1-99b6-433e-9377-37328bc0ee90" validation failed: "DuplicateUserName".
+11/20/2020 09:33:52 HTTP "POST" "/Identity/Account/Register" responded 200 in 85.6668 ms
+11/20/2020 09:33:56 HTTP "GET" "/Identity/Account/Login" responded 200 in 13.4864 ms
+11/20/2020 09:33:59 User logged in.
+11/20/2020 09:33:59 HTTP "POST" "/Identity/Account/Login" responded 302 in 33.2261 ms
+11/20/2020 09:33:59 - Getting index page -
+11/20/2020 09:33:59 HTTP "GET" "/" responded 200 in 19.5994 ms
+11/20/2020 09:35:55 HTTP "GET" "/Playlists" responded 200 in 18.8346 ms
+11/20/2020 09:35:56 HTTP "GET" "/Identity/Account/Login" responded 200 in 8.9277 ms
+11/20/2020 09:36:03 User logged in.
+11/20/2020 09:36:03 HTTP "POST" "/Identity/Account/Login" responded 302 in 41.7768 ms
+11/20/2020 09:36:03 - Getting index page -
+11/20/2020 09:36:03 HTTP "GET" "/" responded 200 in 24.1470 ms
+11/20/2020 09:36:16 - Getting index page -
+11/20/2020 09:36:16 HTTP "GET" "/" responded 200 in 24.6037 ms
+11/20/2020 09:36:58 HTTP "GET" "/Identity/Account/Login" responded 200 in 4.7877 ms
+11/20/2020 09:37:03 User logged in.
+11/20/2020 09:37:03 HTTP "POST" "/Identity/Account/Login" responded 302 in 41.4919 ms
+11/20/2020 09:37:03 - Getting index page -
+11/20/2020 09:37:03 HTTP "GET" "/" responded 200 in 41.5231 ms
+11/20/2020 09:40:20 Application starting up
+11/20/2020 09:41:43 Application starting up
+11/20/2020 09:41:47 - Getting index page -
+11/20/2020 09:41:49 HTTP "GET" "/" responded 200 in 2707.3665 ms
+11/20/2020 09:41:52 HTTP "GET" "/Identity/Account/Login" responded 200 in 195.2932 ms
+11/20/2020 09:41:56 User logged in.
+11/20/2020 09:41:56 HTTP "POST" "/Identity/Account/Login" responded 302 in 302.9622 ms
+11/20/2020 09:41:56 - Getting index page -
+11/20/2020 09:41:56 HTTP "GET" "/" responded 200 in 28.2596 ms
+11/20/2020 09:41:59 - Getting index page -
+11/20/2020 09:41:59 HTTP "GET" "/" responded 200 in 47.1252 ms
+11/20/2020 09:42:18 Application starting up
+11/20/2020 09:42:23 - Getting index page -
+11/20/2020 09:42:26 HTTP "GET" "/" responded 200 in 2877.7356 ms
+11/20/2020 09:42:29 HTTP "GET" "/Identity/Account/Login" responded 200 in 191.9544 ms
+11/20/2020 09:42:33 User logged in.
+11/20/2020 09:42:33 HTTP "POST" "/Identity/Account/Login" responded 302 in 335.6729 ms
+11/20/2020 09:42:33 - Getting index page -
+11/20/2020 09:42:33 HTTP "GET" "/" responded 200 in 29.6788 ms
+11/20/2020 09:42:36 HTTP "GET" "/Identity/Account/Register" responded 200 in 59.8522 ms
+11/20/2020 09:42:36 HTTP "GET" "/Playlists" responded 200 in 35.3936 ms
+11/20/2020 09:42:37 - Getting index page -
+11/20/2020 09:42:37 HTTP "GET" "/" responded 200 in 65.6244 ms
+11/20/2020 09:44:51 Application starting up
+11/20/2020 09:44:59 - Getting index page -
+11/20/2020 09:45:01 HTTP "GET" "/" responded 200 in 2642.9935 ms
+11/20/2020 09:45:02 HTTP "GET" "/Identity/Account/Login" responded 200 in 211.0035 ms
+11/20/2020 09:45:06 User logged in.
+11/20/2020 09:45:06 HTTP "POST" "/Identity/Account/Login" responded 302 in 230.0410 ms
+11/20/2020 09:45:06 - Getting index page -
+11/20/2020 09:45:06 HTTP "GET" "/" responded 200 in 22.4555 ms
+11/20/2020 09:45:09 - Getting index page -
+11/20/2020 09:45:09 HTTP "GET" "/" responded 200 in 68.2672 ms
+11/20/2020 09:45:10 HTTP "GET" "/Playlists" responded 200 in 30.9480 ms
+11/20/2020 09:45:11 HTTP "GET" "/Identity/Account/Register" responded 200 in 57.8148 ms
+11/20/2020 09:45:12 - Getting index page -
+11/20/2020 09:45:12 HTTP "GET" "/" responded 200 in 33.7503 ms
+11/20/2020 09:45:29 HTTP "GET" "/Identity/Account/Login" responded 200 in 20.2747 ms
+11/20/2020 09:45:34 User logged in.
+11/20/2020 09:45:34 HTTP "POST" "/Identity/Account/Login" responded 302 in 25.2207 ms
+11/20/2020 09:45:34 - Getting index page -
+11/20/2020 09:45:34 HTTP "GET" "/" responded 200 in 12.6102 ms
+11/20/2020 09:45:44 - Getting index page -
+11/20/2020 09:45:44 HTTP "GET" "/" responded 200 in 23.9868 ms
+11/20/2020 09:45:44 - Getting index page -
+11/20/2020 09:45:44 HTTP "GET" "/" responded 200 in 31.4908 ms
+11/20/2020 09:45:45 - Getting index page -
+11/20/2020 09:45:45 HTTP "GET" "/" responded 200 in 17.8590 ms
+11/20/2020 09:45:45 - Getting index page -
+11/20/2020 09:45:45 HTTP "GET" "/" responded 200 in 16.6556 ms
+11/20/2020 10:15:27 Application starting up
+11/20/2020 10:15:32 - Getting index page -
+11/20/2020 10:15:35 HTTP "GET" "/" responded 200 in 3919.3409 ms
+11/20/2020 10:15:37 HTTP "GET" "/Identity/Account/Login" responded 200 in 212.1653 ms
+11/20/2020 10:15:43 User logged in.
+11/20/2020 10:15:43 HTTP "POST" "/Identity/Account/Login" responded 302 in 326.6300 ms
+11/20/2020 10:15:43 - Getting index page -
+11/20/2020 10:15:43 HTTP "GET" "/" responded 200 in 36.5495 ms
+11/20/2020 10:27:27 Application starting up
+11/20/2020 10:27:34 - Getting index page -
+11/20/2020 10:27:36 HTTP "GET" "/" responded 200 in 3076.9453 ms
+11/20/2020 10:27:42 HTTP "GET" "/Identity/Account/Login" responded 200 in 202.3051 ms
+11/20/2020 10:27:46 HTTP "GET" "/Identity/Account/ForgotPassword" responded 200 in 54.1145 ms
+11/20/2020 10:27:48 HTTP "GET" "/Identity/Account/Login" responded 200 in 9.5681 ms
+11/20/2020 10:27:49 HTTP "GET" "/Identity/Account/Register?returnUrl=%2F" responded 200 in 65.0619 ms
+11/20/2020 10:28:06 User created a new account with password.
+11/20/2020 10:28:06 HTTP "POST" "/Identity/Account/Register?returnUrl=%2F" responded 302 in 905.7404 ms
+11/20/2020 10:28:06 - Getting index page -
+11/20/2020 10:28:06 HTTP "GET" "/" responded 200 in 92.2644 ms
+11/20/2020 10:28:11 HTTP "GET" "/Identity/Account/Login" responded 200 in 28.5839 ms
+11/20/2020 10:34:57 Application starting up
+11/20/2020 10:35:02 - Getting index page -
+11/20/2020 10:35:04 HTTP "GET" "/" responded 200 in 3363.8157 ms
+11/20/2020 10:35:07 HTTP "GET" "/Identity/Account/Login" responded 200 in 189.6616 ms
+11/20/2020 10:35:12 User logged in.
+11/20/2020 10:35:12 HTTP "POST" "/Identity/Account/Login" responded 302 in 260.7614 ms
+11/20/2020 10:35:12 - Getting index page -
+11/20/2020 10:35:12 HTTP "GET" "/" responded 200 in 22.2947 ms
+11/20/2020 10:35:19 HTTP "GET" "/Identity/Account/Register" responded 200 in 77.4099 ms
+11/20/2020 10:35:20 HTTP "GET" "/Identity/Account/Login" responded 200 in 16.3716 ms
+11/20/2020 10:35:21 - Getting index page -
+11/20/2020 10:35:21 HTTP "GET" "/" responded 200 in 33.5435 ms
+11/20/2020 10:54:46 Application starting up
+11/20/2020 10:54:51 - Getting index page -
+11/20/2020 10:54:53 HTTP "GET" "/" responded 200 in 2613.8967 ms
+11/20/2020 10:54:54 HTTP "GET" "/Identity/Account/Login" responded 200 in 182.8133 ms
+11/20/2020 10:54:58 User logged in.
+11/20/2020 10:54:58 HTTP "POST" "/Identity/Account/Login" responded 302 in 228.9737 ms
+11/20/2020 10:54:58 - Getting index page -
+11/20/2020 10:54:58 HTTP "GET" "/" responded 200 in 17.9530 ms
+11/20/2020 10:55:00 HTTP "GET" "/Identity/Account/Register" responded 200 in 60.0525 ms
+11/20/2020 10:55:01 HTTP "GET" "/Playlists" responded 200 in 27.8751 ms
+11/20/2020 10:55:01 - Getting index page -
+11/20/2020 10:55:01 HTTP "GET" "/" responded 200 in 60.5755 ms
+11/20/2020 10:55:37 Application starting up
+11/20/2020 10:55:41 - Getting index page -
+11/20/2020 10:55:44 HTTP "GET" "/" responded 200 in 3097.3545 ms
+11/20/2020 10:55:46 HTTP "GET" "/Identity/Account/Register" responded 200 in 189.8352 ms
+11/20/2020 10:55:51 HTTP "GET" "/Identity/Account/Login" responded 200 in 94.3830 ms
+11/20/2020 10:55:54 User logged in.
+11/20/2020 10:55:54 HTTP "POST" "/Identity/Account/Login" responded 302 in 225.4650 ms
+11/20/2020 10:55:54 - Getting index page -
+11/20/2020 10:55:54 HTTP "GET" "/" responded 200 in 29.6096 ms
+11/20/2020 10:55:56 HTTP "GET" "/Identity/Account/Register" responded 200 in 15.3286 ms
+11/20/2020 10:55:57 HTTP "GET" "/Identity/Account/Login" responded 200 in 19.7607 ms
+11/20/2020 10:56:00 HTTP "GET" "/Identity/Account/Register" responded 200 in 9.1025 ms
+11/20/2020 10:56:09 User created a new account with password.
+11/20/2020 10:56:09 HTTP "POST" "/Identity/Account/Register" responded 302 in 357.4600 ms
+11/20/2020 10:56:09 - Getting index page -
+11/20/2020 10:56:09 HTTP "GET" "/" responded 200 in 10.5797 ms
+11/20/2020 10:56:10 HTTP "GET" "/Identity/Account/Login" responded 200 in 12.5880 ms
+11/20/2020 11:01:03 Application starting up
+11/20/2020 11:01:09 - Getting index page -
+11/20/2020 11:01:11 HTTP "GET" "/" responded 200 in 3465.0690 ms
+11/20/2020 11:01:14 HTTP "GET" "/Identity/Account/Login" responded 200 in 204.9669 ms
+11/20/2020 11:01:17 User logged in.
+11/20/2020 11:01:17 HTTP "POST" "/Identity/Account/Login" responded 302 in 332.8882 ms
+11/20/2020 11:01:17 - Getting index page -
+11/20/2020 11:01:17 HTTP "GET" "/" responded 200 in 136.2603 ms
+11/20/2020 11:02:59 Application starting up
+11/20/2020 11:03:04 - Getting index page -
+11/20/2020 11:03:07 HTTP "GET" "/" responded 200 in 3232.5030 ms
+11/20/2020 11:03:08 HTTP "GET" "/Identity/Account/Login" responded 200 in 219.6221 ms
+11/20/2020 11:03:11 User logged in.
+11/20/2020 11:03:11 HTTP "POST" "/Identity/Account/Login" responded 302 in 333.3259 ms
+11/20/2020 11:03:11 - Getting index page -
+11/20/2020 11:03:11 HTTP "GET" "/" responded 200 in 36.2342 ms
+11/20/2020 11:11:21 Application starting up
+11/20/2020 11:11:25 - Getting index page -
+11/20/2020 11:11:27 HTTP "GET" "/" responded 200 in 2402.7443 ms
+11/20/2020 11:11:30 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 79.5916 ms
+11/20/2020 11:11:31 HTTP "GET" "/Playlists/Create" responded 200 in 210.1699 ms
+11/20/2020 11:11:31 HTTP "GET" "/Playlists/Create/ws" responded 200 in 102.7524 ms
+11/20/2020 11:11:32 - Getting index page -
+11/20/2020 11:11:32 HTTP "GET" "/" responded 200 in 48.1078 ms
+11/20/2020 11:11:56 Application starting up
+11/20/2020 11:12:00 - Getting index page -
+11/20/2020 11:12:02 HTTP "GET" "/" responded 200 in 2744.7652 ms
+11/20/2020 11:12:04 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 115.7041 ms
+11/20/2020 11:12:04 - Getting index page -
+11/20/2020 11:12:04 HTTP "GET" "/" responded 200 in 72.8304 ms
+11/20/2020 11:12:05 HTTP "GET" "/Identity/Account/Login" responded 200 in 131.0123 ms
+11/20/2020 11:12:08 User logged in.
+11/20/2020 11:12:08 HTTP "POST" "/Identity/Account/Login" responded 302 in 187.9783 ms
+11/20/2020 11:12:08 - Getting index page -
+11/20/2020 11:12:08 HTTP "GET" "/" responded 200 in 21.8935 ms
+11/20/2020 11:12:24 Application starting up
+11/20/2020 11:12:28 - Getting index page -
+11/20/2020 11:12:30 HTTP "GET" "/" responded 200 in 2622.3932 ms
+11/20/2020 11:12:32 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 109.7171 ms
+11/20/2020 11:12:32 - Getting index page -
+11/20/2020 11:12:32 HTTP "GET" "/" responded 200 in 65.9273 ms
+11/20/2020 11:12:33 HTTP "GET" "/Identity/Account/Login" responded 200 in 117.8355 ms
+11/20/2020 11:12:36 User logged in.
+11/20/2020 11:12:36 HTTP "POST" "/Identity/Account/Login" responded 302 in 177.3569 ms
+11/20/2020 11:12:36 - Getting index page -
+11/20/2020 11:12:36 HTTP "GET" "/" responded 200 in 18.6545 ms
+11/20/2020 11:14:11 Application starting up
+11/20/2020 11:14:14 - Getting index page -
+11/20/2020 11:14:17 HTTP "GET" "/" responded 200 in 2357.9548 ms
+11/20/2020 11:14:18 HTTP "GET" "/Identity/Account/Login" responded 200 in 174.4459 ms
+11/20/2020 11:14:21 User logged in.
+11/20/2020 11:14:21 HTTP "POST" "/Identity/Account/Login" responded 302 in 258.5362 ms
+11/20/2020 11:14:21 - Getting index page -
+11/20/2020 11:14:21 HTTP "GET" "/" responded 200 in 24.2238 ms
+11/20/2020 11:15:25 Application starting up
+11/20/2020 11:15:29 - Getting index page -
+11/20/2020 11:15:32 HTTP "GET" "/" responded 200 in 2401.4027 ms
+11/20/2020 11:15:33 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 107.2105 ms
+11/20/2020 11:15:33 - Getting index page -
+11/20/2020 11:15:34 HTTP "GET" "/" responded 200 in 75.9073 ms
+11/20/2020 11:15:34 HTTP "GET" "/Identity/Account/Login" responded 200 in 113.3634 ms
+11/20/2020 11:15:37 User logged in.
+11/20/2020 11:15:37 HTTP "POST" "/Identity/Account/Login" responded 302 in 182.2038 ms
+11/20/2020 11:15:37 - Getting index page -
+11/20/2020 11:15:37 HTTP "GET" "/" responded 200 in 23.0356 ms
+11/20/2020 11:18:58 Application starting up
+11/20/2020 11:19:04 - Getting index page -
+11/20/2020 11:19:07 HTTP "GET" "/" responded 200 in 3812.2833 ms
+11/20/2020 11:19:09 HTTP "GET" "/Identity/Account/Login" responded 200 in 238.4786 ms
+11/20/2020 11:19:15 User logged in.
+11/20/2020 11:19:15 HTTP "POST" "/Identity/Account/Login" responded 302 in 308.0058 ms
+11/20/2020 11:19:15 - Getting index page -
+11/20/2020 11:19:15 HTTP "GET" "/" responded 200 in 26.8736 ms
+11/20/2020 11:19:25 - Getting index page -
+11/20/2020 11:19:25 HTTP "GET" "/" responded 200 in 69.6821 ms
+11/20/2020 11:19:26 HTTP "GET" "/Playlists" responded 200 in 68.0162 ms
+11/20/2020 11:19:27 HTTP "GET" "/Identity/Account/Register" responded 200 in 60.1641 ms
+11/20/2020 11:19:33 HTTP "GET" "/Identity/Account/Login" responded 200 in 14.6766 ms
+11/20/2020 11:19:54 Application starting up
+11/20/2020 11:19:58 - Getting index page -
+11/20/2020 11:20:02 HTTP "GET" "/" responded 200 in 3969.4157 ms
+11/20/2020 11:20:05 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 106.6565 ms
+11/20/2020 11:20:05 - Getting index page -
+11/20/2020 11:20:05 HTTP "GET" "/" responded 200 in 87.0159 ms
+11/20/2020 11:20:06 HTTP "GET" "/Identity/Account/Login" responded 200 in 171.4153 ms
+11/20/2020 11:20:09 User logged in.
+11/20/2020 11:20:09 HTTP "POST" "/Identity/Account/Login" responded 302 in 261.2386 ms
+11/20/2020 11:20:09 - Getting index page -
+11/20/2020 11:20:09 HTTP "GET" "/" responded 200 in 36.1670 ms
+11/20/2020 11:20:18 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 9.9687 ms
+11/20/2020 11:20:18 - Getting index page -
+11/20/2020 11:20:18 HTTP "GET" "/" responded 200 in 45.5856 ms
+11/20/2020 11:20:19 HTTP "GET" "/Identity/Account/Login" responded 200 in 24.2204 ms
+11/20/2020 11:20:23 User logged in.
+11/20/2020 11:20:23 HTTP "POST" "/Identity/Account/Login" responded 302 in 37.3518 ms
+11/20/2020 11:20:23 - Getting index page -
+11/20/2020 11:20:23 HTTP "GET" "/" responded 200 in 57.8499 ms
+11/20/2020 11:20:30 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 6.8495 ms
+11/20/2020 11:20:30 - Getting index page -
+11/20/2020 11:20:30 HTTP "GET" "/" responded 200 in 47.7724 ms
+11/20/2020 11:20:31 HTTP "GET" "/Identity/Account/Register" responded 200 in 55.2051 ms
+11/20/2020 11:20:37 User "c9f7a6b5-29d0-4fbe-a454-e545a470f593" validation failed: "DuplicateUserName".
+11/20/2020 11:20:37 HTTP "POST" "/Identity/Account/Register" responded 200 in 102.2015 ms
+11/20/2020 11:20:43 User created a new account with password.
+11/20/2020 11:20:44 HTTP "POST" "/Identity/Account/Register" responded 302 in 546.5010 ms
+11/20/2020 11:20:44 - Getting index page -
+11/20/2020 11:20:44 HTTP "GET" "/" responded 200 in 19.6757 ms
+11/20/2020 11:20:47 - Getting index page -
+11/20/2020 11:20:47 HTTP "GET" "/" responded 200 in 37.0347 ms
+11/20/2020 11:21:44 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 3.9804 ms
+11/20/2020 11:21:44 - Getting index page -
+11/20/2020 11:21:44 HTTP "GET" "/" responded 200 in 26.7918 ms
+11/20/2020 11:21:45 HTTP "GET" "/Identity/Account/Login" responded 200 in 14.4329 ms
+11/20/2020 11:21:51 User logged in.
+11/20/2020 11:21:51 HTTP "POST" "/Identity/Account/Login" responded 302 in 60.5634 ms
+11/20/2020 11:21:51 - Getting index page -
+11/20/2020 11:21:51 HTTP "GET" "/" responded 200 in 21.8967 ms
+11/20/2020 11:21:54 HTTP "GET" "/Playlists/Create" responded 200 in 99.0916 ms
+11/20/2020 11:21:54 HTTP "GET" "/Playlists/Create/ws" responded 200 in 83.2474 ms
+11/20/2020 11:22:15 Playlist with title 'Mega Qkiqqq' has been created.
+11/20/2020 11:22:15 HTTP "POST" "/Playlists/Create" responded 302 in 1412.0536 ms
+11/20/2020 11:22:15 HTTP "GET" "/Playlists" responded 200 in 57.9985 ms
+11/20/2020 11:22:20 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 107.6945 ms
+11/20/2020 11:22:23 - Getting index page -
+11/20/2020 11:22:23 HTTP "GET" "/" responded 200 in 39.7441 ms
+11/20/2020 11:23:44 HTTP "GET" "/Playlists/Create" responded 200 in 32.4804 ms
+11/20/2020 11:23:45 HTTP "GET" "/Playlists/Create/ws" responded 200 in 61.4984 ms
+11/20/2020 11:24:01 Playlist with title 'fsafasfsa' has been created.
+11/20/2020 11:24:02 HTTP "POST" "/Playlists/Create" responded 302 in 2224.2773 ms
+11/20/2020 11:24:02 HTTP "GET" "/Playlists" responded 200 in 83.2364 ms
+11/20/2020 11:24:08 HTTP "GET" "/Playlists/Create" responded 200 in 14.0607 ms
+11/20/2020 11:24:09 HTTP "GET" "/Playlists/Create/ws" responded 200 in 46.0755 ms
+11/20/2020 11:24:17 Playlist with title 'Fsafsa' has been created.
+11/20/2020 11:24:17 HTTP "POST" "/Playlists/Create" responded 302 in 652.0187 ms
+11/20/2020 11:24:17 HTTP "GET" "/Playlists" responded 200 in 30.1037 ms
+11/20/2020 11:24:20 HTTP "GET" "/Playlists/Create" responded 200 in 12.9848 ms
+11/20/2020 11:24:20 HTTP "GET" "/Playlists/Create/ws" responded 200 in 27.6320 ms
+11/20/2020 11:28:21 Application starting up
+11/20/2020 11:28:23 - Getting index page -
+11/20/2020 11:30:30 HTTP "GET" "/" responded 200 in 128199.9719 ms
+11/20/2020 11:30:35 HTTP "GET" "/Playlists/Create" responded 200 in 146.1136 ms
+11/20/2020 11:30:35 HTTP "GET" "/Playlists/Create/ws" responded 200 in 72.2217 ms
+11/20/2020 11:30:40 - Getting index page -
+11/20/2020 11:30:40 HTTP "GET" "/" responded 200 in 28.3543 ms
+11/20/2020 11:30:41 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 36.0101 ms
+11/20/2020 11:30:42 HTTP "GET" "/Playlists" responded 200 in 23.3748 ms
+11/20/2020 11:30:42 HTTP "GET" "/Playlists/Create" responded 200 in 20.2689 ms
+11/20/2020 11:30:42 HTTP "GET" "/Playlists/Create/ws" responded 200 in 15.8794 ms
+11/20/2020 11:30:45 HTTP "GET" "/Identity/Account/Manage" responded 404 in 99.0557 ms
+11/20/2020 11:30:51 HTTP "GET" "/Playlists/Create" responded 200 in 16.5029 ms
+11/20/2020 11:30:51 HTTP "GET" "/Playlists/Create/ws" responded 200 in 10.0919 ms
+11/20/2020 11:30:53 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 33.8368 ms
+11/20/2020 11:30:53 - Getting index page -
+11/20/2020 11:30:53 HTTP "GET" "/" responded 200 in 15.5364 ms
+11/20/2020 11:30:55 HTTP "GET" "/Identity/Account/Login" responded 200 in 83.2457 ms
+11/20/2020 11:30:58 User logged in.
+11/20/2020 11:30:58 HTTP "POST" "/Identity/Account/Login" responded 302 in 144.1571 ms
+11/20/2020 11:30:58 - Getting index page -
+11/20/2020 11:30:58 HTTP "GET" "/" responded 200 in 13.0110 ms
+11/20/2020 11:31:00 HTTP "GET" "/Playlists/Create" responded 200 in 15.8160 ms
+11/20/2020 11:31:00 HTTP "GET" "/Playlists/Create/ws" responded 200 in 39.6341 ms
+11/20/2020 11:31:14 Playlist with title 'sfsafsafsaf' has been created.
+11/20/2020 11:31:14 HTTP "POST" "/Playlists/Create" responded 302 in 1771.4092 ms
+11/20/2020 11:31:14 HTTP "GET" "/Playlists" responded 200 in 23.1823 ms
+11/20/2020 11:31:15 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 58.7645 ms
+11/20/2020 11:31:18 HTTP "GET" "/Playlists/Create" responded 200 in 15.4121 ms
+11/20/2020 11:31:18 HTTP "GET" "/Playlists/Create/ws" responded 200 in 12.3049 ms
+11/20/2020 11:31:28 Playlist with title 'fasfsafsa' has been created.
+11/20/2020 11:31:28 HTTP "POST" "/Playlists/Create" responded 302 in 783.7866 ms
+11/20/2020 11:31:28 HTTP "GET" "/Playlists" responded 200 in 27.2876 ms
+11/20/2020 11:31:33 HTTP "GET" "/Playlists/Create" responded 200 in 10.8641 ms
+11/20/2020 11:31:33 HTTP "GET" "/Playlists/Create/ws" responded 200 in 17.4272 ms
+11/20/2020 11:31:39 Playlist with title 'fasgasga' has been created.
+11/20/2020 11:31:39 HTTP "POST" "/Playlists/Create" responded 302 in 568.5626 ms
+11/20/2020 11:31:39 HTTP "GET" "/Playlists" responded 200 in 14.6122 ms
+11/20/2020 11:31:42 HTTP "GET" "/Playlists" responded 200 in 24.6058 ms
+11/20/2020 11:31:43 HTTP "GET" "/Playlists/Create" responded 200 in 10.3389 ms
+11/20/2020 11:31:43 HTTP "GET" "/Playlists/Create/ws" responded 200 in 23.8793 ms
+11/20/2020 11:38:08 Application starting up
+11/20/2020 11:38:13 - Getting index page -
+11/20/2020 11:38:16 HTTP "GET" "/" responded 200 in 4090.7278 ms
+11/20/2020 11:38:21 HTTP "GET" "/Playlists/Create" responded 200 in 223.4856 ms
+11/20/2020 11:38:21 HTTP "GET" "/Playlists/Create/ws" responded 200 in 118.1030 ms
+11/20/2020 11:38:33 Playlist with title 'gasgsagsag1' has been created.
+11/20/2020 11:38:34 HTTP "POST" "/Playlists/Create" responded 302 in 2541.7036 ms
+11/20/2020 11:38:34 HTTP "GET" "/Playlists" responded 200 in 34.4192 ms
