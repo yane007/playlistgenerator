@@ -10,6 +10,7 @@ namespace PG.Models
             Playlists = new HashSet<Playlist>();
         }
 
+        public string Token { get; set; }
         public bool IsDeleted { get; set; }
         public ICollection<Playlist> Playlists { get; set; }
     }

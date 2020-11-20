@@ -1,22 +1,32 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using PG.Data.Context;
 using PG.Models;
+using PG.Services.Contract;
+using PG.Services.Helpers;
+using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace PG.Services
 {
-    public class UserService
+    public class UserService : IUserService
     {
         private readonly PGDbContext _context;
         private readonly UserManager<User> _userManager;
+        private readonly AppSettings _appSettings;
 
-        public UserService(PGDbContext context, UserManager<User> userManager)
+        public UserService(PGDbContext context, UserManager<User> userManager, IOptions<AppSettings> appSettings)
         {
             _context = context;
             _userManager = userManager;
+            _appSettings = appSettings.Value;
         }
 
         public async Task<IList<User>> GetAllRegularUsers()
@@ -61,6 +71,41 @@ namespace PG.Services
             userToBan.LockoutEnabled = false;
             await _context.SaveChangesAsync();
             return true;
+        }
+
+        public User Authenticate(string username, string password)
+        {
+
+            var user = _context.Users.SingleOrDefault(x => x.UserName == username);
+
+            var verifyResult = _userManager.PasswordHasher.VerifyHashedPassword(user, user.PasswordHash, password);
+            if (verifyResult != PasswordVerificationResult.Success)
+            {
+                return null;
+            }
+
+
+            // authentication successful so generate jwt token
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                    new Claim(ClaimTypes.Name, user.Id.ToString())
+                }),
+                Expires = DateTime.UtcNow.AddDays(7),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            user.Token = tokenHandler.WriteToken(token);
+
+            return user;
+        }
+
+        public IEnumerable<User> GetAll()
+        {
+            return this._context.Users;
         }
     }
 }
