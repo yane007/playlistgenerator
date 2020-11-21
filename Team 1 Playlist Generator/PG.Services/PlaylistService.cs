@@ -134,10 +134,15 @@ namespace PG.Services
         /// <returns></returns>
         public async Task Delete(int id)
         {
+            if (id <= 0)
+            {
+                throw new ArgumentOutOfRangeException("Id can't be 0 or negative.");
+            }
+
             var expectedPlaylist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == id);
             if (expectedPlaylist == null)
             {
-                throw new ArgumentNullException($"Playlist with id {id} was not found.");
+                throw new ArgumentOutOfRangeException($"Playlist with id {id} was not found.");
             }
             if (expectedPlaylist.IsDeleted)
             {
@@ -178,11 +183,10 @@ namespace PG.Services
             };
 
             //Проверяваме колко genres са селектирани.
-            int genresSelected = CheckSelectedGenres(listGenres);
+            int genresSelected = CheckSelectedGenres(listGenres, _context, databasePlaylist.Id);
 
             //Лист от имената на всеки жанр, офсетите им, и процентите им.
             List<Tuple<string, int[], double>> namesOffsetsAndPercentages = SetOffsets(listGenres, allowedOffsetMore, allowedOffsetLess, genresSelected);
-
 
             bool useTopTracks = topTracks;
             bool allowSameArtist = sameArtist;
@@ -432,7 +436,7 @@ namespace PG.Services
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        private static int CheckSelectedGenres(List<Tuple<string, int>> data)
+        private static int CheckSelectedGenres(List<Tuple<string, int>> data, PGDbContext _context, int playlistId)
         {
             int genresSelected = 0;
 
@@ -440,6 +444,9 @@ namespace PG.Services
             {
                 if (item.Item2 != 0)
                 {
+                    //TODO: For improvement
+                    var dbGenre = _context.Genres.FirstOrDefaultAsync(x => x.Name == item.Item1);
+                    _context.PlaylistsGenres.Add(new PlaylistsGenres { PlaylistId = playlistId, GenreId = dbGenre.Id });
                     genresSelected++;
                 }
             }

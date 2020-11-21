@@ -10,8 +10,8 @@ using PG.Data.Context;
 namespace PG.Data.Migrations
 {
     [DbContext(typeof(PGDbContext))]
-    [Migration("20201118183631_TestMentor")]
-    partial class TestMentor
+    [Migration("20201120143214_Iniitial")]
+    partial class Iniitial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -51,14 +51,14 @@ namespace PG.Data.Migrations
                         new
                         {
                             Id = "93ad4deb-b9f7-4a98-9585-8b79963aee55",
-                            ConcurrencyStamp = "58d9b593-1acb-4f69-8ac8-331b69579245",
+                            ConcurrencyStamp = "5a196922-ae07-4e08-b671-97a1e8f19055",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
                             Id = "6b32cc6d-2fc9-4808-a0a6-b3877bf9a381",
-                            ConcurrencyStamp = "6fb76f06-44be-4c96-a52d-6e3952091d6c",
+                            ConcurrencyStamp = "b982aea8-9b0b-4fec-9052-b055067b0f0f",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -408,6 +408,9 @@ namespace PG.Data.Migrations
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Token")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 
@@ -432,16 +435,16 @@ namespace PG.Data.Migrations
                         {
                             Id = "00000000-0000-0000-0000-000000000000",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1f1f061d-3563-4882-ae8f-4c7840cdb50f",
+                            ConcurrencyStamp = "8f22c4af-28a7-4c56-9de8-929904745930",
                             Email = "admin@admin.com",
                             EmailConfirmed = false,
                             IsDeleted = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@ADMIN.COM",
                             NormalizedUserName = "ADMIN@ADMIN.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEIEX++CtPEHSVdOvaTeFM4VY/41N79ZETBoDUUtJ22oAiQ6CO2wuNC5bT6cvMUY3yA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEDGC8gS69hVjB2xZFPWy0RP3qBLktP9wch7L9StqQkewBSNeN16v6228oG4+GbyYTQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "4d9a96a7-30c7-4b8a-bfef-4cbbbee2498f",
+                            SecurityStamp = "2d817051-7371-4f85-b4fb-7f42f19874a2",
                             TwoFactorEnabled = false,
                             UserName = "admin@admin.com"
                         });
