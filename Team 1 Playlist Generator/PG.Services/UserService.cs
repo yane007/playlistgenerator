@@ -30,7 +30,10 @@ namespace PG.Services
             _userManager = userManager;
             _appSettings = appSettings.Value;
         }
-
+        /// <summary>
+        /// This method takes all regular users from database
+        /// </summary>
+        /// <returns>Return all regular users</returns>
         public async Task<IList<UserDTO>> GetAllRegularUsers()
         {
             return await _context.Users.Where(x => x.IsDeleted == false)
@@ -52,7 +55,11 @@ namespace PG.Services
 
         //    return regularUsers;
         //}
-
+        /// <summary>
+        /// This method ban user by Id
+        /// </summary>
+        /// <param name="id">Id</param>
+        /// <returns>Returns true if user is banned</returns>
         public async Task<bool> BanUserById(string id)
         {
             var userToBan = await _context.Users.FirstOrDefaultAsync(x => x.Id == id);
@@ -66,7 +73,11 @@ namespace PG.Services
             await _context.SaveChangesAsync();
             return true;
         }
-
+        /// <summary>
+        /// This method unban user by it's id
+        /// </summary>
+        /// <param name="id">Id</param>
+        /// <returns>Returns true if user's ban is removed succesfully</returns>
         public async Task<bool> UnbanUserById(string id)
         {
             var userToBan = await _context.Users.FirstOrDefaultAsync(x => x.Id == id);
@@ -80,7 +91,12 @@ namespace PG.Services
             await _context.SaveChangesAsync();
             return true;
         }
-
+        /// <summary>
+        /// This method authenticate the user by it's username and password
+        /// </summary>
+        /// <param name="username">Username</param>
+        /// <param name="password">Password</param>
+        /// <returns>Returns authenticated user</returns>
         public User Authenticate(string username, string password)
         {
 
@@ -110,7 +126,10 @@ namespace PG.Services
 
             return user;
         }
-
+        /// <summary>
+        /// This method is from all users in database
+        /// </summary>
+        /// <returns>Returns all users from database</returns>
         public IEnumerable<User> GetAll()
         {
             return this._context.Users;

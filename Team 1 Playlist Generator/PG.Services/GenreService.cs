@@ -19,7 +19,11 @@ namespace PG.Services
         {
             this._context = context;
         }
-
+        /// <summary>
+        /// This method create a new Genre
+        /// </summary>
+        /// <param name="genreDTO">GenreDTO</param>
+        /// <returns>Returns new Genre</returns>
 
         public async Task<GenreDTO> Create(GenreDTO genreDTO)
         {
@@ -43,6 +47,11 @@ namespace PG.Services
 
             return genre.Entity.ToDTO();
         }
+        /// <summary>
+        /// This method delete Genre by it's Id
+        /// </summary>
+        /// <param name="id">Id</param>
+        /// <returns>Returns true if Genre is deleted succesfully</returns>
 
         public async Task Delete(int id)
         {
@@ -59,14 +68,21 @@ namespace PG.Services
             expectedGenre.IsDeleted = true;
             await _context.SaveChangesAsync();
         }
-
+        /// <summary>
+        /// This method take's all genres from database
+        /// </summary>
+        /// <returns></returns>
         public async Task<IEnumerable<GenreDTO>> GetAllGenres()
         {
             return await _context.Genres.Where(x => x.IsDeleted == false)
                                   .Select(x => x.ToDTO())
                                   .ToListAsync();
         }
-
+        /// <summary>
+        /// This method take genre by it's Id
+        /// </summary>
+        /// <param name="id">Id</param>
+        /// <returns>Returns genre with given Id</returns>
         public async Task<GenreDTO> GetGenreById(int id)
         {
             var genre = await _context.Genres.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
@@ -77,7 +93,12 @@ namespace PG.Services
 
             return genre.ToDTO();
         }
-
+        /// <summary>
+        /// This method update genre by Id and change it's name
+        /// </summary>
+        /// <param name="id">Id</param>
+        /// <param name="genreDTO">GenreDTO</param>
+        /// <returns>Returns updated genre</returns>
         public async Task<GenreDTO> Update(int id, GenreDTO genreDTO)
         {
             var genre = await _context.Genres.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);

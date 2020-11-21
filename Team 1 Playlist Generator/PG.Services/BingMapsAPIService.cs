@@ -18,7 +18,12 @@ namespace PG.Services
         {
             this._context = context;
         }
-
+        /// <summary>
+        /// This method find the duration from starting point to ending point
+        /// </summary>
+        /// <param name="start">Starting point</param>
+        /// <param name="end">Ending point</param>
+        /// <returns>Returns duration in seconds</returns>
         public async Task<int> FindDuration(string start, string end)
         {
             var startingUrl = $"https://dev.virtualearth.net/REST/v1/Locations/{start}?key=AqYHIDdNVo4xufKpBNAuFfBrGtqJw_fJm45HlPU25Mrc-YSBHO8VcDK5zuHaXt4D";

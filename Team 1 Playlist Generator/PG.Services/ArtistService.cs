@@ -20,7 +20,11 @@ namespace PG.Services
             this._context = context;
         }
 
-
+        /// <summary>
+        /// This method create a new Artist
+        /// </summary>
+        /// <param name="artistDTO">ArtistDTO</param>
+        /// <returns>Returns new Artist</returns>
         public async Task<ArtistDTO> Create(ArtistDTO artistDTO)
         {
             if (artistDTO == null)
@@ -43,7 +47,11 @@ namespace PG.Services
 
             return artist.Entity.ToDTO();
         }
-
+        /// <summary>
+        /// This method delete Artist by it's Id
+        /// </summary>
+        /// <param name="id">Id</param>
+        /// <returns>Returns true if the Artist is succesfully deleted</returns>
         public async Task Delete(int id)
         {
             var expectedArtist = await _context.Artists.FirstOrDefaultAsync(x => x.Id == id);
@@ -59,14 +67,21 @@ namespace PG.Services
             expectedArtist.IsDeleted = true;
             await _context.SaveChangesAsync();
         }
-
+        /// <summary>
+        /// This method take all Artists from database
+        /// </summary>
+        /// <returns>Returns list of Artists</returns>
         public async Task<IEnumerable<ArtistDTO>> GetAllArtists()
         {
             return await _context.Artists.Where(x => x.IsDeleted == false)
                                         .Select(x => x.ToDTO())
                                         .ToListAsync();
         }
-
+        /// <summary>
+        /// This method get's Artist by it's Id
+        /// </summary>
+        /// <param name="id">Id</param>
+        /// <returns>Return Artist by it's Id</returns>
         public async Task<ArtistDTO> GetArtistById(int id)
         {
             var artist = await _context.Artists.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
@@ -77,7 +92,12 @@ namespace PG.Services
 
             return artist.ToDTO();
         }
-
+        /// <summary>
+        /// This method update Artis by it's Id
+        /// </summary>
+        /// <param name="id">Id</param>
+        /// <param name="artistDTO">ArtistDTO</param>
+        /// <returns>Returns updated Artist</returns>
         public async Task<ArtistDTO> Update(int id, ArtistDTO artistDTO)
         {
             var artist = await _context.Artists.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
