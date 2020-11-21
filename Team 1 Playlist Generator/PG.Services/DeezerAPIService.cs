@@ -6,7 +6,6 @@ using PG.Services.Contract;
 using PG.Services.MappingModelsAPI;
 using System.Linq;
 using System.Net.Http;
-using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 
 namespace PG.Services
@@ -25,7 +24,6 @@ namespace PG.Services
         /// Extract all songs with preview "link".mp3 from all playlists where their title contains "Rock".
         /// Creates new Creator/Artist accordingly to the song's specifications.
         /// </summary>
-        /// <returns></returns>
         public async Task ExtractSongsFromPlaylists(string genreString)
         {
             genreString = genreString.ToLower();

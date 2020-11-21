@@ -19,11 +19,11 @@ namespace PG.Services
             this._context = context;
         }
         /// <summary>
-        /// This method find the duration from starting point to ending point
+        /// Finds the travel duration between two locations.
         /// </summary>
-        /// <param name="start">Starting point</param>
-        /// <param name="end">Ending point</param>
-        /// <returns>Returns duration in seconds</returns>
+        /// <param name="start">First location</param>
+        /// <param name="end">Second location</param>
+        /// <returns>Returns the travel duration in seconds</returns>
         public async Task<int> FindDuration(string start, string end)
         {
             var startingUrl = $"https://dev.virtualearth.net/REST/v1/Locations/{start}?key=AqYHIDdNVo4xufKpBNAuFfBrGtqJw_fJm45HlPU25Mrc-YSBHO8VcDK5zuHaXt4D";
