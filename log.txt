@@ -3666,3 +3666,609 @@ System.InvalidOperationException: A second operation started on this context bef
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
 11/21/2020 11:50:16 HTTP "POST" "/Playlists/Create" responded 302 in 2215.6266 ms
 11/21/2020 11:50:16 HTTP "GET" "/Playlists" responded 200 in 85.5858 ms
+11/21/2020 19:41:57 Application starting up
+11/21/2020 19:41:59 - Getting index page -
+11/21/2020 19:42:00 HTTP "GET" "/" responded 200 in 1399.1326 ms
+11/21/2020 19:42:10 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 43.8994 ms
+11/21/2020 19:42:10 - Getting index page -
+11/21/2020 19:42:10 HTTP "GET" "/" responded 200 in 38.0500 ms
+11/21/2020 19:42:11 HTTP "GET" "/Identity/Account/Register" responded 200 in 57.2582 ms
+11/21/2020 19:42:15 HTTP "GET" "/Identity/Account/Login" responded 200 in 34.8128 ms
+11/21/2020 19:42:16 User logged in.
+11/21/2020 19:42:16 HTTP "POST" "/Identity/Account/Login" responded 302 in 107.0423 ms
+11/21/2020 19:42:16 - Getting index page -
+11/21/2020 19:42:16 HTTP "GET" "/" responded 200 in 8.0243 ms
+11/21/2020 19:42:17 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 15.6487 ms
+11/21/2020 19:42:17 HTTP "GET" "/Playlists" responded 200 in 12.1286 ms
+11/21/2020 19:42:19 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 7.8143 ms
+11/21/2020 19:42:21 HTTP "GET" "/Playlists/Create" responded 200 in 30.2560 ms
+11/21/2020 19:42:21 HTTP "GET" "/Playlists/Create/ws" responded 200 in 5.1489 ms
+11/21/2020 19:42:21 HTTP "GET" "/Playlists/Create" responded 200 in 1568.4511 ms
+11/21/2020 19:42:36 Playlist with title 'Sofia - Sandanski' has been created.
+11/21/2020 19:42:36 An exception occurred while iterating over the results of a query for context type '"PG.Data.Context.PGDbContext"'."
+""System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+11/21/2020 19:42:36 HTTP "POST" "/Playlists/Create" responded 302 in 1417.5066 ms
+11/21/2020 19:42:37 HTTP "GET" "/Playlists" responded 200 in 22.9957 ms
+11/21/2020 19:42:38 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 15.5151 ms
+11/21/2020 19:42:39 HTTP "GET" "/Playlists" responded 200 in 6.7534 ms
+11/21/2020 19:42:40 - Getting index page -
+11/21/2020 19:42:40 HTTP "GET" "/" responded 200 in 12.2723 ms
+11/21/2020 19:42:41 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 31.2883 ms
+11/21/2020 19:42:42 - Getting index page -
+11/21/2020 19:42:42 HTTP "GET" "/" responded 200 in 9.5303 ms
+11/21/2020 19:42:43 HTTP "GET" "/Playlists" responded 200 in 5.6750 ms
+11/21/2020 19:42:44 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 6.1133 ms
+11/21/2020 19:42:44 HTTP "GET" "/Playlists" responded 200 in 4.7112 ms
+11/21/2020 19:42:45 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 5.0482 ms
+11/21/2020 19:42:46 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 4.6809 ms
+11/21/2020 19:42:46 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 5.4379 ms
+11/22/2020 08:26:05 Application starting up
+11/22/2020 08:26:09 - Getting index page -
+11/22/2020 08:26:09 HTTP "GET" "/" responded 200 in 2971.0227 ms
+11/22/2020 08:26:56 Application starting up
+11/22/2020 08:26:57 - Getting index page -
+11/22/2020 08:26:58 HTTP "GET" "/" responded 200 in 1217.2257 ms
+11/22/2020 08:32:17 Application starting up
+11/22/2020 08:32:18 - Getting index page -
+11/22/2020 08:32:19 HTTP "GET" "/" responded 200 in 1226.4677 ms
+11/22/2020 08:33:43 Application starting up
+11/22/2020 08:33:44 - Getting index page -
+11/22/2020 08:33:45 HTTP "GET" "/" responded 200 in 1197.0968 ms
+11/22/2020 09:21:43 Application starting up
+11/22/2020 09:21:46 - Getting index page -
+11/22/2020 09:21:46 HTTP "GET" "/" responded 200 in 1673.1322 ms
+11/22/2020 09:22:00 Application starting up
+11/22/2020 09:22:01 - Getting index page -
+11/22/2020 09:22:03 HTTP "GET" "/" responded 200 in 1448.0244 ms
+11/22/2020 09:22:15 Application starting up
+11/22/2020 09:22:16 - Getting index page -
+11/22/2020 09:22:17 HTTP "GET" "/" responded 200 in 1447.7981 ms
+11/22/2020 09:22:32 Application starting up
+11/22/2020 09:22:33 - Getting index page -
+11/22/2020 09:22:35 HTTP "GET" "/" responded 200 in 1477.8737 ms
+11/22/2020 09:22:55 Application starting up
+11/22/2020 09:22:57 - Getting index page -
+11/22/2020 09:22:58 HTTP "GET" "/" responded 200 in 1572.8996 ms
+11/22/2020 09:22:59 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 86.0262 ms
+11/22/2020 09:23:00 - Getting index page -
+11/22/2020 09:23:00 HTTP "GET" "/" responded 200 in 27.4448 ms
+11/22/2020 09:23:01 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 13.5054 ms
+11/22/2020 09:33:51 Application starting up
+11/22/2020 09:33:52 - Getting index page -
+11/22/2020 09:35:03 HTTP "GET" "/" responded 200 in 70751.9024 ms
+11/22/2020 09:35:07 HTTP "GET" "/Playlists/Create" responded 200 in 96.6886 ms
+11/22/2020 09:35:07 HTTP "GET" "/Playlists/Create/ws" responded 200 in 26.6214 ms
+11/22/2020 09:35:19 Playlist with title 'Sofia-Sandanski' has been created.
+11/22/2020 09:35:19 An exception occurred while iterating over the results of a query for context type '"PG.Data.Context.PGDbContext"'."
+""System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+11/22/2020 09:35:19 HTTP "POST" "/Playlists/Create" responded 500 in 1879.5267 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 264
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/22/2020 09:35:19 An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 264
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/22/2020 09:35:37 HTTP "GET" "/Playlists/Create" responded 200 in 8.4180 ms
+11/22/2020 09:35:37 HTTP "GET" "/Playlists/Create/ws" responded 200 in 10.3210 ms
+11/22/2020 09:35:38 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 22.6612 ms
+11/22/2020 09:35:38 - Getting index page -
+11/22/2020 09:35:38 HTTP "GET" "/" responded 200 in 20.4332 ms
+11/22/2020 09:35:40 HTTP "GET" "/Identity/Account/Register" responded 200 in 45.5096 ms
+11/22/2020 09:35:45 User created a new account with password.
+11/22/2020 09:35:45 HTTP "POST" "/Identity/Account/Register" responded 302 in 174.3310 ms
+11/22/2020 09:35:45 - Getting index page -
+11/22/2020 09:35:45 HTTP "GET" "/" responded 200 in 8.4233 ms
+11/22/2020 09:35:48 HTTP "GET" "/Playlists/Create" responded 200 in 6.7594 ms
+11/22/2020 09:35:48 HTTP "GET" "/Playlists/Create/ws" responded 200 in 4.0078 ms
+11/22/2020 09:35:57 Playlist with title 'Sofia-Sandanski2' has been created.
+11/22/2020 09:35:57 An exception occurred while iterating over the results of a query for context type '"PG.Data.Context.PGDbContext"'."
+""System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()"
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+11/22/2020 09:35:57 HTTP "POST" "/Playlists/Create" responded 500 in 1683.1106 ms
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at PG.Services.PlaylistService.GetGenreSongs(Int32[] offsets, String genreName, Boolean topTracks) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 386
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 237
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/22/2020 09:35:57 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at PG.Services.PlaylistService.GetGenreSongs(Int32[] offsets, String genreName, Boolean topTracks) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 386
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 237
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/22/2020 09:36:09 HTTP "GET" "/Playlists/Create" responded 200 in 7.7778 ms
+11/22/2020 09:36:09 HTTP "GET" "/Playlists/Create/ws" responded 200 in 3.9928 ms
+11/22/2020 09:36:10 HTTP "GET" "/Playlists" responded 200 in 20.9856 ms
+11/22/2020 09:36:11 - Getting index page -
+11/22/2020 09:36:11 HTTP "GET" "/" responded 200 in 10.3327 ms
+11/22/2020 09:36:11 HTTP "GET" "/Playlists" responded 200 in 7.3771 ms
+11/22/2020 09:36:12 HTTP "GET" "/Playlists/Create" responded 200 in 13.4152 ms
+11/22/2020 09:36:13 HTTP "GET" "/Playlists/Create/ws" responded 200 in 7.0811 ms
+11/22/2020 09:36:25 HTTP "POST" "/Playlists/Create" responded 500 in 1751.9599 ms
+System.ArgumentException: Playlist with title 'Sofia-Sandanski2' already exists.
+   at PG.Services.PlaylistService.Create(PlaylistDTO playlistDTO) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 46
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 163
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/22/2020 09:36:25 An unhandled exception has occurred while executing the request.
+System.ArgumentException: Playlist with title 'Sofia-Sandanski2' already exists.
+   at PG.Services.PlaylistService.Create(PlaylistDTO playlistDTO) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 46
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 163
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/22/2020 09:36:27 HTTP "GET" "/Playlists/Create" responded 200 in 9.5808 ms
+11/22/2020 09:36:27 HTTP "GET" "/Playlists/Create/ws" responded 200 in 8.0471 ms
+11/22/2020 09:36:32 Playlist with title 'Sofia-Sandanski5' has been created.
+11/22/2020 09:36:32 An exception occurred while iterating over the results of a query for context type '"PG.Data.Context.PGDbContext"'."
+""System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+11/22/2020 09:36:32 An exception occurred while iterating over the results of a query for context type '"PG.Data.Context.PGDbContext"'."
+""System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()"
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+11/22/2020 09:36:32 HTTP "POST" "/Playlists/Create" responded 500 in 1653.9631 ms
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at PG.Services.PlaylistService.GetGenreSongs(Int32[] offsets, String genreName, Boolean topTracks) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 386
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 222
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/22/2020 09:36:32 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at PG.Services.PlaylistService.GetGenreSongs(Int32[] offsets, String genreName, Boolean topTracks) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 386
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 222
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/22/2020 09:37:57 Application starting up
+11/22/2020 09:37:58 - Getting index page -
+11/22/2020 09:37:59 HTTP "GET" "/" responded 200 in 1296.9792 ms
+11/22/2020 09:38:01 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 42.3064 ms
+11/22/2020 09:38:01 - Getting index page -
+11/22/2020 09:38:01 HTTP "GET" "/" responded 200 in 41.3296 ms
+11/22/2020 09:38:03 HTTP "GET" "/Identity/Account/Register" responded 200 in 52.0839 ms
+11/22/2020 09:38:11 User created a new account with password.
+11/22/2020 09:38:11 HTTP "POST" "/Identity/Account/Register" responded 302 in 1841.6451 ms
+11/22/2020 09:38:11 - Getting index page -
+11/22/2020 09:38:11 HTTP "GET" "/" responded 200 in 15.4189 ms
+11/22/2020 09:38:13 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 21.3524 ms
+11/22/2020 09:38:14 HTTP "GET" "/Playlists" responded 200 in 19.0294 ms
+11/22/2020 09:38:15 HTTP "GET" "/Playlists/Create" responded 200 in 44.3294 ms
+11/22/2020 09:38:15 HTTP "GET" "/Playlists/Create/ws" responded 200 in 6.4756 ms
+11/22/2020 09:38:32 Playlist with title 'Futblok qko' has been created.
+11/22/2020 09:38:33 An exception occurred while iterating over the results of a query for context type '"PG.Data.Context.PGDbContext"'."
+""System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+11/22/2020 09:38:33 HTTP "POST" "/Playlists/Create" responded 302 in 2275.8026 ms
+11/22/2020 09:38:33 HTTP "GET" "/Playlists" responded 200 in 42.3125 ms
+11/22/2020 09:38:42 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 31.5229 ms
+11/22/2020 09:38:45 HTTP "GET" "/Playlists" responded 200 in 17.7671 ms
+11/22/2020 09:38:46 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 9.6521 ms
+11/22/2020 09:39:49 Application starting up
+11/22/2020 09:39:50 - Getting index page -
+11/22/2020 09:39:51 HTTP "GET" "/" responded 200 in 1338.7502 ms
+11/22/2020 09:39:53 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 69.4633 ms
+11/22/2020 09:39:53 - Getting index page -
+11/22/2020 09:39:54 HTTP "GET" "/" responded 200 in 26.7296 ms
+11/22/2020 09:39:56 - Getting index page -
+11/22/2020 09:39:56 HTTP "GET" "/" responded 200 in 32.8659 ms
+11/22/2020 09:39:56 HTTP "GET" "/Playlists" responded 200 in 18.3082 ms
+11/22/2020 09:39:59 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 28.4386 ms
+11/22/2020 09:40:00 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 8.3665 ms
+11/22/2020 09:41:35 Application starting up
+11/22/2020 09:41:36 - Getting index page -
+11/22/2020 09:41:37 HTTP "GET" "/" responded 200 in 1327.0589 ms
+11/22/2020 09:41:42 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 58.4426 ms
+11/22/2020 09:41:43 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 68.3281 ms
+11/22/2020 09:42:08 Application starting up
+11/22/2020 09:42:09 - Getting index page -
+11/22/2020 09:42:10 HTTP "GET" "/" responded 200 in 1304.6308 ms
+11/22/2020 09:42:11 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 70.6808 ms
+11/22/2020 09:42:52 Application starting up
+11/22/2020 09:42:53 - Getting index page -
+11/22/2020 09:42:54 HTTP "GET" "/" responded 200 in 1349.5144 ms
+11/22/2020 09:42:55 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 69.7346 ms
+11/22/2020 09:44:21 Application starting up
+11/22/2020 09:44:23 - Getting index page -
+11/22/2020 09:44:24 HTTP "GET" "/" responded 200 in 1320.4037 ms
+11/22/2020 09:44:25 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 71.9654 ms
+11/22/2020 09:44:57 HTTP "GET" "/Playlists/Create" responded 200 in 69.0463 ms
+11/22/2020 09:44:57 HTTP "GET" "/Playlists/Create/ws" responded 200 in 9.2954 ms
+11/22/2020 09:44:57 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 41.4602 ms
+11/22/2020 09:44:58 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 15.1125 ms
+11/22/2020 09:45:22 Application starting up
+11/22/2020 09:45:23 - Getting index page -
+11/22/2020 09:45:25 HTTP "GET" "/" responded 200 in 1985.7698 ms
+11/22/2020 09:45:26 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 108.7849 ms
+11/22/2020 09:45:27 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 92.1423 ms
+11/22/2020 09:45:46 Application starting up
+11/22/2020 09:45:47 - Getting index page -
+11/22/2020 09:45:49 HTTP "GET" "/" responded 200 in 2255.8405 ms
+11/22/2020 09:45:52 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 82.6662 ms
+11/22/2020 09:45:53 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 94.8115 ms
+11/22/2020 09:46:31 Application starting up
+11/22/2020 09:46:32 - Getting index page -
+11/22/2020 09:46:34 HTTP "GET" "/" responded 200 in 1996.1561 ms
+11/22/2020 09:46:35 HTTP "GET" "/Playlists/Playlist/3" responded 200 in 105.8207 ms
+11/22/2020 09:48:17 Application starting up
+11/22/2020 09:48:18 - Getting index page -
+11/22/2020 09:48:20 HTTP "GET" "/" responded 200 in 2091.0008 ms
+11/22/2020 09:48:21 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 112.9214 ms
+11/22/2020 09:49:07 Application starting up
+11/22/2020 09:49:08 - Getting index page -
+11/22/2020 09:49:11 HTTP "GET" "/" responded 200 in 3479.1142 ms
+11/22/2020 09:49:16 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 131.6767 ms
+11/22/2020 09:50:03 Application starting up
+11/22/2020 09:50:05 - Getting index page -
+11/22/2020 09:50:07 HTTP "GET" "/" responded 200 in 2064.9809 ms
+11/22/2020 09:50:07 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 106.4230 ms
+11/22/2020 09:51:17 Application starting up
+11/22/2020 09:51:18 - Getting index page -
+11/22/2020 09:51:20 HTTP "GET" "/" responded 200 in 2107.3918 ms
+11/22/2020 09:51:22 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 85.5874 ms
+11/22/2020 09:51:23 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 97.0377 ms
+11/22/2020 09:51:39 Application starting up
+11/22/2020 09:51:41 - Getting index page -
+11/22/2020 09:51:43 HTTP "GET" "/" responded 200 in 2027.7793 ms
+11/22/2020 09:51:44 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 81.3642 ms
+11/22/2020 09:51:45 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 98.4928 ms
+11/22/2020 09:52:25 Application starting up
+11/22/2020 09:52:26 - Getting index page -
+11/22/2020 09:52:28 HTTP "GET" "/" responded 200 in 2039.0151 ms
+11/22/2020 09:52:32 HTTP "GET" "/Playlists/Create" responded 200 in 136.1793 ms
+11/22/2020 09:52:32 HTTP "GET" "/Playlists/Create/ws" responded 200 in 57.4131 ms
+11/22/2020 09:52:33 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 51.5825 ms
+11/22/2020 09:52:34 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 77.0646 ms
+11/22/2020 10:54:54 Application starting up
+11/22/2020 10:54:56 - Getting index page -
+11/22/2020 10:54:57 HTTP "GET" "/" responded 200 in 1346.4959 ms
+11/22/2020 10:54:57 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 67.5550 ms
+11/22/2020 10:55:18 Application starting up
+11/22/2020 10:55:19 - Getting index page -
+11/22/2020 10:55:20 HTTP "GET" "/" responded 200 in 1204.4050 ms
+11/22/2020 10:55:21 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 69.4347 ms
+11/22/2020 10:56:06 Application starting up
+11/22/2020 10:56:08 - Getting index page -
+11/22/2020 10:56:09 HTTP "GET" "/" responded 200 in 1198.9559 ms
+11/22/2020 10:56:10 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 65.5391 ms
+11/22/2020 11:02:04 Application starting up
+11/22/2020 11:02:05 - Getting index page -
+11/22/2020 11:02:06 HTTP "GET" "/" responded 200 in 1206.2188 ms
+11/22/2020 11:02:08 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 45.8787 ms
+11/22/2020 11:02:08 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 56.0637 ms
+11/22/2020 11:02:59 Application starting up
+11/22/2020 11:03:00 - Getting index page -
+11/22/2020 11:03:01 HTTP "GET" "/" responded 200 in 1199.9761 ms
+11/22/2020 11:03:03 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 44.4787 ms
+11/22/2020 11:03:03 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 58.5300 ms
+11/22/2020 11:04:46 Application starting up
+11/22/2020 11:04:47 - Getting index page -
+11/22/2020 11:04:48 HTTP "GET" "/" responded 200 in 1229.1193 ms
+11/22/2020 11:04:50 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 51.8057 ms
+11/22/2020 11:04:51 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 60.1666 ms
+11/22/2020 11:05:26 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 14.8758 ms
+11/22/2020 11:08:09 Application starting up
+11/22/2020 11:08:10 - Getting index page -
+11/22/2020 11:08:11 HTTP "GET" "/" responded 200 in 1219.7748 ms
+11/22/2020 11:08:12 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 45.6862 ms
+11/22/2020 11:08:12 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 56.0974 ms
+11/22/2020 11:09:00 Application starting up
+11/22/2020 11:09:01 - Getting index page -
+11/22/2020 11:09:02 HTTP "GET" "/" responded 200 in 1188.8252 ms
+11/22/2020 11:09:03 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 44.6933 ms
+11/22/2020 11:09:04 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 108.5269 ms
+11/22/2020 11:10:12 Application starting up
+11/22/2020 11:10:13 - Getting index page -
+11/22/2020 11:10:14 HTTP "GET" "/" responded 200 in 1248.9710 ms
+11/22/2020 11:10:18 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 49.6884 ms
+11/22/2020 11:10:19 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 101.7771 ms
+11/22/2020 11:12:05 Application starting up
+11/22/2020 11:12:06 - Getting index page -
+11/22/2020 11:12:07 HTTP "GET" "/" responded 200 in 1204.3027 ms
+11/22/2020 11:12:08 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 44.1267 ms
+11/22/2020 11:12:09 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 99.2049 ms
+11/22/2020 11:12:20 Application starting up
+11/22/2020 11:12:21 - Getting index page -
+11/22/2020 11:12:22 HTTP "GET" "/" responded 200 in 1201.6929 ms
+11/22/2020 11:12:24 HTTP "GET" "/Playlists/Create" responded 200 in 74.7588 ms
+11/22/2020 11:12:24 HTTP "GET" "/Playlists/Create/ws" responded 200 in 21.3399 ms
+11/22/2020 11:12:25 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 25.3552 ms
+11/22/2020 11:12:26 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 80.0964 ms
+11/22/2020 11:14:28 Application starting up
+11/22/2020 11:14:30 - Getting index page -
+11/22/2020 11:14:31 HTTP "GET" "/" responded 200 in 1205.1226 ms
+11/22/2020 11:14:31 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 44.7602 ms
+11/22/2020 11:14:32 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 102.6854 ms
+11/22/2020 11:17:08 Application starting up
+11/22/2020 11:17:09 - Getting index page -
+11/22/2020 11:17:10 HTTP "GET" "/" responded 200 in 1248.2388 ms
+11/22/2020 11:17:11 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 44.5270 ms
+11/22/2020 11:17:12 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 99.5533 ms
+11/22/2020 11:17:34 Application starting up
+11/22/2020 11:17:35 - Getting index page -
+11/22/2020 11:17:36 HTTP "GET" "/" responded 200 in 1180.2848 ms
+11/22/2020 11:17:37 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 101.0094 ms
+11/22/2020 11:18:23 Application starting up
+11/22/2020 11:18:24 - Getting index page -
+11/22/2020 11:18:25 HTTP "GET" "/" responded 200 in 1208.4224 ms
+11/22/2020 11:18:26 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 44.6467 ms
+11/22/2020 11:18:27 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 100.2470 ms
+11/22/2020 11:20:53 Application starting up
+11/22/2020 11:20:54 - Getting index page -
+11/22/2020 11:20:55 HTTP "GET" "/" responded 200 in 1194.5978 ms
+11/22/2020 11:20:57 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 45.1561 ms
+11/22/2020 11:20:57 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 100.2085 ms
+11/22/2020 11:21:10 Application starting up
+11/22/2020 11:21:11 - Getting index page -
+11/22/2020 11:21:12 HTTP "GET" "/" responded 200 in 1186.5755 ms
+11/22/2020 11:21:14 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 103.1237 ms
+11/22/2020 11:22:06 Application starting up
+11/22/2020 11:22:07 - Getting index page -
+11/22/2020 11:22:08 HTTP "GET" "/" responded 200 in 1200.4288 ms
+11/22/2020 11:22:10 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 45.6069 ms
+11/22/2020 11:22:10 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 98.6450 ms
+11/22/2020 11:22:41 Application starting up
+11/22/2020 11:22:42 - Getting index page -
+11/22/2020 11:22:43 HTTP "GET" "/" responded 200 in 1228.0428 ms
+11/22/2020 11:22:44 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 103.2194 ms
+11/22/2020 11:22:46 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 33.6638 ms
+11/22/2020 11:22:47 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 15.0743 ms
+11/22/2020 11:23:20 Application starting up
+11/22/2020 11:23:21 - Getting index page -
+11/22/2020 11:23:22 HTTP "GET" "/" responded 200 in 1194.5867 ms
+11/22/2020 11:23:23 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 44.5496 ms
+11/22/2020 11:23:24 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 96.1805 ms
+11/22/2020 11:23:34 Application starting up
+11/22/2020 11:23:35 - Getting index page -
+11/22/2020 11:23:36 HTTP "GET" "/" responded 200 in 1205.4838 ms
+11/22/2020 11:23:37 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 104.9093 ms
+11/22/2020 11:24:01 Application starting up
+11/22/2020 11:24:02 - Getting index page -
+11/22/2020 11:24:03 HTTP "GET" "/" responded 200 in 1215.8899 ms
+11/22/2020 11:24:04 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 101.5202 ms
+11/22/2020 11:24:16 Application starting up
+11/22/2020 11:24:17 - Getting index page -
+11/22/2020 11:24:18 HTTP "GET" "/" responded 200 in 1262.0639 ms
+11/22/2020 11:24:19 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 101.5550 ms
+11/22/2020 11:24:21 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 34.0079 ms
+11/22/2020 11:24:22 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 14.7697 ms
+11/22/2020 11:25:46 Application starting up
+11/22/2020 11:25:48 - Getting index page -
+11/22/2020 11:25:48 HTTP "GET" "/" responded 200 in 1269.3755 ms
+11/22/2020 11:25:50 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 104.2512 ms
+11/22/2020 11:25:52 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 34.3856 ms
+11/22/2020 11:25:52 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 15.1660 ms
+11/22/2020 11:26:35 Application starting up
+11/22/2020 11:26:37 - Getting index page -
+11/22/2020 11:26:38 HTTP "GET" "/" responded 200 in 1202.6450 ms
+11/22/2020 11:26:39 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 45.5141 ms
+11/22/2020 11:26:40 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 95.0386 ms
+11/22/2020 11:27:30 Application starting up
+11/22/2020 11:27:31 - Getting index page -
+11/22/2020 11:27:32 HTTP "GET" "/" responded 200 in 1206.8091 ms
+11/22/2020 11:27:33 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 45.1437 ms
+11/22/2020 11:27:34 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 100.5853 ms
+11/22/2020 11:30:09 Application starting up
+11/22/2020 11:30:10 - Getting index page -
+11/22/2020 11:30:11 HTTP "GET" "/" responded 200 in 1190.8627 ms
+11/22/2020 11:30:12 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 45.0631 ms
+11/22/2020 11:30:13 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 99.3669 ms
+11/22/2020 11:31:12 Application starting up
+11/22/2020 11:31:13 - Getting index page -
+11/22/2020 11:31:14 HTTP "GET" "/" responded 200 in 1205.8016 ms
+11/22/2020 11:31:15 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 46.9375 ms
+11/22/2020 11:31:16 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 99.8157 ms
+11/22/2020 11:31:53 Application starting up
+11/22/2020 11:31:54 - Getting index page -
+11/22/2020 11:31:55 HTTP "GET" "/" responded 200 in 1195.8031 ms
+11/22/2020 11:31:57 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 44.5262 ms
+11/22/2020 11:31:57 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 98.9667 ms
+11/22/2020 11:32:07 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 12.6455 ms
+11/22/2020 11:32:24 Application starting up
+11/22/2020 11:32:25 - Getting index page -
+11/22/2020 11:32:26 HTTP "GET" "/" responded 200 in 1211.5187 ms
+11/22/2020 11:32:27 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 45.7999 ms
+11/22/2020 11:32:27 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 100.3120 ms
+11/22/2020 11:32:57 Application starting up
+11/22/2020 11:32:58 - Getting index page -
+11/22/2020 11:32:59 HTTP "GET" "/" responded 200 in 1208.2785 ms
+11/22/2020 11:33:01 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 46.9935 ms
+11/22/2020 11:33:01 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 99.0355 ms
+11/22/2020 11:33:20 Application starting up
+11/22/2020 11:33:22 - Getting index page -
+11/22/2020 11:33:23 HTTP "GET" "/" responded 200 in 1219.6212 ms
+11/22/2020 11:33:24 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 51.3795 ms
+11/22/2020 11:33:25 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 99.7484 ms
+11/22/2020 11:33:41 Application starting up
+11/22/2020 11:33:42 - Getting index page -
+11/22/2020 11:33:43 HTTP "GET" "/" responded 200 in 1207.5410 ms
+11/22/2020 11:33:45 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 45.0405 ms
+11/22/2020 11:33:45 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 99.8849 ms
+11/22/2020 11:35:05 Application starting up
+11/22/2020 11:35:07 - Getting index page -
+11/22/2020 11:35:08 HTTP "GET" "/" responded 200 in 1185.0036 ms
+11/22/2020 11:35:09 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 44.6108 ms
+11/22/2020 11:35:10 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 100.5362 ms
+11/22/2020 11:35:28 Application starting up
+11/22/2020 11:35:29 - Getting index page -
+11/22/2020 11:35:30 HTTP "GET" "/" responded 200 in 1197.8311 ms
+11/22/2020 11:35:31 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 44.8698 ms
+11/22/2020 11:35:32 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 96.3683 ms
+11/22/2020 12:35:22 - Getting index page -
+11/22/2020 12:35:22 HTTP "GET" "/" responded 200 in 114.2142 ms
+11/22/2020 12:35:25 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 22.6112 ms
+11/22/2020 12:35:26 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 12.2587 ms

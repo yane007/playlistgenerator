@@ -49,14 +49,14 @@ namespace PG.Data.Migrations
                         new
                         {
                             Id = "93ad4deb-b9f7-4a98-9585-8b79963aee55",
-                            ConcurrencyStamp = "5a196922-ae07-4e08-b671-97a1e8f19055",
+                            ConcurrencyStamp = "2ad065de-01cd-4a24-a998-a13e07ca2f72",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
                             Id = "6b32cc6d-2fc9-4808-a0a6-b3877bf9a381",
-                            ConcurrencyStamp = "b982aea8-9b0b-4fec-9052-b055067b0f0f",
+                            ConcurrencyStamp = "f76e98b7-b6a1-4d41-85ec-01277c32aef8",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -323,6 +323,9 @@ namespace PG.Data.Migrations
                     b.Property<int>("ArtistId")
                         .HasColumnType("int");
 
+                    b.Property<int>("DeezerID")
+                        .HasColumnType("int");
+
                     b.Property<int>("Duration")
                         .HasColumnType("int");
 
@@ -433,16 +436,16 @@ namespace PG.Data.Migrations
                         {
                             Id = "00000000-0000-0000-0000-000000000000",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8f22c4af-28a7-4c56-9de8-929904745930",
+                            ConcurrencyStamp = "305f12ff-a2d6-479c-bfe8-ab464db55110",
                             Email = "admin@admin.com",
                             EmailConfirmed = false,
                             IsDeleted = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@ADMIN.COM",
                             NormalizedUserName = "ADMIN@ADMIN.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEDGC8gS69hVjB2xZFPWy0RP3qBLktP9wch7L9StqQkewBSNeN16v6228oG4+GbyYTQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEDPg0IBvXdJX3RXJc4DFDYQGug2Nw3jxDWUUpgdFDXNAH71KkVeE3HVfz49ysPpZ2g==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "2d817051-7371-4f85-b4fb-7f42f19874a2",
+                            SecurityStamp = "bb6559b3-b625-40c9-9151-a7dfd10e0cef",
                             TwoFactorEnabled = false,
                             UserName = "admin@admin.com"
                         });

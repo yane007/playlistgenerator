@@ -99,6 +99,7 @@ namespace PG.Services
                                 var songToAdd = new Song()
                                 {
                                     Title = song.Title,
+                                    DeezerID = song.Id,
                                     Duration = song.Duration,
                                     Rank = song.Rank,
                                     Preview = song.Preview,

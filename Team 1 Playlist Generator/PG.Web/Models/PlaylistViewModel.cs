@@ -10,6 +10,8 @@ namespace PG.Web.Models
     {
         public int Id { get; set; }
 
+        public List<int> DeezerIDs { get; set; }
+
         public string Title { get; set; }
 
         public int Duration { get; set; }

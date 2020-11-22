@@ -1,7 +1,20 @@
-﻿@model PlaylistViewModel
+﻿@inject IJsonHelper Json
+@model PlaylistViewModel
 
 @using (Html.BeginForm())
 {
+
+
+
+
+
+    <div id="dz-root"></div>
+    <div id="player" class="Div1" align="center"></div>
+
+    <div style="padding-top:10vh" id="controlers">
+        <input type="button" onclick="DZ.player.playTracks(@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.DeezerIDs) as String), true);" value="Play Songs" />
+    </div>
+
     <div class="list-group">
 
         @foreach (var song in Model.Songs)
@@ -10,4 +23,62 @@
         }
 
     </div>
+
+
+
+
+
+
+    <style>
+        .Div1 {
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+        }
+    </style>
+
+    <script>
+        function event_listener_append() {
+            var pre = document.getElementById('event_listener');
+            var line = [];
+            for (var i = 0; i < arguments.length; i++) {
+                line.push(arguments[i]);
+            }
+            pre.innerHTML += line.join(' ') + "\n";
+        }
+        function onPlayerLoaded() {
+            $("#controlers input").attr('disabled', false);
+            event_listener_append('player_loaded');
+            DZ.Event.subscribe('current_track', function (arg) {
+                event_listener_append('current_track', arg.index, arg.track.title, arg.track.album.title);
+            });
+            DZ.Event.subscribe('player_position', function (arg) {
+                event_listener_append('position', arg[0], arg[1]);
+                $("#slider_seek").find('.bar').css('width', (100 * arg[0] / arg[1]) + '%');
+            });
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            DZ.init({
+                appId: '8',
+                channelUrl: 'https://developers.deezer.com/examples/channel.php',
+                player: {
+                    container: 'player',
+                    playlist: true,
+                    width: 850,
+                    height: 95,
+                    onload: onPlayerLoaded
+                }
+            });
+        });
+    </script>
+    <br />
+
+
+
+
+
+
+
+
 }
+

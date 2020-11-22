@@ -4,6 +4,8 @@ namespace PG.Services.DTOs
 {
     public class SongDTO : EntityDTO
     {
+        public int DeezerID { get; set; }
+
         public string Title { get; set; }
 
         public int Duration { get; set; } 
