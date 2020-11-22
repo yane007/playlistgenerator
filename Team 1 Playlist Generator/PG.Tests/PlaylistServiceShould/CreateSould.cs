@@ -11,11 +11,10 @@ namespace PG.Tests.PlaylistServiceShould
     [TestClass]
     public class CreateSould
     {
-
         [TestMethod]
         public async Task CreateCorrectly()
         {
-            var options = Utils.GetOptions(new Guid().ToString());
+            var options = Utils.GetOptions(nameof(CreateCorrectly));
 
             var playlist = new PlaylistDTO
             {
@@ -27,7 +26,7 @@ namespace PG.Tests.PlaylistServiceShould
             using (var arrangeContext = new PGDbContext(options))
             {
                 var sut = new PlaylistService(arrangeContext);
-                var review = await sut.Create(playlist);
+                await sut.Create(playlist);
                 await arrangeContext.SaveChangesAsync();
             }
 
@@ -38,6 +37,65 @@ namespace PG.Tests.PlaylistServiceShould
                 Assert.AreEqual(playlist.Title, result.Title);
                 Assert.AreEqual(playlist.Duration, result.Duration);
                 Assert.AreEqual(playlist.Picture, result.Picture);
+            }
+        }
+
+        [TestMethod]
+        public async Task CreateThrowsWhenNull()
+        {
+            var options = Utils.GetOptions(nameof(CreateThrowsWhenNull));
+
+            var context = new PGDbContext(options);
+            var sut = new PlaylistService(context);
+
+            await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Create(null));
+
+        }
+
+        [TestMethod]
+        public async Task CreateThrowsWhenNameAbove50Chars()
+        {
+            var options = Utils.GetOptions(nameof(CreateThrowsWhenNameAbove50Chars));
+
+
+            var context = new PGDbContext(options);
+            var sut = new PlaylistService(context);
+
+            var playlist = new PlaylistDTO
+            {
+                Title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                Duration = 1600,
+                Picture = "https://en.wikipedia.org/wiki/In_Utero_(album)#/media/File:In_Utero_(Nirvana)_album_cover.jpg",
+            };
+
+            await Assert.ThrowsExceptionAsync<ArgumentOutOfRangeException>(() => sut.Create(playlist));
+
+        }
+
+        [TestMethod]
+        public async Task CreateThrowsWhenPlaylistWithSameNameExists()//TODO: Тука трябва ли using?
+        {
+            var options = Utils.GetOptions(nameof(CreateThrowsWhenPlaylistWithSameNameExists));
+
+            var playlist = new PlaylistDTO
+            {
+                Title = "In Utero",
+                Duration = 1600,
+                Picture = "https://en.wikipedia.org/wiki/In_Utero_(album)#/media/File:In_Utero_(Nirvana)_album_cover.jpg",
+            };
+
+            using (var arrangeContext = new PGDbContext(options))
+            {
+                var sut = new PlaylistService(arrangeContext);
+                await sut.Create(playlist);
+                await arrangeContext.SaveChangesAsync();
+            }
+
+            using (var assertContext = new PGDbContext(options))
+            {
+                var sut = new PlaylistService(assertContext);
+
+                await Assert.ThrowsExceptionAsync<ArgumentException>(() => sut.Create(playlist));
             }
         }
     }

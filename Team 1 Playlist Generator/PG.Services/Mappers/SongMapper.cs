@@ -13,6 +13,7 @@ namespace PG.Services.Mappers
             return new SongDTO()
             {
                 Id = song.Id,
+                DeezerID = song.DeezerID,
                 Title = song.Title,
                 Duration = song.Duration,
                 Rank = song.Rank,
@@ -26,6 +27,7 @@ namespace PG.Services.Mappers
             return new Song()
             {
                 Id = songDTO.Id,
+                DeezerID = songDTO.DeezerID,
                 Title = songDTO.Title,
                 Duration = songDTO.Duration,
                 Rank = songDTO.Rank,

@@ -11,6 +11,8 @@ namespace PG.Models
             PlaylistsSongs = new List<PlaylistsSongs>();
         }
 
+        public int DeezerID { get; set; }
+
         [Required]
         [MaxLength(200)]
         public string Title { get; set; }

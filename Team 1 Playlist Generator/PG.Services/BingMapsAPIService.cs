@@ -18,7 +18,12 @@ namespace PG.Services
         {
             this._context = context;
         }
-
+        /// <summary>
+        /// Finds the travel duration between two locations.
+        /// </summary>
+        /// <param name="start">First location</param>
+        /// <param name="end">Second location</param>
+        /// <returns>Returns the travel duration in seconds</returns>
         public async Task<int> FindDuration(string start, string end)
         {
             var startingUrl = $"https://dev.virtualearth.net/REST/v1/Locations/{start}?key=AqYHIDdNVo4xufKpBNAuFfBrGtqJw_fJm45HlPU25Mrc-YSBHO8VcDK5zuHaXt4D";

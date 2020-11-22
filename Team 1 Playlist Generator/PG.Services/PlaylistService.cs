@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using PG.Data.Context;
 using PG.Models;
 using PG.Services.Contract;
@@ -26,8 +25,7 @@ namespace PG.Services
         /// <summary>
         /// Creates a playlist
         /// </summary>
-        /// <param name="playlistDTO"></param>
-        /// <returns></returns>
+        /// <param name="playlistDTO">Playlist to create</param>
         public async Task<Playlist> Create(PlaylistDTO playlistDTO)
         {
             if (playlistDTO == null)
@@ -58,7 +56,6 @@ namespace PG.Services
         /// <summary>
         /// Gets all playlsits.
         /// </summary>
-        /// <returns></returns>
         public async Task<IEnumerable<PlaylistDTO>> GetAllPlaylists()
         {
             return await _context.Playlists
@@ -70,10 +67,9 @@ namespace PG.Services
         }
 
         /// <summary>
-        /// Gets a playlist by user's ID.
+        /// Gets all playlists by user's ID.
         /// </summary>
         /// <param name="userId">User's ID.</param>
-        /// <returns></returns>
         public async Task<IEnumerable<PlaylistDTO>> GetPlaylistsByUser(string userId)
         {
             return await _context.Playlists
@@ -88,7 +84,6 @@ namespace PG.Services
         /// Gets playlist by ID.
         /// </summary>
         /// <param name="id">ID of the playlist.</param>
-        /// <returns></returns>
         public async Task<PlaylistDTO> GetPlaylistById(int id)
         {
             var playlist = await _context.Playlists
@@ -109,7 +104,6 @@ namespace PG.Services
         /// </summary>
         /// <param name="id">ID of the playlist to update</param>
         /// <param name="playlistDTO">The new data of the playlist</param>
-        /// <returns>Updated playlist to DTO</returns>
         public async Task<PlaylistDTO> Update(int id, PlaylistDTO playlistDTO)
         {
             var playlist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
@@ -131,13 +125,17 @@ namespace PG.Services
         /// Deletes a playlist.
         /// </summary>
         /// <param name="id">ID of the playlist</param>
-        /// <returns></returns>
         public async Task Delete(int id)
         {
+            if (id <= 0)
+            {
+                throw new ArgumentOutOfRangeException("Id can't be 0 or negative.");
+            }
+
             var expectedPlaylist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == id);
             if (expectedPlaylist == null)
             {
-                throw new ArgumentNullException($"Playlist with id {id} was not found.");
+                throw new ArgumentOutOfRangeException($"Playlist with id {id} was not found.");
             }
             if (expectedPlaylist.IsDeleted)
             {
@@ -159,7 +157,6 @@ namespace PG.Services
         /// <param name="topTracks">Allows using top tracks (tracks with s rank higher than 100,000).</param>
         /// <param name="sameArtist">Allows songs from the same artist.</param>
         /// <param name="user">User to add playlist to</param>
-        /// <returns></returns>
         public async Task GeneratePlaylist(int timeForTrip, string playlistTitle, int metalPercentagee,
             int rockPercentagee, int popPercentagee, bool topTracks, bool sameArtist, User user)
         {
@@ -178,11 +175,10 @@ namespace PG.Services
             };
 
             //Проверяваме колко genres са селектирани.
-            int genresSelected = CheckSelectedGenres(listGenres);
+            int genresSelected = CheckSelectedGenres(listGenres, _context, databasePlaylist.Id);
 
             //Лист от имената на всеки жанр, офсетите им, и процентите им.
             List<Tuple<string, int[], double>> namesOffsetsAndPercentages = SetOffsets(listGenres, allowedOffsetMore, allowedOffsetLess, genresSelected);
-
 
             bool useTopTracks = topTracks;
             bool allowSameArtist = sameArtist;
@@ -278,14 +274,13 @@ namespace PG.Services
 
 
         /// <summary>
-        /// Extracts all the possible songs of a given genre.
+        /// Extracts all the possible songs by a given genre.
         /// </summary>
-        /// <param name="tripTime">The total trip time</param>
+        /// <param name="tripTime">Total trip time</param>
         /// <param name="allowedOffsetLess">Offset for how many less seconds the mini playlist can be.</param>
         /// <param name="allowedOffsetMore">Offset for how many more seconds the mini playlist can be.</param>
         /// <param name="percentageTime">What percentage the mini playlist needs to be.</param>
         /// <param name="genreSongs">List of all the songs of a given genre.</param>
-        /// <returns></returns>
         private static List<Song> ExtractSongs(int tripTime, int allowedOffsetLess, int allowedOffsetMore, double percentageTime, List<Song> genreSongs)
         {
             if (genreSongs.Count() == 0)
@@ -325,14 +320,13 @@ namespace PG.Services
 
 
         /// <summary>
-        /// Extracts all the possible songs with unique artist of a given genre.
+        /// Extracts all the possible songs with unique artist by a given genre.
         /// </summary>
         /// <param name="tripTime">The total trip time.</param>
         /// <param name="allowedOffsetLess">Offset for how many less seconds the mini playlist can be.</param>
         /// <param name="allowedOffsetMore">Offset for how many more seconds the mini playlist can be.</param>
         /// <param name="percentageTime">What percentage the mini playlist needs to be.</param>
         /// <param name="genreSongs">List of all the songs of a given genre.</param>
-        /// <returns></returns>
         private static List<Song> ExtractSongsUniqueArtist(int tripTime, int allowedOffsetLess, int allowedOffsetMore, double percentageTime, List<Song> genreSongs)
         {
             if (genreSongs.Count() == 0)
@@ -375,12 +369,11 @@ namespace PG.Services
 
 
         /// <summary>
-        /// Get all songs of given genre.
+        /// Get all songs that correspond to a given genre.
         /// </summary>
         /// <param name="offsets">If 0, returns emty list.</param>
         /// <param name="genreName">Returns songs of given genre.</param>
         /// <param name="topTracks">Doesn't return songs where rank is less than 100,000.</param>
-        /// <returns></returns>
         private List<Song> GetGenreSongs(int[] offsets, string genreName, bool topTracks)
         {
             if (offsets[0] != 0 && offsets[1] != 0)
@@ -431,8 +424,7 @@ namespace PG.Services
         /// Returns how many genres are selected
         /// </summary>
         /// <param name="data"></param>
-        /// <returns></returns>
-        private static int CheckSelectedGenres(List<Tuple<string, int>> data)
+        private static int CheckSelectedGenres(List<Tuple<string, int>> data, PGDbContext _context, int playlistId)
         {
             int genresSelected = 0;
 
@@ -440,15 +432,15 @@ namespace PG.Services
             {
                 if (item.Item2 != 0)
                 {
+                    //TODO: For improvement
+                    var dbGenre = _context.Genres.FirstOrDefaultAsync(x => x.Name == item.Item1);
+                    _context.PlaylistsGenres.Add(new PlaylistsGenres { PlaylistId = playlistId, GenreId = dbGenre.Id });
                     genresSelected++;
                 }
             }
 
             return genresSelected;
         }
-
-
-
 
 
         //Това не трябва да е тука, ама за сега ще е :D

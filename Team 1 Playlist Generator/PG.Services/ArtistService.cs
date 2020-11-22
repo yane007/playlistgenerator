@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PG.Data.Context;
-using PG.Models;
 using PG.Services.Contract;
 using PG.Services.DTOs;
 using PG.Services.Mappers;
@@ -20,7 +19,10 @@ namespace PG.Services
             this._context = context;
         }
 
-
+        /// <summary>
+        /// Creates an Artist
+        /// </summary>
+        /// <param name="artistDTO">Artist to create</param>
         public async Task<ArtistDTO> Create(ArtistDTO artistDTO)
         {
             if (artistDTO == null)
@@ -44,6 +46,10 @@ namespace PG.Services
             return artist.Entity.ToDTO();
         }
 
+        /// <summary>
+        /// Deletes an Artist by ID
+        /// </summary>
+        /// <param name="id">Artist's ID</param>
         public async Task Delete(int id)
         {
             var expectedArtist = await _context.Artists.FirstOrDefaultAsync(x => x.Id == id);
@@ -60,6 +66,9 @@ namespace PG.Services
             await _context.SaveChangesAsync();
         }
 
+        /// <summary>
+        /// Gets all artist
+        /// </summary>
         public async Task<IEnumerable<ArtistDTO>> GetAllArtists()
         {
             return await _context.Artists.Where(x => x.IsDeleted == false)
@@ -67,6 +76,10 @@ namespace PG.Services
                                         .ToListAsync();
         }
 
+        /// <summary>
+        /// Gets an Artist by ID
+        /// </summary>
+        /// <param name="id">Artist's ID</param>
         public async Task<ArtistDTO> GetArtistById(int id)
         {
             var artist = await _context.Artists.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
@@ -78,6 +91,11 @@ namespace PG.Services
             return artist.ToDTO();
         }
 
+        /// <summary>
+        /// Updates an Artist by ID
+        /// </summary>
+        /// <param name="id">Artist's ID</param>
+        /// <param name="artistDTO">New Artist's data</param>
         public async Task<ArtistDTO> Update(int id, ArtistDTO artistDTO)
         {
             var artist = await _context.Artists.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
