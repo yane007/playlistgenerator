@@ -19,8 +19,9 @@ namespace PG.Web.Models.Mappers
                 Duration = playlistDTO.Duration,
                 Rank = playlistDTO.Rank,
                 DurationInHours = time.ToString(@"hh\:mm\:ss"),
-                Picture = playlistDTO.Picture,
-                Songs = playlistDTO.PlaylistsSongs.Select(x => x.Song.ToDTO().ToViewModel()).ToList()
+                //PixabayImage = playlistDTO.PixabayImage.ToViewModel(),
+                Songs = playlistDTO.PlaylistsSongs.Select(x => x.Song.ToDTO().ToViewModel()).ToList(),
+                DeezerIDs = playlistDTO.PlaylistsSongs.Select(x => x.Song.DeezerID).ToList(),
             };
         }
 
@@ -30,7 +31,7 @@ namespace PG.Web.Models.Mappers
             {
                 Title = playlistViewModel.Title,
                 Duration = playlistViewModel.Duration,
-                Picture = playlistViewModel.Picture,
+                //PixabayImage = playlistViewModel.PixabayImage.ToDTO(),
             };
         }
     }

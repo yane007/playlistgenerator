@@ -10,6 +10,8 @@ namespace PG.Web.Models
     {
         public int Id { get; set; }
 
+        public List<int> DeezerIDs { get; set; }
+
         public string Title { get; set; }
 
         public int Duration { get; set; }
@@ -20,7 +22,7 @@ namespace PG.Web.Models
 
         public int Fans { get; set; }
 
-        public string Picture { get; set; }
+        public PixabayImageViewModel PixabayImage { get; set; }
 
         public string UserId { get; set; }
 
