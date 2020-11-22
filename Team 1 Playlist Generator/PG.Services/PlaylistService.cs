@@ -185,7 +185,7 @@ namespace PG.Services
             };
 
             //Проверяваме колко genres са селектирани.
-            int genresSelected = CheckSelectedGenres(listGenres, _context, databasePlaylist.Id);
+            int genresSelected = await CheckSelectedGenres(listGenres, _context, databasePlaylist);
 
             //Лист от имената на всеки жанр, офсетите им, и процентите им.
             List<Tuple<string, int[], double>> namesOffsetsAndPercentages = SetOffsets(listGenres, allowedOffsetMore, allowedOffsetLess, genresSelected);
@@ -433,7 +433,7 @@ namespace PG.Services
         /// Returns how many genres are selected
         /// </summary>
         /// <param name="data"></param>
-        private static int CheckSelectedGenres(List<Tuple<string, int>> data, PGDbContext _context, int playlistId)
+        private static async Task<int> CheckSelectedGenres(List<Tuple<string, int>> data, PGDbContext _context, Playlist databasePlaylist)
         {
             int genresSelected = 0;
 
@@ -442,8 +442,13 @@ namespace PG.Services
                 if (item.Item2 != 0)
                 {
                     //TODO: For improvement
-                    var dbGenre = _context.Genres.FirstOrDefaultAsync(x => x.Name == item.Item1);
-                    _context.PlaylistsGenres.Add(new PlaylistsGenres { PlaylistId = playlistId, GenreId = dbGenre.Id });
+                    var dbGenre = await _context.Genres.Include(x => x.PlaylistsGenres).FirstOrDefaultAsync(x => x.Name == item.Item1);
+                    
+                    var playlistGenresLink = new PlaylistsGenres { PlaylistId = databasePlaylist.Id, GenreId = dbGenre.Id };
+
+                    dbGenre.PlaylistsGenres.Add(playlistGenresLink);
+                    databasePlaylist.PlaylistsGenres.Add(playlistGenresLink);
+
                     genresSelected++;
                 }
             }
