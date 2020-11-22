@@ -19,7 +19,7 @@ namespace PG.Tests.PlaylistServiceShould
             {
                 Title = "In Utero",
                 Duration = 1600,
-                Picture = "https://en.wikipedia.org/wiki/In_Utero_(album)#/media/File:In_Utero_(Nirvana)_album_cover.jpg",
+                //PixabayImage = "https://en.wikipedia.org/wiki/In_Utero_(album)#/media/File:In_Utero_(Nirvana)_album_cover.jpg",
                 UserId = "153a257-526504u",
             };
 
@@ -27,7 +27,7 @@ namespace PG.Tests.PlaylistServiceShould
             {
                 Title = "Back in Black",
                 Duration = 2531,
-                Picture = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/ACDC_Back_in_Black.png/220px-ACDC_Back_in_Black.png",
+                //PixabayImage = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/ACDC_Back_in_Black.png/220px-ACDC_Back_in_Black.png",
                 UserId = "153a257-526504u",
             };
 
@@ -35,7 +35,7 @@ namespace PG.Tests.PlaylistServiceShould
             {
                 Title = "Lovedrive",
                 Duration = 2190,
-                Picture = "https://en.wikipedia.org/wiki/Lovedrive#/media/File:Scorpions-album-lovedrive.jpg",
+                //PixabayImage = "https://en.wikipedia.org/wiki/Lovedrive#/media/File:Scorpions-album-lovedrive.jpg",
                 UserId = "68910y78a-89as1568",
             };
 

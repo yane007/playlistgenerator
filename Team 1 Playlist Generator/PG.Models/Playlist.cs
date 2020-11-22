@@ -18,13 +18,12 @@ namespace PG.Models
 
         public int Duration { get; set; }
 
-        [MaxLength(300)]
-        public string Picture { get; set; }
-
         public int Rank { get; set; }
 
-        public string UserId { get; set; }
+        public int PixabayId { get; set; }
+        public PixabayImage PixabayImage { get; set; }
 
+        public string UserId { get; set; }
         public User User { get; set; }
 
         public ICollection<PlaylistsSongs> PlaylistsSongs { get; set; }

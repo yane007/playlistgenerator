@@ -114,7 +114,7 @@ namespace PG.Services
 
             playlist.Title = playlistDTO.Title;
             playlist.Duration = playlistDTO.Duration;
-            playlist.Picture = playlistDTO.Picture;
+            //playlist.Picture = playlistDTO.Image;
 
             await _context.SaveChangesAsync();
 
@@ -161,6 +161,16 @@ namespace PG.Services
             int rockPercentagee, int popPercentagee, bool topTracks, bool sameArtist, User user)
         {
             var databasePlaylist = await Create(new PlaylistDTO { Title = playlistTitle });
+
+            var pixabatImage = await _context.PixabayImage.AddAsync(new PixabayImage()
+            {
+                PlaylistId = databasePlaylist.Id,
+                LargeImageURL = "https://cdn.pixabay.com/photo/2010/11/25/palm-trees-45_150.jpg",
+                WebformatURL = "https://cdn.pixabay.com/photo/2010/11/25/palm-trees-45_150.jpg",
+                PreviewURL = "https://cdn.pixabay.com/photo/2010/11/25/palm-trees-45_150.jpg",
+            });
+
+            databasePlaylist.PixabayId = pixabatImage.Entity.Id;
 
             int tripTime = timeForTrip;
             int allowedOffsetMore = 5 * 60; // 5 Min +

@@ -12,7 +12,7 @@ namespace PG.Services.DTOs
 
         public int Rank { get; set; }
 
-        public string Picture { get; set; }
+        public PixabayImageDTO PixabayImage { get; set; }
 
         public string UserId { get; set; }
 
