@@ -49,14 +49,14 @@ namespace PG.Data.Migrations
                         new
                         {
                             Id = "93ad4deb-b9f7-4a98-9585-8b79963aee55",
-                            ConcurrencyStamp = "520dd893-610f-4e83-aad2-d4e723227e87",
+                            ConcurrencyStamp = "f6fa4c3e-8dd6-4f52-aef1-0f8c2fcef7e2",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
                             Id = "6b32cc6d-2fc9-4808-a0a6-b3877bf9a381",
-                            ConcurrencyStamp = "b043f399-6b58-42a5-ab0d-587f89b8a287",
+                            ConcurrencyStamp = "3f7de2e9-3527-4a70-87ca-303379d6b2b4",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -245,6 +245,36 @@ namespace PG.Data.Migrations
                     b.ToTable("Genres");
                 });
 
+            modelBuilder.Entity("PG.Models.PixabayImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("LargeImageURL")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PlaylistId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PreviewURL")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("WebformatURL")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PlaylistId")
+                        .IsUnique();
+
+                    b.ToTable("PixabayImage");
+                });
+
             modelBuilder.Entity("PG.Models.Playlist", b =>
                 {
                     b.Property<int>("Id")
@@ -258,9 +288,8 @@ namespace PG.Data.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<string>("Picture")
-                        .HasColumnType("nvarchar(300)")
-                        .HasMaxLength(300);
+                    b.Property<int>("PixabayId")
+                        .HasColumnType("int");
 
                     b.Property<int>("Rank")
                         .HasColumnType("int");
@@ -321,6 +350,9 @@ namespace PG.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("ArtistId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DeezerID")
                         .HasColumnType("int");
 
                     b.Property<int>("Duration")
@@ -433,16 +465,16 @@ namespace PG.Data.Migrations
                         {
                             Id = "00000000-0000-0000-0000-000000000000",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "802c8789-1657-4eca-81e7-64c1af759f42",
+                            ConcurrencyStamp = "5c737163-b8cb-4275-900e-d2f46ae3202f",
                             Email = "admin@admin.com",
                             EmailConfirmed = false,
                             IsDeleted = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@ADMIN.COM",
                             NormalizedUserName = "ADMIN@ADMIN.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEOI0QzN62Prk1Esh/y3yfY6nmgh8IefaP4q0K9w9eOdu1IYfHo/2hQ5hxGjFGOakaA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEP8M0wZuYRMa5el8291vyh87NyV95r5fSvKIP15NzYcd8XvhXGd22rASEkt5xpaBXw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "e797d076-1d10-480d-9c91-ea9fa0f299f9",
+                            SecurityStamp = "073f2ea8-8c0d-4bf2-8fc9-307446416622",
                             TwoFactorEnabled = false,
                             UserName = "admin@admin.com"
                         });
@@ -495,6 +527,15 @@ namespace PG.Data.Migrations
                     b.HasOne("PG.Models.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("PG.Models.PixabayImage", b =>
+                {
+                    b.HasOne("PG.Models.Playlist", "Playlist")
+                        .WithOne("PixabayImage")
+                        .HasForeignKey("PG.Models.PixabayImage", "PlaylistId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

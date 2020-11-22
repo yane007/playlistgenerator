@@ -21,14 +21,14 @@ namespace PG.Tests.PlaylistServiceShould
             {
                 Title = "In Utero",
                 Duration = 1600,
-                Picture = "https://en.wikipedia.org/wiki/In_Utero_(album)#/media/File:In_Utero_(Nirvana)_album_cover.jpg",
+                //PixabayImage = "https://en.wikipedia.org/wiki/In_Utero_(album)#/media/File:In_Utero_(Nirvana)_album_cover.jpg",
             };
 
             var acdcPlaylist = new PlaylistDTO
             {
                 Title = "Back in Black",
                 Duration = 2531,
-                Picture = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/ACDC_Back_in_Black.png/220px-ACDC_Back_in_Black.png",
+                //PixabayImage = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/ACDC_Back_in_Black.png/220px-ACDC_Back_in_Black.png",
             };
 
             using (var arrangeContext = new PGDbContext(options))
@@ -49,7 +49,7 @@ namespace PG.Tests.PlaylistServiceShould
 
                 Assert.AreEqual(nirvanaPlaylist.Title, userPalylists.Title);
                 Assert.AreEqual(nirvanaPlaylist.Duration, userPalylists.Duration);
-                Assert.AreEqual(nirvanaPlaylist.Picture, userPalylists.Picture);
+                Assert.AreEqual(nirvanaPlaylist.PixabayImage, userPalylists.PixabayImage);
             }
         }
 

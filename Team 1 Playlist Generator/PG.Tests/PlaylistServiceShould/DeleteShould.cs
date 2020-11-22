@@ -20,7 +20,7 @@ namespace PG.Tests.PlaylistServiceShould
             {
                 Title = "In Utero",
                 Duration = 1600,
-                Picture = "https://en.wikipedia.org/wiki/In_Utero_(album)#/media/File:In_Utero_(Nirvana)_album_cover.jpg",
+                //PixabayImage = "https://en.wikipedia.org/wiki/In_Utero_(album)#/media/File:In_Utero_(Nirvana)_album_cover.jpg",
             };
 
             using (var arrangeContext = new PGDbContext(options))
@@ -64,7 +64,7 @@ namespace PG.Tests.PlaylistServiceShould
             {
                 Title = "In Utero",
                 Duration = 1600,
-                Picture = "https://en.wikipedia.org/wiki/In_Utero_(album)#/media/File:In_Utero_(Nirvana)_album_cover.jpg",
+                //PixabayImage = "https://en.wikipedia.org/wiki/In_Utero_(album)#/media/File:In_Utero_(Nirvana)_album_cover.jpg",
             };
 
             using (var arrangeContext = new PGDbContext(options))
@@ -92,7 +92,7 @@ namespace PG.Tests.PlaylistServiceShould
             {
                 Title = "In Utero",
                 Duration = 1600,
-                Picture = "https://en.wikipedia.org/wiki/In_Utero_(album)#/media/File:In_Utero_(Nirvana)_album_cover.jpg",
+                //PixabayImage = "https://en.wikipedia.org/wiki/In_Utero_(album)#/media/File:In_Utero_(Nirvana)_album_cover.jpg",
             };
 
             using (var arrangeContext = new PGDbContext(options))

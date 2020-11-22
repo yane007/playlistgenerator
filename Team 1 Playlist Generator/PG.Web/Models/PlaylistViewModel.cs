@@ -22,7 +22,7 @@ namespace PG.Web.Models
 
         public int Fans { get; set; }
 
-        public string Picture { get; set; }
+        public PixabayImageViewModel PixabayImage { get; set; }
 
         public string UserId { get; set; }
 

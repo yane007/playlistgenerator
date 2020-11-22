@@ -17,7 +17,7 @@ namespace PG.Services.Mappers
                 Title = playlist.Title,
                 Duration = playlist.Duration,
                 Rank = playlist.Rank,
-                Picture = playlist.Picture,
+                //PixabayImage = playlist.PixabayImage.ToDTO(),
                 PlaylistsSongs = playlist.PlaylistsSongs,
             };
         }
@@ -30,7 +30,7 @@ namespace PG.Services.Mappers
                 Title = playlistDTO.Title,
                 Duration = playlistDTO.Duration,
                 Rank = playlistDTO.Rank,
-                Picture = playlistDTO.Picture,
+                //PixabayImage = playlistDTO.PixabayImage.ToEntity(),
                 PlaylistsSongs = playlistDTO.PlaylistsSongs,
             };
         }
