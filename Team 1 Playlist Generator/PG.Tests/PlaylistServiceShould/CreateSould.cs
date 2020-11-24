@@ -71,32 +71,5 @@ namespace PG.Tests.PlaylistServiceShould
             await Assert.ThrowsExceptionAsync<ArgumentOutOfRangeException>(() => sut.Create(playlist));
 
         }
-
-        [TestMethod]
-        public async Task CreateThrowsWhenPlaylistWithSameNameExists()//TODO: Тука трябва ли using?
-        {
-            var options = Utils.GetOptions(nameof(CreateThrowsWhenPlaylistWithSameNameExists));
-
-            var playlist = new PlaylistDTO
-            {
-                Title = "In Utero",
-                Duration = 1600,
-                //PixabayImage = "https://en.wikipedia.org/wiki/In_Utero_(album)#/media/File:In_Utero_(Nirvana)_album_cover.jpg",
-            };
-
-            using (var arrangeContext = new PGDbContext(options))
-            {
-                var sut = new PlaylistService(arrangeContext);
-                await sut.Create(playlist);
-                await arrangeContext.SaveChangesAsync();
-            }
-
-            using (var assertContext = new PGDbContext(options))
-            {
-                var sut = new PlaylistService(assertContext);
-
-                await Assert.ThrowsExceptionAsync<ArgumentException>(() => sut.Create(playlist));
-            }
-        }
     }
 }

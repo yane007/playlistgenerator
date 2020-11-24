@@ -2,6 +2,7 @@
 using PG.Services.DTOs;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace PG.Services.Mappers
@@ -17,8 +18,8 @@ namespace PG.Services.Mappers
                 Title = playlist.Title,
                 Duration = playlist.Duration,
                 Rank = playlist.Rank,
-                //PixabayImage = playlist.PixabayImage.ToDTO(),
-                PlaylistsSongs = playlist.PlaylistsSongs,
+                PixabayImage = playlist.PixabayImage.ToDTO(),
+                Songs = playlist.PlaylistsSongs.Select(x => x.Song.ToDTO()).ToList(),
             };
         }
         public static Playlist ToEntity(this PlaylistDTO playlistDTO)
@@ -30,8 +31,6 @@ namespace PG.Services.Mappers
                 Title = playlistDTO.Title,
                 Duration = playlistDTO.Duration,
                 Rank = playlistDTO.Rank,
-                //PixabayImage = playlistDTO.PixabayImage.ToEntity(),
-                PlaylistsSongs = playlistDTO.PlaylistsSongs,
             };
         }
     }

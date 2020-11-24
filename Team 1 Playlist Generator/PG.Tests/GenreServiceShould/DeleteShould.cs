@@ -51,7 +51,7 @@ namespace PG.Tests.GenreServiceShould
 
             var sut = new GenreService(assertContext);
 
-            await Assert.ThrowsExceptionAsync<ArgumentOutOfRangeException>(() => sut.Delete(-1));
+            await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Delete(-1));
         }
 
         [TestMethod]

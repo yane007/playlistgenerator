@@ -20,8 +20,12 @@
 
             @foreach (var item in Model)
             {
-                <a class="list-group" asp-controller="Playlists" asp-action="Playlist" 
-                   asp-route-id="@item.Id">@item.Title <br /> @item.DurationInHours <br/> @item.Rank</a>
+                <div>
+                    <p>@item.Title <br /> @item.DurationInHours </p>
+                    <a style="background: url(@item.PixabayImage.WebformatURL)" class="list-group" asp-controller="Playlists" asp-action="Playlist"
+                       asp-route-id="@item.Id">@item.Rank</a>
+
+                </div>
             }
 
         </div>
@@ -30,16 +34,18 @@
     <style>
         .wrapper {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: 1fr 1fr 1fr;
             justify-items: center;
-            margin-top: 6vh;
         }
+
+            .wrapper > div > p {
+                text-align: center;
+            }
 
         .list-group {
             border: 1px solid black;
             width: 150px;
             height: 150px;
-            background: url("https://cdn.pixabay.com/photo/2017/03/25/17/55/color-2174045_960_720.png");
             font-size: medium;
             text-align: center;
             color: black;
@@ -52,6 +58,8 @@
                 font-weight: 800;
                 color: black;
                 text-decoration: none;
+                opacity: 0.2;
+                border: 3px solid black;
             }
     </style>
 }

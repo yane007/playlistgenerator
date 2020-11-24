@@ -14,7 +14,6 @@ namespace PG.Services
     {
         private readonly PGDbContext _context;
 
-
         public DeezerAPIService(PGDbContext context)
         {
             this._context = context;

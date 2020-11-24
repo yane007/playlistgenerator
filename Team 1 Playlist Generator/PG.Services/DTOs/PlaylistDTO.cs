@@ -16,6 +16,6 @@ namespace PG.Services.DTOs
 
         public string UserId { get; set; }
 
-        public ICollection<PlaylistsSongs> PlaylistsSongs { get; set; } = new List<PlaylistsSongs>();
+        public ICollection<SongDTO> Songs { get; set; }
     }
 }

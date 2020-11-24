@@ -65,15 +65,6 @@ namespace PG.Web.Controllers
             return View(playlistGenerator);
         }
 
-        [AllowAnonymous]
-        public async Task<IActionResult> Playlist(int id)
-        {
-            PlaylistDTO playlistDTO = await _playlistService.GetPlaylistById(id);
-            PlaylistViewModel playlistViewModel = playlistDTO.ToViewModel();
-
-            return View(playlistViewModel);
-        }
-
         [HttpPost]
         public async Task<IActionResult> Create(PlaylistGeneratorViewModel formInput)
         {
@@ -86,10 +77,20 @@ namespace PG.Web.Controllers
 
             var user = await _userManager.GetUserAsync(User);
 
+
             await _playlistService.GeneratePlaylist(tripTime, formInput.PlaylistName,
                 formInput.Metal, formInput.Rock, formInput.Pop, formInput.TopTracks, formInput.SameArtist, user);
 
             return RedirectToAction("Index");
+        }
+
+        [AllowAnonymous]
+        public async Task<IActionResult> Playlist(int id)
+        {
+            PlaylistDTO playlistDTO = await _playlistService.GetPlaylistById(id);
+            PlaylistViewModel playlistViewModel = playlistDTO.ToViewModel();
+
+            return View(playlistViewModel);
         }
     }
 }

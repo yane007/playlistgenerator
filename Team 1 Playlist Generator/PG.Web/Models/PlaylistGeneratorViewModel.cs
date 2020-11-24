@@ -17,10 +17,11 @@ namespace PG.Web.Models
         public string EndLocation { get; set; }
 
         //TODO: ??? как да покажем червения текст за грешка
-        [DataType(DataType.Text)]
-        [Display(Name = "Playlist Name")]
-        [Compare("PlaylistName", ErrorMessage = "The password and confirmation password do not match.")]
+        //[DataType(DataType.Text)]
+        //[Display(Name = "Playlist Name")]
+        //[StringLength(10, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
         public string PlaylistName { get; set; }
+
 
         public int Metal { get; set; }
 

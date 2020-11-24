@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace PG.Web.Models
 {
@@ -25,6 +24,8 @@ namespace PG.Web.Models
         public PixabayImageViewModel PixabayImage { get; set; }
 
         public string UserId { get; set; }
+
+        public string LoggedUserId { get; set; }
 
         public ICollection<SongViewModel> Songs { get; set; } = new List<SongViewModel>();
     }

@@ -1,13 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using PG.Data.Context;
 using PG.Models;
 using PG.Services.Contract;
 using PG.Services.DTOs;
 using PG.Services.Mappers;
+using PG.Services.MappingModelsAPI.Pixabay;
 using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 
@@ -37,12 +40,6 @@ namespace PG.Services
                 throw new ArgumentOutOfRangeException("Playlist's title needs to be shorter than 50 characters.");
             }
 
-            var existingPlaylist = await _context.Playlists.FirstOrDefaultAsync(x => x.Title == playlistDTO.Title);
-            if (existingPlaylist != null)
-            {
-                throw new ArgumentException($"Playlist with title '{playlistDTO.Title}' already exists.");
-            }
-
             Playlist playlistToAdd = playlistDTO.ToEntity();
 
             var playlist = await _context.Playlists.AddAsync(playlistToAdd);
@@ -61,6 +58,7 @@ namespace PG.Services
             return await _context.Playlists
                                  .Include(x => x.PlaylistsSongs)
                                  .ThenInclude(x => x.Song)
+                                 .Include(x => x.PixabayImage)
                                  .Where(x => x.IsDeleted == false)
                                  .Select(x => x.ToDTO())
                                  .ToListAsync();
@@ -74,7 +72,7 @@ namespace PG.Services
         {
             return await _context.Playlists
                                  .Include(x => x.PlaylistsSongs)
-                                 .ThenInclude(x => x.Song)
+                                 .Include(x => x.PixabayImage)
                                  .Where(x => x.UserId == userId && x.IsDeleted == false)
                                  .Select(x => x.ToDTO())
                                  .ToListAsync();
@@ -89,6 +87,7 @@ namespace PG.Services
             var playlist = await _context.Playlists
                                  .Include(x => x.PlaylistsSongs)
                                  .ThenInclude(x => x.Song)
+                                 .Include(x => x.PixabayImage)
                                  .FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
 
             if (playlist == null)
@@ -162,15 +161,6 @@ namespace PG.Services
         {
             var databasePlaylist = await Create(new PlaylistDTO { Title = playlistTitle });
 
-            var pixabatImage = await _context.PixabayImage.AddAsync(new PixabayImage()
-            {
-                PlaylistId = databasePlaylist.Id,
-                LargeImageURL = "https://cdn.pixabay.com/photo/2010/11/25/palm-trees-45_150.jpg",
-                WebformatURL = "https://cdn.pixabay.com/photo/2010/11/25/palm-trees-45_150.jpg",
-                PreviewURL = "https://cdn.pixabay.com/photo/2010/11/25/palm-trees-45_150.jpg",
-            });
-
-            databasePlaylist.PixabayId = pixabatImage.Entity.Id;
 
             int tripTime = timeForTrip;
             int allowedOffsetMore = 5 * 60; // 5 Min +
@@ -258,6 +248,7 @@ namespace PG.Services
 
             int realTotalDuration = 0;
             int totalRank = 0;
+            int totalSongsCount = 0;
             foreach (var song in finalPlaylist)
             {
                 var relation = new PlaylistsSongs() { SongId = song.Id, PlaylistId = databasePlaylist.Id };
@@ -268,16 +259,41 @@ namespace PG.Services
 
                 realTotalDuration += song.Duration;
                 totalRank += song.Rank;
+                totalSongsCount++;
             }
 
             databasePlaylist.Duration = realTotalDuration;
             databasePlaylist.UserId = user.Id;
-            databasePlaylist.Rank = totalRank / finalPlaylist.Count();
+
+
+            if (totalSongsCount == 0)
+            {
+                databasePlaylist.Rank = 0;
+            }
+            else
+            {
+                databasePlaylist.Rank = totalRank / totalSongsCount;
+            }
+
+            await AddPixabayImageToPlaylist(databasePlaylist);
 
 
             user.Playlists.Add(databasePlaylist);
 
             await _context.SaveChangesAsync();
+        }
+
+        private async Task AddPixabayImageToPlaylist(Playlist databasePlaylist)
+        {
+            var pixabayImageSearched = await GetPixabayImage(databasePlaylist.Id);
+
+            pixabayImageSearched.PlaylistId = databasePlaylist.Id;
+
+            var pixabayImage = await _context.PixabayImage.AddAsync(pixabayImageSearched);
+
+            await _context.SaveChangesAsync();
+
+            databasePlaylist.PixabayId = pixabayImage.Entity.Id;
         }
 
 
@@ -456,6 +472,45 @@ namespace PG.Services
             return genresSelected;
         }
 
+        private static async  Task<PixabayImage> GetPixabayImage(int queryId)
+        {
+            var client = new HttpClient();
+
+
+            var response = await client.GetAsync($"https://pixabay.com/api/?key=19183688-4c632c1eaf95ba44e00778d20&id={queryId}&image_type=photo");
+
+            var responseAsString = await response.Content.ReadAsStringAsync();
+
+            var result = JsonConvert.DeserializeObject<PixabayQueryImagesResult>(responseAsString);
+
+            foreach (var image in result.hits)
+            {
+                if (image == null)
+                {
+                    continue;
+                }
+                else if (image.PreviewURL == null || image.WebformatURL == null || image.LargeImageURL == null)
+                {
+                    continue;
+                }
+                else
+                {
+                    return new PixabayImage 
+                    {
+                        LargeImageURL = image.LargeImageURL,
+                        WebformatURL = image.WebformatURL,
+                        PreviewURL = image.PreviewURL,
+                    };
+                }
+            }
+
+            return new PixabayImage //Default image
+            {
+                LargeImageURL = "https://pixabay.com/get/55e5d1444b56a814f6da8c7dda7936771437dde35b596c48732f7dd49144c650be_1280.jpg",
+                WebformatURL = "https://pixabay.com/get/55e5d1444b56a814f1dc846096293e7f1d3cd8ed5b4c704f75297bd29e4ecd5e_640.jpg",
+                PreviewURL = "https://cdn.pixabay.com/photo/2018/07/18/19/45/brick-3547144_150.jpg",
+            };
+        }
 
         //Това не трябва да е тука, ама за сега ще е :D
         private static readonly Random rng = new Random();
