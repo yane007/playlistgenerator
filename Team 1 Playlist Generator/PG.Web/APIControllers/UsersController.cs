@@ -42,7 +42,7 @@ namespace PG.Web.APIControllers
                 return BadRequest(new { message = "Username or password is incorrect" });
             }
 
-            return Ok(user);
+            return Ok(user.Token);
         }
     }
 }

@@ -31,6 +31,11 @@ namespace PG.Services
             _appSettings = appSettings.Value;
         }
 
+        public UserService(PGDbContext context)
+        {
+            _context = context;
+        }
+
         /// <summary>
         /// Gets all regular users.
         /// </summary>

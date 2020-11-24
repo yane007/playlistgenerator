@@ -13,7 +13,6 @@ namespace PG.Services
     {
         private readonly PGDbContext _context;
 
-
         public BingMapsAPIService(PGDbContext context)
         {
             this._context = context;
