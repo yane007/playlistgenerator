@@ -10,8 +10,8 @@ using PG.Data.Context;
 namespace PG.Data.Migrations
 {
     [DbContext(typeof(PGDbContext))]
-    [Migration("20201118183631_TestMentor")]
-    partial class TestMentor
+    [Migration("20201122173411_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -51,14 +51,14 @@ namespace PG.Data.Migrations
                         new
                         {
                             Id = "93ad4deb-b9f7-4a98-9585-8b79963aee55",
-                            ConcurrencyStamp = "58d9b593-1acb-4f69-8ac8-331b69579245",
+                            ConcurrencyStamp = "7f42aac3-096f-4b4b-9ef1-60ee461f2ce9",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
                             Id = "6b32cc6d-2fc9-4808-a0a6-b3877bf9a381",
-                            ConcurrencyStamp = "6fb76f06-44be-4c96-a52d-6e3952091d6c",
+                            ConcurrencyStamp = "bafc2eb5-2319-4afe-ad01-7032e135f895",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -247,6 +247,36 @@ namespace PG.Data.Migrations
                     b.ToTable("Genres");
                 });
 
+            modelBuilder.Entity("PG.Models.PixabayImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("LargeImageURL")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PlaylistId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PreviewURL")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("WebformatURL")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PlaylistId")
+                        .IsUnique();
+
+                    b.ToTable("PixabayImage");
+                });
+
             modelBuilder.Entity("PG.Models.Playlist", b =>
                 {
                     b.Property<int>("Id")
@@ -260,9 +290,8 @@ namespace PG.Data.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<string>("Picture")
-                        .HasColumnType("nvarchar(300)")
-                        .HasMaxLength(300);
+                    b.Property<int>("PixabayId")
+                        .HasColumnType("int");
 
                     b.Property<int>("Rank")
                         .HasColumnType("int");
@@ -323,6 +352,9 @@ namespace PG.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("ArtistId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DeezerID")
                         .HasColumnType("int");
 
                     b.Property<int>("Duration")
@@ -408,6 +440,9 @@ namespace PG.Data.Migrations
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Token")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 
@@ -432,16 +467,16 @@ namespace PG.Data.Migrations
                         {
                             Id = "00000000-0000-0000-0000-000000000000",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1f1f061d-3563-4882-ae8f-4c7840cdb50f",
+                            ConcurrencyStamp = "c97df317-c225-4438-adae-a54a5a9b66d5",
                             Email = "admin@admin.com",
                             EmailConfirmed = false,
                             IsDeleted = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@ADMIN.COM",
                             NormalizedUserName = "ADMIN@ADMIN.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEIEX++CtPEHSVdOvaTeFM4VY/41N79ZETBoDUUtJ22oAiQ6CO2wuNC5bT6cvMUY3yA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEKQ0PHX9umgPXew8y8U8e8yeWv/xWUnH4h3KLoN5+drXsB5IpvgtvDbQoUlLc9O8Jw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "4d9a96a7-30c7-4b8a-bfef-4cbbbee2498f",
+                            SecurityStamp = "af7296c0-b89c-4245-87ef-1ef5b893f563",
                             TwoFactorEnabled = false,
                             UserName = "admin@admin.com"
                         });
@@ -494,6 +529,15 @@ namespace PG.Data.Migrations
                     b.HasOne("PG.Models.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("PG.Models.PixabayImage", b =>
+                {
+                    b.HasOne("PG.Models.Playlist", "Playlist")
+                        .WithOne("PixabayImage")
+                        .HasForeignKey("PG.Models.PixabayImage", "PlaylistId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

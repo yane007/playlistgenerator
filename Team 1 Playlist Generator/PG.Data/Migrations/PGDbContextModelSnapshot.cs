@@ -49,14 +49,14 @@ namespace PG.Data.Migrations
                         new
                         {
                             Id = "93ad4deb-b9f7-4a98-9585-8b79963aee55",
-                            ConcurrencyStamp = "f6fa4c3e-8dd6-4f52-aef1-0f8c2fcef7e2",
+                            ConcurrencyStamp = "7f42aac3-096f-4b4b-9ef1-60ee461f2ce9",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
                             Id = "6b32cc6d-2fc9-4808-a0a6-b3877bf9a381",
-                            ConcurrencyStamp = "3f7de2e9-3527-4a70-87ca-303379d6b2b4",
+                            ConcurrencyStamp = "bafc2eb5-2319-4afe-ad01-7032e135f895",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -465,16 +465,16 @@ namespace PG.Data.Migrations
                         {
                             Id = "00000000-0000-0000-0000-000000000000",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "5c737163-b8cb-4275-900e-d2f46ae3202f",
+                            ConcurrencyStamp = "c97df317-c225-4438-adae-a54a5a9b66d5",
                             Email = "admin@admin.com",
                             EmailConfirmed = false,
                             IsDeleted = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@ADMIN.COM",
                             NormalizedUserName = "ADMIN@ADMIN.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEP8M0wZuYRMa5el8291vyh87NyV95r5fSvKIP15NzYcd8XvhXGd22rASEkt5xpaBXw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEKQ0PHX9umgPXew8y8U8e8yeWv/xWUnH4h3KLoN5+drXsB5IpvgtvDbQoUlLc9O8Jw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "073f2ea8-8c0d-4bf2-8fc9-307446416622",
+                            SecurityStamp = "af7296c0-b89c-4245-87ef-1ef5b893f563",
                             TwoFactorEnabled = false,
                             UserName = "admin@admin.com"
                         });
