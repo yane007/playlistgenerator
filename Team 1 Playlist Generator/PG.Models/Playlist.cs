@@ -20,8 +20,7 @@ namespace PG.Models
 
         public int Rank { get; set; }
 
-        public int PixabayId { get; set; }
-        public PixabayImage PixabayImage { get; set; }
+        public string PixabayImage { get; set; }
 
         public string UserId { get; set; }
         public User User { get; set; }

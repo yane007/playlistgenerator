@@ -55,13 +55,14 @@ namespace PG.Services
         /// </summary>
         public async Task<IEnumerable<PlaylistDTO>> GetAllPlaylists()
         {
-            return await _context.Playlists
+            var toReturn =  await _context.Playlists
                                  .Include(x => x.PlaylistsSongs)
                                  .ThenInclude(x => x.Song)
-                                 .Include(x => x.PixabayImage)
                                  .Where(x => x.IsDeleted == false)
                                  .Select(x => x.ToDTO())
                                  .ToListAsync();
+
+            return toReturn;
         }
 
         /// <summary>
@@ -72,7 +73,6 @@ namespace PG.Services
         {
             return await _context.Playlists
                                  .Include(x => x.PlaylistsSongs)
-                                 .Include(x => x.PixabayImage)
                                  .Where(x => x.UserId == userId && x.IsDeleted == false)
                                  .Select(x => x.ToDTO())
                                  .ToListAsync();
@@ -87,7 +87,6 @@ namespace PG.Services
             var playlist = await _context.Playlists
                                  .Include(x => x.PlaylistsSongs)
                                  .ThenInclude(x => x.Song)
-                                 .Include(x => x.PixabayImage)
                                  .FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
 
             if (playlist == null)
@@ -112,8 +111,7 @@ namespace PG.Services
             }
 
             playlist.Title = playlistDTO.Title;
-            playlist.Duration = playlistDTO.Duration;
-            //playlist.Picture = playlistDTO.Image;
+            playlist.PixabayImage = playlistDTO.PixabayImage;
 
             await _context.SaveChangesAsync();
 
@@ -285,15 +283,9 @@ namespace PG.Services
 
         private async Task AddPixabayImageToPlaylist(Playlist databasePlaylist)
         {
-            var pixabayImageSearched = await GetPixabayImage(databasePlaylist.Id);
+            string pixabayImage = await GetPixabayImage(databasePlaylist.Id);
 
-            pixabayImageSearched.PlaylistId = databasePlaylist.Id;
-
-            var pixabayImage = await _context.PixabayImage.AddAsync(pixabayImageSearched);
-
-            await _context.SaveChangesAsync();
-
-            databasePlaylist.PixabayId = pixabayImage.Entity.Id;
+            databasePlaylist.PixabayImage = pixabayImage;
         }
 
 
@@ -472,7 +464,7 @@ namespace PG.Services
             return genresSelected;
         }
 
-        private static async  Task<PixabayImage> GetPixabayImage(int queryId)
+        private static async Task<string> GetPixabayImage(int queryId)
         {
             var client = new HttpClient();
 
@@ -495,21 +487,11 @@ namespace PG.Services
                 }
                 else
                 {
-                    return new PixabayImage 
-                    {
-                        LargeImageURL = image.LargeImageURL,
-                        WebformatURL = image.WebformatURL,
-                        PreviewURL = image.PreviewURL,
-                    };
+                    return image.WebformatURL;
                 }
             }
 
-            return new PixabayImage //Default image
-            {
-                LargeImageURL = "https://pixabay.com/get/55e5d1444b56a814f6da8c7dda7936771437dde35b596c48732f7dd49144c650be_1280.jpg",
-                WebformatURL = "https://pixabay.com/get/55e5d1444b56a814f1dc846096293e7f1d3cd8ed5b4c704f75297bd29e4ecd5e_640.jpg",
-                PreviewURL = "https://cdn.pixabay.com/photo/2018/07/18/19/45/brick-3547144_150.jpg",
-            };
+            return "https://pixabay.com/get/55e5d1444b56a814f1dc846096293e7f1d3cd8ed5b4c704f75297bd29e4ecd5e_640.jpg";
         }
 
         //Това не трябва да е тука, ама за сега ще е :D

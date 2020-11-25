@@ -16,7 +16,6 @@ namespace PG.Data.Context
         public DbSet<PlaylistsSongs> PlaylistSongs { get; set; }
         public DbSet<PlaylistsGenres> PlaylistsGenres { get; set; }
         public DbSet<Album> Albums { get; set; }
-        public DbSet<PixabayImage> PixabayImage { get; set; }
 
         public PGDbContext(DbContextOptions<PGDbContext> options) : base(options)
         {
