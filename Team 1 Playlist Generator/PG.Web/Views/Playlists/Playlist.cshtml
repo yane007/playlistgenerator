@@ -1,208 +1,196 @@
 ﻿@inject IJsonHelper Json
 @model PlaylistViewModel
 
-@using (Html.BeginForm())
-{
 
+<div class="containerPlaylist">
+    <div class="left-colPlaylist">
+        <div class="yearPlaylist">EST 2020</div>
+        <div class="block-coverPlaylist"></div>
+        <div class="coverPlaylist">
 
-    <div class="containerPlaylist">
-
-        <div class="left-colPlaylist">
-
-            <div class="yearPlaylist">EST 2020</div>
-            <div class="block-coverPlaylist"></div>
-
-            <div class="coverPlaylist">
-
-                @foreach (var song in Model.SongsPaged)
-                {
-                    <div class="album-name2Playlist">
-                        <p><span>@song.Title | @song.DurationInMinutes</span></p>
-                    </div>
-
-
-                    @*<a href="@song.Preview"> @song.Title | @song.DurationInMinutes</a>*@
-                }
-
-                @for (int i = 0; i < Model.SongsPaged.PageCount; i++)
-                {
-                    var num = i + 1;
-                    <a asp-controller="Playlists" asp-action="GetPagedData" asp-route-pageNumber="@num"> @num </a>
-                }
-
-
-
+            <div id="playlistInfo">
+                <partial name="_PlaylistDetails" model="Model.SongsPaged">
             </div>
 
+            @for (int i = 0; i < Model.SongsPaged.PageCount; i++)
+            {
+                var num = i + 1;
 
+                <a href="#" onclick="LoadPlaylistPage(@Model.Id, @num)">@num</a>
 
-            <div class="playPlaylist">
-                <input type="button" onclick="DZ.player.playTracks(@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.DeezerIDs) as String), false);" value="Play Songs" />
-            </div>
-
-
+                @*<a  asp-controller="Playlists" asp-action="Playlist" asp-route-pageNumber="@num"> @num </a>*@
+            }
 
         </div>
-
-        <div class="right-colPlaylist">
-
-            <div class="upperPlaylist">
-
-                <div class="aboutPlaylist">
-
-                    <h1>@Model.Title</h1>
-                    <div class="album-name2Playlist">
-                        <p><ion-icon name="radioPlaylist"></ion-icon> &nbsp;<span>@Model.UserId</span></p>
-
-                        <p><ion-icon name="radioPlaylist"></ion-icon> &nbsp;<span>@Model.Rank</span></p>
-                    </div>
-
-                    <p>Share now : </p>
-
-                </div>
-
-            </div>
-
-            <div class="upper-blockPlaylist"></div>
-
-            <div class="bottomPlaylist" style=" background: url(@Model.PixabayImage) no-repeat 50% 50%;">
-                <div class="data2Playlist"  >
-
-
-                    <div id="dz-root"  ></div>
-                    <div id="player"  ></div>
-
-
-                    <div class="album-name3Playlist">
-                        <p id="namePlaylist">Play Playlist</p>
-                    </div>
-
-                    <div class="album-artist3Playlist">
-                        <p id="artistPlaylist">Powered by Deezer</p>
-                    </div>
-
-
-
-                </div>
-
-            </div>
-            <div class="block-bottomPlaylist"></div>
-
+        <div class="playPlaylist">
+            <input type="button" onclick="DZ.player.playTracks(@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.DeezerIDs) as String), false);" value="Play Songs" />
         </div>
-
     </div>
 
+    <div class="right-colPlaylist">
+        <div class="upperPlaylist">
+            <div class="aboutPlaylist">
+                <h1>@Model.Title</h1>
+                <div class="album-name2Playlist">
+                    <p><ion-icon name="radioPlaylist"></ion-icon> &nbsp;<span>@Model.UserId</span></p>
 
-    <script>
-        $(document).ready(function () {
-            $("#controlers input").attr('disabled', true);
-            $("#slider_seek").click(function (evt, arg) {
-                var left = evt.offsetX;
-                DZ.player.seek((evt.offsetX / $(this).width()) * 100);
-            });
+                    <p><ion-icon name="radioPlaylist"></ion-icon> &nbsp;<span>@Model.Rank</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="upper-blockPlaylist"></div>
+
+        <div class="bottomPlaylist" style=" background: url(@Model.PixabayImage) no-repeat 50% 50%;">
+            <div class="data2Playlist">
+                <div class="album-name3Playlist">
+                    <p id="namePlaylist">Play Playlist</p>
+                </div>
+                <div class="album-artist3Playlist">
+                    <p id="artistPlaylist">Powered by Deezer</p>
+                </div>
+            </div>
+            <div style="position:fixed; margin-bottom: 16vh;">
+                <div id="dz-root"></div>
+                <div id="player"></div>
+            </div>
+        </div>
+        <div class="block-bottomPlaylist"></div>
+    </div>
+</div>
+
+
+<script>
+
+function LoadPlaylistPage(id, pageNumber) {
+        var url = '@Url.Action("Playlist","Playlists")' + '?id=' + id + '&pageNumber=' + pageNumber;
+
+        $.get(url, function (response) {
+            var result = $(response).find('#playlistInfo');
+
+            $('#playlistInfo').html(result);
         });
-        function event_listener_append() {
-            var pre = document.getElementById('event_listener');
-            var line = [];
-            for (var i = 0; i < arguments.length; i++) {
-                line.push(arguments[i]);
+    }
+
+
+
+
+
+
+
+
+
+
+
+    $(document).ready(function () {
+        $("#controlers input").attr('disabled', true);
+        $("#slider_seek").click(function (evt, arg) {
+            var left = evt.offsetX;
+            DZ.player.seek((evt.offsetX / $(this).width()) * 100);
+        });
+    });
+    function event_listener_append() {
+        var pre = document.getElementById('event_listener');
+        var line = [];
+        for (var i = 0; i < arguments.length; i++) {
+            line.push(arguments[i]);
+        }
+        pre.innerHTML += line.join(' ') + "\n";
+    }
+    function onPlayerLoaded() {
+        $("#controlers input").attr('disabled', false);
+        event_listener_append('player_loaded');
+        DZ.Event.subscribe('current_track', function (arg) {
+            event_listener_append('current_track', arg.index, arg.track.title, arg.track.album.title);
+        });
+        DZ.Event.subscribe('player_position', function (arg) {
+            event_listener_append('position', arg[0], arg[1]);
+            $("#slider_seek").find('.bar').css('width', (100 * arg[0] / arg[1]) + '%');
+        });
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        DZ.init({
+            appId: '8',
+            channelUrl: 'https://developers.deezer.com/examples/channel.php',
+            player: {
+                container: 'player',
+                playlist: true,
+                width: 650,
+                height: 90,
+                onload: onPlayerLoaded
             }
-            pre.innerHTML += line.join(' ') + "\n";
-        }
-        function onPlayerLoaded() {
-            $("#controlers input").attr('disabled', false);
-            event_listener_append('player_loaded');
-            DZ.Event.subscribe('current_track', function (arg) {
-                event_listener_append('current_track', arg.index, arg.track.title, arg.track.album.title);
-            });
-            DZ.Event.subscribe('player_position', function (arg) {
-                event_listener_append('position', arg[0], arg[1]);
-                $("#slider_seek").find('.bar').css('width', (100 * arg[0] / arg[1]) + '%');
-            });
-        }
-        document.addEventListener('DOMContentLoaded', function () {
-            DZ.init({
-                appId: '8',
-                channelUrl: 'https://developers.deezer.com/examples/channel.php',
-                player: {
-                    container: 'player',
-                    playlist: true,
-                    width: 650,
-                    height: 90,
-                    onload: onPlayerLoaded
-                }
-            });
         });
+    });
 
 
 
-        TweenMax.from(".left-colPlaylist", 2, {
-            width: "0%",
-            ease: Expo.easeInOut
-        })
+    TweenMax.from(".left-colPlaylist", 2, {
+        width: "0%",
+        ease: Expo.easeInOut
+    })
 
 
-        TweenMax.from(".yearPlaylist", 2, {
-            delay: 3.1,
-            y: 20,
-            opacity: 0,
-            ease: Expo.easeInOut
-        })
+    TweenMax.from(".yearPlaylist", 2, {
+        delay: 3.1,
+        y: 20,
+        opacity: 0,
+        ease: Expo.easeInOut
+    })
 
-        TweenMax.from(".album-namePlaylist", 2, {
-            delay: 2.4,
-            y: 20,
-            opacity: 0,
-            ease: Expo.easeInOut
-        })
+    TweenMax.from(".album-namePlaylist", 2, {
+        delay: 2.4,
+        y: 20,
+        opacity: 0,
+        ease: Expo.easeInOut
+    })
 
-        TweenMax.from(".album-artistPlaylist", 2, {
-            delay: 2.6,
-            y: 20,
-            opacity: 0,
-            ease: Expo.easeInOut
-        })
+    TweenMax.from(".album-artistPlaylist", 2, {
+        delay: 2.6,
+        y: 20,
+        opacity: 0,
+        ease: Expo.easeInOut
+    })
 
-        TweenMax.from(".aboutPlaylist h1", 2, {
-            delay: 3,
-            y: 20,
-            opacity: 0,
-            ease: Expo.easeInOut
-        })
+    TweenMax.from(".aboutPlaylist h1", 2, {
+        delay: 3,
+        y: 20,
+        opacity: 0,
+        ease: Expo.easeInOut
+    })
 
-        TweenMax.from(".album-name2Playlist", 2, {
-            delay: 3.2,
-            y: 20,
-            opacity: 0,
-            ease: Expo.easeInOut
-        })
-
-
-
-
-        TweenMax.from(".album-name3Playlist", 2, {
-            delay: 4,
-            y: 20,
-            opacity: 0,
-            ease: Expo.easeInOut
-        })
-
-        TweenMax.from(".album-artist3Playlist", 2, {
-            delay: 4.2,
-            y: 20,
-            opacity: 0,
-            ease: Expo.easeInOut
-        })
-
-        TweenMax.from(".nextPlaylist", 2, {
-            delay: 4.4,
-            y: 20,
-            opacity: 0,
-            ease: Expo.easeInOut
-        })
+    TweenMax.from(".album-name2Playlist", 2, {
+        delay: 3.2,
+        y: 20,
+        opacity: 0,
+        ease: Expo.easeInOut
+    })
 
 
 
 
-    </script>
-}
+    TweenMax.from(".album-name3Playlist", 2, {
+        delay: 4,
+        y: 20,
+        opacity: 0,
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".album-artist3Playlist", 2, {
+        delay: 4.2,
+        y: 20,
+        opacity: 0,
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".nextPlaylist", 2, {
+        delay: 4.4,
+        y: 20,
+        opacity: 0,
+        ease: Expo.easeInOut
+    })
+
+
+
+
+</script>
+

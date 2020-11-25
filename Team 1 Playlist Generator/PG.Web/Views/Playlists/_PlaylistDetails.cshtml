@@ -1,0 +1,8 @@
+﻿@model IPagedList<SongViewModel>
+
+@foreach (var song in Model)
+{
+    <div class="album-name2Playlist">
+        <a href="@song.Preview"> @song.Title | @song.DurationInMinutes</a>
+    </div>
+}

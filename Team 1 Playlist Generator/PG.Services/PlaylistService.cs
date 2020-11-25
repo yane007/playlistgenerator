@@ -55,26 +55,31 @@ namespace PG.Services
         /// </summary>
         public async Task<IEnumerable<PlaylistDTO>> GetAllPlaylists() //TODO: OrderByDescending(x => x.Rank)
         {
-            return await _context.Playlists
+            var playlists = await _context.Playlists
                                  .Include(x => x.PlaylistsSongs)
                                  .ThenInclude(x => x.Song)
                                  .Where(x => x.IsDeleted == false)
                                  .Select(x => x.ToDTO())
                                  .ToListAsync();
+
+            return playlists.OrderByDescending(x => x.Rank).ToList();
         }
 
         /// <summary>
         /// Gets all playlists by user's ID.
         /// </summary>
         /// <param name="userId">User's ID.</param>
-        public async Task<IEnumerable<PlaylistDTO>> GetPlaylistsByUser(string userId) //TODO: OrderByDescending(x => x.Rank)
+        public async Task<IEnumerable<PlaylistDTO>> GetPlaylistsByUser(string userId)
         {
-            return await _context.Playlists
+            var playlists =  await _context.Playlists
                                  .Include(x => x.PlaylistsSongs)
                                  .ThenInclude(x => x.Song)
                                  .Where(x => x.UserId == userId && x.IsDeleted == false)
                                  .Select(x => x.ToDTO())
                                  .ToListAsync();
+
+            return playlists.OrderByDescending(x => x.Rank).ToList();
+
         }
 
         /// <summary>
@@ -169,6 +174,7 @@ namespace PG.Services
                 new Tuple<string, int> ("metal", metalPercentagee),
                 new Tuple<string, int> ("rock", rockPercentagee),
                 new Tuple<string, int> ("pop", popPercentagee),
+                new Tuple<string, int> ("pop2", popPercentagee),
             };
 
             //Проверяваме колко genres са селектирани.
@@ -280,13 +286,16 @@ namespace PG.Services
             await _context.SaveChangesAsync();
         }
 
+
+
+
+
         private async Task AddPixabayImageToPlaylist(Playlist databasePlaylist)
         {
             string pixabayImage = await GetPixabayImage(databasePlaylist.Id);
 
             databasePlaylist.PixabayImage = pixabayImage;
         }
-
 
 
 

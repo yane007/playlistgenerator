@@ -97,22 +97,23 @@ namespace PG.Web.Controllers
 
             playlistViewModel.SongsPaged = playlistViewModel.Songs.ToPagedList(pageNumber, 18);
 
+
             return View(playlistViewModel);
         }
 
 
 
-        public async Task<IActionResult> GetPagedData(int pageNumber = 1)
-        {
-            IEnumerable<PlaylistDTO> playlistsDTOs = await _playlistService.GetAllPlaylists();
-            IList<PlaylistViewModel> playlistsViewModels = playlistsDTOs.Select(x => x.ToViewModel()).ToList();
+        //public async Task<IActionResult> GetPagedData(int pageNumber = 1)
+        //{
+        //    IEnumerable<PlaylistDTO> playlistsDTOs = await _playlistService.GetAllPlaylists();
+        //    IList<PlaylistViewModel> playlistsViewModels = playlistsDTOs.Select(x => x.ToViewModel()).ToList();
 
 
-            var b = playlistsViewModels.ToPagedList(pageNumber, 3);
+        //    var b = playlistsViewModels.ToPagedList(pageNumber, 3);
 
-            return View(b);
+        //    return View(b);
 
-        }
+        //}
 
     }
 
