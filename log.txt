@@ -9647,3 +9647,168 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 11/25/2020 00:07:21 HTTP "GET" "/Playlists/Playlist/5" responded 200 in 101.4287 ms
 11/25/2020 00:07:21 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.6757 ms
 11/25/2020 00:07:21 HTTP "GET" "/css/next-cover.jpg" responded 404 in 0.6758 ms
+11/25/2020 04:42:18 Application starting up
+11/25/2020 04:42:20 - Getting index page -
+11/25/2020 04:42:21 HTTP "GET" "/" responded 200 in 1730.8352 ms
+11/25/2020 04:42:23 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 127.1484 ms
+11/25/2020 04:42:23 HTTP "GET" "/css/album-art.jpg" responded 404 in 2.7350 ms
+11/25/2020 04:42:23 HTTP "GET" "/css/next-cover.jpg" responded 404 in 2.6840 ms
+11/25/2020 04:59:02 Application starting up
+11/25/2020 04:59:03 - Getting index page -
+11/25/2020 04:59:06 Failed executing DbCommand ("1,759"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[Id], [p].[Duration], [p].[IsDeleted], [p].[PixabayImage], [p].[Rank], [p].[Title], [p].[UserId], [t].[PlaylistId], [t].[SongId], [t].[Id], [t].[AlbumId], [t].[ArtistId], [t].[DeezerID], [t].[Duration], [t].[GenreId], [t].[IsDeleted], [t].[Link], [t].[Preview], [t].[Rank], [t].[Title]
+FROM [Playlists] AS [p]
+LEFT JOIN (
+    SELECT [p0].[PlaylistId], [p0].[SongId], [s].[Id], [s].[AlbumId], [s].[ArtistId], [s].[DeezerID], [s].[Duration], [s].[GenreId], [s].[IsDeleted], [s].[Link], [s].[Preview], [s].[Rank], [s].[Title]
+    FROM [PlaylistSongs] AS [p0]
+    INNER JOIN [Songs] AS [s] ON [p0].[SongId] = [s].[Id]
+) AS [t] ON [p].[Id] = [t].[PlaylistId]
+WHERE [p].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [p].[Id], [t].[PlaylistId], [t].[SongId], [t].[Id]"
+11/25/2020 04:59:06 An exception occurred while iterating over the results of a query for context type '"PG.Data.Context.PGDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'PixabayImage'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:77d12c66-cfc4-42cd-834e-c7b0f92acf1b
+Error Number:207,State:1,Class:16"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'PixabayImage'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:77d12c66-cfc4-42cd-834e-c7b0f92acf1b
+Error Number:207,State:1,Class:16
+11/25/2020 04:59:06 HTTP "GET" "/" responded 500 in 2996.1108 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'PixabayImage'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PG.Services.PlaylistService.GetAllPlaylists() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 58
+   at PG.Web.Controllers.HomeController.Index() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\HomeController.cs:line 49
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:77d12c66-cfc4-42cd-834e-c7b0f92acf1b
+Error Number:207,State:1,Class:16
+11/25/2020 04:59:06 An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'PixabayImage'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PG.Services.PlaylistService.GetAllPlaylists() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 58
+   at PG.Web.Controllers.HomeController.Index() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\HomeController.cs:line 49
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:77d12c66-cfc4-42cd-834e-c7b0f92acf1b
+Error Number:207,State:1,Class:16
+11/25/2020 04:59:46 Application starting up
+11/25/2020 04:59:47 - Getting index page -
+11/25/2020 04:59:48 HTTP "GET" "/" responded 200 in 1266.6265 ms
+11/25/2020 04:59:48 - Getting index page -
+11/25/2020 04:59:48 HTTP "GET" "/" responded 200 in 45.2309 ms
+11/25/2020 04:59:53 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 97.0445 ms
+11/25/2020 04:59:53 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.9490 ms
+11/25/2020 04:59:53 HTTP "GET" "/css/next-cover.jpg" responded 404 in 0.9339 ms
+11/25/2020 05:00:04 - Getting index page -
+11/25/2020 05:00:04 HTTP "GET" "/" responded 200 in 36.1381 ms
+11/25/2020 05:00:04 - Getting index page -
+11/25/2020 05:00:04 HTTP "GET" "/" responded 200 in 21.2078 ms
+11/25/2020 05:00:20 HTTP "GET" "/Identity/Account/Login" responded 200 in 72.4831 ms
+11/25/2020 05:00:22 User logged in.
+11/25/2020 05:00:22 HTTP "POST" "/Identity/Account/Login" responded 302 in 109.1698 ms
+11/25/2020 05:00:22 - Getting index page -
+11/25/2020 05:00:22 HTTP "GET" "/" responded 200 in 13.7196 ms
+11/25/2020 05:00:33 HTTP "GET" "/Playlists/Create" responded 200 in 40.2591 ms
+11/25/2020 05:00:33 HTTP "GET" "/Playlists/Create/ws" responded 200 in 7.0079 ms
+11/25/2020 05:00:44 Playlist with title 'Sofia-Sandanski' has been created.
+11/25/2020 05:00:45 HTTP "POST" "/Playlists/Create" responded 302 in 4311.2933 ms
+11/25/2020 05:00:45 HTTP "GET" "/Playlists" responded 200 in 17.1529 ms
+11/25/2020 05:00:52 HTTP "GET" "/Playlists" responded 200 in 6.8092 ms
+11/25/2020 05:00:52 - Getting index page -
+11/25/2020 05:00:52 HTTP "GET" "/" responded 200 in 12.4735 ms
+11/25/2020 05:00:53 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 14.8956 ms
+11/25/2020 05:00:54 HTTP "GET" "/Playlists/Playlist/1002" responded 200 in 8.8694 ms
+11/25/2020 05:02:58 Application starting up
+11/25/2020 05:02:59 - Getting index page -
+11/25/2020 05:03:00 HTTP "GET" "/" responded 200 in 1297.6551 ms
+11/25/2020 05:03:03 HTTP "GET" "/Playlists/Playlist/1002" responded 200 in 110.5978 ms
+11/25/2020 05:03:03 HTTP "GET" "/css/next-cover.jpg" responded 404 in 9.5555 ms
+11/25/2020 05:03:03 HTTP "GET" "/css/album-art.jpg" responded 404 in 9.5551 ms

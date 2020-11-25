@@ -23,7 +23,7 @@
             {
                 <div>
                     <p>@item.Title <br /> @item.DurationInHours </p>
-                    <a style="background: url(@item.PixabayImage.WebformatURL)" class="list-group" asp-controller="Playlists" asp-action="Playlist"
+                    <a style="background: url(@item.PixabayImage)" class="list-group" asp-controller="Playlists" asp-action="Playlist"
                        asp-route-id="@item.Id">@item.Rank</a>
 
                 </div>
