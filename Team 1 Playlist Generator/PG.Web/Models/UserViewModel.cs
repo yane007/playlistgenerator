@@ -10,6 +10,8 @@ namespace PG.Web.Models
     {
         public string Id { get; set; }
 
+        public bool LockoutEnabled { get; set; }
+
         public string Name { get; set; }
 
         public string Token  { get; set; }

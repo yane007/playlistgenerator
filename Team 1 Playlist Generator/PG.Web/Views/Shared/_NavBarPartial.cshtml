@@ -16,7 +16,7 @@
 
 
             <li class="nav-item">
-                <a class="nav-link" asp-controller="Playlists" asp-action="Index" >Playlists</a>
+                <a class="nav-link" asp-controller="Playlists" asp-action="Index">Playlists</a>
             </li>
             @if (User.Identity.IsAuthenticated)
             {
@@ -29,7 +29,9 @@
             }
             @if (User.IsInRole("Admin"))
             {
-
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Admin" asp-action="UsersIndex">Users</a>
+                </li>
             }
             <partial name="_LoginPartial" />
         </ul>

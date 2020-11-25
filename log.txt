@@ -11805,3 +11805,1054 @@ Error Number:547,State:0,Class:16
 11/25/2020 14:00:01 HTTP "GET" "/swagger/index.html" responded 200 in 0.9229 ms
 11/25/2020 14:00:01 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 7.0690 ms
 11/25/2020 14:00:09 HTTP "POST" "/api/Users/authenticate" responded 200 in 12.8289 ms
+11/25/2020 15:05:52 Application starting up
+11/25/2020 15:05:54 - Getting index page -
+11/25/2020 15:05:54 HTTP "GET" "/" responded 200 in 1308.2078 ms
+11/25/2020 15:05:57 HTTP "GET" "/Playlists/Playlist/1005" responded 200 in 120.3535 ms
+11/25/2020 15:05:57 HTTP "GET" "/css/album-art.jpg" responded 404 in 9.6283 ms
+11/25/2020 15:06:03 HTTP "GET" "/Playlists/Playlist/1005?id=1005&pageNumber=1" responded 200 in 19.2823 ms
+11/25/2020 15:06:05 HTTP "GET" "/Playlists/Playlist/1004" responded 200 in 19.3285 ms
+11/25/2020 15:06:12 HTTP "GET" "/Playlists/Playlist/1004?id=1004&pageNumber=2" responded 200 in 9.9962 ms
+11/25/2020 15:06:13 HTTP "GET" "/Playlists/Playlist/1004?id=1004&pageNumber=1" responded 200 in 13.6138 ms
+11/25/2020 15:06:14 HTTP "GET" "/Playlists/Playlist/1004?id=1004&pageNumber=2" responded 200 in 8.5704 ms
+11/25/2020 15:09:45 Application starting up
+11/25/2020 15:09:46 - Getting index page -
+11/25/2020 15:09:47 HTTP "GET" "/" responded 200 in 1204.7942 ms
+11/25/2020 15:09:49 HTTP "GET" "/Playlists/Playlist/1004" responded 200 in 125.5467 ms
+11/25/2020 15:09:50 HTTP "GET" "/css/album-art.jpg" responded 404 in 9.7322 ms
+11/25/2020 15:09:57 HTTP "GET" "/Playlists/Playlist/1004?id=1004&pageNumber=2" responded 200 in 17.6022 ms
+11/25/2020 15:10:33 Application starting up
+11/25/2020 15:10:35 - Getting index page -
+11/25/2020 15:10:36 HTTP "GET" "/" responded 200 in 1200.5817 ms
+11/25/2020 15:10:37 HTTP "GET" "/Playlists/Playlist/1004" responded 200 in 119.2195 ms
+11/25/2020 15:10:37 HTTP "GET" "/css/album-art.jpg" responded 404 in 9.4801 ms
+11/25/2020 15:10:53 Application starting up
+11/25/2020 15:10:54 - Getting index page -
+11/25/2020 15:10:55 HTTP "GET" "/" responded 200 in 1182.1296 ms
+11/25/2020 15:10:57 HTTP "GET" "/Playlists/Playlist/1004" responded 200 in 115.5006 ms
+11/25/2020 15:10:57 HTTP "GET" "/css/album-art.jpg" responded 404 in 9.4607 ms
+11/25/2020 15:11:44 Application starting up
+11/25/2020 15:11:44 - Getting index page -
+11/25/2020 15:11:46 HTTP "GET" "/" responded 200 in 1200.9589 ms
+11/25/2020 15:11:46 HTTP "GET" "/Playlists/Playlist/1004" responded 200 in 117.3731 ms
+11/25/2020 15:11:46 HTTP "GET" "/css/album-art.jpg" responded 404 in 9.4482 ms
+11/25/2020 15:13:27 Application starting up
+11/25/2020 15:13:28 - Getting index page -
+11/25/2020 15:13:29 HTTP "GET" "/" responded 200 in 1194.9356 ms
+11/25/2020 15:13:30 HTTP "GET" "/Playlists/Playlist/1004" responded 200 in 116.9358 ms
+11/25/2020 15:13:30 HTTP "GET" "/css/album-art.jpg" responded 404 in 9.2772 ms
+11/25/2020 15:16:10 Application starting up
+11/25/2020 15:16:11 - Getting index page -
+11/25/2020 15:16:12 HTTP "GET" "/" responded 200 in 1192.6630 ms
+11/25/2020 15:16:17 HTTP "GET" "/Playlists/Playlist/1005" responded 200 in 117.9249 ms
+11/25/2020 15:16:17 HTTP "GET" "/css/album-art.jpg" responded 404 in 9.4255 ms
+11/25/2020 15:17:54 Application starting up
+11/25/2020 15:17:55 - Getting index page -
+11/25/2020 15:17:56 HTTP "GET" "/" responded 200 in 1204.7176 ms
+11/25/2020 15:17:58 HTTP "GET" "/Playlists/Playlist/1005" responded 200 in 119.0551 ms
+11/25/2020 15:17:58 HTTP "GET" "/css/album-art.jpg" responded 404 in 9.3129 ms
+11/25/2020 15:18:44 Application starting up
+11/25/2020 15:18:45 - Getting index page -
+11/25/2020 15:18:46 HTTP "GET" "/" responded 200 in 1203.5436 ms
+11/25/2020 15:18:48 HTTP "GET" "/Playlists/Playlist/1005" responded 200 in 119.3701 ms
+11/25/2020 15:18:48 HTTP "GET" "/css/album-art.jpg" responded 404 in 9.5604 ms
+11/25/2020 15:20:14 Application starting up
+11/25/2020 15:20:14 - Getting index page -
+11/25/2020 15:20:15 HTTP "GET" "/" responded 200 in 1200.1031 ms
+11/25/2020 15:20:16 HTTP "GET" "/Playlists/Playlist/1005" responded 200 in 115.7153 ms
+11/25/2020 15:20:16 HTTP "GET" "/css/album-art.jpg" responded 404 in 9.3925 ms
+11/25/2020 15:20:50 - Getting index page -
+11/25/2020 15:20:50 HTTP "GET" "/" responded 200 in 20.9658 ms
+11/25/2020 15:20:51 HTTP "GET" "/Playlists/Playlist/1004" responded 200 in 25.0403 ms
+11/25/2020 15:21:03 HTTP "GET" "/Playlists/Playlist/1004?id=1004&pageNumber=2" responded 200 in 19.6085 ms
+11/25/2020 15:22:46 HTTP "GET" "/Playlists/Playlist/1004?id=1004&pageNumber=2" responded 200 in 12.9324 ms
+11/25/2020 15:22:47 HTTP "GET" "/Playlists/Playlist/1004?id=1004&pageNumber=1" responded 200 in 11.3422 ms
+11/25/2020 15:22:59 HTTP "GET" "/Playlists" responded 200 in 20.5992 ms
+11/25/2020 15:23:00 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 28.1617 ms
+11/25/2020 15:23:03 HTTP "GET" "/Playlists" responded 200 in 10.7032 ms
+11/25/2020 15:23:07 HTTP "GET" "/Playlists/Playlist/1003" responded 200 in 9.5787 ms
+11/25/2020 15:25:27 Application starting up
+11/25/2020 15:25:28 - Getting index page -
+11/25/2020 15:25:29 HTTP "GET" "/" responded 200 in 1230.2773 ms
+11/25/2020 15:25:33 HTTP "GET" "/Playlists/Playlist/1005" responded 200 in 118.1753 ms
+11/25/2020 15:25:33 HTTP "GET" "/css/album-art.jpg" responded 404 in 9.3933 ms
+11/25/2020 15:28:57 Application starting up
+11/25/2020 15:28:58 - Getting index page -
+11/25/2020 15:28:59 HTTP "GET" "/" responded 200 in 1196.9352 ms
+11/25/2020 15:29:02 HTTP "GET" "/Playlists/Playlist/1005" responded 200 in 118.5198 ms
+11/25/2020 15:29:02 HTTP "GET" "/css/album-art.jpg" responded 404 in 9.4101 ms
+11/25/2020 15:29:12 - Getting index page -
+11/25/2020 15:29:12 HTTP "GET" "/" responded 200 in 22.2972 ms
+11/25/2020 15:31:43 Application starting up
+11/25/2020 15:31:44 - Getting index page -
+11/25/2020 15:31:45 HTTP "GET" "/" responded 200 in 1217.6202 ms
+11/25/2020 15:32:13 Application starting up
+11/25/2020 15:32:14 - Getting index page -
+11/25/2020 15:32:15 HTTP "GET" "/" responded 200 in 1222.7123 ms
+11/25/2020 15:32:23 HTTP "GET" "/Playlists/Playlist/1005" responded 200 in 121.4008 ms
+11/25/2020 15:32:23 HTTP "GET" "/css/album-art.jpg" responded 404 in 10.3436 ms
+11/25/2020 15:32:29 HTTP "GET" "/Playlists/Playlist/1005" responded 200 in 16.4686 ms
+11/25/2020 15:39:42 HTTP "GET" "/Playlists/Playlist/1005" responded 200 in 92.6337 ms
+11/25/2020 15:39:42 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.6841 ms
+11/25/2020 15:40:25 Application starting up
+11/25/2020 15:40:26 - Getting index page -
+11/25/2020 15:40:27 HTTP "GET" "/" responded 200 in 1196.4901 ms
+11/25/2020 15:40:29 HTTP "GET" "/Playlists/Playlist/1003" responded 200 in 116.8851 ms
+11/25/2020 15:40:29 HTTP "GET" "/css/album-art.jpg" responded 404 in 9.6696 ms
+11/25/2020 15:40:39 HTTP "GET" "/Playlists/Playlist/1003" responded 200 in 19.2393 ms
+11/25/2020 16:30:33 Application starting up
+11/25/2020 16:30:35 - Getting index page -
+11/25/2020 16:30:35 HTTP "GET" "/" responded 200 in 1409.5054 ms
+11/25/2020 16:30:39 HTTP "GET" "/Users" responded 404 in 4.3793 ms
+11/25/2020 16:30:56 HTTP "GET" "/Admin/Users" responded 404 in 12.8444 ms
+11/25/2020 16:32:19 Application starting up
+11/25/2020 16:32:20 - Getting index page -
+11/25/2020 16:32:22 HTTP "GET" "/" responded 200 in 1207.2870 ms
+11/25/2020 16:32:24 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 43.4675 ms
+11/25/2020 16:32:24 - Getting index page -
+11/25/2020 16:32:24 HTTP "GET" "/" responded 200 in 51.5353 ms
+11/25/2020 16:32:25 HTTP "GET" "/Identity/Account/Login" responded 200 in 55.4001 ms
+11/25/2020 16:32:51 User logged in.
+11/25/2020 16:32:51 HTTP "POST" "/Identity/Account/Login" responded 302 in 101.9742 ms
+11/25/2020 16:32:51 - Getting index page -
+11/25/2020 16:32:51 HTTP "GET" "/" responded 200 in 18.2305 ms
+11/25/2020 16:32:53 The view '"UsersIndex"' was not found. Searched locations: ["/Views/Admin/UsersIndex.cshtml", "/Views/Shared/UsersIndex.cshtml", "/Pages/Shared/UsersIndex.cshtml"]
+11/25/2020 16:32:53 HTTP "GET" "/Admin/UsersIndex" responded 500 in 28.3765 ms
+System.InvalidOperationException: The view 'UsersIndex' was not found. The following locations were searched:
+/Views/Admin/UsersIndex.cshtml
+/Views/Shared/UsersIndex.cshtml
+/Pages/Shared/UsersIndex.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/25/2020 16:32:53 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'UsersIndex' was not found. The following locations were searched:
+/Views/Admin/UsersIndex.cshtml
+/Views/Shared/UsersIndex.cshtml
+/Pages/Shared/UsersIndex.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/25/2020 16:33:13 Application starting up
+11/25/2020 16:33:14 - Getting index page -
+11/25/2020 16:33:15 HTTP "GET" "/" responded 200 in 1237.3862 ms
+11/25/2020 16:33:17 HTTP "GET" "/Admin/UsersIndex" responded 200 in 55.1538 ms
+11/25/2020 16:33:21 HTTP "POST" "/Admin/BanUsers" responded 302 in 1830.6157 ms
+11/25/2020 16:33:21 HTTP "GET" "/Admin/UsersIndex" responded 200 in 6.1550 ms
+11/25/2020 16:33:23 HTTP "POST" "/Admin/BanUsers" responded 302 in 7.6841 ms
+11/25/2020 16:33:23 HTTP "GET" "/Admin/UsersIndex" responded 200 in 15.2518 ms
+11/25/2020 16:33:24 HTTP "POST" "/Admin/BanUsers" responded 302 in 5.1689 ms
+11/25/2020 16:33:24 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.2798 ms
+11/25/2020 16:33:26 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.7054 ms
+11/25/2020 16:33:28 HTTP "POST" "/Admin/BanUsers" responded 302 in 4.4230 ms
+11/25/2020 16:33:28 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.9063 ms
+11/25/2020 16:33:29 HTTP "POST" "/Admin/BanUsers" responded 302 in 3.9294 ms
+11/25/2020 16:33:29 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.7448 ms
+11/25/2020 16:33:29 HTTP "POST" "/Admin/BanUsers" responded 302 in 3.6331 ms
+11/25/2020 16:33:29 HTTP "GET" "/Admin/UsersIndex" responded 200 in 3.4725 ms
+11/25/2020 16:33:29 HTTP "POST" "/Admin/BanUsers" responded 302 in 5.2502 ms
+11/25/2020 16:33:29 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.6341 ms
+11/25/2020 16:33:29 HTTP "POST" "/Admin/BanUsers" responded 302 in 5.5071 ms
+11/25/2020 16:33:29 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.1880 ms
+11/25/2020 16:33:30 HTTP "POST" "/Admin/BanUsers" responded 302 in 3.5103 ms
+11/25/2020 16:33:30 HTTP "GET" "/Admin/UsersIndex" responded 200 in 3.6766 ms
+11/25/2020 16:33:30 HTTP "POST" "/Admin/BanUsers" responded 302 in 4.1215 ms
+11/25/2020 16:33:30 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.1468 ms
+11/25/2020 16:33:30 HTTP "POST" "/Admin/BanUsers" responded 302 in 3.8410 ms
+11/25/2020 16:33:30 HTTP "GET" "/Admin/UsersIndex" responded 200 in 3.9578 ms
+11/25/2020 16:33:31 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 310.5422 ms
+11/25/2020 16:33:31 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.7374 ms
+11/25/2020 16:33:31 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 4.3540 ms
+11/25/2020 16:33:31 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.1317 ms
+11/25/2020 16:33:31 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 4.8692 ms
+11/25/2020 16:33:31 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.5676 ms
+11/25/2020 16:33:32 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 3.0076 ms
+11/25/2020 16:33:32 HTTP "GET" "/Admin/UsersIndex" responded 200 in 2.9352 ms
+11/25/2020 16:33:35 HTTP "POST" "/Admin/BanUsers" responded 302 in 5.6158 ms
+11/25/2020 16:33:35 HTTP "GET" "/Admin/UsersIndex" responded 200 in 3.8457 ms
+11/25/2020 16:33:35 HTTP "POST" "/Admin/BanUsers" responded 302 in 2.7281 ms
+11/25/2020 16:33:35 HTTP "GET" "/Admin/UsersIndex" responded 200 in 1.8673 ms
+11/25/2020 16:33:36 HTTP "POST" "/Admin/BanUsers" responded 302 in 2.0767 ms
+11/25/2020 16:33:36 HTTP "GET" "/Admin/UsersIndex" responded 200 in 2.0989 ms
+11/25/2020 16:33:36 HTTP "POST" "/Admin/BanUsers" responded 302 in 1.7284 ms
+11/25/2020 16:33:36 HTTP "GET" "/Admin/UsersIndex" responded 200 in 1.8380 ms
+11/25/2020 16:33:36 HTTP "POST" "/Admin/BanUsers" responded 302 in 2.3226 ms
+11/25/2020 16:33:36 HTTP "GET" "/Admin/UsersIndex" responded 200 in 2.0843 ms
+11/25/2020 16:33:37 HTTP "POST" "/Admin/BanUsers" responded 302 in 1.6914 ms
+11/25/2020 16:33:37 HTTP "GET" "/Admin/UsersIndex" responded 200 in 1.7027 ms
+11/25/2020 16:33:37 HTTP "POST" "/Admin/BanUsers" responded 302 in 2.0513 ms
+11/25/2020 16:33:37 HTTP "GET" "/Admin/UsersIndex" responded 200 in 1.6091 ms
+11/25/2020 16:33:37 HTTP "POST" "/Admin/BanUsers" responded 302 in 1.9090 ms
+11/25/2020 16:33:37 HTTP "GET" "/Admin/UsersIndex" responded 200 in 1.6646 ms
+11/25/2020 16:33:38 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 6.2100 ms
+11/25/2020 16:33:38 HTTP "GET" "/Admin/UsersIndex" responded 200 in 1.6720 ms
+11/25/2020 16:33:39 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 4.8935 ms
+11/25/2020 16:33:39 HTTP "GET" "/Admin/UsersIndex" responded 200 in 1.7313 ms
+11/25/2020 16:34:50 Application starting up
+11/25/2020 16:34:51 - Getting index page -
+11/25/2020 16:34:53 HTTP "GET" "/" responded 200 in 1606.9773 ms
+11/25/2020 16:35:39 Application starting up
+11/25/2020 16:35:40 - Getting index page -
+11/25/2020 16:35:41 HTTP "GET" "/" responded 200 in 1229.6422 ms
+11/25/2020 16:35:43 HTTP "GET" "/Admin/UsersIndex" responded 200 in 60.0627 ms
+11/25/2020 16:35:45 HTTP "POST" "/Admin/BanUsers" responded 302 in 44.6478 ms
+11/25/2020 16:35:45 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.5051 ms
+11/25/2020 16:35:51 Application starting up
+11/25/2020 16:35:53 - Getting index page -
+11/25/2020 16:35:54 HTTP "GET" "/" responded 200 in 1530.9400 ms
+11/25/2020 16:35:55 HTTP "GET" "/Admin/UsersIndex" responded 200 in 59.5600 ms
+11/25/2020 16:37:03 HTTP "POST" "/Admin/BanUsers" responded 302 in 66063.0327 ms
+11/25/2020 16:37:03 HTTP "GET" "/Admin/UsersIndex" responded 200 in 10.8203 ms
+11/25/2020 16:38:32 Application starting up
+11/25/2020 16:38:34 - Getting index page -
+11/25/2020 16:38:36 HTTP "GET" "/" responded 200 in 1599.8250 ms
+11/25/2020 16:38:38 HTTP "GET" "/Admin/UsersIndex" responded 200 in 97.8205 ms
+11/25/2020 16:39:05 Application starting up
+11/25/2020 16:39:22 Application starting up
+11/25/2020 16:39:24 - Getting index page -
+11/25/2020 16:39:25 HTTP "GET" "/" responded 200 in 1544.7973 ms
+11/25/2020 16:39:25 - Getting index page -
+11/25/2020 16:39:25 HTTP "GET" "/" responded 200 in 58.0578 ms
+11/25/2020 16:39:27 HTTP "GET" "/Admin/UsersIndex" responded 200 in 46.0745 ms
+11/25/2020 16:44:48 Application starting up
+11/25/2020 16:44:49 - Getting index page -
+11/25/2020 16:44:50 HTTP "GET" "/" responded 200 in 1315.2968 ms
+11/25/2020 16:44:51 HTTP "GET" "/Admin/UsersIndex" responded 200 in 55.1459 ms
+11/25/2020 16:44:53 HTTP "POST" "/Admin/BanUsers" responded 302 in 231.5962 ms
+11/25/2020 16:44:53 HTTP "GET" "/Admin/UsersIndex" responded 200 in 6.4350 ms
+11/25/2020 16:44:53 HTTP "POST" "/Admin/BanUsers" responded 302 in 12.5423 ms
+11/25/2020 16:44:53 HTTP "GET" "/Admin/UsersIndex" responded 200 in 11.5458 ms
+11/25/2020 16:44:54 HTTP "POST" "/Admin/BanUsers" responded 302 in 4.8997 ms
+11/25/2020 16:44:54 HTTP "GET" "/Admin/UsersIndex" responded 200 in 2.9735 ms
+11/25/2020 16:45:55 Application starting up
+11/25/2020 16:45:57 - Getting index page -
+11/25/2020 16:45:58 HTTP "GET" "/" responded 200 in 1324.7405 ms
+11/25/2020 16:46:00 HTTP "GET" "/Admin/UsersIndex" responded 200 in 57.0772 ms
+11/25/2020 16:46:10 HTTP "POST" "/Admin/BanUsers" responded 302 in 47.2650 ms
+11/25/2020 16:46:10 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.4476 ms
+11/25/2020 16:46:11 HTTP "POST" "/Admin/BanUsers" responded 302 in 7.4152 ms
+11/25/2020 16:46:11 HTTP "GET" "/Admin/UsersIndex" responded 200 in 13.4145 ms
+11/25/2020 16:46:11 HTTP "POST" "/Admin/BanUsers" responded 302 in 5.0342 ms
+11/25/2020 16:46:11 HTTP "GET" "/Admin/UsersIndex" responded 200 in 3.1111 ms
+11/25/2020 16:50:15 Application starting up
+11/25/2020 16:50:17 - Getting index page -
+11/25/2020 16:50:18 HTTP "GET" "/" responded 200 in 1290.1883 ms
+11/25/2020 16:50:20 HTTP "GET" "/Admin/UsersIndex" responded 200 in 61.2811 ms
+11/25/2020 16:50:21 HTTP "POST" "/Admin/BanUsers" responded 302 in 45.2006 ms
+11/25/2020 16:50:21 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.5860 ms
+11/25/2020 16:50:22 HTTP "POST" "/Admin/BanUsers" responded 302 in 7.6749 ms
+11/25/2020 16:50:22 HTTP "GET" "/Admin/UsersIndex" responded 200 in 12.7092 ms
+11/25/2020 16:50:22 HTTP "POST" "/Admin/BanUsers" responded 302 in 4.6691 ms
+11/25/2020 16:50:23 HTTP "GET" "/Admin/UsersIndex" responded 200 in 3.0901 ms
+11/25/2020 16:50:48 Application starting up
+11/25/2020 16:50:50 - Getting index page -
+11/25/2020 16:50:51 HTTP "GET" "/" responded 200 in 1484.7501 ms
+11/25/2020 16:50:53 HTTP "GET" "/Admin/UsersIndex" responded 200 in 60.5441 ms
+11/25/2020 16:51:02 Application starting up
+11/25/2020 16:51:03 - Getting index page -
+11/25/2020 16:51:05 HTTP "GET" "/" responded 200 in 1217.3163 ms
+11/25/2020 16:51:06 HTTP "GET" "/Admin/UsersIndex" responded 200 in 58.0584 ms
+11/25/2020 16:51:08 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 1696.3093 ms
+11/25/2020 16:51:08 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 916.1759 ms
+11/25/2020 16:51:08 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 1341.5450 ms
+11/25/2020 16:51:08 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 533.0228 ms
+11/25/2020 16:51:08 HTTP "GET" "/Admin/UsersIndex" responded 200 in 6.3566 ms
+11/25/2020 16:51:09 HTTP "POST" "/Admin/BanUsers" responded 302 in 13.7593 ms
+11/25/2020 16:51:09 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.3939 ms
+11/25/2020 16:51:09 HTTP "POST" "/Admin/BanUsers" responded 302 in 6.7457 ms
+11/25/2020 16:51:09 HTTP "GET" "/Admin/UsersIndex" responded 200 in 3.0748 ms
+11/25/2020 16:51:10 HTTP "POST" "/Admin/BanUsers" responded 302 in 9.5115 ms
+11/25/2020 16:51:10 HTTP "GET" "/Admin/UsersIndex" responded 200 in 9.0965 ms
+11/25/2020 16:51:28 HTTP "GET" "/Admin/UsersIndex" responded 200 in 6.8359 ms
+11/25/2020 16:51:52 Application starting up
+11/25/2020 16:51:53 - Getting index page -
+11/25/2020 16:51:55 HTTP "GET" "/" responded 200 in 1547.2781 ms
+11/25/2020 16:52:38 HTTP "GET" "/Admin/UsersIndex" responded 200 in 41696.8992 ms
+11/25/2020 17:03:34 Application starting up
+11/25/2020 17:03:36 - Getting index page -
+11/25/2020 17:03:36 HTTP "GET" "/" responded 200 in 1345.3792 ms
+11/25/2020 17:03:39 HTTP "GET" "/Admin/UsersIndex" responded 500 in 63.2094 ms
+System.InvalidOperationException: The partial view '_PlaylistDetails' was not found. The following locations were searched:
+/Views/Admin/_PlaylistDetails.cshtml
+/Views/Shared/_PlaylistDetails.cshtml
+/Pages/Shared/_PlaylistDetails.cshtml
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Admin_UsersIndex.ExecuteAsync() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Views\Admin\UsersIndex.cshtml:line 8
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/25/2020 17:03:39 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The partial view '_PlaylistDetails' was not found. The following locations were searched:
+/Views/Admin/_PlaylistDetails.cshtml
+/Views/Shared/_PlaylistDetails.cshtml
+/Pages/Shared/_PlaylistDetails.cshtml
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Admin_UsersIndex.ExecuteAsync() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Views\Admin\UsersIndex.cshtml:line 8
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/25/2020 17:03:59 Application starting up
+11/25/2020 17:04:00 - Getting index page -
+11/25/2020 17:04:01 HTTP "GET" "/" responded 200 in 1203.9065 ms
+11/25/2020 17:04:02 HTTP "GET" "/Admin/UsersIndex" responded 200 in 82.6835 ms
+11/25/2020 17:04:19 Application starting up
+11/25/2020 17:04:20 - Getting index page -
+11/25/2020 17:04:21 HTTP "GET" "/" responded 200 in 1299.8534 ms
+11/25/2020 17:04:23 HTTP "GET" "/Admin/UsersIndex" responded 200 in 84.0968 ms
+11/25/2020 17:04:31 - Getting index page -
+11/25/2020 17:04:31 HTTP "GET" "/" responded 200 in 30.2896 ms
+11/25/2020 17:04:32 HTTP "GET" "/Admin/UsersIndex" responded 200 in 9.0942 ms
+11/25/2020 17:04:44 Application starting up
+11/25/2020 17:04:46 - Getting index page -
+11/25/2020 17:04:47 HTTP "GET" "/" responded 200 in 1491.7005 ms
+11/25/2020 17:04:50 HTTP "GET" "/Admin/UsersIndex" responded 200 in 1411.1035 ms
+11/25/2020 17:06:57 Application starting up
+11/25/2020 17:06:58 - Getting index page -
+11/25/2020 17:06:59 HTTP "GET" "/" responded 200 in 1369.7973 ms
+11/25/2020 17:07:00 HTTP "GET" "/Admin/UsersIndex" responded 200 in 74.4961 ms
+11/25/2020 17:07:10 HTTP "GET" "/Playlists" responded 200 in 34.2867 ms
+11/25/2020 17:07:11 HTTP "GET" "/Playlists/Playlist/1005" responded 200 in 78.3293 ms
+11/25/2020 17:07:11 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.6968 ms
+11/25/2020 17:07:14 HTTP "GET" "/Playlists" responded 200 in 14.8855 ms
+11/25/2020 17:07:15 HTTP "GET" "/Playlists/Playlist/1004" responded 200 in 17.3484 ms
+11/25/2020 17:07:20 HTTP "GET" "/Playlists/Playlist/@Url.Action(%22Playlist%22,%22Playlists%22)?id=1004&pageNumber=2" responded 500 in 15.3365 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 101
+   at PG.Web.Controllers.PlaylistsController.Playlist(Int32 id, Int32 pageNumber) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 95
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/25/2020 17:07:20 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 101
+   at PG.Web.Controllers.PlaylistsController.Playlist(Int32 id, Int32 pageNumber) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 95
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/25/2020 17:07:22 HTTP "GET" "/Playlists/Playlist/@Url.Action(%22Playlist%22,%22Playlists%22)?id=1004&pageNumber=1" responded 500 in 6.4095 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 101
+   at PG.Web.Controllers.PlaylistsController.Playlist(Int32 id, Int32 pageNumber) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 95
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/25/2020 17:07:22 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 101
+   at PG.Web.Controllers.PlaylistsController.Playlist(Int32 id, Int32 pageNumber) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 95
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/25/2020 17:07:23 HTTP "GET" "/Playlists/Playlist/@Url.Action(%22Playlist%22,%22Playlists%22)?id=1004&pageNumber=2" responded 500 in 4.8577 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 101
+   at PG.Web.Controllers.PlaylistsController.Playlist(Int32 id, Int32 pageNumber) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 95
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/25/2020 17:07:23 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 101
+   at PG.Web.Controllers.PlaylistsController.Playlist(Int32 id, Int32 pageNumber) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 95
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/25/2020 17:07:32 - Getting index page -
+11/25/2020 17:07:32 HTTP "GET" "/" responded 200 in 39.7057 ms
+11/25/2020 17:07:34 HTTP "GET" "/Playlists/Playlist/1004" responded 200 in 14.8225 ms
+11/25/2020 17:07:34 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.7710 ms
+11/25/2020 17:07:39 HTTP "GET" "/Playlists/Playlist/@Url.Action(%22Playlist%22,%22Playlists%22)?id=1004&pageNumber=2" responded 500 in 8.1194 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 101
+   at PG.Web.Controllers.PlaylistsController.Playlist(Int32 id, Int32 pageNumber) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 95
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/25/2020 17:07:39 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 101
+   at PG.Web.Controllers.PlaylistsController.Playlist(Int32 id, Int32 pageNumber) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 95
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/25/2020 17:07:40 HTTP "GET" "/Playlists/Playlist/@Url.Action(%22Playlist%22,%22Playlists%22)?id=1004&pageNumber=1" responded 500 in 4.0769 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 101
+   at PG.Web.Controllers.PlaylistsController.Playlist(Int32 id, Int32 pageNumber) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 95
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/25/2020 17:07:40 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 101
+   at PG.Web.Controllers.PlaylistsController.Playlist(Int32 id, Int32 pageNumber) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 95
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/25/2020 17:07:40 HTTP "GET" "/Playlists/Playlist/@Url.Action(%22Playlist%22,%22Playlists%22)?id=1004&pageNumber=2" responded 500 in 3.6637 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 101
+   at PG.Web.Controllers.PlaylistsController.Playlist(Int32 id, Int32 pageNumber) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 95
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/25/2020 17:07:40 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 101
+   at PG.Web.Controllers.PlaylistsController.Playlist(Int32 id, Int32 pageNumber) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 95
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/25/2020 17:09:06 Application starting up
+11/25/2020 17:09:08 - Getting index page -
+11/25/2020 17:09:09 HTTP "GET" "/" responded 200 in 1530.1752 ms
+11/25/2020 17:09:13 HTTP "GET" "/Playlists/Playlist/1004" responded 200 in 145.6799 ms
+11/25/2020 17:09:13 HTTP "GET" "/css/album-art.jpg" responded 404 in 10.6645 ms
+11/25/2020 17:11:39 Application starting up
+11/25/2020 17:11:40 - Getting index page -
+11/25/2020 17:11:41 HTTP "GET" "/" responded 200 in 1246.9763 ms
+11/25/2020 17:11:43 HTTP "GET" "/Playlists/Playlist/1004" responded 200 in 118.5548 ms
+11/25/2020 17:11:43 HTTP "GET" "/css/album-art.jpg" responded 404 in 9.9464 ms
+11/25/2020 17:11:49 HTTP "GET" "/Playlists/Playlist/@Url.Action(%22Playlist%22,%22Playlists%22)?id=1004&pageNumber=2" responded 500 in 16.2620 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 101
+   at PG.Web.Controllers.PlaylistsController.Playlist(Int32 id, Int32 pageNumber) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 95
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/25/2020 17:11:49 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 101
+   at PG.Web.Controllers.PlaylistsController.Playlist(Int32 id, Int32 pageNumber) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 95
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/25/2020 17:14:23 Application starting up
+11/25/2020 17:14:24 - Getting index page -
+11/25/2020 17:14:25 HTTP "GET" "/" responded 200 in 1380.5868 ms
+11/25/2020 17:14:26 HTTP "GET" "/js/playlistView.js" responded 404 in 2.8548 ms
+11/25/2020 17:14:26 HTTP "GET" "/js/playlistView.js" responded 404 in 10.5501 ms
+11/25/2020 17:14:27 HTTP "GET" "/Playlists/Playlist/1004" responded 200 in 121.5851 ms
+11/25/2020 17:14:27 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2099 ms
+11/25/2020 17:14:27 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3451 ms
+11/25/2020 17:14:33 HTTP "GET" "/Playlists/Playlist/1004?id=1004&pageNumber=2" responded 200 in 28.9372 ms
+11/25/2020 17:14:36 HTTP "GET" "/Playlists/Playlist/1004?id=1004&pageNumber=1" responded 200 in 14.1217 ms
+11/25/2020 17:15:16 Application starting up
+11/25/2020 17:15:17 - Getting index page -
+11/25/2020 17:15:18 HTTP "GET" "/" responded 200 in 1219.3770 ms
+11/25/2020 17:15:19 HTTP "GET" "/Playlists/Playlist/1004" responded 200 in 117.3868 ms
+11/25/2020 17:15:19 HTTP "GET" "/css/album-art.jpg" responded 404 in 9.5802 ms
+11/25/2020 17:15:25 HTTP "GET" "/Playlists/Playlist/@Url.Action(%22Playlist%22,%22Playlists%22)?id=1004&pageNumber=2" responded 500 in 14.5527 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 101
+   at PG.Web.Controllers.PlaylistsController.Playlist(Int32 id, Int32 pageNumber) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 95
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/25/2020 17:15:25 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id 0 was not found.')
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 101
+   at PG.Web.Controllers.PlaylistsController.Playlist(Int32 id, Int32 pageNumber) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 95
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/25/2020 17:17:16 Application starting up
+11/25/2020 17:17:18 - Getting index page -
+11/25/2020 17:17:19 HTTP "GET" "/" responded 200 in 1525.4921 ms
+11/25/2020 17:17:19 HTTP "GET" "/js/playlistView.js" responded 404 in 9.1535 ms
+11/25/2020 17:17:19 HTTP "GET" "/js/playlistView.js" responded 404 in 11.0567 ms
+11/25/2020 17:17:23 HTTP "GET" "/Admin/UsersIndex" responded 200 in 1860.3206 ms
+11/25/2020 17:17:23 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6375 ms
+11/25/2020 17:17:26 HTTP "GET" "/Admin/UsersIndex&pageNumber=2" responded 404 in 2.8124 ms
+11/25/2020 17:17:29 HTTP "GET" "/Admin/UsersIndex&pageNumber=1" responded 404 in 2.8564 ms
+11/25/2020 17:17:30 HTTP "GET" "/Admin/UsersIndex&pageNumber=2" responded 404 in 1.1480 ms
+11/25/2020 17:17:30 HTTP "GET" "/Admin/UsersIndex&pageNumber=1" responded 404 in 1.1419 ms
+11/25/2020 17:17:31 HTTP "GET" "/Admin/UsersIndex&pageNumber=2" responded 404 in 0.9803 ms
+11/25/2020 17:19:30 Application starting up
+11/25/2020 17:19:31 - Getting index page -
+11/25/2020 17:19:32 HTTP "GET" "/" responded 200 in 1197.9191 ms
+11/25/2020 17:19:32 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4185 ms
+11/25/2020 17:19:32 HTTP "GET" "/js/playlistView.js" responded 404 in 10.5347 ms
+11/25/2020 17:19:34 HTTP "GET" "/Playlists/Playlist/1004" responded 200 in 116.8924 ms
+11/25/2020 17:19:34 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1296 ms
+11/25/2020 17:19:34 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3720 ms
+11/25/2020 17:19:36 HTTP "GET" "/Admin/UsersIndex" responded 200 in 39.3213 ms
+11/25/2020 17:19:36 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4792 ms
+11/25/2020 17:19:38 HTTP "GET" "/Admin/UsersIndex&pageNumber=2" responded 404 in 2.1781 ms
+11/25/2020 17:19:39 HTTP "GET" "/Admin/UsersIndex&pageNumber=1" responded 404 in 1.3174 ms
+11/25/2020 17:19:40 HTTP "GET" "/Admin/UsersIndex&pageNumber=2" responded 404 in 1.0858 ms
+11/25/2020 17:19:41 HTTP "GET" "/Admin/UsersIndex&pageNumber=1" responded 404 in 1.0672 ms
+11/25/2020 17:19:41 HTTP "GET" "/Admin/UsersIndex&pageNumber=2" responded 404 in 1.3055 ms
+11/25/2020 17:21:09 Application starting up
+11/25/2020 17:21:10 - Getting index page -
+11/25/2020 17:21:12 HTTP "GET" "/" responded 200 in 1486.0494 ms
+11/25/2020 17:21:12 HTTP "GET" "/js/playlistView.js" responded 404 in 3.8189 ms
+11/25/2020 17:21:15 HTTP "GET" "/Admin/UsersIndex" responded 200 in 2411.3394 ms
+11/25/2020 17:21:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4872 ms
+11/25/2020 17:21:20 HTTP "GET" "/Admin/UsersIndex?pageNumber=2" responded 200 in 2697.7918 ms
+11/25/2020 17:21:20 HTTP "GET" "/js/playlistView.js" responded 404 in 1.5657 ms
+11/25/2020 17:21:33 Application starting up
+11/25/2020 17:21:34 - Getting index page -
+11/25/2020 17:21:35 HTTP "GET" "/" responded 200 in 1216.8006 ms
+11/25/2020 17:21:35 HTTP "GET" "/js/playlistView.js" responded 404 in 2.2687 ms
+11/25/2020 17:21:35 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3096 ms
+11/25/2020 17:21:36 HTTP "GET" "/Admin/UsersIndex" responded 200 in 72.2309 ms
+11/25/2020 17:21:36 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6149 ms
+11/25/2020 17:21:38 HTTP "GET" "/Admin/UsersIndex?pageNumber=2" responded 200 in 16.5709 ms
+11/25/2020 17:21:38 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7975 ms
+11/25/2020 17:21:41 HTTP "GET" "/Admin/UsersIndex?pageNumber=1" responded 200 in 16.3374 ms
+11/25/2020 17:21:41 HTTP "GET" "/js/playlistView.js" responded 404 in 1.5997 ms
+11/25/2020 17:21:43 HTTP "GET" "/Admin/UsersIndex?pageNumber=2" responded 200 in 7.5077 ms
+11/25/2020 17:21:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5595 ms
+11/25/2020 17:21:44 HTTP "POST" "/Admin/BanUsers" responded 302 in 19.9601 ms
+11/25/2020 17:21:44 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.2927 ms
+11/25/2020 17:21:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3678 ms
+11/25/2020 17:21:47 HTTP "GET" "/Admin/UsersIndex?pageNumber=2" responded 200 in 9.9552 ms
+11/25/2020 17:21:47 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1185 ms
+11/25/2020 17:21:50 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 96.8203 ms
+11/25/2020 17:21:50 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.8542 ms
+11/25/2020 17:21:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4235 ms
+11/25/2020 17:23:18 Application starting up
+11/25/2020 17:23:19 - Getting index page -
+11/25/2020 17:23:20 HTTP "GET" "/" responded 200 in 1215.7058 ms
+11/25/2020 17:23:20 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6960 ms
+11/25/2020 17:23:20 HTTP "GET" "/js/playlistView.js" responded 404 in 11.3288 ms
+11/25/2020 17:23:22 HTTP "GET" "/Admin/UsersIndex" responded 200 in 70.1148 ms
+11/25/2020 17:23:22 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7730 ms
+11/25/2020 17:23:24 HTTP "GET" "/Admin/UsersIndex&pageNumber=2" responded 404 in 2.6752 ms
+11/25/2020 17:23:47 Application starting up
+11/25/2020 17:23:48 - Getting index page -
+11/25/2020 17:23:49 HTTP "GET" "/" responded 200 in 1263.1269 ms
+11/25/2020 17:23:49 HTTP "GET" "/js/playlistView.js" responded 404 in 1.8467 ms
+11/25/2020 17:23:49 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3228 ms
+11/25/2020 17:23:52 HTTP "GET" "/Admin/UsersIndex" responded 200 in 72.2699 ms
+11/25/2020 17:23:52 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7269 ms
+11/25/2020 17:23:54 HTTP "GET" "/Admin/UsersIndex?pageNumber=2" responded 200 in 17.1890 ms
+11/25/2020 17:23:54 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2787 ms
+11/25/2020 17:25:06 Application starting up
+11/25/2020 17:25:07 - Getting index page -
+11/25/2020 17:25:08 HTTP "GET" "/" responded 200 in 1203.9417 ms
+11/25/2020 17:25:08 HTTP "GET" "/js/playlistView.js" responded 404 in 3.1614 ms
+11/25/2020 17:25:08 HTTP "GET" "/js/playlistView.js" responded 404 in 10.4691 ms
+11/25/2020 17:25:10 HTTP "GET" "/Admin/UsersIndex" responded 200 in 72.9127 ms
+11/25/2020 17:25:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7969 ms
+11/25/2020 17:25:12 HTTP "GET" "/Admin/UsersIndex?pageNumber=2" responded 200 in 18.1296 ms
+11/25/2020 17:25:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8551 ms
+11/25/2020 17:25:14 HTTP "GET" "/Admin/UsersIndex?pageNumber=1" responded 200 in 15.2033 ms
+11/25/2020 17:25:14 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0712 ms
+11/25/2020 17:25:15 HTTP "GET" "/Admin/UsersIndex?pageNumber=2" responded 200 in 7.7760 ms
+11/25/2020 17:25:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8745 ms
+11/25/2020 17:25:18 HTTP "GET" "/Admin/UsersIndex?pageNumber=1" responded 200 in 8.5444 ms
+11/25/2020 17:25:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3502 ms
+11/25/2020 17:25:36 Application starting up
+11/25/2020 17:25:37 - Getting index page -
+11/25/2020 17:25:38 HTTP "GET" "/" responded 200 in 1254.0611 ms
+11/25/2020 17:25:38 HTTP "GET" "/js/playlistView.js" responded 404 in 3.4431 ms
+11/25/2020 17:25:40 HTTP "GET" "/Admin/UsersIndex" responded 200 in 81.9856 ms
+11/25/2020 17:25:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4529 ms
+11/25/2020 17:25:41 HTTP "GET" "/Admin/UsersIndex?pageNumber=2" responded 200 in 25.8618 ms
+11/25/2020 17:25:41 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2205 ms
+11/25/2020 17:25:43 HTTP "GET" "/Admin/UsersIndex?pageNumber=1" responded 200 in 15.5023 ms
+11/25/2020 17:25:43 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2226 ms
+11/25/2020 17:26:07 Application starting up
+11/25/2020 17:26:08 - Getting index page -
+11/25/2020 17:26:09 HTTP "GET" "/" responded 200 in 1195.8916 ms
+11/25/2020 17:26:09 HTTP "GET" "/js/playlistView.js" responded 404 in 2.1137 ms
+11/25/2020 17:26:09 HTTP "GET" "/js/playlistView.js" responded 404 in 10.5338 ms
+11/25/2020 17:26:11 HTTP "GET" "/Admin/UsersIndex" responded 200 in 67.5071 ms
+11/25/2020 17:26:11 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5350 ms
+11/25/2020 17:26:12 HTTP "GET" "/Admin/UsersIndex&pageNumber=2" responded 404 in 3.2408 ms
+11/25/2020 17:26:13 HTTP "GET" "/Admin/UsersIndex&pageNumber=1" responded 404 in 1.9634 ms
+11/25/2020 17:26:14 HTTP "GET" "/Admin/UsersIndex&pageNumber=2" responded 404 in 1.3647 ms
+11/25/2020 17:28:10 Application starting up
+11/25/2020 17:28:11 - Getting index page -
+11/25/2020 17:28:12 HTTP "GET" "/" responded 200 in 1256.4359 ms
+11/25/2020 17:28:12 HTTP "GET" "/js/playlistView.js" responded 404 in 2.3868 ms
+11/25/2020 17:28:12 HTTP "GET" "/js/playlistView.js" responded 404 in 11.9591 ms
+11/25/2020 17:28:13 HTTP "GET" "/Admin/UsersIndex" responded 200 in 71.3085 ms
+11/25/2020 17:28:13 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5916 ms
+11/25/2020 17:28:14 HTTP "GET" "/UsersIndex/Admin&pageNumber=2" responded 404 in 1.8508 ms
+11/25/2020 17:28:16 HTTP "GET" "/UsersIndex/Admin&pageNumber=1" responded 404 in 1.8623 ms
+11/25/2020 17:29:08 Application starting up
+11/25/2020 17:29:09 - Getting index page -
+11/25/2020 17:29:10 HTTP "GET" "/" responded 200 in 1244.6082 ms
+11/25/2020 17:29:10 HTTP "GET" "/js/playlistView.js" responded 404 in 2.3406 ms
+11/25/2020 17:29:10 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3617 ms
+11/25/2020 17:29:12 HTTP "GET" "/Admin/UsersIndex" responded 200 in 70.2326 ms
+11/25/2020 17:29:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9734 ms
+11/25/2020 17:29:14 HTTP "POST" "/Admin/BanUsers" responded 302 in 399.7528 ms
+11/25/2020 17:29:14 HTTP "GET" "/Admin/UsersIndex" responded 200 in 6.7451 ms
+11/25/2020 17:29:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5120 ms
+11/25/2020 17:29:16 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 19.4214 ms
+11/25/2020 17:29:16 HTTP "GET" "/Admin/UsersIndex" responded 200 in 6.0862 ms
+11/25/2020 17:29:16 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3528 ms
+11/25/2020 17:29:17 HTTP "POST" "/Admin/BanUsers" responded 302 in 7.9020 ms
+11/25/2020 17:29:17 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.0853 ms
+11/25/2020 17:29:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5414 ms
+11/25/2020 17:29:19 HTTP "POST" "/Admin/BanUsers" responded 302 in 5.8162 ms
+11/25/2020 17:29:19 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.2714 ms
+11/25/2020 17:29:19 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4336 ms
+11/25/2020 17:29:20 HTTP "POST" "/Admin/BanUsers" responded 302 in 8.1210 ms
+11/25/2020 17:29:20 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.2666 ms
+11/25/2020 17:29:20 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3807 ms
+11/25/2020 17:29:21 HTTP "POST" "/Admin/BanUsers" responded 302 in 5.7398 ms
+11/25/2020 17:29:21 HTTP "GET" "/Admin/UsersIndex" responded 200 in 10.0275 ms
+11/25/2020 17:29:21 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0839 ms
+11/25/2020 17:29:21 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 7.1455 ms
+11/25/2020 17:29:21 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.4664 ms
+11/25/2020 17:29:21 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3294 ms
+11/25/2020 17:29:22 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 7.4861 ms
+11/25/2020 17:29:22 HTTP "GET" "/Admin/UsersIndex" responded 200 in 6.2850 ms
+11/25/2020 17:29:22 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9603 ms
+11/25/2020 17:29:22 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 6.9522 ms
+11/25/2020 17:29:22 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.2228 ms
+11/25/2020 17:29:22 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3021 ms
+11/25/2020 17:29:23 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 6.6410 ms
+11/25/2020 17:29:23 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.0163 ms
+11/25/2020 17:29:23 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9220 ms
+11/25/2020 17:31:05 Application starting up
+11/25/2020 17:31:06 - Getting index page -
+11/25/2020 17:31:07 HTTP "GET" "/" responded 200 in 1209.5320 ms
+11/25/2020 17:31:08 HTTP "GET" "/js/playlistView.js" responded 404 in 2.2227 ms
+11/25/2020 17:31:08 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3788 ms
+11/25/2020 17:31:09 HTTP "GET" "/Admin/UsersIndex" responded 200 in 73.6489 ms
+11/25/2020 17:31:09 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7134 ms
+11/25/2020 17:31:11 HTTP "GET" "/Admin/UsersIndex?pageNumber=1" responded 200 in 16.2891 ms
+11/25/2020 17:31:11 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9875 ms
+11/25/2020 17:31:11 HTTP "GET" "/Admin/UsersIndex?pageNumber=1" responded 200 in 15.4710 ms
+11/25/2020 17:31:11 HTTP "GET" "/js/playlistView.js" responded 404 in 1.7027 ms
+11/25/2020 17:31:15 HTTP "GET" "/Admin/UsersIndex" responded 200 in 6.8453 ms
+11/25/2020 17:31:42 Application starting up
+11/25/2020 17:31:43 - Getting index page -
+11/25/2020 17:31:44 HTTP "GET" "/" responded 200 in 1245.4848 ms
+11/25/2020 17:31:44 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4284 ms
+11/25/2020 17:31:44 HTTP "GET" "/js/playlistView.js" responded 404 in 10.6575 ms
+11/25/2020 17:31:52 Application starting up
+11/25/2020 17:31:53 - Getting index page -
+11/25/2020 17:31:54 HTTP "GET" "/" responded 200 in 1228.9752 ms
+11/25/2020 17:31:54 HTTP "GET" "/js/playlistView.js" responded 404 in 2.7704 ms
+11/25/2020 17:31:54 HTTP "GET" "/js/playlistView.js" responded 404 in 10.4010 ms
+11/25/2020 17:31:56 HTTP "GET" "/Admin/UsersIndex" responded 200 in 72.0112 ms
+11/25/2020 17:31:56 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6509 ms
+11/25/2020 17:31:58 HTTP "GET" "/Admin/UsersIndex&pageNumber=2" responded 404 in 3.2053 ms
+11/25/2020 17:31:59 HTTP "GET" "/Admin/UsersIndex&pageNumber=3" responded 404 in 1.8413 ms
+11/25/2020 17:32:00 HTTP "GET" "/Admin/UsersIndex&pageNumber=3" responded 404 in 1.1441 ms
+11/25/2020 17:32:00 HTTP "GET" "/Admin/UsersIndex&pageNumber=2" responded 404 in 1.1152 ms
+11/25/2020 17:32:00 HTTP "GET" "/Admin/UsersIndex&pageNumber=1" responded 404 in 0.9470 ms
+11/25/2020 17:32:54 Application starting up
+11/25/2020 17:32:55 - Getting index page -
+11/25/2020 17:32:57 HTTP "GET" "/" responded 200 in 1228.0736 ms
+11/25/2020 17:32:57 HTTP "GET" "/js/playlistView.js" responded 404 in 2.2251 ms
+11/25/2020 17:32:57 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3906 ms
+11/25/2020 17:32:59 HTTP "GET" "/Admin/UsersIndex" responded 200 in 73.9328 ms
+11/25/2020 17:32:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8395 ms
+11/25/2020 17:33:01 HTTP "GET" "/Admin/UsersIndex?pageNumber=1" responded 200 in 18.6347 ms
+11/25/2020 17:33:01 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0168 ms
+11/25/2020 17:33:21 Application starting up
+11/25/2020 17:33:22 - Getting index page -
+11/25/2020 17:33:23 HTTP "GET" "/" responded 200 in 1185.1475 ms
+11/25/2020 17:33:23 HTTP "GET" "/js/playlistView.js" responded 404 in 3.3901 ms
+11/25/2020 17:33:23 HTTP "GET" "/js/playlistView.js" responded 404 in 10.2994 ms
+11/25/2020 17:33:42 Application starting up
+11/25/2020 17:33:44 - Getting index page -
+11/25/2020 17:33:44 HTTP "GET" "/" responded 200 in 1327.9591 ms
+11/25/2020 17:33:44 HTTP "GET" "/js/playlistView.js" responded 404 in 3.6350 ms
+11/25/2020 17:33:44 HTTP "GET" "/js/playlistView.js" responded 404 in 12.0990 ms
+11/25/2020 17:33:51 Application starting up
+11/25/2020 17:33:52 - Getting index page -
+11/25/2020 17:33:53 HTTP "GET" "/" responded 200 in 1225.4862 ms
+11/25/2020 17:33:53 HTTP "GET" "/js/playlistView.js" responded 404 in 2.1371 ms
+11/25/2020 17:33:53 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3952 ms
+11/25/2020 17:33:55 HTTP "GET" "/Admin/UsersIndex" responded 200 in 71.7410 ms
+11/25/2020 17:33:55 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4924 ms
+11/25/2020 17:33:56 HTTP "GET" "/Admin/UsersIndex&pageNumber=2" responded 404 in 3.0989 ms
+11/25/2020 17:33:57 HTTP "GET" "/Admin/UsersIndex&pageNumber=3" responded 404 in 1.9523 ms
+11/25/2020 17:34:16 Application starting up
+11/25/2020 17:34:17 - Getting index page -
+11/25/2020 17:34:18 HTTP "GET" "/" responded 200 in 1238.7234 ms
+11/25/2020 17:34:18 HTTP "GET" "/js/playlistView.js" responded 404 in 2.1276 ms
+11/25/2020 17:34:18 HTTP "GET" "/js/playlistView.js" responded 404 in 10.4038 ms
+11/25/2020 17:34:21 HTTP "GET" "/Identity/Account/Manage" responded 200 in 125.3333 ms
+11/25/2020 17:34:21 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6992 ms
+11/25/2020 17:34:21 HTTP "GET" "/Admin/UsersIndex" responded 200 in 40.1036 ms
+11/25/2020 17:34:21 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2250 ms
+11/25/2020 17:34:24 HTTP "POST" "/Admin/BanUsers" responded 302 in 1649.0077 ms
+11/25/2020 17:34:25 HTTP "GET" "/Admin/UsersIndex" responded 200 in 7.4793 ms
+11/25/2020 17:34:25 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4257 ms
+11/25/2020 17:34:26 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 19.3797 ms
+11/25/2020 17:34:26 HTTP "GET" "/Admin/UsersIndex" responded 200 in 6.2880 ms
+11/25/2020 17:34:26 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3475 ms
+11/25/2020 17:34:27 HTTP "POST" "/Admin/BanUsers" responded 302 in 7.5117 ms
+11/25/2020 17:34:27 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.3560 ms
+11/25/2020 17:34:27 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3266 ms
+11/25/2020 17:34:28 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 9.3734 ms
+11/25/2020 17:34:28 HTTP "GET" "/Admin/UsersIndex" responded 200 in 9.8848 ms
+11/25/2020 17:34:28 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0681 ms
+11/25/2020 17:38:06 Application starting up
+11/25/2020 17:38:07 - Getting index page -
+11/25/2020 17:38:08 HTTP "GET" "/" responded 200 in 1289.1152 ms
+11/25/2020 17:38:08 HTTP "GET" "/js/playlistView.js" responded 404 in 1.9376 ms
+11/25/2020 17:38:08 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3338 ms
+11/25/2020 17:38:17 HTTP "GET" "/Admin/UsersIndex" responded 200 in 75.4337 ms
+11/25/2020 17:38:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5740 ms
+11/25/2020 17:38:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3174 ms
+11/25/2020 17:38:32 Application starting up
+11/25/2020 17:38:33 - Getting index page -
+11/25/2020 17:38:34 HTTP "GET" "/" responded 200 in 1253.6834 ms
+11/25/2020 17:38:34 HTTP "GET" "/js/playlistView.js" responded 404 in 2.1347 ms
+11/25/2020 17:38:34 HTTP "GET" "/js/playlistView.js" responded 404 in 10.9201 ms
+11/25/2020 17:38:36 HTTP "GET" "/Admin/UsersIndex" responded 200 in 71.2282 ms
+11/25/2020 17:38:36 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7357 ms
+11/25/2020 17:38:38 HTTP "GET" "/Admin/UsersIndex?pageNumber=2" responded 200 in 16.3837 ms
+11/25/2020 17:38:39 HTTP "GET" "/Admin/UsersIndex?pageNumber=3" responded 200 in 15.2177 ms
+11/25/2020 17:38:42 HTTP "GET" "/Admin/UsersIndex?pageNumber=1" responded 200 in 7.4222 ms
+11/25/2020 17:39:12 HTTP "POST" "/Admin/BanUsers" responded 302 in 1671.7944 ms
+11/25/2020 17:39:12 HTTP "GET" "/Admin/UsersIndex" responded 200 in 6.1192 ms
+11/25/2020 17:39:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4707 ms
+11/25/2020 17:39:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3009 ms
+11/25/2020 17:40:57 Application starting up
+11/25/2020 17:40:59 - Getting index page -
+11/25/2020 17:41:00 HTTP "GET" "/" responded 200 in 1198.1453 ms
+11/25/2020 17:41:00 HTTP "GET" "/js/playlistView.js" responded 404 in 2.1322 ms
+11/25/2020 17:41:00 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3869 ms
+11/25/2020 17:41:01 HTTP "GET" "/Admin/UsersIndex" responded 200 in 74.7268 ms
+11/25/2020 17:41:01 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6152 ms
+11/25/2020 17:41:06 HTTP "GET" "/Admin/UsersIndex?pageNumber=2" responded 200 in 17.4429 ms
+11/25/2020 17:41:09 HTTP "GET" "/Admin/UsersIndex?pageNumber=3" responded 200 in 9.8397 ms
+11/25/2020 17:41:10 HTTP "GET" "/Admin/UsersIndex?pageNumber=1" responded 200 in 14.9413 ms
+11/25/2020 17:41:12 HTTP "GET" "/Admin/UsersIndex?pageNumber=3" responded 200 in 7.6768 ms
+11/25/2020 17:41:14 HTTP "POST" "/Admin/BanUsers" responded 302 in 395.0438 ms
+11/25/2020 17:41:14 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.5751 ms
+11/25/2020 17:41:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3333 ms
+11/25/2020 17:41:16 HTTP "GET" "/Admin/UsersIndex?pageNumber=3" responded 200 in 11.3468 ms
+11/25/2020 17:41:19 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 13.4853 ms
+11/25/2020 17:41:19 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.6888 ms
+11/25/2020 17:41:19 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3005 ms
+11/25/2020 17:41:21 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 9.3101 ms
+11/25/2020 17:41:21 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.9902 ms
+11/25/2020 17:41:21 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9042 ms
+11/25/2020 17:41:23 HTTP "GET" "/Admin/UsersIndex?pageNumber=2" responded 200 in 7.2340 ms
+11/25/2020 17:41:23 HTTP "GET" "/Admin/UsersIndex?pageNumber=1" responded 200 in 6.5252 ms
+11/25/2020 17:41:36 Application starting up
+11/25/2020 17:41:37 - Getting index page -
+11/25/2020 17:41:39 HTTP "GET" "/" responded 200 in 1257.5803 ms
+11/25/2020 17:41:39 HTTP "GET" "/js/playlistView.js" responded 404 in 3.8112 ms
+11/25/2020 17:41:39 HTTP "GET" "/js/playlistView.js" responded 404 in 10.6396 ms
+11/25/2020 17:41:41 HTTP "GET" "/Admin/UsersIndex" responded 200 in 73.2163 ms
+11/25/2020 17:41:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7854 ms
+11/25/2020 17:41:46 HTTP "POST" "/Admin/BanUsers" responded 302 in 1613.6090 ms
+11/25/2020 17:41:46 HTTP "GET" "/Admin/UsersIndex" responded 200 in 7.3267 ms
+11/25/2020 17:41:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4349 ms
+11/25/2020 17:41:48 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 13.4255 ms
+11/25/2020 17:41:48 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.0847 ms
+11/25/2020 17:41:48 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6918 ms

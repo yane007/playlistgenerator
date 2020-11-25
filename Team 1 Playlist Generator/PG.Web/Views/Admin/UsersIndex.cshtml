@@ -1,0 +1,37 @@
+﻿@model IPagedList<UserViewModel>
+@{
+    Layout = "_Layout";
+}
+
+
+
+<div id="usersInfo">
+    <table class="table table-striped">
+        <partial name="_UsersPartial" model="Model">
+    </table>
+</div>
+
+@for (int i = 0; i < Model.PageCount; i++)
+{
+    var num = i + 1;
+
+    @*<a asp-controller="Admin" asp-action="UsersIndex" asp-route-pageNumber="@num"> @num </a>*@
+
+    <a href="#" onclick="LoadPlaylistPage(@num)">@num</a>
+
+}
+
+
+<script>
+
+    function LoadPlaylistPage(pageNumber) {
+        var url = '@Url.Action("UsersIndex", "Admin")' + '?pageNumber=' + pageNumber;
+
+        $.get(url, function (response) {
+            var result = $(response).find('#usersInfo');
+
+            $('#usersInfo').html(result);
+        });
+    }
+
+</script>

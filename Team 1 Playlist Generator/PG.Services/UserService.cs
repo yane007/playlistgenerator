@@ -60,8 +60,15 @@ namespace PG.Services
                 return false;
             }
 
-            userToBan.LockoutEnabled = true;
-            await _context.SaveChangesAsync();
+            if (userToBan.LockoutEnabled == false)
+            {
+                userToBan.LockoutEnabled = true;
+
+                userToBan.LockoutEnd = new DateTimeOffset(DateTime.Today).AddDays(5);
+
+                await _context.SaveChangesAsync();
+            }
+
             return true;
         }
 
@@ -79,8 +86,12 @@ namespace PG.Services
                 return false;
             }
 
-            userToBan.LockoutEnabled = false;
-            await _context.SaveChangesAsync();
+            if (userToBan.LockoutEnabled == true)
+            {
+                userToBan.LockoutEnabled = false;
+                await _context.SaveChangesAsync();
+            }
+
             return true;
         }
 

@@ -11,7 +11,8 @@ namespace PG.Services.Mappers
             {
                 Id = user.Id,
                 UserName = user.UserName,
-                Token = user.Token
+                Token = user.Token,
+                LockoutEnabled = user.LockoutEnabled
             };
         }
         public static User ToEntity(this UserDTO userDTO)
