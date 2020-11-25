@@ -416,6 +416,7 @@ namespace PG.Services
         /// <param name="allowedOffsetMore">How much less time is allowed a playlist to be</param>
         /// <param name="allowedOffsetLess">How much more time is allowed a playlist to be</param>
         /// <param name="selectedGenres">How any genres are selected</param>
+        /// <returns></returns>
         private List<Tuple<string, int[], double>> SetOffsets(List<Tuple<string, int>> listGenres,
             int allowedOffsetMore, int allowedOffsetLess, int selectedGenres)
         {

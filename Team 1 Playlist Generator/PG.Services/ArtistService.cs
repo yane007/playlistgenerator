@@ -101,7 +101,7 @@ namespace PG.Services
             var artist = await _context.Artists.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
             if (artist == null)
             {
-                throw new ArgumentNullException($"Genre with id {id} was not found.");
+                throw new ArgumentNullException($"Artist with id {id} was not found.");
             }
 
             artist.Name = artistDTO.Name;
