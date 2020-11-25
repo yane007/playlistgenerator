@@ -6,9 +6,12 @@ using PG.Services.Contract;
 using PG.Services.DTOs;
 using PG.Web.Models;
 using PG.Web.Models.Mappers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PagedList.Mvc;
+using PagedList;
 
 namespace PG.Web.Controllers
 {
@@ -40,8 +43,10 @@ namespace PG.Web.Controllers
 
         public async Task<IActionResult> MyPlaylists()
         {
-            IEnumerable<PlaylistDTO> playlistsDTOs = await _playlistService.GetAllPlaylists();
+            IEnumerable<PlaylistDTO> playlistsDTOs = await _playlistService.GetPlaylistsByUser(_userManager.GetUserId(User));
             IList<PlaylistViewModel> playlistsViewModels = playlistsDTOs.Where(x => x.UserId == _userManager.GetUserId(User)).Select(x => x.ToViewModel()).ToList();
+
+
 
             return View(playlistsViewModels);
         }
@@ -85,12 +90,34 @@ namespace PG.Web.Controllers
         }
 
         [AllowAnonymous]
-        public async Task<IActionResult> Playlist(int id)
+        public async Task<IActionResult> Playlist(int id, int pageNumber = 1)
         {
             PlaylistDTO playlistDTO = await _playlistService.GetPlaylistById(id);
             PlaylistViewModel playlistViewModel = playlistDTO.ToViewModel();
 
+            playlistViewModel.SongsPaged = playlistViewModel.Songs.ToPagedList(pageNumber, 18);
+
             return View(playlistViewModel);
         }
+
+
+
+        public async Task<IActionResult> GetPagedData(int pageNumber = 1)
+        {
+            IEnumerable<PlaylistDTO> playlistsDTOs = await _playlistService.GetAllPlaylists();
+            IList<PlaylistViewModel> playlistsViewModels = playlistsDTOs.Select(x => x.ToViewModel()).ToList();
+
+
+            var b = playlistsViewModels.ToPagedList(pageNumber, 3);
+
+            return View(b);
+
+        }
+
     }
+
+
+
+
 }
+

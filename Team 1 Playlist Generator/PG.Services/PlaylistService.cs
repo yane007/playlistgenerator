@@ -53,26 +53,25 @@ namespace PG.Services
         /// <summary>
         /// Gets all playlsits.
         /// </summary>
-        public async Task<IEnumerable<PlaylistDTO>> GetAllPlaylists()
+        public async Task<IEnumerable<PlaylistDTO>> GetAllPlaylists() //TODO: OrderByDescending(x => x.Rank)
         {
-            var toReturn =  await _context.Playlists
+            return await _context.Playlists
                                  .Include(x => x.PlaylistsSongs)
                                  .ThenInclude(x => x.Song)
                                  .Where(x => x.IsDeleted == false)
                                  .Select(x => x.ToDTO())
                                  .ToListAsync();
-
-            return toReturn;
         }
 
         /// <summary>
         /// Gets all playlists by user's ID.
         /// </summary>
         /// <param name="userId">User's ID.</param>
-        public async Task<IEnumerable<PlaylistDTO>> GetPlaylistsByUser(string userId)
+        public async Task<IEnumerable<PlaylistDTO>> GetPlaylistsByUser(string userId) //TODO: OrderByDescending(x => x.Rank)
         {
             return await _context.Playlists
                                  .Include(x => x.PlaylistsSongs)
+                                 .ThenInclude(x => x.Song)
                                  .Where(x => x.UserId == userId && x.IsDeleted == false)
                                  .Select(x => x.ToDTO())
                                  .ToListAsync();

@@ -7,20 +7,14 @@
 
     <div class="containerPlaylist">
 
-
-
-
         <div class="left-colPlaylist">
 
-            <div style="padding-top:10vh" id="controlers">
-                <input type="button" onclick="DZ.player.playTracks(@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.DeezerIDs) as String), true);" value="Play Songs" />
-            </div>
-
             <div class="yearPlaylist">EST 2020</div>
+            <div class="block-coverPlaylist"></div>
 
             <div class="coverPlaylist">
 
-                @foreach (var song in Model.Songs)
+                @foreach (var song in Model.SongsPaged)
                 {
                     <div class="album-name2Playlist">
                         <p><span>@song.Title | @song.DurationInMinutes</span></p>
@@ -30,12 +24,21 @@
                     @*<a href="@song.Preview"> @song.Title | @song.DurationInMinutes</a>*@
                 }
 
-            </div>
-            <div class="block-coverPlaylist"></div>
+                @for (int i = 0; i < Model.SongsPaged.PageCount; i++)
+                {
+                    var num = i + 1;
+                    <a asp-controller="Playlists" asp-action="GetPagedData" asp-route-pageNumber="@num"> @num </a>
+                }
 
-            @*<div class="playPlaylist">
-                    <input type="button" onclick="DZ.player.playTracks(@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.DeezerIDs) as String), true);" value="Play Songs" />
-                </div>*@
+
+
+            </div>
+
+
+
+            <div class="playPlaylist">
+                <input type="button" onclick="DZ.player.playTracks(@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.DeezerIDs) as String), false);" value="Play Songs" />
+            </div>
 
 
 
@@ -62,11 +65,13 @@
 
             <div class="upper-blockPlaylist"></div>
 
-            <div class="bottomPlaylist">
-                <div class="data2Playlist">
+            <div class="bottomPlaylist" style=" background: url(@Model.PixabayImage) no-repeat 50% 50%;">
+                <div class="data2Playlist"  >
 
-                    <div id="dz-root"></div>
-                    <div id="player" align="center"></div>
+
+                    <div id="dz-root"  ></div>
+                    <div id="player"  ></div>
+
 
                     <div class="album-name3Playlist">
                         <p id="namePlaylist">Play Playlist</p>
@@ -77,7 +82,6 @@
                     </div>
 
 
-                    <div id="player" align="center"></div>
 
                 </div>
 
@@ -89,8 +93,14 @@
     </div>
 
 
-
     <script>
+        $(document).ready(function () {
+            $("#controlers input").attr('disabled', true);
+            $("#slider_seek").click(function (evt, arg) {
+                var left = evt.offsetX;
+                DZ.player.seek((evt.offsetX / $(this).width()) * 100);
+            });
+        });
         function event_listener_append() {
             var pre = document.getElementById('event_listener');
             var line = [];
@@ -117,8 +127,8 @@
                 player: {
                     container: 'player',
                     playlist: true,
-                    width: 850,
-                    height: 95,
+                    width: 650,
+                    height: 90,
                     onload: onPlayerLoaded
                 }
             });
