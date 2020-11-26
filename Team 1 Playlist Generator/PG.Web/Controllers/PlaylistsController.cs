@@ -51,12 +51,9 @@ namespace PG.Web.Controllers
             return View(playlistsViewModels);
         }
 
+
         public async Task<IActionResult> Create()
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                Response.Redirect("Login.aspx");
-            }
 
             var genresDTOs = await _genreService.GetAllGenres();
 
@@ -103,11 +100,11 @@ namespace PG.Web.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> DeletePlaylistWeb(int id)
+        public async Task<IActionResult> DeletePlaylist(int id)
         {
             await _playlistService.Delete(id);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("MyPlaylists");
         }
     }
 }

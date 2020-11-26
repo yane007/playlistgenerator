@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PG.Services", "PG.Services\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PG.Web", "PG.Web\PG.Web.csproj", "{9AE35829-69AC-4145-8C48-BD7B75B2CA24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PG.Tests", "PG.Tests\PG.Tests.csproj", "{93DB4302-FCE2-468F-9928-95C9F60B73B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PG.Tests", "PG.Tests\PG.Tests.csproj", "{93DB4302-FCE2-468F-9928-95C9F60B73B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{9DCC3CCB-7EE2-4109-B86C-E8D53C45EC3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

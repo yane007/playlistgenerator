@@ -53,7 +53,7 @@ namespace PG.Services
         /// <summary>
         /// Gets all playlsits.
         /// </summary>
-        public async Task<IEnumerable<PlaylistDTO>> GetAllPlaylists() //TODO: OrderByDescending(x => x.Rank)
+        public async Task<IEnumerable<PlaylistDTO>> GetAllPlaylists()
         {
             var playlists = await _context.Playlists
                                  .Include(x => x.PlaylistsSongs)
@@ -202,7 +202,7 @@ namespace PG.Services
 
                 Shuffle(finalPlaylist);
             }
-            else if (useTopTracks && allowSameArtist == false)
+            else if (useTopTracks && !allowSameArtist)
             {
                 foreach (var item in namesOffsetsAndPercentages)
                 {
@@ -217,7 +217,7 @@ namespace PG.Services
 
                 Shuffle(finalPlaylist);
             }
-            else if (useTopTracks == false && allowSameArtist)
+            else if (!useTopTracks && allowSameArtist)
             {
                 foreach (var item in namesOffsetsAndPercentages)
                 {
@@ -405,7 +405,7 @@ namespace PG.Services
             {
                 if (topTracks)
                 {
-                    return _context.Songs.Where(x => x.Genre.Name == genreName && x.Rank >= 100000).ToList();
+                    return _context.Songs.Where(x => x.Genre.Name == genreName && x.Rank >= 90000).ToList();
                 }
 
                 return _context.Songs.Where(x => x.Genre.Name == genreName).ToList();

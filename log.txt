@@ -14787,3 +14787,1371 @@ Error Number:547,State:0,Class:16
 11/26/2020 08:10:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3612 ms
 11/26/2020 08:10:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3963 ms
 11/26/2020 08:10:10 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2253 ms
+11/26/2020 08:15:44 Application starting up
+11/26/2020 08:17:59 Application starting up
+11/26/2020 08:18:02 - Getting index page -
+11/26/2020 08:18:02 HTTP "GET" "/" responded 200 in 1348.6554 ms
+11/26/2020 08:18:02 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6424 ms
+11/26/2020 08:18:02 HTTP "GET" "/js/playlistView.js" responded 404 in 10.6531 ms
+11/26/2020 08:21:08 Application starting up
+11/26/2020 08:21:09 - Getting index page -
+11/26/2020 08:21:10 HTTP "GET" "/" responded 200 in 1216.8108 ms
+11/26/2020 08:21:10 HTTP "GET" "/js/playlistView.js" responded 404 in 2.5747 ms
+11/26/2020 08:21:10 HTTP "GET" "/js/playlistView.js" responded 404 in 10.6637 ms
+11/26/2020 08:21:15 HTTP "GET" "/Playlists" responded 200 in 45.5624 ms
+11/26/2020 08:21:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9136 ms
+11/26/2020 08:21:49 Application starting up
+11/26/2020 08:21:50 - Getting index page -
+11/26/2020 08:21:51 HTTP "GET" "/" responded 200 in 1224.9246 ms
+11/26/2020 08:21:51 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6733 ms
+11/26/2020 08:21:51 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3844 ms
+11/26/2020 08:21:52 HTTP "GET" "/Playlists" responded 200 in 45.3397 ms
+11/26/2020 08:21:52 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2272 ms
+11/26/2020 08:22:29 HTTP "GET" "/Playlists" responded 200 in 21.1642 ms
+11/26/2020 08:22:29 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9821 ms
+11/26/2020 08:22:53 Application starting up
+11/26/2020 08:22:54 - Getting index page -
+11/26/2020 08:22:55 HTTP "GET" "/" responded 200 in 1239.6749 ms
+11/26/2020 08:22:55 HTTP "GET" "/js/playlistView.js" responded 404 in 2.0297 ms
+11/26/2020 08:22:55 HTTP "GET" "/js/playlistView.js" responded 404 in 10.2873 ms
+11/26/2020 08:23:01 HTTP "GET" "/Playlists" responded 200 in 42.9166 ms
+11/26/2020 08:23:01 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0340 ms
+11/26/2020 08:23:49 Application starting up
+11/26/2020 08:23:51 - Getting index page -
+11/26/2020 08:23:52 HTTP "GET" "/" responded 200 in 1248.0140 ms
+11/26/2020 08:23:52 HTTP "GET" "/js/playlistView.js" responded 404 in 3.1674 ms
+11/26/2020 08:23:52 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3927 ms
+11/26/2020 08:24:54 Application starting up
+11/26/2020 08:24:55 - Getting index page -
+11/26/2020 08:24:56 HTTP "GET" "/" responded 200 in 1237.9546 ms
+11/26/2020 08:24:56 HTTP "GET" "/js/playlistView.js" responded 404 in 2.2887 ms
+11/26/2020 08:24:57 HTTP "GET" "/js/playlistView.js" responded 404 in 10.4720 ms
+11/26/2020 08:25:05 - Getting index page -
+11/26/2020 08:25:05 HTTP "GET" "/" responded 200 in 45.0673 ms
+11/26/2020 08:25:05 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3459 ms
+11/26/2020 08:25:05 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6163 ms
+11/26/2020 08:25:11 - Getting index page -
+11/26/2020 08:25:11 HTTP "POST" "/" responded 200 in 20.8891 ms
+11/26/2020 08:25:11 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1759 ms
+11/26/2020 08:25:12 HTTP "POST" "/Playlists/DeletePlaylistWeb" responded 401 in 32.3532 ms
+11/26/2020 08:26:03 Application starting up
+11/26/2020 08:26:04 - Getting index page -
+11/26/2020 08:26:05 HTTP "GET" "/" responded 200 in 1227.7478 ms
+11/26/2020 08:26:05 HTTP "GET" "/js/playlistView.js" responded 404 in 2.9966 ms
+11/26/2020 08:26:05 HTTP "GET" "/js/playlistView.js" responded 404 in 10.5679 ms
+11/26/2020 08:26:23 Application starting up
+11/26/2020 08:26:24 - Getting index page -
+11/26/2020 08:26:25 HTTP "GET" "/" responded 200 in 1239.7853 ms
+11/26/2020 08:26:25 HTTP "GET" "/js/playlistView.js" responded 404 in 2.2793 ms
+11/26/2020 08:26:25 HTTP "GET" "/js/playlistView.js" responded 404 in 10.4925 ms
+11/26/2020 08:26:32 - Getting index page -
+11/26/2020 08:26:32 HTTP "GET" "/" responded 200 in 38.4991 ms
+11/26/2020 08:26:32 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1881 ms
+11/26/2020 08:26:32 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1301 ms
+11/26/2020 08:26:34 HTTP "GET" "/Playlists/Playlist/1022" responded 200 in 103.6835 ms
+11/26/2020 08:26:34 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3222 ms
+11/26/2020 08:26:34 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.1219 ms
+11/26/2020 08:26:55 - Getting index page -
+11/26/2020 08:26:55 HTTP "GET" "/" responded 200 in 31.5195 ms
+11/26/2020 08:26:56 HTTP "GET" "/Playlists" responded 200 in 23.1617 ms
+11/26/2020 08:26:56 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5827 ms
+11/26/2020 08:27:03 HTTP "GET" "/Playlists/Create" responded 200 in 57.6286 ms
+11/26/2020 08:27:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5766 ms
+11/26/2020 08:27:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3200 ms
+11/26/2020 08:27:03 HTTP "GET" "/Playlists/Create/ws" responded 200 in 5.3746 ms
+11/26/2020 08:27:25 Application starting up
+11/26/2020 08:27:26 - Getting index page -
+11/26/2020 08:27:27 HTTP "GET" "/" responded 200 in 1227.3508 ms
+11/26/2020 08:27:27 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6786 ms
+11/26/2020 08:27:27 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3282 ms
+11/26/2020 08:27:30 HTTP "GET" "/Playlists/Create" responded 200 in 71.2106 ms
+11/26/2020 08:27:30 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5900 ms
+11/26/2020 08:27:30 HTTP "GET" "/Playlists/Create/ws" responded 200 in 12.1427 ms
+11/26/2020 08:27:30 - Getting index page -
+11/26/2020 08:27:30 HTTP "GET" "/" responded 200 in 27.1402 ms
+11/26/2020 08:28:31 Application starting up
+11/26/2020 08:28:32 - Getting index page -
+11/26/2020 08:28:33 HTTP "GET" "/" responded 200 in 1286.3423 ms
+11/26/2020 08:28:33 HTTP "GET" "/js/playlistView.js" responded 404 in 1.9209 ms
+11/26/2020 08:28:33 HTTP "GET" "/js/playlistView.js" responded 404 in 10.4595 ms
+11/26/2020 08:28:40 - Getting index page -
+11/26/2020 08:28:40 HTTP "GET" "/" responded 200 in 38.2631 ms
+11/26/2020 08:28:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3492 ms
+11/26/2020 08:28:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6275 ms
+11/26/2020 08:28:42 HTTP "GET" "/Playlists/Create" responded 302 in 51.8113 ms
+11/26/2020 08:28:42 HTTP "GET" "/Playlists/Login.aspx" responded 404 in 1.0649 ms
+11/26/2020 08:28:48 - Getting index page -
+11/26/2020 08:28:48 HTTP "GET" "/" responded 200 in 26.7039 ms
+11/26/2020 08:28:52 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 44.2158 ms
+11/26/2020 08:28:52 - Getting index page -
+11/26/2020 08:28:52 HTTP "GET" "/" responded 200 in 7.9306 ms
+11/26/2020 08:28:52 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1539 ms
+11/26/2020 08:28:52 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1188 ms
+11/26/2020 08:28:53 HTTP "GET" "/Identity/Account/Login" responded 200 in 54.3033 ms
+11/26/2020 08:28:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4608 ms
+11/26/2020 08:29:05 Application starting up
+11/26/2020 08:29:06 - Getting index page -
+11/26/2020 08:29:07 HTTP "GET" "/" responded 200 in 1341.9544 ms
+11/26/2020 08:29:07 HTTP "GET" "/js/playlistView.js" responded 404 in 1.8787 ms
+11/26/2020 08:29:07 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4457 ms
+11/26/2020 08:29:08 - Getting index page -
+11/26/2020 08:29:08 HTTP "GET" "/" responded 200 in 61.2408 ms
+11/26/2020 08:29:08 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4928 ms
+11/26/2020 08:29:10 HTTP "GET" "/Playlists/Create" responded 302 in 54.3400 ms
+11/26/2020 08:29:10 HTTP "GET" "/Playlists/Identity/Account/Login" responded 404 in 1.0872 ms
+11/26/2020 08:29:37 Application starting up
+11/26/2020 08:29:38 - Getting index page -
+11/26/2020 08:29:39 HTTP "GET" "/" responded 200 in 1261.2450 ms
+11/26/2020 08:29:39 HTTP "GET" "/js/playlistView.js" responded 404 in 1.9634 ms
+11/26/2020 08:29:39 HTTP "GET" "/js/playlistView.js" responded 404 in 2.3337 ms
+11/26/2020 08:29:43 HTTP "GET" "/Playlists/Create" responded 302 in 78.4978 ms
+11/26/2020 08:29:43 HTTP "GET" "/Playlists/Identity/Account/Login" responded 404 in 1.1004 ms
+11/26/2020 08:29:44 - Getting index page -
+11/26/2020 08:29:44 HTTP "GET" "/" responded 200 in 18.5035 ms
+11/26/2020 08:31:48 Application starting up
+11/26/2020 08:31:49 - Getting index page -
+11/26/2020 08:31:50 HTTP "GET" "/" responded 200 in 1241.8208 ms
+11/26/2020 08:31:50 HTTP "GET" "/js/playlistView.js" responded 404 in 1.8547 ms
+11/26/2020 08:31:51 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4281 ms
+11/26/2020 08:31:52 HTTP "GET" "/Playlists/Create" responded 301 in 78.9793 ms
+11/26/2020 08:31:52 HTTP "GET" "/login.aspx" responded 404 in 0.2056 ms
+11/26/2020 08:31:55 - Getting index page -
+11/26/2020 08:31:55 HTTP "GET" "/" responded 200 in 18.1783 ms
+11/26/2020 08:33:39 Application starting up
+11/26/2020 08:33:40 - Getting index page -
+11/26/2020 08:33:42 HTTP "GET" "/" responded 200 in 1258.0704 ms
+11/26/2020 08:33:42 HTTP "GET" "/js/playlistView.js" responded 404 in 2.0529 ms
+11/26/2020 08:33:42 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4043 ms
+11/26/2020 08:33:43 HTTP "GET" "/Playlists/Create" responded 302 in 76.7143 ms
+11/26/2020 08:33:43 HTTP "GET" "/Playlists/~/Login.apsx" responded 404 in 1.1298 ms
+11/26/2020 08:33:44 - Getting index page -
+11/26/2020 08:33:44 HTTP "GET" "/" responded 200 in 27.5441 ms
+11/26/2020 08:33:45 HTTP "GET" "/Playlists" responded 200 in 29.5310 ms
+11/26/2020 08:33:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4082 ms
+11/26/2020 08:33:46 HTTP "GET" "/Playlists/Create" responded 302 in 11.0937 ms
+11/26/2020 08:33:46 HTTP "GET" "/Playlists/~/Login.apsx" responded 404 in 0.3527 ms
+11/26/2020 08:33:48 HTTP "GET" "/Playlists" responded 200 in 16.0350 ms
+11/26/2020 08:33:49 HTTP "GET" "/Playlists" responded 200 in 18.8607 ms
+11/26/2020 08:33:49 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3422 ms
+11/26/2020 08:33:51 - Getting index page -
+11/26/2020 08:33:51 HTTP "GET" "/" responded 200 in 12.5395 ms
+11/26/2020 08:33:51 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4355 ms
+11/26/2020 08:33:51 HTTP "GET" "/Playlists" responded 200 in 9.1610 ms
+11/26/2020 08:33:51 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4556 ms
+11/26/2020 08:33:52 HTTP "GET" "/Playlists/Create" responded 302 in 8.7839 ms
+11/26/2020 08:33:52 HTTP "GET" "/Playlists/~/Login.apsx" responded 404 in 0.2698 ms
+11/26/2020 08:33:53 HTTP "GET" "/Playlists" responded 200 in 6.6649 ms
+11/26/2020 08:33:54 - Getting index page -
+11/26/2020 08:33:54 HTTP "GET" "/" responded 200 in 10.4840 ms
+11/26/2020 08:33:54 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2736 ms
+11/26/2020 08:33:57 HTTP "GET" "/Playlists/Create" responded 302 in 7.3621 ms
+11/26/2020 08:33:57 HTTP "GET" "/Playlists/~/Login.apsx" responded 404 in 0.2677 ms
+11/26/2020 08:33:58 - Getting index page -
+11/26/2020 08:33:58 HTTP "GET" "/" responded 200 in 9.2703 ms
+11/26/2020 08:38:06 Application starting up
+11/26/2020 08:38:07 - Getting index page -
+11/26/2020 08:38:08 HTTP "GET" "/" responded 200 in 1271.0313 ms
+11/26/2020 08:38:08 HTTP "GET" "/js/playlistView.js" responded 404 in 2.2768 ms
+11/26/2020 08:38:08 HTTP "GET" "/js/playlistView.js" responded 404 in 2.5249 ms
+11/26/2020 08:38:42 Application starting up
+11/26/2020 08:38:43 - Getting index page -
+11/26/2020 08:38:44 HTTP "GET" "/" responded 200 in 1236.5867 ms
+11/26/2020 08:38:44 HTTP "GET" "/js/playlistView.js" responded 404 in 2.3092 ms
+11/26/2020 08:38:44 HTTP "GET" "/js/playlistView.js" responded 404 in 2.3910 ms
+11/26/2020 08:38:50 HTTP "GET" "/Account/SignIn" responded 404 in 1.2003 ms
+11/26/2020 08:38:51 - Getting index page -
+11/26/2020 08:38:51 HTTP "GET" "/" responded 200 in 43.0120 ms
+11/26/2020 08:39:05 Application starting up
+11/26/2020 08:39:06 - Getting index page -
+11/26/2020 08:39:08 HTTP "GET" "/" responded 200 in 1258.2111 ms
+11/26/2020 08:39:08 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3684 ms
+11/26/2020 08:39:10 HTTP "GET" "/Account/SignIn" responded 404 in 3.1214 ms
+11/26/2020 08:39:14 - Getting index page -
+11/26/2020 08:39:14 HTTP "GET" "/" responded 200 in 41.4079 ms
+11/26/2020 08:39:15 HTTP "GET" "/Identity/Account/Login" responded 200 in 75.2141 ms
+11/26/2020 08:39:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3360 ms
+11/26/2020 08:39:17 - Getting index page -
+11/26/2020 08:39:17 HTTP "GET" "/" responded 200 in 24.4788 ms
+11/26/2020 08:40:04 Application starting up
+11/26/2020 08:40:05 - Getting index page -
+11/26/2020 08:40:06 HTTP "GET" "/" responded 200 in 1256.6121 ms
+11/26/2020 08:40:06 HTTP "GET" "/js/playlistView.js" responded 404 in 1.8710 ms
+11/26/2020 08:40:06 HTTP "GET" "/js/playlistView.js" responded 404 in 3.0215 ms
+11/26/2020 08:40:09 HTTP "GET" "/Identity/Account/Login" responded 200 in 84.4664 ms
+11/26/2020 08:40:09 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3016 ms
+11/26/2020 08:40:13 - Getting index page -
+11/26/2020 08:40:13 HTTP "GET" "/" responded 200 in 41.1731 ms
+11/26/2020 08:40:14 HTTP "GET" "/Playlists" responded 200 in 25.1380 ms
+11/26/2020 08:40:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3112 ms
+11/26/2020 08:40:15 HTTP "GET" "/Identity/Account/Login" responded 200 in 8.5955 ms
+11/26/2020 08:40:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2799 ms
+11/26/2020 08:40:16 HTTP "GET" "/Identity/Account/Login" responded 200 in 6.1938 ms
+11/26/2020 08:40:16 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1433 ms
+11/26/2020 08:40:17 HTTP "GET" "/Identity/Account/Login" responded 200 in 7.3154 ms
+11/26/2020 08:40:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4725 ms
+11/26/2020 08:40:18 HTTP "GET" "/Identity/Account/Login" responded 200 in 7.7613 ms
+11/26/2020 08:40:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5241 ms
+11/26/2020 08:40:19 HTTP "GET" "/Identity/Account/Login" responded 200 in 5.3484 ms
+11/26/2020 08:40:19 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3079 ms
+11/26/2020 08:40:20 HTTP "GET" "/Playlists" responded 200 in 15.8537 ms
+11/26/2020 08:40:20 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3639 ms
+11/26/2020 08:40:22 HTTP "GET" "/Identity/Account/Login" responded 200 in 4.2268 ms
+11/26/2020 08:40:22 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2918 ms
+11/26/2020 08:40:23 HTTP "GET" "/Playlists" responded 200 in 13.4371 ms
+11/26/2020 08:40:45 Application starting up
+11/26/2020 08:40:46 - Getting index page -
+11/26/2020 08:40:47 HTTP "GET" "/" responded 200 in 1227.5633 ms
+11/26/2020 08:40:47 HTTP "GET" "/js/playlistView.js" responded 404 in 1.5066 ms
+11/26/2020 08:40:47 HTTP "GET" "/js/playlistView.js" responded 404 in 2.8202 ms
+11/26/2020 08:41:09 Application starting up
+11/26/2020 08:41:10 - Getting index page -
+11/26/2020 08:41:11 HTTP "GET" "/" responded 200 in 1216.0414 ms
+11/26/2020 08:41:11 HTTP "GET" "/js/playlistView.js" responded 404 in 1.8325 ms
+11/26/2020 08:41:11 HTTP "GET" "/js/playlistView.js" responded 404 in 2.3667 ms
+11/26/2020 08:41:12 HTTP "GET" "/Identity/Account/Login" responded 200 in 93.8088 ms
+11/26/2020 08:41:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6280 ms
+11/26/2020 08:41:14 User logged in.
+11/26/2020 08:41:14 HTTP "POST" "/Identity/Account/Login" responded 302 in 143.6472 ms
+11/26/2020 08:41:14 - Getting index page -
+11/26/2020 08:41:14 HTTP "GET" "/" responded 200 in 26.2461 ms
+11/26/2020 08:41:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5452 ms
+11/26/2020 08:41:18 HTTP "GET" "/Playlists/Create" responded 200 in 37.7420 ms
+11/26/2020 08:41:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6826 ms
+11/26/2020 08:41:18 HTTP "GET" "/Playlists/Create/ws" responded 200 in 6.0516 ms
+11/26/2020 08:41:19 HTTP "GET" "/Admin/UsersIndex" responded 200 in 34.3069 ms
+11/26/2020 08:41:19 HTTP "GET" "/js/playlistView.js" responded 404 in 1.7235 ms
+11/26/2020 08:41:22 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 39.7413 ms
+11/26/2020 08:41:22 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8634 ms
+11/26/2020 08:41:23 HTTP "GET" "/Playlists" responded 200 in 22.7674 ms
+11/26/2020 08:41:23 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3339 ms
+11/26/2020 08:41:26 HTTP "GET" "/Playlists/Playlist/1022" responded 200 in 80.9410 ms
+11/26/2020 08:41:26 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0482 ms
+11/26/2020 08:41:26 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3262 ms
+11/26/2020 08:41:36 HTTP "GET" "/Playlists" responded 200 in 24.0948 ms
+11/26/2020 08:53:13 Application starting up
+11/26/2020 08:53:15 - Getting index page -
+11/26/2020 08:53:16 HTTP "GET" "/" responded 200 in 1241.1963 ms
+11/26/2020 08:53:16 HTTP "GET" "/js/playlistView.js" responded 404 in 2.0822 ms
+11/26/2020 08:53:16 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3478 ms
+11/26/2020 08:53:18 HTTP "GET" "/Playlists/Create" responded 200 in 69.8998 ms
+11/26/2020 08:53:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6439 ms
+11/26/2020 08:53:18 HTTP "GET" "/Playlists/Create/ws" responded 200 in 12.2388 ms
+11/26/2020 08:53:27 HTTP "POST" "/Playlists/Create" responded 500 in 1893.4620 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at PG.Services.PlaylistService.Create(PlaylistDTO playlistDTO) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 38
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 164
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 88
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/26/2020 08:53:27 An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at PG.Services.PlaylistService.Create(PlaylistDTO playlistDTO) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 38
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 164
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 88
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/26/2020 08:53:33 HTTP "GET" "/Playlists/Create" responded 200 in 9.6462 ms
+11/26/2020 08:53:33 HTTP "GET" "/Playlists/Create/ws" responded 200 in 4.4459 ms
+11/26/2020 08:53:38 Playlist with title 'Sofia-Sandanski2' has been created.
+11/26/2020 08:53:39 HTTP "POST" "/Playlists/Create" responded 302 in 2565.3064 ms
+11/26/2020 08:53:39 HTTP "GET" "/Playlists" responded 200 in 20.7772 ms
+11/26/2020 08:53:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3889 ms
+11/26/2020 08:53:44 HTTP "GET" "/Playlists/Playlist/1023" responded 200 in 58.1610 ms
+11/26/2020 08:53:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8057 ms
+11/26/2020 08:53:45 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3069 ms
+11/26/2020 08:53:50 HTTP "GET" "/Playlists" responded 200 in 11.2166 ms
+11/26/2020 08:53:51 HTTP "GET" "/Playlists/Playlist/1022" responded 200 in 8.7401 ms
+11/26/2020 08:53:51 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3836 ms
+11/26/2020 08:54:02 HTTP "GET" "/Playlists" responded 200 in 15.9917 ms
+11/26/2020 08:54:03 HTTP "GET" "/Playlists/Playlist/1023" responded 200 in 8.2397 ms
+11/26/2020 08:54:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6552 ms
+11/26/2020 08:54:09 HTTP "GET" "/Playlists" responded 200 in 8.7197 ms
+11/26/2020 08:54:11 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 6.8528 ms
+11/26/2020 08:54:11 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7395 ms
+11/26/2020 08:54:15 HTTP "GET" "/Playlists" responded 200 in 6.2579 ms
+11/26/2020 08:54:17 HTTP "GET" "/Admin/UsersIndex" responded 200 in 25.6575 ms
+11/26/2020 08:54:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4551 ms
+11/26/2020 08:54:17 HTTP "GET" "/Playlists" responded 200 in 6.8633 ms
+11/26/2020 08:54:18 HTTP "GET" "/Playlists/Playlist/1022" responded 200 in 6.2949 ms
+11/26/2020 08:54:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5279 ms
+11/26/2020 08:54:35 HTTP "GET" "/Playlists" responded 200 in 11.5076 ms
+11/26/2020 08:54:37 HTTP "POST" "/Playlists/DeletePlaylistWeb" responded 302 in 1573.5867 ms
+11/26/2020 08:54:37 HTTP "GET" "/Playlists" responded 200 in 4.8278 ms
+11/26/2020 08:54:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5674 ms
+11/26/2020 08:54:39 HTTP "POST" "/Playlists/DeletePlaylistWeb" responded 302 in 6.5441 ms
+11/26/2020 08:54:39 HTTP "GET" "/Playlists" responded 200 in 3.6167 ms
+11/26/2020 08:54:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5592 ms
+11/26/2020 08:54:40 HTTP "POST" "/Playlists" responded 200 in 9.2786 ms
+11/26/2020 08:54:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3181 ms
+11/26/2020 08:54:41 HTTP "POST" "/Playlists" responded 200 in 9.8405 ms
+11/26/2020 08:54:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3277 ms
+11/26/2020 08:54:42 HTTP "POST" "/Playlists" responded 200 in 9.2213 ms
+11/26/2020 08:54:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2503 ms
+11/26/2020 08:54:50 - Getting index page -
+11/26/2020 08:54:50 HTTP "GET" "/" responded 200 in 24.0900 ms
+11/26/2020 08:54:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3276 ms
+11/26/2020 08:54:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2199 ms
+11/26/2020 08:54:52 - Getting index page -
+11/26/2020 08:54:52 HTTP "POST" "/" responded 200 in 9.6796 ms
+11/26/2020 08:54:52 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2751 ms
+11/26/2020 08:55:26 Application starting up
+11/26/2020 08:55:27 - Getting index page -
+11/26/2020 08:55:29 HTTP "GET" "/" responded 200 in 1514.8847 ms
+11/26/2020 08:55:29 HTTP "GET" "/js/playlistView.js" responded 404 in 3.6058 ms
+11/26/2020 08:55:36 - Getting index page -
+11/26/2020 08:55:36 HTTP "POST" "/" responded 200 in 55.4552 ms
+11/26/2020 08:55:36 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3155 ms
+11/26/2020 08:58:14 Application starting up
+11/26/2020 08:58:16 - Getting index page -
+11/26/2020 08:58:17 HTTP "GET" "/" responded 200 in 1505.6825 ms
+11/26/2020 08:58:17 HTTP "GET" "/js/playlistView.js" responded 404 in 2.9916 ms
+11/26/2020 08:58:17 HTTP "GET" "/js/playlistView.js" responded 404 in 10.7646 ms
+11/26/2020 08:58:18 - Getting index page -
+11/26/2020 08:58:18 HTTP "POST" "/" responded 200 in 36.4444 ms
+11/26/2020 08:58:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4927 ms
+11/26/2020 08:58:22 HTTP "GET" "/Playlists/Create" responded 200 in 2122.6904 ms
+11/26/2020 08:58:22 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7686 ms
+11/26/2020 08:58:23 HTTP "GET" "/Playlists/Create/ws" responded 200 in 1560.5814 ms
+11/26/2020 08:58:47 Playlist with title 'Sofia-Sandanski3bdf' has been created.
+11/26/2020 08:59:40 HTTP "POST" "/Playlists/Create" responded 302 in 62013.5913 ms
+11/26/2020 08:59:42 HTTP "GET" "/Playlists" responded 200 in 1998.5700 ms
+11/26/2020 08:59:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5906 ms
+11/26/2020 09:00:31 HTTP "POST" "/Playlists" responded 200 in 44385.9564 ms
+11/26/2020 09:00:53 HTTP "GET" "/js/playlistView.js" responded 404 in 21299.0931 ms
+11/26/2020 09:03:17 HTTP "POST" "/Playlists" responded 200 in 140349.6656 ms
+11/26/2020 09:03:17 HTTP "GET" "/js/playlistView.js" responded 404 in 1.6099 ms
+11/26/2020 09:03:25 HTTP "POST" "/Playlists/DeletePlaylistWeb" responded 404 in 2.8307 ms
+11/26/2020 09:04:39 Application starting up
+11/26/2020 09:04:40 - Getting index page -
+11/26/2020 09:04:41 HTTP "GET" "/" responded 200 in 1399.4322 ms
+11/26/2020 09:04:41 HTTP "GET" "/js/playlistView.js" responded 404 in 5.2546 ms
+11/26/2020 09:04:41 HTTP "GET" "/js/playlistView.js" responded 404 in 11.2788 ms
+11/26/2020 09:04:45 HTTP "POST" "/Playlists/DeletePlaylist" responded 302 in 1726.5171 ms
+11/26/2020 09:04:45 HTTP "GET" "/Playlists" responded 200 in 22.9414 ms
+11/26/2020 09:04:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6072 ms
+11/26/2020 09:04:49 HTTP "POST" "/Playlists" responded 200 in 11.4906 ms
+11/26/2020 09:04:49 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9803 ms
+11/26/2020 09:04:50 HTTP "POST" "/Playlists" responded 200 in 20.2360 ms
+11/26/2020 09:04:50 HTTP "GET" "/js/playlistView.js" responded 404 in 1.4470 ms
+11/26/2020 09:04:50 HTTP "POST" "/Playlists" responded 200 in 5.8087 ms
+11/26/2020 09:04:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3749 ms
+11/26/2020 09:04:51 HTTP "POST" "/Playlists" responded 200 in 8.2205 ms
+11/26/2020 09:04:51 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0492 ms
+11/26/2020 09:04:51 HTTP "POST" "/Playlists" responded 200 in 5.2798 ms
+11/26/2020 09:04:51 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6598 ms
+11/26/2020 09:04:53 HTTP "GET" "/Playlists/Create" responded 200 in 48.3675 ms
+11/26/2020 09:04:53 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0367 ms
+11/26/2020 09:04:53 HTTP "GET" "/Playlists/Create/ws" responded 200 in 5.0811 ms
+11/26/2020 09:04:59 Playlist with title 'Sofia-Sandanski' has been created.
+11/26/2020 09:05:35 Application starting up
+11/26/2020 09:05:36 - Getting index page -
+11/26/2020 09:05:37 HTTP "GET" "/" responded 200 in 1267.7496 ms
+11/26/2020 09:05:37 HTTP "GET" "/js/playlistView.js" responded 404 in 2.5509 ms
+11/26/2020 09:05:37 HTTP "GET" "/js/playlistView.js" responded 404 in 10.7090 ms
+11/26/2020 09:05:37 - Getting index page -
+11/26/2020 09:05:37 HTTP "GET" "/" responded 200 in 33.5149 ms
+11/26/2020 09:07:57 Application starting up
+11/26/2020 09:07:59 - Getting index page -
+11/26/2020 09:08:00 HTTP "GET" "/" responded 200 in 1728.9714 ms
+11/26/2020 09:08:01 HTTP "GET" "/js/playlistView.js" responded 404 in 3.9701 ms
+11/26/2020 09:08:01 - Getting index page -
+11/26/2020 09:08:01 HTTP "GET" "/" responded 200 in 64.0825 ms
+11/26/2020 09:08:09 - Getting index page -
+11/26/2020 09:08:09 HTTP "POST" "/" responded 200 in 22.6204 ms
+11/26/2020 09:08:09 HTTP "GET" "/js/playlistView.js" responded 404 in 2.2596 ms
+11/26/2020 09:08:09 - Getting index page -
+11/26/2020 09:08:09 HTTP "GET" "/" responded 200 in 9.5758 ms
+11/26/2020 09:08:11 - Getting index page -
+11/26/2020 09:08:11 HTTP "POST" "/" responded 200 in 34.0151 ms
+11/26/2020 09:08:11 HTTP "GET" "/js/playlistView.js" responded 404 in 2.3208 ms
+11/26/2020 09:08:11 - Getting index page -
+11/26/2020 09:08:11 HTTP "GET" "/" responded 200 in 15.5053 ms
+11/26/2020 09:08:21 - Getting index page -
+11/26/2020 09:08:21 HTTP "POST" "/" responded 200 in 14.7904 ms
+11/26/2020 09:08:21 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2275 ms
+11/26/2020 09:08:21 - Getting index page -
+11/26/2020 09:08:21 HTTP "GET" "/" responded 200 in 12.5144 ms
+11/26/2020 09:08:33 HTTP "POST" "/Playlists/DeletePlaylist" responded 302 in 1935.6650 ms
+11/26/2020 09:08:34 HTTP "GET" "/Playlists" responded 200 in 1206.4297 ms
+11/26/2020 09:08:34 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4592 ms
+11/26/2020 09:08:45 HTTP "POST" "/Playlists" responded 200 in 6011.4852 ms
+11/26/2020 09:08:45 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2027 ms
+11/26/2020 09:10:59 Application starting up
+11/26/2020 09:11:00 - Getting index page -
+11/26/2020 09:11:01 HTTP "GET" "/" responded 200 in 1299.0247 ms
+11/26/2020 09:11:01 HTTP "GET" "/js/playlistView.js" responded 404 in 2.0122 ms
+11/26/2020 09:11:01 HTTP "GET" "/js/playlistView.js" responded 404 in 10.7610 ms
+11/26/2020 09:12:26 HTTP "GET" "/Admin/UsersIndex" responded 200 in 142.0458 ms
+11/26/2020 09:12:26 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9376 ms
+11/26/2020 09:12:30 HTTP "POST" "/Admin/BanUsers" responded 302 in 1687.8462 ms
+11/26/2020 09:12:30 HTTP "GET" "/Admin/UsersIndex" responded 200 in 8.4683 ms
+11/26/2020 09:12:30 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5166 ms
+11/26/2020 09:12:30 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3501 ms
+11/26/2020 09:12:38 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 28.1446 ms
+11/26/2020 09:12:38 HTTP "GET" "/Admin/UsersIndex" responded 200 in 13.6213 ms
+11/26/2020 09:12:38 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1807 ms
+11/26/2020 09:12:38 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1552 ms
+11/26/2020 09:12:40 HTTP "GET" "/Admin/UsersIndex" responded 200 in 6.8427 ms
+11/26/2020 09:12:44 - Getting index page -
+11/26/2020 09:12:44 HTTP "GET" "/" responded 200 in 26.4914 ms
+11/26/2020 09:12:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8198 ms
+11/26/2020 09:12:45 - Getting index page -
+11/26/2020 09:12:45 HTTP "POST" "/" responded 200 in 12.6928 ms
+11/26/2020 09:12:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9909 ms
+11/26/2020 09:12:46 - Getting index page -
+11/26/2020 09:12:46 HTTP "POST" "/" responded 200 in 10.0862 ms
+11/26/2020 09:12:46 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0479 ms
+11/26/2020 09:12:46 - Getting index page -
+11/26/2020 09:12:46 HTTP "POST" "/" responded 200 in 9.8609 ms
+11/26/2020 09:12:46 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1530 ms
+11/26/2020 09:12:47 - Getting index page -
+11/26/2020 09:12:47 HTTP "POST" "/" responded 200 in 6.2191 ms
+11/26/2020 09:12:47 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4127 ms
+11/26/2020 09:12:47 - Getting index page -
+11/26/2020 09:12:47 HTTP "POST" "/" responded 200 in 8.4765 ms
+11/26/2020 09:12:47 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8492 ms
+11/26/2020 09:12:47 - Getting index page -
+11/26/2020 09:12:47 HTTP "POST" "/" responded 200 in 8.2114 ms
+11/26/2020 09:12:47 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7590 ms
+11/26/2020 09:12:48 HTTP "GET" "/Playlists/Create" responded 200 in 47.3864 ms
+11/26/2020 09:12:48 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9614 ms
+11/26/2020 09:12:48 HTTP "GET" "/Playlists/Create/ws" responded 200 in 6.1911 ms
+11/26/2020 09:12:56 Playlist with title 'Sofia-Sandanski2' has been created.
+11/26/2020 09:13:17 - Getting index page -
+11/26/2020 09:13:17 HTTP "GET" "/" responded 200 in 7.6732 ms
+11/26/2020 09:13:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4306 ms
+11/26/2020 09:13:17 - Getting index page -
+11/26/2020 09:13:17 HTTP "GET" "/" responded 200 in 5.2460 ms
+11/26/2020 09:13:19 - Getting index page -
+11/26/2020 09:13:19 HTTP "POST" "/" responded 200 in 7.6190 ms
+11/26/2020 09:13:20 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7623 ms
+11/26/2020 09:13:20 - Getting index page -
+11/26/2020 09:13:20 HTTP "GET" "/" responded 200 in 6.5810 ms
+11/26/2020 09:13:21 - Getting index page -
+11/26/2020 09:13:21 HTTP "POST" "/" responded 200 in 12.9312 ms
+11/26/2020 09:13:21 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8068 ms
+11/26/2020 09:13:21 - Getting index page -
+11/26/2020 09:13:21 HTTP "GET" "/" responded 200 in 13.0281 ms
+11/26/2020 09:13:21 - Getting index page -
+11/26/2020 09:13:21 HTTP "POST" "/" responded 200 in 12.1974 ms
+11/26/2020 09:13:21 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2318 ms
+11/26/2020 09:13:21 - Getting index page -
+11/26/2020 09:13:21 HTTP "GET" "/" responded 200 in 11.1176 ms
+11/26/2020 09:13:21 - Getting index page -
+11/26/2020 09:13:21 HTTP "POST" "/" responded 200 in 16.0913 ms
+11/26/2020 09:13:21 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4369 ms
+11/26/2020 09:13:22 - Getting index page -
+11/26/2020 09:13:22 HTTP "GET" "/" responded 200 in 14.0246 ms
+11/26/2020 09:13:22 - Getting index page -
+11/26/2020 09:13:22 HTTP "POST" "/" responded 200 in 13.2758 ms
+11/26/2020 09:13:22 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6344 ms
+11/26/2020 09:13:22 - Getting index page -
+11/26/2020 09:13:22 HTTP "GET" "/" responded 200 in 5.5835 ms
+11/26/2020 09:13:22 - Getting index page -
+11/26/2020 09:13:22 HTTP "POST" "/" responded 200 in 11.0251 ms
+11/26/2020 09:13:22 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4566 ms
+11/26/2020 09:13:22 - Getting index page -
+11/26/2020 09:13:22 HTTP "GET" "/" responded 200 in 12.8497 ms
+11/26/2020 09:13:22 - Getting index page -
+11/26/2020 09:13:22 HTTP "POST" "/" responded 200 in 12.1979 ms
+11/26/2020 09:13:22 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9173 ms
+11/26/2020 09:13:23 - Getting index page -
+11/26/2020 09:13:23 HTTP "GET" "/" responded 200 in 14.9897 ms
+11/26/2020 09:13:23 - Getting index page -
+11/26/2020 09:13:23 HTTP "POST" "/" responded 200 in 11.5829 ms
+11/26/2020 09:13:23 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5477 ms
+11/26/2020 09:13:23 - Getting index page -
+11/26/2020 09:13:23 HTTP "GET" "/" responded 200 in 5.6121 ms
+11/26/2020 09:13:45 HTTP "POST" "/Playlists/DeletePlaylist" responded 302 in 33.6176 ms
+11/26/2020 09:13:45 HTTP "GET" "/Playlists" responded 200 in 21.1459 ms
+11/26/2020 09:13:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2320 ms
+11/26/2020 09:13:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2031 ms
+11/26/2020 09:13:52 HTTP "POST" "/Playlists/DeletePlaylist" responded 500 in 3.9306 ms
+System.ArgumentException: Playlist with id 1026 is already deleted.
+   at PG.Services.PlaylistService.Delete(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 146
+   at PG.Web.Controllers.PlaylistsController.DeletePlaylist(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 110
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/26/2020 09:13:52 An unhandled exception has occurred while executing the request.
+System.ArgumentException: Playlist with id 1026 is already deleted.
+   at PG.Services.PlaylistService.Delete(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 146
+   at PG.Web.Controllers.PlaylistsController.DeletePlaylist(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 110
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/26/2020 09:13:57 HTTP "POST" "/Playlists/Create" responded 500 in 62913.7536 ms
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at PG.Services.PlaylistService.GetPixabayImage(Int32 queryId) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 484
+   at PG.Services.PlaylistService.AddPixabayImageToPlaylist(Playlist databasePlaylist) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 294
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 280
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 88
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/26/2020 09:13:57 An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at PG.Services.PlaylistService.GetPixabayImage(Int32 queryId) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 484
+   at PG.Services.PlaylistService.AddPixabayImageToPlaylist(Playlist databasePlaylist) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 294
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 280
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 88
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/26/2020 09:14:11 HTTP "POST" "/Playlists/DeletePlaylist" responded 500 in 4.1149 ms
+System.ArgumentException: Playlist with id 1026 is already deleted.
+   at PG.Services.PlaylistService.Delete(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 146
+   at PG.Web.Controllers.PlaylistsController.DeletePlaylist(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 110
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/26/2020 09:14:11 An unhandled exception has occurred while executing the request.
+System.ArgumentException: Playlist with id 1026 is already deleted.
+   at PG.Services.PlaylistService.Delete(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 146
+   at PG.Web.Controllers.PlaylistsController.DeletePlaylist(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 110
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/26/2020 09:14:54 HTTP "POST" "/Playlists/DeletePlaylist" responded 500 in 4.2893 ms
+System.ArgumentException: Playlist with id 1026 is already deleted.
+   at PG.Services.PlaylistService.Delete(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 146
+   at PG.Web.Controllers.PlaylistsController.DeletePlaylist(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 110
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/26/2020 09:14:54 An unhandled exception has occurred while executing the request.
+System.ArgumentException: Playlist with id 1026 is already deleted.
+   at PG.Services.PlaylistService.Delete(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 146
+   at PG.Web.Controllers.PlaylistsController.DeletePlaylist(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 110
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/26/2020 09:16:42 HTTP "POST" "/Playlists/DeletePlaylist" responded 500 in 4.1634 ms
+System.ArgumentException: Playlist with id 1026 is already deleted.
+   at PG.Services.PlaylistService.Delete(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 146
+   at PG.Web.Controllers.PlaylistsController.DeletePlaylist(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 110
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/26/2020 09:16:42 An unhandled exception has occurred while executing the request.
+System.ArgumentException: Playlist with id 1026 is already deleted.
+   at PG.Services.PlaylistService.Delete(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 146
+   at PG.Web.Controllers.PlaylistsController.DeletePlaylist(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 110
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/26/2020 09:16:45 HTTP "POST" "/Playlists" responded 200 in 7.6627 ms
+11/26/2020 09:16:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2896 ms
+11/26/2020 09:16:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3937 ms
+11/26/2020 09:16:55 HTTP "POST" "/Playlists" responded 200 in 4.3397 ms
+11/26/2020 09:16:55 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3648 ms
+11/26/2020 09:16:55 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2798 ms
+11/26/2020 09:17:07 - Getting index page -
+11/26/2020 09:17:07 HTTP "GET" "/" responded 200 in 8.4028 ms
+11/26/2020 09:17:07 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6003 ms
+11/26/2020 09:17:07 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2130 ms
+11/26/2020 09:17:08 HTTP "GET" "/Playlists/Create" responded 200 in 6.4723 ms
+11/26/2020 09:17:08 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2830 ms
+11/26/2020 09:17:08 HTTP "GET" "/Playlists/Create/ws" responded 200 in 3.4365 ms
+11/26/2020 09:17:16 Playlist with title 'Koda' has been created.
+11/26/2020 09:17:16 - Getting index page -
+11/26/2020 09:17:16 HTTP "GET" "/" responded 200 in 10.3852 ms
+11/26/2020 09:17:16 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4164 ms
+11/26/2020 09:17:18 HTTP "GET" "/Playlists/Create" responded 200 in 4.1798 ms
+11/26/2020 09:17:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4223 ms
+11/26/2020 09:17:18 HTTP "GET" "/Playlists/Create/ws" responded 200 in 4.7470 ms
+11/26/2020 09:17:23 Playlist with title 'Sofia-Sandanski' has been created.
+11/26/2020 09:17:24 HTTP "POST" "/Playlists/Create" responded 302 in 2272.2709 ms
+11/26/2020 09:17:24 HTTP "GET" "/Playlists" responded 200 in 1.5466 ms
+11/26/2020 09:17:24 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2777 ms
+11/26/2020 09:17:24 HTTP "GET" "/Playlists" responded 200 in 1.6546 ms
+11/26/2020 09:17:28 HTTP "GET" "/Playlists/Create" responded 200 in 4.1025 ms
+11/26/2020 09:17:28 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2792 ms
+11/26/2020 09:17:28 HTTP "GET" "/Playlists/Create/ws" responded 200 in 3.8333 ms
+11/26/2020 09:17:29 HTTP "POST" "/Playlists/Create" responded 302 in 15080.9837 ms
+11/26/2020 09:17:37 Playlist with title 'bfdbf' has been created.
+11/26/2020 09:17:38 HTTP "POST" "/Playlists/Create" responded 302 in 2252.3205 ms
+11/26/2020 09:17:38 HTTP "GET" "/Playlists" responded 200 in 8.5986 ms
+11/26/2020 09:17:38 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2930 ms
+11/26/2020 09:17:50 HTTP "GET" "/Playlists/Playlist/1029" responded 200 in 51.2418 ms
+11/26/2020 09:17:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2960 ms
+11/26/2020 09:17:50 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.1844 ms
+11/26/2020 09:17:51 HTTP "GET" "/Playlists" responded 200 in 8.9370 ms
+11/26/2020 09:18:01 HTTP "POST" "/Playlists" responded 200 in 2.7116 ms
+11/26/2020 09:18:01 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3266 ms
+11/26/2020 09:18:05 HTTP "POST" "/Playlists/DeletePlaylistWeb" responded 404 in 0.1702 ms
+11/26/2020 09:19:36 Application starting up
+11/26/2020 09:19:37 - Getting index page -
+11/26/2020 09:19:39 HTTP "GET" "/" responded 200 in 1551.7531 ms
+11/26/2020 09:19:39 HTTP "GET" "/js/playlistView.js" responded 404 in 5.2087 ms
+11/26/2020 09:19:39 HTTP "GET" "/js/playlistView.js" responded 404 in 12.9310 ms
+11/26/2020 09:19:43 - Getting index page -
+11/26/2020 09:19:43 HTTP "POST" "/" responded 200 in 36.7402 ms
+11/26/2020 09:19:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4924 ms
+11/26/2020 09:19:46 HTTP "POST" "/Playlists/DeletePlaylist" responded 302 in 122.9104 ms
+11/26/2020 09:19:46 HTTP "GET" "/Playlists" responded 200 in 14.0635 ms
+11/26/2020 09:19:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4006 ms
+11/26/2020 09:19:48 HTTP "POST" "/Playlists/DeletePlaylist" responded 302 in 10.1123 ms
+11/26/2020 09:19:48 HTTP "GET" "/Playlists" responded 200 in 4.8028 ms
+11/26/2020 09:19:48 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5748 ms
+11/26/2020 09:19:58 HTTP "POST" "/Playlists" responded 200 in 26.8216 ms
+11/26/2020 09:19:58 HTTP "GET" "/js/playlistView.js" responded 404 in 1.8149 ms
+11/26/2020 09:20:03 HTTP "GET" "/Playlists" responded 200 in 12.9254 ms
+11/26/2020 09:20:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3999 ms
+11/26/2020 09:20:04 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 34.6296 ms
+11/26/2020 09:20:04 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8166 ms
+11/26/2020 09:20:06 HTTP "GET" "/Playlists" responded 200 in 8.9073 ms
+11/26/2020 09:20:06 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1889 ms
+11/26/2020 09:21:40 Application starting up
+11/26/2020 09:21:41 - Getting index page -
+11/26/2020 09:21:43 HTTP "GET" "/" responded 200 in 1332.9251 ms
+11/26/2020 09:21:43 HTTP "GET" "/js/playlistView.js" responded 404 in 3.0400 ms
+11/26/2020 09:21:43 HTTP "GET" "/js/playlistView.js" responded 404 in 12.7912 ms
+11/26/2020 09:21:45 HTTP "POST" "/Playlists/DeletePlaylist" responded 302 in 473.0207 ms
+11/26/2020 09:21:45 HTTP "GET" "/Playlists" responded 200 in 19.0157 ms
+11/26/2020 09:21:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4767 ms
+11/26/2020 09:21:50 HTTP "GET" "/Playlists/Create" responded 200 in 55.5737 ms
+11/26/2020 09:21:50 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2545 ms
+11/26/2020 09:21:50 HTTP "GET" "/Playlists/Create/ws" responded 200 in 5.8526 ms
+11/26/2020 09:21:56 Playlist with title 'Sofia-Sandanski' has been created.
+11/26/2020 09:21:57 HTTP "POST" "/Playlists/Create" responded 500 in 2826.1136 ms
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'PG.Services.MappingModelsAPI.Pixabay.PixabayQueryImagesResult' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at PG.Services.PlaylistService.GetPixabayImage(Int32 queryId) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 484
+   at PG.Services.PlaylistService.AddPixabayImageToPlaylist(Playlist databasePlaylist) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 294
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 280
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 83
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/26/2020 09:21:57 An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'PG.Services.MappingModelsAPI.Pixabay.PixabayQueryImagesResult' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at PG.Services.PlaylistService.GetPixabayImage(Int32 queryId) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 484
+   at PG.Services.PlaylistService.AddPixabayImageToPlaylist(Playlist databasePlaylist) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 294
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 280
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 83
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/26/2020 09:21:59 HTTP "GET" "/Playlists/Create" responded 200 in 14.4299 ms
+11/26/2020 09:21:59 HTTP "GET" "/Playlists/Create/ws" responded 200 in 7.9183 ms
+11/26/2020 09:22:06 HTTP "GET" "/Playlists/Create" responded 200 in 7.3824 ms
+11/26/2020 09:22:06 HTTP "GET" "/Playlists/Create/ws" responded 200 in 3.5945 ms
+11/26/2020 09:22:13 Playlist with title 'Sofia-Sandanski' has been created.
+11/26/2020 09:22:14 HTTP "POST" "/Playlists/Create" responded 302 in 2544.1599 ms
+11/26/2020 09:22:14 HTTP "GET" "/Playlists" responded 200 in 11.5475 ms
+11/26/2020 09:22:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4801 ms
+11/26/2020 09:22:14 HTTP "GET" "/Playlists" responded 200 in 5.6304 ms
+11/26/2020 09:22:46 HTTP "POST" "/Playlists/DeletePlaylist" responded 302 in 1557.2277 ms
+11/26/2020 09:22:46 HTTP "GET" "/Playlists" responded 200 in 6.8777 ms
+11/26/2020 09:22:46 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0470 ms
+11/26/2020 09:22:46 HTTP "GET" "/Playlists" responded 200 in 5.8957 ms
+11/26/2020 09:22:47 HTTP "POST" "/Playlists/DeletePlaylist" responded 302 in 8.1652 ms
+11/26/2020 09:22:47 HTTP "GET" "/Playlists" responded 200 in 3.6588 ms
+11/26/2020 09:22:47 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7484 ms
+11/26/2020 09:27:26 Application starting up
+11/26/2020 09:27:28 - Getting index page -
+11/26/2020 09:27:29 HTTP "GET" "/" responded 500 in 1127.2820 ms
+System.InvalidOperationException: The partial view '_DisplayPlaylists' was not found. The following locations were searched:
+/Views/Home/_DisplayPlaylists.cshtml
+/Views/Shared/_DisplayPlaylists.cshtml
+/Pages/Shared/_DisplayPlaylists.cshtml
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Home_Index.ExecuteAsync() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Views\Home\Index.cshtml:line 9
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/26/2020 09:27:29 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The partial view '_DisplayPlaylists' was not found. The following locations were searched:
+/Views/Home/_DisplayPlaylists.cshtml
+/Views/Shared/_DisplayPlaylists.cshtml
+/Pages/Shared/_DisplayPlaylists.cshtml
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Home_Index.ExecuteAsync() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Views\Home\Index.cshtml:line 9
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/26/2020 09:28:19 Application starting up
+11/26/2020 09:28:20 - Getting index page -
+11/26/2020 09:28:21 HTTP "GET" "/" responded 200 in 1162.1055 ms
+11/26/2020 09:28:22 HTTP "GET" "/js/playlistView.js" responded 404 in 2.1777 ms
+11/26/2020 09:28:22 HTTP "GET" "/js/playlistView.js" responded 404 in 10.5498 ms
+11/26/2020 09:28:24 HTTP "GET" "/Playlists/Create" responded 200 in 72.3154 ms
+11/26/2020 09:28:24 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4855 ms
+11/26/2020 09:28:24 HTTP "GET" "/Playlists/Create/ws" responded 200 in 12.4421 ms
+11/26/2020 09:28:31 Playlist with title 'Sofia-Sandanski' has been created.
+11/26/2020 09:28:32 HTTP "POST" "/Playlists/Create" responded 302 in 2630.7380 ms
+11/26/2020 09:28:32 HTTP "GET" "/Playlists" responded 200 in 17.6941 ms
+11/26/2020 09:28:32 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5842 ms
+11/26/2020 09:28:42 HTTP "GET" "/Playlists/Create" responded 200 in 13.8798 ms
+11/26/2020 09:28:42 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3466 ms
+11/26/2020 09:28:42 HTTP "GET" "/Playlists/Create/ws" responded 200 in 5.5823 ms
+11/26/2020 09:28:43 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 29.2794 ms
+11/26/2020 09:28:43 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3743 ms
+11/26/2020 09:28:44 HTTP "GET" "/Playlists" responded 200 in 10.4985 ms
+11/26/2020 09:28:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5570 ms
+11/26/2020 09:28:44 - Getting index page -
+11/26/2020 09:28:44 HTTP "GET" "/" responded 200 in 17.1303 ms
+11/26/2020 09:28:44 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0411 ms
+11/26/2020 09:28:45 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 11.3991 ms
+11/26/2020 09:28:45 HTTP "GET" "/js/playlistView.js" responded 404 in 1.4865 ms
+11/26/2020 09:28:46 HTTP "GET" "/Playlists" responded 200 in 12.5744 ms
+11/26/2020 09:28:46 HTTP "GET" "/js/playlistView.js" responded 404 in 1.5600 ms
+11/26/2020 09:28:46 - Getting index page -
+11/26/2020 09:28:46 HTTP "GET" "/" responded 200 in 12.8555 ms
+11/26/2020 09:28:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8637 ms
+11/26/2020 09:28:47 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 11.2564 ms
+11/26/2020 09:28:47 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6924 ms
+11/26/2020 09:28:48 HTTP "GET" "/Playlists" responded 200 in 3.1772 ms
+11/26/2020 09:28:48 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3079 ms
+11/26/2020 09:28:48 - Getting index page -
+11/26/2020 09:28:48 HTTP "GET" "/" responded 200 in 9.8196 ms
+11/26/2020 09:28:48 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7872 ms
+11/26/2020 09:31:33 Application starting up
+11/26/2020 09:31:34 - Getting index page -
+11/26/2020 09:31:35 HTTP "GET" "/" responded 200 in 1176.7568 ms
+11/26/2020 09:31:35 HTTP "GET" "/js/playlistView.js" responded 404 in 2.0222 ms
+11/26/2020 09:31:35 HTTP "GET" "/js/playlistView.js" responded 404 in 10.7287 ms
+11/26/2020 09:31:36 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 57.3041 ms
+11/26/2020 09:31:36 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3427 ms
+11/26/2020 09:31:37 HTTP "GET" "/Playlists" responded 200 in 20.5963 ms
+11/26/2020 09:31:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7703 ms
+11/26/2020 09:31:38 - Getting index page -
+11/26/2020 09:31:38 HTTP "GET" "/" responded 200 in 11.1210 ms
+11/26/2020 09:31:38 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4336 ms
+11/26/2020 09:31:40 HTTP "GET" "/Playlists/Create" responded 200 in 47.2278 ms
+11/26/2020 09:31:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5159 ms
+11/26/2020 09:31:41 HTTP "GET" "/Playlists/Create/ws" responded 200 in 5.5556 ms
+11/26/2020 09:31:51 Playlist with title 'Koda' has been created.
+11/26/2020 09:31:53 HTTP "POST" "/Playlists/Create" responded 302 in 3011.2958 ms
+11/26/2020 09:31:53 HTTP "GET" "/Playlists" responded 200 in 12.1150 ms
+11/26/2020 09:31:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4623 ms
+11/26/2020 09:32:02 HTTP "GET" "/Playlists/Create" responded 200 in 15.4941 ms
+11/26/2020 09:32:02 HTTP "GET" "/js/playlistView.js" responded 404 in 1.4894 ms
+11/26/2020 09:32:02 HTTP "GET" "/Playlists/Create/ws" responded 200 in 7.8494 ms
+11/26/2020 09:32:14 Playlist with title 'Sofia-Sandanski' has been created.
+11/26/2020 09:32:16 HTTP "POST" "/Playlists/Create" responded 500 in 3499.5433 ms
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'PG.Services.MappingModelsAPI.Pixabay.PixabayQueryImagesResult' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at PG.Services.PlaylistService.GetPixabayImage(Int32 queryId) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 484
+   at PG.Services.PlaylistService.AddPixabayImageToPlaylist(Playlist databasePlaylist) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 294
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 280
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 83
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/26/2020 09:32:16 An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'PG.Services.MappingModelsAPI.Pixabay.PixabayQueryImagesResult' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at PG.Services.PlaylistService.GetPixabayImage(Int32 queryId) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 484
+   at PG.Services.PlaylistService.AddPixabayImageToPlaylist(Playlist databasePlaylist) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 294
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 280
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 83
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/26/2020 09:32:23 HTTP "GET" "/Playlists/Create" responded 200 in 11.1577 ms
+11/26/2020 09:32:23 HTTP "GET" "/Playlists/Create/ws" responded 200 in 6.7060 ms
+11/26/2020 09:32:26 Playlist with title 'Sofia-Sandanski' has been created.
+11/26/2020 09:32:27 HTTP "POST" "/Playlists/Create" responded 302 in 1406.0152 ms
+11/26/2020 09:32:27 HTTP "GET" "/Playlists" responded 200 in 11.7190 ms
+11/26/2020 09:32:27 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3082 ms
+11/26/2020 09:32:27 HTTP "GET" "/Playlists" responded 200 in 5.3304 ms
+11/26/2020 09:32:34 HTTP "POST" "/Playlists/DeletePlaylist" responded 302 in 15.8995 ms
+11/26/2020 09:32:34 HTTP "GET" "/Playlists" responded 200 in 4.9748 ms
+11/26/2020 09:32:34 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4339 ms
+11/26/2020 09:32:35 - Getting index page -
+11/26/2020 09:32:35 HTTP "GET" "/" responded 200 in 14.0776 ms
+11/26/2020 09:32:35 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1127 ms
+11/26/2020 09:32:38 HTTP "GET" "/Playlists" responded 200 in 7.2042 ms
+11/26/2020 09:32:38 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5700 ms
+11/26/2020 09:32:38 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 11.1889 ms
+11/26/2020 09:32:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7378 ms
+11/26/2020 09:32:40 HTTP "GET" "/Playlists/Create" responded 200 in 6.3840 ms
+11/26/2020 09:32:40 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1609 ms
+11/26/2020 09:32:40 HTTP "GET" "/Playlists/Create/ws" responded 200 in 3.7644 ms
+11/26/2020 09:32:49 Playlist with title 'Sofia-Sandanski2' has been created.
+11/26/2020 09:32:50 HTTP "POST" "/Playlists/Create" responded 302 in 1449.6609 ms
+11/26/2020 09:32:50 HTTP "GET" "/Playlists" responded 200 in 5.4459 ms
+11/26/2020 09:32:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9008 ms
+11/26/2020 09:32:55 HTTP "GET" "/Playlists/Create" responded 200 in 4.6092 ms
+11/26/2020 09:32:55 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4901 ms
+11/26/2020 09:32:55 HTTP "GET" "/Playlists/Create/ws" responded 200 in 3.3890 ms
+11/26/2020 09:33:10 Playlist with title 'Sofia-Sandanski3' has been created.
+11/26/2020 09:33:10 HTTP "POST" "/Playlists/Create" responded 302 in 2176.4974 ms
+11/26/2020 09:33:10 HTTP "GET" "/Playlists" responded 200 in 9.5098 ms
+11/26/2020 09:33:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2129 ms
+11/26/2020 09:33:18 HTTP "GET" "/Playlists" responded 200 in 7.4708 ms
+11/26/2020 09:33:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2966 ms
+11/26/2020 09:33:19 - Getting index page -
+11/26/2020 09:33:19 HTTP "GET" "/" responded 200 in 19.3953 ms
+11/26/2020 09:33:19 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2677 ms
+11/26/2020 09:34:15 Application starting up
+11/26/2020 09:34:16 - Getting index page -
+11/26/2020 09:34:17 HTTP "GET" "/" responded 200 in 1212.3025 ms
+11/26/2020 09:34:17 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6430 ms
+11/26/2020 09:34:17 HTTP "GET" "/js/playlistView.js" responded 404 in 10.2606 ms
+11/26/2020 09:34:22 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 62.6104 ms
+11/26/2020 09:34:22 HTTP "GET" "/js/playlistView.js" responded 404 in 1.5488 ms
+11/26/2020 09:34:27 - Getting index page -
+11/26/2020 09:34:27 HTTP "GET" "/" responded 200 in 21.4916 ms
+11/26/2020 09:34:27 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8815 ms
+11/26/2020 09:34:56 HTTP "GET" "/Playlists" responded 200 in 33.8738 ms
+11/26/2020 09:34:56 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1585 ms
+11/26/2020 09:36:29 Application starting up
+11/26/2020 09:36:30 - Getting index page -
+11/26/2020 09:36:31 HTTP "GET" "/" responded 200 in 1195.5089 ms
+11/26/2020 09:36:31 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6183 ms
+11/26/2020 09:36:31 HTTP "GET" "/js/playlistView.js" responded 404 in 10.5620 ms
+11/26/2020 09:36:48 Application starting up
+11/26/2020 09:36:49 - Getting index page -
+11/26/2020 09:36:50 HTTP "GET" "/" responded 200 in 1213.1240 ms
+11/26/2020 09:36:50 HTTP "GET" "/js/playlistView.js" responded 404 in 2.0693 ms
+11/26/2020 09:36:50 HTTP "GET" "/js/playlistView.js" responded 404 in 10.5651 ms
+11/26/2020 09:36:59 Application starting up
+11/26/2020 09:37:00 - Getting index page -
+11/26/2020 09:37:01 HTTP "GET" "/" responded 200 in 1227.0691 ms
+11/26/2020 09:37:01 HTTP "GET" "/js/playlistView.js" responded 404 in 2.1415 ms
+11/26/2020 09:37:01 HTTP "GET" "/js/playlistView.js" responded 404 in 10.4499 ms
+11/26/2020 09:37:04 HTTP "GET" "/Playlists" responded 200 in 44.4946 ms
+11/26/2020 09:37:04 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0623 ms
+11/26/2020 09:37:04 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 40.9283 ms
+11/26/2020 09:37:04 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0118 ms
+11/26/2020 09:37:05 HTTP "GET" "/Playlists/Create" responded 200 in 46.4171 ms
+11/26/2020 09:37:05 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5825 ms
+11/26/2020 09:37:05 HTTP "GET" "/Playlists/Create/ws" responded 200 in 5.9896 ms
+11/26/2020 09:37:06 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 22.0816 ms
+11/26/2020 09:37:06 HTTP "GET" "/js/playlistView.js" responded 404 in 1.5299 ms
+11/26/2020 09:37:06 HTTP "GET" "/Playlists" responded 200 in 8.7475 ms
+11/26/2020 09:37:06 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7891 ms
+11/26/2020 09:37:09 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 10.8555 ms
+11/26/2020 09:37:09 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2525 ms
+11/26/2020 09:37:09 HTTP "GET" "/Playlists/Create" responded 200 in 7.0261 ms
+11/26/2020 09:37:09 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6952 ms
+11/26/2020 09:37:09 HTTP "GET" "/Playlists/Create/ws" responded 200 in 4.6390 ms
+11/26/2020 09:37:12 HTTP "GET" "/Admin/UsersIndex" responded 200 in 49.4815 ms
+11/26/2020 09:37:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8918 ms
+11/26/2020 09:37:13 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 10.4259 ms
+11/26/2020 09:37:13 HTTP "GET" "/js/playlistView.js" responded 404 in 1.6414 ms
+11/26/2020 09:37:14 HTTP "GET" "/Playlists/Create" responded 200 in 8.3567 ms
+11/26/2020 09:37:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8736 ms
+11/26/2020 09:37:14 HTTP "GET" "/Playlists/Create/ws" responded 200 in 6.5595 ms
+11/26/2020 09:37:15 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 8.2423 ms
+11/26/2020 09:37:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9556 ms
+11/26/2020 09:37:46 Application starting up
+11/26/2020 09:37:47 - Getting index page -
+11/26/2020 09:37:48 HTTP "GET" "/" responded 200 in 1211.7592 ms
+11/26/2020 09:37:48 HTTP "GET" "/js/playlistView.js" responded 404 in 1.8851 ms
+11/26/2020 09:37:48 HTTP "GET" "/js/playlistView.js" responded 404 in 13.0209 ms
+11/26/2020 09:38:18 Application starting up
+11/26/2020 09:38:20 - Getting index page -
+11/26/2020 09:38:21 HTTP "GET" "/" responded 200 in 1233.4885 ms
+11/26/2020 09:38:21 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6460 ms
+11/26/2020 09:38:21 HTTP "GET" "/js/playlistView.js" responded 404 in 19.1486 ms
+11/26/2020 09:38:56 Application starting up
+11/26/2020 09:38:57 - Getting index page -
+11/26/2020 09:38:58 HTTP "GET" "/" responded 200 in 1200.2506 ms
+11/26/2020 09:38:58 HTTP "GET" "/js/playlistView.js" responded 404 in 1.9809 ms
+11/26/2020 09:38:58 HTTP "GET" "/js/playlistView.js" responded 404 in 10.5744 ms
+11/26/2020 09:39:15 HTTP "GET" "/Playlists/Create" responded 200 in 70.7568 ms
+11/26/2020 09:39:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4271 ms
+11/26/2020 09:39:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3192 ms
+11/26/2020 09:39:15 HTTP "GET" "/Playlists/Create/ws" responded 200 in 12.5862 ms
+11/26/2020 09:39:15 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 41.0000 ms
+11/26/2020 09:39:15 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3515 ms
+11/26/2020 09:39:16 HTTP "GET" "/Playlists/Create" responded 200 in 10.9773 ms
+11/26/2020 09:39:16 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0315 ms
+11/26/2020 09:39:16 HTTP "GET" "/Playlists/Create/ws" responded 200 in 5.1583 ms
+11/26/2020 09:39:16 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 9.9676 ms
+11/26/2020 09:39:16 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4037 ms
+11/26/2020 09:39:17 HTTP "GET" "/Playlists/Create" responded 200 in 9.0594 ms
+11/26/2020 09:39:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8897 ms
+11/26/2020 09:39:17 HTTP "GET" "/Playlists/Create/ws" responded 200 in 5.4416 ms
+11/26/2020 09:39:52 Application starting up
+11/26/2020 09:39:53 - Getting index page -
+11/26/2020 09:39:54 HTTP "GET" "/" responded 200 in 1202.9365 ms
+11/26/2020 09:39:54 HTTP "GET" "/js/playlistView.js" responded 404 in 1.8995 ms
+11/26/2020 09:39:54 HTTP "GET" "/js/playlistView.js" responded 404 in 11.1377 ms
+11/26/2020 09:40:12 Application starting up
+11/26/2020 09:40:13 - Getting index page -
+11/26/2020 09:40:14 HTTP "GET" "/" responded 200 in 1203.0379 ms
+11/26/2020 09:40:14 HTTP "GET" "/js/playlistView.js" responded 404 in 2.1244 ms
+11/26/2020 09:40:14 HTTP "GET" "/js/playlistView.js" responded 404 in 10.4042 ms
+11/26/2020 09:40:24 HTTP "POST" "/Playlists/DeletePlaylist" responded 302 in 1651.2508 ms
+11/26/2020 09:40:24 HTTP "GET" "/Playlists" responded 200 in 23.3162 ms
+11/26/2020 09:40:24 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3767 ms
+11/26/2020 09:40:24 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3201 ms
+11/26/2020 09:40:55 - Getting index page -
+11/26/2020 09:40:55 HTTP "GET" "/" responded 200 in 21.5016 ms
+11/26/2020 09:40:55 HTTP "GET" "/js/playlistView.js" responded 404 in 1.4376 ms
+11/26/2020 09:40:55 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3249 ms
+11/26/2020 09:41:00 HTTP "POST" "/Playlists/DeletePlaylist" responded 302 in 1580.8371 ms
+11/26/2020 09:41:00 HTTP "GET" "/Playlists" responded 200 in 8.6396 ms
+11/26/2020 09:41:00 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5315 ms
+11/26/2020 09:41:00 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3126 ms
+11/26/2020 09:41:01 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 31.5097 ms
+11/26/2020 09:41:01 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7668 ms
+11/26/2020 09:41:02 HTTP "POST" "/Playlists/DeletePlaylist" responded 302 in 8.6860 ms
+11/26/2020 09:41:02 HTTP "GET" "/Playlists" responded 200 in 12.6257 ms
+11/26/2020 09:41:02 HTTP "GET" "/js/playlistView.js" responded 404 in 1.6937 ms
+11/26/2020 09:41:05 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 7.3706 ms
+11/26/2020 09:41:05 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9081 ms
+11/26/2020 09:41:06 HTTP "POST" "/Playlists/DeletePlaylist" responded 302 in 7.4872 ms
+11/26/2020 09:41:06 HTTP "GET" "/Playlists" responded 200 in 4.7925 ms
+11/26/2020 09:41:06 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3705 ms
+11/26/2020 09:41:07 HTTP "POST" "/Playlists/DeletePlaylist" responded 302 in 6.3382 ms
+11/26/2020 09:41:07 HTTP "GET" "/Playlists" responded 200 in 4.8102 ms
+11/26/2020 09:41:07 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6939 ms
+11/26/2020 09:41:08 - Getting index page -
+11/26/2020 09:41:08 HTTP "GET" "/" responded 200 in 10.0456 ms
+11/26/2020 09:41:08 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5575 ms
+11/26/2020 09:41:09 HTTP "GET" "/Playlists" responded 200 in 4.3448 ms
+11/26/2020 09:41:09 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4696 ms
+11/26/2020 09:41:09 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 3.9824 ms
+11/26/2020 09:41:09 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6797 ms
+11/26/2020 09:41:09 HTTP "GET" "/Admin/UsersIndex" responded 200 in 35.8479 ms
+11/26/2020 09:41:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5408 ms
+11/26/2020 09:41:12 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 4.3007 ms
+11/26/2020 09:41:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4804 ms
+11/26/2020 09:41:13 HTTP "GET" "/Admin/UsersIndex" responded 200 in 7.9410 ms
+11/26/2020 09:41:13 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7070 ms
+11/26/2020 09:41:14 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 4.2642 ms
+11/26/2020 09:41:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5079 ms
+11/26/2020 09:41:15 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.5311 ms
+11/26/2020 09:41:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3218 ms
+11/26/2020 09:41:15 HTTP "GET" "/Playlists/Create" responded 200 in 46.1750 ms
+11/26/2020 09:41:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3710 ms
+11/26/2020 09:41:15 HTTP "GET" "/Playlists/Create/ws" responded 200 in 4.9230 ms
+11/26/2020 09:41:16 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.6498 ms
+11/26/2020 09:41:16 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3624 ms
+11/26/2020 09:41:43 Application starting up
+11/26/2020 09:41:44 - Getting index page -
+11/26/2020 09:41:45 HTTP "GET" "/" responded 200 in 1140.1997 ms
+11/26/2020 09:41:45 HTTP "GET" "/js/playlistView.js" responded 404 in 2.2056 ms
+11/26/2020 09:41:45 HTTP "GET" "/js/playlistView.js" responded 404 in 10.4528 ms
+11/26/2020 09:41:47 HTTP "GET" "/Admin/UsersIndex" responded 200 in 74.1334 ms
+11/26/2020 09:41:47 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5964 ms
+11/26/2020 09:41:48 HTTP "GET" "/Playlists/Create" responded 200 in 56.5643 ms
+11/26/2020 09:41:48 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9476 ms
+11/26/2020 09:41:48 HTTP "GET" "/Playlists/Create/ws" responded 200 in 9.4904 ms
+11/26/2020 09:41:49 HTTP "GET" "/Playlists/Create" responded 200 in 19.5895 ms
+11/26/2020 09:41:49 HTTP "GET" "/js/playlistView.js" responded 404 in 1.8352 ms
+11/26/2020 09:41:49 HTTP "GET" "/Playlists/Create/ws" responded 200 in 7.3395 ms
+11/26/2020 09:41:49 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 22.5375 ms
+11/26/2020 09:41:49 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3466 ms
+11/26/2020 09:41:51 HTTP "GET" "/Playlists" responded 200 in 20.2911 ms
+11/26/2020 09:41:51 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0906 ms
+11/26/2020 09:41:51 - Getting index page -
+11/26/2020 09:41:51 HTTP "GET" "/" responded 200 in 13.4608 ms
+11/26/2020 09:41:51 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5368 ms
+11/26/2020 09:41:53 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 11.1901 ms
+11/26/2020 09:41:53 HTTP "GET" "/js/playlistView.js" responded 404 in 1.8802 ms
+11/26/2020 09:41:54 HTTP "GET" "/Playlists/Create" responded 200 in 8.7252 ms
+11/26/2020 09:41:54 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7468 ms
+11/26/2020 09:41:54 HTTP "GET" "/Playlists/Create/ws" responded 200 in 4.4778 ms
+11/26/2020 09:41:58 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 10.4904 ms
+11/26/2020 09:41:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9931 ms
+11/26/2020 09:44:48 Application starting up
+11/26/2020 09:44:50 - Getting index page -
+11/26/2020 09:44:51 HTTP "GET" "/" responded 200 in 1294.9756 ms
+11/26/2020 09:44:51 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4129 ms
+11/26/2020 09:44:51 HTTP "GET" "/js/playlistView.js" responded 404 in 11.0123 ms
+11/26/2020 09:44:53 HTTP "GET" "/Playlists/Create" responded 200 in 70.9070 ms
+11/26/2020 09:44:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8296 ms
+11/26/2020 09:44:53 HTTP "GET" "/Playlists/Create/ws" responded 200 in 14.0592 ms
+11/26/2020 09:44:59 Playlist with title 'Sofia-Sandanski' has been created.
+11/26/2020 09:45:01 HTTP "POST" "/Playlists/Create" responded 302 in 3718.3413 ms
+11/26/2020 09:45:02 HTTP "GET" "/Playlists" responded 200 in 18.4034 ms
+11/26/2020 09:45:02 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4748 ms
+11/26/2020 09:45:05 - Getting index page -
+11/26/2020 09:45:05 HTTP "GET" "/" responded 200 in 13.4573 ms
+11/26/2020 09:45:05 HTTP "GET" "/js/playlistView.js" responded 404 in 1.5366 ms
+11/26/2020 09:45:37 HTTP "POST" "/Playlists/DeletePlaylist" responded 302 in 22.6750 ms
+11/26/2020 09:45:37 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 24.0486 ms
+11/26/2020 09:45:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3481 ms
+11/26/2020 09:45:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3045 ms
+11/26/2020 09:46:28 HTTP "GET" "/Playlists" responded 200 in 11.1023 ms
+11/26/2020 09:46:28 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5790 ms
+11/26/2020 09:46:28 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3146 ms
+11/26/2020 09:46:29 - Getting index page -
+11/26/2020 09:46:29 HTTP "GET" "/" responded 200 in 17.5349 ms
+11/26/2020 09:46:29 HTTP "GET" "/js/playlistView.js" responded 404 in 1.8010 ms
+11/26/2020 09:46:30 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8428 ms
+11/26/2020 09:46:30 HTTP "GET" "/Playlists" responded 200 in 5.6362 ms
+11/26/2020 09:46:30 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9382 ms
+11/26/2020 09:46:31 - Getting index page -
+11/26/2020 09:46:31 HTTP "GET" "/" responded 200 in 8.8838 ms
+11/26/2020 09:46:31 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9402 ms
+11/26/2020 09:46:32 HTTP "GET" "/Admin/UsersIndex" responded 200 in 32.8766 ms
+11/26/2020 09:46:32 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6346 ms
+11/26/2020 09:46:36 HTTP "POST" "/Admin/BanUsers" responded 302 in 1337.0388 ms
+11/26/2020 09:46:36 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.2670 ms
+11/26/2020 09:46:36 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2798 ms
+11/26/2020 09:46:36 HTTP "POST" "/Admin/BanUsers" responded 302 in 1743.9342 ms
+11/26/2020 09:46:38 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 13.1345 ms
+11/26/2020 09:46:38 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.2892 ms
+11/26/2020 09:46:38 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8084 ms
+11/26/2020 09:46:39 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 4.0689 ms
+11/26/2020 09:46:39 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.6779 ms
+11/26/2020 09:46:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2656 ms
+11/26/2020 09:46:46 HTTP "GET" "/Playlists/Create" responded 200 in 8.3255 ms
+11/26/2020 09:46:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4931 ms
+11/26/2020 09:46:46 HTTP "GET" "/Playlists/Create/ws" responded 200 in 3.1781 ms
+11/26/2020 09:46:48 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 11.0652 ms
+11/26/2020 09:46:48 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4763 ms
+11/26/2020 09:46:50 HTTP "GET" "/Playlists" responded 200 in 3.3917 ms
+11/26/2020 09:46:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4013 ms
+11/26/2020 09:46:50 - Getting index page -
+11/26/2020 09:46:50 HTTP "GET" "/" responded 200 in 7.5741 ms
+11/26/2020 09:46:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2754 ms
+11/26/2020 09:46:53 HTTP "GET" "/Playlists" responded 200 in 3.4292 ms
+11/26/2020 09:46:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2312 ms
+11/26/2020 09:46:55 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 2.4978 ms
+11/26/2020 09:46:55 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2433 ms
+11/26/2020 09:46:57 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 20.7911 ms
+11/26/2020 09:46:57 - Getting index page -
+11/26/2020 09:46:57 HTTP "GET" "/" responded 200 in 5.2697 ms
+11/26/2020 09:46:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1006 ms
+11/26/2020 09:46:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.0799 ms
+11/26/2020 09:46:59 HTTP "GET" "/Playlists" responded 200 in 2.2667 ms
+11/26/2020 09:46:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.0964 ms
+11/26/2020 09:47:01 HTTP "GET" "/Identity/Account/Login" responded 200 in 39.7471 ms
+11/26/2020 09:47:01 HTTP "GET" "/js/playlistView.js" responded 404 in 0.0996 ms
