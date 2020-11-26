@@ -36,9 +36,7 @@ namespace PG.Services
             _context = context;
         }
 
-        /// <summary>
-        /// Gets all regular users.
-        /// </summary>
+
         public async Task<IList<UserDTO>> GetAllRegularUsers()
         {
             return await _context.Users.Where(x => x.IsDeleted == false)
@@ -46,11 +44,6 @@ namespace PG.Services
                                         .ToListAsync();
         }
 
-        /// <summary>
-        /// Ban user by ID
-        /// </summary>
-        /// <param name="id">User's ID</param>
-        /// <returns>Returns true if banning was successful</returns>
         public async Task<bool> BanUserById(string id)
         {
             var userToBan = await _context.Users.FirstOrDefaultAsync(x => x.Id == id);
@@ -72,11 +65,6 @@ namespace PG.Services
             return true;
         }
 
-        /// <summary>
-        /// Unban user by ID
-        /// </summary>
-        /// <param name="id">User's ID</param>
-        /// <returns>Returns true if unbanning was successful</returns>
         public async Task<bool> UnbanUserById(string id)
         {
             var userToBan = await _context.Users.FirstOrDefaultAsync(x => x.Id == id);
@@ -95,12 +83,6 @@ namespace PG.Services
             return true;
         }
 
-        /// <summary>
-        /// Authenticates by username and password.
-        /// </summary>
-        /// <param name="username">Username</param>
-        /// <param name="password">Password</param>
-        /// <returns>Returns authenticated user</returns>
         public User Authenticate(string username, string password)
         {
             var user = _context.Users.SingleOrDefault(x => x.UserName == username);
@@ -130,9 +112,7 @@ namespace PG.Services
             return user;
         }
 
-        /// <summary>
-        /// Gets all users
-        /// </summary>
+
         public IEnumerable<User> GetAll()
         {
             return this._context.Users;

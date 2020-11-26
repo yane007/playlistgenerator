@@ -5,6 +5,7 @@ using PG.Services;
 using PG.Services.DTOs;
 using System;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace PG.Tests.PlaylistServiceShould
@@ -28,7 +29,8 @@ namespace PG.Tests.PlaylistServiceShould
 
             var arrangeContext = new PGDbContext(options);
 
-            var deezerService = new DeezerAPIService(arrangeContext);
+            var deezerService = new DeezerAPIService(arrangeContext, new GenreService(arrangeContext), 
+                new ArtistService(arrangeContext), new SongService(arrangeContext));
 
             //TODO: 
             await deezerService.ExtractSongsFromPlaylists("pop");

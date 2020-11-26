@@ -209,7 +209,7 @@ namespace PG.Data.Migrations
                     Title = table.Column<string>(maxLength: 50, nullable: false),
                     Duration = table.Column<int>(nullable: false),
                     Rank = table.Column<int>(nullable: false),
-                    PixabayId = table.Column<int>(nullable: false),
+                    PixabayImage = table.Column<string>(nullable: true),
                     UserId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -259,29 +259,6 @@ namespace PG.Data.Migrations
                         name: "FK_Songs_Genres_GenreId",
                         column: x => x.GenreId,
                         principalTable: "Genres",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "PixabayImage",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    IsDeleted = table.Column<bool>(nullable: false),
-                    PlaylistId = table.Column<int>(nullable: false),
-                    PreviewURL = table.Column<string>(nullable: true),
-                    WebformatURL = table.Column<string>(nullable: true),
-                    LargeImageURL = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_PixabayImage", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_PixabayImage_Playlists_PlaylistId",
-                        column: x => x.PlaylistId,
-                        principalTable: "Playlists",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -337,17 +314,17 @@ namespace PG.Data.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "93ad4deb-b9f7-4a98-9585-8b79963aee55", "c0e5655e-3d60-456a-9429-82e3a8537207", "User", "USER" });
+                values: new object[] { "93ad4deb-b9f7-4a98-9585-8b79963aee55", "eecd91ef-b8c2-44bb-a4ae-c217aa5adb86", "User", "USER" });
 
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "6b32cc6d-2fc9-4808-a0a6-b3877bf9a381", "2766b1ab-b6f0-4132-a2c9-0fbdd208036f", "Admin", "ADMIN" });
+                values: new object[] { "6b32cc6d-2fc9-4808-a0a6-b3877bf9a381", "ef4a2af2-c3aa-46de-8e94-05e6bba054b9", "Admin", "ADMIN" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "IsDeleted", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "Token", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "00000000-0000-0000-0000-000000000000", 0, "e39830ae-e806-4aad-adde-d6f954dc5a5a", "admin@admin.com", false, false, false, null, "ADMIN@ADMIN.COM", "ADMIN@ADMIN.COM", "AQAAAAEAACcQAAAAEHeK8Roqx572SKiqVUezW0RngjcR8tnRHWGzVAVayMtr+p8BgL6NEiKJrhMk3qoHxw==", null, false, "809020b9-5a89-4045-b595-44a3adcdcb37", null, false, "admin@admin.com" });
+                values: new object[] { "00000000-0000-0000-0000-000000000000", 0, "bc3aacc8-3e86-4b52-ad3e-16de6c86e855", "admin@admin.com", false, false, false, null, "ADMIN@ADMIN.COM", "ADMIN@ADMIN.COM", "AQAAAAEAACcQAAAAENUWQUaPv17IuD6vrxmptxW4SlJiquiW64ZsgSsTIGkxC0DfrYjtdtj9qw+Upb8OXQ==", null, false, "e4c55f16-2eee-4712-be45-36025841e924", null, false, "admin@admin.com" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
@@ -392,12 +369,6 @@ namespace PG.Data.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_PixabayImage_PlaylistId",
-                table: "PixabayImage",
-                column: "PlaylistId",
-                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Playlists_UserId",
@@ -446,9 +417,6 @@ namespace PG.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
-
-            migrationBuilder.DropTable(
-                name: "PixabayImage");
 
             migrationBuilder.DropTable(
                 name: "PlaylistsGenres");

@@ -17,7 +17,7 @@ namespace PG.Services
 
         public SongService(PGDbContext context)
         {
-            this._context = context;
+            _context = context;
         }
 
 
@@ -27,9 +27,9 @@ namespace PG.Services
             {
                 throw new ArgumentNullException("Null Song");
             }
-            if (songDTO.Title.Length > 50)
+            if (songDTO.Title.Length > 200)
             {
-                throw new ArgumentOutOfRangeException("Song's title needs to be shorter than 50 characters.");
+                throw new ArgumentOutOfRangeException("Song's title needs to be shorter than 200 characters.");
             }
 
             var existingSong = await _context.Songs.FirstOrDefaultAsync(x => x.Title == songDTO.Title);

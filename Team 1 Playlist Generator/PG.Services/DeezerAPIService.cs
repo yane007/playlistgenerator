@@ -3,6 +3,8 @@ using Newtonsoft.Json;
 using PG.Data.Context;
 using PG.Models;
 using PG.Services.Contract;
+using PG.Services.DTOs;
+using PG.Services.Mappers;
 using PG.Services.MappingModelsAPI;
 using System.Linq;
 using System.Net.Http;
@@ -13,111 +15,107 @@ namespace PG.Services
     public class DeezerAPIService : IDeezerAPIService
     {
         private readonly PGDbContext _context;
+        private readonly IGenreService _genreService;
+        private readonly IArtistService _artistService;
+        private readonly ISongService _songService;
+        private readonly HttpClient _httpClient;
 
-        public DeezerAPIService(PGDbContext context)
+        public DeezerAPIService(PGDbContext context, IGenreService genreService, IArtistService artistService, ISongService songService)
         {
-            this._context = context;
+            _context = context;
+            _genreService = genreService;
+            _artistService = artistService;
+            _songService = songService;
+            _httpClient = new HttpClient();
         }
 
-        /// <summary>
-        /// Extract all songs with preview "link".mp3 from all playlists where their title contains "Rock".
-        /// Creates new Creator/Artist accordingly to the song's specifications.
-        /// </summary>
-        public async Task ExtractSongsFromPlaylists(string genreString)
-        {
-            genreString = genreString.ToLower();
-            var dbGenreName = await _context.Genres.FirstOrDefaultAsync(x => x.Name == genreString);
 
-            if (!(dbGenreName == null))
+        public async Task ExtractSongsFromPlaylists(string genre)
+        {
+            genre = genre.ToLower();
+            var dbGenre = await _context.Genres.FirstOrDefaultAsync(x => x.Name == genre);
+
+            if (!(dbGenre == null))
             {
                 return;
             }
 
-            var client = new HttpClient();
+            var playlistsResponse = await _httpClient.GetAsync($"https://api.deezer.com/search/playlist?q={genre}");
+            var playlistsResponseResult = await playlistsResponse.Content.ReadAsStringAsync();
+            var deezerPlaylists = JsonConvert.DeserializeObject<QueryPlaylistsAPI>(playlistsResponseResult);
 
-            using (var response = await client.GetAsync($"https://api.deezer.com/search/playlist?q={genreString}"))
+            var dbGenreAdded = await _genreService.Create(new GenreDTO { Name = genre});
+
+            foreach (var playlist in deezerPlaylists.Data)
             {
-                var responseAsString = await response.Content.ReadAsStringAsync();
 
-                var result = JsonConvert.DeserializeObject<QueryPlaylistsAPI>(responseAsString);
+                var playlistResponse = await _httpClient.GetAsync(playlist.Tracklist);
+                var playlistResponseResult = await playlistResponse.Content.ReadAsStringAsync();
+                var deezerPlaylist = JsonConvert.DeserializeObject<PlaylistAPI>(playlistResponseResult);
 
-                var expectedGenre = _context.Genres.FirstOrDefault(x => x.Name.ToLower().Equals(genreString));
-
-                if (expectedGenre == null)
+                foreach (var song in deezerPlaylist.Data)
                 {
-                    await _context.Genres.AddAsync(new Genre() { Name = genreString });
-                    await _context.SaveChangesAsync();
-                    expectedGenre = await _context.Genres.FirstOrDefaultAsync(a => a.Name.ToLower().Equals(genreString));
-                }
-
-                foreach (var playlist in result.Data)
-                {
-                    using (var response2 = await client.GetAsync(playlist.Tracklist))
+                    if (song.Preview == null || song.Preview.Length < 5)
                     {
-                        var responseAsString2 = await response2.Content.ReadAsStringAsync();
+                        continue;
+                    }
 
-                        var result2 = JsonConvert.DeserializeObject<PlaylistAPI>(responseAsString2);
-
-                        foreach (var song in result2.Data)
+                    var dbArtist = await _context.Artists.FirstOrDefaultAsync(x => x.Name == song.Artist.Name);
+                    if (dbArtist == null)
+                    {
+                        var addedArtist = await _artistService.Create(new ArtistDTO()
                         {
-                            if (song.Preview == null || song.Preview.Length < 5)
-                            {
-                                continue;
-                            }
+                            Name = song.Artist.Name,
+                            Tracklist = song.Artist.Tracklist,
+                            Type = song.Artist.Type
+                        });
 
-                            var expectedArtist = await _context.Artists.FirstOrDefaultAsync(x => x.Name == song.Artist.Name);
-                            if (expectedArtist == null)
-                            {
-                                var addedArtist = await _context.Artists.AddAsync(new Artist()
-                                {
-                                    Name = song.Artist.Name,
-                                    Tracklist = song.Artist.Tracklist,
-                                    Type = song.Artist.Type
-                                });
-                                expectedArtist = addedArtist.Entity;
-
-                                await _context.SaveChangesAsync();
-                            }
-
-                            var expectedAlbum = await _context.Albums.FirstOrDefaultAsync(x => x.Title == song.Album.Title);
-                            if (expectedAlbum == null)
-                            {
-                                var addedAlbum = await _context.Albums.AddAsync(new Album()
-                                {
-                                    Title = song.Album.Title,
-                                    Tracklist = song.Album.Tracklist,
-                                });
-                                expectedAlbum = addedAlbum.Entity;
-
-                                await _context.SaveChangesAsync();
-                            }
-
-                            var isSongNull = await _context.Songs.FirstOrDefaultAsync(x => x.Title == song.Title);
-                            if (isSongNull == null)
-                            {
-                                var songToAdd = new Song()
-                                {
-                                    Title = song.Title,
-                                    DeezerID = song.Id,
-                                    Duration = song.Duration,
-                                    Rank = song.Rank,
-                                    Preview = song.Preview,
-                                    Link = song.Link,
-                                    GenreId = expectedGenre.Id,
-                                    ArtistId = expectedArtist.Id,
-                                    AlbumId = expectedAlbum.Id
-                                };
-                                await _context.Songs.AddAsync(songToAdd);
-
-                                expectedAlbum.Songs.Add(songToAdd);
-                            }
-                        }
+                        dbArtist = addedArtist.ToEntity();
 
                         await _context.SaveChangesAsync();
                     }
 
-                    System.Threading.Thread.Sleep(150);
+                    var dbAlbum = await _context.Albums.FirstOrDefaultAsync(x => x.Title == song.Album.Title);
+                    if (dbAlbum == null)
+                    {
+                        //No service
+                        var addedAlbum = await _context.Albums.AddAsync(new Album()
+                        {
+                            Title = song.Album.Title,
+                            Tracklist = song.Album.Tracklist,
+                        });
+                        dbAlbum = addedAlbum.Entity;
+
+                        await _context.SaveChangesAsync();
+                    }
+
+                    var dbSong = await _context.Songs.FirstOrDefaultAsync(x => x.Title == song.Title);
+                    if (dbSong == null)
+                    {
+                        dbSong = new Song()
+                        {
+                            Title = song.Title,
+                            DeezerID = song.Id,
+                            Duration = song.Duration,
+                            Rank = song.Rank,
+                            Preview = song.Preview,
+                            //Link = song.Link,
+                            GenreId = dbGenreAdded.Id,
+                            ArtistId = dbArtist.Id,
+                            AlbumId = dbAlbum.Id
+                        };
+
+                        await _songService.Create(dbSong.ToDTO());
+
+                        //dbAlbum.Songs.Add(dbSong);
+
+                    } 
                 }
+
+                await _context.SaveChangesAsync();
+  
+
+                System.Threading.Thread.Sleep(150);
             }
         }
     }

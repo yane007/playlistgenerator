@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PG.Web", "PG.Web\PG.Web.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PG.Tests", "PG.Tests\PG.Tests.csproj", "{93DB4302-FCE2-468F-9928-95C9F60B73B7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{9DCC3CCB-7EE2-4109-B86C-E8D53C45EC3D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HostedServices", "HostedServices", "{9DCC3CCB-7EE2-4109-B86C-E8D53C45EC3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenreUpdateService", "GenreUpdateService\GenreUpdateService.csproj", "{EBA82B21-32EE-4571-B14B-E5948AB23BA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,9 +43,16 @@ Global
 		{93DB4302-FCE2-468F-9928-95C9F60B73B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93DB4302-FCE2-468F-9928-95C9F60B73B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93DB4302-FCE2-468F-9928-95C9F60B73B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBA82B21-32EE-4571-B14B-E5948AB23BA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA82B21-32EE-4571-B14B-E5948AB23BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA82B21-32EE-4571-B14B-E5948AB23BA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA82B21-32EE-4571-B14B-E5948AB23BA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EBA82B21-32EE-4571-B14B-E5948AB23BA2} = {9DCC3CCB-7EE2-4109-B86C-E8D53C45EC3D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C5BDA25B-C8F5-4DCC-A254-43263031160F}

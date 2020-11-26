@@ -49,14 +49,14 @@ namespace PG.Data.Migrations
                         new
                         {
                             Id = "93ad4deb-b9f7-4a98-9585-8b79963aee55",
-                            ConcurrencyStamp = "6e02ea2b-d182-4cab-960e-731c9e209664",
+                            ConcurrencyStamp = "eecd91ef-b8c2-44bb-a4ae-c217aa5adb86",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
                             Id = "6b32cc6d-2fc9-4808-a0a6-b3877bf9a381",
-                            ConcurrencyStamp = "9d304237-c43d-404c-8347-fae049709634",
+                            ConcurrencyStamp = "ef4a2af2-c3aa-46de-8e94-05e6bba054b9",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -435,16 +435,16 @@ namespace PG.Data.Migrations
                         {
                             Id = "00000000-0000-0000-0000-000000000000",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "5dfedde4-7ad5-45b0-adf2-e9da0ce2f3c3",
+                            ConcurrencyStamp = "bc3aacc8-3e86-4b52-ad3e-16de6c86e855",
                             Email = "admin@admin.com",
                             EmailConfirmed = false,
                             IsDeleted = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@ADMIN.COM",
                             NormalizedUserName = "ADMIN@ADMIN.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEAuNfiwlzu398uK9/KpHXS3hkiJiSh4im4nuhb8Bv4GHoIhKtOmuGcjPoA2fqjT1lw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAENUWQUaPv17IuD6vrxmptxW4SlJiquiW64ZsgSsTIGkxC0DfrYjtdtj9qw+Upb8OXQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "596653e8-9e6d-4338-945d-10d55a9609d0",
+                            SecurityStamp = "e4c55f16-2eee-4712-be45-36025841e924",
                             TwoFactorEnabled = false,
                             UserName = "admin@admin.com"
                         });
@@ -541,7 +541,7 @@ namespace PG.Data.Migrations
             modelBuilder.Entity("PG.Models.Song", b =>
                 {
                     b.HasOne("PG.Models.Album", "Album")
-                        .WithMany("Songs")
+                        .WithMany()
                         .HasForeignKey("AlbumId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
