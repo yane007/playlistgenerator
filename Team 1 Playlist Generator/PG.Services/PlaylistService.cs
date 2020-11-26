@@ -174,7 +174,6 @@ namespace PG.Services
                 new Tuple<string, int> ("metal", metalPercentagee),
                 new Tuple<string, int> ("rock", rockPercentagee),
                 new Tuple<string, int> ("pop", popPercentagee),
-                new Tuple<string, int> ("pop2", popPercentagee),
             };
 
             //Проверяваме колко genres са селектирани.

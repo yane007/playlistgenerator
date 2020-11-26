@@ -46,6 +46,7 @@ namespace PG.Web.APIControllers
 
         //POST api/songs
         [HttpPost("")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> CreateSong(SongViewModel model)
         {
             var song = await _songService.Create(model.ToDTO());
@@ -69,7 +70,7 @@ namespace PG.Web.APIControllers
 
         //DELETE api/songs/id
         [HttpDelete("{id}")]
-        [Authorize(Roles = "admin")]
+        [Authorize]
         public async Task<IActionResult> DeleteSong(int id)
         {
             await _songService.Delete(id);

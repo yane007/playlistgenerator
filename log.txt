@@ -12856,3 +12856,1934 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'Playlist with id
 11/25/2020 17:41:48 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 13.4255 ms
 11/25/2020 17:41:48 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.0847 ms
 11/25/2020 17:41:48 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6918 ms
+11/25/2020 18:21:49 Application starting up
+11/25/2020 18:21:52 - Getting index page -
+11/25/2020 18:21:52 HTTP "GET" "/" responded 200 in 1642.7915 ms
+11/25/2020 18:21:52 HTTP "GET" "/js/playlistView.js" responded 404 in 13.4591 ms
+11/25/2020 18:21:52 HTTP "GET" "/js/playlistView.js" responded 404 in 10.6482 ms
+11/25/2020 18:21:54 HTTP "GET" "/Playlists" responded 200 in 53.9954 ms
+11/25/2020 18:21:54 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9918 ms
+11/25/2020 18:22:16 HTTP "POST" "/Playlists" responded 200 in 20.0960 ms
+11/25/2020 18:22:16 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6065 ms
+11/25/2020 18:22:17 HTTP "POST" "/Playlists" responded 200 in 25.8166 ms
+11/25/2020 18:22:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9651 ms
+11/25/2020 18:22:17 HTTP "POST" "/Playlists" responded 200 in 14.3194 ms
+11/25/2020 18:22:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7006 ms
+11/25/2020 18:22:18 HTTP "POST" "/Playlists" responded 200 in 15.4900 ms
+11/25/2020 18:22:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8330 ms
+11/25/2020 18:22:18 HTTP "POST" "/Playlists" responded 200 in 11.0899 ms
+11/25/2020 18:22:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3098 ms
+11/25/2020 18:22:18 HTTP "POST" "/Playlists" responded 200 in 11.0622 ms
+11/25/2020 18:22:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7117 ms
+11/25/2020 18:22:18 HTTP "POST" "/Playlists" responded 200 in 9.4012 ms
+11/25/2020 18:22:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3868 ms
+11/25/2020 18:22:19 HTTP "POST" "/Playlists" responded 200 in 12.8616 ms
+11/25/2020 18:22:19 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2039 ms
+11/25/2020 18:22:19 HTTP "POST" "/Playlists" responded 200 in 9.9449 ms
+11/25/2020 18:22:19 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8605 ms
+11/25/2020 18:22:19 HTTP "POST" "/Playlists" responded 200 in 9.2395 ms
+11/25/2020 18:22:19 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8663 ms
+11/25/2020 18:22:35 HTTP "POST" "/api/Playlists/1005" responded 405 in 1.3794 ms
+11/25/2020 18:23:36 Application starting up
+11/25/2020 18:23:38 - Getting index page -
+11/25/2020 18:23:39 HTTP "GET" "/" responded 200 in 1518.0478 ms
+11/25/2020 18:23:39 HTTP "GET" "/js/playlistView.js" responded 404 in 7.3541 ms
+11/25/2020 18:23:40 HTTP "GET" "/Playlists" responded 200 in 59.1026 ms
+11/25/2020 18:23:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4047 ms
+11/25/2020 18:23:41 HTTP "POST" "/Playlists" responded 200 in 22.1116 ms
+11/25/2020 18:23:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4089 ms
+11/25/2020 18:23:47 HTTP "POST" "/Playlists" responded 200 in 27.9370 ms
+11/25/2020 18:23:47 HTTP "GET" "/js/playlistView.js" responded 404 in 2.3380 ms
+11/25/2020 18:27:57 Application starting up
+11/25/2020 18:27:58 - Getting index page -
+11/25/2020 18:27:59 HTTP "GET" "/" responded 200 in 1238.7530 ms
+11/25/2020 18:27:59 HTTP "GET" "/js/playlistView.js" responded 404 in 2.9027 ms
+11/25/2020 18:27:59 HTTP "GET" "/js/playlistView.js" responded 404 in 10.4523 ms
+11/25/2020 18:28:02 HTTP "GET" "/Playlists" responded 200 in 45.1563 ms
+11/25/2020 18:28:02 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7489 ms
+11/25/2020 18:28:04 HTTP "GET" "/Playlists/DeletePlaylistWeb/1004" responded 405 in 1.5409 ms
+11/25/2020 18:28:17 HTTP "GET" "/Playlists" responded 200 in 17.8011 ms
+11/25/2020 18:28:19 HTTP "GET" "/Playlists" responded 200 in 20.0716 ms
+11/25/2020 18:28:19 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5668 ms
+11/25/2020 18:28:23 HTTP "GET" "/Playlists/DeletePlaylistWeb/1003" responded 405 in 3.4969 ms
+11/25/2020 18:28:39 Application starting up
+11/25/2020 18:28:42 - Getting index page -
+11/25/2020 18:28:43 HTTP "GET" "/" responded 200 in 1509.4740 ms
+11/25/2020 18:28:43 HTTP "GET" "/js/playlistView.js" responded 404 in 3.9076 ms
+11/25/2020 18:28:44 HTTP "GET" "/Playlists" responded 200 in 60.3084 ms
+11/25/2020 18:28:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6461 ms
+11/25/2020 18:28:45 HTTP "GET" "/Playlists/DeletePlaylistWeb/1003" responded 405 in 2.4598 ms
+11/25/2020 18:29:26 Application starting up
+11/25/2020 18:29:27 - Getting index page -
+11/25/2020 18:29:28 HTTP "GET" "/" responded 200 in 1431.2884 ms
+11/25/2020 18:29:28 HTTP "GET" "/js/playlistView.js" responded 404 in 4.1630 ms
+11/25/2020 18:29:28 HTTP "GET" "/js/playlistView.js" responded 404 in 19.4643 ms
+11/25/2020 18:29:30 HTTP "GET" "/Playlists" responded 200 in 50.1122 ms
+11/25/2020 18:29:30 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8446 ms
+11/25/2020 18:29:36 The view '"DeletePlaylistWeb"' was not found. Searched locations: ["/Views/Playlists/DeletePlaylistWeb.cshtml", "/Views/Shared/DeletePlaylistWeb.cshtml", "/Pages/Shared/DeletePlaylistWeb.cshtml"]
+11/25/2020 18:29:36 HTTP "GET" "/Playlists/DeletePlaylistWeb/1003" responded 500 in 1910.7683 ms
+System.InvalidOperationException: The view 'DeletePlaylistWeb' was not found. The following locations were searched:
+/Views/Playlists/DeletePlaylistWeb.cshtml
+/Views/Shared/DeletePlaylistWeb.cshtml
+/Pages/Shared/DeletePlaylistWeb.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/25/2020 18:29:36 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'DeletePlaylistWeb' was not found. The following locations were searched:
+/Views/Playlists/DeletePlaylistWeb.cshtml
+/Views/Shared/DeletePlaylistWeb.cshtml
+/Pages/Shared/DeletePlaylistWeb.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/25/2020 18:29:45 HTTP "GET" "/Playlists" responded 200 in 12.0080 ms
+11/25/2020 18:32:00 Application starting up
+11/25/2020 18:32:02 - Getting index page -
+11/25/2020 18:32:03 HTTP "GET" "/" responded 200 in 1532.4996 ms
+11/25/2020 18:32:03 HTTP "GET" "/js/playlistView.js" responded 404 in 3.4482 ms
+11/25/2020 18:32:05 HTTP "GET" "/Playlists" responded 200 in 57.0664 ms
+11/25/2020 18:32:05 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4013 ms
+11/25/2020 18:32:16 HTTP "POST" "/Playlists/DeletePlaylistWeb" responded 302 in 10179.3114 ms
+11/25/2020 18:32:17 HTTP "GET" "/Playlists" responded 200 in 41.1392 ms
+11/25/2020 18:32:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5603 ms
+11/25/2020 18:32:31 Application starting up
+11/25/2020 18:32:31 - Getting index page -
+11/25/2020 18:32:32 HTTP "GET" "/" responded 200 in 1209.4976 ms
+11/25/2020 18:32:32 HTTP "GET" "/js/playlistView.js" responded 404 in 2.5769 ms
+11/25/2020 18:32:32 HTTP "GET" "/js/playlistView.js" responded 404 in 13.2310 ms
+11/25/2020 18:32:36 HTTP "GET" "/Playlists" responded 200 in 46.5768 ms
+11/25/2020 18:32:36 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8112 ms
+11/25/2020 18:32:38 HTTP "POST" "/Playlists/DeletePlaylistWeb" responded 302 in 122.6927 ms
+11/25/2020 18:32:38 HTTP "GET" "/Playlists" responded 200 in 6.7212 ms
+11/25/2020 18:32:38 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3527 ms
+11/25/2020 18:32:39 HTTP "POST" "/Playlists/DeletePlaylistWeb" responded 302 in 13.9693 ms
+11/25/2020 18:32:39 HTTP "GET" "/Playlists" responded 200 in 7.2854 ms
+11/25/2020 18:32:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3411 ms
+11/25/2020 18:32:39 HTTP "POST" "/Playlists/DeletePlaylistWeb" responded 302 in 7.5275 ms
+11/25/2020 18:32:39 HTTP "GET" "/Playlists" responded 200 in 4.5493 ms
+11/25/2020 18:32:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3487 ms
+11/25/2020 18:32:40 HTTP "POST" "/Playlists/DeletePlaylistWeb" responded 302 in 8.3737 ms
+11/25/2020 18:32:40 HTTP "GET" "/Playlists" responded 200 in 12.0259 ms
+11/25/2020 18:32:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8680 ms
+11/25/2020 18:32:42 HTTP "POST" "/Playlists" responded 200 in 12.4644 ms
+11/25/2020 18:32:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6362 ms
+11/25/2020 18:32:43 HTTP "POST" "/Playlists" responded 200 in 13.2323 ms
+11/25/2020 18:32:43 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0179 ms
+11/25/2020 18:32:45 HTTP "POST" "/Playlists" responded 200 in 12.7908 ms
+11/25/2020 18:32:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9290 ms
+11/25/2020 18:32:45 HTTP "GET" "/Playlists/Playlist/1004" responded 200 in 79.3660 ms
+11/25/2020 18:32:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6534 ms
+11/25/2020 18:32:45 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2644 ms
+11/25/2020 18:32:50 HTTP "GET" "/Playlists" responded 200 in 11.6775 ms
+11/25/2020 18:32:57 HTTP "POST" "/Playlists" responded 200 in 7.0997 ms
+11/25/2020 18:32:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6473 ms
+11/25/2020 18:32:59 HTTP "POST" "/Playlists" responded 200 in 6.1735 ms
+11/25/2020 18:32:59 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1274 ms
+11/25/2020 18:32:59 HTTP "POST" "/Playlists" responded 200 in 4.8073 ms
+11/25/2020 18:32:59 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1943 ms
+11/25/2020 18:32:59 HTTP "POST" "/Playlists" responded 200 in 5.4717 ms
+11/25/2020 18:32:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3714 ms
+11/25/2020 18:32:59 HTTP "POST" "/Playlists" responded 200 in 4.6625 ms
+11/25/2020 18:32:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6038 ms
+11/25/2020 18:33:06 Application starting up
+11/25/2020 18:33:08 - Getting index page -
+11/25/2020 18:33:10 HTTP "GET" "/" responded 200 in 1518.7781 ms
+11/25/2020 18:33:10 HTTP "GET" "/js/playlistView.js" responded 404 in 4.2659 ms
+11/25/2020 18:33:14 HTTP "GET" "/Playlists" responded 200 in 58.6888 ms
+11/25/2020 18:33:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6697 ms
+11/25/2020 18:33:16 HTTP "POST" "/Playlists" responded 200 in 21.3211 ms
+11/25/2020 18:33:16 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5512 ms
+11/25/2020 18:33:38 HTTP "GET" "/Playlists/Create" responded 200 in 58.8875 ms
+11/25/2020 18:33:38 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6447 ms
+11/25/2020 18:33:39 HTTP "GET" "/Playlists/Create/ws" responded 200 in 11.3180 ms
+11/25/2020 18:33:54 Playlist with title 'Sofia-Sandanski2' has been created.
+11/25/2020 18:33:54 HTTP "POST" "/Playlists/Create" responded 302 in 2427.1831 ms
+11/25/2020 18:33:54 HTTP "GET" "/Playlists" responded 200 in 11.5338 ms
+11/25/2020 18:33:54 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6831 ms
+11/25/2020 18:33:58 HTTP "POST" "/Playlists" responded 200 in 10.7061 ms
+11/25/2020 18:33:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8198 ms
+11/25/2020 18:33:59 HTTP "POST" "/Playlists" responded 200 in 11.1293 ms
+11/25/2020 18:33:59 HTTP "GET" "/js/playlistView.js" responded 404 in 1.5410 ms
+11/25/2020 18:33:59 HTTP "POST" "/Playlists" responded 200 in 6.5434 ms
+11/25/2020 18:33:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3337 ms
+11/25/2020 18:34:22 Application starting up
+11/25/2020 18:34:23 - Getting index page -
+11/25/2020 18:34:24 HTTP "GET" "/" responded 200 in 1177.5126 ms
+11/25/2020 18:34:24 HTTP "GET" "/js/playlistView.js" responded 404 in 2.5519 ms
+11/25/2020 18:34:24 HTTP "GET" "/js/playlistView.js" responded 404 in 10.4728 ms
+11/25/2020 18:34:28 HTTP "GET" "/Playlists/Create" responded 200 in 76.4748 ms
+11/25/2020 18:34:28 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8796 ms
+11/25/2020 18:34:28 HTTP "GET" "/Playlists/Create/ws" responded 200 in 14.9217 ms
+11/25/2020 18:34:34 Playlist with title 'Sofia-Sandanski' has been created.
+11/25/2020 18:34:36 HTTP "POST" "/Playlists/Create" responded 302 in 3014.6299 ms
+11/25/2020 18:34:36 HTTP "GET" "/Playlists" responded 200 in 19.9665 ms
+11/25/2020 18:34:36 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4496 ms
+11/25/2020 18:34:38 HTTP "POST" "/Playlists" responded 200 in 12.4244 ms
+11/25/2020 18:34:38 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3117 ms
+11/25/2020 18:34:42 HTTP "POST" "/Playlists" responded 200 in 6.1863 ms
+11/25/2020 18:34:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4697 ms
+11/25/2020 18:34:42 HTTP "POST" "/Playlists" responded 200 in 7.4934 ms
+11/25/2020 18:34:42 HTTP "GET" "/js/playlistView.js" responded 404 in 1.6759 ms
+11/25/2020 18:34:42 HTTP "POST" "/Playlists" responded 200 in 4.9007 ms
+11/25/2020 18:34:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4210 ms
+11/25/2020 18:34:42 HTTP "POST" "/Playlists" responded 200 in 5.1691 ms
+11/25/2020 18:34:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6093 ms
+11/25/2020 18:34:42 HTTP "POST" "/Playlists" responded 200 in 2.1237 ms
+11/25/2020 18:34:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5353 ms
+11/25/2020 18:34:43 HTTP "POST" "/Playlists" responded 200 in 5.2435 ms
+11/25/2020 18:34:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8019 ms
+11/25/2020 18:34:43 HTTP "POST" "/Playlists" responded 200 in 5.1905 ms
+11/25/2020 18:34:43 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0780 ms
+11/25/2020 18:34:43 HTTP "POST" "/Playlists" responded 200 in 3.7998 ms
+11/25/2020 18:34:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4374 ms
+11/25/2020 18:34:47 HTTP "GET" "/Playlists/Create" responded 200 in 8.5019 ms
+11/25/2020 18:34:47 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9205 ms
+11/25/2020 18:34:47 HTTP "GET" "/Playlists/Create/ws" responded 200 in 4.0302 ms
+11/25/2020 18:34:53 Playlist with title 'Sofia-Sandanski' has been created.
+11/25/2020 18:34:53 HTTP "POST" "/Playlists/Create" responded 302 in 1945.7722 ms
+11/25/2020 18:34:53 HTTP "GET" "/Playlists" responded 200 in 3.1748 ms
+11/25/2020 18:34:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3892 ms
+11/25/2020 18:34:55 HTTP "POST" "/Playlists/DeletePlaylistWeb" responded 302 in 23.7947 ms
+11/25/2020 18:34:55 HTTP "GET" "/Playlists" responded 200 in 7.1008 ms
+11/25/2020 18:34:55 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5456 ms
+11/25/2020 18:34:56 HTTP "GET" "/Playlists/Create" responded 200 in 8.6332 ms
+11/25/2020 18:34:56 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8788 ms
+11/25/2020 18:34:56 HTTP "GET" "/Playlists/Create/ws" responded 200 in 7.3745 ms
+11/25/2020 18:35:02 Playlist with title 'Sofia-Sandanski' has been created.
+11/25/2020 18:35:02 HTTP "POST" "/Playlists/Create" responded 302 in 2051.9799 ms
+11/25/2020 18:35:02 HTTP "GET" "/Playlists" responded 200 in 7.0667 ms
+11/25/2020 18:35:02 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8885 ms
+11/25/2020 18:35:03 HTTP "POST" "/Playlists" responded 200 in 3.7931 ms
+11/25/2020 18:35:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6610 ms
+11/25/2020 18:35:04 HTTP "POST" "/Playlists" responded 200 in 3.9063 ms
+11/25/2020 18:35:04 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5251 ms
+11/25/2020 18:35:05 HTTP "POST" "/Playlists" responded 200 in 3.4278 ms
+11/25/2020 18:35:05 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6438 ms
+11/25/2020 18:35:05 HTTP "POST" "/Playlists" responded 200 in 3.0125 ms
+11/25/2020 18:35:05 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3291 ms
+11/25/2020 18:35:07 HTTP "GET" "/Playlists/Create" responded 200 in 7.3609 ms
+11/25/2020 18:35:07 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3290 ms
+11/25/2020 18:35:07 HTTP "GET" "/Playlists/Create/ws" responded 200 in 7.0186 ms
+11/25/2020 18:35:12 Playlist with title 'Sofia-Sandanski' has been created.
+11/25/2020 18:35:13 HTTP "POST" "/Playlists/Create" responded 302 in 2463.2068 ms
+11/25/2020 18:35:13 HTTP "GET" "/Playlists" responded 200 in 2.2400 ms
+11/25/2020 18:35:13 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4926 ms
+11/25/2020 18:35:15 HTTP "POST" "/Playlists/DeletePlaylistWeb" responded 302 in 6.0928 ms
+11/25/2020 18:35:15 HTTP "GET" "/Playlists" responded 200 in 2.0847 ms
+11/25/2020 18:35:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3334 ms
+11/25/2020 18:35:16 HTTP "POST" "/Playlists/DeletePlaylistWeb" responded 302 in 4.1234 ms
+11/25/2020 18:35:16 HTTP "GET" "/Playlists" responded 200 in 1.8001 ms
+11/25/2020 18:35:16 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3403 ms
+11/25/2020 18:35:17 HTTP "POST" "/Playlists" responded 200 in 2.2322 ms
+11/25/2020 18:35:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4250 ms
+11/25/2020 18:35:18 HTTP "POST" "/Playlists" responded 200 in 2.5915 ms
+11/25/2020 18:35:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2637 ms
+11/25/2020 18:35:38 Application starting up
+11/25/2020 18:35:40 - Getting index page -
+11/25/2020 18:35:41 HTTP "GET" "/" responded 200 in 1475.5041 ms
+11/25/2020 18:35:41 HTTP "GET" "/js/playlistView.js" responded 404 in 3.3073 ms
+11/25/2020 18:35:43 HTTP "GET" "/Playlists" responded 200 in 55.8491 ms
+11/25/2020 18:35:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5367 ms
+11/25/2020 18:35:44 HTTP "POST" "/Playlists" responded 200 in 14.1378 ms
+11/25/2020 18:35:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5152 ms
+11/25/2020 18:35:45 HTTP "GET" "/Playlists/Create" responded 200 in 65.5554 ms
+11/25/2020 18:35:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7708 ms
+11/25/2020 18:35:45 HTTP "GET" "/Playlists/Create/ws" responded 200 in 8.1609 ms
+11/25/2020 18:35:59 Application starting up
+11/25/2020 18:36:00 - Getting index page -
+11/25/2020 18:36:02 HTTP "GET" "/" responded 200 in 1520.9805 ms
+11/25/2020 18:36:02 HTTP "GET" "/js/playlistView.js" responded 404 in 3.0812 ms
+11/25/2020 18:36:04 HTTP "GET" "/Playlists/Create" responded 200 in 95.3605 ms
+11/25/2020 18:36:04 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8633 ms
+11/25/2020 18:36:04 HTTP "GET" "/Playlists/Create/ws" responded 200 in 16.7576 ms
+11/25/2020 18:36:09 Playlist with title 'Sofia-Sandanski2' has been created.
+11/25/2020 18:36:10 HTTP "POST" "/Playlists/Create" responded 302 in 1236.6554 ms
+11/25/2020 18:36:10 HTTP "GET" "/Playlists" responded 200 in 18.2131 ms
+11/25/2020 18:36:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5862 ms
+11/25/2020 18:36:40 HTTP "POST" "/Playlists/DeletePlaylistWeb" responded 302 in 27009.2238 ms
+11/25/2020 18:36:40 HTTP "GET" "/Playlists" responded 200 in 10.4155 ms
+11/25/2020 18:36:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5630 ms
+11/25/2020 18:36:42 HTTP "POST" "/Playlists" responded 200 in 11.0205 ms
+11/25/2020 18:36:42 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2021 ms
+11/25/2020 18:36:43 HTTP "POST" "/Playlists" responded 200 in 13.5402 ms
+11/25/2020 18:36:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4840 ms
+11/25/2020 18:36:44 HTTP "POST" "/Playlists" responded 200 in 15.1503 ms
+11/25/2020 18:36:44 HTTP "GET" "/js/playlistView.js" responded 404 in 1.9006 ms
+11/25/2020 18:37:10 Application starting up
+11/25/2020 18:37:11 - Getting index page -
+11/25/2020 18:37:12 HTTP "GET" "/" responded 200 in 1178.9685 ms
+11/25/2020 18:37:12 HTTP "GET" "/js/playlistView.js" responded 404 in 2.7227 ms
+11/25/2020 18:37:12 HTTP "GET" "/js/playlistView.js" responded 404 in 10.5810 ms
+11/25/2020 18:37:13 HTTP "GET" "/Playlists/Playlist/1010" responded 200 in 111.8836 ms
+11/25/2020 18:37:13 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7490 ms
+11/25/2020 18:37:13 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3398 ms
+11/25/2020 18:37:30 - Getting index page -
+11/25/2020 18:37:30 HTTP "GET" "/" responded 200 in 18.6507 ms
+11/25/2020 18:37:33 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 27.2592 ms
+11/25/2020 18:37:33 - Getting index page -
+11/25/2020 18:37:33 HTTP "GET" "/" responded 200 in 7.7224 ms
+11/25/2020 18:37:33 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2034 ms
+11/25/2020 18:37:34 HTTP "GET" "/Identity/Account/Login" responded 200 in 57.4748 ms
+11/25/2020 18:37:35 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3333 ms
+11/25/2020 18:37:37 User logged in.
+11/25/2020 18:37:37 HTTP "POST" "/Identity/Account/Login" responded 302 in 98.6969 ms
+11/25/2020 18:37:37 - Getting index page -
+11/25/2020 18:37:37 HTTP "GET" "/" responded 200 in 5.7947 ms
+11/25/2020 18:37:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4545 ms
+11/25/2020 18:37:38 HTTP "GET" "/Playlists" responded 200 in 23.2664 ms
+11/25/2020 18:37:38 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3072 ms
+11/25/2020 18:37:39 HTTP "POST" "/Playlists" responded 200 in 6.6827 ms
+11/25/2020 18:37:39 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2489 ms
+11/25/2020 18:37:39 HTTP "POST" "/Playlists" responded 200 in 6.1993 ms
+11/25/2020 18:37:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8271 ms
+11/25/2020 18:37:40 HTTP "POST" "/Playlists" responded 200 in 5.9606 ms
+11/25/2020 18:37:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9244 ms
+11/25/2020 18:37:40 HTTP "POST" "/Playlists" responded 200 in 2.9023 ms
+11/25/2020 18:37:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3731 ms
+11/25/2020 18:37:40 HTTP "POST" "/Playlists" responded 200 in 6.1561 ms
+11/25/2020 18:37:40 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1492 ms
+11/25/2020 18:37:40 HTTP "POST" "/Playlists" responded 200 in 3.6250 ms
+11/25/2020 18:37:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3838 ms
+11/25/2020 18:37:41 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 3.0572 ms
+11/25/2020 18:37:41 - Getting index page -
+11/25/2020 18:37:41 HTTP "GET" "/" responded 200 in 10.2391 ms
+11/25/2020 18:37:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3920 ms
+11/25/2020 18:37:42 HTTP "GET" "/Identity/Account/Register" responded 200 in 28.2250 ms
+11/25/2020 18:37:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3603 ms
+11/25/2020 18:37:43 HTTP "GET" "/Identity/Account/Login" responded 200 in 4.6105 ms
+11/25/2020 18:37:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2687 ms
+11/25/2020 18:37:49 HTTP "POST" "/Identity/Account/Login" responded 200 in 9.8557 ms
+11/25/2020 18:37:49 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3254 ms
+11/25/2020 18:37:54 HTTP "POST" "/Identity/Account/Login" responded 200 in 8.0687 ms
+11/25/2020 18:37:54 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1522 ms
+11/25/2020 18:38:12 User logged in.
+11/25/2020 18:38:12 HTTP "POST" "/Identity/Account/Login" responded 302 in 21.4034 ms
+11/25/2020 18:38:12 - Getting index page -
+11/25/2020 18:38:12 HTTP "GET" "/" responded 200 in 9.0860 ms
+11/25/2020 18:38:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4336 ms
+11/25/2020 18:38:14 HTTP "GET" "/Playlists" responded 200 in 8.9049 ms
+11/25/2020 18:38:14 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3514 ms
+11/25/2020 18:39:05 HTTP "GET" "/Playlists/Create" responded 200 in 37.1983 ms
+11/25/2020 18:39:05 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2843 ms
+11/25/2020 18:39:05 HTTP "GET" "/Playlists/Create/ws" responded 200 in 4.2076 ms
+11/25/2020 18:39:13 Playlist with title 'Koda' has been created.
+11/25/2020 18:39:13 HTTP "POST" "/Playlists/Create" responded 302 in 2748.8974 ms
+11/25/2020 18:39:13 HTTP "GET" "/Playlists" responded 200 in 5.9101 ms
+11/25/2020 18:39:13 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3861 ms
+11/25/2020 18:39:15 HTTP "GET" "/Playlists/Playlist/1015" responded 200 in 7.9868 ms
+11/25/2020 18:39:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3461 ms
+11/25/2020 18:39:24 HTTP "GET" "/Playlists" responded 200 in 7.1087 ms
+11/25/2020 18:39:26 HTTP "POST" "/Playlists" responded 200 in 3.2231 ms
+11/25/2020 18:39:26 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3606 ms
+11/25/2020 18:39:29 HTTP "POST" "/Playlists" responded 200 in 3.4028 ms
+11/25/2020 18:39:29 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4629 ms
+11/25/2020 18:39:29 HTTP "POST" "/Playlists" responded 200 in 3.0464 ms
+11/25/2020 18:39:29 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3236 ms
+11/25/2020 18:39:29 HTTP "POST" "/Playlists" responded 200 in 3.7970 ms
+11/25/2020 18:39:29 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4487 ms
+11/25/2020 18:39:30 HTTP "POST" "/Playlists" responded 200 in 2.9432 ms
+11/25/2020 18:39:30 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2216 ms
+11/25/2020 18:39:31 HTTP "POST" "/Playlists" responded 200 in 3.4928 ms
+11/25/2020 18:39:31 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3007 ms
+11/25/2020 18:39:36 HTTP "POST" "/Playlists" responded 200 in 3.6702 ms
+11/25/2020 18:39:36 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3096 ms
+11/25/2020 18:39:37 HTTP "POST" "/Playlists" responded 200 in 2.2293 ms
+11/25/2020 18:39:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4120 ms
+11/25/2020 18:39:38 HTTP "POST" "/Playlists" responded 200 in 2.4785 ms
+11/25/2020 18:39:38 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3007 ms
+11/25/2020 18:39:41 HTTP "POST" "/Playlists" responded 200 in 2.5090 ms
+11/25/2020 18:39:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3571 ms
+11/25/2020 18:39:41 HTTP "POST" "/Playlists" responded 200 in 2.4048 ms
+11/25/2020 18:39:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2158 ms
+11/25/2020 18:39:43 HTTP "POST" "/Playlists" responded 200 in 2.0146 ms
+11/25/2020 18:39:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3512 ms
+11/25/2020 18:39:50 HTTP "POST" "/Playlists" responded 200 in 1.8902 ms
+11/25/2020 18:39:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3730 ms
+11/25/2020 18:40:42 Application starting up
+11/25/2020 18:40:43 - Getting index page -
+11/25/2020 18:40:44 HTTP "GET" "/" responded 200 in 1342.6024 ms
+11/25/2020 18:40:45 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6205 ms
+11/25/2020 18:40:45 HTTP "GET" "/js/playlistView.js" responded 404 in 10.7130 ms
+11/25/2020 18:40:47 HTTP "GET" "/Playlists" responded 200 in 41.0625 ms
+11/25/2020 18:40:47 HTTP "GET" "/js/playlistView.js" responded 404 in 1.5771 ms
+11/25/2020 18:40:47 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 38.4793 ms
+11/25/2020 18:40:47 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1046 ms
+11/25/2020 18:40:50 HTTP "GET" "/Playlists/Create" responded 200 in 49.5061 ms
+11/25/2020 18:40:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8180 ms
+11/25/2020 18:40:50 HTTP "GET" "/Playlists/Create/ws" responded 200 in 5.9711 ms
+11/25/2020 18:41:03 Playlist with title 'Futblok qko' has been created.
+11/25/2020 18:41:03 HTTP "POST" "/Playlists/Create" responded 302 in 2433.8418 ms
+11/25/2020 18:41:03 HTTP "GET" "/Playlists" responded 200 in 16.9895 ms
+11/25/2020 18:41:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5261 ms
+11/25/2020 18:41:07 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 58.0458 ms
+11/25/2020 18:41:07 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2422 ms
+11/25/2020 18:41:07 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3669 ms
+11/25/2020 18:41:13 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=2" responded 200 in 15.9193 ms
+11/25/2020 18:41:15 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=1" responded 200 in 18.4601 ms
+11/25/2020 18:42:55 Application starting up
+11/25/2020 18:42:56 - Getting index page -
+11/25/2020 18:42:57 HTTP "GET" "/" responded 200 in 1206.5325 ms
+11/25/2020 18:42:57 HTTP "GET" "/js/playlistView.js" responded 404 in 2.2850 ms
+11/25/2020 18:42:57 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3761 ms
+11/25/2020 18:42:58 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 116.7100 ms
+11/25/2020 18:42:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7725 ms
+11/25/2020 18:42:59 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.4406 ms
+11/25/2020 18:43:33 Application starting up
+11/25/2020 18:43:34 - Getting index page -
+11/25/2020 18:43:35 HTTP "GET" "/" responded 200 in 1205.6654 ms
+11/25/2020 18:43:36 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4946 ms
+11/25/2020 18:43:36 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3044 ms
+11/25/2020 18:43:37 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 117.1907 ms
+11/25/2020 18:43:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7876 ms
+11/25/2020 18:43:37 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3545 ms
+11/25/2020 18:45:22 Application starting up
+11/25/2020 18:45:23 - Getting index page -
+11/25/2020 18:45:24 HTTP "GET" "/" responded 200 in 1211.9818 ms
+11/25/2020 18:45:24 HTTP "GET" "/js/playlistView.js" responded 404 in 2.3502 ms
+11/25/2020 18:45:24 HTTP "GET" "/js/playlistView.js" responded 404 in 10.5977 ms
+11/25/2020 18:45:25 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 116.9910 ms
+11/25/2020 18:45:25 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0058 ms
+11/25/2020 18:45:26 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3728 ms
+11/25/2020 18:46:06 Application starting up
+11/25/2020 18:46:07 - Getting index page -
+11/25/2020 18:46:08 HTTP "GET" "/" responded 200 in 1261.5048 ms
+11/25/2020 18:46:08 HTTP "GET" "/js/playlistView.js" responded 404 in 2.5778 ms
+11/25/2020 18:46:09 HTTP "GET" "/js/playlistView.js" responded 404 in 12.3362 ms
+11/25/2020 18:46:09 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 117.1057 ms
+11/25/2020 18:46:09 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9068 ms
+11/25/2020 18:46:10 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3328 ms
+11/25/2020 18:46:39 Application starting up
+11/25/2020 18:46:40 - Getting index page -
+11/25/2020 18:46:41 HTTP "GET" "/" responded 200 in 1211.6248 ms
+11/25/2020 18:46:41 HTTP "GET" "/js/playlistView.js" responded 404 in 2.9725 ms
+11/25/2020 18:46:41 HTTP "GET" "/js/playlistView.js" responded 404 in 10.5470 ms
+11/25/2020 18:46:44 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 118.1541 ms
+11/25/2020 18:46:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9838 ms
+11/25/2020 18:46:44 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3287 ms
+11/25/2020 18:47:29 - Getting index page -
+11/25/2020 18:47:29 HTTP "GET" "/" responded 200 in 25.4246 ms
+11/25/2020 18:47:51 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 15.0913 ms
+11/25/2020 18:47:51 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5422 ms
+11/25/2020 18:48:23 Application starting up
+11/25/2020 18:48:24 - Getting index page -
+11/25/2020 18:48:25 HTTP "GET" "/" responded 200 in 1213.4458 ms
+11/25/2020 18:48:25 HTTP "GET" "/js/playlistView.js" responded 404 in 3.1552 ms
+11/25/2020 18:48:25 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3794 ms
+11/25/2020 18:48:28 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 119.7624 ms
+11/25/2020 18:48:28 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3060 ms
+11/25/2020 18:48:28 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3711 ms
+11/25/2020 18:48:42 Application starting up
+11/25/2020 18:48:43 - Getting index page -
+11/25/2020 18:48:44 HTTP "GET" "/" responded 200 in 1201.7036 ms
+11/25/2020 18:48:45 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4276 ms
+11/25/2020 18:48:45 HTTP "GET" "/js/playlistView.js" responded 404 in 10.4439 ms
+11/25/2020 18:48:46 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 123.4476 ms
+11/25/2020 18:48:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8354 ms
+11/25/2020 18:48:46 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.7540 ms
+11/25/2020 18:49:01 Application starting up
+11/25/2020 18:49:02 - Getting index page -
+11/25/2020 18:49:04 HTTP "GET" "/" responded 200 in 1202.0329 ms
+11/25/2020 18:49:04 HTTP "GET" "/js/playlistView.js" responded 404 in 2.9730 ms
+11/25/2020 18:49:04 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3896 ms
+11/25/2020 18:49:05 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 118.7174 ms
+11/25/2020 18:49:05 HTTP "GET" "/js/playlistView.js" responded 404 in 1.5617 ms
+11/25/2020 18:49:05 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3506 ms
+11/25/2020 18:49:22 Application starting up
+11/25/2020 18:49:24 - Getting index page -
+11/25/2020 18:49:25 HTTP "GET" "/" responded 200 in 1263.8777 ms
+11/25/2020 18:49:25 HTTP "GET" "/js/playlistView.js" responded 404 in 3.1515 ms
+11/25/2020 18:49:25 HTTP "GET" "/js/playlistView.js" responded 404 in 10.2803 ms
+11/25/2020 18:49:26 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 128.7627 ms
+11/25/2020 18:49:26 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9866 ms
+11/25/2020 18:49:26 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3380 ms
+11/25/2020 18:49:39 Application starting up
+11/25/2020 18:49:41 - Getting index page -
+11/25/2020 18:49:42 HTTP "GET" "/" responded 200 in 1216.6965 ms
+11/25/2020 18:49:42 HTTP "GET" "/js/playlistView.js" responded 404 in 2.7919 ms
+11/25/2020 18:49:42 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3585 ms
+11/25/2020 18:49:48 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 118.5492 ms
+11/25/2020 18:49:48 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7967 ms
+11/25/2020 18:49:48 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3345 ms
+11/25/2020 18:50:02 Application starting up
+11/25/2020 18:50:03 - Getting index page -
+11/25/2020 18:50:04 HTTP "GET" "/" responded 200 in 1237.3952 ms
+11/25/2020 18:50:04 HTTP "GET" "/js/playlistView.js" responded 404 in 3.1532 ms
+11/25/2020 18:50:04 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3208 ms
+11/25/2020 18:50:10 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 120.1564 ms
+11/25/2020 18:50:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7654 ms
+11/25/2020 18:50:10 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3329 ms
+11/25/2020 18:51:27 HTTP "GET" "/Admin/UsersIndex" responded 200 in 48.8100 ms
+11/25/2020 18:51:27 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6328 ms
+11/25/2020 18:56:43 Application starting up
+11/25/2020 18:56:44 - Getting index page -
+11/25/2020 18:56:45 HTTP "GET" "/" responded 200 in 1216.4068 ms
+11/25/2020 18:56:45 HTTP "GET" "/js/playlistView.js" responded 404 in 1.9129 ms
+11/25/2020 18:56:45 HTTP "GET" "/js/playlistView.js" responded 404 in 10.4927 ms
+11/25/2020 18:56:47 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 120.1927 ms
+11/25/2020 18:56:47 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8695 ms
+11/25/2020 18:56:47 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3326 ms
+11/25/2020 18:56:54 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=2" responded 200 in 22.8681 ms
+11/25/2020 18:56:56 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=1" responded 200 in 24.3202 ms
+11/25/2020 18:56:56 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=2" responded 200 in 15.1276 ms
+11/25/2020 18:56:57 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=1" responded 200 in 15.2076 ms
+11/25/2020 18:58:02 Application starting up
+11/25/2020 18:58:03 - Getting index page -
+11/25/2020 18:58:05 HTTP "GET" "/" responded 200 in 1236.2638 ms
+11/25/2020 18:58:05 HTTP "GET" "/js/playlistView.js" responded 404 in 2.3972 ms
+11/25/2020 18:58:05 HTTP "GET" "/js/playlistView.js" responded 404 in 11.1675 ms
+11/25/2020 18:58:06 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 118.2664 ms
+11/25/2020 18:58:06 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7054 ms
+11/25/2020 18:58:06 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3216 ms
+11/25/2020 18:58:31 Application starting up
+11/25/2020 18:58:32 - Getting index page -
+11/25/2020 18:58:33 HTTP "GET" "/" responded 200 in 1222.1320 ms
+11/25/2020 18:58:33 HTTP "GET" "/js/playlistView.js" responded 404 in 2.9655 ms
+11/25/2020 18:58:33 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3408 ms
+11/25/2020 18:58:34 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 114.0769 ms
+11/25/2020 18:58:34 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2372 ms
+11/25/2020 18:58:34 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3974 ms
+11/25/2020 18:58:40 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=2" responded 200 in 22.0976 ms
+11/25/2020 18:59:17 Application starting up
+11/25/2020 18:59:18 - Getting index page -
+11/25/2020 18:59:19 HTTP "GET" "/" responded 200 in 1228.6847 ms
+11/25/2020 18:59:20 HTTP "GET" "/js/playlistView.js" responded 404 in 2.2174 ms
+11/25/2020 18:59:20 HTTP "GET" "/js/playlistView.js" responded 404 in 10.7529 ms
+11/25/2020 18:59:20 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 117.5429 ms
+11/25/2020 18:59:20 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8220 ms
+11/25/2020 18:59:21 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3326 ms
+11/25/2020 18:59:30 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=2" responded 200 in 20.7932 ms
+11/25/2020 18:59:32 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=1" responded 200 in 19.4538 ms
+11/25/2020 19:01:10 - Getting index page -
+11/25/2020 19:01:10 HTTP "GET" "/" responded 200 in 28.9422 ms
+11/25/2020 19:01:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3660 ms
+11/25/2020 19:01:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2969 ms
+11/25/2020 19:01:14 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 14.8197 ms
+11/25/2020 19:01:14 HTTP "GET" "/js/playlistView.js" responded 404 in 1.4197 ms
+11/25/2020 19:01:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3911 ms
+11/25/2020 19:01:14 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3223 ms
+11/25/2020 19:01:28 HTTP "GET" "/css/album-art.jpg" responded 404 in 1.0551 ms
+11/25/2020 19:01:31 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.8611 ms
+11/25/2020 19:01:31 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.8047 ms
+11/25/2020 19:01:32 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.8610 ms
+11/25/2020 19:01:33 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.6984 ms
+11/25/2020 19:01:53 - Getting index page -
+11/25/2020 19:01:53 HTTP "GET" "/" responded 200 in 30.9720 ms
+11/25/2020 19:01:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3296 ms
+11/25/2020 19:01:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2842 ms
+11/25/2020 19:01:55 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 11.8889 ms
+11/25/2020 19:01:55 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0559 ms
+11/25/2020 19:01:55 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3232 ms
+11/25/2020 19:01:55 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.4089 ms
+11/25/2020 19:02:03 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 12.4609 ms
+11/25/2020 19:02:03 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3031 ms
+11/25/2020 19:02:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2666 ms
+11/25/2020 19:02:15 - Getting index page -
+11/25/2020 19:02:15 HTTP "GET" "/" responded 200 in 36.2968 ms
+11/25/2020 19:02:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8933 ms
+11/25/2020 19:02:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5452 ms
+11/25/2020 19:02:17 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 7.1542 ms
+11/25/2020 19:02:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9989 ms
+11/25/2020 19:02:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4771 ms
+11/25/2020 19:02:17 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.4752 ms
+11/25/2020 19:02:27 - Getting index page -
+11/25/2020 19:02:27 HTTP "GET" "/" responded 200 in 32.1385 ms
+11/25/2020 19:02:27 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5618 ms
+11/25/2020 19:02:27 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3059 ms
+11/25/2020 19:02:28 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 11.0076 ms
+11/25/2020 19:02:28 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7234 ms
+11/25/2020 19:02:28 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0406 ms
+11/25/2020 19:02:28 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3625 ms
+11/25/2020 19:02:46 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 11.3159 ms
+11/25/2020 19:02:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2710 ms
+11/25/2020 19:02:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2126 ms
+11/25/2020 19:03:12 Application starting up
+11/25/2020 19:03:13 - Getting index page -
+11/25/2020 19:03:14 HTTP "GET" "/" responded 200 in 1288.0137 ms
+11/25/2020 19:03:14 HTTP "GET" "/js/playlistView.js" responded 404 in 2.8651 ms
+11/25/2020 19:03:14 HTTP "GET" "/js/playlistView.js" responded 404 in 12.5728 ms
+11/25/2020 19:03:15 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 123.4561 ms
+11/25/2020 19:03:15 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1917 ms
+11/25/2020 19:03:15 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3151 ms
+11/25/2020 19:03:40 - Getting index page -
+11/25/2020 19:03:40 HTTP "GET" "/" responded 200 in 41.0393 ms
+11/25/2020 19:03:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5539 ms
+11/25/2020 19:03:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7714 ms
+11/25/2020 19:03:41 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 22.8960 ms
+11/25/2020 19:03:41 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1449 ms
+11/25/2020 19:03:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4054 ms
+11/25/2020 19:03:42 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.4919 ms
+11/25/2020 19:03:50 - Getting index page -
+11/25/2020 19:03:50 HTTP "GET" "/" responded 200 in 25.2266 ms
+11/25/2020 19:03:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4641 ms
+11/25/2020 19:03:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3166 ms
+11/25/2020 19:03:52 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 15.3276 ms
+11/25/2020 19:03:52 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3944 ms
+11/25/2020 19:03:52 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7683 ms
+11/25/2020 19:03:52 HTTP "GET" "/css/album-art.jpg" responded 404 in 1.0799 ms
+11/25/2020 19:03:58 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 8.0192 ms
+11/25/2020 19:03:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4124 ms
+11/25/2020 19:03:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3661 ms
+11/25/2020 19:04:06 - Getting index page -
+11/25/2020 19:04:06 HTTP "GET" "/" responded 200 in 29.7096 ms
+11/25/2020 19:04:07 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7895 ms
+11/25/2020 19:04:07 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3222 ms
+11/25/2020 19:04:08 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 7.4952 ms
+11/25/2020 19:04:08 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8954 ms
+11/25/2020 19:04:08 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2829 ms
+11/25/2020 19:04:08 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3828 ms
+11/25/2020 19:04:13 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 10.5524 ms
+11/25/2020 19:04:13 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9051 ms
+11/25/2020 19:04:13 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4366 ms
+11/25/2020 19:04:24 - Getting index page -
+11/25/2020 19:04:24 HTTP "GET" "/" responded 200 in 27.1811 ms
+11/25/2020 19:04:25 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3387 ms
+11/25/2020 19:04:25 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3460 ms
+11/25/2020 19:04:26 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 10.1362 ms
+11/25/2020 19:04:26 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2129 ms
+11/25/2020 19:04:26 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4979 ms
+11/25/2020 19:04:26 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.8399 ms
+11/25/2020 19:05:17 - Getting index page -
+11/25/2020 19:05:17 HTTP "GET" "/" responded 200 in 36.3855 ms
+11/25/2020 19:05:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6391 ms
+11/25/2020 19:05:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4780 ms
+11/25/2020 19:05:18 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 9.7144 ms
+11/25/2020 19:05:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8057 ms
+11/25/2020 19:05:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2536 ms
+11/25/2020 19:05:18 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.4211 ms
+11/25/2020 19:06:04 - Getting index page -
+11/25/2020 19:06:04 HTTP "GET" "/" responded 200 in 32.7709 ms
+11/25/2020 19:06:04 HTTP "GET" "/js/playlistView.js" responded 404 in 1.9552 ms
+11/25/2020 19:06:04 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2742 ms
+11/25/2020 19:06:05 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 8.8518 ms
+11/25/2020 19:06:05 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4603 ms
+11/25/2020 19:06:05 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2188 ms
+11/25/2020 19:06:05 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2187 ms
+11/25/2020 19:06:27 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=2" responded 200 in 10.1629 ms
+11/25/2020 19:06:28 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=3" responded 200 in 5.4949 ms
+11/25/2020 19:06:30 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=2" responded 200 in 5.1690 ms
+11/25/2020 19:06:33 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=3" responded 200 in 5.1858 ms
+11/25/2020 19:06:36 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=2" responded 200 in 5.2385 ms
+11/25/2020 19:06:41 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=3" responded 200 in 6.1118 ms
+11/25/2020 19:06:46 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 5.5877 ms
+11/25/2020 19:06:54 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=2" responded 200 in 8.4761 ms
+11/25/2020 19:06:55 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=1" responded 200 in 5.6372 ms
+11/25/2020 19:06:56 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=2" responded 200 in 5.4792 ms
+11/25/2020 19:07:14 - Getting index page -
+11/25/2020 19:07:14 HTTP "GET" "/" responded 200 in 22.9056 ms
+11/25/2020 19:07:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2170 ms
+11/25/2020 19:07:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2008 ms
+11/25/2020 19:07:15 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 5.0575 ms
+11/25/2020 19:07:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3744 ms
+11/25/2020 19:07:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2050 ms
+11/25/2020 19:07:15 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2309 ms
+11/25/2020 19:07:26 - Getting index page -
+11/25/2020 19:07:26 HTTP "GET" "/" responded 200 in 10.9812 ms
+11/25/2020 19:07:26 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2182 ms
+11/25/2020 19:07:26 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2066 ms
+11/25/2020 19:07:27 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 5.1014 ms
+11/25/2020 19:07:27 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2762 ms
+11/25/2020 19:07:27 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2136 ms
+11/25/2020 19:07:27 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2581 ms
+11/25/2020 19:08:18 - Getting index page -
+11/25/2020 19:08:18 HTTP "GET" "/" responded 200 in 118.1600 ms
+11/25/2020 19:08:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2240 ms
+11/25/2020 19:08:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1901 ms
+11/25/2020 19:08:19 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 6.1976 ms
+11/25/2020 19:08:19 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3589 ms
+11/25/2020 19:08:19 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2139 ms
+11/25/2020 19:08:19 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2143 ms
+11/25/2020 19:09:16 - Getting index page -
+11/25/2020 19:09:16 HTTP "GET" "/" responded 200 in 24.4046 ms
+11/25/2020 19:09:16 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2752 ms
+11/25/2020 19:09:16 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1950 ms
+11/25/2020 19:09:17 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 6.3070 ms
+11/25/2020 19:09:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3881 ms
+11/25/2020 19:09:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2180 ms
+11/25/2020 19:09:17 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.1997 ms
+11/25/2020 19:09:29 - Getting index page -
+11/25/2020 19:09:29 HTTP "GET" "/" responded 200 in 8.3962 ms
+11/25/2020 19:09:29 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2925 ms
+11/25/2020 19:09:29 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1825 ms
+11/25/2020 19:09:30 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 3.5833 ms
+11/25/2020 19:09:30 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3881 ms
+11/25/2020 19:09:31 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3527 ms
+11/25/2020 19:09:31 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.1928 ms
+11/25/2020 19:09:39 - Getting index page -
+11/25/2020 19:09:39 HTTP "GET" "/" responded 200 in 7.9461 ms
+11/25/2020 19:09:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2738 ms
+11/25/2020 19:09:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2440 ms
+11/25/2020 19:09:41 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 3.4695 ms
+11/25/2020 19:09:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2234 ms
+11/25/2020 19:09:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3160 ms
+11/25/2020 19:09:41 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3021 ms
+11/25/2020 19:09:49 - Getting index page -
+11/25/2020 19:09:49 HTTP "GET" "/" responded 200 in 21.4539 ms
+11/25/2020 19:09:49 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2666 ms
+11/25/2020 19:09:49 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2117 ms
+11/25/2020 19:09:50 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 6.4460 ms
+11/25/2020 19:09:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4060 ms
+11/25/2020 19:09:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1927 ms
+11/25/2020 19:09:50 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.1922 ms
+11/25/2020 19:10:28 - Getting index page -
+11/25/2020 19:10:28 HTTP "GET" "/" responded 200 in 19.1470 ms
+11/25/2020 19:10:28 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2203 ms
+11/25/2020 19:10:28 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1939 ms
+11/25/2020 19:10:29 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 6.1726 ms
+11/25/2020 19:10:29 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2242 ms
+11/25/2020 19:10:29 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1831 ms
+11/25/2020 19:10:29 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2424 ms
+11/25/2020 19:10:35 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=2" responded 200 in 3.8503 ms
+11/25/2020 19:10:36 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=3" responded 200 in 3.2504 ms
+11/25/2020 19:10:40 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=1" responded 200 in 3.8957 ms
+11/25/2020 19:10:45 - Getting index page -
+11/25/2020 19:10:45 HTTP "GET" "/" responded 200 in 8.5033 ms
+11/25/2020 19:10:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2733 ms
+11/25/2020 19:10:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2056 ms
+11/25/2020 19:10:46 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 3.0826 ms
+11/25/2020 19:10:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2085 ms
+11/25/2020 19:10:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2227 ms
+11/25/2020 19:10:46 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2637 ms
+11/25/2020 19:12:00 Application starting up
+11/25/2020 19:12:01 - Getting index page -
+11/25/2020 19:12:02 HTTP "GET" "/" responded 200 in 1223.1351 ms
+11/25/2020 19:12:02 HTTP "GET" "/js/playlistView.js" responded 404 in 2.7893 ms
+11/25/2020 19:12:02 HTTP "GET" "/js/playlistView.js" responded 404 in 10.8904 ms
+11/25/2020 19:12:03 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 117.4691 ms
+11/25/2020 19:12:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8145 ms
+11/25/2020 19:12:04 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3306 ms
+11/25/2020 19:12:10 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=2" responded 200 in 18.9142 ms
+11/25/2020 19:12:12 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=3" responded 200 in 11.9790 ms
+11/25/2020 19:12:45 HTTP "GET" "/css/album-art.jpg" responded 404 in 1.8020 ms
+11/25/2020 19:12:51 HTTP "GET" "/css/album-art.jpg" responded 404 in 1.1152 ms
+11/25/2020 19:12:54 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.8567 ms
+11/25/2020 19:12:55 HTTP "GET" "/css/album-art.jpg" responded 404 in 1.3778 ms
+11/25/2020 19:12:56 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.9230 ms
+11/25/2020 19:12:58 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.8779 ms
+11/25/2020 19:12:59 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.8271 ms
+11/25/2020 19:13:49 - Getting index page -
+11/25/2020 19:13:49 HTTP "GET" "/" responded 200 in 33.2675 ms
+11/25/2020 19:13:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4476 ms
+11/25/2020 19:13:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3756 ms
+11/25/2020 19:13:51 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 20.4703 ms
+11/25/2020 19:13:51 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3402 ms
+11/25/2020 19:13:51 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2828 ms
+11/25/2020 19:13:51 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2945 ms
+11/25/2020 19:13:58 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=3" responded 200 in 9.7161 ms
+11/25/2020 19:14:05 - Getting index page -
+11/25/2020 19:14:05 HTTP "GET" "/" responded 200 in 27.1276 ms
+11/25/2020 19:14:05 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6940 ms
+11/25/2020 19:14:05 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2738 ms
+11/25/2020 19:14:06 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 11.0328 ms
+11/25/2020 19:14:06 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9381 ms
+11/25/2020 19:14:06 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3704 ms
+11/25/2020 19:14:06 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2669 ms
+11/25/2020 19:14:15 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=2" responded 200 in 15.4648 ms
+11/25/2020 19:14:17 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=3" responded 200 in 7.9898 ms
+11/25/2020 19:14:25 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=2" responded 200 in 6.4065 ms
+11/25/2020 19:15:04 - Getting index page -
+11/25/2020 19:15:04 HTTP "GET" "/" responded 200 in 26.7568 ms
+11/25/2020 19:15:04 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8099 ms
+11/25/2020 19:15:04 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2612 ms
+11/25/2020 19:15:05 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 9.5045 ms
+11/25/2020 19:15:05 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4570 ms
+11/25/2020 19:15:05 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4096 ms
+11/25/2020 19:15:05 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.4782 ms
+11/25/2020 19:15:16 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=3" responded 200 in 9.8194 ms
+11/25/2020 19:15:27 - Getting index page -
+11/25/2020 19:15:27 HTTP "GET" "/" responded 200 in 23.7261 ms
+11/25/2020 19:15:27 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2257 ms
+11/25/2020 19:15:27 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3319 ms
+11/25/2020 19:15:29 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 8.6186 ms
+11/25/2020 19:15:29 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2497 ms
+11/25/2020 19:15:29 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2152 ms
+11/25/2020 19:15:29 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2364 ms
+11/25/2020 19:15:34 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=3" responded 200 in 5.8252 ms
+11/25/2020 19:15:36 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=2" responded 200 in 5.9525 ms
+11/25/2020 19:16:02 - Getting index page -
+11/25/2020 19:16:02 HTTP "GET" "/" responded 200 in 27.6182 ms
+11/25/2020 19:16:02 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2077 ms
+11/25/2020 19:16:02 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1993 ms
+11/25/2020 19:16:03 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 7.9591 ms
+11/25/2020 19:16:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2086 ms
+11/25/2020 19:16:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2078 ms
+11/25/2020 19:16:03 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2138 ms
+11/25/2020 19:16:08 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=3" responded 200 in 5.6367 ms
+11/25/2020 19:16:10 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=2" responded 200 in 5.5673 ms
+11/25/2020 19:16:12 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=1" responded 200 in 4.8192 ms
+11/25/2020 19:16:13 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=2" responded 200 in 5.2306 ms
+11/25/2020 19:16:16 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=1" responded 200 in 4.7263 ms
+11/25/2020 19:16:17 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=2" responded 200 in 5.0889 ms
+11/25/2020 19:16:19 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=3" responded 200 in 8.7273 ms
+11/25/2020 19:16:33 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=2" responded 200 in 9.1473 ms
+11/25/2020 19:16:57 - Getting index page -
+11/25/2020 19:16:57 HTTP "GET" "/" responded 200 in 30.7989 ms
+11/25/2020 19:16:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2393 ms
+11/25/2020 19:16:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2114 ms
+11/25/2020 19:16:59 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 7.1913 ms
+11/25/2020 19:16:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2197 ms
+11/25/2020 19:16:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2127 ms
+11/25/2020 19:16:59 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2187 ms
+11/25/2020 19:17:14 - Getting index page -
+11/25/2020 19:17:14 HTTP "GET" "/" responded 200 in 8.7470 ms
+11/25/2020 19:17:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2341 ms
+11/25/2020 19:17:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2062 ms
+11/25/2020 19:17:15 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 3.6087 ms
+11/25/2020 19:17:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2384 ms
+11/25/2020 19:17:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2053 ms
+11/25/2020 19:17:15 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.1972 ms
+11/25/2020 19:17:21 HTTP "GET" "/Playlists/Playlist/1016?id=1016&pageNumber=3" responded 200 in 3.7660 ms
+11/25/2020 19:17:31 - Getting index page -
+11/25/2020 19:17:31 HTTP "GET" "/" responded 200 in 22.0101 ms
+11/25/2020 19:17:31 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2531 ms
+11/25/2020 19:17:31 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7408 ms
+11/25/2020 19:17:32 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 6.1615 ms
+11/25/2020 19:17:32 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2327 ms
+11/25/2020 19:17:32 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2150 ms
+11/25/2020 19:17:32 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2525 ms
+11/25/2020 19:17:58 - Getting index page -
+11/25/2020 19:17:58 HTTP "GET" "/" responded 200 in 23.9464 ms
+11/25/2020 19:17:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2063 ms
+11/25/2020 19:17:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2230 ms
+11/25/2020 19:17:59 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 6.7347 ms
+11/25/2020 19:17:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2040 ms
+11/25/2020 19:17:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2083 ms
+11/25/2020 19:17:59 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2276 ms
+11/25/2020 19:18:07 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 3.0185 ms
+11/25/2020 19:18:07 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2236 ms
+11/25/2020 19:18:07 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2798 ms
+11/25/2020 19:19:22 - Getting index page -
+11/25/2020 19:19:22 HTTP "GET" "/" responded 200 in 21.7563 ms
+11/25/2020 19:19:22 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2226 ms
+11/25/2020 19:19:22 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2352 ms
+11/25/2020 19:19:24 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 7.0903 ms
+11/25/2020 19:19:24 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2637 ms
+11/25/2020 19:19:24 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3309 ms
+11/25/2020 19:19:24 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3980 ms
+11/25/2020 19:21:16 - Getting index page -
+11/25/2020 19:21:16 HTTP "GET" "/" responded 200 in 20.6827 ms
+11/25/2020 19:21:16 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2279 ms
+11/25/2020 19:21:16 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2122 ms
+11/25/2020 19:21:17 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 6.8827 ms
+11/25/2020 19:21:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2107 ms
+11/25/2020 19:21:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2485 ms
+11/25/2020 19:21:17 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2080 ms
+11/25/2020 19:23:07 - Getting index page -
+11/25/2020 19:23:07 HTTP "GET" "/" responded 200 in 26.4041 ms
+11/25/2020 19:23:07 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2036 ms
+11/25/2020 19:23:07 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1916 ms
+11/25/2020 19:23:09 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 6.4049 ms
+11/25/2020 19:23:09 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2090 ms
+11/25/2020 19:23:09 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2045 ms
+11/25/2020 19:23:09 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2013 ms
+11/25/2020 19:29:13 Application starting up
+11/25/2020 19:29:14 - Getting index page -
+11/25/2020 19:29:15 HTTP "GET" "/" responded 200 in 1189.2228 ms
+11/25/2020 19:29:16 HTTP "GET" "/js/playlistView.js" responded 404 in 2.3190 ms
+11/25/2020 19:29:16 HTTP "GET" "/js/playlistView.js" responded 404 in 10.8178 ms
+11/25/2020 19:29:18 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 117.6376 ms
+11/25/2020 19:29:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9686 ms
+11/25/2020 19:29:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3112 ms
+11/25/2020 19:29:18 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3223 ms
+11/25/2020 19:30:23 - Getting index page -
+11/25/2020 19:30:23 HTTP "GET" "/" responded 200 in 45.8243 ms
+11/25/2020 19:30:23 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3978 ms
+11/25/2020 19:30:23 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3272 ms
+11/25/2020 19:30:25 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 20.8910 ms
+11/25/2020 19:30:25 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0357 ms
+11/25/2020 19:30:25 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3038 ms
+11/25/2020 19:30:25 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3486 ms
+11/25/2020 19:31:22 - Getting index page -
+11/25/2020 19:31:22 HTTP "GET" "/" responded 200 in 32.0210 ms
+11/25/2020 19:31:22 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6148 ms
+11/25/2020 19:31:22 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3016 ms
+11/25/2020 19:31:24 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 16.8404 ms
+11/25/2020 19:31:24 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0204 ms
+11/25/2020 19:31:24 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3093 ms
+11/25/2020 19:31:24 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3001 ms
+11/25/2020 19:35:38 - Getting index page -
+11/25/2020 19:35:38 HTTP "GET" "/" responded 200 in 34.6713 ms
+11/25/2020 19:35:38 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3177 ms
+11/25/2020 19:35:38 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2995 ms
+11/25/2020 19:35:40 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 11.3379 ms
+11/25/2020 19:35:40 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3112 ms
+11/25/2020 19:35:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3112 ms
+11/25/2020 19:35:40 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3335 ms
+11/25/2020 19:36:44 - Getting index page -
+11/25/2020 19:36:44 HTTP "GET" "/" responded 200 in 36.0900 ms
+11/25/2020 19:36:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9681 ms
+11/25/2020 19:36:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7886 ms
+11/25/2020 19:36:46 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 10.5333 ms
+11/25/2020 19:36:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6327 ms
+11/25/2020 19:36:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5855 ms
+11/25/2020 19:36:46 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.8824 ms
+11/25/2020 19:37:33 - Getting index page -
+11/25/2020 19:37:33 HTTP "GET" "/" responded 200 in 24.4056 ms
+11/25/2020 19:37:33 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8839 ms
+11/25/2020 19:37:34 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2784 ms
+11/25/2020 19:37:35 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 9.7364 ms
+11/25/2020 19:37:35 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6787 ms
+11/25/2020 19:37:35 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4485 ms
+11/25/2020 19:37:35 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.4882 ms
+11/25/2020 19:37:43 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 11.5119 ms
+11/25/2020 19:37:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6723 ms
+11/25/2020 19:38:03 - Getting index page -
+11/25/2020 19:38:03 HTTP "GET" "/" responded 200 in 17.3111 ms
+11/25/2020 19:38:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6108 ms
+11/25/2020 19:38:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2737 ms
+11/25/2020 19:38:04 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 9.5798 ms
+11/25/2020 19:38:04 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3982 ms
+11/25/2020 19:38:04 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2356 ms
+11/25/2020 19:38:04 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2626 ms
+11/25/2020 19:38:45 - Getting index page -
+11/25/2020 19:38:45 HTTP "GET" "/" responded 200 in 122.1724 ms
+11/25/2020 19:38:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2838 ms
+11/25/2020 19:38:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2096 ms
+11/25/2020 19:38:47 HTTP "GET" "/Playlists/Playlist/1015" responded 200 in 7.8720 ms
+11/25/2020 19:38:47 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2227 ms
+11/25/2020 19:38:47 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7246 ms
+11/25/2020 19:38:47 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2225 ms
+11/25/2020 19:40:44 - Getting index page -
+11/25/2020 19:40:44 HTTP "GET" "/" responded 200 in 20.8536 ms
+11/25/2020 19:40:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2679 ms
+11/25/2020 19:40:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2019 ms
+11/25/2020 19:40:45 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 10.2928 ms
+11/25/2020 19:40:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2279 ms
+11/25/2020 19:40:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2104 ms
+11/25/2020 19:40:45 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2217 ms
+11/25/2020 19:49:34 Application starting up
+11/25/2020 19:49:35 - Getting index page -
+11/25/2020 19:49:36 HTTP "GET" "/" responded 200 in 1281.7609 ms
+11/25/2020 19:49:36 HTTP "GET" "/js/playlistView.js" responded 404 in 2.2064 ms
+11/25/2020 19:49:36 HTTP "GET" "/js/playlistView.js" responded 404 in 10.7499 ms
+11/25/2020 19:49:41 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 122.3027 ms
+11/25/2020 19:49:41 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0518 ms
+11/25/2020 19:49:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3264 ms
+11/25/2020 19:49:41 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.6992 ms
+11/25/2020 19:50:17 HTTP "GET" "/Playlists/Create" responded 200 in 58.6853 ms
+11/25/2020 19:50:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6594 ms
+11/25/2020 19:50:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3308 ms
+11/25/2020 19:50:17 HTTP "GET" "/Playlists/Create/ws" responded 200 in 7.3282 ms
+11/25/2020 19:50:19 HTTP "GET" "/Playlists/Playlist/1016" responded 200 in 19.9006 ms
+11/25/2020 19:50:36 HTTP "GET" "/Playlists" responded 200 in 20.9990 ms
+11/25/2020 19:50:36 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4116 ms
+11/25/2020 19:50:36 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3841 ms
+11/25/2020 19:50:39 HTTP "POST" "/Playlists" responded 200 in 7.5556 ms
+11/25/2020 19:50:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3982 ms
+11/25/2020 19:50:41 HTTP "POST" "/Playlists/DeletePlaylistWeb" responded 302 in 103.7061 ms
+11/25/2020 19:50:41 HTTP "GET" "/Playlists" responded 200 in 4.5840 ms
+11/25/2020 19:50:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4774 ms
+11/25/2020 19:50:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3078 ms
+11/25/2020 19:50:47 HTTP "GET" "/Playlists/Create" responded 200 in 12.4148 ms
+11/25/2020 19:50:47 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1722 ms
+11/25/2020 19:50:47 HTTP "GET" "/Playlists/Create/ws" responded 200 in 6.7763 ms
+11/25/2020 19:50:53 Playlist with title 'Koda' has been created.
+11/25/2020 19:50:53 HTTP "POST" "/Playlists/Create" responded 302 in 2263.2178 ms
+11/25/2020 19:50:53 HTTP "GET" "/Playlists" responded 200 in 11.4047 ms
+11/25/2020 19:50:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5120 ms
+11/25/2020 19:50:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4168 ms
+11/25/2020 19:50:55 HTTP "POST" "/Playlists/DeletePlaylistWeb" responded 302 in 10.7339 ms
+11/25/2020 19:50:55 HTTP "GET" "/Playlists" responded 200 in 9.5965 ms
+11/25/2020 19:50:55 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3580 ms
+11/25/2020 19:50:57 HTTP "POST" "/Playlists" responded 200 in 6.3406 ms
+11/25/2020 19:50:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6989 ms
+11/25/2020 19:50:58 HTTP "POST" "/Playlists" responded 200 in 5.9283 ms
+11/25/2020 19:50:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6454 ms
+11/25/2020 19:50:58 HTTP "POST" "/Playlists" responded 200 in 5.9477 ms
+11/25/2020 19:50:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6111 ms
+11/25/2020 19:50:59 HTTP "POST" "/Playlists" responded 200 in 4.7669 ms
+11/25/2020 19:50:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6105 ms
+11/25/2020 19:51:05 HTTP "POST" "/Playlists" responded 200 in 5.1965 ms
+11/25/2020 19:51:05 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7724 ms
+11/25/2020 19:51:09 HTTP "POST" "/Playlists" responded 200 in 5.9574 ms
+11/25/2020 19:51:09 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0018 ms
+11/25/2020 19:51:19 HTTP "POST" "/Playlists" responded 200 in 5.7445 ms
+11/25/2020 19:51:19 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9374 ms
+11/25/2020 19:51:19 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3358 ms
+11/25/2020 19:51:36 HTTP "POST" "/Playlists" responded 200 in 14.0129 ms
+11/25/2020 19:51:36 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2855 ms
+11/25/2020 19:51:36 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4608 ms
+11/25/2020 19:52:22 Application starting up
+11/25/2020 19:52:23 - Getting index page -
+11/25/2020 19:52:25 HTTP "GET" "/" responded 200 in 1638.0827 ms
+11/25/2020 19:52:25 HTTP "GET" "/js/playlistView.js" responded 404 in 5.6164 ms
+11/25/2020 19:52:34 HTTP "GET" "/Playlists/Create" responded 200 in 96.0970 ms
+11/25/2020 19:52:34 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8277 ms
+11/25/2020 19:52:34 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3341 ms
+11/25/2020 19:52:34 HTTP "GET" "/Playlists/Create/ws" responded 200 in 16.5564 ms
+11/25/2020 19:52:40 Playlist with title 'Sofia-Sandanski2' has been created.
+11/25/2020 19:52:40 HTTP "POST" "/Playlists/Create" responded 302 in 2564.5127 ms
+11/25/2020 19:52:40 HTTP "GET" "/Playlists" responded 200 in 20.2654 ms
+11/25/2020 19:52:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5208 ms
+11/25/2020 19:52:42 HTTP "POST" "/Playlists" responded 200 in 15.1882 ms
+11/25/2020 19:52:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8206 ms
+11/25/2020 19:52:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3426 ms
+11/25/2020 19:52:43 HTTP "POST" "/Playlists" responded 200 in 18.6811 ms
+11/25/2020 19:52:43 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0306 ms
+11/25/2020 19:52:44 HTTP "POST" "/Playlists" responded 200 in 10.0763 ms
+11/25/2020 19:52:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6060 ms
+11/25/2020 19:52:44 HTTP "POST" "/Playlists" responded 200 in 5.1304 ms
+11/25/2020 19:52:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3193 ms
+11/25/2020 19:52:44 HTTP "POST" "/Playlists" responded 200 in 5.4035 ms
+11/25/2020 19:52:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3073 ms
+11/25/2020 19:52:44 HTTP "POST" "/Playlists" responded 200 in 11.8310 ms
+11/25/2020 19:52:44 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1059 ms
+11/25/2020 19:52:44 HTTP "POST" "/Playlists" responded 200 in 7.8359 ms
+11/25/2020 19:52:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3245 ms
+11/25/2020 19:52:50 HTTP "POST" "/Playlists" responded 200 in 8.4557 ms
+11/25/2020 19:52:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7586 ms
+11/25/2020 19:52:50 HTTP "POST" "/Playlists" responded 200 in 5.7676 ms
+11/25/2020 19:52:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4109 ms
+11/25/2020 19:52:50 HTTP "POST" "/Playlists" responded 200 in 4.4965 ms
+11/25/2020 19:52:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3078 ms
+11/25/2020 19:52:50 HTTP "POST" "/Playlists" responded 200 in 8.3588 ms
+11/25/2020 19:52:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7882 ms
+11/25/2020 19:52:51 HTTP "POST" "/Playlists" responded 200 in 9.5342 ms
+11/25/2020 19:52:51 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0824 ms
+11/25/2020 19:53:36 HTTP "POST" "/Playlists/DeletePlaylistWeb" responded 500 in 38543.7790 ms
+System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'Playlist with id 1018 was not found.')
+   at PG.Services.PlaylistService.Delete(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 141
+   at PG.Web.Controllers.PlaylistsController.DeletePlaylistWeb(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 108
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/25/2020 19:53:36 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 119.2595 ms
+11/25/2020 19:53:36 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2851 ms
+11/25/2020 19:53:36 An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'Playlist with id 1018 was not found.')
+   at PG.Services.PlaylistService.Delete(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 141
+   at PG.Web.Controllers.PlaylistsController.DeletePlaylistWeb(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 108
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/25/2020 19:53:39 - Getting index page -
+11/25/2020 19:53:39 HTTP "GET" "/" responded 200 in 15.1554 ms
+11/25/2020 19:53:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6834 ms
+11/25/2020 19:53:41 HTTP "GET" "/Playlists/Create" responded 200 in 12.5902 ms
+11/25/2020 19:53:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9550 ms
+11/25/2020 19:53:41 HTTP "GET" "/Playlists/Create/ws" responded 200 in 8.8875 ms
+11/25/2020 19:53:47 Playlist with title 'cdsvsd' has been created.
+11/25/2020 19:53:48 HTTP "POST" "/Playlists/Create" responded 302 in 3588.9062 ms
+11/25/2020 19:53:48 HTTP "GET" "/Playlists" responded 200 in 7.6763 ms
+11/25/2020 19:53:48 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3371 ms
+11/25/2020 19:53:57 HTTP "POST" "/Playlists" responded 200 in 5.7707 ms
+11/25/2020 19:53:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4621 ms
+11/25/2020 19:54:02 HTTP "POST" "/Playlists" responded 200 in 7.9518 ms
+11/25/2020 19:54:02 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0058 ms
+11/25/2020 19:54:02 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3583 ms
+11/25/2020 19:54:02 HTTP "POST" "/Playlists" responded 200 in 5.6108 ms
+11/25/2020 19:54:02 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3314 ms
+11/25/2020 19:54:02 HTTP "POST" "/Playlists" responded 200 in 5.0581 ms
+11/25/2020 19:54:02 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3361 ms
+11/25/2020 19:54:17 HTTP "POST" "/Playlists" responded 200 in 6.0069 ms
+11/25/2020 19:54:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2472 ms
+11/25/2020 19:54:40 HTTP "POST" "/Playlists" responded 200 in 5.6994 ms
+11/25/2020 19:54:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2670 ms
+11/25/2020 19:54:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2839 ms
+11/25/2020 19:55:09 HTTP "GET" "/Playlists/Create" responded 200 in 10.4849 ms
+11/25/2020 19:55:09 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6688 ms
+11/25/2020 19:55:09 HTTP "GET" "/Playlists/Create/ws" responded 200 in 6.9884 ms
+11/25/2020 19:55:16 Playlist with title 'Koda' has been created.
+11/25/2020 19:55:18 HTTP "POST" "/Playlists/Create" responded 302 in 3832.5664 ms
+11/25/2020 19:55:18 HTTP "GET" "/Playlists" responded 200 in 7.3660 ms
+11/25/2020 19:55:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3230 ms
+11/25/2020 19:55:29 HTTP "POST" "/Playlists/DeletePlaylistWeb" responded 302 in 2825.8019 ms
+11/25/2020 19:55:29 HTTP "GET" "/Playlists" responded 200 in 3.8648 ms
+11/25/2020 19:55:29 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4113 ms
+11/25/2020 19:55:57 HTTP "POST" "/Playlists" responded 200 in 8.2870 ms
+11/25/2020 19:55:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5032 ms
+11/25/2020 19:55:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2483 ms
+11/25/2020 19:57:32 Application starting up
+11/25/2020 19:57:33 - Getting index page -
+11/25/2020 19:57:34 HTTP "GET" "/" responded 200 in 1288.2805 ms
+11/25/2020 19:57:34 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6753 ms
+11/25/2020 19:57:34 HTTP "GET" "/js/playlistView.js" responded 404 in 12.7819 ms
+11/25/2020 19:57:43 - Getting index page -
+11/25/2020 19:57:43 HTTP "GET" "/" responded 200 in 35.6598 ms
+11/25/2020 19:57:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9854 ms
+11/25/2020 19:57:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5812 ms
+11/25/2020 19:57:44 HTTP "GET" "/Playlists" responded 200 in 26.5489 ms
+11/25/2020 19:57:44 HTTP "GET" "/js/playlistView.js" responded 404 in 1.4519 ms
+11/25/2020 19:57:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3565 ms
+11/25/2020 19:57:50 HTTP "POST" "/Playlists" responded 200 in 6.3177 ms
+11/25/2020 19:57:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4487 ms
+11/25/2020 19:57:51 HTTP "POST" "/Playlists" responded 200 in 9.4978 ms
+11/25/2020 19:57:51 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0745 ms
+11/25/2020 19:57:57 HTTP "POST" "/Playlists" responded 200 in 13.7343 ms
+11/25/2020 19:57:57 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3453 ms
+11/25/2020 20:01:35 Application starting up
+11/25/2020 20:01:36 - Getting index page -
+11/25/2020 20:01:38 HTTP "GET" "/" responded 200 in 1282.9239 ms
+11/25/2020 20:01:38 HTTP "GET" "/js/playlistView.js" responded 404 in 2.7698 ms
+11/25/2020 20:01:38 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3005 ms
+11/25/2020 20:01:40 HTTP "GET" "/Playlists" responded 200 in 39.8812 ms
+11/25/2020 20:01:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8619 ms
+11/25/2020 20:01:41 HTTP "POST" "/Playlists" responded 200 in 13.2348 ms
+11/25/2020 20:01:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3802 ms
+11/25/2020 20:01:42 HTTP "POST" "/Playlists" responded 200 in 11.9576 ms
+11/25/2020 20:01:42 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1161 ms
+11/25/2020 20:01:42 HTTP "POST" "/Playlists" responded 200 in 4.9097 ms
+11/25/2020 20:01:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3732 ms
+11/25/2020 20:01:42 HTTP "POST" "/Playlists" responded 200 in 9.2506 ms
+11/25/2020 20:01:42 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3570 ms
+11/25/2020 20:01:42 HTTP "POST" "/Playlists" responded 200 in 6.2168 ms
+11/25/2020 20:01:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7119 ms
+11/25/2020 20:01:49 HTTP "POST" "/Playlists" responded 200 in 11.3497 ms
+11/25/2020 20:01:49 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8444 ms
+11/25/2020 20:03:06 Application starting up
+11/25/2020 20:03:07 - Getting index page -
+11/25/2020 20:03:09 HTTP "GET" "/" responded 200 in 1303.3318 ms
+11/25/2020 20:03:09 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4126 ms
+11/25/2020 20:03:09 HTTP "GET" "/js/playlistView.js" responded 404 in 11.1665 ms
+11/25/2020 20:03:10 HTTP "GET" "/Playlists" responded 200 in 40.4348 ms
+11/25/2020 20:03:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9219 ms
+11/25/2020 20:03:11 HTTP "POST" "/Playlists" responded 200 in 11.9977 ms
+11/25/2020 20:03:11 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5474 ms
+11/25/2020 20:03:12 HTTP "POST" "/Playlists" responded 200 in 12.7843 ms
+11/25/2020 20:03:12 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1812 ms
+11/25/2020 20:03:12 HTTP "POST" "/Playlists" responded 200 in 5.4024 ms
+11/25/2020 20:03:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5457 ms
+11/25/2020 20:03:13 HTTP "POST" "/Playlists" responded 200 in 8.0273 ms
+11/25/2020 20:03:13 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3903 ms
+11/25/2020 20:03:16 HTTP "GET" "/Admin/UsersIndex" responded 200 in 59.4873 ms
+11/25/2020 20:03:16 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4361 ms
+11/25/2020 20:03:19 HTTP "POST" "/Admin/BanUsers" responded 302 in 1629.2907 ms
+11/25/2020 20:03:19 HTTP "GET" "/Admin/UsersIndex" responded 200 in 9.5524 ms
+11/25/2020 20:03:19 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4471 ms
+11/25/2020 20:03:22 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 17.6994 ms
+11/25/2020 20:03:22 HTTP "GET" "/Admin/UsersIndex" responded 200 in 10.7924 ms
+11/25/2020 20:03:22 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8285 ms
+11/25/2020 20:03:28 HTTP "GET" "/Playlists" responded 200 in 6.4733 ms
+11/25/2020 20:03:28 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4899 ms
+11/25/2020 20:03:29 HTTP "POST" "/Playlists" responded 200 in 6.5415 ms
+11/25/2020 20:03:29 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7542 ms
+11/25/2020 20:03:29 HTTP "POST" "/Playlists" responded 200 in 4.2703 ms
+11/25/2020 20:03:29 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6530 ms
+11/25/2020 20:03:29 HTTP "POST" "/Playlists" responded 200 in 3.3536 ms
+11/25/2020 20:03:29 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2847 ms
+11/25/2020 20:03:30 HTTP "POST" "/Playlists" responded 200 in 4.0550 ms
+11/25/2020 20:03:30 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7595 ms
+11/25/2020 20:03:30 HTTP "POST" "/Playlists" responded 200 in 4.3802 ms
+11/25/2020 20:03:30 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6689 ms
+11/25/2020 20:03:32 HTTP "POST" "/Playlists" responded 200 in 5.5432 ms
+11/25/2020 20:03:32 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0952 ms
+11/25/2020 20:03:32 HTTP "POST" "/Playlists" responded 200 in 3.3427 ms
+11/25/2020 20:03:32 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2611 ms
+11/25/2020 20:03:32 HTTP "POST" "/Playlists" responded 200 in 3.7499 ms
+11/25/2020 20:03:32 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4137 ms
+11/25/2020 20:03:53 - Getting index page -
+11/25/2020 20:03:53 HTTP "GET" "/" responded 200 in 24.1403 ms
+11/25/2020 20:03:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3814 ms
+11/25/2020 20:03:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2435 ms
+11/25/2020 20:03:54 HTTP "GET" "/Playlists/Playlist/1019" responded 200 in 72.0309 ms
+11/25/2020 20:03:54 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4920 ms
+11/25/2020 20:03:54 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2844 ms
+11/25/2020 20:03:56 HTTP "GET" "/Playlists/Create" responded 200 in 47.4043 ms
+11/25/2020 20:03:56 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3177 ms
+11/25/2020 20:03:56 HTTP "GET" "/Playlists/Create/ws" responded 200 in 5.0931 ms
+11/25/2020 20:04:19 Playlist with title 'Koda' has been created.
+11/25/2020 20:04:21 HTTP "POST" "/Playlists/Create" responded 302 in 3849.1533 ms
+11/25/2020 20:04:21 HTTP "GET" "/Playlists" responded 200 in 14.6712 ms
+11/25/2020 20:04:21 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2901 ms
+11/25/2020 20:04:39 Application starting up
+11/25/2020 20:04:40 - Getting index page -
+11/25/2020 20:04:41 HTTP "GET" "/" responded 200 in 1309.7333 ms
+11/25/2020 20:04:41 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6179 ms
+11/25/2020 20:04:41 HTTP "GET" "/js/playlistView.js" responded 404 in 11.8761 ms
+11/25/2020 20:04:42 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 121.7777 ms
+11/25/2020 20:04:42 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0099 ms
+11/25/2020 20:04:42 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3195 ms
+11/25/2020 20:04:43 HTTP "GET" "/Playlists" responded 200 in 31.4759 ms
+11/25/2020 20:04:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7683 ms
+11/25/2020 20:04:44 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 15.4741 ms
+11/25/2020 20:04:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3670 ms
+11/25/2020 20:04:46 HTTP "GET" "/Playlists" responded 200 in 30.5310 ms
+11/25/2020 20:04:46 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3168 ms
+11/25/2020 20:04:58 HTTP "POST" "/Playlists/DeletePlaylistWeb" responded 302 in 394.1281 ms
+11/25/2020 20:04:58 HTTP "GET" "/Playlists" responded 200 in 11.0611 ms
+11/25/2020 20:04:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3727 ms
+11/25/2020 20:05:01 HTTP "POST" "/Playlists" responded 200 in 8.7167 ms
+11/25/2020 20:05:01 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8368 ms
+11/25/2020 20:05:11 HTTP "POST" "/Playlists" responded 200 in 8.8218 ms
+11/25/2020 20:05:11 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8751 ms
+11/25/2020 20:05:11 HTTP "POST" "/Playlists" responded 200 in 6.5409 ms
+11/25/2020 20:05:11 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6820 ms
+11/25/2020 20:05:12 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 11.5576 ms
+11/25/2020 20:05:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7539 ms
+11/25/2020 20:05:20 HTTP "GET" "/Playlists/Playlist/1021?id=1021&pageNumber=3" responded 200 in 9.1170 ms
+11/25/2020 20:06:42 - Getting index page -
+11/25/2020 20:06:42 HTTP "GET" "/" responded 200 in 30.3240 ms
+11/25/2020 20:06:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2973 ms
+11/25/2020 20:06:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3621 ms
+11/25/2020 20:06:45 HTTP "GET" "/swagger/index.html" responded 200 in 24.2691 ms
+11/25/2020 20:06:47 HTTP "GET" "/swagger/index.html" responded 200 in 0.7053 ms
+11/25/2020 20:06:47 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 72.8477 ms
+11/25/2020 20:07:06 HTTP "POST" "/api/Users/authenticate" responded 200 in 105.5607 ms
+11/25/2020 20:08:16 Failed executing DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 300), @p8='?' (DbType = Int32), @p9='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Songs] ([AlbumId], [ArtistId], [DeezerID], [Duration], [GenreId], [IsDeleted], [Link], [Preview], [Rank], [Title])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+SELECT [Id]
+FROM [Songs]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+11/25/2020 20:08:16 An exception occurred in the database while saving changes for context type '"PG.Data.Context.PGDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_Songs_Albums_AlbumId\". The conflict occurred in database \"PlaylistGeneratorDB\", table \"dbo.Albums\", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7925917b-0b22-45d1-af50-a8e76764ceee
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Songs_Albums_AlbumId". The conflict occurred in database "PlaylistGeneratorDB", table "dbo.Albums", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7925917b-0b22-45d1-af50-a8e76764ceee
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+11/25/2020 20:08:16 HTTP "POST" "/api/Songs" responded 500 in 105.3150 ms
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Songs_Albums_AlbumId". The conflict occurred in database "PlaylistGeneratorDB", table "dbo.Albums", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7925917b-0b22-45d1-af50-a8e76764ceee
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PG.Services.SongService.Create(SongDTO songDTO) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\SongService.cs:line 42
+   at PG.Web.APIControllers.SongsController.CreateSong(SongViewModel model) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\SongsController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/25/2020 20:08:16 An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Songs_Albums_AlbumId". The conflict occurred in database "PlaylistGeneratorDB", table "dbo.Albums", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7925917b-0b22-45d1-af50-a8e76764ceee
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PG.Services.SongService.Create(SongDTO songDTO) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\SongService.cs:line 42
+   at PG.Web.APIControllers.SongsController.CreateSong(SongViewModel model) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\SongsController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/25/2020 20:09:00 Failed executing DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 300), @p8='?' (DbType = Int32), @p9='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Songs] ([AlbumId], [ArtistId], [DeezerID], [Duration], [GenreId], [IsDeleted], [Link], [Preview], [Rank], [Title])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+SELECT [Id]
+FROM [Songs]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+11/25/2020 20:09:00 An exception occurred in the database while saving changes for context type '"PG.Data.Context.PGDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_Songs_Albums_AlbumId\". The conflict occurred in database \"PlaylistGeneratorDB\", table \"dbo.Albums\", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7925917b-0b22-45d1-af50-a8e76764ceee
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Songs_Albums_AlbumId". The conflict occurred in database "PlaylistGeneratorDB", table "dbo.Albums", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7925917b-0b22-45d1-af50-a8e76764ceee
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+11/25/2020 20:09:00 HTTP "POST" "/api/Songs" responded 500 in 102.4649 ms
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Songs_Albums_AlbumId". The conflict occurred in database "PlaylistGeneratorDB", table "dbo.Albums", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7925917b-0b22-45d1-af50-a8e76764ceee
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PG.Services.SongService.Create(SongDTO songDTO) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\SongService.cs:line 42
+   at PG.Web.APIControllers.SongsController.CreateSong(SongViewModel model) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\SongsController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/25/2020 20:09:00 An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Songs_Albums_AlbumId". The conflict occurred in database "PlaylistGeneratorDB", table "dbo.Albums", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7925917b-0b22-45d1-af50-a8e76764ceee
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PG.Services.SongService.Create(SongDTO songDTO) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\SongService.cs:line 42
+   at PG.Web.APIControllers.SongsController.CreateSong(SongViewModel model) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\SongsController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/25/2020 20:09:30 HTTP "DELETE" "/api/Songs/2" responded 403 in 6.9282 ms
+11/25/2020 20:10:42 Application starting up
+11/25/2020 20:10:43 - Getting index page -
+11/25/2020 20:10:45 HTTP "GET" "/" responded 200 in 1362.9110 ms
+11/25/2020 20:10:45 HTTP "GET" "/js/playlistView.js" responded 404 in 2.7811 ms
+11/25/2020 20:10:45 HTTP "GET" "/js/playlistView.js" responded 404 in 12.2819 ms
+11/25/2020 20:10:47 HTTP "GET" "/swagger/index.html" responded 200 in 25.2361 ms
+11/25/2020 20:10:48 HTTP "GET" "/swagger/index.html" responded 200 in 1.0819 ms
+11/25/2020 20:10:48 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 68.5570 ms
+11/25/2020 20:10:59 HTTP "DELETE" "/api/Songs/2" responded 200 in 447.0343 ms
+11/25/2020 20:11:33 Application starting up
+11/25/2020 20:11:34 - Getting index page -
+11/25/2020 20:11:36 HTTP "GET" "/" responded 200 in 1276.5020 ms
+11/25/2020 20:11:36 HTTP "GET" "/js/playlistView.js" responded 404 in 2.9018 ms
+11/25/2020 20:11:36 HTTP "GET" "/js/playlistView.js" responded 404 in 11.0720 ms
+11/25/2020 20:11:54 HTTP "POST" "/api/Songs" responded 401 in 23.6145 ms
+11/25/2020 20:12:02 HTTP "GET" "/api/Songs" responded 200 in 172.7540 ms
+11/25/2020 20:12:24 HTTP "DELETE" "/api/Songs" responded 405 in 0.5897 ms
+11/25/2020 20:12:56 HTTP "DELETE" "/api/Songs/3" responded 401 in 1.7113 ms
+11/25/2020 20:13:18 HTTP "DELETE" "/api/Songs/3" responded 200 in 1689.5241 ms
+11/25/2020 20:13:31 HTTP "DELETE" "/api/Songs/3890651320" responded 400 in 23.6485 ms
+11/25/2020 20:15:02 - Getting index page -
+11/25/2020 20:15:03 HTTP "GET" "/" responded 200 in 41.9422 ms
+11/25/2020 20:15:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6051 ms
+11/25/2020 20:15:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3828 ms
+11/25/2020 20:15:04 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 46.3423 ms
+11/25/2020 20:15:04 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8524 ms
+11/25/2020 20:15:04 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3147 ms
+11/25/2020 20:15:11 HTTP "GET" "/Playlists/Playlist/1021?id=1021&pageNumber=2" responded 200 in 12.7441 ms
+11/25/2020 20:15:12 HTTP "GET" "/Playlists/Playlist/1021?id=1021&pageNumber=1" responded 200 in 16.7484 ms
+11/25/2020 20:15:13 HTTP "GET" "/Playlists/Playlist/1021?id=1021&pageNumber=2" responded 200 in 11.4309 ms
+11/25/2020 20:15:13 HTTP "GET" "/Playlists/Playlist/1021?id=1021&pageNumber=1" responded 200 in 8.9439 ms
+11/25/2020 20:15:20 HTTP "GET" "/Playlists/Playlist/1021?id=1021&pageNumber=2" responded 200 in 10.8976 ms
+11/25/2020 20:15:21 HTTP "GET" "/Playlists/Playlist/1021?id=1021&pageNumber=1" responded 200 in 12.8150 ms
+11/25/2020 20:15:22 HTTP "GET" "/Playlists/Playlist/1021?id=1021&pageNumber=2" responded 200 in 9.2301 ms
+11/25/2020 20:15:24 HTTP "GET" "/Playlists/Playlist/1021?id=1021&pageNumber=1" responded 200 in 7.6718 ms
+11/26/2020 07:40:24 Application starting up
+11/26/2020 07:40:26 - Getting index page -
+11/26/2020 07:40:26 HTTP "GET" "/" responded 200 in 1434.4239 ms
+11/26/2020 07:40:26 HTTP "GET" "/js/playlistView.js" responded 404 in 2.2489 ms
+11/26/2020 07:40:26 HTTP "GET" "/js/playlistView.js" responded 404 in 12.1018 ms
+11/26/2020 07:40:28 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 135.8237 ms
+11/26/2020 07:40:28 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7474 ms
+11/26/2020 07:40:28 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3184 ms
+11/26/2020 07:40:53 - Getting index page -
+11/26/2020 07:40:53 HTTP "GET" "/" responded 200 in 50.6800 ms
+11/26/2020 07:40:53 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1012 ms
+11/26/2020 07:40:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3543 ms
+11/26/2020 07:40:54 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 13.5427 ms
+11/26/2020 07:40:54 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4205 ms
+11/26/2020 07:40:54 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3287 ms
+11/26/2020 07:45:43 - Getting index page -
+11/26/2020 07:45:43 HTTP "GET" "/" responded 200 in 37.1983 ms
+11/26/2020 07:45:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3776 ms
+11/26/2020 07:45:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3079 ms
+11/26/2020 07:45:44 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 23.2873 ms
+11/26/2020 07:45:44 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1181 ms
+11/26/2020 07:45:44 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.6126 ms
+11/26/2020 07:46:06 - Getting index page -
+11/26/2020 07:46:06 HTTP "GET" "/" responded 200 in 16.8497 ms
+11/26/2020 07:46:06 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3151 ms
+11/26/2020 07:46:06 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2936 ms
+11/26/2020 07:46:08 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 15.2778 ms
+11/26/2020 07:46:08 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8130 ms
+11/26/2020 07:46:08 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3218 ms
+11/26/2020 07:46:19 HTTP "GET" "/Playlists" responded 200 in 22.4786 ms
+11/26/2020 07:46:19 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1981 ms
+11/26/2020 07:46:20 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3464 ms
+11/26/2020 07:46:21 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 10.8914 ms
+11/26/2020 07:46:21 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0159 ms
+11/26/2020 07:46:21 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3625 ms
+11/26/2020 07:46:21 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3970 ms
+11/26/2020 07:46:37 - Getting index page -
+11/26/2020 07:46:37 HTTP "GET" "/" responded 200 in 38.0823 ms
+11/26/2020 07:46:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6940 ms
+11/26/2020 07:46:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6092 ms
+11/26/2020 07:46:38 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 10.2035 ms
+11/26/2020 07:46:38 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8824 ms
+11/26/2020 07:46:38 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0761 ms
+11/26/2020 07:46:38 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.7709 ms
+11/26/2020 07:47:04 - Getting index page -
+11/26/2020 07:47:04 HTTP "GET" "/" responded 200 in 15.3544 ms
+11/26/2020 07:47:04 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6196 ms
+11/26/2020 07:47:04 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2949 ms
+11/26/2020 07:47:05 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 6.2126 ms
+11/26/2020 07:47:05 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4506 ms
+11/26/2020 07:47:05 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5967 ms
+11/26/2020 07:47:05 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.4682 ms
+11/26/2020 07:47:23 - Getting index page -
+11/26/2020 07:47:23 HTTP "GET" "/" responded 200 in 29.7653 ms
+11/26/2020 07:47:23 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5105 ms
+11/26/2020 07:47:23 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2183 ms
+11/26/2020 07:47:25 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 8.8974 ms
+11/26/2020 07:47:25 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2375 ms
+11/26/2020 07:47:25 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2177 ms
+11/26/2020 07:47:25 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2200 ms
+11/26/2020 07:47:37 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 9.0438 ms
+11/26/2020 07:47:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4578 ms
+11/26/2020 07:47:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2065 ms
+11/26/2020 07:47:47 - Getting index page -
+11/26/2020 07:47:47 HTTP "GET" "/" responded 200 in 30.1142 ms
+11/26/2020 07:47:47 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2681 ms
+11/26/2020 07:47:48 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3777 ms
+11/26/2020 07:47:49 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 5.5595 ms
+11/26/2020 07:47:49 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2029 ms
+11/26/2020 07:47:49 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2037 ms
+11/26/2020 07:47:49 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2009 ms
+11/26/2020 07:48:02 - Getting index page -
+11/26/2020 07:48:02 HTTP "GET" "/" responded 200 in 14.9859 ms
+11/26/2020 07:48:02 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3769 ms
+11/26/2020 07:48:02 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1952 ms
+11/26/2020 07:48:06 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 5.2448 ms
+11/26/2020 07:48:06 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2068 ms
+11/26/2020 07:48:06 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1987 ms
+11/26/2020 07:48:06 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2335 ms
+11/26/2020 07:48:16 - Getting index page -
+11/26/2020 07:48:16 HTTP "GET" "/" responded 200 in 11.9520 ms
+11/26/2020 07:48:16 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2116 ms
+11/26/2020 07:48:16 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1962 ms
+11/26/2020 07:48:19 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 5.9339 ms
+11/26/2020 07:48:19 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2332 ms
+11/26/2020 07:48:19 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1905 ms
+11/26/2020 07:48:19 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3317 ms
+11/26/2020 07:48:28 - Getting index page -
+11/26/2020 07:48:28 HTTP "GET" "/" responded 200 in 24.8199 ms
+11/26/2020 07:48:28 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2647 ms
+11/26/2020 07:48:28 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1902 ms
+11/26/2020 07:48:30 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 7.2856 ms
+11/26/2020 07:48:30 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1999 ms
+11/26/2020 07:48:30 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1965 ms
+11/26/2020 07:48:30 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2610 ms
+11/26/2020 07:48:45 - Getting index page -
+11/26/2020 07:48:45 HTTP "GET" "/" responded 200 in 20.3539 ms
+11/26/2020 07:48:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2418 ms
+11/26/2020 07:48:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2201 ms
+11/26/2020 07:48:47 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 7.6858 ms
+11/26/2020 07:48:47 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2139 ms
+11/26/2020 07:48:47 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1948 ms
+11/26/2020 07:48:47 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.1865 ms
+11/26/2020 07:48:57 - Getting index page -
+11/26/2020 07:48:57 HTTP "GET" "/" responded 200 in 12.3058 ms
+11/26/2020 07:48:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2205 ms
+11/26/2020 07:48:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1991 ms
+11/26/2020 07:48:59 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 4.3926 ms
+11/26/2020 07:48:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2044 ms
+11/26/2020 07:48:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1873 ms
+11/26/2020 07:48:59 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2605 ms
+11/26/2020 07:49:12 - Getting index page -
+11/26/2020 07:49:12 HTTP "GET" "/" responded 200 in 10.7311 ms
+11/26/2020 07:49:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2424 ms
+11/26/2020 07:49:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2985 ms
+11/26/2020 07:49:14 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 4.2477 ms
+11/26/2020 07:49:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2743 ms
+11/26/2020 07:49:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2155 ms
+11/26/2020 07:49:14 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2123 ms
+11/26/2020 07:49:26 - Getting index page -
+11/26/2020 07:49:26 HTTP "GET" "/" responded 200 in 8.1509 ms
+11/26/2020 07:49:26 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2887 ms
+11/26/2020 07:49:26 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1952 ms
+11/26/2020 07:49:27 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 7.5950 ms
+11/26/2020 07:49:27 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2006 ms
+11/26/2020 07:49:27 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2409 ms
+11/26/2020 07:49:27 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.1917 ms
+11/26/2020 07:49:35 - Getting index page -
+11/26/2020 07:49:35 HTTP "GET" "/" responded 200 in 22.1279 ms
+11/26/2020 07:49:36 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4082 ms
+11/26/2020 07:49:36 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2867 ms
+11/26/2020 07:49:37 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 6.2734 ms
+11/26/2020 07:49:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2241 ms
+11/26/2020 07:49:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1886 ms
+11/26/2020 07:49:37 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2015 ms
+11/26/2020 07:49:43 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 7.2536 ms
+11/26/2020 07:49:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2221 ms
+11/26/2020 07:49:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2691 ms
+11/26/2020 07:50:02 - Getting index page -
+11/26/2020 07:50:02 HTTP "GET" "/" responded 200 in 17.7172 ms
+11/26/2020 07:50:02 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2444 ms
+11/26/2020 07:50:02 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1941 ms
+11/26/2020 07:50:03 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 6.5416 ms
+11/26/2020 07:50:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3466 ms
+11/26/2020 07:50:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2613 ms
+11/26/2020 07:50:04 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2023 ms
+11/26/2020 07:51:06 - Getting index page -
+11/26/2020 07:51:06 HTTP "GET" "/" responded 200 in 22.3629 ms
+11/26/2020 07:51:06 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2044 ms
+11/26/2020 07:51:07 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2134 ms
+11/26/2020 07:51:08 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 6.2180 ms
+11/26/2020 07:51:08 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1818 ms
+11/26/2020 07:51:08 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1949 ms
+11/26/2020 07:51:08 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.1999 ms
+11/26/2020 07:51:56 - Getting index page -
+11/26/2020 07:51:56 HTTP "GET" "/" responded 200 in 24.9657 ms
+11/26/2020 07:51:56 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2001 ms
+11/26/2020 07:51:56 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1989 ms
+11/26/2020 07:51:58 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 6.6330 ms
+11/26/2020 07:51:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1973 ms
+11/26/2020 07:51:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1901 ms
+11/26/2020 07:51:58 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.1963 ms
+11/26/2020 07:52:43 Application starting up
+11/26/2020 07:52:44 - Getting index page -
+11/26/2020 07:52:45 HTTP "GET" "/" responded 200 in 1228.4299 ms
+11/26/2020 07:52:46 HTTP "GET" "/js/playlistView.js" responded 404 in 2.1860 ms
+11/26/2020 07:52:46 HTTP "GET" "/js/playlistView.js" responded 404 in 10.3729 ms
+11/26/2020 07:52:47 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 122.6443 ms
+11/26/2020 07:52:47 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7375 ms
+11/26/2020 07:52:47 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3250 ms
+11/26/2020 07:55:00 Application starting up
+11/26/2020 07:55:01 - Getting index page -
+11/26/2020 07:55:02 HTTP "GET" "/" responded 200 in 1263.1876 ms
+11/26/2020 07:55:03 HTTP "GET" "/js/playlistView.js" responded 404 in 3.9217 ms
+11/26/2020 07:55:03 HTTP "GET" "/js/playlistView.js" responded 404 in 16.3463 ms
+11/26/2020 07:55:04 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 114.8437 ms
+11/26/2020 07:55:04 HTTP "GET" "/js/playlistView.js" responded 404 in 1.4842 ms
+11/26/2020 07:55:04 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3252 ms
+11/26/2020 07:55:04 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3314 ms
+11/26/2020 07:55:51 Application starting up
+11/26/2020 07:55:52 - Getting index page -
+11/26/2020 07:55:53 HTTP "GET" "/" responded 200 in 1284.5593 ms
+11/26/2020 07:55:53 HTTP "GET" "/js/playlistView.js" responded 404 in 2.9768 ms
+11/26/2020 07:55:54 HTTP "GET" "/js/playlistView.js" responded 404 in 10.4463 ms
+11/26/2020 07:55:55 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 113.9518 ms
+11/26/2020 07:55:55 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9663 ms
+11/26/2020 07:55:55 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3391 ms
+11/26/2020 07:56:14 Application starting up
+11/26/2020 07:56:16 - Getting index page -
+11/26/2020 07:56:17 HTTP "GET" "/" responded 200 in 1279.3915 ms
+11/26/2020 07:56:17 HTTP "GET" "/js/playlistView.js" responded 404 in 2.1748 ms
+11/26/2020 07:56:17 HTTP "GET" "/js/playlistView.js" responded 404 in 10.4179 ms
+11/26/2020 07:56:19 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 120.2998 ms
+11/26/2020 07:56:19 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7583 ms
+11/26/2020 07:56:19 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3476 ms
+11/26/2020 07:56:37 - Getting index page -
+11/26/2020 07:56:37 HTTP "GET" "/" responded 200 in 40.8721 ms
+11/26/2020 07:56:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4167 ms
+11/26/2020 07:56:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3384 ms
+11/26/2020 07:56:38 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 21.8502 ms
+11/26/2020 07:56:38 HTTP "GET" "/js/playlistView.js" responded 404 in 1.4581 ms
+11/26/2020 07:56:38 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3172 ms
+11/26/2020 07:56:38 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3160 ms
+11/26/2020 07:57:55 - Getting index page -
+11/26/2020 07:57:55 HTTP "GET" "/" responded 200 in 33.0428 ms
+11/26/2020 07:57:55 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4968 ms
+11/26/2020 07:57:55 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3358 ms
+11/26/2020 07:57:56 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 16.3444 ms
+11/26/2020 07:57:56 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0867 ms
+11/26/2020 07:57:56 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4537 ms
+11/26/2020 07:57:56 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2892 ms
+11/26/2020 07:58:47 - Getting index page -
+11/26/2020 07:58:47 HTTP "GET" "/" responded 200 in 36.8634 ms
+11/26/2020 07:58:47 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3909 ms
+11/26/2020 07:58:47 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3458 ms
+11/26/2020 07:58:48 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 11.2556 ms
+11/26/2020 07:58:48 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1322 ms
+11/26/2020 07:58:48 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3522 ms
+11/26/2020 07:58:48 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2866 ms
+11/26/2020 07:59:03 Application starting up
+11/26/2020 07:59:04 - Getting index page -
+11/26/2020 07:59:05 HTTP "GET" "/" responded 200 in 1217.0324 ms
+11/26/2020 07:59:05 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6438 ms
+11/26/2020 07:59:06 HTTP "GET" "/js/playlistView.js" responded 404 in 10.6386 ms
+11/26/2020 07:59:07 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 114.3608 ms
+11/26/2020 07:59:07 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7747 ms
+11/26/2020 07:59:07 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5337 ms
+11/26/2020 07:59:07 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3364 ms
+11/26/2020 08:00:10 - Getting index page -
+11/26/2020 08:00:10 HTTP "GET" "/" responded 200 in 47.8108 ms
+11/26/2020 08:00:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4778 ms
+11/26/2020 08:00:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3299 ms
+11/26/2020 08:00:11 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 20.8685 ms
+11/26/2020 08:00:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8954 ms
+11/26/2020 08:00:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3100 ms
+11/26/2020 08:00:12 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.5073 ms
+11/26/2020 08:00:28 HTTP "GET" "/css/album-art.jpg" responded 404 in 2.1542 ms
+11/26/2020 08:00:45 - Getting index page -
+11/26/2020 08:00:45 HTTP "GET" "/" responded 200 in 46.4953 ms
+11/26/2020 08:00:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8760 ms
+11/26/2020 08:00:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4044 ms
+11/26/2020 08:00:46 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 12.9500 ms
+11/26/2020 08:00:46 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0983 ms
+11/26/2020 08:00:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4770 ms
+11/26/2020 08:00:46 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3041 ms
+11/26/2020 08:00:58 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.8470 ms
+11/26/2020 08:01:13 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.7035 ms
+11/26/2020 08:01:13 HTTP "GET" "/css/album-art.jpg" responded 404 in 1.0250 ms
+11/26/2020 08:01:48 - Getting index page -
+11/26/2020 08:01:48 HTTP "GET" "/" responded 200 in 34.3841 ms
+11/26/2020 08:01:48 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6800 ms
+11/26/2020 08:01:48 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2892 ms
+11/26/2020 08:01:49 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 13.8417 ms
+11/26/2020 08:01:49 HTTP "GET" "/js/playlistView.js" responded 404 in 1.4156 ms
+11/26/2020 08:01:49 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6468 ms
+11/26/2020 08:01:49 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.5850 ms
+11/26/2020 08:02:22 - Getting index page -
+11/26/2020 08:02:22 HTTP "GET" "/" responded 200 in 30.8040 ms
+11/26/2020 08:02:22 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8993 ms
+11/26/2020 08:02:22 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2672 ms
+11/26/2020 08:02:23 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 10.7538 ms
+11/26/2020 08:02:23 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8505 ms
+11/26/2020 08:02:23 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2625 ms
+11/26/2020 08:02:23 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3163 ms
+11/26/2020 08:02:28 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 6.7659 ms
+11/26/2020 08:02:28 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7939 ms
+11/26/2020 08:02:28 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5364 ms
+11/26/2020 08:02:39 - Getting index page -
+11/26/2020 08:02:39 HTTP "GET" "/" responded 200 in 15.7709 ms
+11/26/2020 08:02:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3049 ms
+11/26/2020 08:02:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3452 ms
+11/26/2020 08:02:40 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 10.7969 ms
+11/26/2020 08:02:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8344 ms
+11/26/2020 08:02:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6925 ms
+11/26/2020 08:02:40 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2614 ms
+11/26/2020 08:02:50 - Getting index page -
+11/26/2020 08:02:50 HTTP "GET" "/" responded 200 in 34.4159 ms
+11/26/2020 08:02:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2561 ms
+11/26/2020 08:02:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2037 ms
+11/26/2020 08:02:51 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 8.3523 ms
+11/26/2020 08:02:51 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2855 ms
+11/26/2020 08:02:51 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2401 ms
+11/26/2020 08:02:51 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2322 ms
+11/26/2020 08:03:15 - Getting index page -
+11/26/2020 08:03:15 HTTP "GET" "/" responded 200 in 24.3323 ms
+11/26/2020 08:03:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2172 ms
+11/26/2020 08:03:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2227 ms
+11/26/2020 08:03:16 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 7.9281 ms
+11/26/2020 08:03:16 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2477 ms
+11/26/2020 08:03:16 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2622 ms
+11/26/2020 08:03:16 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2206 ms
+11/26/2020 08:03:34 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 5.3241 ms
+11/26/2020 08:03:34 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2774 ms
+11/26/2020 08:03:34 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2125 ms
+11/26/2020 08:03:46 - Getting index page -
+11/26/2020 08:03:46 HTTP "GET" "/" responded 200 in 37.0217 ms
+11/26/2020 08:03:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2660 ms
+11/26/2020 08:03:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2306 ms
+11/26/2020 08:03:48 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 10.3495 ms
+11/26/2020 08:03:48 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3102 ms
+11/26/2020 08:03:48 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2356 ms
+11/26/2020 08:03:48 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.1940 ms
+11/26/2020 08:04:02 - Getting index page -
+11/26/2020 08:04:02 HTTP "GET" "/" responded 200 in 29.9716 ms
+11/26/2020 08:04:02 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2181 ms
+11/26/2020 08:04:02 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1957 ms
+11/26/2020 08:04:27 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 8.5695 ms
+11/26/2020 08:04:27 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2900 ms
+11/26/2020 08:04:27 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2801 ms
+11/26/2020 08:04:27 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2039 ms
+11/26/2020 08:04:35 - Getting index page -
+11/26/2020 08:04:35 HTTP "GET" "/" responded 200 in 26.5929 ms
+11/26/2020 08:04:35 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3092 ms
+11/26/2020 08:04:36 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2078 ms
+11/26/2020 08:04:37 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 4.7334 ms
+11/26/2020 08:04:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3479 ms
+11/26/2020 08:04:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1963 ms
+11/26/2020 08:04:37 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2827 ms
+11/26/2020 08:04:46 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 4.3533 ms
+11/26/2020 08:04:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2939 ms
+11/26/2020 08:04:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2482 ms
+11/26/2020 08:04:57 - Getting index page -
+11/26/2020 08:04:57 HTTP "GET" "/" responded 200 in 21.1839 ms
+11/26/2020 08:04:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2054 ms
+11/26/2020 08:04:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2348 ms
+11/26/2020 08:04:58 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 7.0839 ms
+11/26/2020 08:04:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2645 ms
+11/26/2020 08:04:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2109 ms
+11/26/2020 08:04:58 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2007 ms
+11/26/2020 08:05:07 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 4.3133 ms
+11/26/2020 08:05:07 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2568 ms
+11/26/2020 08:05:07 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2293 ms
+11/26/2020 08:06:30 - Getting index page -
+11/26/2020 08:06:30 HTTP "GET" "/" responded 200 in 24.8893 ms
+11/26/2020 08:06:30 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2353 ms
+11/26/2020 08:06:30 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2905 ms
+11/26/2020 08:06:31 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 7.3075 ms
+11/26/2020 08:06:31 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2597 ms
+11/26/2020 08:06:31 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2185 ms
+11/26/2020 08:06:31 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.1938 ms
+11/26/2020 08:06:40 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 4.2178 ms
+11/26/2020 08:06:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7802 ms
+11/26/2020 08:06:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2432 ms
+11/26/2020 08:06:49 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 3.6385 ms
+11/26/2020 08:06:49 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2657 ms
+11/26/2020 08:06:49 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2075 ms
+11/26/2020 08:07:39 - Getting index page -
+11/26/2020 08:07:39 HTTP "GET" "/" responded 200 in 21.4462 ms
+11/26/2020 08:07:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2368 ms
+11/26/2020 08:07:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1910 ms
+11/26/2020 08:07:40 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 6.0216 ms
+11/26/2020 08:07:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2715 ms
+11/26/2020 08:07:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2063 ms
+11/26/2020 08:07:40 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.1942 ms
+11/26/2020 08:07:55 HTTP "GET" "/Playlists/Playlist/1021?id=1021&pageNumber=2" responded 200 in 4.8795 ms
+11/26/2020 08:07:56 HTTP "GET" "/Playlists/Playlist/1021?id=1021&pageNumber=3" responded 200 in 3.5659 ms
+11/26/2020 08:08:11 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2794 ms
+11/26/2020 08:08:11 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2078 ms
+11/26/2020 08:08:14 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.1957 ms
+11/26/2020 08:08:15 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2797 ms
+11/26/2020 08:08:18 HTTP "GET" "/Playlists/Playlist/1021?id=1021&pageNumber=2" responded 200 in 6.9646 ms
+11/26/2020 08:08:23 HTTP "GET" "/Playlists/Playlist/1021?id=1021&pageNumber=3" responded 200 in 3.4797 ms
+11/26/2020 08:08:25 HTTP "GET" "/Playlists/Playlist/1021?id=1021&pageNumber=3" responded 200 in 3.5705 ms
+11/26/2020 08:08:27 HTTP "GET" "/Playlists/Playlist/1021?id=1021&pageNumber=2" responded 200 in 6.8596 ms
+11/26/2020 08:08:41 HTTP "GET" "/Playlists/Playlist/1021" responded 200 in 6.6106 ms
+11/26/2020 08:08:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2538 ms
+11/26/2020 08:08:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2021 ms
+11/26/2020 08:08:58 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2882 ms
+11/26/2020 08:08:59 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2052 ms
+11/26/2020 08:09:01 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2109 ms
+11/26/2020 08:09:03 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2429 ms
+11/26/2020 08:09:05 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2771 ms
+11/26/2020 08:09:05 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.1960 ms
+11/26/2020 08:09:24 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2789 ms
+11/26/2020 08:09:27 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2156 ms
+11/26/2020 08:09:30 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2107 ms
+11/26/2020 08:09:58 HTTP "GET" "/Playlists/Create" responded 200 in 54.9049 ms
+11/26/2020 08:09:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2255 ms
+11/26/2020 08:09:59 HTTP "GET" "/Playlists/Create/ws" responded 200 in 3.8637 ms
+11/26/2020 08:10:08 Playlist with title 'Koda' has been created.
+11/26/2020 08:10:08 HTTP "POST" "/Playlists/Create" responded 302 in 1646.7876 ms
+11/26/2020 08:10:08 HTTP "GET" "/Playlists" responded 200 in 14.8199 ms
+11/26/2020 08:10:08 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2915 ms
+11/26/2020 08:10:08 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3228 ms
+11/26/2020 08:10:10 HTTP "GET" "/Playlists/Playlist/1022" responded 200 in 6.9690 ms
+11/26/2020 08:10:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3612 ms
+11/26/2020 08:10:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3963 ms
+11/26/2020 08:10:10 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.2253 ms

@@ -95,10 +95,19 @@ namespace PG.Web.Controllers
             PlaylistDTO playlistDTO = await _playlistService.GetPlaylistById(id);
             PlaylistViewModel playlistViewModel = playlistDTO.ToViewModel();
 
-            playlistViewModel.SongsPaged = playlistViewModel.Songs.ToPagedList(pageNumber, 18);
+            playlistViewModel.SongsPaged = playlistViewModel.Songs.ToPagedList(pageNumber, 13);
 
 
             return View(playlistViewModel);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> DeletePlaylistWeb(int id)
+        {
+            await _playlistService.Delete(id);
+
+            return RedirectToAction("Index");
         }
     }
 }

@@ -17,16 +17,27 @@
 
     else
     {
-        <div class="wrapper">
-            @foreach (var item in Model)
-            {
-                <div>
-                    <p>@item.Title <br /> @item.DurationInHours </p>
-                    <a style="background: url(@item.PixabayImage)" class="list-group" asp-controller="Playlists" asp-action="Playlist"
-                       asp-route-id="@item.Id">@item.Rank</a>
-                </div>
-            }
-        </div>
+<div class="wrapper">
+    @foreach (var item in Model)
+    {
+    <div>
+        <p>@item.Title <br /> @item.DurationInHours </p>
+        <a style="background: url(@item.PixabayImage)" class="list-group" asp-controller="Playlists" asp-action="Playlist"
+           asp-route-id="@item.Id">@item.Rank</a>
+
+        <form class="form" method="post" asp-controller="Playlists" asp-action="DeletePlaylistWeb" style="margin-bottom:30px">
+            <input type="hidden" name="id" value="@item.Id" />
+            <div class="form__buttons buttons">
+                <button type="submit">Delete</button>
+            </div>
+        </form>
+    </div>
+
+
+
+        @*<a asp-controller="Playlists" asp-action="DeletePlaylistWeb" asp-route-id="@item.Id"> delete </a>*@
+    }
+</div>
     }
 
     <style>

@@ -17,7 +17,7 @@
 .upperPlaylist {
     position: absolute;
     width: 100%;
-    height: 47vh;
+    height: 25vh;
     background: #4f4538;
     opacity: 0;
     animation: appear-text 0.0001s linear forwards;
@@ -27,8 +27,8 @@
 .bottomPlaylist {
     position: absolute;
     z-index: 1000;
-    top: 50%;
-    height: 47vh;
+    top: 26.5%;
+    height: 70%;
     width: 100%;
     background-size: cover;
     opacity: 0;
@@ -80,7 +80,6 @@
 
 .coverPlaylist {
     position: absolute;
-    top: 35%;
     left: 40%;
     transform: translate(-50%, -50%);
     width: 70%;
@@ -89,9 +88,8 @@
     background-size: cover;
     opacity: 0;
     animation: appear-text 0.0001s linear forwards;
-    animation-delay: 2.6s;
+    animation-delay: 3.3s;
     text-align: center;
-
     margin-top: 8vh;
     margin-left: 1vw;
 }
@@ -115,10 +113,10 @@
     font-size: 10px;
 }
 
-.playPlaylist, .nextPlaylist ion-iconPlaylist {
+.playPlaylist {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    bottom: 0%;
+    right: 0%;
     transform: translate(-50%, -50%);
     color: #fff;
     opacity: 0.6;
@@ -204,7 +202,7 @@
 
 .block-coverPlaylist {
     position: absolute;
-    top: 35%;
+    top: 34%;
     left: 40%;
     transform: translate(-50%, -50%);
     width: 70%;
@@ -257,7 +255,7 @@
 .upper-blockPlaylist {
     position: absolute;
     width: 100%;
-    height: 47vh;
+    height: 25vh;
 }
 
     .upper-blockPlaylist::after {
@@ -274,8 +272,8 @@
 
 .block-bottomPlaylist {
     position: absolute;
-    top: 50%;
-    height: 47vh;
+    top: 26.5%;
+    height: 69vh;
     width: 100%;
 }
 
@@ -293,15 +291,9 @@
 
 
 
-
-
-
-
 /*
     Player 
 */
-
-
 .progressbarplay {
     cursor: pointer;
     overflow: hidden;
@@ -323,29 +315,25 @@
     border-radius: 6px;
 }
 
-.progressbarplay .bar {
-    cursor: pointer;
-    background: #4496C6;
-    width: 0;
-    height: 8px;
-    color: white;
-    font-size: 12px;
-    text-align: center;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.15);
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: width .6s ease;
-    -moz-transition: width .6s ease;
-    -o-transition: width .6s ease;
-    transition: width .6s ease;
-}
+    .progressbarplay .bar {
+        cursor: pointer;
+        background: #4496C6;
+        width: 0;
+        height: 8px;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.15);
+        box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: width .6s ease;
+        -moz-transition: width .6s ease;
+        -o-transition: width .6s ease;
+        transition: width .6s ease;
+    }
 
-.playlistPlayer{
-    margin-top: 15vh;
-}
 
-    

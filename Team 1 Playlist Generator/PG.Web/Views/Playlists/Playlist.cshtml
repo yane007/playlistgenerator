@@ -9,7 +9,9 @@
         <div class="coverPlaylist">
 
             <div id="playlistInfo">
-                <partial name="_PlaylistDetails" model="Model.SongsPaged">
+                <table class="table table-striped">
+                    <partial name="_PlaylistDetails" model="Model.SongsPaged">
+                </table>
             </div>
 
             @for (int i = 0; i < Model.SongsPaged.PageCount; i++)
@@ -41,15 +43,8 @@
 
         <div class="upper-blockPlaylist"></div>
 
-        <div class="bottomPlaylist" style=" background: url(@Model.PixabayImage) no-repeat 50% 50%;">
-            <div class="data2Playlist">
-                <div class="album-name3Playlist">
-                    <p id="namePlaylist">Play Playlist</p>
-                </div>
-                <div class="album-artist3Playlist">
-                    <p id="artistPlaylist">Powered by Deezer</p>
-                </div>
-            </div>
+        <div class="bottomPlaylist" >
+
             <div style="position:fixed; margin-bottom: 16vh;">
                 <div id="dz-root"></div>
                 <div id="player"></div>
@@ -71,14 +66,6 @@ function LoadPlaylistPage(id, pageNumber) {
             $('#playlistInfo').html(result);
         });
     }
-
-
-
-
-
-
-
-
 
 
 
@@ -115,8 +102,8 @@ function LoadPlaylistPage(id, pageNumber) {
             player: {
                 container: 'player',
                 playlist: true,
-                width: 650,
-                height: 90,
+                width:  957,
+                height: 700,
                 onload: onPlayerLoaded
             }
         });
