@@ -1,12 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using PG.Data.Context;
 using PG.Models;
 using PG.Services.Contract;
 using PG.Services.DTOs;
 using PG.Services.Mappers;
+using PG.Services.MappingModelsAPI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace PG.Services
@@ -14,10 +17,16 @@ namespace PG.Services
     public class GenreService : IGenreService
     {
         private readonly PGDbContext _context;
+        private readonly HttpClient _httpClient;
+        private readonly IArtistService _artistService;
+        private readonly ISongService _songService;
 
-        public GenreService(PGDbContext context)
+        public GenreService(PGDbContext context, IArtistService artistService, ISongService songService)
         {
             _context = context;
+            _artistService = artistService;
+            _songService = songService;
+            _httpClient = new HttpClient();
         }
 
 
@@ -62,14 +71,14 @@ namespace PG.Services
 
         public async Task<IEnumerable<GenreDTO>> GetAllGenres()
         {
-            return await _context.Genres.Where(x => x.IsDeleted == false)
+            return await _context.Genres.Where(x => !x.IsDeleted)
                                   .Select(x => x.ToDTO())
                                   .ToListAsync();
         }
 
         public async Task<GenreDTO> GetGenreById(int id)
         {
-            var genre = await _context.Genres.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
+            var genre = await _context.Genres.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
             if (genre == null)
             {
                 throw new ArgumentNullException($"Genre with id {id} was not found.");
@@ -78,15 +87,117 @@ namespace PG.Services
             return genre.ToDTO();
         }
 
-        public Task SyncGenresAsync()
+        public async Task SyncGenresAsync()
         {
-            //TODO: 
-            throw new NotImplementedException();
+            var dbGenres = await GetAllGenres();
+
+            foreach (var genre in dbGenres)
+            {
+
+                var playlistsResponse = await _httpClient.GetAsync($"https://api.deezer.com/search/playlist?q={genre.Name}");
+                var playlistsResponseResult = await playlistsResponse.Content.ReadAsStringAsync();
+                var deezerPlaylists = JsonConvert.DeserializeObject<QueryPlaylistsAPI>(playlistsResponseResult);
+
+                if (deezerPlaylists.Data == null)
+                {
+                    continue;
+                }
+
+                foreach (var playlist in deezerPlaylists.Data)
+                {
+
+                    var playlistResponse = await _httpClient.GetAsync(playlist.Tracklist);
+                    var playlistResponseResult = await playlistResponse.Content.ReadAsStringAsync();
+                    var deezerPlaylist = JsonConvert.DeserializeObject<PlaylistAPI>(playlistResponseResult);
+
+                    if (deezerPlaylist.Data == null)
+                    {
+                        continue;
+                    }
+
+                    foreach (var song in deezerPlaylist.Data)
+                    {
+                        if (song.Preview == null || song.Preview.Length < 5)
+                        {
+                            continue;
+                        }
+
+                        var dbsong = await _context.Songs.FirstOrDefaultAsync(x => x.Title == song.Title && !x.IsDeleted);
+                        if (dbsong == null)
+                        {
+                            var dbArtist = await _context.Artists.FirstOrDefaultAsync(x => x.Name == song.Artist.Name);
+                            if (dbArtist == null)
+                            {
+                                var addedArtist = await _artistService.Create(new ArtistDTO()
+                                {
+                                    Name = song.Artist.Name,
+                                    Tracklist = song.Artist.Tracklist,
+                                    Type = song.Artist.Type
+                                });
+
+                                dbArtist = addedArtist.ToEntity();
+
+                                await _context.SaveChangesAsync();
+                            }
+
+                            var dbAlbum = await _context.Albums.FirstOrDefaultAsync(x => x.Title == song.Album.Title && !x.IsDeleted);
+                            if (dbAlbum == null)
+                            {
+                                //No service
+                                var addedAlbum = await _context.Albums.AddAsync(new Album()
+                                {
+                                    Title = song.Album.Title,
+                                    Tracklist = song.Album.Tracklist,
+                                });
+                                dbAlbum = addedAlbum.Entity;
+
+                                await _context.SaveChangesAsync();
+                            }
+
+                            var songToAdd = new Song()
+                            {
+                                Title = song.Title,
+                                DeezerID = song.Id,
+                                Duration = song.Duration,
+                                Rank = song.Rank,
+                                Preview = song.Preview,
+                                Link = song.Link,
+                                GenreId = genre.Id,
+                                ArtistId = dbArtist.Id,
+                                AlbumId = dbAlbum.Id
+                            };
+
+                            await _songService.Create(songToAdd.ToDTO());
+
+                            continue;
+                        }
+
+                        if (dbsong.Title != song.Title || dbsong.Preview != song.Preview)
+                        {
+                            var updatedSongData = new SongDTO
+                            {
+                                DeezerID = dbsong.DeezerID,
+                                Title = dbsong.Title,
+                                Duration = dbsong.Duration,
+                                Rank = dbsong.Rank,
+                                Preview = dbsong.Preview,
+                            };
+
+                            await _songService.Update(dbsong.Id, updatedSongData);
+                        }
+                    }
+
+                    await _context.SaveChangesAsync();
+
+                    System.Threading.Thread.Sleep(150);
+                }
+            }
+
         }
 
         public async Task<GenreDTO> Update(int id, GenreDTO genreDTO)
         {
-            var genre = await _context.Genres.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
+            var genre = await _context.Genres.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
             if (genre == null)
             {
                 throw new ArgumentNullException($"Genre with id {id} was not found.");

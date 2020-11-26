@@ -61,14 +61,14 @@ namespace PG.Services
 
         public async Task<IEnumerable<ArtistDTO>> GetAllArtists()
         {
-            return await _context.Artists.Where(x => x.IsDeleted == false)
+            return await _context.Artists.Where(x => !x.IsDeleted)
                                         .Select(x => x.ToDTO())
                                         .ToListAsync();
         }
 
         public async Task<ArtistDTO> GetArtistById(int id)
         {
-            var artist = await _context.Artists.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
+            var artist = await _context.Artists.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
             if (artist == null)
             {
                 throw new ArgumentNullException($"Artist with id {id} was not found.");
@@ -79,7 +79,7 @@ namespace PG.Services
 
         public async Task<ArtistDTO> Update(int id, ArtistDTO artistDTO)
         {
-            var artist = await _context.Artists.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
+            var artist = await _context.Artists.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
             if (artist == null)
             {
                 throw new ArgumentNullException($"Artist with id {id} was not found.");

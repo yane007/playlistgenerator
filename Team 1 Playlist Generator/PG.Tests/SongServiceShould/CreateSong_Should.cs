@@ -63,14 +63,14 @@ namespace PG.Tests.SongServiceShould
         }
 
         [TestMethod]
-        public async Task ThrowWhenSongTitleIsMoreThan50Chars()
+        public async Task ThrowWhenSongTitleIsMoreThan200Chars()
         {
             //Arrange
-            var options = Utils.GetOptions(nameof(ThrowWhenSongTitleIsMoreThan50Chars));
+            var options = Utils.GetOptions(nameof(ThrowWhenSongTitleIsMoreThan200Chars));
             var songDTO = new SongDTO
             {
                 Id = 1,
-                Title = "Something Wrong - Test example of an song name with more than 50 characters",
+                Title = new String('T', 205),
                 Duration = 150,
                 Rank = 10000
             };

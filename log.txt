@@ -17553,3 +17553,126 @@ System.ArgumentOutOfRangeException: Specified argument was out of the range of v
 11/26/2020 15:57:39 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 6.5165 ms
 11/26/2020 15:57:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5700 ms
 11/26/2020 15:57:39 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.4999 ms
+11/26/2020 17:04:33 Application starting up
+11/26/2020 17:04:36 - Getting index page -
+11/26/2020 17:04:36 HTTP "GET" "/" responded 200 in 1562.3850 ms
+11/26/2020 17:04:36 HTTP "GET" "/js/playlistView.js" responded 404 in 2.5273 ms
+11/26/2020 17:04:36 HTTP "GET" "/js/playlistView.js" responded 404 in 10.4539 ms
+11/26/2020 17:04:39 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 117.1113 ms
+11/26/2020 17:04:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7177 ms
+11/26/2020 17:04:39 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3440 ms
+11/26/2020 17:06:11 - Getting index page -
+11/26/2020 17:06:11 HTTP "GET" "/" responded 200 in 40.4041 ms
+11/26/2020 17:06:11 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2571 ms
+11/26/2020 17:06:11 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3530 ms
+11/26/2020 17:06:13 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 15.0198 ms
+11/26/2020 17:06:13 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6266 ms
+11/26/2020 17:06:13 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3095 ms
+11/26/2020 17:06:28 - Getting index page -
+11/26/2020 17:06:28 HTTP "GET" "/" responded 200 in 35.5619 ms
+11/26/2020 17:06:28 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3859 ms
+11/26/2020 17:06:28 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3359 ms
+11/26/2020 17:06:29 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 23.5463 ms
+11/26/2020 17:06:29 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0914 ms
+11/26/2020 17:06:29 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.6351 ms
+11/26/2020 17:07:39 Application starting up
+11/26/2020 17:07:40 - Getting index page -
+11/26/2020 17:07:42 HTTP "GET" "/" responded 200 in 1218.2254 ms
+11/26/2020 17:07:42 HTTP "GET" "/js/playlistView.js" responded 404 in 3.6452 ms
+11/26/2020 17:07:42 HTTP "GET" "/js/playlistView.js" responded 404 in 11.6836 ms
+11/26/2020 17:07:43 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 123.0803 ms
+11/26/2020 17:07:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7383 ms
+11/26/2020 17:07:43 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3275 ms
+11/26/2020 17:07:57 - Getting index page -
+11/26/2020 17:07:57 HTTP "GET" "/" responded 200 in 35.9559 ms
+11/26/2020 17:07:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8862 ms
+11/26/2020 17:07:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3331 ms
+11/26/2020 17:07:58 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 11.3114 ms
+11/26/2020 17:07:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4870 ms
+11/26/2020 17:07:58 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3231 ms
+11/26/2020 17:08:32 Application starting up
+11/26/2020 17:08:37 Application starting up
+11/26/2020 17:08:37 - Getting index page -
+11/26/2020 17:08:38 HTTP "GET" "/" responded 200 in 1200.8990 ms
+11/26/2020 17:08:39 HTTP "GET" "/js/playlistView.js" responded 404 in 3.4393 ms
+11/26/2020 17:08:39 HTTP "GET" "/js/playlistView.js" responded 404 in 10.8462 ms
+11/26/2020 17:08:43 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 117.6979 ms
+11/26/2020 17:08:43 HTTP "GET" "/js/playlistView.js" responded 404 in 1.8839 ms
+11/26/2020 17:08:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3188 ms
+11/26/2020 17:08:44 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3367 ms
+11/26/2020 17:11:19 Application starting up
+11/26/2020 17:11:20 - Getting index page -
+11/26/2020 17:11:21 HTTP "GET" "/" responded 200 in 1200.1787 ms
+11/26/2020 17:11:21 HTTP "GET" "/js/playlistView.js" responded 404 in 2.8326 ms
+11/26/2020 17:11:21 HTTP "GET" "/js/playlistView.js" responded 404 in 12.6899 ms
+11/26/2020 17:13:45 Application starting up
+11/26/2020 17:13:46 - Getting index page -
+11/26/2020 17:13:48 HTTP "GET" "/" responded 200 in 1281.4541 ms
+11/26/2020 17:13:48 HTTP "GET" "/js/playlistView.js" responded 404 in 2.2394 ms
+11/26/2020 17:13:48 HTTP "GET" "/js/playlistView.js" responded 404 in 12.8352 ms
+11/26/2020 17:14:35 Application starting up
+11/26/2020 17:14:36 - Getting index page -
+11/26/2020 17:14:37 HTTP "GET" "/" responded 200 in 1173.7522 ms
+11/26/2020 17:14:37 HTTP "GET" "/js/playlistView.js" responded 404 in 4.6220 ms
+11/26/2020 17:14:37 HTTP "GET" "/js/playlistView.js" responded 404 in 12.8412 ms
+11/26/2020 21:19:15 Application starting up
+11/26/2020 21:19:18 - Getting index page -
+11/26/2020 21:19:18 HTTP "GET" "/" responded 200 in 914.1973 ms
+11/26/2020 21:19:18 HTTP "GET" "/js/playlistView.js" responded 404 in 13.0491 ms
+11/26/2020 21:19:18 HTTP "GET" "/js/playlistView.js" responded 404 in 12.7041 ms
+11/26/2020 21:20:47 Application starting up
+11/26/2020 21:20:48 - Getting index page -
+11/26/2020 21:20:49 HTTP "GET" "/" responded 200 in 963.3331 ms
+11/26/2020 21:20:49 HTTP "GET" "/js/playlistView.js" responded 404 in 3.9342 ms
+11/26/2020 21:21:31 Application starting up
+11/26/2020 21:22:20 - Getting index page -
+11/26/2020 21:22:26 HTTP "GET" "/" responded 200 in 6246.5923 ms
+11/26/2020 21:22:26 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4268 ms
+11/26/2020 21:22:50 Application starting up
+11/26/2020 21:22:52 - Getting index page -
+11/26/2020 21:22:53 HTTP "GET" "/" responded 200 in 671.8083 ms
+11/26/2020 21:22:53 HTTP "GET" "/js/playlistView.js" responded 404 in 2.7212 ms
+11/26/2020 21:27:14 Application starting up
+11/26/2020 21:27:16 - Getting index page -
+11/26/2020 21:27:17 HTTP "GET" "/" responded 200 in 1082.3861 ms
+11/26/2020 21:27:17 HTTP "GET" "/js/playlistView.js" responded 404 in 8.4499 ms
+11/26/2020 21:32:07 Application starting up
+11/26/2020 21:32:09 - Getting index page -
+11/26/2020 21:32:10 HTTP "GET" "/" responded 200 in 1006.4529 ms
+11/26/2020 21:32:10 HTTP "GET" "/js/playlistView.js" responded 404 in 2.9786 ms
+11/26/2020 21:37:15 Application starting up
+11/26/2020 21:37:16 - Getting index page -
+11/26/2020 21:37:17 HTTP "GET" "/" responded 200 in 464.6067 ms
+11/26/2020 21:37:17 HTTP "GET" "/js/playlistView.js" responded 404 in 2.3382 ms
+11/26/2020 21:37:17 HTTP "GET" "/js/playlistView.js" responded 404 in 10.5830 ms
+11/26/2020 21:37:43 Application starting up
+11/26/2020 21:37:45 - Getting index page -
+11/26/2020 21:37:46 HTTP "GET" "/" responded 200 in 840.0848 ms
+11/26/2020 21:37:46 HTTP "GET" "/js/playlistView.js" responded 404 in 4.1213 ms
+11/26/2020 21:39:44 Application starting up
+11/26/2020 21:39:45 - Getting index page -
+11/26/2020 21:39:45 HTTP "GET" "/" responded 200 in 466.5466 ms
+11/26/2020 21:39:46 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6496 ms
+11/26/2020 21:39:46 HTTP "GET" "/js/playlistView.js" responded 404 in 10.2922 ms
+11/26/2020 21:40:07 Application starting up
+11/26/2020 21:40:08 - Getting index page -
+11/26/2020 21:40:09 HTTP "GET" "/" responded 200 in 806.8640 ms
+11/26/2020 21:40:09 HTTP "GET" "/js/playlistView.js" responded 404 in 6.0825 ms
+11/26/2020 21:40:20 Application starting up
+11/26/2020 21:40:21 - Getting index page -
+11/26/2020 21:40:22 HTTP "GET" "/" responded 200 in 485.8210 ms
+11/26/2020 21:40:22 HTTP "GET" "/js/playlistView.js" responded 404 in 2.0238 ms
+11/26/2020 21:40:22 HTTP "GET" "/js/playlistView.js" responded 404 in 10.2418 ms
+11/26/2020 21:40:46 Application starting up
+11/26/2020 21:40:48 - Getting index page -
+11/26/2020 21:40:49 HTTP "GET" "/" responded 200 in 840.4141 ms
+11/26/2020 21:40:49 HTTP "GET" "/js/playlistView.js" responded 404 in 3.1308 ms
+11/26/2020 21:41:24 Application starting up
+11/26/2020 21:41:25 - Getting index page -
+11/26/2020 21:41:25 HTTP "GET" "/" responded 200 in 422.5722 ms
+11/26/2020 21:41:25 HTTP "GET" "/js/playlistView.js" responded 404 in 2.7256 ms
+11/26/2020 21:41:25 HTTP "GET" "/js/playlistView.js" responded 404 in 11.3282 ms
+11/26/2020 21:42:03 Application starting up
+11/26/2020 21:42:05 - Getting index page -
+11/26/2020 21:42:05 HTTP "GET" "/" responded 200 in 891.3489 ms
+11/26/2020 21:42:05 HTTP "GET" "/js/playlistView.js" responded 404 in 3.0715 ms

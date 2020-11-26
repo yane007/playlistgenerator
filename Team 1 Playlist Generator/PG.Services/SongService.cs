@@ -47,7 +47,7 @@ namespace PG.Services
         public async Task<IEnumerable<SongDTO>> GetAllSongs()
         {
             return await _context.Songs
-                                 .Where(x => x.IsDeleted == false)
+                                 .Where(x => !x.IsDeleted)
                                  .Select(x => x.ToDTO())
                                  .ToListAsync();
         }
@@ -55,14 +55,14 @@ namespace PG.Services
         public async Task<IEnumerable<SongDTO>> GetSongsByArtist(int artistId)
         {
             return await _context.Songs
-                                 .Where(x => x.ArtistId == artistId && x.IsDeleted == false)
+                                 .Where(x => x.ArtistId == artistId && !x.IsDeleted)
                                  .Select(x => x.ToDTO())
                                  .ToListAsync();
         }
 
         public async Task<SongDTO> GetSongById(int id)
         {
-            var song = await _context.Songs.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
+            var song = await _context.Songs.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
             if (song == null)
             {
                 throw new ArgumentNullException($"Song with id {id} was not found.");
@@ -73,7 +73,7 @@ namespace PG.Services
 
         public async Task<SongDTO> Update(int id, SongDTO songDTO)
         {
-            var song = await _context.Songs.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
+            var song = await _context.Songs.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
             if (song == null)
             {
                 throw new ArgumentNullException($"Song with id {id} was not found.");
@@ -83,8 +83,13 @@ namespace PG.Services
             song.Duration = songDTO.Duration;
             song.Rank = songDTO.Rank;
             song.Preview = songDTO.Preview;
-            song.ArtistId = songDTO.ArtistId;
-            song.GenreId = songDTO.GenreId;
+
+            if (songDTO.ArtistId != null && songDTO.GenreId != null && songDTO.AlbumId != null)
+            {
+                song.ArtistId = songDTO.ArtistId.GetValueOrDefault();
+                song.GenreId = songDTO.GenreId.GetValueOrDefault();
+                song.AlbumId = songDTO.AlbumId.GetValueOrDefault();
+            }
 
             await _context.SaveChangesAsync();
 

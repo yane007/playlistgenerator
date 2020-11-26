@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using PG.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,6 +13,8 @@ namespace PG.Tests.UserServiceShould
         [TestMethod]
         public async Task BanUser()
         {
+            User user = new User { NormalizedUserName = "eto"};
+
 
         }
     }

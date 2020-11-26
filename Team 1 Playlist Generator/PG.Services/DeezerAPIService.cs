@@ -30,7 +30,7 @@ namespace PG.Services
         }
 
 
-        public async Task ExtractSongsFromPlaylists(string genre)
+        public async Task ExtractSongsFromGenre(string genre)
         {
             genre = genre.ToLower();
             var dbGenre = await _context.Genres.FirstOrDefaultAsync(x => x.Name == genre);
@@ -60,7 +60,7 @@ namespace PG.Services
                         continue;
                     }
 
-                    var dbArtist = await _context.Artists.FirstOrDefaultAsync(x => x.Name == song.Artist.Name);
+                    var dbArtist = await _context.Artists.FirstOrDefaultAsync(x => x.Name == song.Artist.Name && !x.IsDeleted);
                     if (dbArtist == null)
                     {
                         var addedArtist = await _artistService.Create(new ArtistDTO()
@@ -75,7 +75,7 @@ namespace PG.Services
                         await _context.SaveChangesAsync();
                     }
 
-                    var dbAlbum = await _context.Albums.FirstOrDefaultAsync(x => x.Title == song.Album.Title);
+                    var dbAlbum = await _context.Albums.FirstOrDefaultAsync(x => x.Title == song.Album.Title && !x.IsDeleted);
                     if (dbAlbum == null)
                     {
                         //No service
@@ -89,7 +89,7 @@ namespace PG.Services
                         await _context.SaveChangesAsync();
                     }
 
-                    var dbSong = await _context.Songs.FirstOrDefaultAsync(x => x.Title == song.Title);
+                    var dbSong = await _context.Songs.FirstOrDefaultAsync(x => x.Title == song.Title && !x.IsDeleted);
                     if (dbSong == null)
                     {
                         dbSong = new Song()
@@ -99,16 +99,13 @@ namespace PG.Services
                             Duration = song.Duration,
                             Rank = song.Rank,
                             Preview = song.Preview,
-                            //Link = song.Link,
+                            Link = song.Link,
                             GenreId = dbGenreAdded.Id,
                             ArtistId = dbArtist.Id,
                             AlbumId = dbAlbum.Id
                         };
 
                         await _songService.Create(dbSong.ToDTO());
-
-                        //dbAlbum.Songs.Add(dbSong);
-
                     } 
                 }
 

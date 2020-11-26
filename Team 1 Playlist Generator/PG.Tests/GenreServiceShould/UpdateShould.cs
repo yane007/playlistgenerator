@@ -24,7 +24,7 @@ namespace PG.Tests.GenreServiceShould
 
             using (var arrangeContext = new PGDbContext(options))
             {
-                var sut = new GenreService(arrangeContext);
+                var sut = new GenreService(arrangeContext, new ArtistService(arrangeContext), new SongService(arrangeContext));
 
                 await sut.Create(popGenre);
 
@@ -33,7 +33,7 @@ namespace PG.Tests.GenreServiceShould
 
             using (var assertContext = new PGDbContext(options))
             {
-                var sut = new GenreService(assertContext);
+                var sut = new GenreService(assertContext, new ArtistService(assertContext), new SongService(assertContext));
 
                 var userPalylists = await sut.Update(1, popGenre);
 
@@ -53,7 +53,7 @@ namespace PG.Tests.GenreServiceShould
             };
             var assertContext = new PGDbContext(options);
 
-            var sut = new GenreService(assertContext);
+            var sut = new GenreService(assertContext, new ArtistService(assertContext), new SongService(assertContext));
 
             await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Update(1, popGenre));
         }

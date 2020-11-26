@@ -28,14 +28,15 @@ namespace PG.Tests.PlaylistServiceShould
             User user = new User();
 
             var arrangeContext = new PGDbContext(options);
+            var _genreService = new GenreService(arrangeContext, new ArtistService(arrangeContext), new SongService(arrangeContext));
 
-            var deezerService = new DeezerAPIService(arrangeContext, new GenreService(arrangeContext), 
+            var deezerService = new DeezerAPIService(arrangeContext, _genreService,
                 new ArtistService(arrangeContext), new SongService(arrangeContext));
 
             //TODO: 
-            await deezerService.ExtractSongsFromPlaylists("pop");
-            await deezerService.ExtractSongsFromPlaylists("rock");
-            await deezerService.ExtractSongsFromPlaylists("metal");
+            await deezerService.ExtractSongsFromGenre("pop");
+            await deezerService.ExtractSongsFromGenre("rock");
+            await deezerService.ExtractSongsFromGenre("metal");
 
             var sut = new PlaylistService(arrangeContext);
 

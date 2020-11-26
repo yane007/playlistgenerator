@@ -66,10 +66,10 @@ namespace PG.Web.Controllers
         [NonAction]
         public async Task GetAlbumAsync()
         {
-            await _apiService.ExtractSongsFromPlaylists("pop");
-            await _apiService.ExtractSongsFromPlaylists("rock");
-            await _apiService.ExtractSongsFromPlaylists("metal");
-            await _apiService.ExtractSongsFromPlaylists("chalga");
+            await _apiService.ExtractSongsFromGenre("pop");
+            await _apiService.ExtractSongsFromGenre("rock");
+            await _apiService.ExtractSongsFromGenre("metal");
+            await _apiService.ExtractSongsFromGenre("chalga");
         }
 
     }

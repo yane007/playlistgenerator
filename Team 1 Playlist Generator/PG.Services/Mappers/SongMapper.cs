@@ -1,8 +1,5 @@
 ﻿using PG.Models;
 using PG.Services.DTOs;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PG.Services.Mappers
 {
@@ -20,7 +17,7 @@ namespace PG.Services.Mappers
                 Preview = song.Preview,
                 ArtistId = song.ArtistId,
                 GenreId = song.GenreId,
-                AlbumId = song.AlbumId
+                AlbumId = song.AlbumId,
             };
         }
         public static Song ToEntity(this SongDTO songDTO)
@@ -33,9 +30,9 @@ namespace PG.Services.Mappers
                 Duration = songDTO.Duration,
                 Rank = songDTO.Rank,
                 Preview = songDTO.Preview,
-                ArtistId = songDTO.ArtistId,
-                GenreId = songDTO.GenreId,
-                AlbumId = songDTO.AlbumId
+                ArtistId = songDTO.ArtistId.GetValueOrDefault(),
+                GenreId = songDTO.GenreId.GetValueOrDefault(),
+                AlbumId = songDTO.AlbumId.GetValueOrDefault(),
             };
         }
     }

@@ -8,6 +8,6 @@ namespace PG.Services.Contract
         /// Extract all songs with preview "link".mp3 from all playlists where their title contains "Rock".
         /// Creates new Creator/Artist accordingly to the song's specifications.
         /// </summary>
-        Task ExtractSongsFromPlaylists(string genreString);
+        Task ExtractSongsFromGenre(string genreString);
     }
 }

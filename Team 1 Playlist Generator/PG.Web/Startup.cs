@@ -1,3 +1,4 @@
+using GenreUpdateService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -55,6 +56,7 @@ namespace PG.Web
             services.AddScoped<IBingMapsAPIService, BingMapsAPIService>();
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddScoped<IUserService, UserService>();
+            services.AddHostedService<GenreHostedService>();
 
             services.AddDefaultIdentity<User>(options =>
             {

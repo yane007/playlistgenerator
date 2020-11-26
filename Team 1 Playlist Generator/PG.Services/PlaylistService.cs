@@ -52,7 +52,7 @@ namespace PG.Services
             var playlists = await _context.Playlists
                                  .Include(x => x.PlaylistsSongs)
                                  .ThenInclude(x => x.Song)
-                                 .Where(x => x.IsDeleted == false)
+                                 .Where(x => !x.IsDeleted)
                                  .Select(x => x.ToDTO())
                                  .ToListAsync();
 
@@ -64,7 +64,7 @@ namespace PG.Services
             var playlists = await _context.Playlists
                                  .Include(x => x.PlaylistsSongs)
                                  .ThenInclude(x => x.Song)
-                                 .Where(x => x.UserId == userId && x.IsDeleted == false)
+                                 .Where(x => x.UserId == userId && !x.IsDeleted)
                                  .Select(x => x.ToDTO())
                                  .ToListAsync();
 
@@ -77,7 +77,7 @@ namespace PG.Services
             var playlist = await _context.Playlists
                                  .Include(x => x.PlaylistsSongs)
                                  .ThenInclude(x => x.Song)
-                                 .FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
+                                 .FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
 
             if (playlist == null)
             {
@@ -89,7 +89,7 @@ namespace PG.Services
 
         public async Task<PlaylistDTO> Update(int id, PlaylistDTO playlistDTO)
         {
-            var playlist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == id && x.IsDeleted == false);
+            var playlist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
             if (playlist == null)
             {
                 throw new ArgumentNullException($"Playlist with id {id} was not found.");

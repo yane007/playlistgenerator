@@ -1,9 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PG.Services.Contract;
+using Serilog;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -11,35 +10,35 @@ namespace GenreUpdateService
 {
     public class GenreHostedService : IHostedService
     {
-        private Timer timer;
-        private readonly IServiceProvider serviceProvider;
+        private Timer _timer;
+        private readonly IServiceProvider _serviceProvider;
 
         public GenreHostedService(IServiceProvider serviceProvider)
         {
-            this.serviceProvider = serviceProvider;
+            _serviceProvider = serviceProvider;
         }
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            this.timer = new Timer(CallSyncGenresAsync, null, TimeSpan.Zero,
-                TimeSpan.FromSeconds(3));
+            _timer = new Timer(CallSyncGenresAsync, null, TimeSpan.Zero,
+                TimeSpan.FromMinutes(10));
 
             return Task.CompletedTask;
         }
 
         private async void CallSyncGenresAsync(object state)
         {
-            using (var scope = this.serviceProvider.CreateScope())
+            using (var scope = _serviceProvider.CreateScope())
             {
-                //Tuka logikata 
                 var genreService = scope.ServiceProvider.GetRequiredService<IGenreService>();
+                Log.Logger.Information("Syncing genres");
                 await genreService.SyncGenresAsync();
             }
         }
 
         public Task StopAsync(CancellationToken cancellationToken)
         {
-            this.timer?.Change(Timeout.Infinite, 0);
+            _timer?.Change(Timeout.Infinite, 0);
 
             return Task.CompletedTask;
         }

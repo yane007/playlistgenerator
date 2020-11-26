@@ -42,6 +42,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GenreUpdateService\GenreUpdateService.csproj" />
     <ProjectReference Include="..\PG.Data\PG.Data.csproj" />
     <ProjectReference Include="..\PG.Models\PG.Models.csproj" />
     <ProjectReference Include="..\PG.Services\PG.Services.csproj" />

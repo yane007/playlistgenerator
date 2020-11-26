@@ -25,14 +25,14 @@ namespace PG.Tests.GenreServiceShould
 
             using (var arrangeContext = new PGDbContext(options))
             {
-                var sut = new GenreService(arrangeContext);
+                var sut = new GenreService(arrangeContext, new ArtistService(arrangeContext), new SongService(arrangeContext));
                 await sut.Create(genre);
                 await arrangeContext.SaveChangesAsync();
             }
 
             using (var assertContext = new PGDbContext(options))
             {
-                var sut = new GenreService(assertContext);
+                var sut = new GenreService(assertContext, new ArtistService(assertContext), new SongService(assertContext));
                 await sut.Delete(1);
 
                 var genres = await sut.GetAllGenres();
@@ -49,7 +49,7 @@ namespace PG.Tests.GenreServiceShould
 
             var assertContext = new PGDbContext(options);
 
-            var sut = new GenreService(assertContext);
+            var sut = new GenreService(assertContext, new ArtistService(assertContext), new SongService(assertContext));
 
             await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Delete(-1));
         }
@@ -61,7 +61,7 @@ namespace PG.Tests.GenreServiceShould
 
             using (var assertContext = new PGDbContext(options))
             {
-                var sut = new GenreService(assertContext);
+                var sut = new GenreService(assertContext, new ArtistService(assertContext), new SongService(assertContext));
 
                 await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Delete(2));
             }
@@ -79,14 +79,14 @@ namespace PG.Tests.GenreServiceShould
 
             using (var arrangeContext = new PGDbContext(options))
             {
-                var sut = new GenreService(arrangeContext);
+                var sut = new GenreService(arrangeContext, new ArtistService(arrangeContext), new SongService(arrangeContext));
                 await sut.Create(genre);
                 await arrangeContext.SaveChangesAsync();
             }
 
             using (var assertContext = new PGDbContext(options))
             {
-                var sut = new GenreService(assertContext);
+                var sut = new GenreService(assertContext, new ArtistService(assertContext), new SongService(assertContext));
 
                 await sut.Delete(1);
 

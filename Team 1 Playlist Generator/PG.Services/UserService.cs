@@ -39,7 +39,7 @@ namespace PG.Services
 
         public async Task<IList<UserDTO>> GetAllRegularUsers()
         {
-            return await _context.Users.Where(x => x.IsDeleted == false)
+            return await _context.Users.Where(x => !x.IsDeleted)
                                         .Select(x => x.ToDTO())
                                         .ToListAsync();
         }
@@ -53,7 +53,7 @@ namespace PG.Services
                 return false;
             }
 
-            if (userToBan.LockoutEnabled == false)
+            if (!userToBan.LockoutEnabled)
             {
                 userToBan.LockoutEnabled = true;
 
