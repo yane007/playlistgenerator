@@ -23,7 +23,7 @@ namespace PG.Web.APIControllers
         }
 
         [HttpGet("")]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetUsers()
         {
             var users = await _userService.GetAllRegularUsers();
             var usersViewModels = users.Select(x => x.ToViewModel());
