@@ -2,11 +2,11 @@
 using PG.Data.Context;
 using PG.Models;
 using PG.Services;
-using PG.Services.DTOs;
-using System;
+using PG.Services.Helpers;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+
 
 namespace PG.Tests.PlaylistServiceShould
 {
@@ -28,17 +28,36 @@ namespace PG.Tests.PlaylistServiceShould
             User user = new User();
 
             var arrangeContext = new PGDbContext(options);
-            var _genreService = new GenreService(arrangeContext, new ArtistService(arrangeContext), new SongService(arrangeContext));
+            var _genreService = new GenreService(
+                arrangeContext,
+                new ArtistService(arrangeContext),
+                new SongService(arrangeContext),
+                new HttpDeezerClientService(
+                    new HttpClient())
+                );
 
-            var deezerService = new DeezerAPIService(arrangeContext, _genreService,
-                new ArtistService(arrangeContext), new SongService(arrangeContext));
+            var deezerService = new DeezerAPIService(
+                arrangeContext,
+                _genreService,
+                new ArtistService(arrangeContext),
+                new SongService(arrangeContext),
+                new HttpDeezerClientService(
+                    new HttpClient())
+                );
 
-            //TODO: 
+            //TODO: Не взима главния url от Startup.
             await deezerService.ExtractSongsFromGenre("pop");
             await deezerService.ExtractSongsFromGenre("rock");
             await deezerService.ExtractSongsFromGenre("metal");
 
-            var sut = new PlaylistService(arrangeContext);
+            var sut = new PlaylistService(
+                arrangeContext
+                //new PixabayService(
+                //    new HttpPixabayClientService(
+                //        new HttpClient()
+                //        )
+                //    )
+                );
 
             await sut.GeneratePlaylist(timeForTrip, playlistTitle, metalPercentagee, rockPercentagee, popPercentagee, topTracks, sameArtist, user);
             await arrangeContext.SaveChangesAsync();

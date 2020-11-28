@@ -7,7 +7,7 @@ using System.Text;
 
 namespace PG.Services.Mappers
 {
-    public static class PlaylistMapper
+    public static class PlaylistMapper  
     {
         public static PlaylistDTO ToDTO(this Playlist playlist)
         {

@@ -33,6 +33,7 @@ namespace GenreUpdateService
                 var genreService = scope.ServiceProvider.GetRequiredService<IGenreService>();
                 Log.Logger.Information("Syncing genres");
                 await genreService.SyncGenresAsync();
+                Log.Logger.Information("Syncing done");
             }
         }
 

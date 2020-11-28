@@ -14,6 +14,7 @@ using PG.Data.Context;
 using PG.Models;
 using PG.Services;
 using PG.Services.Contract;
+using PG.Services.Contracts.Helpers;
 using PG.Services.Helpers;
 using PG.Web.Services;
 using Serilog;
@@ -57,6 +58,16 @@ namespace PG.Web
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddScoped<IUserService, UserService>();
             services.AddHostedService<GenreHostedService>();
+
+            services.AddHttpClient<IHttpDeezerClientService, HttpDeezerClientService>(client =>
+            {
+                client.BaseAddress = new Uri("https://api.deezer.com/");
+            });
+
+            services.AddHttpClient<IHttpPixabayClientService, HttpPixabayClientService>(client =>
+            {
+                client.BaseAddress = new Uri("https://pixabay.com/");
+            });
 
             services.AddDefaultIdentity<User>(options =>
             {

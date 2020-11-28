@@ -3,9 +3,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
+using PG.Services.Helpers;
 using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace PG.Tests.GenreServiceShould
@@ -25,7 +25,14 @@ namespace PG.Tests.GenreServiceShould
 
             using (var arrangeContext = new PGDbContext(options))
             {
-                var sut = new GenreService(arrangeContext, new ArtistService(arrangeContext), new SongService(arrangeContext));
+                var sut = new GenreService(
+                    arrangeContext,
+                    new ArtistService(arrangeContext),
+                    new SongService(arrangeContext),
+                    new HttpDeezerClientService(
+                        new HttpClient()
+                        )
+                    );
                 await sut.Create(genre);
                 await arrangeContext.SaveChangesAsync();
             }
@@ -45,7 +52,14 @@ namespace PG.Tests.GenreServiceShould
             var options = Utils.GetOptions(nameof(CreateThrowsWhenNull));
 
             var context = new PGDbContext(options);
-            var sut = new GenreService(context, new ArtistService(context), new SongService(context));
+            var sut = new GenreService(
+                context,
+                new ArtistService(context),
+                new SongService(context),
+                new HttpDeezerClientService(
+                    new HttpClient()
+                    )
+                );
 
             await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Create(null));
 
@@ -63,14 +77,28 @@ namespace PG.Tests.GenreServiceShould
 
             using (var arrangeContext = new PGDbContext(options))
             {
-                var sut = new GenreService(arrangeContext, new ArtistService(arrangeContext), new SongService(arrangeContext));
+                var sut = new GenreService(
+                    arrangeContext,
+                    new ArtistService(arrangeContext),
+                    new SongService(arrangeContext),
+                    new HttpDeezerClientService(
+                        new HttpClient()
+                        )
+                    );
                 await sut.Create(genre);
                 await arrangeContext.SaveChangesAsync();
             }
 
             using (var assertContext = new PGDbContext(options))
             {
-                var sut = new GenreService(assertContext, new ArtistService(assertContext), new SongService(assertContext));
+                var sut = new GenreService(
+                    assertContext,
+                    new ArtistService(assertContext),
+                    new SongService(assertContext),
+                    new HttpDeezerClientService(
+                        new HttpClient()
+                        )
+                    );
 
                 await Assert.ThrowsExceptionAsync<ArgumentException>(() => sut.Create(genre));
             }

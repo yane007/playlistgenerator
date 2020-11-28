@@ -17676,3 +17676,412 @@ System.ArgumentOutOfRangeException: Specified argument was out of the range of v
 11/26/2020 21:42:05 - Getting index page -
 11/26/2020 21:42:05 HTTP "GET" "/" responded 200 in 891.3489 ms
 11/26/2020 21:42:05 HTTP "GET" "/js/playlistView.js" responded 404 in 3.0715 ms
+11/28/2020 09:09:08 Application starting up
+11/28/2020 09:09:09 Syncing genres
+11/28/2020 09:09:12 - Getting index page -
+11/28/2020 09:09:12 An exception occurred while iterating over the results of a query for context type '"PG.Data.Context.PGDbContext"'."
+""System.NullReferenceException: Object reference not set to an instance of an object.
+   at PG.Services.Mappers.SongMapper.ToDTO(Song song) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\Mappers\SongMapper.cs:line 10
+   at PG.Services.Mappers.PlaylistMapper.<>c.<ToDTO>b__0_0(PlaylistsSongs x) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\Mappers\PlaylistMapper.cs:line 22
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at PG.Services.Mappers.PlaylistMapper.ToDTO(Playlist playlist) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\Mappers\PlaylistMapper.cs:line 14
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at PG.Services.Mappers.SongMapper.ToDTO(Song song) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\Mappers\SongMapper.cs:line 10
+   at PG.Services.Mappers.PlaylistMapper.<>c.<ToDTO>b__0_0(PlaylistsSongs x) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\Mappers\PlaylistMapper.cs:line 22
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at PG.Services.Mappers.PlaylistMapper.ToDTO(Playlist playlist) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\Mappers\PlaylistMapper.cs:line 14
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+11/28/2020 09:09:12 HTTP "GET" "/" responded 500 in 2956.8519 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at PG.Services.Mappers.SongMapper.ToDTO(Song song) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\Mappers\SongMapper.cs:line 10
+   at PG.Services.Mappers.PlaylistMapper.<>c.<ToDTO>b__0_0(PlaylistsSongs x) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\Mappers\PlaylistMapper.cs:line 22
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at PG.Services.Mappers.PlaylistMapper.ToDTO(Playlist playlist) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\Mappers\PlaylistMapper.cs:line 14
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PG.Services.PlaylistService.GetAllPlaylists() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 52
+   at PG.Web.Controllers.HomeController.Index() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\HomeController.cs:line 49
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/28/2020 09:09:12 An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at PG.Services.Mappers.SongMapper.ToDTO(Song song) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\Mappers\SongMapper.cs:line 10
+   at PG.Services.Mappers.PlaylistMapper.<>c.<ToDTO>b__0_0(PlaylistsSongs x) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\Mappers\PlaylistMapper.cs:line 22
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at PG.Services.Mappers.PlaylistMapper.ToDTO(Playlist playlist) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\Mappers\PlaylistMapper.cs:line 14
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PG.Services.PlaylistService.GetAllPlaylists() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 52
+   at PG.Web.Controllers.HomeController.Index() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\HomeController.cs:line 49
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/28/2020 09:16:38 Application starting up
+11/28/2020 09:16:38 Syncing genres
+11/28/2020 09:16:39 - Getting index page -
+11/28/2020 09:16:39 HTTP "GET" "/" responded 200 in 703.1446 ms
+11/28/2020 09:16:39 HTTP "GET" "/js/playlistView.js" responded 404 in 2.9778 ms
+11/28/2020 09:16:40 HTTP "GET" "/js/playlistView.js" responded 404 in 14.9364 ms
+11/28/2020 09:16:44 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 90.2700 ms
+11/28/2020 09:16:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3692 ms
+11/28/2020 09:16:44 HTTP "GET" "/css/album-art.jpg" responded 404 in 0.3098 ms
+11/28/2020 09:16:49 - Getting index page -
+11/28/2020 09:16:49 HTTP "GET" "/" responded 200 in 22.0254 ms
+11/28/2020 09:22:06 Application starting up
+11/28/2020 09:22:07 11/28/2020 9:22:07 AMSyncing genres
+11/28/2020 09:22:08 - Getting index page -
+11/28/2020 09:22:08 HTTP "GET" "/" responded 200 in 534.5496 ms
+11/28/2020 09:22:08 HTTP "GET" "/js/playlistView.js" responded 404 in 2.5719 ms
+11/28/2020 09:22:08 HTTP "GET" "/js/playlistView.js" responded 404 in 11.1832 ms
+11/28/2020 09:22:28 Application starting up
+11/28/2020 09:22:28 Syncing genres
+11/28/2020 09:22:29 - Getting index page -
+11/28/2020 09:22:29 HTTP "GET" "/" responded 200 in 407.9577 ms
+11/28/2020 09:22:30 HTTP "GET" "/js/playlistView.js" responded 404 in 2.2415 ms
+11/28/2020 09:22:30 HTTP "GET" "/js/playlistView.js" responded 404 in 11.2475 ms
+11/28/2020 09:23:22 Application starting up
+11/28/2020 09:23:22 Syncing genres
+11/28/2020 09:23:23 - Getting index page -
+11/28/2020 09:23:23 HTTP "GET" "/" responded 200 in 525.2154 ms
+11/28/2020 09:23:23 HTTP "GET" "/js/playlistView.js" responded 404 in 2.9166 ms
+11/28/2020 09:23:24 HTTP "GET" "/js/playlistView.js" responded 404 in 13.4414 ms
+11/28/2020 09:23:57 Syncing done
+11/28/2020 09:29:32 Application starting up
+11/28/2020 09:29:33 The application failed to start correctly.
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: PG.Services.Contract.IDeezerAPIService Lifetime: Scoped ImplementationType: PG.Services.DeezerAPIService': Unable to resolve service for type 'System.Net.Http.HttpClient' while attempting to activate 'PG.Services.DeezerAPIService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: PG.Services.Contract.IDeezerAPIService Lifetime: Scoped ImplementationType: PG.Services.DeezerAPIService': Unable to resolve service for type 'System.Net.Http.HttpClient' while attempting to activate 'PG.Services.DeezerAPIService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'System.Net.Http.HttpClient' while attempting to activate 'PG.Services.DeezerAPIService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at PG.Web.Program.Main(String[] args) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Program.cs:line 24
+11/28/2020 09:48:48 Application starting up
+11/28/2020 09:48:49 Syncing genres
+11/28/2020 09:48:51 - Getting index page -
+11/28/2020 09:48:51 HTTP "GET" "/" responded 200 in 1095.6939 ms
+11/28/2020 09:48:51 HTTP "GET" "/js/playlistView.js" responded 404 in 13.0378 ms
+11/28/2020 09:49:51 Application starting up
+11/28/2020 09:49:52 Syncing genres
+11/28/2020 09:49:53 - Getting index page -
+11/28/2020 09:49:54 HTTP "GET" "/" responded 200 in 617.6652 ms
+11/28/2020 09:49:54 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6255 ms
+11/28/2020 09:50:15 Application starting up
+11/28/2020 09:50:16 Syncing genres
+11/28/2020 09:50:17 - Getting index page -
+11/28/2020 09:50:17 Syncing done
+11/28/2020 09:53:25 Application starting up
+11/28/2020 09:53:25 Syncing genres
+11/28/2020 09:53:25 Syncing done
+11/28/2020 09:53:26 - Getting index page -
+11/28/2020 09:54:39 HTTP "GET" "/" responded 200 in 72946.0628 ms
+11/28/2020 09:54:39 HTTP "GET" "/js/playlistView.js" responded 404 in 3.2395 ms
+11/28/2020 10:03:25 Syncing genres
+11/28/2020 10:03:25 Syncing done
+11/28/2020 10:57:40 Application starting up
+11/28/2020 10:57:40 Syncing genres
+11/28/2020 10:57:41 Syncing done
+11/28/2020 10:57:41 - Getting index page -
+11/28/2020 10:58:52 HTTP "GET" "/" responded 200 in 70753.7518 ms
+11/28/2020 10:58:52 HTTP "GET" "/js/playlistView.js" responded 404 in 3.6598 ms
+11/28/2020 10:58:52 HTTP "GET" "/js/playlistView.js" responded 404 in 10.6319 ms
+11/28/2020 11:00:23 Application starting up
+11/28/2020 11:00:24 Syncing genres
+11/28/2020 11:00:25 - Getting index page -
+11/28/2020 11:00:26 HTTP "GET" "/" responded 200 in 875.7737 ms
+11/28/2020 11:00:26 HTTP "GET" "/js/playlistView.js" responded 404 in 2.8939 ms
+11/28/2020 11:02:43 Application starting up
+11/28/2020 11:02:44 Syncing genres
+11/28/2020 11:02:45 - Getting index page -
+11/28/2020 11:02:45 Syncing done
+11/28/2020 11:23:07 Application starting up
+11/28/2020 11:23:07 The application failed to start correctly.
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: PG.Services.Contract.IPlaylistService Lifetime: Scoped ImplementationType: PG.Services.PlaylistService': Unable to resolve service for type 'PG.Services.IPixabayService' while attempting to activate 'PG.Services.PlaylistService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: PG.Services.Contract.IPlaylistService Lifetime: Scoped ImplementationType: PG.Services.PlaylistService': Unable to resolve service for type 'PG.Services.IPixabayService' while attempting to activate 'PG.Services.PlaylistService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'PG.Services.IPixabayService' while attempting to activate 'PG.Services.PlaylistService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at PG.Web.Program.Main(String[] args) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Program.cs:line 24
+11/28/2020 11:23:23 Application starting up
+11/28/2020 11:23:24 The application failed to start correctly.
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: PG.Services.Contract.IPlaylistService Lifetime: Scoped ImplementationType: PG.Services.PlaylistService': Unable to resolve service for type 'PG.Services.IPixabayService' while attempting to activate 'PG.Services.PlaylistService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: PG.Services.Contract.IPlaylistService Lifetime: Scoped ImplementationType: PG.Services.PlaylistService': Unable to resolve service for type 'PG.Services.IPixabayService' while attempting to activate 'PG.Services.PlaylistService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'PG.Services.IPixabayService' while attempting to activate 'PG.Services.PlaylistService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at PG.Web.Program.Main(String[] args) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Program.cs:line 24
+11/28/2020 11:23:31 Application starting up
+11/28/2020 11:23:32 The application failed to start correctly.
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: PG.Services.Contract.IPlaylistService Lifetime: Scoped ImplementationType: PG.Services.PlaylistService': Unable to resolve service for type 'PG.Services.IPixabayService' while attempting to activate 'PG.Services.PlaylistService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: PG.Services.Contract.IPlaylistService Lifetime: Scoped ImplementationType: PG.Services.PlaylistService': Unable to resolve service for type 'PG.Services.IPixabayService' while attempting to activate 'PG.Services.PlaylistService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'PG.Services.IPixabayService' while attempting to activate 'PG.Services.PlaylistService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at PG.Web.Program.Main(String[] args) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Program.cs:line 24
+11/28/2020 11:24:23 Application starting up
+11/28/2020 11:25:01 The application failed to start correctly.
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: PG.Services.Contract.IPlaylistService Lifetime: Scoped ImplementationType: PG.Services.PlaylistService': Unable to resolve service for type 'PG.Services.IPixabayService' while attempting to activate 'PG.Services.PlaylistService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: PG.Services.Contract.IPlaylistService Lifetime: Scoped ImplementationType: PG.Services.PlaylistService': Unable to resolve service for type 'PG.Services.IPixabayService' while attempting to activate 'PG.Services.PlaylistService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'PG.Services.IPixabayService' while attempting to activate 'PG.Services.PlaylistService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at PG.Web.Program.Main(String[] args) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Program.cs:line 24
+11/28/2020 11:26:00 Application starting up
+11/28/2020 11:26:00 Syncing genres
+11/28/2020 11:26:01 - Getting index page -
+11/28/2020 11:26:01 Syncing done
+11/28/2020 11:27:10 HTTP "GET" "/" responded 200 in 69089.6392 ms
+11/28/2020 11:27:10 HTTP "GET" "/js/playlistView.js" responded 404 in 4.1483 ms
+11/28/2020 11:27:10 HTTP "GET" "/js/playlistView.js" responded 404 in 10.8937 ms
+11/28/2020 11:31:26 Application starting up
+11/28/2020 11:31:26 Syncing genres
+11/28/2020 11:31:27 An error occurred using the connection to database '"PlaylistGeneratorDB"' on server '"DESKTOP-TFOST68"'.
+11/28/2020 11:31:27 An error occurred using the connection to database '"PlaylistGeneratorDB"' on server '"DESKTOP-TFOST68"'.
+11/28/2020 11:31:27 An exception occurred while iterating over the results of a query for context type '"PG.Data.Context.PGDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database \"PlaylistGeneratorDB\" requested by the login. The login failed.
+Login failed for user 'DESKTOP-TFOST68\Yane'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:b1de0417-3d28-4648-8c4e-a0d2de6a61c4
+Error Number:4060,State:1,Class:11"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "PlaylistGeneratorDB" requested by the login. The login failed.
+Login failed for user 'DESKTOP-TFOST68\Yane'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:b1de0417-3d28-4648-8c4e-a0d2de6a61c4
+Error Number:4060,State:1,Class:11
+11/28/2020 11:31:27 An exception occurred while iterating over the results of a query for context type '"PG.Data.Context.PGDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database \"PlaylistGeneratorDB\" requested by the login. The login failed.
+Login failed for user 'DESKTOP-TFOST68\Yane'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:b1de0417-3d28-4648-8c4e-a0d2de6a61c4
+Error Number:4060,State:1,Class:11"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "PlaylistGeneratorDB" requested by the login. The login failed.
+Login failed for user 'DESKTOP-TFOST68\Yane'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:b1de0417-3d28-4648-8c4e-a0d2de6a61c4
+Error Number:4060,State:1,Class:11
+11/28/2020 11:31:27 HTTP "GET" "/" responded 500 in 165.8913 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "PlaylistGeneratorDB" requested by the login. The login failed.
+Login failed for user 'DESKTOP-TFOST68\Yane'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:b1de0417-3d28-4648-8c4e-a0d2de6a61c4
+Error Number:4060,State:1,Class:11
+11/28/2020 11:31:27 An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "PlaylistGeneratorDB" requested by the login. The login failed.
+Login failed for user 'DESKTOP-TFOST68\Yane'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:b1de0417-3d28-4648-8c4e-a0d2de6a61c4
+Error Number:4060,State:1,Class:11
+11/28/2020 11:32:34 Application starting up
+11/28/2020 11:32:35 Syncing genres
+11/28/2020 11:32:35 Syncing done
+11/28/2020 11:32:37 - Getting index page -
+11/28/2020 11:34:41 HTTP "GET" "/" responded 200 in 125631.2810 ms
+11/28/2020 11:34:41 HTTP "GET" "/js/playlistView.js" responded 404 in 2.8123 ms
+11/28/2020 11:34:41 HTTP "GET" "/js/playlistView.js" responded 404 in 15.7230 ms

@@ -3,13 +3,13 @@ using Newtonsoft.Json;
 using PG.Data.Context;
 using PG.Models;
 using PG.Services.Contract;
+using PG.Services.Contracts.Helpers;
 using PG.Services.DTOs;
 using PG.Services.Mappers;
 using PG.Services.MappingModelsAPI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace PG.Services
@@ -17,16 +17,20 @@ namespace PG.Services
     public class GenreService : IGenreService
     {
         private readonly PGDbContext _context;
-        private readonly HttpClient _httpClient;
+        private readonly IHttpDeezerClientService _httpDeezerClientService;
         private readonly IArtistService _artistService;
         private readonly ISongService _songService;
 
-        public GenreService(PGDbContext context, IArtistService artistService, ISongService songService)
+        public GenreService(
+            PGDbContext context,
+            IArtistService artistService,
+            ISongService songService,
+            IHttpDeezerClientService httpDeezerClientService)
         {
             _context = context;
             _artistService = artistService;
             _songService = songService;
-            _httpClient = new HttpClient();
+            _httpDeezerClientService = httpDeezerClientService;
         }
 
 
@@ -93,8 +97,9 @@ namespace PG.Services
 
             foreach (var genre in dbGenres)
             {
+                string playlistsUri = $"search/playlist?q={genre.Name}";
 
-                var playlistsResponse = await _httpClient.GetAsync($"https://api.deezer.com/search/playlist?q={genre.Name}");
+                var playlistsResponse = await _httpDeezerClientService.GetAsync(playlistsUri);
                 var playlistsResponseResult = await playlistsResponse.Content.ReadAsStringAsync();
                 var deezerPlaylists = JsonConvert.DeserializeObject<QueryPlaylistsAPI>(playlistsResponseResult);
 
@@ -105,8 +110,9 @@ namespace PG.Services
 
                 foreach (var playlist in deezerPlaylists.Data)
                 {
+                    string playlistUri = playlist.Tracklist.Substring(23);
 
-                    var playlistResponse = await _httpClient.GetAsync(playlist.Tracklist);
+                    var playlistResponse = await _httpDeezerClientService.GetAsync(playlistUri);
                     var playlistResponseResult = await playlistResponse.Content.ReadAsStringAsync();
                     var deezerPlaylist = JsonConvert.DeserializeObject<PlaylistAPI>(playlistResponseResult);
 
