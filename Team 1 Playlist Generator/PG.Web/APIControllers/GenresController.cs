@@ -23,7 +23,7 @@ namespace PG.Web.APIControllers
 
         //GET api/genres
         [HttpGet("")]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetGenres()
         {
             var genres = await _genreService.GetAllGenres();
 
@@ -34,7 +34,7 @@ namespace PG.Web.APIControllers
 
         //GET api/genres/id
         [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> GetGenreDetails(int id)
         {
             var genre = await _genreService.GetGenreById(id);
 

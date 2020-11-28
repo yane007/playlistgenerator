@@ -8,6 +8,7 @@ namespace PG.Web.Models.Mappers
         {
             return new ArtistViewModel()
             {
+                Id = artistDTO.Id,
                 Name = artistDTO.Name,
                 Tracklist = artistDTO.Tracklist,
                 Type = artistDTO.Type
@@ -18,6 +19,7 @@ namespace PG.Web.Models.Mappers
         {
             return new ArtistDTO()
             {
+                Id = artistViewModel.Id,
                 Name = artistViewModel.Name,
                 Tracklist = artistViewModel.Tracklist,
                 Type = artistViewModel.Type
