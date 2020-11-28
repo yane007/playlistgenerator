@@ -8,7 +8,7 @@
         <div>
             <form asp-controller="Playlists" asp-action="Create" method="post">
                 <h1>PlaylistGenerator</h1>
-                <div class="d-flex flex-column align-items-center card mt-5" style="background-color: limegreen;width:18rem;margin-top: 100px !important;">
+                <div class="d-flex flex-column align-items-center card mt-5" style="background-color: limegreen;width:25rem;margin-top: 100px !important;">
                     <div class="card-body">
                         <h5 class="rounded" style="
                            position: absolute;
@@ -31,6 +31,7 @@
                             <div class="input-group-append">
                                 <button class="btn btn-outline-secondary" type="button" id="button-addon2">Map</button>
                             </div>
+                            <span asp-validation-for="@Model.StartLocation" class="text-danger"></span>
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
@@ -40,8 +41,8 @@
                             <div class="input-group-append">
                                 <button class="btn btn-outline-secondary" type="button" id="button-addon2">Map</button>
                             </div>
+                            <span asp-validation-for="@Model.EndLocation" class="text-danger"></span>
                         </div>
-
 
                         <div class="form-group">
                             <label asp-for="@Model.PlaylistName"></label>
@@ -62,15 +63,14 @@
                         </div>
 
                     </div>
-                    <p>Top tracks:</p>
-                    @Html.EditorFor(x => x.TopTracks)
-                    <p>Same artist:</p>
-                    @Html.EditorFor(x => x.SameArtist)
-
+                    <div>
+                        <span>Top tracks:</span>
+                        @Html.EditorFor(x => x.TopTracks)
+                        <span>Same artist:</span>
+                        @Html.EditorFor(x => x.SameArtist)
+                    </div>
                     <button type="submit" class="btn btn-primary"
-                            style="position:absolute;
-                       margin-top: 400px;
-                           margin-right: -290px;
+                            style="position:relative;
                            background: #28a745;
                            padding: 5px 10px;
                            color: #fff;
@@ -86,7 +86,9 @@
     </div>
 </div>
 
-
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

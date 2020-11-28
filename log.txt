@@ -11043,3 +11043,849 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'source')
 11/25/2020 08:56:31 HTTP "GET" "/" responded 200 in 1256.1708 ms
 11/25/2020 08:56:33 HTTP "GET" "/Playlists/Playlist/1003" responded 200 in 112.3532 ms
 11/25/2020 08:56:33 HTTP "GET" "/css/album-art.jpg" responded 404 in 9.9403 ms
+11/25/2020 11:07:37 Application starting up
+11/25/2020 11:07:42 - Getting index page -
+11/25/2020 11:07:45 HTTP "GET" "/" responded 200 in 3914.6220 ms
+11/25/2020 11:07:47 HTTP "GET" "/Playlists/Create" responded 200 in 163.5415 ms
+11/25/2020 11:07:47 HTTP "GET" "/Playlists/Create/ws" responded 200 in 55.1054 ms
+11/25/2020 11:12:07 Application starting up
+11/25/2020 11:12:11 - Getting index page -
+11/25/2020 11:12:16 HTTP "GET" "/" responded 200 in 4623.3343 ms
+11/25/2020 11:12:17 HTTP "GET" "/Playlists/Create" responded 200 in 144.2501 ms
+11/25/2020 11:12:17 HTTP "GET" "/Playlists/Create/ws" responded 200 in 43.7738 ms
+11/25/2020 11:15:15 Application starting up
+11/25/2020 11:15:19 - Getting index page -
+11/25/2020 11:15:23 HTTP "GET" "/" responded 200 in 4168.2629 ms
+11/25/2020 11:15:25 HTTP "GET" "/Playlists/Create" responded 200 in 167.0191 ms
+11/25/2020 11:15:25 HTTP "GET" "/Playlists/Create/ws" responded 200 in 56.8256 ms
+11/25/2020 11:19:01 Application starting up
+11/25/2020 11:19:05 - Getting index page -
+11/25/2020 11:19:09 HTTP "GET" "/" responded 200 in 4034.1189 ms
+11/25/2020 11:19:11 HTTP "GET" "/Playlists/Create" responded 200 in 157.1752 ms
+11/25/2020 11:19:11 HTTP "GET" "/Playlists/Create/ws" responded 200 in 46.3448 ms
+11/25/2020 11:19:51 HTTP "POST" "/Playlists/Create" responded 500 in 826.5920 ms
+System.Text.Json.JsonException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& readStack, JsonReaderException ex)
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   at System.Text.Json.JsonSerializer.ReadCore(Type returnType, JsonSerializerOptions options, Utf8JsonReader& reader)
+   at System.Text.Json.JsonSerializer.Deserialize(String json, Type returnType, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at PG.Services.BingMapsAPIService.FindDuration(String start, String end) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\BingMapsAPIService.cs:line 45
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 81
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/25/2020 11:19:51 An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& readStack, JsonReaderException ex)
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   at System.Text.Json.JsonSerializer.ReadCore(Type returnType, JsonSerializerOptions options, Utf8JsonReader& reader)
+   at System.Text.Json.JsonSerializer.Deserialize(String json, Type returnType, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at PG.Services.BingMapsAPIService.FindDuration(String start, String end) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\BingMapsAPIService.cs:line 45
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 81
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/25/2020 11:20:38 Application starting up
+11/25/2020 11:20:42 - Getting index page -
+11/25/2020 11:20:46 HTTP "GET" "/" responded 200 in 3948.0495 ms
+11/25/2020 11:20:48 HTTP "GET" "/Playlists/Create" responded 200 in 179.4253 ms
+11/25/2020 11:20:48 HTTP "GET" "/Playlists/Create/ws" responded 200 in 49.2738 ms
+11/25/2020 11:22:29 Application starting up
+11/25/2020 11:22:33 - Getting index page -
+11/25/2020 11:22:36 HTTP "GET" "/" responded 200 in 4040.2098 ms
+11/25/2020 11:22:38 HTTP "GET" "/Playlists/Create" responded 200 in 158.5468 ms
+11/25/2020 11:22:38 HTTP "GET" "/Playlists/Create/ws" responded 200 in 87.6582 ms
+11/25/2020 11:23:22 Application starting up
+11/25/2020 11:23:25 - Getting index page -
+11/25/2020 11:23:28 HTTP "GET" "/" responded 200 in 3138.3032 ms
+11/25/2020 11:23:29 HTTP "GET" "/Playlists/Create" responded 401 in 223.5526 ms
+11/25/2020 11:23:33 - Getting index page -
+11/25/2020 11:23:33 HTTP "GET" "/" responded 200 in 73.6365 ms
+11/25/2020 11:23:35 HTTP "GET" "/Identity/Account/Register" responded 200 in 151.5239 ms
+11/25/2020 11:23:36 HTTP "GET" "/Identity/Account/Login" responded 200 in 66.6015 ms
+11/25/2020 11:23:38 - Getting index page -
+11/25/2020 11:23:38 HTTP "GET" "/" responded 200 in 45.7543 ms
+11/25/2020 11:23:38 HTTP "GET" "/Identity/Account/Login" responded 200 in 10.9026 ms
+11/25/2020 11:23:41 User logged in.
+11/25/2020 11:23:41 HTTP "POST" "/Identity/Account/Login" responded 302 in 206.8346 ms
+11/25/2020 11:23:41 - Getting index page -
+11/25/2020 11:23:41 HTTP "GET" "/" responded 200 in 58.3952 ms
+11/25/2020 11:23:45 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 73.1156 ms
+11/25/2020 11:23:45 HTTP "GET" "/Playlists" responded 200 in 60.0770 ms
+11/25/2020 11:23:46 - Getting index page -
+11/25/2020 11:23:46 HTTP "GET" "/" responded 200 in 38.7033 ms
+11/25/2020 11:23:47 HTTP "GET" "/Playlists/Create" responded 200 in 74.3649 ms
+11/25/2020 11:23:47 HTTP "GET" "/Playlists/Create/ws" responded 200 in 20.9854 ms
+11/25/2020 11:24:54 Application starting up
+11/25/2020 11:24:58 - Getting index page -
+11/25/2020 11:25:01 HTTP "GET" "/" responded 200 in 3342.1443 ms
+11/25/2020 11:25:04 HTTP "GET" "/Playlists/Create" responded 200 in 171.8088 ms
+11/25/2020 11:25:04 HTTP "GET" "/Playlists/Create/ws" responded 200 in 52.3832 ms
+11/25/2020 11:27:37 Application starting up
+11/25/2020 11:27:41 - Getting index page -
+11/25/2020 11:27:44 HTTP "GET" "/" responded 200 in 3338.3982 ms
+11/25/2020 11:27:45 HTTP "GET" "/Playlists/Create" responded 200 in 160.4507 ms
+11/25/2020 11:27:46 HTTP "GET" "/Playlists/Create/ws" responded 200 in 68.9484 ms
+11/25/2020 11:29:33 Application starting up
+11/25/2020 11:29:37 - Getting index page -
+11/25/2020 11:29:40 HTTP "GET" "/" responded 200 in 3873.2494 ms
+11/25/2020 11:29:42 HTTP "GET" "/Playlists/Create" responded 200 in 155.6382 ms
+11/25/2020 11:29:42 HTTP "GET" "/Playlists/Create/ws" responded 200 in 44.1571 ms
+11/25/2020 11:30:00 Application starting up
+11/25/2020 11:30:05 - Getting index page -
+11/25/2020 11:30:08 HTTP "GET" "/" responded 200 in 3552.8729 ms
+11/25/2020 11:30:10 HTTP "GET" "/Playlists/Create" responded 200 in 154.8751 ms
+11/25/2020 11:30:10 HTTP "GET" "/Playlists/Create/ws" responded 200 in 41.9997 ms
+11/25/2020 11:31:17 Application starting up
+11/25/2020 11:31:20 - Getting index page -
+11/25/2020 11:31:24 HTTP "GET" "/" responded 200 in 4056.7705 ms
+11/25/2020 11:31:27 HTTP "GET" "/Playlists/Create" responded 200 in 160.4200 ms
+11/25/2020 11:31:28 HTTP "GET" "/Playlists/Create/ws" responded 200 in 88.6745 ms
+11/25/2020 11:33:34 Application starting up
+11/25/2020 11:33:38 - Getting index page -
+11/25/2020 11:33:42 HTTP "GET" "/" responded 200 in 4124.6484 ms
+11/25/2020 11:33:43 HTTP "GET" "/Playlists/Create" responded 200 in 159.8622 ms
+11/25/2020 11:33:43 HTTP "GET" "/Playlists/Create/ws" responded 200 in 43.6538 ms
+11/25/2020 11:34:43 Application starting up
+11/25/2020 11:34:47 - Getting index page -
+11/25/2020 11:34:50 HTTP "GET" "/" responded 200 in 2877.9795 ms
+11/25/2020 11:34:51 HTTP "GET" "/Playlists/Create" responded 200 in 142.4405 ms
+11/25/2020 11:34:51 HTTP "GET" "/Playlists/Create/ws" responded 200 in 49.5474 ms
+11/25/2020 11:35:12 Application starting up
+11/25/2020 11:35:16 - Getting index page -
+11/25/2020 11:35:20 HTTP "GET" "/" responded 200 in 4152.4688 ms
+11/25/2020 11:35:21 HTTP "GET" "/Playlists/Create" responded 200 in 177.6707 ms
+11/25/2020 11:35:21 HTTP "GET" "/Playlists/Create/ws" responded 200 in 44.6353 ms
+11/25/2020 11:36:03 Application starting up
+11/25/2020 11:36:08 - Getting index page -
+11/25/2020 11:36:11 HTTP "GET" "/" responded 200 in 3913.0619 ms
+11/25/2020 11:36:13 HTTP "GET" "/Playlists/Create" responded 200 in 144.9252 ms
+11/25/2020 11:36:13 HTTP "GET" "/Playlists/Create/ws" responded 200 in 50.6215 ms
+11/25/2020 11:36:37 Application starting up
+11/25/2020 11:36:41 - Getting index page -
+11/25/2020 11:36:43 HTTP "GET" "/" responded 200 in 2939.4978 ms
+11/25/2020 11:36:45 HTTP "GET" "/Playlists/Create" responded 200 in 149.9461 ms
+11/25/2020 11:36:45 HTTP "GET" "/Playlists/Create/ws" responded 200 in 50.7061 ms
+11/25/2020 11:37:19 Application starting up
+11/25/2020 11:37:23 - Getting index page -
+11/25/2020 11:37:26 HTTP "GET" "/" responded 200 in 2449.4865 ms
+11/25/2020 11:37:27 HTTP "GET" "/Playlists/Create" responded 200 in 161.2224 ms
+11/25/2020 11:37:27 HTTP "GET" "/Playlists/Create/ws" responded 200 in 54.0355 ms
+11/25/2020 11:37:38 - Getting index page -
+11/25/2020 11:37:38 HTTP "GET" "/" responded 200 in 83.2556 ms
+11/25/2020 11:37:40 HTTP "GET" "/Playlists/Create" responded 200 in 25.3297 ms
+11/25/2020 11:37:40 HTTP "GET" "/Playlists/Create/ws" responded 200 in 9.7605 ms
+11/25/2020 11:38:32 Application starting up
+11/25/2020 11:38:36 - Getting index page -
+11/25/2020 11:38:39 HTTP "GET" "/" responded 200 in 4127.7674 ms
+11/25/2020 11:38:41 HTTP "GET" "/Playlists/Create" responded 200 in 172.5311 ms
+11/25/2020 11:38:41 HTTP "GET" "/Playlists/Create/ws" responded 200 in 68.0366 ms
+11/25/2020 11:41:11 Application starting up
+11/25/2020 11:41:15 - Getting index page -
+11/25/2020 11:41:17 HTTP "GET" "/" responded 200 in 2689.1137 ms
+11/25/2020 11:41:19 HTTP "GET" "/Playlists/Create" responded 200 in 162.8513 ms
+11/25/2020 11:41:19 HTTP "GET" "/Playlists/Create/ws" responded 200 in 50.0670 ms
+11/25/2020 11:41:58 Application starting up
+11/25/2020 11:42:03 - Getting index page -
+11/25/2020 11:42:05 HTTP "GET" "/" responded 200 in 2662.8038 ms
+11/25/2020 11:42:06 HTTP "GET" "/Playlists/Create" responded 200 in 164.8278 ms
+11/25/2020 11:42:06 HTTP "GET" "/Playlists/Create/ws" responded 200 in 49.4697 ms
+11/25/2020 11:42:31 Application starting up
+11/25/2020 11:42:34 - Getting index page -
+11/25/2020 11:42:36 HTTP "GET" "/" responded 200 in 2554.2797 ms
+11/25/2020 11:42:37 HTTP "GET" "/Playlists/Create" responded 200 in 152.8959 ms
+11/25/2020 11:42:37 HTTP "GET" "/Playlists/Create/ws" responded 200 in 48.4664 ms
+11/25/2020 11:45:38 Application starting up
+11/25/2020 11:45:42 - Getting index page -
+11/25/2020 11:45:44 HTTP "GET" "/" responded 200 in 3020.9167 ms
+11/25/2020 11:45:46 HTTP "GET" "/Playlists/Create" responded 200 in 175.7038 ms
+11/25/2020 11:45:46 HTTP "GET" "/Playlists/Create/ws" responded 200 in 45.0312 ms
+11/25/2020 11:46:21 Application starting up
+11/25/2020 11:46:25 - Getting index page -
+11/25/2020 11:46:28 HTTP "GET" "/" responded 200 in 3722.6526 ms
+11/25/2020 11:46:30 HTTP "GET" "/Identity/Account/Manage" responded 200 in 286.0161 ms
+11/25/2020 11:46:31 HTTP "GET" "/Playlists/Create" responded 200 in 120.1586 ms
+11/25/2020 11:46:31 HTTP "GET" "/Playlists/Create/ws" responded 200 in 22.6919 ms
+11/25/2020 11:46:58 Application starting up
+11/25/2020 11:47:02 - Getting index page -
+11/25/2020 11:47:05 HTTP "GET" "/" responded 200 in 2752.3918 ms
+11/25/2020 11:47:06 HTTP "GET" "/Playlists/Create" responded 200 in 145.4509 ms
+11/25/2020 11:47:06 HTTP "GET" "/Playlists/Create/ws" responded 200 in 53.3141 ms
+11/25/2020 11:48:16 Application starting up
+11/25/2020 11:48:20 - Getting index page -
+11/25/2020 11:48:23 HTTP "GET" "/" responded 200 in 3735.4857 ms
+11/25/2020 11:48:24 HTTP "GET" "/Playlists/Create" responded 200 in 168.3887 ms
+11/25/2020 11:48:24 HTTP "GET" "/Playlists/Create/ws" responded 200 in 55.0102 ms
+11/25/2020 11:50:41 Application starting up
+11/25/2020 11:50:44 - Getting index page -
+11/25/2020 11:50:48 HTTP "GET" "/" responded 200 in 4047.4372 ms
+11/25/2020 11:50:49 HTTP "GET" "/Playlists/Create" responded 200 in 195.4634 ms
+11/25/2020 11:50:49 HTTP "GET" "/Playlists/Create/ws" responded 200 in 58.1744 ms
+11/25/2020 11:51:32 Application starting up
+11/25/2020 11:51:36 - Getting index page -
+11/25/2020 11:51:38 HTTP "GET" "/" responded 200 in 2530.5966 ms
+11/25/2020 11:51:40 HTTP "GET" "/Playlists/Create" responded 200 in 159.6573 ms
+11/25/2020 11:51:40 HTTP "GET" "/Playlists/Create/ws" responded 200 in 42.4689 ms
+11/25/2020 11:52:07 Application starting up
+11/25/2020 11:52:11 - Getting index page -
+11/25/2020 11:52:13 HTTP "GET" "/" responded 200 in 2615.0897 ms
+11/25/2020 11:52:15 HTTP "GET" "/Playlists/Create" responded 200 in 154.8624 ms
+11/25/2020 11:52:15 HTTP "GET" "/Playlists/Create/ws" responded 200 in 44.8078 ms
+11/25/2020 11:53:03 Application starting up
+11/25/2020 11:53:08 - Getting index page -
+11/25/2020 11:53:10 HTTP "GET" "/" responded 200 in 2980.7882 ms
+11/25/2020 11:53:12 HTTP "GET" "/Playlists/Create" responded 200 in 150.3741 ms
+11/25/2020 11:53:12 HTTP "GET" "/Playlists/Create/ws" responded 200 in 42.1812 ms
+11/25/2020 11:54:11 Application starting up
+11/25/2020 11:54:19 - Getting index page -
+11/25/2020 11:54:20 HTTP "GET" "/" responded 200 in 4808.9942 ms
+11/25/2020 11:54:21 HTTP "GET" "/Playlists/Create" responded 200 in 163.6837 ms
+11/25/2020 11:54:21 HTTP "GET" "/Playlists/Create/ws" responded 200 in 46.7990 ms
+11/25/2020 11:56:13 Application starting up
+11/25/2020 11:56:16 - Getting index page -
+11/25/2020 11:56:20 HTTP "GET" "/" responded 200 in 4309.9022 ms
+11/25/2020 11:56:22 HTTP "GET" "/Playlists/Create" responded 200 in 218.9148 ms
+11/25/2020 11:56:22 HTTP "GET" "/Playlists/Create/ws" responded 200 in 120.2930 ms
+11/25/2020 12:05:02 Application starting up
+11/25/2020 12:05:08 - Getting index page -
+11/25/2020 12:05:12 HTTP "GET" "/" responded 200 in 4794.0542 ms
+11/25/2020 12:05:13 HTTP "GET" "/Playlists/Create" responded 200 in 165.6894 ms
+11/25/2020 12:05:14 HTTP "GET" "/Playlists/Create/ws" responded 200 in 44.8909 ms
+11/25/2020 12:05:59 Application starting up
+11/25/2020 12:06:04 - Getting index page -
+11/25/2020 12:06:07 HTTP "GET" "/" responded 200 in 4015.0404 ms
+11/25/2020 12:06:44 HTTP "GET" "/Playlists/Create" responded 200 in 157.6594 ms
+11/25/2020 12:06:44 HTTP "GET" "/Playlists/Create/ws" responded 200 in 59.4925 ms
+11/25/2020 12:07:13 Application starting up
+11/25/2020 12:07:17 - Getting index page -
+11/25/2020 12:07:19 HTTP "GET" "/" responded 200 in 2582.4417 ms
+11/25/2020 12:07:21 HTTP "GET" "/Playlists/Create" responded 200 in 160.0244 ms
+11/25/2020 12:07:21 HTTP "GET" "/Playlists/Create/ws" responded 200 in 60.9478 ms
+11/25/2020 12:08:16 Application starting up
+11/25/2020 12:08:20 - Getting index page -
+11/25/2020 12:08:23 HTTP "GET" "/" responded 200 in 3033.0046 ms
+11/25/2020 12:08:24 HTTP "GET" "/Playlists/Create" responded 200 in 148.8374 ms
+11/25/2020 12:08:25 HTTP "GET" "/Playlists/Create/ws" responded 200 in 52.9039 ms
+11/25/2020 12:09:17 Application starting up
+11/25/2020 12:09:21 - Getting index page -
+11/25/2020 12:09:24 HTTP "GET" "/" responded 200 in 3999.8347 ms
+11/25/2020 12:09:26 HTTP "GET" "/Playlists/Create" responded 200 in 152.8369 ms
+11/25/2020 12:09:26 HTTP "GET" "/Playlists/Create/ws" responded 200 in 40.7466 ms
+11/25/2020 16:06:54 Application starting up
+11/25/2020 16:07:02 - Getting index page -
+11/25/2020 16:07:03 HTTP "GET" "/" responded 200 in 4713.5315 ms
+11/25/2020 16:07:13 HTTP "GET" "/api/artists" responded 200 in 695.5938 ms
+11/25/2020 16:07:15 HTTP "GET" "/api/artists/2" responded 200 in 109.0038 ms
+11/25/2020 16:07:19 HTTP "GET" "/api/artists/2222" responded 500 in 153.0931 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 2222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.Get(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/25/2020 16:07:19 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 2222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.Get(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/25/2020 16:07:51 HTTP "GET" "/api/artists/22" responded 200 in 16.1878 ms
+11/25/2020 16:07:59 HTTP "GET" "/api/users" responded 200 in 55.4051 ms
+11/25/2020 16:08:31 Application starting up
+11/25/2020 16:08:35 - Getting index page -
+11/25/2020 16:08:38 HTTP "GET" "/" responded 200 in 3018.2983 ms
+11/25/2020 16:08:54 HTTP "GET" "/api/artists/2" responded 200 in 588.3216 ms
+11/25/2020 16:09:10 HTTP "GET" "/api/artists/2" responded 200 in 32.3703 ms
+11/25/2020 16:09:15 HTTP "GET" "/api/artists/6" responded 200 in 31.5611 ms
+11/25/2020 16:09:53 HTTP "GET" "/api/songs" responded 200 in 348.6876 ms
+11/25/2020 16:09:53 HTTP "GET" "/api/songs/1" responded 200 in 27.3956 ms
+11/25/2020 16:09:55 HTTP "GET" "/api/songs/5" responded 200 in 13.9118 ms
+11/25/2020 16:12:25 Application starting up
+11/25/2020 16:12:30 - Getting index page -
+11/25/2020 16:12:32 HTTP "GET" "/" responded 200 in 3254.9751 ms
+11/25/2020 16:12:41 HTTP "GET" "/api/artists/2" responded 200 in 455.0934 ms
+11/25/2020 16:12:44 HTTP "GET" "/api/artists" responded 200 in 182.4442 ms
+11/25/2020 16:13:41 Application starting up
+11/25/2020 16:13:45 - Getting index page -
+11/25/2020 16:13:48 HTTP "GET" "/" responded 200 in 3855.1333 ms
+11/25/2020 16:13:53 HTTP "GET" "/api/artists/2" responded 200 in 399.6586 ms
+11/25/2020 16:13:56 HTTP "GET" "/api/artists/2222" responded 500 in 168.9905 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 2222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.Get(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/25/2020 16:13:57 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 2222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.Get(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/25/2020 16:15:43 HTTP "GET" "/api/artists/22222" responded 500 in 111.3732 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 22222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.Get(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/25/2020 16:15:43 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 22222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.Get(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/28/2020 09:50:40 Application starting up
+11/28/2020 09:50:50 - Getting index page -
+11/28/2020 09:50:51 HTTP "GET" "/" responded 200 in 5351.3416 ms
+11/28/2020 09:51:00 HTTP "GET" "/api/artists/2222" responded 500 in 822.6004 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 2222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.Get(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/28/2020 09:51:00 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 2222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.Get(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/28/2020 09:51:16 HTTP "GET" "/api/artists/2" responded 200 in 136.9457 ms
+11/28/2020 09:51:31 HTTP "GET" "/api/users" responded 200 in 71.8455 ms
+11/28/2020 09:53:10 HTTP "GET" "/api/artists/2" responded 200 in 49.0074 ms
+11/28/2020 09:53:15 HTTP "GET" "/api/artists/2222" responded 500 in 126.1324 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 2222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.Get(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/28/2020 09:53:15 An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 2222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.Get(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11/28/2020 10:20:59 Application starting up
+11/28/2020 10:21:10 - Getting index page -
+11/28/2020 10:21:12 HTTP "GET" "/" responded 200 in 6331.6996 ms
+11/28/2020 10:21:24 HTTP "GET" "/api/artists/2222" responded 500 in 1049.5772 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 2222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.GetArtistDetails(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/28/2020 10:21:40 HTTP "GET" "/api/artists/2" responded 200 in 110.8356 ms
+11/28/2020 10:21:44 HTTP "GET" "/api/artists/2222" responded 500 in 126.6292 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 2222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.GetArtistDetails(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/28/2020 10:23:03 Application starting up
+11/28/2020 10:23:10 - Getting index page -
+11/28/2020 10:23:13 HTTP "GET" "/" responded 200 in 4172.8201 ms
+11/28/2020 10:23:18 HTTP "GET" "/api/artists/2222" responded 500 in 645.2724 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 2222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.GetArtistDetails(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/28/2020 10:25:58 Application starting up
+11/28/2020 10:26:05 - Getting index page -
+11/28/2020 10:26:09 HTTP "GET" "/" responded 200 in 4717.0856 ms
+11/28/2020 10:26:13 HTTP "GET" "/api/artists/2222" responded 500 in 692.5542 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 2222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.GetArtistDetails(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/28/2020 10:26:20 HTTP "GET" "/api/artists/2222" responded 500 in 106.2268 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 2222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.GetArtistDetails(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/28/2020 10:37:27 Application starting up
+11/28/2020 10:37:31 - Getting index page -
+11/28/2020 10:37:34 HTTP "GET" "/" responded 200 in 3117.5092 ms
+11/28/2020 10:37:39 HTTP "GET" "/api/artists/2222" responded 500 in 764.1874 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 2222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.GetArtistDetails(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/28/2020 10:41:05 Application starting up
+11/28/2020 10:41:09 - Getting index page -
+11/28/2020 10:41:12 HTTP "GET" "/" responded 200 in 3419.0864 ms
+11/28/2020 10:41:18 HTTP "GET" "/api/artists/2222" responded 500 in 496.0417 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 2222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.GetArtistDetails(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/28/2020 10:42:15 Application starting up
+11/28/2020 10:42:21 - Getting index page -
+11/28/2020 10:42:23 HTTP "GET" "/" responded 200 in 3109.9431 ms
+11/28/2020 10:42:28 HTTP "GET" "/api/artists/2222" responded 500 in 497.8140 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 2222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.GetArtistDetails(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/28/2020 10:44:02 Application starting up
+11/28/2020 10:44:09 - Getting index page -
+11/28/2020 10:44:11 HTTP "GET" "/" responded 200 in 3517.0639 ms
+11/28/2020 10:44:15 HTTP "GET" "/api/artists/2222" responded 500 in 500.3547 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 2222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.GetArtistDetails(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/28/2020 10:49:05 Application starting up
+11/28/2020 10:49:11 - Getting index page -
+11/28/2020 10:49:14 HTTP "GET" "/" responded 200 in 3617.6785 ms
+11/28/2020 10:49:20 HTTP "GET" "/api/artists/2222" responded 500 in 502.8296 ms
+PG.Services.Helpers.Exceptions.ArgumentNullException: Artist with id 2222 was not found.
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 92
+   at PG.Web.APIControllers.ArtistsController.GetArtistDetails(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/28/2020 10:50:13 Application starting up
+11/28/2020 10:50:18 - Getting index page -
+11/28/2020 10:50:21 HTTP "GET" "/" responded 200 in 3349.1323 ms
+11/28/2020 10:50:25 HTTP "GET" "/api/artists/2222" responded 500 in 475.9140 ms
+PG.Services.Helpers.Exceptions.ArgumentNullException: Artist with id 2222 was not found.
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 92
+   at PG.Web.APIControllers.ArtistsController.GetArtistDetails(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/28/2020 10:52:25 Application starting up
+11/28/2020 10:52:33 - Getting index page -
+11/28/2020 10:52:34 HTTP "GET" "/" responded 200 in 3722.3355 ms
+11/28/2020 10:52:37 HTTP "GET" "/api/artists/2222" responded 500 in 576.3034 ms
+PG.Services.Helpers.Exceptions.ArgumentNullException: Artist with id 2222 was not found.
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 92
+   at PG.Web.APIControllers.ArtistsController.GetArtistDetails(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/28/2020 11:03:27 Application starting up
+11/28/2020 11:03:33 - Getting index page -
+11/28/2020 11:03:36 HTTP "GET" "/" responded 200 in 4659.9889 ms
+11/28/2020 11:03:38 HTTP "GET" "/api/artists/2222" responded 500 in 505.9462 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 2222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 92
+   at PG.Web.APIControllers.ArtistsController.GetArtistDetails(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/28/2020 11:07:59 Application starting up
+11/28/2020 11:08:04 - Getting index page -
+11/28/2020 11:08:07 HTTP "GET" "/" responded 200 in 3017.3892 ms
+11/28/2020 11:08:13 HTTP "GET" "/api/artists/2222" responded 500 in 498.9537 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'Artist with id 2222 was not found.')
+   at PG.Services.ArtistService.GetArtistById(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Services\ArtistService.cs:line 91
+   at PG.Web.APIControllers.ArtistsController.GetArtistDetails(Int32 id) in C:\Users\servy\Desktop\TELERIK\Final Project\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\ArtistsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)

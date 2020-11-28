@@ -24,7 +24,7 @@ namespace PG.Web.APIControllers
 
         //GET api/playlists
         [HttpGet("")]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetPlaylists()
         {
             var playlists = await _playlistService.GetAllPlaylists();
 
@@ -35,7 +35,7 @@ namespace PG.Web.APIControllers
 
         //GET api/playlists/id
         [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> GetPlaylistDetails(int id)
         {
             var playlist = await _playlistService.GetPlaylistById(id);
 

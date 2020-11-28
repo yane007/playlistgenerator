@@ -24,7 +24,7 @@ namespace PG.Web.APIControllers
 
         //GET api/artists
         [HttpGet("")]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetArtists()
         {
             var artists = await _artistService.GetAllArtists();
 
@@ -35,7 +35,7 @@ namespace PG.Web.APIControllers
 
         //GET api/artists/id
         [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> GetArtistDetails(int id)
         {
             var artist = await _artistService.GetArtistById(id);
 

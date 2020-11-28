@@ -13,6 +13,7 @@ using PG.Models;
 using PG.Services;
 using PG.Services.Contract;
 using PG.Services.Helpers;
+using PG.Web.Middleware;
 using PG.Web.Services;
 using Serilog;
 using System.Text;
@@ -101,6 +102,7 @@ namespace PG.Web
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+            app.UseMiddleware(typeof(ErrorHandlingMiddleware));
             app.UseStaticFiles();
             
             app.UseSerilogRequestLogging();
