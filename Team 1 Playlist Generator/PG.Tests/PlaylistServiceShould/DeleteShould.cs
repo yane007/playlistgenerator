@@ -116,7 +116,7 @@ namespace PG.Tests.PlaylistServiceShould
                         )
                     );
 
-                await Assert.ThrowsExceptionAsync<OutOfRangeException>(() => sut.Delete(2));
+                await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.Delete(2));
             }
         }
 

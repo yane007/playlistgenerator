@@ -61,12 +61,12 @@ namespace PG.Web
 
             services.AddHttpClient<IHttpDeezerClientService, HttpDeezerClientService>(client =>
             {
-                //client.BaseAddress = new Uri("https://api.deezer.com/");
+                client.BaseAddress = new Uri("https://api.deezer.com/");
             });
 
             services.AddHttpClient<IHttpPixabayClientService, HttpPixabayClientService>(client =>
             {
-                //client.BaseAddress = new Uri("https://pixabay.com/");
+                client.BaseAddress = new Uri("https://pixabay.com/");
             });
 
             services.AddDefaultIdentity<User>(options =>
