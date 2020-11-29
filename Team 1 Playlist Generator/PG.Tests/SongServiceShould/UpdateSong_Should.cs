@@ -2,6 +2,7 @@
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
+using PG.Services.Exceptions;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -30,7 +31,7 @@ namespace PG.Tests.SongServiceShould
             {
                 var sut = new SongService(actContext);
 
-                await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Update(2, songDTO));
+                await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.Update(2, songDTO));
             }
         }
 

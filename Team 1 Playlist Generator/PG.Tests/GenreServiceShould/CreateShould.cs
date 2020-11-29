@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
+using PG.Services.Exceptions;
 using PG.Services.Helpers;
 using System;
 using System.Net.Http;
@@ -57,7 +58,7 @@ namespace PG.Tests.GenreServiceShould
                 new HttpDeezerClientService(new HttpClient())
                 );
 
-            await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Create(null));
+            await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.Create(null));
         }
 
         [TestMethod]

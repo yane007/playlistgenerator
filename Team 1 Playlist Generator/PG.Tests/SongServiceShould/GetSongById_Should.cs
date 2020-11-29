@@ -2,6 +2,7 @@
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
+using PG.Services.Exceptions;
 using System;
 using System.Threading.Tasks;
 
@@ -21,7 +22,7 @@ namespace PG.Tests.SongServiceShould
             {
                 var sut = new SongService(actContext);
 
-                await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.GetSongById(2));
+                await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.GetSongById(2));
             }
         }
 

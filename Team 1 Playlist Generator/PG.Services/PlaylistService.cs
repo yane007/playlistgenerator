@@ -4,6 +4,7 @@ using PG.Data.Context;
 using PG.Models;
 using PG.Services.Contract;
 using PG.Services.DTOs;
+using PG.Services.Exceptions;
 using PG.Services.Mappers;
 using PG.Services.MappingModelsAPI.Pixabay;
 using Serilog;
@@ -31,11 +32,11 @@ namespace PG.Services
         {
             if (playlistDTO == null)
             {
-                throw new ArgumentNullException("Null Playlist");
+                throw new NotFoundException("Null Playlist");
             }
             if (playlistDTO.Title.Length > 50)
             {
-                throw new ArgumentOutOfRangeException("Playlist's title needs to be shorter than 50 characters.");
+                throw new OutOfRangeException("Playlist's title needs to be shorter than 50 characters.");
             }
 
             Playlist playlistToAdd = playlistDTO.ToEntity();
@@ -81,7 +82,7 @@ namespace PG.Services
 
             if (playlist == null)
             {
-                throw new ArgumentNullException($"Playlist with id {id} was not found.");
+                throw new NotFoundException($"Playlist with id {id} was not found.");
             }
 
             return playlist.ToDTO();
@@ -92,7 +93,7 @@ namespace PG.Services
             var playlist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
             if (playlist == null)
             {
-                throw new ArgumentNullException($"Playlist with id {id} was not found.");
+                throw new NotFoundException($"Playlist with id {id} was not found.");
             }
 
             playlist.Title = playlistDTO.Title;
@@ -107,13 +108,13 @@ namespace PG.Services
         {
             if (id <= 0)
             {
-                throw new ArgumentOutOfRangeException("Id can't be 0 or negative.");
+                throw new OutOfRangeException("Id can't be 0 or negative.");
             }
 
             var expectedPlaylist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == id);
             if (expectedPlaylist == null)
             {
-                throw new ArgumentOutOfRangeException($"Playlist with id {id} was not found.");
+                throw new NotFoundException($"Playlist with id {id} was not found.");
             }
             if (expectedPlaylist.IsDeleted)
             {

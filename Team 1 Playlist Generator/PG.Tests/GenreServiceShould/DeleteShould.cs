@@ -2,6 +2,7 @@
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
+using PG.Services.Exceptions;
 using PG.Services.Helpers;
 using System;
 using System.Linq;
@@ -67,7 +68,7 @@ namespace PG.Tests.GenreServiceShould
                 new HttpDeezerClientService(new HttpClient())
                 );
 
-            await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Delete(-1));
+            await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.Delete(-1));
         }
 
         [TestMethod]
@@ -84,7 +85,7 @@ namespace PG.Tests.GenreServiceShould
                     new HttpDeezerClientService(new HttpClient())
                     );
 
-                await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Delete(2));
+                await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.Delete(2));
             }
         }
 

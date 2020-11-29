@@ -63,7 +63,7 @@ namespace PG.Tests.GenreServiceShould
                 new HttpDeezerClientService(new HttpClient())
                 );
 
-            await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.GetGenreById(1));
+            await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.GetGenreById(1));
         }
     }
 }

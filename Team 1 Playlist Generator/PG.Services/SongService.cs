@@ -2,6 +2,7 @@
 using PG.Data.Context;
 using PG.Services.Contract;
 using PG.Services.DTOs;
+using PG.Services.Exceptions;
 using PG.Services.Mappers;
 using System;
 using System.Collections.Generic;
@@ -23,11 +24,11 @@ namespace PG.Services
         {
             if (songDTO == null)
             {
-                throw new ArgumentNullException("Null Song");
+                throw new NotFoundException("Null Song");
             }
             if (songDTO.Title.Length > 200)
             {
-                throw new ArgumentOutOfRangeException("Song's title needs to be shorter than 200 characters.");
+                throw new OutOfRangeException("Song's title needs to be shorter than 200 characters.");
             }
 
             var existingSong = await _context.Songs.FirstOrDefaultAsync(x => x.Title == songDTO.Title);
@@ -63,7 +64,7 @@ namespace PG.Services
             var song = await _context.Songs.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
             if (song == null)
             {
-                throw new ArgumentNullException($"Song with id {id} was not found.");
+                throw new NotFoundException($"Song with id {id} was not found.");
             }
 
             return song.ToDTO();
@@ -74,7 +75,7 @@ namespace PG.Services
             var song = await _context.Songs.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
             if (song == null)
             {
-                throw new ArgumentNullException($"Song with id {id} was not found.");
+                throw new NotFoundException($"Song with id {id} was not found.");
             }
 
             song.Title = songDTO.Title;
@@ -98,7 +99,7 @@ namespace PG.Services
             var expectedSong = await _context.Songs.FirstOrDefaultAsync(x => x.Id == id);
             if (expectedSong == null)
             {
-                throw new ArgumentNullException($"Song with id {id} was not found.");
+                throw new NotFoundException($"Song with id {id} was not found.");
             }
             if (expectedSong.IsDeleted)
             {

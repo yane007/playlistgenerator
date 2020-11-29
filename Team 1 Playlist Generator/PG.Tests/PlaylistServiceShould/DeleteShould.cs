@@ -2,6 +2,7 @@
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
+using PG.Services.Exceptions;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -51,8 +52,8 @@ namespace PG.Tests.PlaylistServiceShould
 
             var sut = new PlaylistService(assertContext);
 
-            await Assert.ThrowsExceptionAsync<ArgumentOutOfRangeException>(() => sut.Delete(-1));
-            await Assert.ThrowsExceptionAsync<ArgumentOutOfRangeException>(() => sut.Delete(0));
+            await Assert.ThrowsExceptionAsync<OutOfRangeException>(() => sut.Delete(-1));
+            await Assert.ThrowsExceptionAsync<OutOfRangeException>(() => sut.Delete(0));
         }
 
         [TestMethod]
@@ -78,7 +79,7 @@ namespace PG.Tests.PlaylistServiceShould
             {
                 var sut = new PlaylistService(assertContext);
 
-                await Assert.ThrowsExceptionAsync<ArgumentOutOfRangeException>(() => sut.Delete(2));
+                await Assert.ThrowsExceptionAsync<OutOfRangeException>(() => sut.Delete(2));
             }
         }
 

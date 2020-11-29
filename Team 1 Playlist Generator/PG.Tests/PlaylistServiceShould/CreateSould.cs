@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
+using PG.Services.Exceptions;
 using System;
 using System.Threading.Tasks;
 
@@ -48,7 +49,7 @@ namespace PG.Tests.PlaylistServiceShould
             var context = new PGDbContext(options);
             var sut = new PlaylistService(context);
 
-            await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Create(null));
+            await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.Create(null));
         }
 
         [TestMethod]
@@ -65,7 +66,7 @@ namespace PG.Tests.PlaylistServiceShould
                 //PixabayImage = "https://en.wikipedia.org/wiki/In_Utero_(album)#/media/File:In_Utero_(Nirvana)_album_cover.jpg",
             };
 
-            await Assert.ThrowsExceptionAsync<ArgumentOutOfRangeException>(() => sut.Create(playlist));
+            await Assert.ThrowsExceptionAsync<OutOfRangeException>(() => sut.Create(playlist));
         }
     }
 }

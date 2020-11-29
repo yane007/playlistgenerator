@@ -5,6 +5,7 @@ using PG.Models;
 using PG.Services.Contract;
 using PG.Services.Contracts.Helpers;
 using PG.Services.DTOs;
+using PG.Services.Exceptions;
 using PG.Services.Mappers;
 using PG.Services.MappingModelsAPI;
 using System;
@@ -37,11 +38,11 @@ namespace PG.Services
         {
             if (genreDTO == null)
             {
-                throw new ArgumentNullException("Null Genre");
+                throw new NotFoundException("Null Genre");
             }
             if (genreDTO.Name.Length > 50)
             {
-                throw new ArgumentOutOfRangeException("Genre's Name needs to be shorter than 50 characters.");
+                throw new OutOfRangeException("Genre's Name needs to be shorter than 50 characters.");
             }
 
             var existingGenre = await _context.Genres.FirstOrDefaultAsync(x => x.Name == genreDTO.Name);
@@ -61,7 +62,7 @@ namespace PG.Services
             var expectedGenre = await _context.Genres.FirstOrDefaultAsync(x => x.Id == id);
             if (expectedGenre == null)
             {
-                throw new ArgumentNullException($"Song with id {id} was not found.");
+                throw new NotFoundException($"Song with id {id} was not found.");
             }
             if (expectedGenre.IsDeleted)
             {
@@ -84,7 +85,7 @@ namespace PG.Services
             var genre = await _context.Genres.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
             if (genre == null)
             {
-                throw new ArgumentNullException($"Genre with id {id} was not found.");
+                throw new NotFoundException($"Genre with id {id} was not found.");
             }
 
             return genre.ToDTO();
@@ -202,7 +203,7 @@ namespace PG.Services
             var genre = await _context.Genres.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
             if (genre == null)
             {
-                throw new ArgumentNullException($"Genre with id {id} was not found.");
+                throw new NotFoundException($"Genre with id {id} was not found.");
             }
 
             genre.Name = genreDTO.Name;

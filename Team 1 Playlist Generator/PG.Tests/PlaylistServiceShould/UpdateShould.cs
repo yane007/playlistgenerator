@@ -2,6 +2,7 @@
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
+using PG.Services.Exceptions;
 using System;
 using System.Threading.Tasks;
 
@@ -65,7 +66,7 @@ namespace PG.Tests.PlaylistServiceShould
 
             var sut = new PlaylistService(assertContext);
 
-            await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Update(1, acdcPlaylist));
+            await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.Update(1, acdcPlaylist));
         }
     }
 }
