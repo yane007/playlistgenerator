@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Hosting;
+using PG.Services.Exceptions;
 using Serilog;
 using System;
 using System.Net;
@@ -38,15 +39,15 @@ namespace PG.Web.Middleware
             var stackTrace = String.Empty;
 
             var exceptionType = exception.GetType();
-            if (exceptionType == typeof(ArgumentOutOfRangeException))
+            if (exceptionType == typeof(OutOfRangeException))
             {
                 message = exception.Message;
                 status = HttpStatusCode.BadRequest;
             }
-            else if (exceptionType == typeof(ArgumentNullException))
+            else if (exceptionType == typeof(NotFoundException))
             {
                 message = exception.Message;
-                status = HttpStatusCode.NotFound;//
+                status = HttpStatusCode.NotFound;
             }
             else
             {
