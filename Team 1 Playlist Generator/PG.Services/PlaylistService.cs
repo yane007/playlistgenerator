@@ -19,10 +19,12 @@ namespace PG.Services
     public class PlaylistService : IPlaylistService
     {
         private readonly PGDbContext _context;
+        private readonly IPixabayService pixabayService;
 
-        public PlaylistService(PGDbContext context)
+        public PlaylistService(PGDbContext context, IPixabayService pixabayService)
         {
             _context = context;
+            this.pixabayService = pixabayService;
         }
 
 
@@ -254,7 +256,7 @@ namespace PG.Services
 
         private async Task AddPixabayImageToPlaylist(Playlist databasePlaylist)
         {
-            string pixabayImage = await GetPixabayImage(databasePlaylist.Id);
+            string pixabayImage = await pixabayService.GetPixabayImage(databasePlaylist.Id);
 
             databasePlaylist.PixabayImage = pixabayImage;
         }

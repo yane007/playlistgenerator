@@ -3,7 +3,7 @@ using PG.Services.Contracts.Helpers;
 using PG.Services.MappingModelsAPI.Pixabay;
 using System.Threading.Tasks;
 
-namespace PG.Services  //TODO ckeck
+namespace PG.Services
 {
     public class PixabayService : IPixabayService
     {

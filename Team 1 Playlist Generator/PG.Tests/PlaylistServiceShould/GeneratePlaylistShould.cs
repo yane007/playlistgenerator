@@ -45,18 +45,18 @@ namespace PG.Tests.PlaylistServiceShould
                     new HttpClient())
                 );
 
-            //TODO: Не взима главния url от Startup.
+            //TODO: Не взима главния url от Startup.  
             await deezerService.ExtractSongsFromGenre("pop");
             await deezerService.ExtractSongsFromGenre("rock");
             await deezerService.ExtractSongsFromGenre("metal");
 
-            var sut = new PlaylistService(
-                arrangeContext
-                //new PixabayService(
-                //    new HttpPixabayClientService(
-                //        new HttpClient()
-                //        )
-                //    )
+            var sut = new PlaylistService( //Mock
+                arrangeContext,
+                new PixabayService(
+                    new HttpPixabayClientService(
+                        new HttpClient()
+                        )
+                    )
                 );
 
             await sut.GeneratePlaylist(timeForTrip, playlistTitle, metalPercentagee, rockPercentagee, popPercentagee, topTracks, sameArtist, user);

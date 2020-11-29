@@ -48,7 +48,6 @@ namespace PG.Web
             var appSettings = appSettingsSection.Get<AppSettings>();
             var key = Encoding.ASCII.GetBytes(appSettings.Secret);
 
-            
 
             services.AddScoped<IDeezerAPIService, DeezerAPIService>();
             services.AddScoped<IArtistService, ArtistService>();
@@ -56,9 +55,11 @@ namespace PG.Web
             services.AddScoped<IPlaylistService, PlaylistService>();
             services.AddScoped<ISongService, SongService>();
             services.AddScoped<IBingMapsAPIService, BingMapsAPIService>();
-            services.AddTransient<IEmailSender, EmailSender>();
+            services.AddScoped<IPixabayService, PixabayService>();
+            services.AddTransient<IEmailSender, EmailSender>();//TODO: kakvo pravi?
             services.AddScoped<IUserService, UserService>();
             services.AddHostedService<GenreHostedService>();
+
 
             services.AddHttpClient<IHttpDeezerClientService, HttpDeezerClientService>(client =>
             {
@@ -131,7 +132,7 @@ namespace PG.Web
                 });
             });
             services.AddRazorPages();
-        }
+        } 
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -145,6 +146,7 @@ namespace PG.Web
                 app.UseExceptionHandler("/Home/Error");
             }
             app.UseMiddleware(typeof(ErrorHandlingMiddleware));
+
             app.UseStaticFiles();
             
             app.UseSerilogRequestLogging();

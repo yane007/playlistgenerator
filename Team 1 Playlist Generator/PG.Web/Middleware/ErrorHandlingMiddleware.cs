@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Hosting;
+using Serilog;
 using System;
 using System.Net;
 using System.Text.Json;
@@ -25,6 +26,7 @@ namespace PG.Web.Middleware
             }
             catch (Exception ex)
             {
+                Log.Logger.Error(ex.Message);
                 await HandleExceptionAsync(context, ex, env);
             }
         }
@@ -41,10 +43,10 @@ namespace PG.Web.Middleware
                 message = exception.Message;
                 status = HttpStatusCode.BadRequest;
             }
-            else if (exceptionType == typeof(ArgumentNullException))
+            else if (exceptionType == typeof(ArgumentNullException))//TODO: da si napravim nash exception
             {
                 message = exception.Message;
-                status = HttpStatusCode.NotFound;
+                status = HttpStatusCode.NotFound;//
             }
             else
             {

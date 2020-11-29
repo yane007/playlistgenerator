@@ -32,9 +32,6 @@ namespace PG.Data.Context
             builder.ApplyConfiguration(new PlaylistsGenresConfig());
 
 
-
-
-
             string id = new Guid().ToString();
             var hasher = new PasswordHasher<User>();
             var adminUser = new User();

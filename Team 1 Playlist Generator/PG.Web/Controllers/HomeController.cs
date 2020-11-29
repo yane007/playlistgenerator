@@ -40,6 +40,7 @@ namespace PG.Web.Controllers
             Log.Logger.Information("- Getting index page -");
             await GetAlbumAsync();
 
+
             //TODO: where to move? 
             //await _roleManager.CreateAsync(new IdentityRole("user"));
             //await _roleManager.CreateAsync(new IdentityRole("admin"));
