@@ -3,7 +3,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
+using PG.Services.Helpers;
 using System;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace PG.Tests.PlaylistServiceShould
@@ -20,12 +22,19 @@ namespace PG.Tests.PlaylistServiceShould
             {
                 Title = "In Utero",
                 Duration = 1600,
-                //PixabayImage = "https://en.wikipedia.org/wiki/In_Utero_(album)#/media/File:In_Utero_(Nirvana)_album_cover.jpg",
             };
 
             using (var arrangeContext = new PGDbContext(options))
             {
-                var sut = new PlaylistService(arrangeContext);
+                var sut = new PlaylistService(
+                    arrangeContext,
+                    new PixabayService(
+                      new HttpPixabayClientService(
+                          new HttpClient()
+                          )
+                        )
+                    );
+
                 await sut.Create(playlist);
                 await arrangeContext.SaveChangesAsync();
             }
@@ -36,7 +45,7 @@ namespace PG.Tests.PlaylistServiceShould
 
                 Assert.AreEqual(playlist.Title, result.Title);
                 Assert.AreEqual(playlist.Duration, result.Duration);
-                //Assert.AreEqual(playlist.PixabayImage, result.Picture);
+                Assert.IsNotNull(result.PixabayImage);
             }
         }
 
@@ -46,7 +55,15 @@ namespace PG.Tests.PlaylistServiceShould
             var options = Utils.GetOptions(nameof(CreateThrowsWhenNull));
 
             var context = new PGDbContext(options);
-            var sut = new PlaylistService(context);
+            
+            var sut = new PlaylistService(
+                context,
+                new PixabayService(
+                  new HttpPixabayClientService(
+                      new HttpClient()
+                      )
+                    )
+                );
 
             await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Create(null));
 
@@ -57,19 +74,23 @@ namespace PG.Tests.PlaylistServiceShould
         {
             var options = Utils.GetOptions(nameof(CreateThrowsWhenNameAbove50Chars));
 
-
             var context = new PGDbContext(options);
-            var sut = new PlaylistService(context);
+
+            var sut = new PlaylistService(
+                context,
+                new PixabayService(
+                  new HttpPixabayClientService(
+                      new HttpClient()
+                      )
+                    )
+                );
 
             var playlist = new PlaylistDTO
             {
-                Title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                Duration = 1600,
-                //PixabayImage = "https://en.wikipedia.org/wiki/In_Utero_(album)#/media/File:In_Utero_(Nirvana)_album_cover.jpg",
+                Title = new String('T',52)
             };
 
             await Assert.ThrowsExceptionAsync<ArgumentOutOfRangeException>(() => sut.Create(playlist));
-
         }
     }
 }

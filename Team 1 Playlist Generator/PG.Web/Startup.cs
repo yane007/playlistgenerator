@@ -56,19 +56,19 @@ namespace PG.Web
             services.AddScoped<ISongService, SongService>();
             services.AddScoped<IBingMapsAPIService, BingMapsAPIService>();
             services.AddScoped<IPixabayService, PixabayService>();
-            services.AddTransient<IEmailSender, EmailSender>();//TODO: kakvo pravi?
+            services.AddTransient<IEmailSender, EmailSender>();
             services.AddScoped<IUserService, UserService>();
             services.AddHostedService<GenreHostedService>();
 
 
             services.AddHttpClient<IHttpDeezerClientService, HttpDeezerClientService>(client =>
             {
-                client.BaseAddress = new Uri("https://api.deezer.com/");
+                //client.BaseAddress = new Uri("https://api.deezer.com/");
             });
 
             services.AddHttpClient<IHttpPixabayClientService, HttpPixabayClientService>(client =>
             {
-                client.BaseAddress = new Uri("https://pixabay.com/");
+                //client.BaseAddress = new Uri("https://pixabay.com/");
             });
 
             services.AddDefaultIdentity<User>(options =>

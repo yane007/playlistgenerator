@@ -17,7 +17,12 @@ namespace PG.Services
 
         public async Task<string> GetPixabayImage(int queryId)
         {
-            string pixabayUri = $"api/?key=19183688-4c632c1eaf95ba44e00778d20&id={queryId}&image_type=photo";
+            if (queryId <= 0)
+            {
+                queryId = 1738;
+            }
+
+            string pixabayUri = $"https://pixabay.com/api/?key=19313069-6c4d8d311e25449cde5665c63&id={queryId}&image_type=photo";
 
             var response = await _httpPixabayClientService.GetAsync(pixabayUri);
 

@@ -18302,3 +18302,70 @@ System.Exception: Exception of type 'System.Exception' was thrown.
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/29/2020 10:32:13 Application starting up
+11/29/2020 10:32:14 Syncing genres
+11/29/2020 10:32:15 - Getting index page -
+11/29/2020 10:32:16 HTTP "GET" "/" responded 200 in 518.0353 ms
+11/29/2020 10:32:16 HTTP "GET" "/js/playlistView.js" responded 404 in 3.5652 ms
+11/29/2020 10:32:16 HTTP "GET" "/js/playlistView.js" responded 404 in 5.0854 ms
+11/29/2020 11:01:21 Application starting up
+11/29/2020 11:01:22 Syncing genres
+11/29/2020 11:01:23 - Getting index page -
+11/29/2020 11:01:23 HTTP "GET" "/" responded 200 in 874.5024 ms
+11/29/2020 11:01:23 HTTP "GET" "/js/playlistView.js" responded 404 in 3.0518 ms
+11/29/2020 11:12:20 Application starting up
+11/29/2020 11:12:21 Syncing genres
+11/29/2020 11:12:21 - Getting index page -
+11/29/2020 11:12:22 HTTP "GET" "/" responded 200 in 518.0538 ms
+11/29/2020 11:12:22 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6033 ms
+11/29/2020 11:12:22 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6424 ms
+11/29/2020 11:12:24 HTTP "GET" "/Identity/Account/Login" responded 200 in 104.6756 ms
+11/29/2020 11:12:24 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4383 ms
+11/29/2020 11:12:26 User logged in.
+11/29/2020 11:12:26 HTTP "POST" "/Identity/Account/Login" responded 302 in 113.1344 ms
+11/29/2020 11:12:26 - Getting index page -
+11/29/2020 11:12:26 HTTP "GET" "/" responded 200 in 15.2494 ms
+11/29/2020 11:12:26 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7246 ms
+11/29/2020 11:12:29 HTTP "GET" "/Playlists/Create" responded 200 in 45.3584 ms
+11/29/2020 11:12:29 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5915 ms
+11/29/2020 11:12:29 HTTP "GET" "/Playlists/Create/ws" responded 200 in 9.9956 ms
+11/29/2020 11:12:36 HTTP "POST" "/Playlists/Create" responded 500 in 1997.5444 ms
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'PG.Services.MappingModelsAPI.Pixabay.PixabayQueryImagesResult' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at PG.Services.PixabayService.GetPixabayImage(Int32 queryId) in C:\Users\Yane\Desktop\sega\playlist-generator\Team 1 Playlist Generator\PG.Services\PixabayService.cs:line 26
+   at PG.Services.PlaylistService.AddPixabayImageToPlaylist(Playlist databasePlaylist) in C:\Users\Yane\Desktop\sega\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 258
+   at PG.Services.PlaylistService.Create(PlaylistDTO playlistDTO) in C:\Users\Yane\Desktop\sega\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 44
+   at PG.Services.PlaylistService.GeneratePlaylist(Int32 timeForTrip, String playlistTitle, Int32 metalPercentagee, Int32 rockPercentagee, Int32 popPercentagee, Boolean topTracks, Boolean sameArtist, User user) in C:\Users\Yane\Desktop\sega\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 134
+   at PG.Web.Controllers.PlaylistsController.Create(PlaylistGeneratorViewModel formInput) in C:\Users\Yane\Desktop\sega\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 83
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+11/29/2020 11:12:36 Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'PG.Services.MappingModelsAPI.Pixabay.PixabayQueryImagesResult' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+11/29/2020 11:12:40 HTTP "GET" "/Playlists/Create" responded 200 in 10.3668 ms
+11/29/2020 11:12:40 HTTP "GET" "/Playlists/Create/ws" responded 200 in 4.1607 ms
+11/29/2020 11:12:52 HTTP "GET" "/Playlists/Create" responded 200 in 11.0405 ms
+11/29/2020 11:12:52 HTTP "GET" "/Playlists/Create/ws" responded 200 in 6.2208 ms

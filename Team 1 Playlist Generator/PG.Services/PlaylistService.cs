@@ -41,6 +41,8 @@ namespace PG.Services
 
             Playlist playlistToAdd = playlistDTO.ToEntity();
 
+            await AddPixabayImageToPlaylist(playlistToAdd);
+
             var playlist = await _context.Playlists.AddAsync(playlistToAdd);
             Log.Logger.Information($"Playlist with title '{playlist.Entity.Title}' has been created.");
 
@@ -244,9 +246,6 @@ namespace PG.Services
             {
                 databasePlaylist.Rank = totalRank / totalSongsCount;
             }
-
-            await AddPixabayImageToPlaylist(databasePlaylist);
-
 
             user.Playlists.Add(databasePlaylist);
 

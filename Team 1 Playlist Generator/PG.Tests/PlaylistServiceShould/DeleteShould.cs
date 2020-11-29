@@ -2,8 +2,10 @@
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
+using PG.Services.Helpers;
 using System;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace PG.Tests.PlaylistServiceShould
@@ -20,19 +22,33 @@ namespace PG.Tests.PlaylistServiceShould
             {
                 Title = "In Utero",
                 Duration = 1600,
-                //PixabayImage = "https://en.wikipedia.org/wiki/In_Utero_(album)#/media/File:In_Utero_(Nirvana)_album_cover.jpg",
             };
 
             using (var arrangeContext = new PGDbContext(options))
             {
-                var sut = new PlaylistService(arrangeContext);
+                var sut = new PlaylistService(
+                    arrangeContext,
+                    new PixabayService(
+                      new HttpPixabayClientService(
+                          new HttpClient()
+                          )
+                        )
+                    );
+
                 await sut.Create(playlist);
                 await arrangeContext.SaveChangesAsync();
             }
 
             using (var assertContext = new PGDbContext(options))
             {
-                var sut = new PlaylistService(assertContext);
+                var sut = new PlaylistService(
+                    assertContext,
+                    new PixabayService(
+                      new HttpPixabayClientService(
+                          new HttpClient()
+                          )
+                        )
+                    );
                 await sut.Delete(1);
 
                 var playlists = await sut.GetAllPlaylists();
@@ -49,7 +65,14 @@ namespace PG.Tests.PlaylistServiceShould
 
             var assertContext = new PGDbContext(options);
 
-            var sut = new PlaylistService(assertContext);
+            var sut = new PlaylistService(
+                assertContext,
+                new PixabayService(
+                  new HttpPixabayClientService(
+                      new HttpClient()
+                      )
+                    )
+                );
 
             await Assert.ThrowsExceptionAsync<ArgumentOutOfRangeException>(() => sut.Delete(-1));
             await Assert.ThrowsExceptionAsync<ArgumentOutOfRangeException>(() => sut.Delete(0));
@@ -64,19 +87,33 @@ namespace PG.Tests.PlaylistServiceShould
             {
                 Title = "In Utero",
                 Duration = 1600,
-                //PixabayImage = "https://en.wikipedia.org/wiki/In_Utero_(album)#/media/File:In_Utero_(Nirvana)_album_cover.jpg",
             };
 
             using (var arrangeContext = new PGDbContext(options))
             {
-                var sut = new PlaylistService(arrangeContext);
+                var sut = new PlaylistService(
+                    arrangeContext,
+                    new PixabayService(
+                      new HttpPixabayClientService(
+                          new HttpClient()
+                          )
+                        )
+                    );
+
                 await sut.Create(playlist);
                 await arrangeContext.SaveChangesAsync();
             }
 
             using (var assertContext = new PGDbContext(options))
             {
-                var sut = new PlaylistService(assertContext);
+                var sut = new PlaylistService(
+                    assertContext,
+                    new PixabayService(
+                      new HttpPixabayClientService(
+                          new HttpClient()
+                          )
+                        )
+                    );
 
                 await Assert.ThrowsExceptionAsync<ArgumentOutOfRangeException>(() => sut.Delete(2));
             }
@@ -91,20 +128,33 @@ namespace PG.Tests.PlaylistServiceShould
             var playlist = new PlaylistDTO
             {
                 Title = "In Utero",
-                Duration = 1600,
-                //PixabayImage = "https://en.wikipedia.org/wiki/In_Utero_(album)#/media/File:In_Utero_(Nirvana)_album_cover.jpg",
+                Duration = 1600, 
             };
 
             using (var arrangeContext = new PGDbContext(options))
             {
-                var sut = new PlaylistService(arrangeContext);
+                var sut = new PlaylistService(
+                    arrangeContext,
+                    new PixabayService(
+                      new HttpPixabayClientService(
+                          new HttpClient()
+                          )
+                        )
+                    );
                 await sut.Create(playlist);
                 await arrangeContext.SaveChangesAsync();
             }
 
             using (var assertContext = new PGDbContext(options))
             {
-                var sut = new PlaylistService(assertContext);
+                var sut = new PlaylistService(
+                    assertContext,
+                    new PixabayService(
+                      new HttpPixabayClientService(
+                          new HttpClient()
+                          )
+                        )
+                    );
 
                 await sut.Delete(1);
 

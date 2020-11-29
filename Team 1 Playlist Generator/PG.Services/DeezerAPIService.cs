@@ -44,7 +44,7 @@ namespace PG.Services
                 return;
             }
 
-            var playlistsUri = $"search/playlist?q={genre}";
+            var playlistsUri = $"https://api.deezer.com/search/playlist?q={genre}";
 
             var playlistsResponse = await _httpClient.GetAsync(playlistsUri);
             var playlistsResponseResult = await playlistsResponse.Content.ReadAsStringAsync();
@@ -54,7 +54,7 @@ namespace PG.Services
 
             foreach (var playlist in deezerPlaylists.Data)
             {
-                string playlistURI = playlist.Tracklist.Substring(23);
+                string playlistURI = playlist.Tracklist;//.Substring(23);
 
                 var playlistResponse = await _httpClient.GetAsync(playlistURI);
                 var playlistResponseResult = await playlistResponse.Content.ReadAsStringAsync();
