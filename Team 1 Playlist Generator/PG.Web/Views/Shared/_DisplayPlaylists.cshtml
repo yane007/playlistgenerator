@@ -1,88 +1,21 @@
 ﻿@model IList<PlaylistViewModel>
 
-    <div class="patialPlaylists">
 
-        <div class="text-center">
-            <h1 class="display-4">Welcome</h1>
-            <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-        </div>
-
-        @if (Model.Count() == 0)
+<div id="body">
+    <ul>
+        @foreach (var item in Model)
         {
-            <p>There are no playlists</p>
-        }
-        else
-        {
-            <div class="wrapper">
-                @foreach (var item in Model)
-                {
+            <li>
+                <a asp-controller="Playlists" asp-action="Playlist" asp-route-id="@item.Id">
+                    <img src="~/images/the-nerd.jpg" alt="">
+                    <span>@item.Title</span>
+                </a>
+            </li>
 
-                    <div>
-                        <p>@item.Title <br /> @item.DurationInHours </p>
-                        <a style="background: url( @item.PixabayImage );
-                                   background-repeat: no-repeat;
-                                   background-size: 16vw 17vh; "
-                           class="list-group" asp-controller="Playlists" asp-action="Playlist"
-                           asp-route-id="@item.Id">@item.Rank</a>
-
-
-                        @if (User.IsInRole("Admin"))
-                        {
-                            <p>@item.Id</p>
-                            <form class="form" method="post" asp-controller="Playlists" asp-action="DeletePlaylist" style="margin-bottom:30px">
-                                <input type="hidden" name="id" value="@item.Id" />
-                                <div class="form__buttons buttons">
-                                    <button type="submit">Delete</button>
-                                </div>
-                            </form>
-                        }
-
-                    </div>
-
-
-                }
-            </div>
         }
 
-    </div>
-
-
-
-    <style>
-
-        .wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            justify-items: center;
-            padding: 0vh 2vw 0vh 2vw;
-        }
-
-        .wrapper > div > p {
-            text-align: center;
-        }
-
-        .list-group {
-            border: 1px solid black;
-            width: 15vw;
-            height: 17vh;
-            font-size: medium;
-            text-align: center;
-            color: black;
-            text-decoration: none;
-            margin-bottom: 1vh;
-            border-radius: 6px;
-            transition: transform 0.5s;
-        }
-
-            .list-group:hover {
-                font-weight: 800;
-                color: black;
-                text-decoration: none;
-                opacity: 0.2;
-                border: 3px solid black;
-                transform: translateY(-2vh);
-            }
-    </style>
+    </ul>
+</div>
 
 
 

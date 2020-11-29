@@ -23,6 +23,8 @@ namespace PG.Web.Models
 
         public string UserId { get; set; }
 
+        public string CreatorName { get; set; }
+
         public string LoggedUserId { get; set; }
 
         public ICollection<SongViewModel> Songs { get; set; } = new List<SongViewModel>();

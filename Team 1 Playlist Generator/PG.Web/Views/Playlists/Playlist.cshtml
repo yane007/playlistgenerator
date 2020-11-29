@@ -1,57 +1,41 @@
 ﻿@inject IJsonHelper Json
 @model PlaylistViewModel
 
+<div class="baseGrid">
+    <div class="aboutPlaylist">
+        <div class="aboutWrapper">
+            <div>
+                <h1>@Model.Title</h1>
+                <div class="album-name2Playlist" >
+                    <p><ion-icon name="radioPlaylist"></ion-icon> &nbsp;<span>By: @Model.CreatorName</span></p>
 
-<div class="containerPlaylist">
-    <div class="left-colPlaylist">
-        <div class="yearPlaylist">EST 2020</div>
-        <div class="block-coverPlaylist"></div>
-        <div class="coverPlaylist">
-
-            <div id="playlistInfo">
-                <table class="table table-striped">
-                    <partial name="_PlaylistDetails" model="Model.SongsPaged">
-                </table>
+                    <p><ion-icon name="radioPlaylist"></ion-icon> &nbsp;<span>Rank: @Model.Rank</span></p>
+                </div>
             </div>
-
+            <div class="playPlaylist">
+                <input class="w3-button w3-black" type="button" onclick="DZ.player.playTracks(@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.DeezerIDs) as String), false);" value="Play Songs" />
+            </div>
+        </div>
+        <div class="pages">
             @for (int i = 0; i < Model.SongsPaged.PageCount; i++)
             {
                 var num = i + 1;
 
                 <a href="#" onclick="LoadPlaylistPage(@Model.Id, @num)">@num</a>
-
-                @*<a  asp-controller="Playlists" asp-action="Playlist" asp-route-pageNumber="@num"> @num </a>*@
             }
-
         </div>
-        <div class="playPlaylist">
-            <input type="button" onclick="DZ.player.playTracks(@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.DeezerIDs) as String), false);" value="Play Songs" />
+        <div id="playlistInfo">
+            <table class="table table-striped">
+                <partial name="_PlaylistDetails" model="Model.SongsPaged">
+            </table>
         </div>
     </div>
 
-    <div class="right-colPlaylist">
-        <div class="upperPlaylist">
-            <div class="aboutPlaylist">
-                <h1>@Model.Title</h1>
-                <div class="album-name2Playlist">
-                    <p><ion-icon name="radioPlaylist"></ion-icon> &nbsp;<span>@Model.UserId</span></p>
-
-                    <p><ion-icon name="radioPlaylist"></ion-icon> &nbsp;<span>Rank: @Model.Rank</span></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="upper-blockPlaylist"></div>
-
-        <div class="bottomPlaylist" >
-
-            <div style="position:fixed; margin-bottom: 16vh;">
-                <div id="dz-root"></div>
-                <div id="player"></div>
-            </div>
-        </div>
-        <div class="block-bottomPlaylist"></div>
+    <div class="right-column">
+        <div id="dz-root"></div>
+        <div id="player"></div>
     </div>
+
 </div>
 
 
@@ -103,7 +87,7 @@ function LoadPlaylistPage(id, pageNumber) {
                 container: 'player',
                 playlist: true,
                 width:  957,
-                height: 700,
+                height: 760,
                 onload: onPlayerLoaded
             }
         });
@@ -111,71 +95,28 @@ function LoadPlaylistPage(id, pageNumber) {
 
 
 
-    TweenMax.from(".left-colPlaylist", 2, {
-        width: "0%",
-        ease: Expo.easeInOut
-    })
 
 
-    TweenMax.from(".yearPlaylist", 2, {
-        delay: 3.1,
-        y: 20,
-        opacity: 0,
-        ease: Expo.easeInOut
-    })
-
-    TweenMax.from(".album-namePlaylist", 2, {
-        delay: 2.4,
-        y: 20,
-        opacity: 0,
-        ease: Expo.easeInOut
-    })
-
-    TweenMax.from(".album-artistPlaylist", 2, {
-        delay: 2.6,
-        y: 20,
-        opacity: 0,
-        ease: Expo.easeInOut
-    })
-
-    TweenMax.from(".aboutPlaylist h1", 2, {
-        delay: 3,
+    TweenMax.from(".aboutPlaylist", 2, {
+        delay: 0.7,
         y: 20,
         opacity: 0,
         ease: Expo.easeInOut
     })
 
     TweenMax.from(".album-name2Playlist", 2, {
-        delay: 3.2,
+        delay: 2.2,
         y: 20,
         opacity: 0,
         ease: Expo.easeInOut
     })
 
-
-
-
-    TweenMax.from(".album-name3Playlist", 2, {
-        delay: 4,
+    TweenMax.from(".right-column", 2, {
+        delay: 0.7,
         y: 20,
         opacity: 0,
         ease: Expo.easeInOut
     })
-
-    TweenMax.from(".album-artist3Playlist", 2, {
-        delay: 4.2,
-        y: 20,
-        opacity: 0,
-        ease: Expo.easeInOut
-    })
-
-    TweenMax.from(".nextPlaylist", 2, {
-        delay: 4.4,
-        y: 20,
-        opacity: 0,
-        ease: Expo.easeInOut
-    })
-
 
 
 

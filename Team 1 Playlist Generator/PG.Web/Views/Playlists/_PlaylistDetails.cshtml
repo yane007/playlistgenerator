@@ -1,18 +1,14 @@
 ﻿@model IPagedList<SongViewModel>
 
 
-    @foreach (var song in Model)
-    {
-<tbody>
-
-    <div class="album-name2Playlist">
-        <th scope="row">@song.Title</th>
+@foreach (var song in Model)
+{
+    <tbody>
+        <th>@song.Title</th>
         <td>@song.DurationInMinutes</td>
         <td>
             <a href="@song.Preview">Link </a>
         </td>
-    </div>
-    <br />
-</tbody>
-    }
+    </tbody>
+}
 

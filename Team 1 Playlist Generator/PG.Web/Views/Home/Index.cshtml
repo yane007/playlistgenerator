@@ -4,10 +4,39 @@
 }
 
 
-<partial name="_DisplayPlaylists" model="Model">
+<div id="body">
+    <div id="featured">
+        <img src="~/images/the-beacon.jpg" alt="">
+    </div>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>
+                <a href="gallery.html">
+                    <img src="~/images/the-nerd.jpg" alt="">
+                    <span>@item.Title</span>
+                </a>
+            </li>
+        }
 
-<style>
-    .wrapper {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-</style>
+    </ul>
+</div>
+<div id="footer">
+    <div>
+        <p>&copy; 2020 by Team1. All rights reserved.</p>
+        <ul>
+            <li>
+                <a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
+            </li>
+            <li>
+                <a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a>
+            </li>
+            <li>
+                <a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">googleplus</a>
+            </li>
+            <li>
+                <a href="http://pinterest.com/fwtemplates/" id="pinterest">pinterest</a>
+            </li>
+        </ul>
+    </div>
+</div>

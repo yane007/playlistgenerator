@@ -56,6 +56,7 @@ namespace PG.Services
             var playlists = await _context.Playlists
                                  .Include(x => x.PlaylistsSongs)
                                  .ThenInclude(x => x.Song)
+                                 .Include(x => x.User)
                                  .Where(x => !x.IsDeleted)
                                  .Select(x => x.ToDTO())
                                  .ToListAsync();
@@ -68,6 +69,7 @@ namespace PG.Services
             var playlists = await _context.Playlists
                                  .Include(x => x.PlaylistsSongs)
                                  .ThenInclude(x => x.Song)
+                                 .Include(x => x.User)
                                  .Where(x => x.UserId == userId && !x.IsDeleted)
                                  .Select(x => x.ToDTO())
                                  .ToListAsync();
@@ -81,6 +83,7 @@ namespace PG.Services
             var playlist = await _context.Playlists
                                  .Include(x => x.PlaylistsSongs)
                                  .ThenInclude(x => x.Song)
+                                 .Include(x => x.User)
                                  .FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
 
             if (playlist == null)
