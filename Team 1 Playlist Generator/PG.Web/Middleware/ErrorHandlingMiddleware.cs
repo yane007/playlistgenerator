@@ -43,7 +43,7 @@ namespace PG.Web.Middleware
                 message = exception.Message;
                 status = HttpStatusCode.BadRequest;
             }
-            else if (exceptionType == typeof(ArgumentNullException))//TODO: da si napravim nash exception
+            else if (exceptionType == typeof(ArgumentNullException))
             {
                 message = exception.Message;
                 status = HttpStatusCode.NotFound;//

@@ -48,7 +48,6 @@ namespace PG.Web
             var appSettings = appSettingsSection.Get<AppSettings>();
             var key = Encoding.ASCII.GetBytes(appSettings.Secret);
 
-
             services.AddScoped<IDeezerAPIService, DeezerAPIService>();
             services.AddScoped<IArtistService, ArtistService>();
             services.AddScoped<IGenreService, GenreService>();
@@ -59,7 +58,6 @@ namespace PG.Web
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddScoped<IUserService, UserService>();
             services.AddHostedService<GenreHostedService>();
-
 
             services.AddHttpClient<IHttpDeezerClientService, HttpDeezerClientService>(client =>
             {
@@ -170,8 +168,6 @@ namespace PG.Web
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
-
-
         }
     }
 }

@@ -2,6 +2,7 @@
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
+using PG.Services.Exceptions;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -76,7 +77,7 @@ namespace PG.Tests.ArtistServiceShould
             {
                 var sut = new ArtistService(actContext);
 
-                await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Delete(2));
+                await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.Delete(2));
             }
         }
     }

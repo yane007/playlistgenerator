@@ -1,5 +1,3 @@
-using System;
-
 namespace PG.Web.Models
 {
     public class ErrorViewModel

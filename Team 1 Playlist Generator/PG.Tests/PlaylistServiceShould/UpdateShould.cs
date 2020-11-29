@@ -2,6 +2,7 @@
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
+using PG.Services.Exceptions;
 using PG.Services.Helpers;
 using System;
 using System.Linq;
@@ -85,7 +86,7 @@ namespace PG.Tests.PlaylistServiceShould
                     )
                 );
 
-            await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Update(1, acdcPlaylist));
+            await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.Update(1, acdcPlaylist));
         }
     }
 }

@@ -33,7 +33,6 @@ namespace PG.Services
             _httpClient = httpClient;
         }
 
-
         public async Task ExtractSongsFromGenre(string genre)
         {
             genre = genre.ToLower();
@@ -115,10 +114,7 @@ namespace PG.Services
                         await _songService.Create(dbSong.ToDTO());
                     }
                 }
-
                 await _context.SaveChangesAsync();
-
-
                 System.Threading.Thread.Sleep(150);
             }
         }

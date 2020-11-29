@@ -2,7 +2,6 @@
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
-using System;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -40,14 +39,12 @@ namespace PG.Tests.SongServiceShould
                 await sut.Create(songDTO2);
             }
 
-            //Act
+            //Act & Assert
             using (var actContext = new PGDbContext(options))
             {
                 var sut = new SongService(actContext);
                 var result = await sut.GetSongsByArtist(1);
 
-
-                //Assert
                 Assert.AreEqual(actContext.Songs.Where(x => x.ArtistId == 1).Count(), result.Count());
             }
         }

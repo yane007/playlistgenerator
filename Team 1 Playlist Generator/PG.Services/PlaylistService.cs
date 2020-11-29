@@ -4,6 +4,7 @@ using PG.Data.Context;
 using PG.Models;
 using PG.Services.Contract;
 using PG.Services.DTOs;
+using PG.Services.Exceptions;
 using PG.Services.Mappers;
 using PG.Services.MappingModelsAPI.Pixabay;
 using Serilog;
@@ -27,16 +28,15 @@ namespace PG.Services
             this.pixabayService = pixabayService;
         }
 
-
         public async Task<Playlist> Create(PlaylistDTO playlistDTO)
         {
             if (playlistDTO == null)
             {
-                throw new ArgumentNullException("Null Playlist");
+                throw new NotFoundException("Null Playlist");
             }
             if (playlistDTO.Title.Length > 50)
             {
-                throw new ArgumentOutOfRangeException("Playlist's title needs to be shorter than 50 characters.");
+                throw new OutOfRangeException("Playlist's title needs to be shorter than 50 characters.");
             }
 
             Playlist playlistToAdd = playlistDTO.ToEntity();
@@ -85,7 +85,7 @@ namespace PG.Services
 
             if (playlist == null)
             {
-                throw new ArgumentNullException($"Playlist with id {id} was not found.");
+                throw new NotFoundException($"Playlist with id {id} was not found.");
             }
 
             return playlist.ToDTO();
@@ -96,7 +96,7 @@ namespace PG.Services
             var playlist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
             if (playlist == null)
             {
-                throw new ArgumentNullException($"Playlist with id {id} was not found.");
+                throw new NotFoundException($"Playlist with id {id} was not found.");
             }
 
             playlist.Title = playlistDTO.Title;
@@ -111,13 +111,13 @@ namespace PG.Services
         {
             if (id <= 0)
             {
-                throw new ArgumentOutOfRangeException("Id can't be 0 or negative.");
+                throw new OutOfRangeException("Id can't be 0 or negative.");
             }
 
             var expectedPlaylist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == id);
             if (expectedPlaylist == null)
             {
-                throw new ArgumentOutOfRangeException($"Playlist with id {id} was not found.");
+                throw new NotFoundException($"Playlist with id {id} was not found.");
             }
             if (expectedPlaylist.IsDeleted)
             {
@@ -132,7 +132,6 @@ namespace PG.Services
             int rockPercentagee, int popPercentagee, bool topTracks, bool sameArtist, User user)
         {
             var databasePlaylist = await Create(new PlaylistDTO { Title = playlistTitle });
-
 
             int tripTime = timeForTrip;
             int allowedOffsetMore = 5 * 60; // 5 Min +
@@ -237,7 +236,6 @@ namespace PG.Services
             databasePlaylist.Duration = realTotalDuration;
             databasePlaylist.UserId = user.Id;
 
-
             if (totalSongsCount == 0)
             {
                 databasePlaylist.Rank = 0;
@@ -251,7 +249,6 @@ namespace PG.Services
 
             await _context.SaveChangesAsync();
         }
-
 
         private async Task AddPixabayImageToPlaylist(Playlist databasePlaylist)
         {
@@ -270,7 +267,6 @@ namespace PG.Services
             Shuffle(genreSongs);
 
             int secondsAllowed = (int)(tripTime * percentageTime);
-
             int currentPlaylistDuration = 0;
             List<Song> shuffledResult = new List<Song>();
 
@@ -303,12 +299,9 @@ namespace PG.Services
             {
                 return genreSongs;
             }
-
             Shuffle(genreSongs);
 
-
             int secondsAllowed = (int)(tripTime * percentageTime);
-
             int currentPlaylistDuration = 0;
             Dictionary<int, Song> shuffledResult = new Dictionary<int, Song>();
 
@@ -368,7 +361,6 @@ namespace PG.Services
                 toReturn.Add(new Tuple<string, int[], double>(item.Item1, offcets, item.Item2 / 100.0));
             }
 
-
             return toReturn;
         }
 
@@ -382,7 +374,6 @@ namespace PG.Services
                 {
                     //TODO: For improvement
                     var dbGenre = await _context.Genres.Include(x => x.PlaylistsGenres).FirstOrDefaultAsync(x => x.Name == item.Item1);
-
                     var playlistGenresLink = new PlaylistsGenres { PlaylistId = databasePlaylist.Id, GenreId = dbGenre.Id };
 
                     dbGenre.PlaylistsGenres.Add(playlistGenresLink);
@@ -398,12 +389,8 @@ namespace PG.Services
         private static async Task<string> GetPixabayImage(int queryId)
         {
             var client = new HttpClient();
-
-
             var response = await client.GetAsync($"https://pixabay.com/api/?key=19183688-4c632c1eaf95ba44e00778d20&id={queryId}&image_type=photo");
-
             var responseAsString = await response.Content.ReadAsStringAsync();
-
             var result = JsonConvert.DeserializeObject<PixabayQueryImagesResult>(responseAsString);
 
             foreach (var image in result.hits)
@@ -440,7 +427,5 @@ namespace PG.Services
                 list[n] = value;
             }
         }
-        //----------------------------------------------
     }
-
 }

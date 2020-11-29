@@ -25,6 +25,5 @@ namespace PG.Web.Models.Mappers
                 LockoutEnabled = userViewModel.LockoutEnabled,
             };
         }
-
     }
 }

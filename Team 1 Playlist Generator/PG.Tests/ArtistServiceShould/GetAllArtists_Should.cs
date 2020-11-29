@@ -33,14 +33,12 @@ namespace PG.Tests.ArtistServiceShould
                 await sut.Create(artistDTO2);
             }
 
-            //Act
+            //Act & Assert
             using (var actContext = new PGDbContext(options))
             {
                 var sut = new ArtistService(actContext);
                 var result = await sut.GetAllArtists();
 
-
-                //Assert
                 Assert.AreEqual(actContext.Artists.Count(), result.Count());
                 Assert.IsTrue(result.ElementAt(0).Id == 1);
                 Assert.IsTrue(result.ElementAt(1).Id == 2);

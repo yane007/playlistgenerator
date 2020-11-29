@@ -2,6 +2,7 @@
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
+using PG.Services.Exceptions;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -72,7 +73,7 @@ namespace PG.Tests.ArtistServiceShould
             {
                 var sut = new ArtistService(actContext);
 
-                await Assert.ThrowsExceptionAsync<ArgumentOutOfRangeException>(() => sut.Create(artistDTO));
+                await Assert.ThrowsExceptionAsync<OutOfRangeException>(() => sut.Create(artistDTO));
             }
         }
 
@@ -84,8 +85,7 @@ namespace PG.Tests.ArtistServiceShould
             var context = new PGDbContext(options);
             var sut = new ArtistService(context);
 
-            await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Create(null));
-
+            await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.Create(null));
         }
     }
 }

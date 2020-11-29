@@ -16,10 +16,6 @@ namespace PG.Web.Models
         [Required]
         public string EndLocation { get; set; }
 
-        //TODO: ??? как да покажем червения текст за грешка
-        //[DataType(DataType.Text)]
-        //[Display(Name = "Playlist Name")]
-        //[StringLength(10, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
         [Required]
         public string PlaylistName { get; set; }
 
@@ -32,7 +28,5 @@ namespace PG.Web.Models
         public bool TopTracks { get; set; }
 
         public bool SameArtist { get; set; }
-
-
     }
 }

@@ -9,7 +9,6 @@ namespace PG.Data.Configurations
         public void Configure(EntityTypeBuilder<PlaylistsGenres> builder)
         {
             builder.HasKey(x => new { x.PlaylistId, x.GenreId });
-
         } 
     }
 }

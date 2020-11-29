@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
+using PG.Services.Exceptions;
 using PG.Services.Helpers;
 using System;
 using System.Net.Http;
@@ -65,8 +66,7 @@ namespace PG.Tests.PlaylistServiceShould
                     )
                 );
 
-            await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Create(null));
-
+            await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.Create(null));
         }
 
         [TestMethod]
@@ -90,7 +90,7 @@ namespace PG.Tests.PlaylistServiceShould
                 Title = new String('T',52)
             };
 
-            await Assert.ThrowsExceptionAsync<ArgumentOutOfRangeException>(() => sut.Create(playlist));
+            await Assert.ThrowsExceptionAsync<OutOfRangeException>(() => sut.Create(playlist));
         }
     }
 }

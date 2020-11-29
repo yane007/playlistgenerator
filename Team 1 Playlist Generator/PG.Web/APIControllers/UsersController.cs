@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PG.Services.Contract;
-using PG.Services.Mappers;
 using PG.Web.Models;
 using PG.Web.Models.Mappers;
 using System.Linq;
@@ -22,7 +21,7 @@ namespace PG.Web.APIControllers
             _userService = userService;
         }
 
-        [HttpGet("")]
+        [HttpGet]
         public async Task<IActionResult> GetUsers()
         {
             var users = await _userService.GetAllRegularUsers();
@@ -33,7 +32,7 @@ namespace PG.Web.APIControllers
 
         [HttpPost("authenticate")]
         [AllowAnonymous]
-        public IActionResult Authenticate([FromBody] LoginCredentialsModel model)
+        public IActionResult Authenticate(LoginCredentialsModel model)
         {
             var user = _userService.Authenticate(model.Username, model.Password);
 

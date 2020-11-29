@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PG.Services.MappingModelsAPI.Pixabay
+﻿namespace PG.Services.MappingModelsAPI.Pixabay
 {
     public class PixabayImageAPI
     {

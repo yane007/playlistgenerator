@@ -38,14 +38,12 @@ namespace PG.Tests.SongServiceShould
                 await sut.Create(songDTO2);
             }
 
-            //Act
+            //Act & Assert
             using (var actContext = new PGDbContext(options))
             {
                 var sut = new SongService(actContext);
                 var result = await sut.GetAllSongs();
 
-
-                //Assert
                 Assert.AreEqual(actContext.Songs.Count(), result.Count());
                 Assert.IsTrue(result.ElementAt(0).Id == 1);
                 Assert.IsTrue(result.ElementAt(1).Id == 2);

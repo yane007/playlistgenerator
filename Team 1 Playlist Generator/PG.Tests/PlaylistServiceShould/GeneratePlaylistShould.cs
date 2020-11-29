@@ -7,7 +7,6 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-
 namespace PG.Tests.PlaylistServiceShould
 {
     [TestClass]
@@ -32,8 +31,7 @@ namespace PG.Tests.PlaylistServiceShould
                 arrangeContext,
                 new ArtistService(arrangeContext),
                 new SongService(arrangeContext),
-                new HttpDeezerClientService(
-                    new HttpClient())
+                new HttpDeezerClientService(new HttpClient())
                 );
 
             var deezerService = new DeezerAPIService(
@@ -41,8 +39,7 @@ namespace PG.Tests.PlaylistServiceShould
                 _genreService,
                 new ArtistService(arrangeContext),
                 new SongService(arrangeContext),
-                new HttpDeezerClientService(
-                    new HttpClient())
+                new HttpDeezerClientService(new HttpClient())
                 );
 
             //TODO: Не взима главния url от Startup.  
@@ -71,7 +68,6 @@ namespace PG.Tests.PlaylistServiceShould
             Assert.IsTrue(actual.Duration > timeForTrip - 300);
             Assert.IsTrue(actual.PlaylistsGenres.Count() == 3);
             Assert.IsTrue(actual.PlaylistsSongs.Count() != 0);
-
         }
     }
 }

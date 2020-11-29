@@ -2,6 +2,7 @@
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
+using PG.Services.Exceptions;
 using PG.Services.Helpers;
 using System;
 using System.Linq;
@@ -13,7 +14,6 @@ namespace PG.Tests.PlaylistServiceShould
     [TestClass]
     public class GetPlaylistByIdSould
     {
-
         [TestMethod]
         public async Task GetPlaylistByIdCorrectly()
         {
@@ -71,7 +71,6 @@ namespace PG.Tests.PlaylistServiceShould
         public async Task GetPlaylistByIdThrowsWhenNotFound()
         {
             var options = Utils.GetOptions(nameof(GetPlaylistByIdThrowsWhenNotFound));
-
             var assertContext = new PGDbContext(options);
 
             var sut = new PlaylistService(
@@ -83,7 +82,7 @@ namespace PG.Tests.PlaylistServiceShould
                     )
                 );
 
-            await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.GetPlaylistById(1));
+            await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.GetPlaylistById(1));
         }
     }
 }

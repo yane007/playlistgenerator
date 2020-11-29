@@ -2,8 +2,8 @@
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
+using PG.Services.Exceptions;
 using System;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace PG.Tests.SongServiceShould
@@ -22,7 +22,7 @@ namespace PG.Tests.SongServiceShould
             {
                 var sut = new SongService(actContext);
 
-                await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.GetSongById(2));
+                await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.GetSongById(2));
             }
         }
 
@@ -45,14 +45,12 @@ namespace PG.Tests.SongServiceShould
                 await sut.Create(songDTO);
             }
 
-            //Act
+            //Act & Assert
             using (var actContext = new PGDbContext(options))
             {
                 var sut = new SongService(actContext);
                 var result = await sut.GetSongById(1);
 
-
-                //Assert
                 Assert.AreEqual(songDTO.Id, result.Id);
                 Assert.AreEqual(songDTO.Title, result.Title);
                 Assert.AreEqual(songDTO.Duration, result.Duration);

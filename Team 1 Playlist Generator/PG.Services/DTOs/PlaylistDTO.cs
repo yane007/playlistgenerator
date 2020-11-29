@@ -1,5 +1,4 @@
-﻿using PG.Models;
-using PG.Services.DTOs.Abstract;
+﻿using PG.Services.DTOs.Abstract;
 using System.Collections.Generic;
 
 namespace PG.Services.DTOs

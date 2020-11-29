@@ -22,11 +22,10 @@ namespace PG.Web.APIControllers
         }
 
         //GET api/genres
-        [HttpGet("")]
+        [HttpGet]
         public async Task<IActionResult> GetGenres()
         {
             var genres = await _genreService.GetAllGenres();
-
             var genresViewModels = genres.Select(x => x.ToViewModel());
 
             return Ok(genresViewModels);
@@ -37,19 +36,17 @@ namespace PG.Web.APIControllers
         public async Task<IActionResult> GetGenreDetails(int id)
         {
             var genre = await _genreService.GetGenreById(id);
-
             var genreViewModel = genre.ToViewModel();
 
             return Ok(genreViewModel);
         }
 
         //POST api/genres
-        [HttpPost("")]
+        [HttpPost]
         [Authorize(Roles = "admin")]
         public async Task<IActionResult> CreateGenre(GenreViewModel model)
         {
             var genre = await _genreService.Create(model.ToDTO());
-
             var genreViewModel = genre.ToViewModel();
 
             return Created("post", genreViewModel);
@@ -61,7 +58,6 @@ namespace PG.Web.APIControllers
         public async Task<IActionResult> UpdateGenre(int id, [FromBody] GenreViewModel model)
         {
             var genre = await _genreService.Update(id, model.ToDTO());
-
             var genreViewModel = genre.ToViewModel();
 
             return Ok(genreViewModel);

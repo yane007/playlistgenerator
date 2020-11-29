@@ -2,6 +2,7 @@
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
+using PG.Services.Exceptions;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -28,7 +29,7 @@ namespace PG.Tests.ArtistServiceShould
             {
                 var sut = new ArtistService(actContext);
 
-                await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Update(2, artistDTO));
+                await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.Update(2, artistDTO));
             }
         }
 
@@ -53,14 +54,12 @@ namespace PG.Tests.ArtistServiceShould
                 await sut.Create(artistDTO);
             }
 
-            //Act
+            //Act & Assert
             using (var actContext = new PGDbContext(options))
             {
                 var sut = new ArtistService(actContext);
                 var result = await sut.Update(1, modelToUpdateWith);
 
-
-                //Assert
                 Assert.AreEqual(actContext.Artists.First().Name, result.Name);
             }
         }

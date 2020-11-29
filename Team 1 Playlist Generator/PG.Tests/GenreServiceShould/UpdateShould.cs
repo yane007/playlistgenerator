@@ -28,13 +28,10 @@ namespace PG.Tests.GenreServiceShould
                     arrangeContext,
                     new ArtistService(arrangeContext),
                     new SongService(arrangeContext),
-                    new HttpDeezerClientService(
-                        new HttpClient()
-                        )
+                    new HttpDeezerClientService(new HttpClient())
                     );
 
                 await sut.Create(popGenre);
-
                 await arrangeContext.SaveChangesAsync();
             }
 
@@ -44,15 +41,12 @@ namespace PG.Tests.GenreServiceShould
                     assertContext,
                     new ArtistService(assertContext),
                     new SongService(assertContext),
-                    new HttpDeezerClientService(
-                        new HttpClient()
-                        )
+                    new HttpDeezerClientService(new HttpClient())
                     );
 
                 var userPalylists = await sut.Update(1, popGenre);
 
                 Assert.AreEqual(popGenre.Name, userPalylists.Name);
-
             }
         }
 
@@ -71,12 +65,10 @@ namespace PG.Tests.GenreServiceShould
                 assertContext,
                 new ArtistService(assertContext),
                 new SongService(assertContext),
-                new HttpDeezerClientService(
-                    new HttpClient()
-                    )
+                new HttpDeezerClientService(new HttpClient())
                 );
 
-            await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Update(1, popGenre));
+            await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.Update(1, popGenre));
         }
     }
 }

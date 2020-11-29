@@ -18,7 +18,6 @@ namespace PG.Services
             _context = context;
         }
 
-
         public async Task<int> FindDuration(string start, string end)
         {
             var startingUrl = $"https://dev.virtualearth.net/REST/v1/Locations/{start}?key=AqYHIDdNVo4xufKpBNAuFfBrGtqJw_fJm45HlPU25Mrc-YSBHO8VcDK5zuHaXt4D";

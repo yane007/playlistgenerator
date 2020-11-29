@@ -1,8 +1,5 @@
 ﻿using PagedList;
-using PG.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace PG.Web.Models
 {
@@ -31,6 +28,5 @@ namespace PG.Web.Models
         public ICollection<SongViewModel> Songs { get; set; } = new List<SongViewModel>();
 
         public IPagedList<SongViewModel> SongsPaged { get; set; }
-
     }
 }

@@ -36,7 +36,6 @@ namespace PG.Services
             _context = context;
         }
 
-
         public async Task<IList<UserDTO>> GetAllRegularUsers()
         {
             return await _context.Users.Where(x => !x.IsDeleted)
@@ -56,9 +55,7 @@ namespace PG.Services
             if (!userToBan.LockoutEnabled)
             {
                 userToBan.LockoutEnabled = true;
-
                 userToBan.LockoutEnd = new DateTimeOffset(DateTime.Today).AddDays(5);
-
                 await _context.SaveChangesAsync();
             }
 
@@ -93,8 +90,6 @@ namespace PG.Services
                 return null;
             }
 
-
-            // authentication successful so generate jwt token
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
             var tokenDescriptor = new SecurityTokenDescriptor
@@ -112,10 +107,9 @@ namespace PG.Services
             return user;
         }
 
-
         public IEnumerable<User> GetAll()
         {
-            return this._context.Users;
+            return _context.Users;
         }
     }
 }

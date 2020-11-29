@@ -2,6 +2,7 @@
 using PG.Data.Context;
 using PG.Services.Contract;
 using PG.Services.DTOs;
+using PG.Services.Exceptions;
 using PG.Services.Mappers;
 using System;
 using System.Collections.Generic;
@@ -19,16 +20,15 @@ namespace PG.Services
             _context = context;
         }
 
-
         public async Task<ArtistDTO> Create(ArtistDTO artistDTO)
         {
             if (artistDTO == null)
             {
-                throw new ArgumentNullException("Null Artist");
+                throw new NotFoundException("Null Artist");
             }
             if (artistDTO.Name.Length > 100)
             {
-                throw new ArgumentOutOfRangeException("Artist's Name needs to be shorter than 100 characters.");
+                throw new OutOfRangeException("Artist's Name needs to be shorter than 100 characters.");
             }
 
             var existedArtist = await _context.Artists.FirstOrDefaultAsync(x => x.Name == artistDTO.Name);
@@ -48,7 +48,7 @@ namespace PG.Services
             var expectedArtist = await _context.Artists.FirstOrDefaultAsync(x => x.Id == id);
             if (expectedArtist == null)
             {
-                throw new ArgumentNullException($"Artist with id {id} was not found.");
+                throw new NotFoundException($"Artist with id {id} was not found.");
             }
             if (expectedArtist.IsDeleted)
             {
@@ -71,7 +71,7 @@ namespace PG.Services
             var artist = await _context.Artists.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
             if (artist == null)
             {
-                throw new ArgumentNullException($"Artist with id {id} was not found.");
+                throw new NotFoundException($"Artist with id {id} was not found.");
             }
 
             return artist.ToDTO();
@@ -82,7 +82,7 @@ namespace PG.Services
             var artist = await _context.Artists.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
             if (artist == null)
             {
-                throw new ArgumentNullException($"Artist with id {id} was not found.");
+                throw new NotFoundException($"Artist with id {id} was not found.");
             }
 
             artist.Name = artistDTO.Name;

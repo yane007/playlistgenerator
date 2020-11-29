@@ -14,7 +14,6 @@ namespace PG.Services
             _httpPixabayClientService = httpPixabayClientService;
         }
 
-
         public async Task<string> GetPixabayImage(int queryId)
         {
             if (queryId <= 0)
