@@ -49,15 +49,12 @@ namespace PG.Tests.PlaylistServiceShould
             var sut = new PlaylistService(context);
 
             await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Create(null));
-
         }
 
         [TestMethod]
         public async Task CreateThrowsWhenNameAbove50Chars()
         {
             var options = Utils.GetOptions(nameof(CreateThrowsWhenNameAbove50Chars));
-
-
             var context = new PGDbContext(options);
             var sut = new PlaylistService(context);
 
@@ -69,7 +66,6 @@ namespace PG.Tests.PlaylistServiceShould
             };
 
             await Assert.ThrowsExceptionAsync<ArgumentOutOfRangeException>(() => sut.Create(playlist));
-
         }
     }
 }

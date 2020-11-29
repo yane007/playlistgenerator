@@ -23,11 +23,10 @@ namespace PG.Web.APIControllers
         }
 
         //GET api/playlists
-        [HttpGet("")]
+        [HttpGet]
         public async Task<IActionResult> GetPlaylists()
         {
             var playlists = await _playlistService.GetAllPlaylists();
-
             var playlistsViewModels = playlists.Select(x => x.ToViewModel());
 
             return Ok(playlistsViewModels);
@@ -38,18 +37,16 @@ namespace PG.Web.APIControllers
         public async Task<IActionResult> GetPlaylistDetails(int id)
         {
             var playlist = await _playlistService.GetPlaylistById(id);
-
             var playlistViewModel = playlist.ToViewModel();
 
             return Ok(playlistViewModel);
         }
 
         //POST api/playlists
-        [HttpPost("")]
+        [HttpPost]
         public async Task<IActionResult> CreatePlaylist(PlaylistViewModel model)
         {
             var playlist = await _playlistService.Create(model.ToDTO());
-
             var playlistViewModel = playlist.ToDTO().ToViewModel();
 
             return Created("post", playlistViewModel);
@@ -60,7 +57,6 @@ namespace PG.Web.APIControllers
         public async Task<IActionResult> UpdatePlaylist(int id, [FromBody] PlaylistViewModel model)
         {
             var playlist = await _playlistService.Update(id, model.ToDTO());
-
             var playlistViewModel = playlist.ToViewModel();
 
             return Ok(playlistViewModel);

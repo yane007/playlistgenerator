@@ -56,7 +56,6 @@ namespace PG.Tests.PlaylistServiceShould
 
                 var firstUserPalylists = await sut.GetPlaylistsByUser("153a257-526504u");
                 int firstUserPalylistsCount = firstUserPalylists.Count();
-
                 var secondUserPalylists = await sut.GetPlaylistsByUser("68910y78a-89as1568");
                 int secondUserPalylistsCount = secondUserPalylists.Count();
 
@@ -69,7 +68,6 @@ namespace PG.Tests.PlaylistServiceShould
         public async Task GetAllPlaylistsByUserCorrectlyReturnEmpty()
         {
             var options = Utils.GetOptions(nameof(GetAllPlaylistsByUserCorrectlyReturnEmpty));
-
             var assertContext = new PGDbContext(options);
 
             var sut = new PlaylistService(assertContext);

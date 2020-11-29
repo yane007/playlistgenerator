@@ -9,8 +9,6 @@ namespace PG.Data.Configurations
         public void Configure(EntityTypeBuilder<PlaylistsSongs> builder)
         {
             builder.HasKey(x => new { x.PlaylistId, x.SongId });
-
         }
     }
-
 }

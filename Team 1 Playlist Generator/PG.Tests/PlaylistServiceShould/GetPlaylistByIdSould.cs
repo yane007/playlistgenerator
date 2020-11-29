@@ -3,7 +3,6 @@ using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
 using System;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace PG.Tests.PlaylistServiceShould
@@ -11,7 +10,6 @@ namespace PG.Tests.PlaylistServiceShould
     [TestClass]
     public class GetPlaylistByIdSould
     {
-
         [TestMethod]
         public async Task GetPlaylistByIdCorrectly()
         {
@@ -57,7 +55,6 @@ namespace PG.Tests.PlaylistServiceShould
         public async Task GetPlaylistByIdThrowsWhenNotFound()//TODO: Може ли да се тества съобщението на exception?
         {
             var options = Utils.GetOptions(nameof(GetPlaylistByIdThrowsWhenNotFound));
-
             var assertContext = new PGDbContext(options);
 
             var sut = new PlaylistService(assertContext);

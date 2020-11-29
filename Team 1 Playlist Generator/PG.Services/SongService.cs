@@ -14,12 +14,10 @@ namespace PG.Services
     {
         private readonly PGDbContext _context;
 
-
         public SongService(PGDbContext context)
         {
             _context = context;
         }
-
 
         public async Task<SongDTO> Create(SongDTO songDTO)
         {
@@ -95,7 +93,6 @@ namespace PG.Services
 
             return song.ToDTO();
         }
-
         public async Task Delete(int id)
         {
             var expectedSong = await _context.Songs.FirstOrDefaultAsync(x => x.Id == id);

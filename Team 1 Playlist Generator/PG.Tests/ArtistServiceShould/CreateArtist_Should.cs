@@ -85,7 +85,6 @@ namespace PG.Tests.ArtistServiceShould
             var sut = new ArtistService(context);
 
             await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Create(null));
-
         }
     }
 }

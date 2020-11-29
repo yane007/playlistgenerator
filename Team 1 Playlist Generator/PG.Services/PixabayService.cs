@@ -14,7 +14,6 @@ namespace PG.Services
             _httpPixabayClientService = httpPixabayClientService;
         }
 
-
         public async Task<string> GetPixabayImage(int queryId)
         {
             string pixabayUri = $"api/?key=19183688-4c632c1eaf95ba44e00778d20&id={queryId}&image_type=photo";

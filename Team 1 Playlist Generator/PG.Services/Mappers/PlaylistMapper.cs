@@ -1,13 +1,10 @@
 ﻿using PG.Models;
 using PG.Services.DTOs;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace PG.Services.Mappers
 {
-    public static class PlaylistMapper  
+    public static class PlaylistMapper
     {
         public static PlaylistDTO ToDTO(this Playlist playlist)
         {

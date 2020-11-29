@@ -28,9 +28,7 @@ namespace PG.Data.Context
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfiguration(new PlaylistsSongsConfig());
-
             builder.ApplyConfiguration(new PlaylistsGenresConfig());
-
 
             string id = new Guid().ToString();
             var hasher = new PasswordHasher<User>();
@@ -43,18 +41,14 @@ namespace PG.Data.Context
             adminUser.PasswordHash = hasher.HashPassword(adminUser, "admin123");
             adminUser.SecurityStamp = Guid.NewGuid().ToString();
 
-
             builder.Entity<User>().HasData(adminUser);
-
             builder.Entity<IdentityRole>().HasData(
            new IdentityRole { Id = "93ad4deb-b9f7-4a98-9585-8b79963aee55", Name = "User", NormalizedName = "USER", },
            new IdentityRole { Id = "6b32cc6d-2fc9-4808-a0a6-b3877bf9a381", Name = "Admin", NormalizedName = "ADMIN" });
 
-
             builder.Entity<IdentityUserRole<string>>().HasData(
                             new IdentityUserRole<string> { RoleId = "6b32cc6d-2fc9-4808-a0a6-b3877bf9a381", UserId = id }
                         );
-
 
             base.OnModelCreating(builder);
         }

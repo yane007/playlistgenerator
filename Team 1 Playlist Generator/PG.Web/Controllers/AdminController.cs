@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using PagedList;
 using PG.Services.Contract;
-using PG.Web.Models;
 using PG.Web.Models.Mappers;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace PG.Web.Controllers
 {
@@ -16,15 +13,14 @@ namespace PG.Web.Controllers
 
         public AdminController(IUserService userService)
         {
-            this._userService = userService;
+            _userService = userService;
         }
 
         public async Task<IActionResult> UsersIndex(int pageNumber = 1)
         {
-            var allUsers = await this._userService.GetAllRegularUsers();
-
+            var allUsers = await _userService.GetAllRegularUsers();
             var users = allUsers.Select(x => x.ToViewModel()).ToPagedList(pageNumber, 10);
-            
+
             return View(users);
         }
 
@@ -33,7 +29,6 @@ namespace PG.Web.Controllers
         {
             bool isBanned = await _userService.BanUserById(userId);
             return RedirectToAction("UsersIndex", "Admin");
-
         }
 
         [HttpPost]
@@ -41,7 +36,6 @@ namespace PG.Web.Controllers
         {
             bool isBanned = await _userService.UnbanUserById(userId);
             return RedirectToAction("UsersIndex", "Admin");
-
         }
     }
 }

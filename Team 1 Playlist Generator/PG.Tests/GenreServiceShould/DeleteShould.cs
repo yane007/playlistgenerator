@@ -29,10 +29,9 @@ namespace PG.Tests.GenreServiceShould
                     arrangeContext,
                     new ArtistService(arrangeContext),
                     new SongService(arrangeContext),
-                    new HttpDeezerClientService(
-                        new HttpClient()
-                        )
+                    new HttpDeezerClientService(new HttpClient())
                     );
+
                 await sut.Create(genre);
                 await arrangeContext.SaveChangesAsync();
             }
@@ -43,12 +42,10 @@ namespace PG.Tests.GenreServiceShould
                     assertContext,
                     new ArtistService(assertContext),
                     new SongService(assertContext),
-                    new HttpDeezerClientService(
-                        new HttpClient()
-                        )
+                    new HttpDeezerClientService(new HttpClient())
                     );
-                await sut.Delete(1);
 
+                await sut.Delete(1);
                 var genres = await sut.GetAllGenres();
                 int genresCount = genres.Count();
 
@@ -67,9 +64,7 @@ namespace PG.Tests.GenreServiceShould
                 assertContext,
                 new ArtistService(assertContext),
                 new SongService(assertContext),
-                new HttpDeezerClientService(
-                    new HttpClient()
-                    )
+                new HttpDeezerClientService(new HttpClient())
                 );
 
             await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Delete(-1));
@@ -86,9 +81,7 @@ namespace PG.Tests.GenreServiceShould
                     assertContext,
                     new ArtistService(assertContext),
                     new SongService(assertContext),
-                    new HttpDeezerClientService(
-                        new HttpClient()
-                        )
+                    new HttpDeezerClientService(new HttpClient())
                     );
 
                 await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Delete(2));
@@ -111,10 +104,9 @@ namespace PG.Tests.GenreServiceShould
                     arrangeContext,
                     new ArtistService(arrangeContext),
                     new SongService(arrangeContext),
-                    new HttpDeezerClientService(
-                        new HttpClient()
-                        )
+                    new HttpDeezerClientService(new HttpClient())
                     );
+
                 await sut.Create(genre);
                 await arrangeContext.SaveChangesAsync();
             }
@@ -125,9 +117,7 @@ namespace PG.Tests.GenreServiceShould
                     assertContext,
                     new ArtistService(assertContext),
                     new SongService(assertContext),
-                    new HttpDeezerClientService(
-                        new HttpClient()
-                        )
+                    new HttpDeezerClientService(new HttpClient())
                     );
 
                 await sut.Delete(1);

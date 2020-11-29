@@ -53,14 +53,12 @@ namespace PG.Tests.ArtistServiceShould
                 await sut.Create(artistDTO);
             }
 
-            //Act
+            //Act & Assert
             using (var actContext = new PGDbContext(options))
             {
                 var sut = new ArtistService(actContext);
                 var result = await sut.Update(1, modelToUpdateWith);
 
-
-                //Assert
                 Assert.AreEqual(actContext.Artists.First().Name, result.Name);
             }
         }

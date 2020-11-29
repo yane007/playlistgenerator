@@ -65,7 +65,6 @@ namespace PG.Tests.PlaylistServiceShould
         public async Task GetAllPlaylistsCorrectlyReturnEmpty()
         {
             var options = Utils.GetOptions(nameof(GetAllPlaylistsCorrectlyReturnEmpty));
-
             var assertContext = new PGDbContext(options);
 
             var sut = new PlaylistService(assertContext);

@@ -23,11 +23,10 @@ namespace PG.Web.APIControllers
         }
 
         //GET api/songs
-        [HttpGet("")]
+        [HttpGet]
         public async Task<IActionResult> GetSongs()
         {
             var songs = await _songService.GetAllSongs();
-
             var songsViewModels = songs.Select(x => x.ToViewModel());
 
             return Ok(songsViewModels);
@@ -38,19 +37,17 @@ namespace PG.Web.APIControllers
         public async Task<IActionResult> GetSongDetails(int id)
         {
             var song = await _songService.GetSongById(id);
-
             var songViewModels = song.ToViewModel();
 
             return Ok(songViewModels);
         }
 
         //POST api/songs
-        [HttpPost("")]
+        [HttpPost]
         [Authorize(Roles = "admin")]
         public async Task<IActionResult> CreateSong(SongViewModel model)
         {
             var song = await _songService.Create(model.ToDTO());
-
             var songViewModel = song.ToViewModel();
 
             return Created("post", songViewModel);
@@ -62,7 +59,6 @@ namespace PG.Web.APIControllers
         public async Task<IActionResult> UpdateSong(int id, [FromBody] SongViewModel model)
         {
             var song = await _songService.Update(id, model.ToDTO());
-
             var songViewModel = song.ToViewModel();
 
             return Ok(songViewModel);

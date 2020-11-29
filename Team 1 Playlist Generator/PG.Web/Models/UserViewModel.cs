@@ -1,10 +1,4 @@
-﻿using PG.Services.DTOs;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace PG.Web.Models
+﻿namespace PG.Web.Models
 {
     public class UserViewModel
     {
@@ -14,6 +8,6 @@ namespace PG.Web.Models
 
         public string Name { get; set; }
 
-        public string Token  { get; set; }
+        public string Token { get; set; }
     }
 }

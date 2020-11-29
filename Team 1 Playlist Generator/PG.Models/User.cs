@@ -11,7 +11,9 @@ namespace PG.Models
         }
 
         public string Token { get; set; }
+
         public bool IsDeleted { get; set; }
+
         public ICollection<Playlist> Playlists { get; set; }
     }
 }

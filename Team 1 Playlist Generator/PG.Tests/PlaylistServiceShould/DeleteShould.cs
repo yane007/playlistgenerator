@@ -80,7 +80,6 @@ namespace PG.Tests.PlaylistServiceShould
 
                 await Assert.ThrowsExceptionAsync<ArgumentOutOfRangeException>(() => sut.Delete(2));
             }
-
         }
 
         [TestMethod]
@@ -105,12 +104,10 @@ namespace PG.Tests.PlaylistServiceShould
             using (var assertContext = new PGDbContext(options))
             {
                 var sut = new PlaylistService(assertContext);
-
                 await sut.Delete(1);
 
                 await Assert.ThrowsExceptionAsync<ArgumentException>(() => sut.Delete(1));
             }
-
         }
     }
 }

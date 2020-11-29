@@ -93,7 +93,6 @@ namespace PG.Tests.SongServiceShould
             var sut = new SongService(context);
 
             await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Create(null));
-
         }
     }
 }

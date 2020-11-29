@@ -29,10 +29,9 @@ namespace PG.Tests.GenreServiceShould
                     arrangeContext,
                     new ArtistService(arrangeContext),
                     new SongService(arrangeContext),
-                    new HttpDeezerClientService(
-                        new HttpClient()
-                        )
+                    new HttpDeezerClientService(new HttpClient())
                     );
+
                 await sut.Create(genre);
                 await arrangeContext.SaveChangesAsync();
             }
@@ -42,7 +41,6 @@ namespace PG.Tests.GenreServiceShould
                 var result = await assertContext.Genres.FirstOrDefaultAsync(x => x.Name == genre.Name);
 
                 Assert.AreEqual(genre.Name, result.Name);
-
             }
         }
 
@@ -56,13 +54,10 @@ namespace PG.Tests.GenreServiceShould
                 context,
                 new ArtistService(context),
                 new SongService(context),
-                new HttpDeezerClientService(
-                    new HttpClient()
-                    )
+                new HttpDeezerClientService(new HttpClient())
                 );
 
             await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.Create(null));
-
         }
 
         [TestMethod]
@@ -81,10 +76,9 @@ namespace PG.Tests.GenreServiceShould
                     arrangeContext,
                     new ArtistService(arrangeContext),
                     new SongService(arrangeContext),
-                    new HttpDeezerClientService(
-                        new HttpClient()
-                        )
+                    new HttpDeezerClientService(new HttpClient())
                     );
+
                 await sut.Create(genre);
                 await arrangeContext.SaveChangesAsync();
             }
@@ -95,9 +89,7 @@ namespace PG.Tests.GenreServiceShould
                     assertContext,
                     new ArtistService(assertContext),
                     new SongService(assertContext),
-                    new HttpDeezerClientService(
-                        new HttpClient()
-                        )
+                    new HttpDeezerClientService(new HttpClient())
                     );
 
                 await Assert.ThrowsExceptionAsync<ArgumentException>(() => sut.Create(genre));

@@ -59,14 +59,12 @@ namespace PG.Tests.SongServiceShould
                 await sut.Create(songDTO);
             }
 
-            //Act
+            //Act & Assert
             using (var actContext = new PGDbContext(options))
             {
                 var sut = new SongService(actContext);
                 var result = await sut.Update(1, modelToUpdateWith);
 
-
-                //Assert
                 Assert.AreEqual(actContext.Songs.First().Title, result.Title);
                 Assert.AreEqual(actContext.Songs.First().Duration, result.Duration);
                 Assert.AreEqual(actContext.Songs.First().Rank, result.Rank);

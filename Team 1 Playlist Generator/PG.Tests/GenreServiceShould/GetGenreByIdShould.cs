@@ -28,13 +28,10 @@ namespace PG.Tests.GenreServiceShould
                     arrangeContext,
                     new ArtistService(arrangeContext),
                     new SongService(arrangeContext),
-                    new HttpDeezerClientService(
-                        new HttpClient()
-                        )
+                    new HttpDeezerClientService(new HttpClient())
                     );
 
                 await sut.Create(rockGenre);
-
                 await arrangeContext.SaveChangesAsync();
             }
 
@@ -44,9 +41,7 @@ namespace PG.Tests.GenreServiceShould
                     assertContext,
                     new ArtistService(assertContext),
                     new SongService(assertContext),
-                    new HttpDeezerClientService(
-                        new HttpClient()
-                        )
+                    new HttpDeezerClientService(new HttpClient())
                     );
 
                 var userPalylists = await sut.GetGenreById(1);
@@ -59,16 +54,13 @@ namespace PG.Tests.GenreServiceShould
         public async Task ThrownsWhenGenreIdIsNotFound()
         {
             var options = Utils.GetOptions(nameof(ThrownsWhenGenreIdIsNotFound));
-
             var assertContext = new PGDbContext(options);
 
             var sut = new GenreService(
                 assertContext,
                 new ArtistService(assertContext),
                 new SongService(assertContext),
-                new HttpDeezerClientService(
-                    new HttpClient()
-                    )
+                new HttpDeezerClientService(new HttpClient())
                 );
 
             await Assert.ThrowsExceptionAsync<ArgumentNullException>(() => sut.GetGenreById(1));

@@ -33,7 +33,6 @@ namespace PG.Services
             _httpDeezerClientService = httpDeezerClientService;
         }
 
-
         public async Task<GenreDTO> Create(GenreDTO genreDTO)
         {
             if (genreDTO == null)
@@ -192,13 +191,10 @@ namespace PG.Services
                             await _songService.Update(dbsong.Id, updatedSongData);
                         }
                     }
-
                     await _context.SaveChangesAsync();
-
                     System.Threading.Thread.Sleep(150);
                 }
             }
-
         }
 
         public async Task<GenreDTO> Update(int id, GenreDTO genreDTO)
@@ -210,7 +206,6 @@ namespace PG.Services
             }
 
             genre.Name = genreDTO.Name;
-
             await _context.SaveChangesAsync();
 
             return genre.ToDTO();

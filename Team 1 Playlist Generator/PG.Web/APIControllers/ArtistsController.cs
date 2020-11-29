@@ -23,7 +23,7 @@ namespace PG.Web.APIControllers
         }
 
         //GET api/artists
-        [HttpGet("")]
+        [HttpGet]
         public async Task<IActionResult> GetArtists()
         {
             var artists = await _artistService.GetAllArtists();
@@ -45,12 +45,11 @@ namespace PG.Web.APIControllers
         }
 
         //POST api/artists
-        [HttpPost("")]
+        [HttpPost]
         [Authorize(Roles = "admin")]    
         public async Task<IActionResult> CreateArtist(ArtistViewModel model)
         {
             var createdArtist = await _artistService.Create(model.ToDTO());
-
             var artistViewModel = createdArtist.ToViewModel();
 
             return Created("post", artistViewModel);
@@ -62,7 +61,6 @@ namespace PG.Web.APIControllers
         public async Task<IActionResult> UpdateArtist(int id, [FromBody] ArtistViewModel artistModel)
         {
             var artist = await _artistService.Update(id, artistModel.ToDTO());
-
             var artistViewModel = artist.ToViewModel();
 
             return Ok(artistViewModel);

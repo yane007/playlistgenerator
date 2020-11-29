@@ -11,5 +11,4 @@ namespace PG.Models
 
         public ICollection<PlaylistsGenres> PlaylistsGenres { get; set; }
     }
-
 }

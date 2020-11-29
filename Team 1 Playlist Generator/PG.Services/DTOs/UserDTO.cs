@@ -1,8 +1,6 @@
-﻿using PG.Services.DTOs.Abstract;
-
-namespace PG.Services.DTOs
+﻿namespace PG.Services.DTOs
 {
-   public class UserDTO
+    public class UserDTO
     {
         public string Id { get; set; }
 

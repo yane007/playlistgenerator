@@ -27,7 +27,6 @@ namespace PG.Services
             this.pixabayService = pixabayService;
         }
 
-
         public async Task<Playlist> Create(PlaylistDTO playlistDTO)
         {
             if (playlistDTO == null)
@@ -40,7 +39,6 @@ namespace PG.Services
             }
 
             Playlist playlistToAdd = playlistDTO.ToEntity();
-
             var playlist = await _context.Playlists.AddAsync(playlistToAdd);
             Log.Logger.Information($"Playlist with title '{playlist.Entity.Title}' has been created.");
 
@@ -130,7 +128,6 @@ namespace PG.Services
             int rockPercentagee, int popPercentagee, bool topTracks, bool sameArtist, User user)
         {
             var databasePlaylist = await Create(new PlaylistDTO { Title = playlistTitle });
-
 
             int tripTime = timeForTrip;
             int allowedOffsetMore = 5 * 60; // 5 Min +
@@ -235,7 +232,6 @@ namespace PG.Services
             databasePlaylist.Duration = realTotalDuration;
             databasePlaylist.UserId = user.Id;
 
-
             if (totalSongsCount == 0)
             {
                 databasePlaylist.Rank = 0;
@@ -246,13 +242,10 @@ namespace PG.Services
             }
 
             await AddPixabayImageToPlaylist(databasePlaylist);
-
-
             user.Playlists.Add(databasePlaylist);
 
             await _context.SaveChangesAsync();
         }
-
 
         private async Task AddPixabayImageToPlaylist(Playlist databasePlaylist)
         {
@@ -271,7 +264,6 @@ namespace PG.Services
             Shuffle(genreSongs);
 
             int secondsAllowed = (int)(tripTime * percentageTime);
-
             int currentPlaylistDuration = 0;
             List<Song> shuffledResult = new List<Song>();
 
@@ -304,12 +296,9 @@ namespace PG.Services
             {
                 return genreSongs;
             }
-
             Shuffle(genreSongs);
 
-
             int secondsAllowed = (int)(tripTime * percentageTime);
-
             int currentPlaylistDuration = 0;
             Dictionary<int, Song> shuffledResult = new Dictionary<int, Song>();
 
@@ -369,7 +358,6 @@ namespace PG.Services
                 toReturn.Add(new Tuple<string, int[], double>(item.Item1, offcets, item.Item2 / 100.0));
             }
 
-
             return toReturn;
         }
 
@@ -383,7 +371,6 @@ namespace PG.Services
                 {
                     //TODO: For improvement
                     var dbGenre = await _context.Genres.Include(x => x.PlaylistsGenres).FirstOrDefaultAsync(x => x.Name == item.Item1);
-
                     var playlistGenresLink = new PlaylistsGenres { PlaylistId = databasePlaylist.Id, GenreId = dbGenre.Id };
 
                     dbGenre.PlaylistsGenres.Add(playlistGenresLink);
@@ -399,12 +386,8 @@ namespace PG.Services
         private static async Task<string> GetPixabayImage(int queryId)
         {
             var client = new HttpClient();
-
-
             var response = await client.GetAsync($"https://pixabay.com/api/?key=19183688-4c632c1eaf95ba44e00778d20&id={queryId}&image_type=photo");
-
             var responseAsString = await response.Content.ReadAsStringAsync();
-
             var result = JsonConvert.DeserializeObject<PixabayQueryImagesResult>(responseAsString);
 
             foreach (var image in result.hits)
@@ -441,7 +424,5 @@ namespace PG.Services
                 list[n] = value;
             }
         }
-        //----------------------------------------------
     }
-
 }
