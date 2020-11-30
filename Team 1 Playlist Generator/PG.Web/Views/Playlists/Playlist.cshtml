@@ -6,14 +6,11 @@
         <div class="aboutWrapper">
             <div>
                 <h1>@Model.Title</h1>
-                <div class="album-name2Playlist" >
+                <div class="album-name2Playlist">
                     <p><ion-icon name="radioPlaylist"></ion-icon> &nbsp;<span>By: @Model.CreatorName</span></p>
 
                     <p><ion-icon name="radioPlaylist"></ion-icon> &nbsp;<span>Rank: @Model.Rank</span></p>
                 </div>
-            </div>
-            <div class="playPlaylist">
-                <input class="w3-button w3-black" type="button" onclick="DZ.player.playTracks(@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.DeezerIDs) as String), false);" value="Play Songs" />
             </div>
         </div>
         <div class="pages">
@@ -51,15 +48,15 @@ function LoadPlaylistPage(id, pageNumber) {
         });
     }
 
-
-
     $(document).ready(function () {
+
         $("#controlers input").attr('disabled', true);
         $("#slider_seek").click(function (evt, arg) {
             var left = evt.offsetX;
             DZ.player.seek((evt.offsetX / $(this).width()) * 100);
         });
     });
+
     function event_listener_append() {
         var pre = document.getElementById('event_listener');
         var line = [];
@@ -68,7 +65,9 @@ function LoadPlaylistPage(id, pageNumber) {
         }
         pre.innerHTML += line.join(' ') + "\n";
     }
+
     function onPlayerLoaded() {
+            DZ.player.playTracks(@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.DeezerIDs) as String), false);
         $("#controlers input").attr('disabled', false);
         event_listener_append('player_loaded');
         DZ.Event.subscribe('current_track', function (arg) {
@@ -79,6 +78,7 @@ function LoadPlaylistPage(id, pageNumber) {
             $("#slider_seek").find('.bar').css('width', (100 * arg[0] / arg[1]) + '%');
         });
     }
+
     document.addEventListener('DOMContentLoaded', function () {
         DZ.init({
             appId: '8',
@@ -94,31 +94,25 @@ function LoadPlaylistPage(id, pageNumber) {
     });
 
 
-
-
-
-    TweenMax.from(".aboutPlaylist", 2, {
-        delay: 0.7,
+    TweenMax.from(".aboutPlaylist", 1, {
+        delay: 0.2,
         y: 20,
         opacity: 0,
         ease: Expo.easeInOut
     })
 
     TweenMax.from(".album-name2Playlist", 2, {
-        delay: 2.2,
+        delay: 1.5,
         y: 20,
         opacity: 0,
         ease: Expo.easeInOut
     })
 
-    TweenMax.from(".right-column", 2, {
-        delay: 0.7,
+    TweenMax.from(".right-column", 1, {
+        delay: 0.2,
         y: 20,
         opacity: 0,
         ease: Expo.easeInOut
     })
-
-
-
 </script>
 
