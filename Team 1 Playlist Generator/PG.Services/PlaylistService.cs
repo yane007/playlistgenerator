@@ -149,10 +149,8 @@ namespace PG.Services
                 new Tuple<string, int> ("chalga", chalgaPercentage),
             };
 
-            //Проверяваме колко genres са селектирани.
             int genresSelected = await CheckSelectedGenres(listGenres, _context, databasePlaylist);
 
-            //Лист от имената на всеки жанр, офсетите им, и процентите им.
             List<Tuple<string, int[], double>> namesOffsetsAndPercentages = SetOffsets(listGenres, allowedOffsetMore, allowedOffsetLess, genresSelected);
 
             bool useTopTracks = topTracks;

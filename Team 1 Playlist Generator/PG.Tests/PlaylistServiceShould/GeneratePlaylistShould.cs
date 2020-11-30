@@ -1,7 +1,10 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
 using PG.Data.Context;
 using PG.Models;
 using PG.Services;
+using PG.Services.Contract;
+using PG.Services.Contracts.Helpers;
 using PG.Services.Helpers;
 using System.Linq;
 using System.Net.Http;
@@ -15,60 +18,61 @@ namespace PG.Tests.PlaylistServiceShould
         [TestMethod]
         public async Task GeneratePlaylistCorrectly()
         {
-            //TODO: seed data manualy :(
-            //var options = Utils.GetOptions(nameof(GeneratePlaylistCorrectly));
+            var options = Utils.GetOptions(nameof(GeneratePlaylistCorrectly));
 
-            //int timeForTrip = 7200;
-            //string playlistTitle = "Sofia - Sandanski";
-            //int metalPercentagee = 25;
-            //int rockPercentagee = 25;
-            //int popPercentagee = 50;
-            //int chalgaPercentage = 0;
-            //bool topTracks = true;
-            //bool sameArtist = true;
-            //User user = new User();
+            var httpClientServiceMock = new Mock<IHttpDeezerClientService>();
+            var songServiceMock = new Mock<ISongService>();
+            var artistServiceMock = new Mock<IArtistService>();
+            var pixabayServiceMock = new Mock<IPixabayService>();
 
-            //var arrangeContext = new PGDbContext(options);
-            //var _genreService = new GenreService(
-            //    arrangeContext,
-            //    new ArtistService(arrangeContext),
-            //    new SongService(arrangeContext),
-            //    new HttpDeezerClientService(new HttpClient())
-            //    );
+            int timeForTrip = 2120;
+            string playlistTitle = "Sofia - Sandanski";
+            int metalPercentagee = 0;
+            int rockPercentagee = 0;
+            int popPercentagee = 0;
+            int chalgaPercentage = 100;
+            bool topTracks = true;
+            bool sameArtist = true;
+            User user = new User();
 
-            //var deezerService = new DeezerAPIService(
-            //    arrangeContext,
-            //    _genreService,
-            //    new ArtistService(arrangeContext),
-            //    new SongService(arrangeContext),
-            //    new HttpDeezerClientService(new HttpClient())
-            //    );
+            var arrangeContext = new PGDbContext(options);
 
-            ////TODO: Не взима главния url от Startup.
-            //await deezerService.ExtractSongsFromGenre("pop");
-            //await deezerService.ExtractSongsFromGenre("rock");
-            //await deezerService.ExtractSongsFromGenre("metal");
 
-            //var sut = new PlaylistService( //Mock
-            //    arrangeContext,
-            //    new PixabayService(
-            //        new HttpPixabayClientService(
-            //            new HttpClient())
-            //        )
-            //    );
+            var chalgaDb = await arrangeContext.Genres.AddAsync(new Genre { Name = "chalga" });
 
-            //await sut.GeneratePlaylist(timeForTrip, playlistTitle, metalPercentagee, rockPercentagee, popPercentagee, chalgaPercentage, topTracks, sameArtist, user);
-            //await arrangeContext.SaveChangesAsync();
+            for (int i = 0; i < 10; i++)
+            {
+                arrangeContext.Songs.Add(new Song
+                {
+                    Title = $"Ne me ostavyay{i}",
+                    Duration = 212,
+                    Rank = 100000,
+                    GenreId = chalgaDb.Entity.Id,
+                    Preview = "https://cdns-preview-2.dzcdn.net/stream/c-2d818454952b3d382ffd9467a61360ff-2.mp3"
+                });
+            }
 
-            //var actual = arrangeContext.Playlists.FirstOrDefault(x => x.Id == 1);
+            arrangeContext.SaveChanges();
+            var sut = new PlaylistService(
+                arrangeContext,
+                pixabayServiceMock.Object);
 
-            //Assert.AreEqual(1, actual.Id);
-            //Assert.AreEqual(playlistTitle, actual.Title);
-            //Assert.AreEqual(user.Id, actual.UserId);
-            //Assert.IsTrue(actual.Duration < timeForTrip + 300);
-            //Assert.IsTrue(actual.Duration > timeForTrip - 300);
-            //Assert.IsTrue(actual.PlaylistsGenres.Count() == 3);
-            //Assert.IsTrue(actual.PlaylistsSongs.Count() != 0);
+            var image = "image";
+            var id = 1;
+            pixabayServiceMock.Setup(p => p.GetPixabayImage(id)).ReturnsAsync(image);
+
+            await sut.GeneratePlaylist(timeForTrip, playlistTitle, metalPercentagee, rockPercentagee, popPercentagee, chalgaPercentage, topTracks, sameArtist, user);
+            await arrangeContext.SaveChangesAsync();
+
+            var actual = arrangeContext.Playlists.FirstOrDefault(x => x.Id == 1);
+
+            Assert.AreEqual(1, actual.Id);
+            Assert.AreEqual(playlistTitle, actual.Title);
+            Assert.AreEqual(user.Id, actual.UserId);
+            Assert.IsTrue(actual.Duration < timeForTrip + 300);
+            Assert.IsTrue(actual.Duration > timeForTrip - 300);
+            Assert.IsTrue(actual.PlaylistsGenres.Count() == 1);
+            Assert.IsTrue(actual.PlaylistsSongs.Count() != 0);
         }
     }
 }
