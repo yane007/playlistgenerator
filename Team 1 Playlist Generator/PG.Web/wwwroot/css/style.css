@@ -84,7 +84,7 @@ p {
             }
 
                 #header ul li a:hover, #header ul li.selected a {
-                    color: #0ba39c;
+                    color: #b1872d;
                 }
 
 #body {
@@ -228,9 +228,9 @@ p {
                 }
 
                     #body div ul li div a.more:hover {
-                        color: #252525;
+                        color: #b1872d;
                         background: #fff;
-                        border: 2px solid #252525;
+                        border: 2px solid #b1872d;
                     }
 
     #body #featured {
@@ -281,7 +281,7 @@ p {
             }
 
             #body #featured div a {
-                background: #0ba39c;
+                background: #b1872d;
                 color: #fff;
                 display: inline-block;
                 font-size: 16px;
@@ -293,7 +293,7 @@ p {
             }
 
                 #body #featured div a:hover {
-                    background: #1fc3bc;
+                    background: #b1872d;
                 }
 
     #body > ul {
@@ -381,7 +381,7 @@ p {
 
             #body form #send:hover {
                 background: #fff;
-                color: #252525;
+                color: #b1872d;
                 cursor: pointer;
             }
 
