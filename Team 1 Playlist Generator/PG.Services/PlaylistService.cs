@@ -96,7 +96,7 @@ namespace PG.Services
 
         public async Task<PlaylistDTO> Update(int id, PlaylistDTO playlistDTO)
         {
-            var playlist = await _context.Playlists.FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
+            var playlist = await _context.Playlists.Include(x => x.User).FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
             if (playlist == null)
             {
                 throw new NotFoundException($"Playlist with id {id} was not found.");

@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PG.Data.Context;
+using PG.Models;
 using PG.Services;
 using PG.Services.DTOs;
 using PG.Services.Helpers;
@@ -17,29 +18,49 @@ namespace PG.Tests.PlaylistServiceShould
         {
             var options = Utils.GetOptions(nameof(GetAllPlaylistsCorrectly));
 
-            var nirvanaPlaylist = new PlaylistDTO
+            var firstUser = new User
             {
-                Title = "In Utero",
-                Duration = 1600,
-                UserId = "153a257-526504u",
+                UserName = "FirstUser",
             };
 
-            var acdcPlaylist = new PlaylistDTO
+            var secondUser = new User
             {
-                Title = "Back in Black",
-                Duration = 2531,
-                UserId = "153a257-526504u",
+                UserName = "SecondUser",
             };
 
-            var scorpionsPLaylist = new PlaylistDTO
-            {
-                Title = "Lovedrive",
-                Duration = 2190,
-                UserId = "68910y78a-89as1568",
-            };
+            string firstUserId = string.Empty;
+            string secondUserId = string.Empty;
 
             using (var arrangeContext = new PGDbContext(options))
             {
+                var firstUserBd = await arrangeContext.Users.AddAsync(firstUser);
+                var secondUserBd = await arrangeContext.Users.AddAsync(secondUser);
+
+                firstUserId = firstUserBd.Entity.Id;
+                secondUserId = secondUserBd.Entity.Id;
+
+                var nirvanaPlaylist = new PlaylistDTO
+                {
+                    Title = "In Utero",
+                    Duration = 1600,
+                    UserId = firstUserId,
+                };
+
+                var acdcPlaylist = new PlaylistDTO
+                {
+                    Title = "Back in Black",
+                    Duration = 2531,
+                    UserId = firstUserId,
+                };
+
+                var scorpionsPLaylist = new PlaylistDTO
+                {
+                    Title = "Lovedrive",
+                    Duration = 2190,
+                    UserId = secondUserId,
+                };
+
+
                 var sut = new PlaylistService(
                     arrangeContext,
                     new PixabayService(

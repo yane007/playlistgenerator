@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PG.Data.Context;
+using PG.Models;
 using PG.Services;
 using PG.Services.DTOs;
 using PG.Services.Exceptions;
@@ -19,20 +20,33 @@ namespace PG.Tests.PlaylistServiceShould
         {
             var options = Utils.GetOptions(nameof(GetPlaylistByIdCorrectly));
 
-            var nirvanaPlaylist = new PlaylistDTO
+            var firstUser = new User
             {
-                Title = "In Utero",
-                Duration = 1600,
+                UserName = "FirstUser",
             };
 
-            var acdcPlaylist = new PlaylistDTO
-            {
-                Title = "Back in Black",
-                Duration = 2531,
-            };
-
+            string firstUserId = string.Empty;
+ 
             using (var arrangeContext = new PGDbContext(options))
             {
+                var firstUserBd = await arrangeContext.Users.AddAsync(firstUser);
+ 
+                firstUserId = firstUserBd.Entity.Id;
+ 
+                var nirvanaPlaylist = new PlaylistDTO
+                {
+                    Title = "In Utero",
+                    Duration = 1600,
+                    UserId = firstUserId,
+                };
+
+                var acdcPlaylist = new PlaylistDTO
+                {
+                    Title = "Back in Black",
+                    Duration = 2531,
+                    UserId = firstUserId,
+                };
+
                 var sut = new PlaylistService(
                     arrangeContext,
                     new PixabayService(
@@ -61,8 +75,8 @@ namespace PG.Tests.PlaylistServiceShould
 
                 var userPalylists = await sut.GetPlaylistById(1);
 
-                Assert.AreEqual(nirvanaPlaylist.Title, userPalylists.Title);
-                Assert.AreEqual(nirvanaPlaylist.Duration, userPalylists.Duration);
+                Assert.AreEqual("In Utero", userPalylists.Title);
+                Assert.AreEqual(1600, userPalylists.Duration);
                 Assert.IsNotNull(userPalylists.PixabayImage);
             }
         }

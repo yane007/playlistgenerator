@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PG.Data.Context;
+using PG.Models;
 using PG.Services;
 using PG.Services.DTOs;
 using PG.Services.Exceptions;
@@ -19,20 +20,22 @@ namespace PG.Tests.PlaylistServiceShould
         {
             var options = Utils.GetOptions(nameof(UpdateCorrectly));
 
-            var nirvanaPlaylist = new PlaylistDTO
+            var firstUser = new User
             {
-                Title = "In Utero",
-                Duration = 1600, 
-            };
-
-            var acdcPlaylist = new PlaylistDTO
-            {
-                Title = "Back in Black",
-                Duration = 2531, 
+                UserName = "FirstUser",
             };
 
             using (var arrangeContext = new PGDbContext(options))
             {
+                var firstUserDb = await arrangeContext.Users.AddAsync(firstUser);
+
+                var nirvanaPlaylist = new PlaylistDTO
+                {
+                    Title = "In Utero",
+                    Duration = 1600,
+                    UserId = firstUserDb.Entity.Id,
+                };
+
                 var sut = new PlaylistService(
                     arrangeContext,
                     new PixabayService(
@@ -49,6 +52,21 @@ namespace PG.Tests.PlaylistServiceShould
 
             using (var assertContext = new PGDbContext(options))
             {
+
+                var secondUser = new User
+                {
+                    UserName = "SecondUser",
+                };
+                var secondUserDb = await assertContext.Users.AddAsync(secondUser);
+
+                var acdcPlaylist = new PlaylistDTO
+                {
+                    Title = "Back in Black",
+                    Duration = 2531,
+                    UserId = secondUserDb.Entity.Id,
+                    PixabayImage = "New Image URL",
+                };
+
                 var sut = new PlaylistService(
                     assertContext,
                     new PixabayService(
@@ -72,7 +90,7 @@ namespace PG.Tests.PlaylistServiceShould
             var acdcPlaylist = new PlaylistDTO
             {
                 Title = "Back in Black",
-                Duration = 2531, 
+                Duration = 2531,
             };
 
             var assertContext = new PGDbContext(options);
