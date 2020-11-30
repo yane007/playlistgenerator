@@ -132,7 +132,7 @@ namespace PG.Services
         }
 
         public async Task GeneratePlaylist(int timeForTrip, string playlistTitle, int metalPercentagee,
-            int rockPercentagee, int popPercentagee, bool topTracks, bool sameArtist, User user)
+            int rockPercentagee, int popPercentagee, int chalgaPercentage, bool topTracks, bool sameArtist, User user)
         {
             var databasePlaylist = await Create(new PlaylistDTO { Title = playlistTitle });
 
@@ -146,6 +146,7 @@ namespace PG.Services
                 new Tuple<string, int> ("metal", metalPercentagee),
                 new Tuple<string, int> ("rock", rockPercentagee),
                 new Tuple<string, int> ("pop", popPercentagee),
+                new Tuple<string, int> ("chalga", chalgaPercentage),
             };
 
             //Проверяваме колко genres са селектирани.

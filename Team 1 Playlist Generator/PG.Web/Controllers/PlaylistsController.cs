@@ -70,7 +70,7 @@ namespace PG.Web.Controllers
             var user = await _userManager.GetUserAsync(User);
 
             await _playlistService.GeneratePlaylist(tripTime, formInput.PlaylistName,
-                formInput.Metal, formInput.Rock, formInput.Pop, formInput.TopTracks, formInput.SameArtist, user);
+                formInput.Metal, formInput.Rock, formInput.Pop, formInput.Chalga, formInput.TopTracks, formInput.SameArtist, user);
 
             return RedirectToAction("Index");
         }

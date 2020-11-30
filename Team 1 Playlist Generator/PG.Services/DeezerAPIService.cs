@@ -43,7 +43,7 @@ namespace PG.Services
                 return;
             }
 
-            var playlistsUri = $"https://api.deezer.com/search/playlist?q={genre}";
+            var playlistsUri = $"search/playlist?q={genre}";
 
             var playlistsResponse = await _httpClient.GetAsync(playlistsUri);
             var playlistsResponseResult = await playlistsResponse.Content.ReadAsStringAsync();
@@ -53,7 +53,7 @@ namespace PG.Services
 
             foreach (var playlist in deezerPlaylists.Data)
             {
-                string playlistURI = playlist.Tracklist;//.Substring(23);
+                string playlistURI = playlist.Tracklist.Substring(23);
 
                 var playlistResponse = await _httpClient.GetAsync(playlistURI);
                 var playlistResponseResult = await playlistResponse.Content.ReadAsStringAsync();
@@ -84,7 +84,6 @@ namespace PG.Services
                     var dbAlbum = await _context.Albums.FirstOrDefaultAsync(x => x.Title == song.Album.Title && !x.IsDeleted);
                     if (dbAlbum == null)
                     {
-                        //No service
                         var addedAlbum = await _context.Albums.AddAsync(new Album()
                         {
                             Title = song.Album.Title,

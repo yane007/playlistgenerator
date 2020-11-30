@@ -46,9 +46,8 @@ namespace PG.Web.Controllers
             //await _roleManager.CreateAsync(new IdentityRole("admin"));
 
 
-            //TODO: take top 3 playlists
             IEnumerable<PlaylistDTO> playlistsDTOs = await _playlistService.GetAllPlaylists();
-            IList<PlaylistViewModel> playlistsViewModels = playlistsDTOs.Take(3).Select(x => x.ToViewModel()).ToList();
+            IList<PlaylistViewModel> playlistsViewModels = playlistsDTOs.OrderBy(x => x.Rank).Take(3).Select(x => x.ToViewModel()).ToList();
 
             return View(playlistsViewModels);
         }

@@ -55,6 +55,6 @@ namespace PG.Services.Contract
         /// <param name="sameArtist">Allows songs from the same artist.</param>
         /// <param name="user">User that creates the playlist</param>
         Task GeneratePlaylist(int tripTime, string playlistName, int metalPercentage, 
-            int rockPercentage, int popPercentage, bool topTracks, bool sameArtist, User user);
+            int rockPercentage, int popPercentage, int chalgaPercentage, bool topTracks, bool sameArtist, User user);
     }
 }

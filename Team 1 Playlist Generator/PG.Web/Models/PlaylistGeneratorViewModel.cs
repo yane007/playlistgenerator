@@ -25,6 +25,8 @@ namespace PG.Web.Models
 
         public int Pop { get; set; }
 
+        public int Chalga { get; set; }
+
         public bool TopTracks { get; set; }
 
         public bool SameArtist { get; set; }

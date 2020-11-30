@@ -9,22 +9,23 @@ namespace PG.Tests.UserServiceShould
     [TestClass]
     public class GetAllUsersShould
     {
-            [TestMethod]
-            public async Task CorrectlyTakesAllUsers()
-            {
-                var options = Utils.GetOptions(nameof(CorrectlyTakesAllUsers));
+        [TestMethod]
+        public async Task CorrectlyTakesAllUsers()
+        {
+            var options = Utils.GetOptions(nameof(CorrectlyTakesAllUsers));
 
-                var assertContext = new PGDbContext(options);
+            var assertContext = new PGDbContext(options);
 
-                User user = new User { NormalizedUserName = "Georgi" };
-                User userTwo = new User { NormalizedUserName = "Yane" };
-                assertContext.Add(user);
-                assertContext.Add(userTwo);
-                await assertContext.SaveChangesAsync();
+            User user = new User { NormalizedUserName = "Georgi" };
+            User userTwo = new User { NormalizedUserName = "Yane" };
+            assertContext.Add(user);
+            assertContext.Add(userTwo);
+            await assertContext.SaveChangesAsync();
 
-                var sut = new UserService(assertContext);
-                var users = sut.GetAllRegularUsers().Result.Count();
+            var sut = new UserService(assertContext);
+            var users = await sut.GetAllRegularUsers();
 
-                Assert.AreEqual(2, users);
-            }
+            Assert.AreEqual(2, users.Count);
+        }
+    }
 }
