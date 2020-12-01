@@ -31,10 +31,18 @@ namespace PG.Web.Controllers
         }
 
         [AllowAnonymous]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string name = "", string genre = "", string duration = "")
         {
-            IEnumerable<PlaylistDTO> playlistsDTOs = await _playlistService.GetAllPlaylists();
-            IList<PlaylistViewModel> playlistsViewModels = playlistsDTOs.Where(x => x.IsPublic).Select(x => x.ToViewModel()).ToList();
+            IEnumerable<PlaylistDTO> playlistsDTOs = await _playlistService.GetAllPlaylistsWithSettings(name, genre, duration);
+            IList<PlaylistViewModel> playlistsViewModels = playlistsDTOs
+                .Where(x => x.IsPublic)
+                .Select(x => x.ToViewModel())
+                .ToList();
+
+            var allGenres = await _genreService.GetAllGenres();
+            ViewBag.Genres = allGenres.Select(x => x.Name);
+            ViewBag.MinPlaylistDuration = await _playlistService.GetMinPlaylistDuration();
+            ViewBag.MaxPlaylistDuration = await _playlistService.GetMaxPlaylistDuration();
 
             return View(playlistsViewModels);
         }
@@ -118,6 +126,19 @@ namespace PG.Web.Controllers
             await _playlistService.Update(model.Id, model.ToDTO());
 
             return RedirectToAction("MyPlaylists");
+        }
+
+        [HttpPost]
+        public IActionResult FilterPlaylists(string viewName, string viewGenre, string viewDuration)
+        {
+
+            return RedirectToAction("Index",
+                new
+                {
+                    name = viewName,
+                    genre = viewGenre,
+                    duration = viewDuration,
+                });
         }
     }
 }

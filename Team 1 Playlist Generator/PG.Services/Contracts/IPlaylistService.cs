@@ -51,6 +51,27 @@ namespace PG.Services.Contract
         Task Delete(int id);
 
         /// <summary>
+        /// Gets the duration of the shortest plalist.
+        /// </summary>
+        /// <returns></returns>
+        Task<int> GetMinPlaylistDuration();
+
+        /// <summary>
+        /// Gets the duration of the longest playlist.
+        /// </summary>
+        /// <returns></returns>
+        Task<int> GetMaxPlaylistDuration();
+
+        /// <summary>
+        /// Gets all playlists that cover the settings.
+        /// </summary>
+        /// <param name="nameLike"></param>
+        /// <param name="genre"></param>
+        /// <param name="duration"></param>
+        /// <returns>IEnumerable of matched playlists</returns>
+        Task<IEnumerable<PlaylistDTO>> GetAllPlaylistsWithSettings(string nameLike, string genre, string duration);
+
+        /// <summary>
         /// Generates a playlist
         /// </summary>
         /// <param name="timeForTrip">Seconds of the trip</param>

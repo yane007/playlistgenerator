@@ -409,6 +409,77 @@ namespace PG.Services
         }
 
 
+        public async Task<int> GetMinPlaylistDuration()
+        {
+            var playlists = await GetAllPlaylists();
+
+            var shortestPlaylist = playlists.OrderBy(x => x.Duration).First();
+
+            return shortestPlaylist.Duration;
+        }
+
+        public async Task<int> GetMaxPlaylistDuration()
+        {
+            var playlists = await GetAllPlaylists();
+
+            var shortestPlaylist = playlists.OrderByDescending(x => x.Duration).First();
+
+            return shortestPlaylist.Duration;
+        }
+
+        public async Task<IEnumerable<PlaylistDTO>> GetAllPlaylistsWithSettings(string nameLike, string genre, string duration)
+        {
+            int intDuration = 0;
+            if (duration == "")
+            {
+                intDuration = int.MaxValue;
+            }
+            else
+            {
+                intDuration = int.Parse(duration);
+            }
+
+            if (genre == "")
+            {
+                var playlists = await _context.Playlists
+                     .Include(x => x.PlaylistsSongs)
+                     .ThenInclude(x => x.Song)
+                     .Include(x => x.User)
+                     .Where(x => !x.IsDeleted
+                             && x.Title.Contains(nameLike)
+                                && x.Duration <= intDuration
+                                )
+                     .Select(x => x.ToDTO())
+                     .ToListAsync();
+
+                return playlists.OrderByDescending(x => x.Rank).ToList();
+            }
+            else
+            {
+                var playlists = await _context.Playlists
+                     .Include(x => x.PlaylistsSongs)
+                     .ThenInclude(x => x.Song)
+                     .Include(x => x.User)
+                     .Include(x => x.PlaylistsGenres)
+                     .ThenInclude(x => x.Genre)
+                     .Where(x => !x.IsDeleted
+                             && x.Title.Contains(nameLike)
+
+                                && x.PlaylistsGenres
+                                   .Select(x => x.Genre.Name)
+                                   .Contains(genre)
+
+                                && x.Duration <= intDuration
+                                )
+                     .Select(x => x.ToDTO())
+                     .ToListAsync();
+
+                return playlists.OrderByDescending(x => x.Rank).ToList();
+            }
+
+        }
+
+
         //Това не трябва да е тука, ама за сега ще е :D
         private static readonly Random rng = new Random();
 

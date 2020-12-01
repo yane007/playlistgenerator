@@ -2,6 +2,141 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div class="form" style="font-family: 'Arial Black', Gadget, sans-serif;">
+    <form class="formSearch" method="post" asp-controller="Playlists" asp-action="FilterPlaylists" style="margin-bottom:30px">
 
+
+        <input name="viewName" placeholder="Search.." value="" />
+
+        @Html.DropDownList("viewGenre", new SelectList(ViewBag.Genres))
+
+        <div>
+            <span >Duraton max range:</span>
+            <input type="range" id="rangeInput" name="viewDuration" min="@ViewBag.MinPlaylistDuration" max="@ViewBag.MaxPlaylistDuration" step="1"
+                   oninput="amount.value=rangeInput.value + ' sec'">
+            <output id="amount" name="amount" for="rangeInput sec">@ViewBag.MaxPlaylistDuration sec</output>
+        </div>
+
+        <div class="form__buttons buttons" >
+            <button type="submit">Search</button>
+        </div>
+
+    </form>
+</div>
 
 <partial name="_DisplayPlaylists" model="Model">
+
+
+    <style>
+        .range {
+            display: inline-block;
+            margin: 36px 20px 20px
+        }
+
+        input[type=range] {
+            -webkit-appearance: none;
+            position: relative
+        }
+
+            input[type=range]::-webkit-slider-runnable-track {
+                width: 300px;
+                height: 2px;
+                border: none;
+                border-radius: 3px
+            }
+
+            input[type=range]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                border: none;
+                height: 12px;
+                width: 12px;
+                border-radius: 510%;
+                background: #141414;
+                border: 2px solid #515151;
+                margin-top: -5px;
+                cursor: pointer
+            }
+
+        .focused::-webkit-slider-thumb {
+            box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.15)
+        }
+
+        .clicked::-webkit-slider-thumb {
+            -webkit-transform: scale(1.5)
+        }
+
+        .disabled::-webkit-slider-thumb {
+            -webkit-transform: scale(0.9);
+            box-shadow: 0 0 0 3px #141414;
+            background: #515151 !important;
+            border-color: #515151 !important
+        }
+
+        input[type=range]:focus {
+            outline: none
+        }
+
+        .rangeM input[type=range].disabled::-webkit-slider-runnable-track {
+            background: #515151 !important
+        }
+
+        .rangeM input[type=range]::-webkit-slider-thumb {
+            background: #393436;
+            border-color: #393436
+        }
+
+        .range:hover input[type=range]:before {
+            color: white;
+            content: '50';
+            position: absolute;
+            font-family: Roboto Slab;
+            top: -49px;
+            background: #393436;
+            padding: 8px 0 3px;
+            font-size: 14px;
+            width: 30px;
+            text-align: center;
+            border-radius: 100% 100% 0 0
+        }
+
+        .range:hover input[type=range]:after {
+            content: '';
+            position: absolute;
+            top: -19px;
+            left: 50px;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 8px solid #393436;
+            font-family: Roboto Slab
+        }
+    </style>
+
+
+    <script>
+        $('input[type=range]').wrap("<div class='range'></div>");
+        var i = 1;
+
+        $('.range').each(function () {
+            var n = this.getElementsByTagName('input')[0].value;
+            var x = (n / 100) * (this.getElementsByTagName('input')[0].offsetWidth - 8) - 12;
+            this.id = 'range' + i;
+            if (this.getElementsByTagName('input')[0].value == 0) {
+                this.className = "range"
+            } else {
+                this.className = "range rangeM"
+            }
+            this.innerHTML += "<style>#" + this.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, #b1872d 0%, #b1872d " + n + "%, #515151 " + n + "%)} #" + this.id + ":hover input[type=range]:before{content:'" + n + "'!important;left: " + x + "px;} #" + this.id + ":hover input[type=range]:after{left: " + x + "px}</style>";
+            i++
+        });
+
+        $('input[type=range]').on("input", function () {
+            var a = this.value;
+            var p = (a / 100) * (this.offsetWidth - 8) - 12;
+            if (a == 0) {
+                this.parentNode.className = "range"
+            } else {
+                this.parentNode.className = "range rangeM"
+            }
+            this.parentNode.getElementsByTagName('style')[0].innerHTML += "#" + this.parentNode.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, #b1872d 0%, #b1872d " + a + "%, #515151 " + a + "%)} #" + this.parentNode.id + ":hover input[type=range]:before{content:'" + a + "'!important;left: " + p + "px;} #" + this.parentNode.id + ":hover input[type=range]:after{left: " + p + "px}";
+        })
+    </script>

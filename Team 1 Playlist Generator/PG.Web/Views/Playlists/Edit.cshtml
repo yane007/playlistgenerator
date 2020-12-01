@@ -39,5 +39,13 @@
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
+
+        <form class="form-group row" method="post" asp-controller="Playlists" asp-action="DeletePlaylist" style="margin-bottom:30px">
+            <input type="hidden" name="id" value="@Model.Id" />
+            <div class="form__buttons buttons">
+                <button type="submit">Delete</button>
+            </div>
+        </form>
+
     </div>
 </div>
