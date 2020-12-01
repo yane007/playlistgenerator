@@ -21,44 +21,46 @@
 
                 <p class="card-text">Travel Information:</p>
                 <div class="input-group mb-3">
-                    <p class="input-group-text">From:</p>
-                    <input asp-for="@Model.StartLocation" type="text" id="search_input" class="form-control" aria-describedby="button-addon2" required />
-
+                    <div class="input-group-prepend">
+                        <p class="input-group-text">From:</p>
+                        <input asp-for="@Model.StartLocation" type="text" id="search_input" class="form-control" aria-describedby="button-addon2" required />
+                    </div>
                     <span asp-validation-for="@Model.StartLocation" class="text-danger"></span>
                 </div>
 
 
                 <div class="input-group mb-3">
-                    <p class="input-group-text">To:</p>
-                    <input asp-for="@Model.EndLocation" id="search_input2" type="text" class="form-control" aria-describedby="button-addon2" required>
+                    <div class="input-group-prepend">
+                        <p class="input-group-text">To:</p>
+                        <input asp-for="@Model.EndLocation" id="search_input2" type="text" class="form-control" aria-describedby="button-addon2" required>
+                    </div>
+                        <span asp-validation-for="@Model.EndLocation" class="text-danger"></span>
+                    </div>
 
-                    <span asp-validation-for="@Model.EndLocation" class="text-danger"></span>
-                </div>
+                    <div class="form-group">
+                        <label asp-for="@Model.PlaylistName"></label>
+                        <input asp-for="@Model.PlaylistName" class="form-control" required />
+                        <span asp-validation-for="@Model.PlaylistName" class="text-danger"></span>
+                    </div>
 
-                <div class="form-group">
-                    <label asp-for="@Model.PlaylistName"></label>
-                    <input asp-for="@Model.PlaylistName" class="form-control" required />
-                    <span asp-validation-for="@Model.PlaylistName" class="text-danger"></span>
-                </div>
+                    <div class="form-group">
+                        <label asp-for="@Model.Metal" class="control-label"></label>
+                        <input asp-for="@Model.Metal" class="form-control" value="0" required />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="@Model.Rock" class="control-label"></label>
+                        <input asp-for="@Model.Rock" class="form-control" value="0" required />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="@Model.Pop" class="control-label"></label>
+                        <input asp-for="@Model.Pop" class="form-control" value="0" required />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="@Model.Chalga" class="control-label"></label>
+                        <input asp-for="@Model.Chalga" class="form-control" required />
+                    </div>
 
-                <div class="form-group">
-                    <label asp-for="@Model.Metal" class="control-label"></label>
-                    <input asp-for="@Model.Metal" class="form-control" value="0" required />
                 </div>
-                <div class="form-group">
-                    <label asp-for="@Model.Rock" class="control-label"></label>
-                    <input asp-for="@Model.Rock" class="form-control" value="0" required />
-                </div>
-                <div class="form-group">
-                    <label asp-for="@Model.Pop" class="control-label"></label>
-                    <input asp-for="@Model.Pop" class="form-control" value="0" required />
-                </div>
-                <div class="form-group">
-                    <label asp-for="@Model.Chalga" class="control-label"></label>
-                    <input asp-for="@Model.Chalga" class="form-control" required />
-                </div>
-
-            </div>
             <div>
                 <span>Top tracks:</span>
                 @Html.EditorFor(x => x.TopTracks)
@@ -84,7 +86,9 @@
     <input type="range" class="slider" />
 </div>
 
-
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
 
 <script>
 
