@@ -6,20 +6,27 @@
     <div class="col-md-4">
         <div>
             <form class="form" method="post" asp-controller="Playlists" asp-action="UpdatePublicAccess" style="margin-bottom:30px">
-                <input type="hidden" name="playlistId" value="@Model.Id" />
-                <input type="hidden" name="isPublic" value="@Model.IsPublic.ToString()" />
-                <div class="form__buttons buttons">
-                    <button type="submit">Update</button>
-                </div>
+                @if (@Model.IsPublic)
+                {
+                    <span>Playlist is Public</span>
+                    <input type="hidden" name="playlistId" value="@Model.Id" />
+                    <input type="hidden" name="isPublic" value="@Model.IsPublic.ToString()" />
+                    <div class="form__buttons buttons">
+                        <button type="submit">Make Private</button>
+                    </div>
+                }
+                else
+                {
+                    <span>Playlist is Private</span>
+                    <input type="hidden" name="playlistId" value="@Model.Id" />
+                    <input type="hidden" name="isPublic" value="@Model.IsPublic.ToString()" />
+                    <div class="form__buttons buttons">
+                        <button type="submit">Make Public   </button>
+                    </div>
+                }
+
             </form>
-            @if (@Model.IsPublic)
-            {
-                <p>Playlist is Public</p>
-            }
-            else
-            {
-                <p>Playlist is Private</p>
-            }
+
         </div>
         <form asp-action="Edit" method="post">
 

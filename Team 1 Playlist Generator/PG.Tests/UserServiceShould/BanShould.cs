@@ -23,7 +23,7 @@ namespace PG.Tests.UserServiceShould
             var sut = new UserService(actContext);
             await sut.BanUserById(user.Id);
 
-            Assert.IsTrue(user.LockoutEnabled);
+            Assert.IsTrue(user.LockoutEnd == null);
         }
     }
 }

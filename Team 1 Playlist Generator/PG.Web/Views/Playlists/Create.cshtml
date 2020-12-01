@@ -4,16 +4,17 @@
 }
 
 <div class="d-flex flex-column align-items-center">
-    <form asp-controller="Playlists" asp-action="Create" method="post">
-        <div class="d-flex flex-column align-items-center card mt-5" style="background-color: limegreen;width:25rem;margin-top: 100px !important;">
+    <form asp-controller="Playlists" asp-action="Create" method="post" style="font-family: 'Arial Black', Gadget, sans-serif;">
+        <div class="d-flex flex-column align-items-center card mt-5" style="background-color: #b8b8b8;width:25rem">
             <div class="card-body">
                 <h5 class="rounded" style="
                            position: absolute;
                            margin-top: -35px;
                            margin-left: -50px;
-                           background: #28a745;
+                           background: #b1872d;
                            padding: 5px 10px;
                            color: #fff;
+                           font
                           ">
                     Generate playlist
                 </h5>
@@ -34,53 +35,55 @@
                         <p class="input-group-text">To:</p>
                         <input asp-for="@Model.EndLocation" id="search_input2" type="text" class="form-control" aria-describedby="button-addon2" required>
                     </div>
-                        <span asp-validation-for="@Model.EndLocation" class="text-danger"></span>
-                    </div>
+                    <span asp-validation-for="@Model.EndLocation" class="text-danger"></span>
+                </div>
 
-                    <div class="form-group">
-                        <label asp-for="@Model.PlaylistName"></label>
-                        <input asp-for="@Model.PlaylistName" class="form-control" required />
-                        <span asp-validation-for="@Model.PlaylistName" class="text-danger"></span>
-                    </div>
+                <div class="form-group" style="margin-bottom: 0px;">
+                    <label asp-for="@Model.PlaylistName"></label>
+                    <input asp-for="@Model.PlaylistName" class="form-control" required />
+                    <span asp-validation-for="@Model.PlaylistName" class="text-danger"></span>
+                </div>
 
 
                 <div>
-                    <span>Metal:</span>
+                    <span>Metal: </span>
                     <input type="range" id="rangeInput" asp-for="@Model.Metal" min="@ViewBag.MinPlaylistDuration" max="@ViewBag.MaxPlaylistDuration" step="1"
                            oninput="amount.value=rangeInput.value + '%'">
-                    <output id="amount" name="amount" for="rangeInput sec">@ViewBag.MaxPlaylistDuration sec</output>
+                    <output id="amount" name="amount" for="rangeInput sec">@ViewBag.MaxPlaylistDuration</output>
                 </div>
                 <div>
-                    <span>Rock:  </span>
+                    <span>Rock:  </span>
                     <input type="range" id="rangeInput2" asp-for="@Model.Rock" min="@ViewBag.MinPlaylistDuration" max="@ViewBag.MaxPlaylistDuration" step="1"
                            oninput="amount2.value=rangeInput2.value + '%'">
-                    <output id="amount2" name="amount2" for="rangeInput2 sec">@ViewBag.MaxPlaylistDuration sec</output>
+                    <output id="amount2" name="amount2" for="rangeInput2 sec">@ViewBag.MaxPlaylistDuration</output>
                 </div>
                 <div>
-                    <span>Pop:   </span>
+                    <span>Pop:   </span>
                     <input type="range" id="rangeInput3" asp-for="@Model.Pop" min="@ViewBag.MinPlaylistDuration" max="@ViewBag.MaxPlaylistDuration" step="1"
                            oninput="amount3.value=rangeInput3.value + '%'">
-                    <output id="amount3" name="amount3" for="rangeInput3 sec">@ViewBag.MaxPlaylistDuration sec</output>
+                    <output id="amount3" name="amount3" for="rangeInput3 sec">@ViewBag.MaxPlaylistDuration</output>
                 </div>
-                <div>
+                <div style="padding-bottom: 1vw;">
                     <span>Chalga:</span>
                     <input type="range" id="rangeInput4" asp-for="@Model.Chalga" min="@ViewBag.MinPlaylistDuration" max="@ViewBag.MaxPlaylistDuration" step="1"
                            oninput="amount4.value=rangeInput4.value + '%'">
-                    <output id="amount4" name="amount4" for="rangeInput4 sec">@ViewBag.MaxPlaylistDuration sec</output>
+                    <output id="amount4" name="amount4" for="rangeInput4 sec">@ViewBag.MaxPlaylistDuration</output>
                 </div>
-
-                </div>
-            <div>
-                <span>Top tracks:</span>
+                <span style="margin-left: 1.5vw;">Top tracks:</span>
                 @Html.EditorFor(x => x.TopTracks)
-                <span>Same artist:</span>
+                <span style="margin-left: 3vw;">Same artist:</span>
                 @Html.EditorFor(x => x.SameArtist)
+            </div>
+            <div style="display:grid; grid-template-columns: 1fr 1fr; ">
+
             </div>
             <button type="submit" class="btn btn-primary"
                     style="position:relative;
-                           background: #28a745;
+                           background: #b1872d;
                            padding: 5px 10px;
                            color: #fff;
+                           margin-top: 2vh;
+                           margin-bottom: 1vh;
                       ">
                 Generate
             </button>
@@ -88,15 +91,27 @@
     </form>
 </div>
 
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
 <style>
     .range {
         display: inline-block;
         margin: 36px 20px 20px
     }
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    input[type=range] {
+        -webkit-appearance: none;
+        position: relative
+    }
+
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 300px;
+            height: 2px;
+            border: none;
+            border-radius: 3px
+        }
 
         input[type=range]::-webkit-slider-thumb {
             -webkit-appearance: none;
@@ -166,6 +181,8 @@
 
 
 <script>
+
+
     $('input[type=range]').wrap("<div class='range'></div>");
     var i = 1;
 
@@ -192,7 +209,6 @@
         }
         this.parentNode.getElementsByTagName('style')[0].innerHTML += "#" + this.parentNode.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, #b1872d 0%, #b1872d " + a + "%, #515151 " + a + "%)} #" + this.parentNode.id + ":hover input[type=range]:before{content:'" + a + "'!important;left: " + p + "px;} #" + this.parentNode.id + ":hover input[type=range]:after{left: " + p + "px}";
     })
-
 
 
 

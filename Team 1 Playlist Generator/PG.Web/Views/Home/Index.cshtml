@@ -11,12 +11,14 @@
     <ul>
         @foreach (var item in Model)
         {
-            <li>
-                <a href="gallery.html">
-                    <img src="~/images/the-nerd.jpg" alt="">
-                    <span>@item.Title</span>
-                </a>
-            </li>
+        <li>
+            <a asp-controller="Playlists" asp-action="Playlist" asp-route-id="@item.Id">
+                <span>@item.Title</span>
+                <img src="@item.PixabayImage" style="width: 295px; height: 238px; filter: grayscale(100%);" alt="">
+                <p>Duration: @item.DurationInHours</p>
+                <p>Rank: @item.Rank</p>
+            </a>
+        </li>
         }
 
     </ul>

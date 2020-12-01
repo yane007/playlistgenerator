@@ -12,6 +12,7 @@ namespace PG.Web.Models.Mappers
                 Name = userDTO.UserName,
                 Token = userDTO.Token,
                 LockoutEnabled = userDTO.LockoutEnabled,
+                LockoutEnd = userDTO.LockoutEnd,
             };
         }
 
@@ -23,6 +24,7 @@ namespace PG.Web.Models.Mappers
                 UserName = userViewModel.Name,
                 Token = userViewModel.Token,
                 LockoutEnabled = userViewModel.LockoutEnabled,
+                LockoutEnd = userViewModel.LockoutEnd,
             };
         }
     }

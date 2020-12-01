@@ -3,34 +3,35 @@
         <tr>
             <th scope="col">UserId</th>
             <th scope="col">Name</th>
-            <th scope="col">Banned</th>
             <th scope="col">Ban/Unban</th>
         </tr>
     </thead>
     @foreach (var user in Model)
     {
-
+        if (user.Id == ViewBag.LoggedUserId)
+        {
+            continue;
+        }
         <tbody>
             <tr>
                 <th scope="row">@user.Id</th>
                 <td>@user.Name</td>
-                <td>@user.LockoutEnabled</td>
-                @if (user.LockoutEnabled == false)
+
+                @if (user.LockoutEnd == null)
                 {
                     <td>
-                        <form class="form" method="post" asp-controller="Admin" asp-action="BanUsers" style="margin-bottom:30px">
+                        <form class="form" method="post" asp-controller="Admin" asp-action="BanUsers" style="margin-bottom:30px; justify-content:left;">
                             <input type="hidden" name="UserId" value="@user.Id" />
                             <div class="form__buttons buttons">
                                 <button type="submit" class="btn btn-outline-danger">Ban user</button>
                             </div>
                         </form>
                     </td>
-
                 }
                 else
                 {
                     <td>
-                        <form class="form" method="post" asp-controller="Admin" asp-action="UnbanUsers" style="margin-bottom:30px">
+                        <form class="form" method="post" asp-controller="Admin" asp-action="UnbanUsers" style="margin-bottom:30px;  justify-content:left;">
                             <input type="hidden" name="UserId" value="@user.Id" />
                             <div class="form__buttons buttons">
                                 <button type="submit" class="btn btn-outline-secondary">Unban user</button>

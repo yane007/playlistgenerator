@@ -12,7 +12,8 @@ namespace PG.Services.Mappers
                 Id = user.Id,
                 UserName = user.UserName,
                 Token = user.Token,
-                LockoutEnabled = user.LockoutEnabled
+                LockoutEnabled = user.LockoutEnabled,
+                LockoutEnd = user.LockoutEnd,
             };
         }
         public static User ToEntity(this UserDTO userDTO)
@@ -21,7 +22,8 @@ namespace PG.Services.Mappers
             {
                 Id = userDTO.Id,
                 UserName = userDTO.UserName,
-                Token = userDTO.Token
+                Token = userDTO.Token,
+                LockoutEnd = userDTO.LockoutEnd,
             };
         }
     }

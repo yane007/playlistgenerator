@@ -27891,3 +27891,1308 @@ System.InvalidOperationException: Sequence contains no elements
 12/01/2020 17:20:05 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0840 ms
 12/01/2020 17:20:05 HTTP "GET" "/Playlists/Edit/images/logo.jpg" responded 404 in 0.2678 ms
 12/01/2020 17:20:08 Syncing done
+12/01/2020 18:45:02 Application starting up
+12/01/2020 18:45:03 Syncing genres
+12/01/2020 18:45:05 - Getting index page -
+12/01/2020 18:45:18 An error occurred using the connection to database '"PlaylistGeneratorDB"' on server '".\SQLEXPRESS"'.
+12/01/2020 18:45:18 An error occurred using the connection to database '"PlaylistGeneratorDB"' on server '".\SQLEXPRESS"'.
+12/01/2020 18:45:18 An error occurred using the connection to database '"PlaylistGeneratorDB"' on server '".\SQLEXPRESS"'.
+12/01/2020 18:45:18 An error occurred using the connection to database '"PlaylistGeneratorDB"' on server '".\SQLEXPRESS"'.
+12/01/2020 18:45:18 An exception occurred while iterating over the results of a query for context type '"PG.Data.Context.PGDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20"
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+12/01/2020 18:45:18 An exception occurred while iterating over the results of a query for context type '"PG.Data.Context.PGDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20"
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+12/01/2020 18:45:18 An exception occurred while iterating over the results of a query for context type '"PG.Data.Context.PGDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20"
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+12/01/2020 18:45:18 An exception occurred while iterating over the results of a query for context type '"PG.Data.Context.PGDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20"
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+12/01/2020 18:45:18 HTTP "GET" "/" responded 500 in 13697.5289 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at PG.Services.DeezerAPIService.ExtractSongsFromGenre(String genre) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\DeezerAPIService.cs:line 39
+   at PG.Web.Controllers.HomeController.GetAlbumAsync() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\HomeController.cs:line 69
+   at PG.Web.Controllers.HomeController.Index() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\HomeController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+12/01/2020 18:45:18 HTTP "GET" "/Playlists/Create" responded 500 in 6869.3696 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PG.Services.GenreService.GetAllGenres() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\GenreService.cs:line 78
+   at PG.Web.Controllers.PlaylistsController.Create() in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 60
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+12/01/2020 18:45:18 HTTP "GET" "/Playlists/Playlist/7" responded 500 in 13708.9606 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 81
+   at PG.Web.Controllers.PlaylistsController.Playlist(Int32 id, Int32 pageNumber) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 89
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+12/01/2020 18:45:18 A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+12/01/2020 18:45:19 A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+12/01/2020 18:45:19 A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+12/01/2020 18:45:44 Application starting up
+12/01/2020 18:45:45 Syncing genres
+12/01/2020 18:45:46 - Getting index page -
+12/01/2020 18:45:46 HTTP "GET" "/" responded 200 in 579.0599 ms
+12/01/2020 18:45:46 HTTP "GET" "/js/playlistView.js" responded 404 in 3.5652 ms
+12/01/2020 18:45:46 HTTP "GET" "/js/playlistView.js" responded 404 in 12.9905 ms
+12/01/2020 18:45:46 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.5328 ms
+12/01/2020 18:45:46 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3431 ms
+12/01/2020 18:45:49 HTTP "GET" "/Playlists/Create" responded 200 in 115.7890 ms
+12/01/2020 18:45:49 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4419 ms
+12/01/2020 18:46:11 HTTP "GET" "/Playlists/Create" responded 200 in 20.7152 ms
+12/01/2020 18:46:11 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7520 ms
+12/01/2020 18:46:11 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3865 ms
+12/01/2020 18:46:12 HTTP "GET" "/Playlists/Create" responded 200 in 23.2317 ms
+12/01/2020 18:46:12 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1517 ms
+12/01/2020 18:46:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3310 ms
+12/01/2020 18:46:21 Syncing done
+12/01/2020 18:46:46 Application starting up
+12/01/2020 18:46:46 Syncing genres
+12/01/2020 18:46:49 - Getting index page -
+12/01/2020 18:46:49 HTTP "GET" "/" responded 200 in 2245.4647 ms
+12/01/2020 18:46:50 HTTP "GET" "/js/playlistView.js" responded 404 in 5.7584 ms
+12/01/2020 18:46:50 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 14.7314 ms
+12/01/2020 18:46:50 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4337 ms
+12/01/2020 18:46:51 HTTP "GET" "/Playlists" responded 200 in 239.4749 ms
+12/01/2020 18:46:51 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1442 ms
+12/01/2020 18:46:51 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3140 ms
+12/01/2020 18:46:51 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3310 ms
+12/01/2020 18:49:33 Application starting up
+12/01/2020 18:49:33 Syncing genres
+12/01/2020 18:49:34 - Getting index page -
+12/01/2020 18:49:35 HTTP "GET" "/" responded 200 in 600.9695 ms
+12/01/2020 18:49:35 HTTP "GET" "/js/playlistView.js" responded 404 in 3.1512 ms
+12/01/2020 18:49:35 HTTP "GET" "/js/playlistView.js" responded 404 in 13.7741 ms
+12/01/2020 18:49:35 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4256 ms
+12/01/2020 18:49:35 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4575 ms
+12/01/2020 18:49:37 HTTP "GET" "/Playlists/Create" responded 200 in 119.3911 ms
+12/01/2020 18:49:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5885 ms
+12/01/2020 18:50:40 Application starting up
+12/01/2020 18:50:40 Syncing genres
+12/01/2020 18:50:41 - Getting index page -
+12/01/2020 18:50:42 HTTP "GET" "/" responded 200 in 589.4850 ms
+12/01/2020 18:50:42 HTTP "GET" "/js/playlistView.js" responded 404 in 2.3591 ms
+12/01/2020 18:50:42 HTTP "GET" "/js/playlistView.js" responded 404 in 11.1566 ms
+12/01/2020 18:50:42 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 1.2258 ms
+12/01/2020 18:50:42 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3796 ms
+12/01/2020 18:50:43 HTTP "GET" "/Playlists/Create" responded 200 in 116.1005 ms
+12/01/2020 18:50:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7176 ms
+12/01/2020 18:50:49 HTTP "GET" "/Playlists" responded 200 in 172.0102 ms
+12/01/2020 18:50:49 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5480 ms
+12/01/2020 18:50:49 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.2974 ms
+12/01/2020 18:50:49 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.6921 ms
+12/01/2020 18:50:58 HTTP "GET" "/Playlists/Create" responded 200 in 12.3626 ms
+12/01/2020 18:50:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9919 ms
+12/01/2020 18:51:16 Syncing done
+12/01/2020 18:51:26 HTTP "GET" "/Admin/UsersIndex" responded 200 in 308.6480 ms
+12/01/2020 18:51:26 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8227 ms
+12/01/2020 18:51:42 HTTP "GET" "/Admin/UsersIndex" responded 200 in 75.4099 ms
+12/01/2020 18:51:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3711 ms
+12/01/2020 18:51:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8301 ms
+12/01/2020 18:53:46 Application starting up
+12/01/2020 18:53:47 Syncing genres
+12/01/2020 18:53:47 - Getting index page -
+12/01/2020 18:53:48 HTTP "GET" "/" responded 200 in 610.6320 ms
+12/01/2020 18:53:48 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6549 ms
+12/01/2020 18:53:48 HTTP "GET" "/js/playlistView.js" responded 404 in 15.6075 ms
+12/01/2020 18:53:48 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.7658 ms
+12/01/2020 18:53:48 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 1.0874 ms
+12/01/2020 18:53:49 HTTP "GET" "/Admin/UsersIndex" responded 200 in 49.5562 ms
+12/01/2020 18:53:49 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6190 ms
+12/01/2020 18:54:21 Application starting up
+12/01/2020 18:54:21 Syncing genres
+12/01/2020 18:54:22 - Getting index page -
+12/01/2020 18:54:23 HTTP "GET" "/" responded 200 in 615.1193 ms
+12/01/2020 18:54:23 HTTP "GET" "/js/playlistView.js" responded 404 in 2.1132 ms
+12/01/2020 18:54:23 HTTP "GET" "/js/playlistView.js" responded 404 in 14.3910 ms
+12/01/2020 18:54:23 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3890 ms
+12/01/2020 18:54:23 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3366 ms
+12/01/2020 18:54:24 HTTP "GET" "/Admin/UsersIndex" responded 200 in 50.6424 ms
+12/01/2020 18:54:24 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5429 ms
+12/01/2020 18:54:48 Application starting up
+12/01/2020 18:54:49 Syncing genres
+12/01/2020 18:54:50 - Getting index page -
+12/01/2020 18:54:50 HTTP "GET" "/" responded 200 in 728.8643 ms
+12/01/2020 18:54:50 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6113 ms
+12/01/2020 18:54:50 HTTP "GET" "/js/playlistView.js" responded 404 in 15.5152 ms
+12/01/2020 18:54:51 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4476 ms
+12/01/2020 18:54:51 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3779 ms
+12/01/2020 18:54:53 HTTP "GET" "/Admin/UsersIndex" responded 200 in 47.5438 ms
+12/01/2020 18:54:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5201 ms
+12/01/2020 18:55:25 Syncing done
+12/01/2020 18:55:43 Application starting up
+12/01/2020 18:55:43 Syncing genres
+12/01/2020 18:55:44 - Getting index page -
+12/01/2020 18:55:44 HTTP "GET" "/" responded 200 in 569.6202 ms
+12/01/2020 18:55:45 HTTP "GET" "/js/playlistView.js" responded 404 in 3.0497 ms
+12/01/2020 18:55:45 HTTP "GET" "/js/playlistView.js" responded 404 in 13.7274 ms
+12/01/2020 18:55:45 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4278 ms
+12/01/2020 18:55:45 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3417 ms
+12/01/2020 18:55:46 HTTP "GET" "/Admin/UsersIndex" responded 200 in 46.8075 ms
+12/01/2020 18:55:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5244 ms
+12/01/2020 18:55:54 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 31.0574 ms
+12/01/2020 18:55:54 - Getting index page -
+12/01/2020 18:55:55 HTTP "GET" "/" responded 200 in 49.5781 ms
+12/01/2020 18:55:55 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2600 ms
+12/01/2020 18:55:55 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.2122 ms
+12/01/2020 18:55:55 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1388 ms
+12/01/2020 18:56:01 HTTP "GET" "/Identity/Account/Register" responded 200 in 54.7674 ms
+12/01/2020 18:56:01 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2894 ms
+12/01/2020 18:56:07 User created a new account with password.
+12/01/2020 18:56:07 HTTP "POST" "/Identity/Account/Register" responded 302 in 709.3543 ms
+12/01/2020 18:56:07 - Getting index page -
+12/01/2020 18:56:08 HTTP "GET" "/" responded 200 in 62.4301 ms
+12/01/2020 18:56:08 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6486 ms
+12/01/2020 18:56:08 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4505 ms
+12/01/2020 18:56:08 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3169 ms
+12/01/2020 18:56:10 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 5.6339 ms
+12/01/2020 18:56:10 - Getting index page -
+12/01/2020 18:56:10 HTTP "GET" "/" responded 200 in 48.8486 ms
+12/01/2020 18:56:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6484 ms
+12/01/2020 18:56:10 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1505 ms
+12/01/2020 18:56:10 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3463 ms
+12/01/2020 18:56:10 HTTP "GET" "/Identity/Account/Login" responded 200 in 35.1557 ms
+12/01/2020 18:56:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4250 ms
+12/01/2020 18:56:13 User logged in.
+12/01/2020 18:56:13 HTTP "POST" "/Identity/Account/Login" responded 302 in 29.0722 ms
+12/01/2020 18:56:13 - Getting index page -
+12/01/2020 18:56:13 HTTP "GET" "/" responded 200 in 47.5754 ms
+12/01/2020 18:56:13 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4436 ms
+12/01/2020 18:56:13 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3986 ms
+12/01/2020 18:56:13 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2682 ms
+12/01/2020 18:56:14 HTTP "GET" "/Admin/UsersIndex" responded 200 in 7.8685 ms
+12/01/2020 18:56:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5349 ms
+12/01/2020 18:56:19 Syncing done
+12/01/2020 18:56:35 Application starting up
+12/01/2020 18:56:35 Syncing genres
+12/01/2020 18:56:36 - Getting index page -
+12/01/2020 18:56:36 HTTP "GET" "/" responded 200 in 593.1407 ms
+12/01/2020 18:56:36 HTTP "GET" "/js/playlistView.js" responded 404 in 2.5871 ms
+12/01/2020 18:56:37 HTTP "GET" "/js/playlistView.js" responded 404 in 12.0409 ms
+12/01/2020 18:56:37 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3672 ms
+12/01/2020 18:56:37 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3290 ms
+12/01/2020 18:56:45 HTTP "GET" "/Admin/UsersIndex" responded 200 in 50.8917 ms
+12/01/2020 18:56:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6601 ms
+12/01/2020 18:56:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4531 ms
+12/01/2020 18:56:56 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 1654.5028 ms
+12/01/2020 18:56:56 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.8404 ms
+12/01/2020 18:56:56 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4210 ms
+12/01/2020 18:56:56 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3567 ms
+12/01/2020 18:56:58 HTTP "POST" "/Admin/BanUsers" responded 302 in 17.1961 ms
+12/01/2020 18:56:59 HTTP "GET" "/Admin/UsersIndex" responded 200 in 11.9895 ms
+12/01/2020 18:56:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4124 ms
+12/01/2020 18:56:59 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 8.8086 ms
+12/01/2020 18:56:59 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.5512 ms
+12/01/2020 18:56:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4795 ms
+12/01/2020 18:57:00 HTTP "POST" "/Admin/BanUsers" responded 302 in 5.3286 ms
+12/01/2020 18:57:00 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.7503 ms
+12/01/2020 18:57:00 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8406 ms
+12/01/2020 18:57:00 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 5.6258 ms
+12/01/2020 18:57:00 HTTP "GET" "/Admin/UsersIndex" responded 200 in 7.3934 ms
+12/01/2020 18:57:01 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9887 ms
+12/01/2020 18:57:14 Syncing done
+12/01/2020 18:58:01 Application starting up
+12/01/2020 18:58:02 Syncing genres
+12/01/2020 18:58:02 - Getting index page -
+12/01/2020 18:58:03 HTTP "GET" "/" responded 200 in 708.2347 ms
+12/01/2020 18:58:03 HTTP "GET" "/js/playlistView.js" responded 404 in 2.8550 ms
+12/01/2020 18:58:03 HTTP "GET" "/js/playlistView.js" responded 404 in 13.8236 ms
+12/01/2020 18:58:03 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4286 ms
+12/01/2020 18:58:03 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.5746 ms
+12/01/2020 18:58:15 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 41.0242 ms
+12/01/2020 18:58:15 - Getting index page -
+12/01/2020 18:58:15 HTTP "GET" "/" responded 200 in 55.9323 ms
+12/01/2020 18:58:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6638 ms
+12/01/2020 18:58:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1227 ms
+12/01/2020 18:58:15 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1770 ms
+12/01/2020 18:58:15 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1463 ms
+12/01/2020 18:58:16 HTTP "GET" "/Identity/Account/Register" responded 200 in 50.7390 ms
+12/01/2020 18:58:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3915 ms
+12/01/2020 18:58:22 User created a new account with password.
+12/01/2020 18:58:22 HTTP "POST" "/Identity/Account/Register" responded 302 in 534.6443 ms
+12/01/2020 18:58:22 - Getting index page -
+12/01/2020 18:58:22 HTTP "GET" "/" responded 200 in 61.6743 ms
+12/01/2020 18:58:22 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5395 ms
+12/01/2020 18:58:22 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3586 ms
+12/01/2020 18:58:22 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3805 ms
+12/01/2020 18:58:24 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 4.2046 ms
+12/01/2020 18:58:24 - Getting index page -
+12/01/2020 18:58:24 HTTP "GET" "/" responded 200 in 49.6355 ms
+12/01/2020 18:58:24 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7102 ms
+12/01/2020 18:58:25 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1238 ms
+12/01/2020 18:58:25 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1061 ms
+12/01/2020 18:58:25 HTTP "GET" "/Identity/Account/Login" responded 200 in 32.5870 ms
+12/01/2020 18:58:25 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2684 ms
+12/01/2020 18:58:28 User logged in.
+12/01/2020 18:58:28 HTTP "POST" "/Identity/Account/Login" responded 302 in 25.8623 ms
+12/01/2020 18:58:28 - Getting index page -
+12/01/2020 18:58:28 HTTP "GET" "/" responded 200 in 40.9079 ms
+12/01/2020 18:58:28 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4417 ms
+12/01/2020 18:58:28 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.2976 ms
+12/01/2020 18:58:28 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4191 ms
+12/01/2020 18:58:29 HTTP "GET" "/Admin/UsersIndex" responded 200 in 31.9835 ms
+12/01/2020 18:58:29 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7865 ms
+12/01/2020 18:58:37 Syncing done
+12/01/2020 18:59:45 HTTP "POST" "/Admin/BanUsers" responded 302 in 22.0099 ms
+12/01/2020 18:59:45 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.8525 ms
+12/01/2020 18:59:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6092 ms
+12/01/2020 18:59:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3483 ms
+12/01/2020 18:59:55 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 11.2936 ms
+12/01/2020 18:59:55 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.5726 ms
+12/01/2020 18:59:55 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5201 ms
+12/01/2020 18:59:56 HTTP "POST" "/Admin/BanUsers" responded 302 in 7.5082 ms
+12/01/2020 18:59:56 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.6200 ms
+12/01/2020 18:59:56 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3901 ms
+12/01/2020 18:59:57 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 5.7850 ms
+12/01/2020 18:59:57 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.2061 ms
+12/01/2020 18:59:57 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2204 ms
+12/01/2020 18:59:58 HTTP "POST" "/Admin/BanUsers" responded 302 in 5.7322 ms
+12/01/2020 18:59:58 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.5673 ms
+12/01/2020 18:59:58 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0686 ms
+12/01/2020 19:00:07 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 5.8864 ms
+12/01/2020 19:00:07 HTTP "GET" "/Admin/UsersIndex" responded 200 in 3.9860 ms
+12/01/2020 19:00:07 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8358 ms
+12/01/2020 19:00:07 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 3.9831 ms
+12/01/2020 19:00:07 HTTP "GET" "/Admin/UsersIndex" responded 200 in 3.6485 ms
+12/01/2020 19:00:07 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6232 ms
+12/01/2020 19:01:55 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 3.9075 ms
+12/01/2020 19:01:55 - Getting index page -
+12/01/2020 19:01:55 HTTP "GET" "/" responded 200 in 52.3205 ms
+12/01/2020 19:01:55 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2516 ms
+12/01/2020 19:01:55 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1249 ms
+12/01/2020 19:01:55 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.2910 ms
+12/01/2020 19:01:55 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.0979 ms
+12/01/2020 19:01:56 HTTP "GET" "/Identity/Account/Register" responded 200 in 3.3539 ms
+12/01/2020 19:01:56 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1798 ms
+12/01/2020 19:02:06 User created a new account with password.
+12/01/2020 19:02:06 HTTP "POST" "/Identity/Account/Register" responded 302 in 1623.1120 ms
+12/01/2020 19:02:06 - Getting index page -
+12/01/2020 19:02:06 HTTP "GET" "/" responded 200 in 40.5140 ms
+12/01/2020 19:02:06 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4034 ms
+12/01/2020 19:02:06 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.2021 ms
+12/01/2020 19:02:06 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2126 ms
+12/01/2020 19:02:08 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 1.7447 ms
+12/01/2020 19:02:08 - Getting index page -
+12/01/2020 19:02:08 HTTP "GET" "/" responded 200 in 41.3054 ms
+12/01/2020 19:02:08 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1254 ms
+12/01/2020 19:02:08 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1507 ms
+12/01/2020 19:02:08 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.0882 ms
+12/01/2020 19:02:09 HTTP "GET" "/Identity/Account/Login" responded 200 in 5.6123 ms
+12/01/2020 19:02:09 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2104 ms
+12/01/2020 19:02:13 User logged in.
+12/01/2020 19:02:13 HTTP "POST" "/Identity/Account/Login" responded 302 in 15.5607 ms
+12/01/2020 19:02:13 - Getting index page -
+12/01/2020 19:02:13 HTTP "GET" "/" responded 200 in 51.2405 ms
+12/01/2020 19:02:13 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3615 ms
+12/01/2020 19:02:13 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.2585 ms
+12/01/2020 19:02:13 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2071 ms
+12/01/2020 19:02:15 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 1.5704 ms
+12/01/2020 19:02:15 - Getting index page -
+12/01/2020 19:02:16 HTTP "GET" "/" responded 200 in 41.1209 ms
+12/01/2020 19:02:16 HTTP "GET" "/js/playlistView.js" responded 404 in 0.0867 ms
+12/01/2020 19:02:16 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.0738 ms
+12/01/2020 19:02:16 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.0891 ms
+12/01/2020 19:02:17 HTTP "GET" "/Identity/Account/Login" responded 200 in 3.2569 ms
+12/01/2020 19:02:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1762 ms
+12/01/2020 19:02:19 User logged in.
+12/01/2020 19:02:19 HTTP "POST" "/Identity/Account/Login" responded 302 in 15.9701 ms
+12/01/2020 19:02:19 - Getting index page -
+12/01/2020 19:02:19 HTTP "GET" "/" responded 200 in 41.5057 ms
+12/01/2020 19:02:19 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4048 ms
+12/01/2020 19:02:19 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.2365 ms
+12/01/2020 19:02:19 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1926 ms
+12/01/2020 19:02:20 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.7050 ms
+12/01/2020 19:02:20 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3248 ms
+12/01/2020 19:02:52 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 1556.7755 ms
+12/01/2020 19:02:52 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.1932 ms
+12/01/2020 19:02:52 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2859 ms
+12/01/2020 19:02:54 HTTP "POST" "/Admin/BanUsers" responded 302 in 7.2810 ms
+12/01/2020 19:02:54 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.0879 ms
+12/01/2020 19:02:54 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2902 ms
+12/01/2020 19:02:55 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 2.0944 ms
+12/01/2020 19:02:55 - Getting index page -
+12/01/2020 19:02:57 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 400 in 1.7949 ms
+12/01/2020 19:03:02 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.4112 ms
+12/01/2020 19:03:04 HTTP "GET" "/" responded 200 in 8929.6117 ms
+12/01/2020 19:03:04 HTTP "GET" "/Identity/Account/Login" responded 200 in 2.4622 ms
+12/01/2020 19:03:04 HTTP "GET" "/js/playlistView.js" responded 404 in 0.0963 ms
+12/01/2020 19:03:04 HTTP "GET" "/js/playlistView.js" responded 404 in 0.0704 ms
+12/01/2020 19:03:17 User "32f2102a-6ff4-46b4-a2d1-ac02b7cafb41" is currently locked out.
+12/01/2020 19:03:17 User account locked out.
+12/01/2020 19:03:17 HTTP "POST" "/Identity/Account/Login" responded 302 in 7.9300 ms
+12/01/2020 19:03:17 HTTP "GET" "/Identity/Account/Lockout" responded 200 in 7.5394 ms
+12/01/2020 19:03:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1678 ms
+12/01/2020 19:03:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.0707 ms
+12/01/2020 19:03:46 HTTP "GET" "/Identity/Account/Register" responded 200 in 2.4017 ms
+12/01/2020 19:03:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1072 ms
+12/01/2020 19:03:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1241 ms
+12/01/2020 19:03:53 User created a new account with password.
+12/01/2020 19:03:53 HTTP "POST" "/Identity/Account/Register" responded 302 in 35.4534 ms
+12/01/2020 19:03:53 - Getting index page -
+12/01/2020 19:03:53 HTTP "GET" "/" responded 200 in 51.9329 ms
+12/01/2020 19:03:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3466 ms
+12/01/2020 19:03:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1906 ms
+12/01/2020 19:03:54 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.2464 ms
+12/01/2020 19:03:54 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1860 ms
+12/01/2020 19:08:02 Syncing genres
+12/01/2020 19:08:35 Syncing done
+12/01/2020 19:12:00 Application starting up
+12/01/2020 19:12:00 Syncing genres
+12/01/2020 19:12:01 - Getting index page -
+12/01/2020 19:12:02 HTTP "GET" "/" responded 200 in 726.6858 ms
+12/01/2020 19:12:02 HTTP "GET" "/js/playlistView.js" responded 404 in 2.8576 ms
+12/01/2020 19:12:02 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 11.3665 ms
+12/01/2020 19:12:02 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3565 ms
+12/01/2020 19:12:36 Syncing done
+12/01/2020 19:13:39 Application starting up
+12/01/2020 19:13:39 Syncing genres
+12/01/2020 19:13:40 - Getting index page -
+12/01/2020 19:13:40 HTTP "GET" "/" responded 200 in 670.7035 ms
+12/01/2020 19:13:40 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4020 ms
+12/01/2020 19:13:41 HTTP "GET" "/js/playlistView.js" responded 404 in 23.1668 ms
+12/01/2020 19:13:41 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.5097 ms
+12/01/2020 19:13:41 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.6802 ms
+12/01/2020 19:13:43 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 40.6919 ms
+12/01/2020 19:13:43 - Getting index page -
+12/01/2020 19:13:43 HTTP "GET" "/" responded 200 in 95.3494 ms
+12/01/2020 19:13:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1923 ms
+12/01/2020 19:13:43 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1509 ms
+12/01/2020 19:13:43 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1705 ms
+12/01/2020 19:13:44 HTTP "GET" "/Identity/Account/Login" responded 200 in 58.8672 ms
+12/01/2020 19:13:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3239 ms
+12/01/2020 19:13:51 HTTP "POST" "/Identity/Account/Login" responded 200 in 27.5263 ms
+12/01/2020 19:13:51 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2549 ms
+12/01/2020 19:13:53 HTTP "GET" "/Identity/Account/Register" responded 200 in 30.7053 ms
+12/01/2020 19:13:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3489 ms
+12/01/2020 19:13:59 User created a new account with password.
+12/01/2020 19:13:59 HTTP "POST" "/Identity/Account/Register" responded 302 in 1810.7266 ms
+12/01/2020 19:13:59 - Getting index page -
+12/01/2020 19:13:59 HTTP "GET" "/" responded 200 in 56.8225 ms
+12/01/2020 19:13:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3781 ms
+12/01/2020 19:13:59 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4332 ms
+12/01/2020 19:13:59 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3076 ms
+12/01/2020 19:14:00 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 3.3929 ms
+12/01/2020 19:14:00 - Getting index page -
+12/01/2020 19:14:00 HTTP "GET" "/" responded 200 in 52.1896 ms
+12/01/2020 19:14:00 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1536 ms
+12/01/2020 19:14:01 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1309 ms
+12/01/2020 19:14:01 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1085 ms
+12/01/2020 19:14:02 HTTP "GET" "/Identity/Account/Login" responded 200 in 11.1451 ms
+12/01/2020 19:14:02 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3983 ms
+12/01/2020 19:14:04 User logged in.
+12/01/2020 19:14:04 HTTP "POST" "/Identity/Account/Login" responded 302 in 22.6074 ms
+12/01/2020 19:14:04 - Getting index page -
+12/01/2020 19:14:04 HTTP "GET" "/" responded 200 in 49.3723 ms
+12/01/2020 19:14:04 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3383 ms
+12/01/2020 19:14:04 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3186 ms
+12/01/2020 19:14:04 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2529 ms
+12/01/2020 19:14:05 HTTP "GET" "/Admin/UsersIndex" responded 200 in 32.0609 ms
+12/01/2020 19:14:05 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3145 ms
+12/01/2020 19:14:16 Syncing done
+12/01/2020 19:21:04 Application starting up
+12/01/2020 19:21:05 Syncing genres
+12/01/2020 19:21:06 - Getting index page -
+12/01/2020 19:21:06 HTTP "GET" "/" responded 200 in 571.4808 ms
+12/01/2020 19:21:06 HTTP "GET" "/js/playlistView.js" responded 404 in 2.5334 ms
+12/01/2020 19:21:06 HTTP "GET" "/js/playlistView.js" responded 404 in 21.6050 ms
+12/01/2020 19:21:06 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4168 ms
+12/01/2020 19:21:06 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3640 ms
+12/01/2020 19:25:40 Application starting up
+12/01/2020 19:25:40 Syncing genres
+12/01/2020 19:25:41 - Getting index page -
+12/01/2020 19:25:42 HTTP "GET" "/" responded 200 in 724.6031 ms
+12/01/2020 19:25:42 HTTP "GET" "/js/playlistView.js" responded 404 in 3.0491 ms
+12/01/2020 19:25:42 HTTP "GET" "/js/playlistView.js" responded 404 in 13.5275 ms
+12/01/2020 19:25:42 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4735 ms
+12/01/2020 19:25:42 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4026 ms
+12/01/2020 19:25:43 HTTP "GET" "/Admin/UsersIndex" responded 200 in 57.2964 ms
+12/01/2020 19:25:43 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7889 ms
+12/01/2020 19:25:52 HTTP "POST" "/Admin/BanUsers" responded 302 in 402.3792 ms
+12/01/2020 19:25:52 HTTP "GET" "/Admin/UsersIndex" responded 200 in 6.1199 ms
+12/01/2020 19:25:52 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5539 ms
+12/01/2020 19:25:54 HTTP "POST" "/Admin/BanUsers" responded 302 in 13.6479 ms
+12/01/2020 19:25:54 HTTP "GET" "/Admin/UsersIndex" responded 200 in 12.2692 ms
+12/01/2020 19:25:54 HTTP "GET" "/js/playlistView.js" responded 404 in 1.9616 ms
+12/01/2020 19:25:54 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 10.0409 ms
+12/01/2020 19:25:54 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.7884 ms
+12/01/2020 19:25:55 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3680 ms
+12/01/2020 19:25:55 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 10.4760 ms
+12/01/2020 19:25:55 HTTP "GET" "/Admin/UsersIndex" responded 200 in 9.5790 ms
+12/01/2020 19:25:55 HTTP "GET" "/js/playlistView.js" responded 404 in 2.5619 ms
+12/01/2020 19:25:56 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 4.0909 ms
+12/01/2020 19:25:56 HTTP "GET" "/Admin/UsersIndex" responded 200 in 7.7093 ms
+12/01/2020 19:25:56 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0411 ms
+12/01/2020 19:25:57 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 3.6629 ms
+12/01/2020 19:25:57 HTTP "GET" "/Admin/UsersIndex" responded 200 in 6.8844 ms
+12/01/2020 19:25:57 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3055 ms
+12/01/2020 19:26:00 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 3.7055 ms
+12/01/2020 19:26:00 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.6342 ms
+12/01/2020 19:26:00 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9455 ms
+12/01/2020 19:26:01 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 2.2949 ms
+12/01/2020 19:26:01 HTTP "GET" "/Admin/UsersIndex" responded 200 in 4.0593 ms
+12/01/2020 19:26:01 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8989 ms
+12/01/2020 19:26:01 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 2.0086 ms
+12/01/2020 19:26:01 HTTP "GET" "/Admin/UsersIndex" responded 200 in 3.5773 ms
+12/01/2020 19:26:01 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9246 ms
+12/01/2020 19:26:03 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 1.9635 ms
+12/01/2020 19:26:03 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.1532 ms
+12/01/2020 19:26:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4372 ms
+12/01/2020 19:26:04 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 6.4843 ms
+12/01/2020 19:26:04 HTTP "GET" "/Admin/UsersIndex" responded 200 in 3.2362 ms
+12/01/2020 19:26:04 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6990 ms
+12/01/2020 19:26:06 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 2.0659 ms
+12/01/2020 19:26:06 HTTP "GET" "/Admin/UsersIndex" responded 200 in 3.9127 ms
+12/01/2020 19:26:06 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5582 ms
+12/01/2020 19:26:09 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 1.8207 ms
+12/01/2020 19:26:09 HTTP "GET" "/Admin/UsersIndex" responded 200 in 3.0816 ms
+12/01/2020 19:26:09 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3061 ms
+12/01/2020 19:26:09 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 1.9179 ms
+12/01/2020 19:26:09 HTTP "GET" "/Admin/UsersIndex" responded 200 in 6.2254 ms
+12/01/2020 19:26:09 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3354 ms
+12/01/2020 19:26:10 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 3.7373 ms
+12/01/2020 19:26:10 HTTP "GET" "/Admin/UsersIndex" responded 200 in 3.5761 ms
+12/01/2020 19:26:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6413 ms
+12/01/2020 19:26:11 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 1.9739 ms
+12/01/2020 19:26:11 HTTP "GET" "/Admin/UsersIndex" responded 200 in 2.9774 ms
+12/01/2020 19:26:11 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2258 ms
+12/01/2020 19:26:12 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 1.6661 ms
+12/01/2020 19:26:12 HTTP "GET" "/Admin/UsersIndex" responded 200 in 2.7063 ms
+12/01/2020 19:26:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5293 ms
+12/01/2020 19:26:12 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 1.3590 ms
+12/01/2020 19:26:12 HTTP "GET" "/Admin/UsersIndex" responded 200 in 2.3912 ms
+12/01/2020 19:26:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2780 ms
+12/01/2020 19:26:13 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 1.2916 ms
+12/01/2020 19:26:13 HTTP "GET" "/Admin/UsersIndex" responded 200 in 3.3734 ms
+12/01/2020 19:26:13 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2213 ms
+12/01/2020 19:26:17 Syncing done
+12/01/2020 19:26:52 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 4.1550 ms
+12/01/2020 19:26:52 HTTP "GET" "/Admin/UsersIndex" responded 200 in 2.5488 ms
+12/01/2020 19:26:52 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3584 ms
+12/01/2020 19:26:53 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 3.8538 ms
+12/01/2020 19:26:53 HTTP "GET" "/Admin/UsersIndex" responded 200 in 2.2945 ms
+12/01/2020 19:26:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9071 ms
+12/01/2020 19:29:16 Application starting up
+12/01/2020 19:29:16 Syncing genres
+12/01/2020 19:29:17 - Getting index page -
+12/01/2020 19:29:18 HTTP "GET" "/" responded 200 in 645.3376 ms
+12/01/2020 19:29:18 HTTP "GET" "/js/playlistView.js" responded 404 in 3.5575 ms
+12/01/2020 19:29:18 HTTP "GET" "/js/playlistView.js" responded 404 in 17.8710 ms
+12/01/2020 19:29:18 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4880 ms
+12/01/2020 19:29:18 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4049 ms
+12/01/2020 19:29:19 HTTP "GET" "/Admin/UsersIndex" responded 200 in 98.0395 ms
+12/01/2020 19:29:19 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7603 ms
+12/01/2020 19:29:30 HTTP "POST" "/Admin/BanUsers" responded 302 in 100.0661 ms
+12/01/2020 19:29:30 HTTP "GET" "/Admin/UsersIndex" responded 200 in 9.2999 ms
+12/01/2020 19:29:30 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4559 ms
+12/01/2020 19:29:31 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 14.0890 ms
+12/01/2020 19:29:31 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.6375 ms
+12/01/2020 19:29:31 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3590 ms
+12/01/2020 19:29:32 HTTP "POST" "/Admin/BanUsers" responded 302 in 6.7774 ms
+12/01/2020 19:29:32 HTTP "GET" "/Admin/UsersIndex" responded 200 in 5.3751 ms
+12/01/2020 19:29:32 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3691 ms
+12/01/2020 19:29:33 HTTP "POST" "/Admin/UnbanUsers" responded 302 in 7.0622 ms
+12/01/2020 19:29:33 HTTP "GET" "/Admin/UsersIndex" responded 200 in 8.9777 ms
+12/01/2020 19:29:33 HTTP "GET" "/js/playlistView.js" responded 404 in 1.6555 ms
+12/01/2020 19:29:53 Syncing done
+12/01/2020 19:30:40 Application starting up
+12/01/2020 19:30:40 Syncing genres
+12/01/2020 19:30:41 - Getting index page -
+12/01/2020 19:30:41 HTTP "GET" "/" responded 200 in 584.9518 ms
+12/01/2020 19:30:42 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4126 ms
+12/01/2020 19:30:42 HTTP "GET" "/js/playlistView.js" responded 404 in 16.4391 ms
+12/01/2020 19:30:42 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3792 ms
+12/01/2020 19:30:42 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3990 ms
+12/01/2020 19:30:43 HTTP "GET" "/Admin/UsersIndex" responded 200 in 99.0494 ms
+12/01/2020 19:30:43 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0012 ms
+12/01/2020 19:30:46 HTTP "GET" "/Playlists" responded 200 in 191.2663 ms
+12/01/2020 19:30:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6439 ms
+12/01/2020 19:30:46 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3315 ms
+12/01/2020 19:30:46 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3372 ms
+12/01/2020 19:30:53 HTTP "POST" "/Playlists/FilterPlaylists" responded 302 in 15.3455 ms
+12/01/2020 19:30:55 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 80.1788 ms
+12/01/2020 19:30:55 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2262 ms
+12/01/2020 19:30:55 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.2967 ms
+12/01/2020 19:30:55 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.9630 ms
+12/01/2020 19:30:55 HTTP "GET" "/Playlists?genre=pop&duration=51314" responded 200 in 1796.7594 ms
+12/01/2020 19:30:56 HTTP "GET" "/Playlists" responded 200 in 110.5446 ms
+12/01/2020 19:30:56 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2653 ms
+12/01/2020 19:30:56 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3365 ms
+12/01/2020 19:30:56 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2943 ms
+12/01/2020 19:30:57 HTTP "GET" "/Playlists/Create" responded 200 in 64.5395 ms
+12/01/2020 19:30:57 HTTP "GET" "/js/playlistView.js" responded 404 in 1.8224 ms
+12/01/2020 19:31:09 - Getting index page -
+12/01/2020 19:31:09 HTTP "GET" "/" responded 200 in 73.7338 ms
+12/01/2020 19:31:09 HTTP "GET" "/js/playlistView.js" responded 404 in 2.5360 ms
+12/01/2020 19:31:10 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3482 ms
+12/01/2020 19:31:10 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3288 ms
+12/01/2020 19:31:17 Syncing done
+12/01/2020 19:32:14 Application starting up
+12/01/2020 19:32:14 Syncing genres
+12/01/2020 19:32:15 - Getting index page -
+12/01/2020 19:32:16 HTTP "GET" "/" responded 200 in 682.1359 ms
+12/01/2020 19:32:16 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4136 ms
+12/01/2020 19:32:16 HTTP "GET" "/js/playlistView.js" responded 404 in 12.5486 ms
+12/01/2020 19:32:16 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4480 ms
+12/01/2020 19:32:16 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.5136 ms
+12/01/2020 19:32:48 Application starting up
+12/01/2020 19:32:48 Syncing genres
+12/01/2020 19:32:49 - Getting index page -
+12/01/2020 19:32:49 HTTP "GET" "/" responded 200 in 720.2214 ms
+12/01/2020 19:32:49 HTTP "GET" "/js/playlistView.js" responded 404 in 2.0880 ms
+12/01/2020 19:32:49 HTTP "GET" "/js/playlistView.js" responded 404 in 12.9701 ms
+12/01/2020 19:32:50 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3958 ms
+12/01/2020 19:32:50 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4167 ms
+12/01/2020 19:32:55 HTTP "GET" "/Playlists/Playlist/7" responded 200 in 1773.8167 ms
+12/01/2020 19:32:55 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1928 ms
+12/01/2020 19:33:07 HTTP "GET" "/Playlists" responded 200 in 161.6389 ms
+12/01/2020 19:33:07 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4546 ms
+12/01/2020 19:33:07 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.7741 ms
+12/01/2020 19:33:07 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4818 ms
+12/01/2020 19:33:13 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 28.1802 ms
+12/01/2020 19:33:13 - Getting index page -
+12/01/2020 19:33:14 HTTP "GET" "/" responded 200 in 45.6922 ms
+12/01/2020 19:33:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1817 ms
+12/01/2020 19:33:14 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1564 ms
+12/01/2020 19:33:14 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1254 ms
+12/01/2020 19:33:15 HTTP "GET" "/Identity/Account/Login" responded 200 in 52.6426 ms
+12/01/2020 19:33:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3151 ms
+12/01/2020 19:33:18 User logged in.
+12/01/2020 19:33:18 HTTP "POST" "/Identity/Account/Login" responded 302 in 89.7364 ms
+12/01/2020 19:33:18 - Getting index page -
+12/01/2020 19:33:18 HTTP "GET" "/" responded 200 in 44.8549 ms
+12/01/2020 19:33:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5208 ms
+12/01/2020 19:33:18 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3109 ms
+12/01/2020 19:33:18 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4878 ms
+12/01/2020 19:33:21 HTTP "GET" "/Playlists/Create" responded 200 in 50.9462 ms
+12/01/2020 19:33:21 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6110 ms
+12/01/2020 19:33:25 Syncing done
+12/01/2020 19:33:25 HTTP "GET" "/Playlists" responded 200 in 89.0876 ms
+12/01/2020 19:33:25 HTTP "GET" "/js/playlistView.js" responded 404 in 1.7854 ms
+12/01/2020 19:33:25 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4442 ms
+12/01/2020 19:33:25 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3573 ms
+12/01/2020 19:33:26 HTTP "GET" "/Playlists/Playlist/2" responded 200 in 9.2882 ms
+12/01/2020 19:33:27 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3896 ms
+12/01/2020 19:33:37 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 3.9601 ms
+12/01/2020 19:33:37 - Getting index page -
+12/01/2020 19:33:47 HTTP "GET" "/" responded 200 in 10262.6387 ms
+12/01/2020 19:33:47 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4077 ms
+12/01/2020 19:33:47 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.0912 ms
+12/01/2020 19:33:47 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.0994 ms
+12/01/2020 19:33:48 HTTP "GET" "/Identity/Account/Login" responded 200 in 5.7799 ms
+12/01/2020 19:33:48 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4168 ms
+12/01/2020 19:33:50 User logged in.
+12/01/2020 19:33:50 HTTP "POST" "/Identity/Account/Login" responded 302 in 22.9267 ms
+12/01/2020 19:33:50 - Getting index page -
+12/01/2020 19:33:50 HTTP "GET" "/" responded 200 in 43.1878 ms
+12/01/2020 19:33:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5265 ms
+12/01/2020 19:33:50 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.2514 ms
+12/01/2020 19:33:50 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3175 ms
+12/01/2020 19:33:51 HTTP "GET" "/Playlists/Create" responded 200 in 7.9758 ms
+12/01/2020 19:33:51 HTTP "GET" "/js/playlistView.js" responded 404 in 1.4769 ms
+12/01/2020 19:34:05 Playlist with title 'QQQQQQQQQQQQQQQQQQQQQQ' has been created.
+12/01/2020 19:34:06 HTTP "POST" "/Playlists/Create" responded 302 in 2684.4166 ms
+12/01/2020 19:34:06 HTTP "GET" "/Playlists" responded 200 in 96.0851 ms
+12/01/2020 19:34:06 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4830 ms
+12/01/2020 19:34:06 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4406 ms
+12/01/2020 19:34:06 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3822 ms
+12/01/2020 19:34:10 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 3.5488 ms
+12/01/2020 19:34:10 - Getting index page -
+12/01/2020 19:34:10 HTTP "GET" "/" responded 200 in 43.0707 ms
+12/01/2020 19:34:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2059 ms
+12/01/2020 19:34:10 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1846 ms
+12/01/2020 19:34:10 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1848 ms
+12/01/2020 19:34:11 HTTP "GET" "/Identity/Account/Register" responded 200 in 23.8864 ms
+12/01/2020 19:34:11 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1083 ms
+12/01/2020 19:34:12 HTTP "GET" "/Identity/Account/Login" responded 200 in 3.9372 ms
+12/01/2020 19:34:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1421 ms
+12/01/2020 19:34:15 User logged in.
+12/01/2020 19:34:15 HTTP "POST" "/Identity/Account/Login" responded 302 in 16.8301 ms
+12/01/2020 19:34:15 - Getting index page -
+12/01/2020 19:34:15 HTTP "GET" "/" responded 200 in 44.4634 ms
+12/01/2020 19:34:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3816 ms
+12/01/2020 19:34:15 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3734 ms
+12/01/2020 19:34:15 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4376 ms
+12/01/2020 19:34:17 HTTP "GET" "/Playlists" responded 200 in 82.3198 ms
+12/01/2020 19:34:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3974 ms
+12/01/2020 19:34:17 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.2664 ms
+12/01/2020 19:34:17 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.6770 ms
+12/01/2020 19:34:18 HTTP "GET" "/Playlists/Playlist/8" responded 200 in 12.5269 ms
+12/01/2020 19:34:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3125 ms
+12/01/2020 19:34:33 HTTP "POST" "/Playlists/DeletePlaylist" responded 302 in 1555.6878 ms
+12/01/2020 19:34:33 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 65.5644 ms
+12/01/2020 19:34:33 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3375 ms
+12/01/2020 19:34:33 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1864 ms
+12/01/2020 19:34:33 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2490 ms
+12/01/2020 19:34:51 HTTP "GET" "/Playlists/Playlist/5" responded 200 in 23.0249 ms
+12/01/2020 19:34:51 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2996 ms
+12/01/2020 19:34:53 HTTP "POST" "/Playlists/DeletePlaylist" responded 302 in 8.4210 ms
+12/01/2020 19:34:53 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 36.0247 ms
+12/01/2020 19:34:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2519 ms
+12/01/2020 19:34:53 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1929 ms
+12/01/2020 19:34:53 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2475 ms
+12/01/2020 19:34:57 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 1.9175 ms
+12/01/2020 19:34:57 - Getting index page -
+12/01/2020 19:34:57 HTTP "GET" "/" responded 200 in 36.2776 ms
+12/01/2020 19:34:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.0708 ms
+12/01/2020 19:34:57 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.0713 ms
+12/01/2020 19:34:57 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.0697 ms
+12/01/2020 19:34:59 HTTP "GET" "/Identity/Account/Login" responded 200 in 2.5158 ms
+12/01/2020 19:34:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.0679 ms
+12/01/2020 19:35:01 User logged in.
+12/01/2020 19:35:01 HTTP "POST" "/Identity/Account/Login" responded 302 in 23.0933 ms
+12/01/2020 19:35:02 - Getting index page -
+12/01/2020 19:35:02 HTTP "GET" "/" responded 200 in 32.4878 ms
+12/01/2020 19:35:02 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1957 ms
+12/01/2020 19:35:02 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1667 ms
+12/01/2020 19:35:02 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2884 ms
+12/01/2020 19:35:04 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 2.7586 ms
+12/01/2020 19:35:04 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2134 ms
+12/01/2020 19:35:05 HTTP "GET" "/Playlists/Create" responded 200 in 7.0646 ms
+12/01/2020 19:35:05 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2784 ms
+12/01/2020 19:35:18 Playlist with title 'QQQQQQQQQQQQQQQq' has been created.
+12/01/2020 19:35:20 HTTP "POST" "/Playlists/Create" responded 302 in 3543.9160 ms
+12/01/2020 19:35:20 HTTP "GET" "/Playlists" responded 200 in 76.8344 ms
+12/01/2020 19:35:20 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2235 ms
+12/01/2020 19:35:20 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1918 ms
+12/01/2020 19:35:20 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2217 ms
+12/01/2020 19:35:21 HTTP "GET" "/Playlists/Playlist/9" responded 200 in 5.7801 ms
+12/01/2020 19:35:21 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9963 ms
+12/01/2020 19:35:26 HTTP "GET" "/Playlists/Edit/9" responded 200 in 23.9512 ms
+12/01/2020 19:35:26 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2686 ms
+12/01/2020 19:35:30 HTTP "POST" "/Playlists/UpdatePublicAccess" responded 302 in 19.5285 ms
+12/01/2020 19:35:30 HTTP "GET" "/Playlists/Playlist/9" responded 200 in 3.6353 ms
+12/01/2020 19:35:30 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3092 ms
+12/01/2020 19:35:34 HTTP "GET" "/Playlists" responded 200 in 72.0682 ms
+12/01/2020 19:35:34 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2697 ms
+12/01/2020 19:35:35 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.2575 ms
+12/01/2020 19:35:35 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2605 ms
+12/01/2020 19:35:39 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 9.2812 ms
+12/01/2020 19:35:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2382 ms
+12/01/2020 19:35:39 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.2024 ms
+12/01/2020 19:35:39 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1973 ms
+12/01/2020 19:35:42 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 1.2895 ms
+12/01/2020 19:35:42 - Getting index page -
+12/01/2020 19:35:42 HTTP "GET" "/" responded 200 in 33.6789 ms
+12/01/2020 19:35:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1627 ms
+12/01/2020 19:35:42 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.0707 ms
+12/01/2020 19:35:42 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.0609 ms
+12/01/2020 19:35:44 HTTP "GET" "/Identity/Account/Login" responded 200 in 2.0216 ms
+12/01/2020 19:35:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.0927 ms
+12/01/2020 19:35:47 User logged in.
+12/01/2020 19:35:47 HTTP "POST" "/Identity/Account/Login" responded 302 in 19.1603 ms
+12/01/2020 19:35:47 - Getting index page -
+12/01/2020 19:35:57 HTTP "GET" "/" responded 200 in 9968.7509 ms
+12/01/2020 19:35:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2769 ms
+12/01/2020 19:35:57 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.2425 ms
+12/01/2020 19:35:57 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1958 ms
+12/01/2020 19:35:59 HTTP "GET" "/Playlists" responded 200 in 85.2763 ms
+12/01/2020 19:35:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2881 ms
+12/01/2020 19:35:59 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.2041 ms
+12/01/2020 19:35:59 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2232 ms
+12/01/2020 19:37:01 HTTP "GET" "/Playlists" responded 200 in 75.9354 ms
+12/01/2020 19:37:01 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2528 ms
+12/01/2020 19:37:01 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1869 ms
+12/01/2020 19:37:01 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3026 ms
+12/01/2020 19:37:03 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 34.9886 ms
+12/01/2020 19:37:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3773 ms
+12/01/2020 19:37:03 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4691 ms
+12/01/2020 19:37:03 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2058 ms
+12/01/2020 19:37:05 HTTP "GET" "/Playlists" responded 200 in 61.2187 ms
+12/01/2020 19:37:05 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1790 ms
+12/01/2020 19:37:05 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1753 ms
+12/01/2020 19:37:05 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2416 ms
+12/01/2020 19:37:08 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 27.8646 ms
+12/01/2020 19:37:08 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1989 ms
+12/01/2020 19:37:08 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1786 ms
+12/01/2020 19:37:08 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2112 ms
+12/01/2020 19:37:12 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 28.2521 ms
+12/01/2020 19:37:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2449 ms
+12/01/2020 19:37:16 HTTP "GET" "/Playlists/Playlist/4?id=4&pageNumber=44" responded 200 in 24.1904 ms
+12/01/2020 19:37:17 HTTP "GET" "/Playlists/Playlist/4?id=4&pageNumber=24" responded 200 in 26.9350 ms
+12/01/2020 19:37:18 HTTP "GET" "/Playlists/Playlist/4?id=4&pageNumber=23" responded 200 in 24.2753 ms
+12/01/2020 19:37:20 HTTP "GET" "/Playlists/Edit/4" responded 200 in 22.1098 ms
+12/01/2020 19:37:20 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3146 ms
+12/01/2020 19:37:55 Application starting up
+12/01/2020 19:37:56 Syncing genres
+12/01/2020 19:37:56 - Getting index page -
+12/01/2020 19:38:07 HTTP "GET" "/" responded 200 in 11141.3717 ms
+12/01/2020 19:38:07 HTTP "GET" "/js/playlistView.js" responded 404 in 2.5799 ms
+12/01/2020 19:38:08 HTTP "GET" "/js/playlistView.js" responded 404 in 12.6644 ms
+12/01/2020 19:38:08 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4854 ms
+12/01/2020 19:38:08 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3500 ms
+12/01/2020 19:38:12 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 76.4446 ms
+12/01/2020 19:38:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4705 ms
+12/01/2020 19:38:12 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3183 ms
+12/01/2020 19:38:12 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4136 ms
+12/01/2020 19:38:14 HTTP "GET" "/Playlists/Playlist/4" responded 200 in 149.3803 ms
+12/01/2020 19:38:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7798 ms
+12/01/2020 19:38:15 HTTP "GET" "/Playlists/Edit/4" responded 200 in 66.1003 ms
+12/01/2020 19:38:15 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7225 ms
+12/01/2020 19:38:33 Syncing done
+12/01/2020 19:38:40 Application starting up
+12/01/2020 19:38:41 Syncing genres
+12/01/2020 19:38:41 - Getting index page -
+12/01/2020 19:38:42 HTTP "GET" "/" responded 200 in 608.6334 ms
+12/01/2020 19:38:42 HTTP "GET" "/js/playlistView.js" responded 404 in 2.3540 ms
+12/01/2020 19:38:42 HTTP "GET" "/js/playlistView.js" responded 404 in 12.0608 ms
+12/01/2020 19:38:42 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4127 ms
+12/01/2020 19:38:42 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3331 ms
+12/01/2020 19:38:44 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 79.2487 ms
+12/01/2020 19:38:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3740 ms
+12/01/2020 19:38:44 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3285 ms
+12/01/2020 19:38:45 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.5689 ms
+12/01/2020 19:38:45 HTTP "GET" "/Playlists/Playlist/2" responded 200 in 121.3810 ms
+12/01/2020 19:38:45 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4139 ms
+12/01/2020 19:38:47 HTTP "GET" "/Playlists/Edit/2" responded 200 in 38.2837 ms
+12/01/2020 19:38:47 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5008 ms
+12/01/2020 19:39:17 Syncing done
+12/01/2020 19:39:30 Application starting up
+12/01/2020 19:39:31 Syncing genres
+12/01/2020 19:39:31 - Getting index page -
+12/01/2020 19:39:32 HTTP "GET" "/" responded 200 in 580.3648 ms
+12/01/2020 19:39:32 HTTP "GET" "/js/playlistView.js" responded 404 in 2.1751 ms
+12/01/2020 19:39:32 HTTP "GET" "/js/playlistView.js" responded 404 in 15.2302 ms
+12/01/2020 19:39:32 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3695 ms
+12/01/2020 19:39:32 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3640 ms
+12/01/2020 19:39:35 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 81.0234 ms
+12/01/2020 19:39:35 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3691 ms
+12/01/2020 19:39:36 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3247 ms
+12/01/2020 19:39:36 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4232 ms
+12/01/2020 19:39:36 HTTP "GET" "/Playlists/Playlist/2" responded 200 in 128.3311 ms
+12/01/2020 19:39:36 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5730 ms
+12/01/2020 19:39:38 HTTP "GET" "/Playlists/Edit/2" responded 200 in 38.1162 ms
+12/01/2020 19:39:38 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5412 ms
+12/01/2020 19:39:39 HTTP "POST" "/Playlists/UpdatePublicAccess" responded 302 in 98.0338 ms
+12/01/2020 19:39:39 HTTP "GET" "/Playlists/Playlist/2" responded 200 in 6.1537 ms
+12/01/2020 19:39:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4866 ms
+12/01/2020 19:39:41 HTTP "GET" "/Playlists/Edit/2" responded 200 in 10.0202 ms
+12/01/2020 19:39:41 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1714 ms
+12/01/2020 19:39:41 HTTP "POST" "/Playlists/UpdatePublicAccess" responded 302 in 6.8356 ms
+12/01/2020 19:39:42 HTTP "GET" "/Playlists/Playlist/2" responded 200 in 6.7289 ms
+12/01/2020 19:39:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3752 ms
+12/01/2020 19:40:10 Syncing done
+12/01/2020 19:43:17 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 39.4289 ms
+12/01/2020 19:43:17 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1832 ms
+12/01/2020 19:43:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3531 ms
+12/01/2020 19:43:17 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 1.6877 ms
+12/01/2020 19:43:17 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 1.0624 ms
+12/01/2020 19:43:18 HTTP "GET" "/Playlists" responded 200 in 133.9201 ms
+12/01/2020 19:43:18 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0101 ms
+12/01/2020 19:43:18 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4275 ms
+12/01/2020 19:43:18 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4326 ms
+12/01/2020 19:43:26 HTTP "POST" "/Playlists/FilterPlaylists" responded 302 in 5.5829 ms
+12/01/2020 19:43:38 HTTP "GET" "/Playlists?genre=chalga&duration=135773" responded 200 in 11347.6422 ms
+12/01/2020 19:43:38 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9823 ms
+12/01/2020 19:43:38 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.8713 ms
+12/01/2020 19:43:38 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2665 ms
+12/01/2020 19:43:50 HTTP "POST" "/Playlists/FilterPlaylists" responded 302 in 2.2177 ms
+12/01/2020 19:43:50 HTTP "GET" "/Playlists?genre=pop&duration=135773" responded 200 in 85.3894 ms
+12/01/2020 19:43:50 HTTP "GET" "/js/playlistView.js" responded 404 in 1.2146 ms
+12/01/2020 19:43:51 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.8032 ms
+12/01/2020 19:43:51 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.8159 ms
+12/01/2020 19:43:56 HTTP "POST" "/Playlists/FilterPlaylists" responded 302 in 1.6304 ms
+12/01/2020 19:43:56 HTTP "GET" "/Playlists?genre=pop&duration=135773" responded 200 in 84.7338 ms
+12/01/2020 19:43:56 HTTP "GET" "/js/playlistView.js" responded 404 in 1.6369 ms
+12/01/2020 19:43:56 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4473 ms
+12/01/2020 19:43:56 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.5473 ms
+12/01/2020 19:44:00 HTTP "GET" "/Playlists" responded 200 in 68.2601 ms
+12/01/2020 19:44:00 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7884 ms
+12/01/2020 19:44:00 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.5910 ms
+12/01/2020 19:44:00 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3902 ms
+12/01/2020 19:44:01 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 34.7099 ms
+12/01/2020 19:44:01 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3087 ms
+12/01/2020 19:44:01 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1968 ms
+12/01/2020 19:44:01 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2696 ms
+12/01/2020 19:44:02 HTTP "GET" "/Playlists/Create" responded 200 in 48.8009 ms
+12/01/2020 19:44:02 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2077 ms
+12/01/2020 19:44:44 HTTP "GET" "/Playlists/Create" responded 200 in 9.0877 ms
+12/01/2020 19:44:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4213 ms
+12/01/2020 19:44:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3637 ms
+12/01/2020 19:45:53 Application starting up
+12/01/2020 19:45:54 Syncing genres
+12/01/2020 19:45:54 - Getting index page -
+12/01/2020 19:45:55 HTTP "GET" "/" responded 200 in 594.5919 ms
+12/01/2020 19:45:55 HTTP "GET" "/js/playlistView.js" responded 404 in 4.7027 ms
+12/01/2020 19:45:55 HTTP "GET" "/js/playlistView.js" responded 404 in 14.7300 ms
+12/01/2020 19:45:55 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.6038 ms
+12/01/2020 19:45:55 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4648 ms
+12/01/2020 19:45:56 HTTP "GET" "/Playlists/Create" responded 200 in 116.5669 ms
+12/01/2020 19:45:56 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4217 ms
+12/01/2020 19:46:14 Application starting up
+12/01/2020 19:46:14 Syncing genres
+12/01/2020 19:46:15 - Getting index page -
+12/01/2020 19:46:15 HTTP "GET" "/" responded 200 in 575.0838 ms
+12/01/2020 19:46:15 HTTP "GET" "/js/playlistView.js" responded 404 in 3.5588 ms
+12/01/2020 19:46:16 HTTP "GET" "/js/playlistView.js" responded 404 in 11.7981 ms
+12/01/2020 19:46:16 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3796 ms
+12/01/2020 19:46:16 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.5918 ms
+12/01/2020 19:46:17 HTTP "GET" "/Playlists/Create" responded 200 in 117.5303 ms
+12/01/2020 19:46:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4926 ms
+12/01/2020 19:46:51 Syncing done
+12/01/2020 19:49:04 Application starting up
+12/01/2020 19:49:04 Syncing genres
+12/01/2020 19:49:05 - Getting index page -
+12/01/2020 19:49:05 HTTP "GET" "/" responded 200 in 712.0630 ms
+12/01/2020 19:49:05 HTTP "GET" "/js/playlistView.js" responded 404 in 3.6687 ms
+12/01/2020 19:49:06 HTTP "GET" "/js/playlistView.js" responded 404 in 13.4468 ms
+12/01/2020 19:49:06 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4303 ms
+12/01/2020 19:49:06 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3391 ms
+12/01/2020 19:49:07 HTTP "GET" "/Playlists/Create" responded 200 in 116.4749 ms
+12/01/2020 19:49:07 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5267 ms
+12/01/2020 19:49:40 Syncing done
+12/01/2020 19:50:17 Application starting up
+12/01/2020 19:50:17 Syncing genres
+12/01/2020 19:50:18 - Getting index page -
+12/01/2020 19:50:18 HTTP "GET" "/" responded 200 in 633.7567 ms
+12/01/2020 19:50:18 HTTP "GET" "/js/playlistView.js" responded 404 in 4.0252 ms
+12/01/2020 19:50:18 HTTP "GET" "/js/playlistView.js" responded 404 in 13.3190 ms
+12/01/2020 19:50:19 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4230 ms
+12/01/2020 19:50:19 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3484 ms
+12/01/2020 19:50:20 HTTP "GET" "/Playlists/Create" responded 200 in 117.2928 ms
+12/01/2020 19:50:20 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3867 ms
+12/01/2020 19:50:33 Application starting up
+12/01/2020 19:50:33 Syncing genres
+12/01/2020 19:50:34 - Getting index page -
+12/01/2020 19:50:35 HTTP "GET" "/" responded 200 in 530.3532 ms
+12/01/2020 19:50:35 HTTP "GET" "/js/playlistView.js" responded 404 in 1.9413 ms
+12/01/2020 19:50:35 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 18.2830 ms
+12/01/2020 19:50:35 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.5215 ms
+12/01/2020 19:50:36 HTTP "GET" "/Playlists/Create" responded 200 in 113.1803 ms
+12/01/2020 19:50:36 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4284 ms
+12/01/2020 19:50:46 Application starting up
+12/01/2020 19:50:46 Syncing genres
+12/01/2020 19:50:47 - Getting index page -
+12/01/2020 19:50:47 HTTP "GET" "/" responded 200 in 590.6367 ms
+12/01/2020 19:50:47 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4415 ms
+12/01/2020 19:50:47 HTTP "GET" "/js/playlistView.js" responded 404 in 14.9434 ms
+12/01/2020 19:50:48 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4949 ms
+12/01/2020 19:50:48 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 1.4190 ms
+12/01/2020 19:50:49 HTTP "GET" "/Playlists/Create" responded 200 in 118.0228 ms
+12/01/2020 19:50:49 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4021 ms
+12/01/2020 19:51:22 Syncing done
+12/01/2020 19:51:34 Application starting up
+12/01/2020 19:51:34 Syncing genres
+12/01/2020 19:51:35 - Getting index page -
+12/01/2020 19:51:36 HTTP "GET" "/" responded 200 in 551.6641 ms
+12/01/2020 19:51:36 HTTP "GET" "/js/playlistView.js" responded 404 in 2.7244 ms
+12/01/2020 19:51:36 HTTP "GET" "/js/playlistView.js" responded 404 in 11.9239 ms
+12/01/2020 19:51:36 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.5510 ms
+12/01/2020 19:51:36 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3350 ms
+12/01/2020 19:51:38 HTTP "GET" "/Playlists/Create" responded 200 in 116.9960 ms
+12/01/2020 19:51:38 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5416 ms
+12/01/2020 19:52:10 Syncing done
+12/01/2020 19:52:12 Application starting up
+12/01/2020 19:52:12 Syncing genres
+12/01/2020 19:52:13 - Getting index page -
+12/01/2020 19:52:19 HTTP "GET" "/" responded 200 in 5591.0319 ms
+12/01/2020 19:52:19 HTTP "GET" "/js/playlistView.js" responded 404 in 5.6937 ms
+12/01/2020 19:52:19 HTTP "GET" "/js/playlistView.js" responded 404 in 11.8518 ms
+12/01/2020 19:52:19 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3388 ms
+12/01/2020 19:52:19 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3431 ms
+12/01/2020 19:52:20 HTTP "GET" "/Playlists/Create" responded 200 in 128.6304 ms
+12/01/2020 19:52:20 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4487 ms
+12/01/2020 19:52:35 Application starting up
+12/01/2020 19:52:35 Syncing genres
+12/01/2020 19:52:36 - Getting index page -
+12/01/2020 19:52:36 HTTP "GET" "/" responded 200 in 586.9555 ms
+12/01/2020 19:52:36 HTTP "GET" "/js/playlistView.js" responded 404 in 2.7875 ms
+12/01/2020 19:52:37 HTTP "GET" "/js/playlistView.js" responded 404 in 11.4139 ms
+12/01/2020 19:52:37 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4343 ms
+12/01/2020 19:52:37 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4416 ms
+12/01/2020 19:52:38 HTTP "GET" "/Playlists/Create" responded 200 in 116.4668 ms
+12/01/2020 19:52:38 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4753 ms
+12/01/2020 19:52:57 Application starting up
+12/01/2020 19:52:57 Syncing genres
+12/01/2020 19:52:58 - Getting index page -
+12/01/2020 19:52:58 HTTP "GET" "/" responded 200 in 669.5516 ms
+12/01/2020 19:52:58 HTTP "GET" "/js/playlistView.js" responded 404 in 2.2237 ms
+12/01/2020 19:52:58 HTTP "GET" "/js/playlistView.js" responded 404 in 11.8140 ms
+12/01/2020 19:52:59 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3345 ms
+12/01/2020 19:52:59 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3653 ms
+12/01/2020 19:52:59 HTTP "GET" "/Playlists/Create" responded 200 in 115.8383 ms
+12/01/2020 19:52:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4124 ms
+12/01/2020 19:53:07 Application starting up
+12/01/2020 19:53:07 Syncing genres
+12/01/2020 19:53:08 - Getting index page -
+12/01/2020 19:53:08 HTTP "GET" "/" responded 200 in 581.4990 ms
+12/01/2020 19:53:08 HTTP "GET" "/js/playlistView.js" responded 404 in 2.7045 ms
+12/01/2020 19:53:08 HTTP "GET" "/js/playlistView.js" responded 404 in 15.6149 ms
+12/01/2020 19:53:08 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3379 ms
+12/01/2020 19:53:08 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3628 ms
+12/01/2020 19:53:12 HTTP "GET" "/Playlists/Create" responded 200 in 113.9034 ms
+12/01/2020 19:53:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4182 ms
+12/01/2020 19:53:44 Syncing done
+12/01/2020 19:53:48 Application starting up
+12/01/2020 19:53:48 Syncing genres
+12/01/2020 19:53:49 - Getting index page -
+12/01/2020 19:53:50 HTTP "GET" "/" responded 200 in 592.0288 ms
+12/01/2020 19:53:50 HTTP "GET" "/js/playlistView.js" responded 404 in 3.1052 ms
+12/01/2020 19:53:50 HTTP "GET" "/js/playlistView.js" responded 404 in 12.8837 ms
+12/01/2020 19:53:50 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.7487 ms
+12/01/2020 19:53:50 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3373 ms
+12/01/2020 19:53:51 HTTP "GET" "/Playlists/Create" responded 200 in 112.9340 ms
+12/01/2020 19:53:51 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3999 ms
+12/01/2020 19:54:25 Syncing done
+12/01/2020 19:55:11 Application starting up
+12/01/2020 19:55:12 Syncing genres
+12/01/2020 19:55:12 - Getting index page -
+12/01/2020 19:55:13 HTTP "GET" "/" responded 200 in 611.8496 ms
+12/01/2020 19:55:13 HTTP "GET" "/js/playlistView.js" responded 404 in 3.7057 ms
+12/01/2020 19:55:13 HTTP "GET" "/js/playlistView.js" responded 404 in 12.4726 ms
+12/01/2020 19:55:13 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.5049 ms
+12/01/2020 19:55:13 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3810 ms
+12/01/2020 19:55:14 HTTP "GET" "/Playlists/Create" responded 200 in 112.9748 ms
+12/01/2020 19:55:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5177 ms
+12/01/2020 19:55:43 Application starting up
+12/01/2020 19:55:43 Syncing genres
+12/01/2020 19:55:44 - Getting index page -
+12/01/2020 19:55:45 HTTP "GET" "/" responded 200 in 593.0636 ms
+12/01/2020 19:55:45 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4153 ms
+12/01/2020 19:55:45 HTTP "GET" "/js/playlistView.js" responded 404 in 12.5689 ms
+12/01/2020 19:55:45 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.6869 ms
+12/01/2020 19:55:45 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.6904 ms
+12/01/2020 19:55:46 HTTP "GET" "/Playlists/Create" responded 200 in 114.7555 ms
+12/01/2020 19:55:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5440 ms
+12/01/2020 19:56:10 Application starting up
+12/01/2020 19:56:10 Syncing genres
+12/01/2020 19:56:11 - Getting index page -
+12/01/2020 19:56:11 HTTP "GET" "/" responded 200 in 557.5608 ms
+12/01/2020 19:56:11 HTTP "GET" "/js/playlistView.js" responded 404 in 2.1708 ms
+12/01/2020 19:56:11 HTTP "GET" "/js/playlistView.js" responded 404 in 11.7382 ms
+12/01/2020 19:56:12 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4311 ms
+12/01/2020 19:56:12 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3254 ms
+12/01/2020 19:56:12 HTTP "GET" "/Playlists/Create" responded 200 in 117.9724 ms
+12/01/2020 19:56:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7108 ms
+12/01/2020 19:56:42 Application starting up
+12/01/2020 19:56:42 Syncing genres
+12/01/2020 19:56:43 - Getting index page -
+12/01/2020 19:56:43 HTTP "GET" "/" responded 200 in 589.8491 ms
+12/01/2020 19:56:43 HTTP "GET" "/js/playlistView.js" responded 404 in 2.1511 ms
+12/01/2020 19:56:43 HTTP "GET" "/js/playlistView.js" responded 404 in 17.4350 ms
+12/01/2020 19:56:44 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3906 ms
+12/01/2020 19:56:44 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4006 ms
+12/01/2020 19:56:44 HTTP "GET" "/Playlists/Create" responded 200 in 114.9304 ms
+12/01/2020 19:56:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4894 ms
+12/01/2020 19:56:52 Application starting up
+12/01/2020 19:56:52 Syncing genres
+12/01/2020 19:56:53 - Getting index page -
+12/01/2020 19:56:53 HTTP "GET" "/" responded 200 in 603.8411 ms
+12/01/2020 19:56:53 HTTP "GET" "/js/playlistView.js" responded 404 in 2.5331 ms
+12/01/2020 19:56:53 HTTP "GET" "/js/playlistView.js" responded 404 in 12.8389 ms
+12/01/2020 19:56:53 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.6713 ms
+12/01/2020 19:56:53 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3605 ms
+12/01/2020 19:56:54 HTTP "GET" "/Playlists/Create" responded 200 in 115.1354 ms
+12/01/2020 19:56:55 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6327 ms
+12/01/2020 19:57:28 Syncing done
+12/01/2020 19:57:45 Application starting up
+12/01/2020 19:57:46 Syncing genres
+12/01/2020 19:57:46 - Getting index page -
+12/01/2020 19:57:47 HTTP "GET" "/" responded 200 in 534.7150 ms
+12/01/2020 19:57:47 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6887 ms
+12/01/2020 19:57:47 HTTP "GET" "/js/playlistView.js" responded 404 in 10.8710 ms
+12/01/2020 19:57:47 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4368 ms
+12/01/2020 19:57:47 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3438 ms
+12/01/2020 19:57:48 HTTP "GET" "/Playlists/Create" responded 200 in 115.8363 ms
+12/01/2020 19:57:48 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5426 ms
+12/01/2020 19:58:22 Syncing done
+12/01/2020 19:58:50 Application starting up
+12/01/2020 19:58:50 Syncing genres
+12/01/2020 19:58:51 - Getting index page -
+12/01/2020 19:58:52 HTTP "GET" "/" responded 200 in 660.5993 ms
+12/01/2020 19:58:52 HTTP "GET" "/js/playlistView.js" responded 404 in 3.0996 ms
+12/01/2020 19:58:52 HTTP "GET" "/js/playlistView.js" responded 404 in 11.2605 ms
+12/01/2020 19:58:52 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.7015 ms
+12/01/2020 19:58:52 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3832 ms
+12/01/2020 19:58:53 HTTP "GET" "/Playlists/Create" responded 200 in 117.5396 ms
+12/01/2020 19:58:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4121 ms
+12/01/2020 19:59:23 Application starting up
+12/01/2020 19:59:24 Syncing genres
+12/01/2020 19:59:24 - Getting index page -
+12/01/2020 19:59:25 HTTP "GET" "/" responded 200 in 525.2421 ms
+12/01/2020 19:59:25 HTTP "GET" "/js/playlistView.js" responded 404 in 2.0674 ms
+12/01/2020 19:59:25 HTTP "GET" "/js/playlistView.js" responded 404 in 15.7057 ms
+12/01/2020 19:59:25 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3795 ms
+12/01/2020 19:59:25 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3433 ms
+12/01/2020 19:59:29 HTTP "GET" "/Playlists/Create" responded 200 in 121.6679 ms
+12/01/2020 19:59:29 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4820 ms
+12/01/2020 20:00:00 Syncing done
+12/01/2020 20:00:23 Application starting up
+12/01/2020 20:00:24 Syncing genres
+12/01/2020 20:00:24 - Getting index page -
+12/01/2020 20:00:25 HTTP "GET" "/" responded 200 in 620.3588 ms
+12/01/2020 20:00:25 HTTP "GET" "/js/playlistView.js" responded 404 in 2.2391 ms
+12/01/2020 20:00:25 HTTP "GET" "/js/playlistView.js" responded 404 in 11.5350 ms
+12/01/2020 20:00:25 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3594 ms
+12/01/2020 20:00:25 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3481 ms
+12/01/2020 20:00:26 HTTP "GET" "/Playlists/Create" responded 200 in 115.8577 ms
+12/01/2020 20:00:26 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4124 ms
+12/01/2020 20:00:38 Application starting up
+12/01/2020 20:00:39 Syncing genres
+12/01/2020 20:00:40 - Getting index page -
+12/01/2020 20:00:40 HTTP "GET" "/" responded 200 in 630.2341 ms
+12/01/2020 20:00:40 HTTP "GET" "/js/playlistView.js" responded 404 in 2.7330 ms
+12/01/2020 20:00:40 HTTP "GET" "/js/playlistView.js" responded 404 in 12.6933 ms
+12/01/2020 20:00:40 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3736 ms
+12/01/2020 20:00:40 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.7337 ms
+12/01/2020 20:00:41 HTTP "GET" "/Playlists/Create" responded 200 in 118.0318 ms
+12/01/2020 20:00:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4017 ms
+12/01/2020 20:01:16 Syncing done
+12/01/2020 20:02:49 HTTP "GET" "/Playlists" responded 200 in 159.2741 ms
+12/01/2020 20:02:49 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3620 ms
+12/01/2020 20:02:49 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 1.5220 ms
+12/01/2020 20:02:49 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 1.1980 ms
+12/01/2020 20:02:56 - Getting index page -
+12/01/2020 20:02:56 HTTP "GET" "/" responded 200 in 40.2933 ms
+12/01/2020 20:02:56 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0983 ms
+12/01/2020 20:02:56 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3650 ms
+12/01/2020 20:02:56 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4777 ms
+12/01/2020 20:03:32 Application starting up
+12/01/2020 20:03:32 Syncing genres
+12/01/2020 20:03:33 - Getting index page -
+12/01/2020 20:03:34 HTTP "GET" "/" responded 200 in 588.7494 ms
+12/01/2020 20:03:34 HTTP "GET" "/js/playlistView.js" responded 404 in 4.8674 ms
+12/01/2020 20:03:34 HTTP "GET" "/js/playlistView.js" responded 404 in 13.8766 ms
+12/01/2020 20:03:34 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3730 ms
+12/01/2020 20:03:34 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4044 ms
+12/01/2020 20:03:35 HTTP "GET" "/Playlists/Create" responded 200 in 116.2388 ms
+12/01/2020 20:03:35 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5728 ms
+12/01/2020 20:03:56 Application starting up
+12/01/2020 20:03:56 Syncing genres
+12/01/2020 20:03:57 - Getting index page -
+12/01/2020 20:03:57 HTTP "GET" "/" responded 200 in 697.3632 ms
+12/01/2020 20:03:57 HTTP "GET" "/js/playlistView.js" responded 404 in 3.4584 ms
+12/01/2020 20:03:57 HTTP "GET" "/js/playlistView.js" responded 404 in 11.5316 ms
+12/01/2020 20:03:57 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3770 ms
+12/01/2020 20:03:57 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3701 ms
+12/01/2020 20:03:58 HTTP "GET" "/Playlists/Create" responded 200 in 126.6714 ms
+12/01/2020 20:03:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4318 ms
+12/01/2020 20:04:32 Syncing done
+12/01/2020 20:04:39 Application starting up
+12/01/2020 20:04:39 Syncing genres
+12/01/2020 20:04:40 - Getting index page -
+12/01/2020 20:04:40 HTTP "GET" "/" responded 200 in 606.7578 ms
+12/01/2020 20:04:40 HTTP "GET" "/js/playlistView.js" responded 404 in 3.0167 ms
+12/01/2020 20:04:41 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 16.4463 ms
+12/01/2020 20:04:41 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.8428 ms
+12/01/2020 20:04:42 HTTP "GET" "/Playlists/Create" responded 200 in 133.7093 ms
+12/01/2020 20:04:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4286 ms
+12/01/2020 20:04:55 Application starting up
+12/01/2020 20:04:55 Syncing genres
+12/01/2020 20:04:56 - Getting index page -
+12/01/2020 20:04:57 HTTP "GET" "/" responded 200 in 644.8872 ms
+12/01/2020 20:04:57 HTTP "GET" "/js/playlistView.js" responded 404 in 1.8441 ms
+12/01/2020 20:04:57 HTTP "GET" "/js/playlistView.js" responded 404 in 13.8005 ms
+12/01/2020 20:04:57 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3933 ms
+12/01/2020 20:04:57 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3439 ms
+12/01/2020 20:04:58 HTTP "GET" "/Playlists/Create" responded 200 in 115.6286 ms
+12/01/2020 20:04:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4676 ms
+12/01/2020 20:05:32 Syncing done
