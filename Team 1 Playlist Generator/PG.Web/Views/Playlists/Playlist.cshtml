@@ -15,16 +15,9 @@
             <div style="display:flex; flex-direction: column;">
                 @if (ViewBag.LoggedUserId != null && ViewBag.LoggedUserId == Model.UserId)
                 {
-                    <div>
-                        <form class="form" method="post" asp-controller="Playlists" asp-action="UpdatePublicAccess" style="margin-bottom:30px">
-                            <input type="hidden" name="playlistId" value="@Model.Id" />
-                            <input type="hidden" name="isPublic" value="@Model.IsPublic.ToString()" />
-                            <div class="form__buttons buttons">
-                                <button type="submit" >Update</button>
-                            </div>
-                        </form>
-                        <p>@Model.IsPublic</p>
-                    </div>
+
+
+                    <a asp-action="Edit" asp-route-id="@Model.Id">|Edit|</a>
                 }
                 @if (User.IsInRole("Admin"))
                 {

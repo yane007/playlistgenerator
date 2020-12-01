@@ -7,8 +7,10 @@
         {
             <li>
                 <a asp-controller="Playlists" asp-action="Playlist" asp-route-id="@item.Id">
-                    <img src="@item.PixabayImage" style="width: 295px; height: 238px; filter: grayscale(100%);" alt="">
                     <span>@item.Title</span>
+                    <img src="@item.PixabayImage" style="width: 295px; height: 238px; filter: grayscale(100%);" alt="">
+                    <p>Duration: @item.DurationInHours</p>
+                    <p>Rank: @item.Rank</p>
                 </a>
             </li>
         }

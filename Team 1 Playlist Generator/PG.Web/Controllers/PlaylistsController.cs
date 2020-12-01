@@ -103,6 +103,22 @@ namespace PG.Web.Controllers
 
             return RedirectToAction("Playlist", new { id = playlistId });
         }
+
+        public async Task<IActionResult> Edit(int id)
+        {
+            var playlist = await _playlistService.GetPlaylistById(id);
+
+
+            return View(playlist.ToViewModel());
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(PlaylistViewModel model)
+        {
+            await _playlistService.Update(model.Id, model.ToDTO());
+
+            return RedirectToAction("MyPlaylists");
+        }
     }
 }
 

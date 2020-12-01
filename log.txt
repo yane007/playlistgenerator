@@ -24841,3 +24841,497 @@ PG.Services.Exceptions.NotFoundException: Playlist with id 3 was not found.
 12/01/2020 12:17:48 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2971 ms
 12/01/2020 12:17:48 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1883 ms
 12/01/2020 12:17:48 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1875 ms
+12/01/2020 12:22:00 Application starting up
+12/01/2020 12:22:00 Syncing genres
+12/01/2020 12:22:01 - Getting index page -
+12/01/2020 12:22:01 HTTP "GET" "/" responded 200 in 380.3172 ms
+12/01/2020 12:22:01 HTTP "GET" "/js/playlistView.js" responded 404 in 1.9397 ms
+12/01/2020 12:22:01 HTTP "GET" "/js/playlistView.js" responded 404 in 11.8126 ms
+12/01/2020 12:22:01 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3700 ms
+12/01/2020 12:22:01 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3661 ms
+12/01/2020 12:22:04 HTTP "GET" "/Playlists" responded 200 in 26.0455 ms
+12/01/2020 12:22:04 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3796 ms
+12/01/2020 12:22:04 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4451 ms
+12/01/2020 12:22:04 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3787 ms
+12/01/2020 12:22:36 Syncing done
+12/01/2020 12:22:39 Application starting up
+12/01/2020 12:22:40 Syncing genres
+12/01/2020 12:22:40 - Getting index page -
+12/01/2020 12:22:41 HTTP "GET" "/" responded 200 in 604.2376 ms
+12/01/2020 12:22:41 HTTP "GET" "/js/playlistView.js" responded 404 in 2.7637 ms
+12/01/2020 12:22:41 HTTP "GET" "/js/playlistView.js" responded 404 in 10.6338 ms
+12/01/2020 12:22:41 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3607 ms
+12/01/2020 12:22:41 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3280 ms
+12/01/2020 12:22:42 HTTP "GET" "/Playlists" responded 200 in 22.5674 ms
+12/01/2020 12:22:42 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3861 ms
+12/01/2020 12:22:42 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4309 ms
+12/01/2020 12:22:42 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3381 ms
+12/01/2020 12:23:15 Syncing done
+12/01/2020 12:23:28 Application starting up
+12/01/2020 12:23:29 Syncing genres
+12/01/2020 12:23:29 - Getting index page -
+12/01/2020 12:23:30 HTTP "GET" "/" responded 200 in 785.5403 ms
+12/01/2020 12:23:30 HTTP "GET" "/js/playlistView.js" responded 404 in 2.0837 ms
+12/01/2020 12:23:30 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 16.3631 ms
+12/01/2020 12:23:30 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.5805 ms
+12/01/2020 12:23:31 HTTP "GET" "/Playlists" responded 200 in 48.5796 ms
+12/01/2020 12:23:31 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5460 ms
+12/01/2020 12:23:31 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4650 ms
+12/01/2020 12:23:31 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3807 ms
+12/01/2020 12:23:55 Application starting up
+12/01/2020 12:23:55 Syncing genres
+12/01/2020 12:23:56 - Getting index page -
+12/01/2020 12:23:56 HTTP "GET" "/" responded 200 in 575.3686 ms
+12/01/2020 12:23:56 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4082 ms
+12/01/2020 12:23:56 HTTP "GET" "/js/playlistView.js" responded 404 in 10.9009 ms
+12/01/2020 12:23:56 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3955 ms
+12/01/2020 12:23:56 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3284 ms
+12/01/2020 12:23:57 HTTP "GET" "/Playlists" responded 200 in 29.1663 ms
+12/01/2020 12:23:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6610 ms
+12/01/2020 12:23:57 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.5152 ms
+12/01/2020 12:23:57 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4065 ms
+12/01/2020 12:24:30 Syncing done
+12/01/2020 12:50:25 Application starting up
+12/01/2020 12:50:27 Syncing genres
+12/01/2020 12:50:27 Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5000: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+12/01/2020 12:50:27 The application failed to start correctly.
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5000: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at PG.Web.Program.Main(String[] args) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Program.cs:line 24
+12/01/2020 12:50:37 Application starting up
+12/01/2020 12:50:38 Syncing genres
+12/01/2020 12:50:39 - Getting index page -
+12/01/2020 12:50:39 HTTP "GET" "/" responded 200 in 1064.0123 ms
+12/01/2020 12:50:39 HTTP "GET" "/js/playlistView.js" responded 404 in 4.0857 ms
+12/01/2020 12:50:40 HTTP "GET" "/js/playlistView.js" responded 404 in 13.0853 ms
+12/01/2020 12:50:40 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.5620 ms
+12/01/2020 12:50:40 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4101 ms
+12/01/2020 12:50:41 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 71.8600 ms
+12/01/2020 12:50:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3905 ms
+12/01/2020 12:50:41 HTTP "GET" "/Playlists/images/logo.jpg" responded 404 in 1.6759 ms
+12/01/2020 12:50:41 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.5392 ms
+12/01/2020 12:50:41 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.7301 ms
+12/01/2020 12:50:43 HTTP "GET" "/Playlists/Edit/10" responded 405 in 1.2757 ms
+12/01/2020 12:50:47 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 17.1504 ms
+12/01/2020 12:52:19 Application starting up
+12/01/2020 12:52:21 Syncing genres
+12/01/2020 12:52:22 - Getting index page -
+12/01/2020 12:52:22 HTTP "GET" "/" responded 200 in 653.9111 ms
+12/01/2020 12:52:22 HTTP "GET" "/js/playlistView.js" responded 404 in 3.0982 ms
+12/01/2020 12:52:22 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 21.7621 ms
+12/01/2020 12:52:22 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4786 ms
+12/01/2020 12:52:24 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 1439.0726 ms
+12/01/2020 12:52:24 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9120 ms
+12/01/2020 12:52:24 HTTP "GET" "/Playlists/images/logo.jpg" responded 404 in 1.5799 ms
+12/01/2020 12:52:24 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4007 ms
+12/01/2020 12:52:24 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3593 ms
+12/01/2020 12:52:26 HTTP "GET" "/Playlists/Edit/10" responded 500 in 59.2534 ms
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'PG.Services.DTOs.PlaylistDTO', but this ViewDataDictionary instance requires a model item of type 'PG.Web.Models.PlaylistViewModel'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+12/01/2020 12:52:26 The model item passed into the ViewDataDictionary is of type 'PG.Services.DTOs.PlaylistDTO', but this ViewDataDictionary instance requires a model item of type 'PG.Web.Models.PlaylistViewModel'.
+12/01/2020 12:52:32 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 17.5689 ms
+12/01/2020 12:52:44 Application starting up
+12/01/2020 12:52:44 Syncing genres
+12/01/2020 12:52:45 - Getting index page -
+12/01/2020 12:52:45 HTTP "GET" "/" responded 200 in 488.1724 ms
+12/01/2020 12:52:45 HTTP "GET" "/js/playlistView.js" responded 404 in 2.2264 ms
+12/01/2020 12:52:45 HTTP "GET" "/js/playlistView.js" responded 404 in 11.7632 ms
+12/01/2020 12:52:45 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4476 ms
+12/01/2020 12:52:45 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3257 ms
+12/01/2020 12:52:46 HTTP "GET" "/Playlists" responded 200 in 26.4776 ms
+12/01/2020 12:52:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3768 ms
+12/01/2020 12:52:46 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4152 ms
+12/01/2020 12:52:46 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.6566 ms
+12/01/2020 12:52:46 HTTP "GET" "/Playlists/Playlist/10" responded 200 in 140.0923 ms
+12/01/2020 12:52:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4917 ms
+12/01/2020 12:52:46 HTTP "GET" "/Playlists/Playlist/images/logo.jpg" responded 404 in 2.2082 ms
+12/01/2020 12:52:47 HTTP "GET" "/Playlists" responded 200 in 6.6833 ms
+12/01/2020 12:52:47 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3553 ms
+12/01/2020 12:52:47 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3201 ms
+12/01/2020 12:52:48 HTTP "GET" "/Playlists/Edit/10" responded 200 in 33.7537 ms
+12/01/2020 12:52:48 HTTP "GET" "/Playlists/Edit/images/logo.jpg" responded 404 in 1.0091 ms
+12/01/2020 12:52:48 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1082 ms
+12/01/2020 12:52:53 HTTP "POST" "/Playlists/Edit/10" responded 200 in 13.5448 ms
+12/01/2020 12:52:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4266 ms
+12/01/2020 12:52:53 HTTP "GET" "/Playlists/Edit/images/logo.jpg" responded 404 in 0.2705 ms
+12/01/2020 12:52:59 HTTP "POST" "/Playlists/Edit/10" responded 200 in 8.5582 ms
+12/01/2020 12:52:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9331 ms
+12/01/2020 12:52:59 HTTP "GET" "/Playlists/Edit/images/logo.jpg" responded 404 in 0.3285 ms
+12/01/2020 12:53:20 Syncing done
+12/01/2020 12:54:41 Application starting up
+12/01/2020 12:54:41 Syncing genres
+12/01/2020 12:54:42 - Getting index page -
+12/01/2020 12:54:42 HTTP "GET" "/" responded 200 in 465.1675 ms
+12/01/2020 12:54:43 HTTP "GET" "/js/playlistView.js" responded 404 in 3.5025 ms
+12/01/2020 12:54:43 HTTP "GET" "/js/playlistView.js" responded 404 in 12.0526 ms
+12/01/2020 12:54:43 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3870 ms
+12/01/2020 12:54:43 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.6415 ms
+12/01/2020 12:54:44 HTTP "GET" "/Playlists" responded 200 in 30.9753 ms
+12/01/2020 12:54:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6347 ms
+12/01/2020 12:54:44 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.5448 ms
+12/01/2020 12:54:44 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3801 ms
+12/01/2020 12:54:46 HTTP "GET" "/Playlists/Edit/10" responded 200 in 66.7929 ms
+12/01/2020 12:54:46 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3820 ms
+12/01/2020 12:54:46 HTTP "GET" "/Playlists/Edit/images/logo.jpg" responded 404 in 1.6844 ms
+12/01/2020 12:54:50 HTTP "POST" "/Playlists/Edit/10" responded 200 in 108.9321 ms
+12/01/2020 12:54:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4560 ms
+12/01/2020 12:54:50 HTTP "GET" "/Playlists/Edit/images/logo.jpg" responded 404 in 0.2247 ms
+12/01/2020 12:54:53 HTTP "GET" "/Playlists" responded 200 in 11.8716 ms
+12/01/2020 12:54:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7687 ms
+12/01/2020 12:54:53 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4392 ms
+12/01/2020 12:54:53 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4263 ms
+12/01/2020 12:55:16 Syncing done
+12/01/2020 12:55:31 Application starting up
+12/01/2020 12:55:31 Syncing genres
+12/01/2020 12:55:32 - Getting index page -
+12/01/2020 12:55:32 HTTP "GET" "/" responded 200 in 340.6025 ms
+12/01/2020 12:55:32 HTTP "GET" "/js/playlistView.js" responded 404 in 1.9440 ms
+12/01/2020 12:55:32 HTTP "GET" "/js/playlistView.js" responded 404 in 11.0982 ms
+12/01/2020 12:55:32 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4552 ms
+12/01/2020 12:55:32 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3185 ms
+12/01/2020 12:55:35 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 45.0818 ms
+12/01/2020 12:55:35 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5323 ms
+12/01/2020 12:55:35 HTTP "GET" "/Playlists/images/logo.jpg" responded 404 in 1.5587 ms
+12/01/2020 12:55:35 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4216 ms
+12/01/2020 12:55:35 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3407 ms
+12/01/2020 12:55:37 HTTP "GET" "/Playlists/Edit/10" responded 200 in 63.8580 ms
+12/01/2020 12:55:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4285 ms
+12/01/2020 12:55:37 HTTP "GET" "/Playlists/Edit/images/logo.jpg" responded 404 in 0.2665 ms
+12/01/2020 12:55:44 HTTP "POST" "/Playlists/Edit/10" responded 200 in 107.3031 ms
+12/01/2020 12:55:44 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4026 ms
+12/01/2020 12:55:45 HTTP "GET" "/Playlists/Edit/images/logo.jpg" responded 404 in 0.3317 ms
+12/01/2020 12:56:22 Application starting up
+12/01/2020 12:56:23 Syncing genres
+12/01/2020 12:56:24 - Getting index page -
+12/01/2020 12:56:24 HTTP "GET" "/" responded 200 in 417.8855 ms
+12/01/2020 12:56:24 HTTP "GET" "/js/playlistView.js" responded 404 in 2.9750 ms
+12/01/2020 12:56:24 HTTP "GET" "/js/playlistView.js" responded 404 in 11.5856 ms
+12/01/2020 12:56:24 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4263 ms
+12/01/2020 12:56:24 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3739 ms
+12/01/2020 12:56:25 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 44.9992 ms
+12/01/2020 12:56:25 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5016 ms
+12/01/2020 12:56:25 HTTP "GET" "/Playlists/images/logo.jpg" responded 404 in 1.4627 ms
+12/01/2020 12:56:25 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3872 ms
+12/01/2020 12:56:25 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4336 ms
+12/01/2020 12:56:28 HTTP "GET" "/Playlists/Edit/10" responded 200 in 1355.5840 ms
+12/01/2020 12:56:28 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9584 ms
+12/01/2020 12:56:28 HTTP "GET" "/Playlists/Edit/images/logo.jpg" responded 404 in 0.8026 ms
+12/01/2020 12:56:31 HTTP "POST" "/Playlists/Edit/10" responded 302 in 106.5360 ms
+12/01/2020 12:56:31 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 4.4831 ms
+12/01/2020 12:56:31 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3418 ms
+12/01/2020 12:56:31 HTTP "GET" "/Playlists/images/logo.jpg" responded 404 in 0.2229 ms
+12/01/2020 12:56:31 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3285 ms
+12/01/2020 12:56:31 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2958 ms
+12/01/2020 12:56:36 HTTP "GET" "/Playlists/Edit/11" responded 200 in 7.6956 ms
+12/01/2020 12:56:36 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8271 ms
+12/01/2020 12:56:36 HTTP "GET" "/Playlists/Edit/images/logo.jpg" responded 404 in 0.2893 ms
+12/01/2020 12:56:38 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 7.9687 ms
+12/01/2020 12:56:38 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.9238 ms
+12/01/2020 12:56:38 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3238 ms
+12/01/2020 12:56:39 HTTP "GET" "/Playlists/Edit/10" responded 200 in 6.6052 ms
+12/01/2020 12:56:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9609 ms
+12/01/2020 12:56:39 HTTP "GET" "/Playlists/Edit/images/logo.jpg" responded 404 in 0.7210 ms
+12/01/2020 12:56:41 HTTP "POST" "/Playlists/Edit/10" responded 302 in 6.9399 ms
+12/01/2020 12:56:41 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 3.9628 ms
+12/01/2020 12:56:41 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2931 ms
+12/01/2020 12:56:41 HTTP "GET" "/Playlists/images/logo.jpg" responded 404 in 0.2911 ms
+12/01/2020 12:56:41 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.2600 ms
+12/01/2020 12:56:41 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2609 ms
+12/01/2020 12:58:59 Application starting up
+12/01/2020 12:58:59 Syncing genres
+12/01/2020 12:59:00 - Getting index page -
+12/01/2020 12:59:00 HTTP "GET" "/" responded 200 in 413.2605 ms
+12/01/2020 12:59:00 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4627 ms
+12/01/2020 12:59:00 HTTP "GET" "/js/playlistView.js" responded 404 in 10.9973 ms
+12/01/2020 12:59:00 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.5193 ms
+12/01/2020 12:59:00 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3427 ms
+12/01/2020 12:59:01 HTTP "GET" "/Playlists" responded 200 in 23.0077 ms
+12/01/2020 12:59:01 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5188 ms
+12/01/2020 12:59:01 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3372 ms
+12/01/2020 12:59:01 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4032 ms
+12/01/2020 12:59:03 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 34.4483 ms
+12/01/2020 12:59:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4072 ms
+12/01/2020 12:59:03 HTTP "GET" "/Playlists/images/logo.jpg" responded 404 in 1.5830 ms
+12/01/2020 12:59:03 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3512 ms
+12/01/2020 12:59:03 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4760 ms
+12/01/2020 12:59:04 HTTP "GET" "/Playlists/Playlist/10" responded 200 in 116.8427 ms
+12/01/2020 12:59:04 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6193 ms
+12/01/2020 12:59:04 HTTP "GET" "/Playlists/Playlist/images/logo.jpg" responded 404 in 0.4549 ms
+12/01/2020 12:59:08 HTTP "GET" "/Playlists/Edit/10" responded 200 in 36.2137 ms
+12/01/2020 12:59:08 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3491 ms
+12/01/2020 12:59:08 HTTP "GET" "/Playlists/Edit/images/logo.jpg" responded 404 in 0.3185 ms
+12/01/2020 12:59:10 HTTP "GET" "/Playlists/Playlist/10" responded 200 in 11.1111 ms
+12/01/2020 12:59:14 HTTP "POST" "/Playlists/DeletePlaylist" responded 302 in 86.8932 ms
+12/01/2020 12:59:14 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 8.5967 ms
+12/01/2020 12:59:14 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4494 ms
+12/01/2020 12:59:14 HTTP "GET" "/Playlists/images/logo.jpg" responded 404 in 0.2348 ms
+12/01/2020 12:59:14 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3009 ms
+12/01/2020 12:59:14 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3739 ms
+12/01/2020 12:59:36 Syncing done
+12/01/2020 13:00:20 Application starting up
+12/01/2020 13:00:20 Syncing genres
+12/01/2020 13:00:21 - Getting index page -
+12/01/2020 13:00:21 HTTP "GET" "/" responded 200 in 445.6846 ms
+12/01/2020 13:00:21 HTTP "GET" "/js/playlistView.js" responded 404 in 2.9822 ms
+12/01/2020 13:00:21 HTTP "GET" "/js/playlistView.js" responded 404 in 10.9277 ms
+12/01/2020 13:00:21 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.5568 ms
+12/01/2020 13:00:21 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4072 ms
+12/01/2020 13:00:59 Syncing done
+12/01/2020 13:01:12 HTTP "GET" "/Playlists" responded 200 in 26.4968 ms
+12/01/2020 13:01:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.8642 ms
+12/01/2020 13:01:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3510 ms
+12/01/2020 13:01:12 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3612 ms
+12/01/2020 13:01:12 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3239 ms
+12/01/2020 13:01:13 HTTP "GET" "/Playlists/Playlist/9" responded 200 in 116.1794 ms
+12/01/2020 13:01:13 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7390 ms
+12/01/2020 13:01:13 HTTP "GET" "/Playlists/Playlist/images/logo.jpg" responded 404 in 1.4119 ms
+12/01/2020 13:01:17 HTTP "POST" "/Playlists/UpdatePublicAccess" responded 302 in 1424.6302 ms
+12/01/2020 13:01:17 HTTP "GET" "/Playlists/Playlist/9" responded 200 in 9.1477 ms
+12/01/2020 13:01:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4997 ms
+12/01/2020 13:01:17 HTTP "GET" "/Playlists/Playlist/images/logo.jpg" responded 404 in 0.3142 ms
+12/01/2020 13:01:22 HTTP "GET" "/Playlists/Edit/9" responded 200 in 40.9531 ms
+12/01/2020 13:01:22 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9318 ms
+12/01/2020 13:01:22 HTTP "GET" "/Playlists/Edit/images/logo.jpg" responded 404 in 0.4382 ms
+12/01/2020 13:01:54 Application starting up
+12/01/2020 13:01:55 Syncing genres
+12/01/2020 13:01:55 - Getting index page -
+12/01/2020 13:01:56 HTTP "GET" "/" responded 200 in 494.2965 ms
+12/01/2020 13:01:56 HTTP "GET" "/js/playlistView.js" responded 404 in 2.0470 ms
+12/01/2020 13:01:56 HTTP "GET" "/js/playlistView.js" responded 404 in 10.7803 ms
+12/01/2020 13:01:56 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4169 ms
+12/01/2020 13:01:56 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3476 ms
+12/01/2020 13:01:57 HTTP "GET" "/Playlists" responded 200 in 26.0412 ms
+12/01/2020 13:01:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3884 ms
+12/01/2020 13:01:58 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3542 ms
+12/01/2020 13:01:58 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3349 ms
+12/01/2020 13:01:58 HTTP "GET" "/Playlists/Playlist/8" responded 200 in 112.4943 ms
+12/01/2020 13:01:59 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3711 ms
+12/01/2020 13:01:59 HTTP "GET" "/Playlists/Playlist/images/logo.jpg" responded 404 in 1.4642 ms
+12/01/2020 13:02:00 HTTP "GET" "/Playlists/Edit/8" responded 200 in 36.9146 ms
+12/01/2020 13:02:00 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5960 ms
+12/01/2020 13:02:00 HTTP "GET" "/Playlists/Edit/images/logo.jpg" responded 404 in 0.2893 ms
+12/01/2020 13:02:02 Failed executing DbCommand ("160"ms) [Parameters=["@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Playlists] SET [PixabayImage] = @p0, [Title] = @p1
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;"
+12/01/2020 13:02:02 An exception occurred in the database while saving changes for context type '"PG.Data.Context.PGDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Title', table 'PlaylistGeneratorDB.dbo.Playlists'; column does not allow nulls. UPDATE fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:cf2eda5a-4f21-4af6-aca6-4b1d4a2c3781
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Title', table 'PlaylistGeneratorDB.dbo.Playlists'; column does not allow nulls. UPDATE fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:cf2eda5a-4f21-4af6-aca6-4b1d4a2c3781
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+12/01/2020 13:02:02 HTTP "POST" "/Playlists/Edit/8" responded 500 in 307.5006 ms
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Title', table 'PlaylistGeneratorDB.dbo.Playlists'; column does not allow nulls. UPDATE fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:cf2eda5a-4f21-4af6-aca6-4b1d4a2c3781
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PG.Services.PlaylistService.Update(Int32 id, PlaylistDTO playlistDTO) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 106
+   at PG.Web.Controllers.PlaylistsController.Edit(PlaylistViewModel model) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\Controllers\PlaylistsController.cs:line 118
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+12/01/2020 13:02:02 An error occurred while updating the entries. See the inner exception for details.
+12/01/2020 13:02:04 HTTP "GET" "/Playlists/Edit/8" responded 200 in 7.6819 ms
+12/01/2020 13:02:13 Application starting up
+12/01/2020 13:02:13 Syncing genres
+12/01/2020 13:02:14 - Getting index page -
+12/01/2020 13:02:14 HTTP "GET" "/" responded 200 in 599.1059 ms
+12/01/2020 13:02:14 HTTP "GET" "/js/playlistView.js" responded 404 in 1.8946 ms
+12/01/2020 13:02:14 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 14.9409 ms
+12/01/2020 13:02:14 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3462 ms
+12/01/2020 13:02:16 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 48.4598 ms
+12/01/2020 13:02:16 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3710 ms
+12/01/2020 13:02:16 HTTP "GET" "/Playlists/images/logo.jpg" responded 404 in 1.4753 ms
+12/01/2020 13:02:16 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4353 ms
+12/01/2020 13:02:16 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3349 ms
+12/01/2020 13:02:17 HTTP "GET" "/Playlists/Playlist/9" responded 200 in 115.2610 ms
+12/01/2020 13:02:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3733 ms
+12/01/2020 13:02:17 HTTP "GET" "/Playlists/Playlist/images/logo.jpg" responded 404 in 0.2511 ms
+12/01/2020 13:02:18 HTTP "GET" "/Playlists/Edit/9" responded 200 in 35.6000 ms
+12/01/2020 13:02:18 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4966 ms
+12/01/2020 13:02:18 HTTP "GET" "/Playlists/Edit/images/logo.jpg" responded 404 in 0.2910 ms
+12/01/2020 13:02:19 HTTP "POST" "/Playlists/UpdatePublicAccess" responded 302 in 94.2429 ms
+12/01/2020 13:02:19 HTTP "GET" "/Playlists/Playlist/9" responded 200 in 4.7594 ms
+12/01/2020 13:02:19 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3995 ms
+12/01/2020 13:02:19 HTTP "GET" "/Playlists/Playlist/images/logo.jpg" responded 404 in 0.6953 ms
+12/01/2020 13:02:24 HTTP "POST" "/Playlists/DeletePlaylist" responded 302 in 20.5785 ms
+12/01/2020 13:02:24 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 10.1638 ms
+12/01/2020 13:02:24 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5425 ms
+12/01/2020 13:02:24 HTTP "GET" "/Playlists/images/logo.jpg" responded 404 in 0.2649 ms
+12/01/2020 13:02:24 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.5196 ms
+12/01/2020 13:02:24 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3867 ms
+12/01/2020 13:02:27 HTTP "GET" "/Playlists/Playlist/8" responded 200 in 13.1604 ms
+12/01/2020 13:02:27 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0788 ms
+12/01/2020 13:02:27 HTTP "GET" "/Playlists/Playlist/images/logo.jpg" responded 404 in 0.4882 ms
+12/01/2020 13:03:44 Application starting up
+12/01/2020 13:03:45 Syncing genres
+12/01/2020 13:03:45 Syncing done
+12/01/2020 13:03:45 - Getting index page -
+12/01/2020 13:05:51 HTTP "GET" "/" responded 200 in 125324.1187 ms
+12/01/2020 13:05:51 HTTP "GET" "/js/playlistView.js" responded 404 in 3.0989 ms
+12/01/2020 13:05:51 HTTP "GET" "/js/playlistView.js" responded 404 in 11.7117 ms
+12/01/2020 13:05:53 HTTP "GET" "/Playlists/Create" responded 200 in 84.3683 ms
+12/01/2020 13:05:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4016 ms
+12/01/2020 13:05:53 HTTP "GET" "/Playlists/images/logo.jpg" responded 404 in 1.9656 ms
+12/01/2020 13:05:53 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3061 ms
+12/01/2020 13:06:10 Playlist with title 'Sofia-Sandanski' has been created.
+12/01/2020 13:06:10 HTTP "POST" "/Playlists/Create" responded 302 in 1244.0411 ms
+12/01/2020 13:06:10 HTTP "GET" "/Playlists" responded 200 in 34.0790 ms
+12/01/2020 13:06:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4836 ms
+12/01/2020 13:06:10 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4203 ms
+12/01/2020 13:06:10 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3602 ms
+12/01/2020 13:06:12 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 105.0933 ms
+12/01/2020 13:06:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.7184 ms
+12/01/2020 13:06:12 HTTP "GET" "/Playlists/Playlist/images/logo.jpg" responded 404 in 0.3290 ms
+12/01/2020 13:06:17 HTTP "GET" "/Playlists/Edit/1" responded 200 in 27.9037 ms
+12/01/2020 13:06:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9262 ms
+12/01/2020 13:06:17 HTTP "GET" "/Playlists/Edit/images/logo.jpg" responded 404 in 0.5059 ms
+12/01/2020 13:06:22 HTTP "POST" "/Playlists/UpdatePublicAccess" responded 302 in 22.2036 ms
+12/01/2020 13:06:22 HTTP "GET" "/Playlists/Playlist/1" responded 200 in 5.8618 ms
+12/01/2020 13:06:22 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3122 ms
+12/01/2020 13:06:22 HTTP "GET" "/Playlists/Playlist/images/logo.jpg" responded 404 in 0.4851 ms
