@@ -17,6 +17,8 @@ namespace PG.Services.DTOs
 
         public string CreatorName { get; set; }
 
+        public bool IsPublic { get; set; }
+
         public ICollection<SongDTO> Songs { get; set; }
     }
 }

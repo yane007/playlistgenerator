@@ -7,19 +7,9 @@
         {
             <li>
                 <a asp-controller="Playlists" asp-action="Playlist" asp-route-id="@item.Id">
-                    <img src="~/images/the-nerd.jpg" alt="">
+                    <img src="@item.PixabayImage" style="width: 295px; height: 238px; filter: grayscale(100%);" alt="">
                     <span>@item.Title</span>
                 </a>
-                @if (User.IsInRole("admin"))
-                {
-                    <form class="form" method="post" asp-controller="Playlists" asp-action="DeletePlaylist" style="margin-bottom:30px">
-                        <input type="hidden" name="id" value="@item.Id" />
-                        <div class="form__buttons buttons">
-                            <button type="submit">Delete</button>
-                        </div>
-                    </form>
-                }
-
             </li>
         }
     </ul>

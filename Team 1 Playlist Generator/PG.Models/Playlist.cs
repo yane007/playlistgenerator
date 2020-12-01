@@ -10,6 +10,7 @@ namespace PG.Models
         {
             PlaylistsSongs = new List<PlaylistsSongs>();
             PlaylistsGenres = new List<PlaylistsGenres>();
+            IsPublic = true;
         }
 
         [Required]
@@ -21,6 +22,8 @@ namespace PG.Models
         public int Rank { get; set; }
 
         public string PixabayImage { get; set; }
+
+        public bool IsPublic { get; set; }
 
         public string UserId { get; set; }
         public User User { get; set; }

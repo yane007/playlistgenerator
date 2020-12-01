@@ -38,6 +38,13 @@ namespace PG.Services.Contract
         Task<PlaylistDTO> Update(int id, PlaylistDTO playlistDTO);
 
         /// <summary>
+        /// Makes a playlist Public or Private
+        /// </summary>
+        /// <param name="id">Playlist's ID</param>
+        /// <param name="isPublic">Public / Private</param>
+        Task UpdatePublicAccess(int id, bool isPublic);
+
+        /// <summary>
         /// Deletes a playlist.
         /// </summary>
         /// <param name="id">ID of the playlist</param>

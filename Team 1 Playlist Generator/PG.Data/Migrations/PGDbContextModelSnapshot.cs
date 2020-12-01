@@ -49,14 +49,14 @@ namespace PG.Data.Migrations
                         new
                         {
                             Id = "93ad4deb-b9f7-4a98-9585-8b79963aee55",
-                            ConcurrencyStamp = "eecd91ef-b8c2-44bb-a4ae-c217aa5adb86",
+                            ConcurrencyStamp = "49dbdee5-1374-4e80-8c6f-8b72a862e86c",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
                             Id = "6b32cc6d-2fc9-4808-a0a6-b3877bf9a381",
-                            ConcurrencyStamp = "ef4a2af2-c3aa-46de-8e94-05e6bba054b9",
+                            ConcurrencyStamp = "3e8b422c-841f-4d8a-983a-eb77c603c0ef",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -258,6 +258,9 @@ namespace PG.Data.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IsPublic")
+                        .HasColumnType("bit");
+
                     b.Property<string>("PixabayImage")
                         .HasColumnType("nvarchar(max)");
 
@@ -435,16 +438,16 @@ namespace PG.Data.Migrations
                         {
                             Id = "00000000-0000-0000-0000-000000000000",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "bc3aacc8-3e86-4b52-ad3e-16de6c86e855",
+                            ConcurrencyStamp = "a719c6f9-6d5b-43e3-9aee-d3a22c44a1e2",
                             Email = "admin@admin.com",
                             EmailConfirmed = false,
                             IsDeleted = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@ADMIN.COM",
                             NormalizedUserName = "ADMIN@ADMIN.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAENUWQUaPv17IuD6vrxmptxW4SlJiquiW64ZsgSsTIGkxC0DfrYjtdtj9qw+Upb8OXQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEK4GL6WS5JG67Wdabogm96/9ivqW/HvT5Ms9tTZyFxktYDjETH0YEEXHFLyaoWuizQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "e4c55f16-2eee-4712-be45-36025841e924",
+                            SecurityStamp = "d54a7982-bd2d-42d6-ba99-aefdc7dabb09",
                             TwoFactorEnabled = false,
                             UserName = "admin@admin.com"
                         });

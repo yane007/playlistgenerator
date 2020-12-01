@@ -12,6 +12,30 @@
                     <p><ion-icon name="radioPlaylist"></ion-icon> &nbsp;<span>Rank: @Model.Rank</span></p>
                 </div>
             </div>
+            <div style="display:flex; flex-direction: column;">
+                @if (ViewBag.LoggedUserId != null && ViewBag.LoggedUserId == Model.UserId)
+                {
+                    <div>
+                        <form class="form" method="post" asp-controller="Playlists" asp-action="UpdatePublicAccess" style="margin-bottom:30px">
+                            <input type="hidden" name="playlistId" value="@Model.Id" />
+                            <input type="hidden" name="isPublic" value="@Model.IsPublic.ToString()" />
+                            <div class="form__buttons buttons">
+                                <button type="submit" >Update</button>
+                            </div>
+                        </form>
+                        <p>@Model.IsPublic</p>
+                    </div>
+                }
+                @if (User.IsInRole("Admin"))
+                {
+                    <form class="form" method="post" asp-controller="Playlists" asp-action="DeletePlaylist" style="margin-bottom:30px">
+                        <input type="hidden" name="id" value="@Model.Id" />
+                        <div class="form__buttons buttons">
+                            <button type="submit">Delete</button>
+                        </div>
+                    </form>
+                }
+            </div>
         </div>
         <div class="pages">
             @for (int i = 0; i < Model.SongsPaged.PageCount; i++)
@@ -32,7 +56,6 @@
         <div id="dz-root"></div>
         <div id="player"></div>
     </div>
-
 </div>
 
 

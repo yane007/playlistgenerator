@@ -31,9 +31,6 @@ namespace PG.Tests.PlaylistServiceShould
 
                 var pixabayServiceMock = new Mock<IPixabayService>();
 
-                var image = "image";
-                var id = 0;
-                pixabayServiceMock.Setup(p => p.GetPixabayImage(id)).ReturnsAsync(image);
 
                 var sut = new PlaylistService(arrangeContext,  pixabayServiceMock.Object);
 
@@ -47,7 +44,6 @@ namespace PG.Tests.PlaylistServiceShould
 
                 Assert.AreEqual(playlist.Title, result.Title);
                 Assert.AreEqual(playlist.Duration, result.Duration);
-                Assert.AreEqual(result.PixabayImage, "image");
             }
         }
 

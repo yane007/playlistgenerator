@@ -34,7 +34,7 @@ namespace PG.Web.Controllers
         public async Task<IActionResult> Index()
         {
             IEnumerable<PlaylistDTO> playlistsDTOs = await _playlistService.GetAllPlaylists();
-            IList<PlaylistViewModel> playlistsViewModels = playlistsDTOs.Select(x => x.ToViewModel()).ToList();
+            IList<PlaylistViewModel> playlistsViewModels = playlistsDTOs.Where(x => x.IsPublic).Select(x => x.ToViewModel()).ToList();
 
             return View(playlistsViewModels);
         }
@@ -83,6 +83,8 @@ namespace PG.Web.Controllers
 
             playlistViewModel.SongsPaged = playlistViewModel.Songs.ToPagedList(pageNumber, 13);
 
+            ViewBag.LoggedUserId = _userManager.GetUserId(User);
+
             return View(playlistViewModel);
         }
 
@@ -92,6 +94,14 @@ namespace PG.Web.Controllers
             await _playlistService.Delete(id);
 
             return RedirectToAction("MyPlaylists");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdatePublicAccess(int playlistId, bool isPublic)
+        {
+            await _playlistService.UpdatePublicAccess(playlistId, isPublic);
+
+            return RedirectToAction("Playlist", new { id = playlistId });
         }
     }
 }

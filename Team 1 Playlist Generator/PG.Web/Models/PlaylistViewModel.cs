@@ -21,6 +21,8 @@ namespace PG.Web.Models
 
         public string PixabayImage { get; set; }
 
+        public bool IsPublic { get; set; }
+
         public string UserId { get; set; }
 
         public string CreatorName { get; set; }

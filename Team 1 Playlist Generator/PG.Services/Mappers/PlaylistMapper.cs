@@ -18,6 +18,7 @@ namespace PG.Services.Mappers
                 PixabayImage = playlist.PixabayImage,
                 Songs = playlist.PlaylistsSongs.Select(x => x.Song.ToDTO()).ToList(),
                 CreatorName = playlist.User.UserName,
+                IsPublic = playlist.IsPublic,
             };
         }
         public static Playlist ToEntity(this PlaylistDTO playlistDTO)

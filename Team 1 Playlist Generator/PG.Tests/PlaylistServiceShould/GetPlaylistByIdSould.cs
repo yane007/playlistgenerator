@@ -49,10 +49,6 @@ namespace PG.Tests.PlaylistServiceShould
                     UserId = firstUserId,
                 };
 
-                var image = "image";
-                pixabayServiceMock.Setup(p => p.GetPixabayImage(0)).ReturnsAsync(image);
-                pixabayServiceMock.Setup(p => p.GetPixabayImage(1)).ReturnsAsync(image);
-
                 var sut = new PlaylistService(arrangeContext, pixabayServiceMock.Object);
 
                 await sut.Create(nirvanaPlaylist);
@@ -69,7 +65,6 @@ namespace PG.Tests.PlaylistServiceShould
 
                 Assert.AreEqual("In Utero", userPalylists.Title);
                 Assert.AreEqual(1600, userPalylists.Duration);
-                Assert.IsNotNull(userPalylists.PixabayImage);
             }
         }
 

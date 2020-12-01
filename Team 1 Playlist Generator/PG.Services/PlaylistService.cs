@@ -40,10 +40,8 @@ namespace PG.Services
             }
 
             Playlist playlistToAdd = playlistDTO.ToEntity();
+            var playlist = _context.Playlists.Add(playlistToAdd);
 
-            await AddPixabayImageToPlaylist(playlistToAdd);
-
-            var playlist = await _context.Playlists.AddAsync(playlistToAdd);
             Log.Logger.Information($"Playlist with title '{playlist.Entity.Title}' has been created.");
 
             await _context.SaveChangesAsync();
@@ -108,6 +106,26 @@ namespace PG.Services
             await _context.SaveChangesAsync();
 
             return playlist.ToDTO();
+        }
+
+        public async Task UpdatePublicAccess(int id, bool isPublic)
+        {
+            var playlist = await _context.Playlists.Include(x => x.User).FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
+            if (playlist == null)
+            {
+                throw new NotFoundException($"Playlist with id {id} was not found.");
+            }
+
+            if (isPublic)
+            {
+                playlist.IsPublic = false;
+            }
+            else
+            {
+                playlist.IsPublic = true;
+            }
+
+            await _context.SaveChangesAsync();
         }
 
         public async Task Delete(int id)
@@ -248,6 +266,8 @@ namespace PG.Services
             }
 
             user.Playlists.Add(databasePlaylist);
+
+            await AddPixabayImageToPlaylist(databasePlaylist);
 
             await _context.SaveChangesAsync();
         }

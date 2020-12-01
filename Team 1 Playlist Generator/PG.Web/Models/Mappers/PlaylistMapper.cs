@@ -22,6 +22,7 @@ namespace PG.Web.Models.Mappers
                 Songs = playlistDTO.Songs.Select(x => x.ToViewModel()).ToList(),
                 DeezerIDs = playlistDTO.Songs.Select(x => x.DeezerID).ToList(),
                 CreatorName = playlistDTO.CreatorName,
+                IsPublic = playlistDTO.IsPublic,
             };
         }
 
