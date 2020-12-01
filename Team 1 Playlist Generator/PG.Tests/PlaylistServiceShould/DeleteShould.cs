@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
 using PG.Data.Context;
 using PG.Services;
 using PG.Services.DTOs;
@@ -18,6 +19,7 @@ namespace PG.Tests.PlaylistServiceShould
         public async Task DeleteCorrectly()
         {
             var options = Utils.GetOptions(nameof(DeleteCorrectly));
+            var pixabayServiceMock = new Mock<IPixabayService>();
 
             var playlist = new PlaylistDTO
             {
@@ -27,14 +29,7 @@ namespace PG.Tests.PlaylistServiceShould
 
             using (var arrangeContext = new PGDbContext(options))
             {
-                var sut = new PlaylistService(
-                    arrangeContext,
-                    new PixabayService(
-                      new HttpPixabayClientService(
-                          new HttpClient()
-                          )
-                        )
-                    );
+                var sut = new PlaylistService(arrangeContext, pixabayServiceMock.Object);
 
                 await sut.Create(playlist);
                 await arrangeContext.SaveChangesAsync();
@@ -42,14 +37,7 @@ namespace PG.Tests.PlaylistServiceShould
 
             using (var assertContext = new PGDbContext(options))
             {
-                var sut = new PlaylistService(
-                    assertContext,
-                    new PixabayService(
-                      new HttpPixabayClientService(
-                          new HttpClient()
-                          )
-                        )
-                    );
+                var sut = new PlaylistService(assertContext, pixabayServiceMock.Object);
                 await sut.Delete(1);
 
                 var playlists = await sut.GetAllPlaylists();
@@ -63,17 +51,11 @@ namespace PG.Tests.PlaylistServiceShould
         public async Task DeleteThrowsWhenInvalidId()
         {
             var options = Utils.GetOptions(nameof(DeleteThrowsWhenInvalidId));
+            var pixabayServiceMock = new Mock<IPixabayService>();
 
             var assertContext = new PGDbContext(options);
 
-            var sut = new PlaylistService(
-                assertContext,
-                new PixabayService(
-                  new HttpPixabayClientService(
-                      new HttpClient()
-                      )
-                    )
-                );
+            var sut = new PlaylistService(assertContext, pixabayServiceMock.Object);
 
             await Assert.ThrowsExceptionAsync<OutOfRangeException>(() => sut.Delete(-1));
             await Assert.ThrowsExceptionAsync<OutOfRangeException>(() => sut.Delete(0));
@@ -83,6 +65,7 @@ namespace PG.Tests.PlaylistServiceShould
         public async Task DeleteThrowsWhenIdDoesNotExist()
         {
             var options = Utils.GetOptions(nameof(DeleteThrowsWhenIdDoesNotExist));
+            var pixabayServiceMock = new Mock<IPixabayService>();
 
             var playlist = new PlaylistDTO
             {
@@ -92,14 +75,7 @@ namespace PG.Tests.PlaylistServiceShould
 
             using (var arrangeContext = new PGDbContext(options))
             {
-                var sut = new PlaylistService(
-                    arrangeContext,
-                    new PixabayService(
-                      new HttpPixabayClientService(
-                          new HttpClient()
-                          )
-                        )
-                    );
+                var sut = new PlaylistService(arrangeContext, pixabayServiceMock.Object);
 
                 await sut.Create(playlist);
                 await arrangeContext.SaveChangesAsync();
@@ -107,14 +83,7 @@ namespace PG.Tests.PlaylistServiceShould
 
             using (var assertContext = new PGDbContext(options))
             {
-                var sut = new PlaylistService(
-                    assertContext,
-                    new PixabayService(
-                      new HttpPixabayClientService(
-                          new HttpClient()
-                          )
-                        )
-                    );
+                var sut = new PlaylistService(assertContext, pixabayServiceMock.Object);
 
                 await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.Delete(2));
             }
@@ -124,6 +93,7 @@ namespace PG.Tests.PlaylistServiceShould
         public async Task DeleteThrowsWhenIdAlreadyDeleted()
         {
             var options = Utils.GetOptions(nameof(DeleteThrowsWhenIdAlreadyDeleted));
+            var pixabayServiceMock = new Mock<IPixabayService>();
 
             var playlist = new PlaylistDTO
             {
@@ -133,28 +103,14 @@ namespace PG.Tests.PlaylistServiceShould
 
             using (var arrangeContext = new PGDbContext(options))
             {
-                var sut = new PlaylistService(
-                    arrangeContext,
-                    new PixabayService(
-                      new HttpPixabayClientService(
-                          new HttpClient()
-                          )
-                        )
-                    );
+                var sut = new PlaylistService(arrangeContext, pixabayServiceMock.Object);
                 await sut.Create(playlist);
                 await arrangeContext.SaveChangesAsync();
             }
 
             using (var assertContext = new PGDbContext(options))
             {
-                var sut = new PlaylistService(
-                    assertContext,
-                    new PixabayService(
-                      new HttpPixabayClientService(
-                          new HttpClient()
-                          )
-                        )
-                    );
+                var sut = new PlaylistService(assertContext, pixabayServiceMock.Object);
 
                 await sut.Delete(1);
 

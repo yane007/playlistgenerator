@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
 using PG.Data.Context;
 using PG.Models;
 using PG.Services;
@@ -17,6 +18,7 @@ namespace PG.Tests.PlaylistServiceShould
         public async Task GetAllPlaylistsByUserCorrectly()
         {
             var options = Utils.GetOptions(nameof(GetAllPlaylistsByUserCorrectly));
+            var pixabayServiceMock = new Mock<IPixabayService>();
 
             var firstUser = new User
             {
@@ -60,15 +62,7 @@ namespace PG.Tests.PlaylistServiceShould
                     UserId = secondUserId,
                 };
 
-
-                var sut = new PlaylistService(
-                    arrangeContext,
-                    new PixabayService(
-                      new HttpPixabayClientService(
-                          new HttpClient()
-                          )
-                        )
-                    );
+                var sut = new PlaylistService(arrangeContext, pixabayServiceMock.Object);
 
                 await sut.Create(nirvanaPlaylist);
                 await sut.Create(acdcPlaylist);
@@ -79,15 +73,7 @@ namespace PG.Tests.PlaylistServiceShould
 
             using (var assertContext = new PGDbContext(options))
             {
-                var sut = new PlaylistService(
-                    assertContext,
-                    new PixabayService(
-                      new HttpPixabayClientService(
-                          new HttpClient()
-                          )
-                        )
-                    );
-                var playlists = assertContext.Playlists.ToList();
+                var sut = new PlaylistService(assertContext, pixabayServiceMock.Object);
 
                 var firstUserPalylists = await sut.GetPlaylistsByUser(firstUserId);
                 var secondUserPalylists = await sut.GetPlaylistsByUser(secondUserId);
@@ -104,16 +90,10 @@ namespace PG.Tests.PlaylistServiceShould
         public async Task GetAllPlaylistsByUserCorrectlyReturnEmpty()
         {
             var options = Utils.GetOptions(nameof(GetAllPlaylistsByUserCorrectlyReturnEmpty));
+            var pixabayServiceMock = new Mock<IPixabayService>();
             var assertContext = new PGDbContext(options);
 
-            var sut = new PlaylistService(
-                assertContext,
-                new PixabayService(
-                  new HttpPixabayClientService(
-                      new HttpClient()
-                      )
-                    )
-                );
+            var sut = new PlaylistService(assertContext, pixabayServiceMock.Object);
 
             var userPalylists = await sut.GetPlaylistsByUser("153a257-526504u");
             int userPalylistsCount = userPalylists.Count();

@@ -57,9 +57,6 @@ namespace PG.Tests.PlaylistServiceShould
                 arrangeContext,
                 pixabayServiceMock.Object);
 
-            var image = "image";
-            var id = 1;
-            pixabayServiceMock.Setup(p => p.GetPixabayImage(id)).ReturnsAsync(image);
 
             await sut.GeneratePlaylist(timeForTrip, playlistTitle, metalPercentagee, rockPercentagee, popPercentagee, chalgaPercentage, topTracks, sameArtist, user);
             await arrangeContext.SaveChangesAsync();

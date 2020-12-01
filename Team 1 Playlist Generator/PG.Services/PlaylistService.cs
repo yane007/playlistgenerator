@@ -388,31 +388,6 @@ namespace PG.Services
             return genresSelected;
         }
 
-        private static async Task<string> GetPixabayImage(int queryId)
-        {
-            var client = new HttpClient();
-            var response = await client.GetAsync($"https://pixabay.com/api/?key=19183688-4c632c1eaf95ba44e00778d20&id={queryId}&image_type=photo");
-            var responseAsString = await response.Content.ReadAsStringAsync();
-            var result = JsonConvert.DeserializeObject<PixabayQueryImagesResult>(responseAsString);
-
-            foreach (var image in result.hits)
-            {
-                if (image == null)
-                {
-                    continue;
-                }
-                else if (image.PreviewURL == null || image.WebformatURL == null || image.LargeImageURL == null)
-                {
-                    continue;
-                }
-                else
-                {
-                    return image.WebformatURL;
-                }
-            }
-
-            return "https://pixabay.com/get/55e5d1444b56a814f1dc846096293e7f1d3cd8ed5b4c704f75297bd29e4ecd5e_640.jpg";
-        }
 
         //Това не трябва да е тука, ама за сега ще е :D
         private static readonly Random rng = new Random();

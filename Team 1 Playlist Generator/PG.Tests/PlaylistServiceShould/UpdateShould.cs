@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
 using PG.Data.Context;
 using PG.Models;
 using PG.Services;
@@ -19,6 +20,7 @@ namespace PG.Tests.PlaylistServiceShould
         public async Task UpdateCorrectly()
         {
             var options = Utils.GetOptions(nameof(UpdateCorrectly));
+            var pixabayServiceMock = new Mock<IPixabayService>();
 
             var firstUser = new User
             {
@@ -36,14 +38,7 @@ namespace PG.Tests.PlaylistServiceShould
                     UserId = firstUserDb.Entity.Id,
                 };
 
-                var sut = new PlaylistService(
-                    arrangeContext,
-                    new PixabayService(
-                      new HttpPixabayClientService(
-                          new HttpClient()
-                          )
-                        )
-                    );
+                var sut = new PlaylistService(arrangeContext, pixabayServiceMock.Object);
 
                 await sut.Create(nirvanaPlaylist);
 
@@ -52,7 +47,6 @@ namespace PG.Tests.PlaylistServiceShould
 
             using (var assertContext = new PGDbContext(options))
             {
-
                 var secondUser = new User
                 {
                     UserName = "SecondUser",
@@ -67,14 +61,7 @@ namespace PG.Tests.PlaylistServiceShould
                     PixabayImage = "New Image URL",
                 };
 
-                var sut = new PlaylistService(
-                    assertContext,
-                    new PixabayService(
-                      new HttpPixabayClientService(
-                          new HttpClient()
-                          )
-                        )
-                    );
+                var sut = new PlaylistService(assertContext, pixabayServiceMock.Object);
 
                 var userPalylists = await sut.Update(1, acdcPlaylist);
 
@@ -86,6 +73,7 @@ namespace PG.Tests.PlaylistServiceShould
         public async Task UpdateThrowsWhenNotFound()
         {
             var options = Utils.GetOptions(nameof(UpdateThrowsWhenNotFound));
+            var pixabayServiceMock = new Mock<IPixabayService>();
 
             var acdcPlaylist = new PlaylistDTO
             {
@@ -95,14 +83,7 @@ namespace PG.Tests.PlaylistServiceShould
 
             var assertContext = new PGDbContext(options);
 
-            var sut = new PlaylistService(
-                assertContext,
-                new PixabayService(
-                  new HttpPixabayClientService(
-                      new HttpClient()
-                      )
-                    )
-                );
+            var sut = new PlaylistService(assertContext, pixabayServiceMock.Object);
 
             await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.Update(1, acdcPlaylist));
         }
