@@ -465,3 +465,9 @@ p {
                     #footer div ul li #pinterest:hover {
                         background-position: -44px -132px;
                     }
+
+
+.input-validation-error {
+    border: 2px solid #ff0000;
+    background-color: #ffeeee;
+}
