@@ -9,10 +9,8 @@
 ### Table of Contents
 - [Description](#description)
 - [How To Consume](#how-to-Consume)
-- [How To Start Up](#how-to-start-up)
-- [References](#references)
-- [License](#license)
-- [Authors Info](#authors-info)
+- [Project Setup](#project-setup)
+- [REST API](#rest-api)
 
 ---
 
@@ -47,7 +45,7 @@ tags but does not include editing of the track list
 - [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2019)
 - [JavaScript](https://www.javascript.com/try)
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#ridePal-playlist-generator)
 
 ---
 
@@ -102,7 +100,7 @@ tags but does not include editing of the track list
 >### Run the following commands on `Package Manager Console` while default project is [PG.Data]() and startup project is PG.Web > PG.Web: "update-database"
 >![Project UpdateDatabaseInstructions](./ReadmeImages/UpdateDatabaseInstructions.png)  
 
-  
+#### [Back To The Top](#ridePal-playlist-generator)
 ---
   
 # REST API
@@ -121,7 +119,7 @@ tags but does not include editing of the track list
 >### Now you can enjoy creating playlists:
 >![Project SwaggerCreatePlaylist](./ReadmeImages/SwaggerCreatePlaylist.png)  
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#ridePal-playlist-generator)
 
 ---
 ## References
