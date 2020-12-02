@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 namespace PG.Tests.UserServiceShould
 {
     [TestClass]
-    public class BanShould
+    public class DeleteShould
     {
         [TestMethod]
-        public async Task BanUserByIdCorrectly()
+        public async Task DeleteUserByIdCorrectly()
         {
-            var options = Utils.GetOptions(nameof(BanUserByIdCorrectly));
+            var options = Utils.GetOptions(nameof(DeleteUserByIdCorrectly));
 
             string userId = string.Empty;
 
@@ -36,25 +36,26 @@ namespace PG.Tests.UserServiceShould
             {
                 var sut = new UserService(assertContext);
 
-                await sut.BanUserById(userId);
-                var bannedUser = assertContext.Users.FirstOrDefault();
+                await sut.DeleteUserById(userId);
+                var deletedUser = assertContext.Users.FirstOrDefault();
 
-                Assert.IsTrue(bannedUser.LockoutEnd != null);
+                Assert.IsTrue(deletedUser != null);
+                Assert.IsTrue(deletedUser.IsDeleted);
             }
         }
 
         [TestMethod]
-        public async Task BanUserByIdReturnsFalseWhenNotFound()
+        public async Task DeleteUserByIdReturnsWhenNotFound()
         {
-            var options = Utils.GetOptions(nameof(BanUserByIdReturnsFalseWhenNotFound));
+            var options = Utils.GetOptions(nameof(DeleteUserByIdReturnsWhenNotFound));
 
             var assertContext = new PGDbContext(options);
 
             var sut = new UserService(assertContext);
 
-            var failedBan = await sut.BanUserById("bfd-hdfh7452-bfdbk");
+            await sut.DeleteUserById("nhg-asr045-nhjgffd");
 
-            Assert.IsFalse(failedBan);
+            Assert.IsTrue(true);
         }
     }
 }

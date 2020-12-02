@@ -2,6 +2,7 @@
 using PG.Data.Context;
 using PG.Models;
 using PG.Services;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace PG.Tests.UserServiceShould
@@ -10,22 +11,51 @@ namespace PG.Tests.UserServiceShould
     public class UnbanShould
     {
         [TestMethod]
-        public async Task CorrectlyUnBanUser()
+        public async Task UnbanUserByIdCorrectly()
         {
-            var options = Utils.GetOptions(nameof(CorrectlyUnBanUser));
+            var options = Utils.GetOptions(nameof(UnbanUserByIdCorrectly));
 
-            var actContext = new PGDbContext(options);
+            string userId = string.Empty;
 
-            User user = new User { NormalizedUserName = "Georgi" };
-            actContext.Add(user);
-            await actContext.SaveChangesAsync();
+            using (var arrangeContext = new PGDbContext(options))
+            {
+                var firstUser = new User
+                {
+                    UserName = "FirstUser",
+                    LockoutEnabled = true,
+                };
 
-            var sut = new UserService(actContext);
-            await sut.BanUserById(user.Id);
+                var addedUser = arrangeContext.Add(firstUser);
 
+                userId = addedUser.Entity.Id;
 
-            await sut.UnbanUserById(user.Id);
-            Assert.IsTrue(user.LockoutEnd == null);
+                await arrangeContext.SaveChangesAsync();
+            }
+
+            using (var assertContext = new PGDbContext(options))
+            {
+                var sut = new UserService(assertContext);
+
+                await sut.BanUserById(userId);
+                await sut.UnbanUserById(userId);
+                var bannedUser = assertContext.Users.FirstOrDefault();
+
+                Assert.IsTrue(bannedUser.LockoutEnd == null);
+            }
+        }
+
+        [TestMethod]
+        public async Task UnbanUserByIdReturnsFalseWhenNotFound()
+        {
+            var options = Utils.GetOptions(nameof(UnbanUserByIdReturnsFalseWhenNotFound));
+
+            var assertContext = new PGDbContext(options);
+
+            var sut = new UserService(assertContext);
+
+            var failedBan = await sut.UnbanUserById("bfd-hdfh7452-bfdbk");
+
+            Assert.IsFalse(failedBan);
         }
     }
 }

@@ -109,9 +109,9 @@ namespace PG.Web.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> UpdatePublicAccess(int playlistId, bool isPublic)
+        public async Task<IActionResult> UpdatePublicAccess(int playlistId)
         {
-            await _playlistService.UpdatePublicAccess(playlistId, isPublic);
+            await _playlistService.UpdatePublicAccess(playlistId);
 
             return RedirectToAction("Playlist", new { id = playlistId });
         }

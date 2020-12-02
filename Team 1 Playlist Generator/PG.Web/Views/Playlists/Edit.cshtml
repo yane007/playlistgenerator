@@ -27,10 +27,9 @@
                 </div>
             </form>
             <form class="form-group row" method="post" asp-controller="Playlists" asp-action="UpdatePublicAccess">
-                @if (@Model.IsPublic)
+                @if (Model.IsPublic)
                 {
                     <input type="hidden" name="playlistId" value="@Model.Id" />
-                    <input type="hidden" name="isPublic" value="@Model.IsPublic.ToString()" />
                     <div class="form__buttons buttons">
                         <button type="submit" class="btn btn-outline-dark">Make Private</button>
                     </div>
@@ -38,7 +37,6 @@
                 else
                 {
                     <input type="hidden" name="playlistId" value="@Model.Id" />
-                    <input type="hidden" name="isPublic" value="@Model.IsPublic.ToString()" />
                     <div class="form__buttons buttons">
                         <button type="submit" class="btn btn-outline-dark">Make Public</button>
                     </div>

@@ -32193,3 +32193,90 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 12/02/2020 17:37:15 Syncing done
 12/02/2020 17:46:31 Syncing genres
 12/02/2020 17:47:06 Syncing done
+12/02/2020 20:44:30 Application starting up
+12/02/2020 20:44:31 Syncing genres
+12/02/2020 20:44:32 - Getting index page -
+12/02/2020 20:44:32 HTTP "GET" "/" responded 200 in 704.5678 ms
+12/02/2020 20:44:32 HTTP "GET" "/js/playlistView.js" responded 404 in 2.7111 ms
+12/02/2020 20:44:32 HTTP "GET" "/js/playlistView.js" responded 404 in 16.7750 ms
+12/02/2020 20:44:32 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.5281 ms
+12/02/2020 20:44:32 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.6476 ms
+12/02/2020 20:45:10 Syncing done
+12/02/2020 20:51:54 Application starting up
+12/02/2020 20:51:54 Syncing genres
+12/02/2020 20:51:55 - Getting index page -
+12/02/2020 20:51:55 HTTP "GET" "/" responded 200 in 533.3513 ms
+12/02/2020 20:51:55 HTTP "GET" "/js/playlistView.js" responded 404 in 3.6865 ms
+12/02/2020 20:51:55 HTTP "GET" "/js/playlistView.js" responded 404 in 18.4723 ms
+12/02/2020 20:51:55 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.5490 ms
+12/02/2020 20:51:55 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.5802 ms
+12/02/2020 20:51:58 HTTP "GET" "/Playlists" responded 200 in 175.0949 ms
+12/02/2020 20:51:58 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6413 ms
+12/02/2020 20:51:58 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.5128 ms
+12/02/2020 20:51:58 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4165 ms
+12/02/2020 20:52:35 Syncing done
+12/02/2020 21:01:54 Syncing genres
+12/02/2020 21:02:30 Syncing done
+12/02/2020 21:33:07 Application starting up
+12/02/2020 21:33:07 Syncing genres
+12/02/2020 21:33:08 - Getting index page -
+12/02/2020 21:33:08 HTTP "GET" "/" responded 200 in 535.2537 ms
+12/02/2020 21:33:08 HTTP "GET" "/js/playlistView.js" responded 404 in 2.7832 ms
+12/02/2020 21:33:08 HTTP "GET" "/js/playlistView.js" responded 404 in 11.4385 ms
+12/02/2020 21:33:08 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4625 ms
+12/02/2020 21:33:09 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4853 ms
+12/02/2020 21:33:10 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 46.6496 ms
+12/02/2020 21:33:10 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3444 ms
+12/02/2020 21:33:10 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3968 ms
+12/02/2020 21:33:10 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3517 ms
+12/02/2020 21:33:12 HTTP "GET" "/Playlists" responded 200 in 121.6961 ms
+12/02/2020 21:33:12 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5602 ms
+12/02/2020 21:33:12 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3832 ms
+12/02/2020 21:33:12 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3470 ms
+12/02/2020 21:33:16 HTTP "GET" "/Playlists/Playlist/5" responded 200 in 67.4075 ms
+12/02/2020 21:33:16 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0432 ms
+12/02/2020 21:33:17 HTTP "GET" "/Playlists/Edit/5" responded 200 in 32.0772 ms
+12/02/2020 21:33:17 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4421 ms
+12/02/2020 21:33:21 HTTP "POST" "/Playlists/UpdatePublicAccess" responded 302 in 1648.9282 ms
+12/02/2020 21:33:21 HTTP "GET" "/Playlists/Playlist/5" responded 200 in 5.4315 ms
+12/02/2020 21:33:21 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4353 ms
+12/02/2020 21:33:24 HTTP "GET" "/Playlists" responded 200 in 13.5140 ms
+12/02/2020 21:33:24 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1387 ms
+12/02/2020 21:33:24 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3798 ms
+12/02/2020 21:33:24 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3540 ms
+12/02/2020 21:33:26 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 6.8793 ms
+12/02/2020 21:33:26 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4493 ms
+12/02/2020 21:33:26 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3382 ms
+12/02/2020 21:33:26 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2940 ms
+12/02/2020 21:33:28 HTTP "GET" "/Playlists/Playlist/6" responded 200 in 11.9492 ms
+12/02/2020 21:33:28 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2843 ms
+12/02/2020 21:33:29 HTTP "GET" "/Playlists/Edit/6" responded 200 in 9.1281 ms
+12/02/2020 21:33:29 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3573 ms
+12/02/2020 21:33:30 HTTP "POST" "/Playlists/UpdatePublicAccess" responded 302 in 303.8120 ms
+12/02/2020 21:33:30 HTTP "GET" "/Playlists/Playlist/6" responded 200 in 8.0994 ms
+12/02/2020 21:33:31 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0332 ms
+12/02/2020 21:33:32 HTTP "GET" "/Playlists" responded 200 in 13.2073 ms
+12/02/2020 21:33:32 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9777 ms
+12/02/2020 21:33:33 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 5.9448 ms
+12/02/2020 21:33:33 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1344 ms
+12/02/2020 21:33:33 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.2438 ms
+12/02/2020 21:33:33 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4819 ms
+12/02/2020 21:33:34 HTTP "GET" "/Playlists/Playlist/6" responded 200 in 5.9374 ms
+12/02/2020 21:33:34 HTTP "GET" "/js/playlistView.js" responded 404 in 1.3056 ms
+12/02/2020 21:33:35 HTTP "GET" "/Playlists/Edit/6" responded 200 in 11.8085 ms
+12/02/2020 21:33:35 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5810 ms
+12/02/2020 21:33:36 HTTP "POST" "/Playlists/UpdatePublicAccess" responded 302 in 8.8829 ms
+12/02/2020 21:33:36 HTTP "GET" "/Playlists/Playlist/6" responded 200 in 9.4201 ms
+12/02/2020 21:33:36 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3804 ms
+12/02/2020 21:33:37 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 12.7322 ms
+12/02/2020 21:33:37 HTTP "GET" "/js/playlistView.js" responded 404 in 1.1522 ms
+12/02/2020 21:33:37 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.5888 ms
+12/02/2020 21:33:37 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2496 ms
+12/02/2020 21:33:37 HTTP "GET" "/Playlists/Playlist/5" responded 200 in 9.6438 ms
+12/02/2020 21:33:37 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3226 ms
+12/02/2020 21:33:39 HTTP "GET" "/Playlists/Edit/5" responded 200 in 8.6457 ms
+12/02/2020 21:33:39 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3334 ms
+12/02/2020 21:33:40 HTTP "POST" "/Playlists/UpdatePublicAccess" responded 302 in 7.2233 ms
+12/02/2020 21:33:40 HTTP "GET" "/Playlists/Playlist/5" responded 200 in 3.2176 ms
+12/02/2020 21:33:40 HTTP "GET" "/js/playlistView.js" responded 404 in 0.2336 ms
+12/02/2020 21:33:43 Syncing done

@@ -42,7 +42,7 @@ namespace PG.Services.Contract
         /// </summary>
         /// <param name="id">Playlist's ID</param>
         /// <param name="isPublic">Public / Private</param>
-        Task UpdatePublicAccess(int id, bool isPublic);
+        Task UpdatePublicAccess(int id);
 
         /// <summary>
         /// Deletes a playlist.

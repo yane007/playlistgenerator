@@ -27,26 +27,22 @@ namespace PG.Tests.PlaylistServiceShould
                 UserName = "FirstUser",
             };
 
-            string firstUserId = string.Empty;
- 
             using (var arrangeContext = new PGDbContext(options))
             {
                 var firstUserBd = await arrangeContext.Users.AddAsync(firstUser);
- 
-                firstUserId = firstUserBd.Entity.Id;
- 
+
                 var nirvanaPlaylist = new PlaylistDTO
                 {
                     Title = "In Utero",
                     Duration = 1600,
-                    UserId = firstUserId,
+                    UserId = firstUserBd.Entity.Id,
                 };
 
                 var acdcPlaylist = new PlaylistDTO
                 {
                     Title = "Back in Black",
                     Duration = 2531,
-                    UserId = firstUserId,
+                    UserId = firstUserBd.Entity.Id,
                 };
 
                 var sut = new PlaylistService(arrangeContext, pixabayServiceMock.Object);

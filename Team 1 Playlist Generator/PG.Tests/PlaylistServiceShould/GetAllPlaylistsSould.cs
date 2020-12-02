@@ -4,9 +4,7 @@ using PG.Data.Context;
 using PG.Models;
 using PG.Services;
 using PG.Services.DTOs;
-using PG.Services.Helpers;
 using System.Linq;
-using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace PG.Tests.PlaylistServiceShould
@@ -30,36 +28,30 @@ namespace PG.Tests.PlaylistServiceShould
                 UserName = "SecondUser",
             };
 
-            string firstUserId = string.Empty;
-            string secondUserId = string.Empty;
-
             using (var arrangeContext = new PGDbContext(options))
             {
                 var firstUserBd = await arrangeContext.Users.AddAsync(firstUser);
                 var secondUserBd = await arrangeContext.Users.AddAsync(secondUser);
 
-                firstUserId = firstUserBd.Entity.Id;
-                secondUserId = secondUserBd.Entity.Id;
-
                 var nirvanaPlaylist = new PlaylistDTO
                 {
                     Title = "In Utero",
                     Duration = 1600,
-                    UserId = firstUserId,
+                    UserId = firstUserBd.Entity.Id,
                 };
 
                 var acdcPlaylist = new PlaylistDTO
                 {
                     Title = "Back in Black",
                     Duration = 2531,
-                    UserId = firstUserId,
+                    UserId = firstUserBd.Entity.Id,
                 };
 
                 var scorpionsPLaylist = new PlaylistDTO
                 {
                     Title = "Lovedrive",
                     Duration = 2190,
-                    UserId = secondUserId,
+                    UserId = secondUserBd.Entity.Id,
                 };
 
 
