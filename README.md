@@ -1,3 +1,5 @@
+# [Link to Trello Board](https://trello.com/b/y3Y0tmIN/playlist-generator)
+
 # RidePal Playlist Generator
 
 ![Project Image](./ReadmeImages/MyPlaylists01.png)
@@ -41,6 +43,8 @@ tags but does not include editing of the track list
 #### Technologies
 
 - [ASP.Net Core](https://docs.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-3.1)
+- [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/)
+- [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2019)
 - [JavaScript](https://www.javascript.com/try)
 
 [Back To The Top](#read-me-template)
@@ -55,13 +59,13 @@ tags but does not include editing of the track list
 >### After successfully being authenticated you will be albe to ceate a playlist by specifying the start and end locations of your trip, the playlist's title and some percentage of a genre.
 >![Project GeneratePlaylistForm](./ReadmeImages/GeneratePlaylistForm.png)
 >
->### When the playlist finishes generating you will be redirected to `My Playlists`. Here you can browse all your generated playlists, you can open one by clicking on it.
+>### When the playlist finishes generating you will be redirected to `My Playlists`. Here you can browse all your generated playlists.
 >![Project MyPlaylistsAfterCreating](./ReadmeImages/MyPlaylistsAfterCreating.png)
 >
->### Here you can play the entire playlist just by hitting the play button on the center.  
->### On the left is displayed the name on the playlist, by who it was made, its rank (the avare rank of all songs) and a paged list of all songs, their duration and preview link.
+>### Here you can play the entire playlist just by selecting the play button on the center.  
+>### On the left is displayed the name on the playlist, by who it was made, its rank (the average rank of all songs) and a paged list of all songs, their duration and preview link.
 >### On the right you can control the volume, skip to next/previous track or just select a loaded track and play it.  
->### For editing a playlist click the `|Edit|` navigation link.
+>### For editing a playlist click the `Edit` navigation link.
 >![Project PlaylistEdit](./ReadmeImages/PlaylistEdit.png)
 >
 >### On the edit page you will be able to:
@@ -87,59 +91,45 @@ tags but does not include editing of the track list
 >### As an admin you can manage all user acces, even other admins. Navigate to `Users`
 >![Project AdminUsersNavigation](./ReadmeImages/AdminUsersNavigation.png)
 >
->### Admins also have the ability to delete other user's entire plalist, the delete button will only appear if an admin opens the playlist.
+>### Admins also have the ability to delete other user's entire playlists, the delete button will only appear if an admin opens the playlist.
 >![Project AdminDelteUserPlaylist](./ReadmeImages/AdminDelteUserPlaylist.png)
 
 
-#### Installation
+## Project Setup:
+>### Change server name on appsettings.json
+>![Project ServerNameSetup](./ReadmeImages/ServerNameSetup.png)
+>
+>### Run the following commands on `Package Manager Console` while default project is [PG.Data]() and startup project is PG.Web > PG.Web: "update-database"
+>![Project UpdateDatabaseInstructions](./ReadmeImages/UpdateDatabaseInstructions.png)  
 
+  
+---
+  
+# REST API
+>###  We used Swagger to implement and document our API, [you can access it through this link](http://localhost:5000/swagger/index.html) or by `/swagger/index.html`.
+>![Project SwaggerIntro](./ReadmeImages/SwaggerIntro.png)  
+>
+>### To be able to use the API, authentication is needed. On the `Users` dropdown select `Authenticate` and then `Try it out`:
+>![Project SwaggerTryItOut](./ReadmeImages/SwaggerTryItOut.png)  
+>
+>### Next step is to add your credentials and execute to get your Login token:
+>![Project SwaggerLogin](./ReadmeImages/SwaggerLogin.png)  
+>
+>### Authentication is made by providing the token to the `Authorize` form:
+>![Project SwaggerAuthorize](./ReadmeImages/SwaggerAuthorize.png)  
+>
+>### Now you can enjoy creating playlists:
+>![Project SwaggerCreatePlaylist](./ReadmeImages/SwaggerCreatePlaylist.png)  
 
-
-#### API Reference
-
-```html
-    <p>dummy code</p>
-```
 [Back To The Top](#read-me-template)
 
 ---
-
 ## References
-[Back To The Top](#read-me-template)
 
----
+[Deezer's API](https://developers.deezer.com/api)
 
-## License
+[BingMaps's API](https://www.microsoft.com/en-us/maps/choose-your-bing-maps-api)
 
-MIT License
+[Pixabay's API](https://pixabay.com/api/docs/)
 
-Copyright (c) [2017] [James Q Quick]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-[Back To The Top](#read-me-template)
-
----
-
-## Authors Info
-
-- Twitter - [@jamesqquick](https://twitter.com/jamesqquick)
-- Website - [James Q Quick](https://jamesqquick.com)
-
-[Back To The Top](#read-me-template)
+[Google's API](https://developers.google.com/maps/documentation/javascript/overview)
