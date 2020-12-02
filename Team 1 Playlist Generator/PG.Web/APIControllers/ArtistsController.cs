@@ -46,7 +46,7 @@ namespace PG.Web.APIControllers
 
         //POST api/artists
         [HttpPost]
-        [Authorize(Roles = "admin")]    
+        [Authorize(Roles = "Admin")]    
         public async Task<IActionResult> CreateArtist(ArtistViewModel model)
         {
             var createdArtist = await _artistService.Create(model.ToDTO());
@@ -57,7 +57,7 @@ namespace PG.Web.APIControllers
 
         //PUT api/artists/id
         [HttpPut("{id}")]
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateArtist(int id, [FromBody] ArtistViewModel artistModel)
         {
             var artist = await _artistService.Update(id, artistModel.ToDTO());
@@ -68,7 +68,7 @@ namespace PG.Web.APIControllers
 
         //DELETE api/artists/id
         [HttpDelete("{id}")]
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteArtist(int id)
         {
             await _artistService.Delete(id);

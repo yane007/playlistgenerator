@@ -30305,3 +30305,366 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 12/02/2020 07:45:34 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4831 ms
 12/02/2020 07:45:34 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3531 ms
 12/02/2020 07:46:07 Syncing done
+12/02/2020 09:06:33 Application starting up
+12/02/2020 09:06:33 Syncing genres
+12/02/2020 09:06:34 - Getting index page -
+12/02/2020 09:06:34 HTTP "GET" "/" responded 200 in 983.7191 ms
+12/02/2020 09:06:34 - Getting index page -
+12/02/2020 09:06:35 HTTP "GET" "/" responded 200 in 53.5683 ms
+12/02/2020 09:06:35 HTTP "GET" "/js/playlistView.js" responded 404 in 13.2218 ms
+12/02/2020 09:06:35 HTTP "GET" "/js/playlistView.js" responded 404 in 1.5820 ms
+12/02/2020 09:06:35 HTTP "GET" "/js/playlistView.js" responded 404 in 0.4705 ms
+12/02/2020 09:06:35 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4601 ms
+12/02/2020 09:06:35 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.5013 ms
+12/02/2020 09:06:35 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 2.4119 ms
+12/02/2020 09:06:35 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 1.7447 ms
+12/02/2020 09:06:37 HTTP "GET" "/swagger/index.html" responded 200 in 30.8270 ms
+12/02/2020 09:06:37 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 304 in 0.9862 ms
+12/02/2020 09:06:37 HTTP "GET" "/swagger/swagger-ui.css" responded 304 in 1.3113 ms
+12/02/2020 09:06:37 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 304 in 1.3306 ms
+12/02/2020 09:06:38 HTTP "GET" "/swagger/index.html" responded 200 in 0.6660 ms
+12/02/2020 09:06:38 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 66.0707 ms
+12/02/2020 09:06:48 HTTP "GET" "/api/Artists" responded 200 in 252.2745 ms
+12/02/2020 09:07:10 Syncing done
+12/02/2020 09:07:53 HTTP "GET" "/swagger/index.html" responded 200 in 0.5962 ms
+12/02/2020 09:07:53 HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 10.3311 ms
+12/02/2020 09:07:53 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 11.3914 ms
+12/02/2020 09:07:53 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 23.8606 ms
+12/02/2020 09:07:54 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 3.8377 ms
+12/02/2020 09:07:57 HTTP "GET" "/api/Artists" responded 401 in 5.8211 ms
+12/02/2020 09:08:22 HTTP "POST" "/api/Artists" responded 401 in 1.6487 ms
+12/02/2020 09:08:50 HTTP "POST" "/api/Artists" responded 403 in 2.7709 ms
+12/02/2020 09:09:03 - Getting index page -
+12/02/2020 09:09:03 HTTP "GET" "/" responded 200 in 27.7460 ms
+12/02/2020 09:09:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9922 ms
+12/02/2020 09:09:03 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3891 ms
+12/02/2020 09:09:03 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.2657 ms
+12/02/2020 09:09:03 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4304 ms
+12/02/2020 09:09:26 Application starting up
+12/02/2020 09:09:27 Syncing genres
+12/02/2020 09:09:27 - Getting index page -
+12/02/2020 09:09:28 HTTP "GET" "/" responded 200 in 450.9983 ms
+12/02/2020 09:09:28 HTTP "GET" "/js/playlistView.js" responded 404 in 3.6255 ms
+12/02/2020 09:09:28 HTTP "GET" "/js/playlistView.js" responded 404 in 10.7428 ms
+12/02/2020 09:09:28 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3751 ms
+12/02/2020 09:09:28 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3296 ms
+12/02/2020 09:09:30 HTTP "GET" "/swagger/index.html" responded 200 in 26.2679 ms
+12/02/2020 09:09:31 HTTP "GET" "/swagger/index.html" responded 200 in 1.6002 ms
+12/02/2020 09:09:31 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 78.5241 ms
+12/02/2020 09:09:43 HTTP "POST" "/api/Artists" responded 201 in 1812.2431 ms
+12/02/2020 09:10:01 Syncing done
+12/02/2020 09:11:10 HTTP "PUT" "/api/Artists/966" responded 200 in 1533.2311 ms
+12/02/2020 09:11:21 HTTP "GET" "/api/Artists" responded 200 in 37.2950 ms
+12/02/2020 09:11:40 HTTP "GET" "/api/Artists/966" responded 200 in 13.3408 ms
+12/02/2020 09:17:51 Application starting up
+12/02/2020 09:17:52 Syncing genres
+12/02/2020 09:17:52 - Getting index page -
+12/02/2020 09:17:53 HTTP "GET" "/" responded 200 in 474.7060 ms
+12/02/2020 09:17:53 HTTP "GET" "/js/playlistView.js" responded 404 in 2.7648 ms
+12/02/2020 09:17:53 HTTP "GET" "/js/playlistView.js" responded 404 in 10.8194 ms
+12/02/2020 09:17:53 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4360 ms
+12/02/2020 09:17:53 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.4406 ms
+12/02/2020 09:17:56 HTTP "GET" "/swagger/index.html" responded 200 in 19.4729 ms
+12/02/2020 09:17:56 HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 5.2213 ms
+12/02/2020 09:17:56 HTTP "GET" "/swagger/v1/swagger.json" responded 500 in 41.4736 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Playlists" for actions - PG.Web.APIControllers.PlaylistsController.CreatePlaylist (PG.Web),PG.Web.APIControllers.PlaylistsController.GeneratePlaylist (PG.Web). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+12/02/2020 09:17:56 Conflicting method/path combination "POST api/Playlists" for actions - PG.Web.APIControllers.PlaylistsController.CreatePlaylist (PG.Web),PG.Web.APIControllers.PlaylistsController.GeneratePlaylist (PG.Web). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+12/02/2020 09:18:03 HTTP "GET" "/swagger/index.html" responded 200 in 1.1287 ms
+12/02/2020 09:18:04 HTTP "GET" "/swagger/index.html" responded 200 in 0.9975 ms
+12/02/2020 09:18:04 HTTP "GET" "/swagger/v1/swagger.json" responded 500 in 4.8816 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Playlists" for actions - PG.Web.APIControllers.PlaylistsController.CreatePlaylist (PG.Web),PG.Web.APIControllers.PlaylistsController.GeneratePlaylist (PG.Web). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+12/02/2020 09:18:04 Conflicting method/path combination "POST api/Playlists" for actions - PG.Web.APIControllers.PlaylistsController.CreatePlaylist (PG.Web),PG.Web.APIControllers.PlaylistsController.GeneratePlaylist (PG.Web). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+12/02/2020 09:18:28 Syncing done
+12/02/2020 09:18:43 Application starting up
+12/02/2020 09:18:44 Syncing genres
+12/02/2020 09:18:45 - Getting index page -
+12/02/2020 09:18:45 HTTP "GET" "/" responded 200 in 538.2391 ms
+12/02/2020 09:18:45 HTTP "GET" "/js/playlistView.js" responded 404 in 2.0845 ms
+12/02/2020 09:18:45 HTTP "GET" "/js/playlistView.js" responded 404 in 13.2606 ms
+12/02/2020 09:18:45 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3750 ms
+12/02/2020 09:18:45 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3642 ms
+12/02/2020 09:18:49 HTTP "GET" "/swagger/index.html" responded 200 in 19.4251 ms
+12/02/2020 09:18:49 HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 6.0926 ms
+12/02/2020 09:18:49 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 71.7060 ms
+12/02/2020 09:18:58 Application starting up
+12/02/2020 09:18:59 Syncing genres
+12/02/2020 09:18:59 - Getting index page -
+12/02/2020 09:19:00 HTTP "GET" "/" responded 200 in 513.8880 ms
+12/02/2020 09:19:00 HTTP "GET" "/js/playlistView.js" responded 404 in 2.7634 ms
+12/02/2020 09:19:00 HTTP "GET" "/js/playlistView.js" responded 404 in 14.4094 ms
+12/02/2020 09:19:00 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.5264 ms
+12/02/2020 09:19:00 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3461 ms
+12/02/2020 09:19:09 HTTP "GET" "/swagger/index.html" responded 200 in 18.6985 ms
+12/02/2020 09:19:09 HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 5.3633 ms
+12/02/2020 09:19:09 HTTP "GET" "/swagger/v1/swagger.json" responded 500 in 41.0098 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Playlists" for actions - PG.Web.APIControllers.PlaylistsController.CreatePlaylist (PG.Web),PG.Web.APIControllers.PlaylistsController.GeneratePlaylist (PG.Web). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+12/02/2020 09:19:09 Conflicting method/path combination "POST api/Playlists" for actions - PG.Web.APIControllers.PlaylistsController.CreatePlaylist (PG.Web),PG.Web.APIControllers.PlaylistsController.GeneratePlaylist (PG.Web). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+12/02/2020 09:19:28 Application starting up
+12/02/2020 09:19:29 Syncing genres
+12/02/2020 09:19:29 - Getting index page -
+12/02/2020 09:19:30 HTTP "GET" "/" responded 200 in 628.8909 ms
+12/02/2020 09:19:30 HTTP "GET" "/js/playlistView.js" responded 404 in 3.4744 ms
+12/02/2020 09:19:30 HTTP "GET" "/js/playlistView.js" responded 404 in 15.1303 ms
+12/02/2020 09:19:30 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.4630 ms
+12/02/2020 09:19:30 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.6366 ms
+12/02/2020 09:19:36 HTTP "GET" "/swagger/index.html" responded 200 in 19.4675 ms
+12/02/2020 09:19:36 HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 4.0181 ms
+12/02/2020 09:19:36 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 65.7244 ms
+12/02/2020 09:20:05 Syncing done
+12/02/2020 09:22:08 Application starting up
+12/02/2020 09:22:09 Syncing genres
+12/02/2020 09:22:09 - Getting index page -
+12/02/2020 09:22:10 HTTP "GET" "/" responded 200 in 533.0203 ms
+12/02/2020 09:22:10 HTTP "GET" "/js/playlistView.js" responded 404 in 1.8902 ms
+12/02/2020 09:22:10 HTTP "GET" "/js/playlistView.js" responded 404 in 10.9305 ms
+12/02/2020 09:22:10 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3845 ms
+12/02/2020 09:22:10 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3398 ms
+12/02/2020 09:22:12 HTTP "GET" "/swagger/index.html" responded 200 in 19.2005 ms
+12/02/2020 09:22:12 HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 4.0818 ms
+12/02/2020 09:22:12 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 66.8858 ms
+12/02/2020 09:22:44 Syncing done
+12/02/2020 09:23:01 Playlist with title 'API Playlist' has been created.
+12/02/2020 09:23:03 HTTP "POST" "/api/Playlists" responded 200 in 3841.9822 ms
+12/02/2020 09:23:09 HTTP "GET" "/Playlists" responded 200 in 131.6822 ms
+12/02/2020 09:23:09 HTTP "GET" "/js/playlistView.js" responded 404 in 0.9586 ms
+12/02/2020 09:23:09 HTTP "GET" "/js/playlistView.js" responded 404 in 0.3018 ms
+12/02/2020 09:23:09 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3086 ms
+12/02/2020 09:23:09 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3103 ms
+12/02/2020 09:23:12 HTTP "GET" "/Playlists/Playlist/23" responded 200 in 72.7617 ms
+12/02/2020 09:23:12 HTTP "GET" "/js/playlistView.js" responded 404 in 1.0664 ms
+12/02/2020 09:23:48 - Getting index page -
+12/02/2020 09:23:48 HTTP "GET" "/" responded 200 in 26.2129 ms
+12/02/2020 09:23:50 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 24.7668 ms
+12/02/2020 09:23:50 - Getting index page -
+12/02/2020 09:23:50 HTTP "GET" "/" responded 200 in 20.0362 ms
+12/02/2020 09:23:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1903 ms
+12/02/2020 09:23:50 HTTP "GET" "/js/playlistView.js" responded 404 in 0.1390 ms
+12/02/2020 09:23:50 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1097 ms
+12/02/2020 09:23:50 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1216 ms
+12/02/2020 09:23:52 HTTP "GET" "/swagger/index.html" responded 200 in 0.9706 ms
+12/02/2020 09:23:53 HTTP "GET" "/swagger/index.html" responded 200 in 0.6215 ms
+12/02/2020 09:23:53 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 11.1618 ms
+12/02/2020 09:24:04 HTTP "POST" "/api/Playlists" responded 401 in 5.8758 ms
+12/02/2020 09:24:35 HTTP "POST" "/api/Users/authenticate" responded 200 in 1840.5688 ms
+12/02/2020 09:25:16 Playlist with title 'API Playlist Authenticated' has been created.
+12/02/2020 09:25:17 HTTP "POST" "/api/Playlists" responded 200 in 2347.6660 ms
+12/02/2020 09:25:24 HTTP "GET" "/Playlists" responded 200 in 31.4416 ms
+12/02/2020 09:25:24 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6291 ms
+12/02/2020 09:25:24 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1000 ms
+12/02/2020 09:25:24 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2254 ms
+12/02/2020 09:25:32 HTTP "GET" "/Playlists/Playlist/24" responded 200 in 16.3339 ms
+12/02/2020 09:25:32 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6233 ms
+12/02/2020 09:25:35 HTTP "GET" "/Playlists" responded 200 in 21.1523 ms
+12/02/2020 09:25:35 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3620 ms
+12/02/2020 09:25:35 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2158 ms
+12/02/2020 09:25:57 Application starting up
+12/02/2020 09:25:59 Syncing genres
+12/02/2020 09:25:59 - Getting index page -
+12/02/2020 09:26:00 HTTP "GET" "/" responded 200 in 1029.8644 ms
+12/02/2020 09:26:00 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6908 ms
+12/02/2020 09:26:00 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 3.7972 ms
+12/02/2020 09:26:00 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2414 ms
+12/02/2020 09:29:05 Application starting up
+12/02/2020 09:29:05 Syncing genres
+12/02/2020 09:29:06 - Getting index page -
+12/02/2020 09:29:07 HTTP "GET" "/" responded 200 in 483.5673 ms
+12/02/2020 09:29:07 HTTP "GET" "/js/playlistView.js" responded 404 in 1.8965 ms
+12/02/2020 09:29:07 HTTP "GET" "/js/playlistView.js" responded 404 in 2.5235 ms
+12/02/2020 09:29:07 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1491 ms
+12/02/2020 09:29:07 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1444 ms
+12/02/2020 09:29:11 HTTP "GET" "/swagger/index.html" responded 200 in 21.2258 ms
+12/02/2020 09:29:12 HTTP "GET" "/swagger/index.html" responded 200 in 1.0945 ms
+12/02/2020 09:29:12 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 69.9609 ms
+12/02/2020 09:29:41 Syncing done
+12/02/2020 09:37:49 Application starting up
+12/02/2020 09:37:49 Syncing genres
+12/02/2020 09:37:50 - Getting index page -
+12/02/2020 09:37:51 HTTP "GET" "/" responded 200 in 493.1048 ms
+12/02/2020 09:37:51 HTTP "GET" "/js/playlistView.js" responded 404 in 1.9592 ms
+12/02/2020 09:37:51 HTTP "GET" "/js/playlistView.js" responded 404 in 3.3271 ms
+12/02/2020 09:37:51 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1633 ms
+12/02/2020 09:37:51 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1588 ms
+12/02/2020 09:37:54 HTTP "GET" "/swagger/index.html" responded 200 in 19.3198 ms
+12/02/2020 09:37:54 HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 3.3248 ms
+12/02/2020 09:37:54 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 88.9826 ms
+12/02/2020 09:38:26 Syncing done
+12/02/2020 09:38:28 HTTP "GET" "/api/Playlists/5" responded 401 in 21.5482 ms
+12/02/2020 09:38:57 HTTP "POST" "/api/Users/authenticate" responded 200 in 84.7013 ms
+12/02/2020 09:39:24 HTTP "GET" "/api/Playlists/5" responded 500 in 54.0251 ms
+PG.Services.Exceptions.NotFoundException: Playlist with id 5 was not found.
+   at PG.Services.PlaylistService.GetPlaylistById(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Services\PlaylistService.cs:line 92
+   at PG.Web.APIControllers.PlaylistsController.GetPlaylistDetails(Int32 id) in C:\Users\Yane\Desktop\playlist-generator\Team 1 Playlist Generator\PG.Web\APIControllers\PlaylistsController.cs:line 47
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+12/02/2020 09:39:24 Playlist with id 5 was not found.
+12/02/2020 09:39:31 HTTP "GET" "/api/Playlists/22" responded 200 in 31.6582 ms
+12/02/2020 09:41:34 Application starting up
+12/02/2020 09:41:34 Syncing genres
+12/02/2020 09:41:35 - Getting index page -
+12/02/2020 09:41:35 HTTP "GET" "/" responded 200 in 423.6911 ms
+12/02/2020 09:41:35 HTTP "GET" "/js/playlistView.js" responded 404 in 1.5065 ms
+12/02/2020 09:41:35 HTTP "GET" "/js/playlistView.js" responded 404 in 2.5755 ms
+12/02/2020 09:41:35 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1634 ms
+12/02/2020 09:41:36 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1467 ms
+12/02/2020 09:41:38 HTTP "GET" "/swagger/index.html" responded 200 in 21.5293 ms
+12/02/2020 09:41:39 HTTP "GET" "/swagger/index.html" responded 200 in 0.7218 ms
+12/02/2020 09:41:39 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 66.0994 ms
+12/02/2020 09:42:09 Syncing done
+12/02/2020 09:43:14 Application starting up
+12/02/2020 09:43:15 Syncing genres
+12/02/2020 09:43:15 - Getting index page -
+12/02/2020 09:43:16 HTTP "GET" "/" responded 200 in 444.6776 ms
+12/02/2020 09:43:16 HTTP "GET" "/js/playlistView.js" responded 404 in 2.1189 ms
+12/02/2020 09:43:16 HTTP "GET" "/js/playlistView.js" responded 404 in 2.9208 ms
+12/02/2020 09:43:16 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1586 ms
+12/02/2020 09:43:16 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1789 ms
+12/02/2020 09:43:18 HTTP "GET" "/swagger/index.html" responded 200 in 22.8624 ms
+12/02/2020 09:43:19 HTTP "GET" "/swagger/index.html" responded 200 in 0.6032 ms
+12/02/2020 09:43:19 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 68.2300 ms
+12/02/2020 09:43:50 Syncing done
+12/02/2020 09:45:43 Application starting up
+12/02/2020 09:45:43 Syncing genres
+12/02/2020 09:45:44 - Getting index page -
+12/02/2020 09:45:44 HTTP "GET" "/" responded 200 in 515.0612 ms
+12/02/2020 09:45:44 HTTP "GET" "/js/playlistView.js" responded 404 in 2.1058 ms
+12/02/2020 09:45:44 HTTP "GET" "/js/playlistView.js" responded 404 in 3.4701 ms
+12/02/2020 09:45:44 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1706 ms
+12/02/2020 09:45:44 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1627 ms
+12/02/2020 09:45:46 HTTP "GET" "/swagger/index.html" responded 200 in 19.2703 ms
+12/02/2020 09:45:46 HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 3.2682 ms
+12/02/2020 09:45:46 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 65.8092 ms
+12/02/2020 09:46:18 Syncing done
+12/02/2020 09:49:51 Application starting up
+12/02/2020 09:49:51 Syncing genres
+12/02/2020 09:49:52 - Getting index page -
+12/02/2020 09:49:52 HTTP "GET" "/" responded 200 in 502.9783 ms
+12/02/2020 09:49:53 HTTP "GET" "/js/playlistView.js" responded 404 in 2.0157 ms
+12/02/2020 09:49:53 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6080 ms
+12/02/2020 09:49:53 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1441 ms
+12/02/2020 09:49:53 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1768 ms
+12/02/2020 09:49:55 HTTP "GET" "/swagger/index.html" responded 200 in 19.7050 ms
+12/02/2020 09:49:55 HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 3.2802 ms
+12/02/2020 09:49:55 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 63.5337 ms
+12/02/2020 09:50:27 Syncing done
+12/02/2020 09:51:34 Application starting up
+12/02/2020 09:51:34 Syncing genres
+12/02/2020 09:51:35 - Getting index page -
+12/02/2020 09:51:35 HTTP "GET" "/" responded 200 in 458.2144 ms
+12/02/2020 09:51:35 HTTP "GET" "/js/playlistView.js" responded 404 in 1.9564 ms
+12/02/2020 09:51:35 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4275 ms
+12/02/2020 09:51:35 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1521 ms
+12/02/2020 09:51:35 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.6578 ms
+12/02/2020 09:51:38 HTTP "GET" "/swagger/index.html" responded 200 in 19.0673 ms
+12/02/2020 09:51:38 HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 5.1165 ms
+12/02/2020 09:51:38 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 75.5377 ms
+12/02/2020 09:52:08 Application starting up
+12/02/2020 09:52:09 Syncing genres
+12/02/2020 09:52:09 - Getting index page -
+12/02/2020 09:52:10 HTTP "GET" "/" responded 200 in 473.5072 ms
+12/02/2020 09:52:10 HTTP "GET" "/js/playlistView.js" responded 404 in 2.6324 ms
+12/02/2020 09:52:10 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4594 ms
+12/02/2020 09:52:10 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1564 ms
+12/02/2020 09:52:10 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1517 ms
+12/02/2020 09:52:13 HTTP "GET" "/swagger/index.html" responded 200 in 20.3817 ms
+12/02/2020 09:52:13 HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 4.7430 ms
+12/02/2020 09:52:13 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 74.0905 ms
+12/02/2020 09:52:23 Application starting up
+12/02/2020 09:52:23 Syncing genres
+12/02/2020 09:52:24 - Getting index page -
+12/02/2020 09:52:24 HTTP "GET" "/" responded 200 in 482.1215 ms
+12/02/2020 09:52:24 HTTP "GET" "/js/playlistView.js" responded 404 in 1.5787 ms
+12/02/2020 09:52:24 HTTP "GET" "/js/playlistView.js" responded 404 in 2.5300 ms
+12/02/2020 09:52:24 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1518 ms
+12/02/2020 09:52:24 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1484 ms
+12/02/2020 09:52:28 HTTP "GET" "/swagger/index.html" responded 200 in 19.4455 ms
+12/02/2020 09:52:28 HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 4.3307 ms
+12/02/2020 09:52:28 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 78.5403 ms
+12/02/2020 09:52:56 Application starting up
+12/02/2020 09:52:56 Syncing genres
+12/02/2020 09:52:57 - Getting index page -
+12/02/2020 09:52:58 HTTP "GET" "/" responded 200 in 465.2447 ms
+12/02/2020 09:52:58 HTTP "GET" "/js/playlistView.js" responded 404 in 1.9114 ms
+12/02/2020 09:52:58 HTTP "GET" "/js/playlistView.js" responded 404 in 2.5429 ms
+12/02/2020 09:52:58 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1784 ms
+12/02/2020 09:52:58 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1455 ms
+12/02/2020 09:53:01 HTTP "GET" "/swagger/index.html" responded 200 in 19.9388 ms
+12/02/2020 09:53:01 HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 3.8375 ms
+12/02/2020 09:53:01 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 74.8551 ms
+12/02/2020 09:53:33 Syncing done
+12/02/2020 09:54:40 Application starting up
+12/02/2020 09:54:40 Syncing genres
+12/02/2020 09:54:41 - Getting index page -
+12/02/2020 09:54:41 HTTP "GET" "/" responded 200 in 585.0593 ms
+12/02/2020 09:54:41 HTTP "GET" "/js/playlistView.js" responded 404 in 1.9667 ms
+12/02/2020 09:54:41 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4673 ms
+12/02/2020 09:54:42 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1479 ms
+12/02/2020 09:54:42 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2172 ms
+12/02/2020 09:54:45 HTTP "GET" "/swagger/index.html" responded 200 in 23.2309 ms
+12/02/2020 09:54:45 HTTP "GET" "/swagger/index.html" responded 200 in 0.8439 ms
+12/02/2020 09:54:46 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 79.9878 ms
+12/02/2020 09:55:01 Application starting up
+12/02/2020 09:55:01 Syncing genres
+12/02/2020 09:55:02 - Getting index page -
+12/02/2020 09:55:02 HTTP "GET" "/" responded 200 in 638.1621 ms
+12/02/2020 09:55:02 HTTP "GET" "/js/playlistView.js" responded 404 in 2.2365 ms
+12/02/2020 09:55:02 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4533 ms
+12/02/2020 09:55:02 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1467 ms
+12/02/2020 09:55:02 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1635 ms
+12/02/2020 09:55:04 HTTP "GET" "/swagger/index.html" responded 200 in 29.3109 ms
+12/02/2020 09:55:05 HTTP "GET" "/swagger/index.html" responded 200 in 1.0037 ms
+12/02/2020 09:55:05 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 76.8656 ms
+12/02/2020 09:55:37 Syncing done
+12/02/2020 09:56:08 Application starting up
+12/02/2020 09:56:09 Syncing genres
+12/02/2020 09:56:09 - Getting index page -
+12/02/2020 09:56:10 HTTP "GET" "/" responded 200 in 484.8834 ms
+12/02/2020 09:56:10 HTTP "GET" "/js/playlistView.js" responded 404 in 2.1329 ms
+12/02/2020 09:56:10 HTTP "GET" "/js/playlistView.js" responded 404 in 2.4205 ms
+12/02/2020 09:56:10 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.1527 ms
+12/02/2020 09:56:10 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.2889 ms
+12/02/2020 09:56:13 HTTP "GET" "/swagger/index.html" responded 200 in 19.5936 ms
+12/02/2020 09:56:13 HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 3.9733 ms
+12/02/2020 09:56:13 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 73.3527 ms
+12/02/2020 09:56:45 Syncing done
+12/02/2020 09:57:42 Application starting up
+12/02/2020 09:57:42 Syncing genres
+12/02/2020 09:57:43 - Getting index page -
+12/02/2020 09:57:43 HTTP "GET" "/" responded 200 in 620.8702 ms
+12/02/2020 09:57:43 HTTP "GET" "/js/playlistView.js" responded 404 in 3.5092 ms
+12/02/2020 09:57:43 HTTP "GET" "/js/playlistView.js" responded 404 in 2.7167 ms
+12/02/2020 09:57:43 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.2200 ms
+12/02/2020 09:57:43 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.1474 ms
+12/02/2020 09:57:45 HTTP "GET" "/swagger/index.html" responded 200 in 20.5825 ms
+12/02/2020 09:57:45 HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 4.5192 ms
+12/02/2020 09:57:45 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 79.0869 ms
+12/02/2020 09:58:18 Syncing done

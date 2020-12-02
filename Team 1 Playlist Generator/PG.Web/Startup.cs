@@ -103,6 +103,7 @@ namespace PG.Web
             services.AddDbContext<PGDbContext>(options => options.UseSqlServer(connectionString));
             services.AddSwaggerGen(c =>
             {
+                c.EnableAnnotations();
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "RidePal API", Version = "v1" });
 
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme

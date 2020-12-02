@@ -81,15 +81,14 @@ tags but does not include editing of the track list
 >![Project PlaylistsIndexRockFilter](./ReadmeImages/PlaylistsIndexRockFilter.png)
 >
 >### On the `Home` page the Top 3 playlists by ranking are displayed.
->![Project PlaylistsIndexRockFilter](./ReadmeImages/PlaylistsIndexRockFilter.png)
-
+>![Project IndexTop3](./ReadmeImages/IndexTop3.png)
 
 ## Private part:
 >### As an admin you can manage all user acces, even other admins. Navigate to `Users`
 >![Project AdminUsersNavigation](./ReadmeImages/AdminUsersNavigation.png)
 >
 >### Admins also have the ability to delete other user's entire plalist, the delete button will only appear if an admin opens the playlist.
->![Project IndexTop3](./ReadmeImages/IndexTop3.png)
+>![Project AdminDelteUserPlaylist](./ReadmeImages/AdminDelteUserPlaylist.png)
 
 
 #### Installation
