@@ -8,20 +8,18 @@
             <form class="form" method="post" asp-controller="Playlists" asp-action="UpdatePublicAccess" style="margin-bottom:30px">
                 @if (@Model.IsPublic)
                 {
-                    <span>Playlist is Public</span>
                     <input type="hidden" name="playlistId" value="@Model.Id" />
                     <input type="hidden" name="isPublic" value="@Model.IsPublic.ToString()" />
                     <div class="form__buttons buttons">
-                        <button type="submit">Make Private</button>
+                        <button type="submit" class="btn btn-outline-dark">Make Private</button>
                     </div>
                 }
                 else
                 {
-                    <span>Playlist is Private</span>
                     <input type="hidden" name="playlistId" value="@Model.Id" />
                     <input type="hidden" name="isPublic" value="@Model.IsPublic.ToString()" />
                     <div class="form__buttons buttons">
-                        <button type="submit">Make Public   </button>
+                        <button type="submit" class="btn btn-outline-dark">Make Public</button>
                     </div>
                 }
 
@@ -50,7 +48,7 @@
         <form class="form-group row" method="post" asp-controller="Playlists" asp-action="DeletePlaylist" style="margin-bottom:30px">
             <input type="hidden" name="id" value="@Model.Id" />
             <div class="form__buttons buttons">
-                <button type="submit">Delete</button>
+                <button type="submit" class="btn btn-outline-danger">Delete</button>
             </div>
         </form>
 

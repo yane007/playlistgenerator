@@ -26,6 +26,13 @@ namespace PG.Services.Contract
         /// <returns>Returns true if unbanning was successful</returns>
         Task<bool> UnbanUserById(string id);
 
+
+        /// <summary>
+        /// Deletes a user by ID
+        /// </summary>
+        /// <param name="id">User's ID</param>
+        Task DeleteUserById(string id);
+
         /// <summary>
         /// Authenticates by username and password.
         /// </summary>

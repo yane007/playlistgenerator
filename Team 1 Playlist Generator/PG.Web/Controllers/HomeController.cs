@@ -17,22 +17,14 @@ namespace PG.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly PGDbContext _context;
         private readonly IPlaylistService _playlistService;
         private readonly IDeezerAPIService _apiService;
-        private readonly UserManager<User> _userManager;
-        private readonly SignInManager<User> _signInManager;
-        private readonly RoleManager<IdentityRole> _roleManager;
 
 
-        public HomeController(PGDbContext context, IDeezerAPIService apiService, IPlaylistService playlistService,
-            UserManager<User> userManager, SignInManager<User> signInManager,
-            RoleManager<IdentityRole> roleManager)
+        public HomeController(IDeezerAPIService apiService, IPlaylistService playlistService)
         {
-            _context = context;
             _apiService = apiService;
             _playlistService = playlistService;
-            _roleManager = roleManager;
         }
 
         public async Task<IActionResult> Index()
@@ -40,14 +32,8 @@ namespace PG.Web.Controllers
             Log.Logger.Information("- Getting index page -");
             await GetAlbumAsync();
 
-
-            //TODO: where to move? 
-            //await _roleManager.CreateAsync(new IdentityRole("user"));
-            //await _roleManager.CreateAsync(new IdentityRole("admin"));
-
-
             IEnumerable<PlaylistDTO> playlistsDTOs = await _playlistService.GetAllPlaylists();
-            IList<PlaylistViewModel> playlistsViewModels = playlistsDTOs.OrderBy(x => x.Rank).Take(3).Select(x => x.ToViewModel()).ToList();
+            IList<PlaylistViewModel> playlistsViewModels = playlistsDTOs.OrderByDescending(x => x.Rank).Take(3).Select(x => x.ToViewModel()).ToList();
 
             return View(playlistsViewModels);
         }

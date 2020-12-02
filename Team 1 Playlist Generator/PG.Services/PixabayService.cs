@@ -26,7 +26,10 @@ namespace PG.Services
             var response = await _httpPixabayClientService.GetAsync(pixabayUri);
 
             var responseAsString = await response.Content.ReadAsStringAsync();
-
+            if (response.IsSuccessStatusCode || response.ReasonPhrase != "OK")
+            {
+                return "https://pixabay.com/get/54e2c8454e52b158f6d1877cc4283177083ed8e55559794d7d2a7c_640.jpg";
+            }
             var result = JsonConvert.DeserializeObject<PixabayQueryImagesResult>(responseAsString);
 
             foreach (var image in result.hits)
@@ -45,7 +48,7 @@ namespace PG.Services
                 }
             }
 
-            return "https://pixabay.com/get/55e5d1444b56a814f1dc846096293e7f1d3cd8ed5b4c704f75297bd29e4ecd5e_640.jpg";
+            return "https://pixabay.com/get/54e2c8454e52b158f6d1877cc4283177083ed8e55559794d7d2a7c_640.jpg";
         }
     }
 }

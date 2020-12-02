@@ -1,11 +1,11 @@
 ﻿@model IList<PlaylistViewModel>
 
 
-<div id="body">
+<div id="body" >
     <ul>
         @foreach (var item in Model)
         {
-            <li>
+            <li >
                 <a asp-controller="Playlists" asp-action="Playlist" asp-route-id="@item.Id">
                     <span>@item.Title</span>
                     <img src="@item.PixabayImage" style="width: 295px; height: 238px; filter: grayscale(100%);" alt="">

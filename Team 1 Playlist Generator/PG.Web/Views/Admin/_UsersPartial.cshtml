@@ -4,6 +4,7 @@
             <th scope="col">UserId</th>
             <th scope="col">Name</th>
             <th scope="col">Ban/Unban</th>
+            <th scope="col">Delete</th>
         </tr>
     </thead>
     @foreach (var user in Model)
@@ -39,6 +40,14 @@
                         </form>
                     </td>
                 }
+                <td>
+                    <form class="form" method="post" asp-controller="Admin" asp-action="DeleteUser" style="margin-bottom:30px;  justify-content:left;">
+                        <input type="hidden" name="UserId" value="@user.Id" />
+                        <div class="form__buttons buttons">
+                            <button type="submit" class="btn btn-outline-danger">Delete</button>
+                        </div>
+                    </form>
+                </td>
             </tr>
         </tbody>
     }

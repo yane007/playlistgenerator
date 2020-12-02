@@ -40,7 +40,11 @@ namespace PG.Web.Controllers
                 .ToList();
 
             var allGenres = await _genreService.GetAllGenres();
-            ViewBag.Genres = allGenres.Select(x => x.Name);
+
+            var genresAndDefault = new List<string> { "" };
+            genresAndDefault.AddRange(allGenres.Select(x => x.Name));
+            ViewBag.Genres = genresAndDefault;
+
             ViewBag.MinPlaylistDuration = await _playlistService.GetMinPlaylistDuration();
             ViewBag.MaxPlaylistDuration = await _playlistService.GetMaxPlaylistDuration();
 
@@ -80,7 +84,7 @@ namespace PG.Web.Controllers
             await _playlistService.GeneratePlaylist(tripTime, formInput.PlaylistName,
                 formInput.Metal, formInput.Rock, formInput.Pop, formInput.Chalga, formInput.TopTracks, formInput.SameArtist, user);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("MyPlaylists");
         }
 
         [AllowAnonymous]

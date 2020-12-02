@@ -43,5 +43,12 @@ namespace PG.Web.Controllers
             bool isBanned = await _userService.UnbanUserById(userId);
             return RedirectToAction("UsersIndex", "Admin");
         }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteUser(string userId)
+        {
+            await _userService.DeleteUserById(userId);
+            return RedirectToAction("UsersIndex", "Admin");
+        }
     }
 }

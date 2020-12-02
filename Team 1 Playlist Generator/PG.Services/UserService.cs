@@ -72,7 +72,7 @@ namespace PG.Services
 
             if (userToBan.LockoutEnabled)
             {
-                userToBan.LockoutEnd = null; 
+                userToBan.LockoutEnd = null;
                 await _context.SaveChangesAsync();
             }
 
@@ -109,6 +109,19 @@ namespace PG.Services
         public IEnumerable<User> GetAll()
         {
             return _context.Users;
+        }
+
+        public async Task DeleteUserById(string id)
+        {
+            var userToBan = await _context.Users.FirstOrDefaultAsync(x => x.Id == id);
+
+            if (userToBan == null)
+            {
+                return;
+            }
+
+            userToBan.IsDeleted = true;
+            await _context.SaveChangesAsync();
         }
     }
 }

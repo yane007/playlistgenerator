@@ -15,16 +15,14 @@
             <div style="display:flex; flex-direction: column;">
                 @if (ViewBag.LoggedUserId != null && ViewBag.LoggedUserId == Model.UserId)
                 {
-
-
-                    <a asp-action="Edit" asp-route-id="@Model.Id">|Edit|</a>
+                    <a class="btn btn-outline-dark" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
                 }
                 @if (User.IsInRole("Admin"))
                 {
                     <form class="form" method="post" asp-controller="Playlists" asp-action="DeletePlaylist" style="margin-bottom:30px">
                         <input type="hidden" name="id" value="@Model.Id" />
                         <div class="form__buttons buttons">
-                            <button type="submit">Delete</button>
+                            <button type="submit" class="btn btn-outline-danger">Delete</button>
                         </div>
                     </form>
                 }
