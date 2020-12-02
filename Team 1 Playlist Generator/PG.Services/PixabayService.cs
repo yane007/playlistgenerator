@@ -26,7 +26,7 @@ namespace PG.Services
             var response = await _httpPixabayClientService.GetAsync(pixabayUri);
 
             var responseAsString = await response.Content.ReadAsStringAsync();
-            if (response.IsSuccessStatusCode || response.ReasonPhrase != "OK")
+            if (!response.IsSuccessStatusCode || response.ReasonPhrase != "OK")
             {
                 return "https://pixabay.com/get/54e2c8454e52b158f6d1877cc4283177083ed8e55559794d7d2a7c_640.jpg";
             }

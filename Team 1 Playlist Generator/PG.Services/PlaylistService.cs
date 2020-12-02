@@ -413,6 +413,11 @@ namespace PG.Services
         {
             var playlists = await GetAllPlaylists();
 
+            if (playlists.Count() == 0)
+            {
+                return 0;
+            }
+
             var shortestPlaylist = playlists.OrderBy(x => x.Duration).First();
 
             return shortestPlaylist.Duration;
@@ -421,6 +426,11 @@ namespace PG.Services
         public async Task<int> GetMaxPlaylistDuration()
         {
             var playlists = await GetAllPlaylists();
+
+            if (playlists.Count() == 0)
+            {
+                return 0;
+            }
 
             var shortestPlaylist = playlists.OrderByDescending(x => x.Duration).First();
 

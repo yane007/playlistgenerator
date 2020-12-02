@@ -1,33 +1,8 @@
 ﻿@model PlaylistViewModel
 
-
-
 <div class="row" style="margin-left: 25vw;">
-    <div class="col-md-4">
-        <div>
-            <form class="form" method="post" asp-controller="Playlists" asp-action="UpdatePublicAccess" style="margin-bottom:30px">
-                @if (@Model.IsPublic)
-                {
-                    <input type="hidden" name="playlistId" value="@Model.Id" />
-                    <input type="hidden" name="isPublic" value="@Model.IsPublic.ToString()" />
-                    <div class="form__buttons buttons">
-                        <button type="submit" class="btn btn-outline-dark">Make Private</button>
-                    </div>
-                }
-                else
-                {
-                    <input type="hidden" name="playlistId" value="@Model.Id" />
-                    <input type="hidden" name="isPublic" value="@Model.IsPublic.ToString()" />
-                    <div class="form__buttons buttons">
-                        <button type="submit" class="btn btn-outline-dark">Make Public</button>
-                    </div>
-                }
-
-            </form>
-
-        </div>
+    <div class="col-md-4" >
         <form asp-action="Edit" method="post">
-
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group row">
@@ -44,13 +19,31 @@
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
-
-        <form class="form-group row" method="post" asp-controller="Playlists" asp-action="DeletePlaylist" style="margin-bottom:30px">
-            <input type="hidden" name="id" value="@Model.Id" />
-            <div class="form__buttons buttons">
-                <button type="submit" class="btn btn-outline-danger">Delete</button>
-            </div>
-        </form>
-
+        <div>
+            <form class="form-group row" method="post" asp-controller="Playlists" asp-action="DeletePlaylist">
+                <input type="hidden" name="id" value="@Model.Id" />
+                <div class="form__buttons buttons">
+                    <button type="submit" class="btn btn-outline-danger">Delete</button>
+                </div>
+            </form>
+            <form class="form-group row" method="post" asp-controller="Playlists" asp-action="UpdatePublicAccess">
+                @if (@Model.IsPublic)
+                {
+                    <input type="hidden" name="playlistId" value="@Model.Id" />
+                    <input type="hidden" name="isPublic" value="@Model.IsPublic.ToString()" />
+                    <div class="form__buttons buttons">
+                        <button type="submit" class="btn btn-outline-dark">Make Private</button>
+                    </div>
+                }
+                else
+                {
+                    <input type="hidden" name="playlistId" value="@Model.Id" />
+                    <input type="hidden" name="isPublic" value="@Model.IsPublic.ToString()" />
+                    <div class="form__buttons buttons">
+                        <button type="submit" class="btn btn-outline-dark">Make Public</button>
+                    </div>
+                }
+            </form>
+        </div>
     </div>
 </div>

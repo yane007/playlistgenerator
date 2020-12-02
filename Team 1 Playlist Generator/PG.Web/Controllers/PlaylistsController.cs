@@ -133,6 +133,7 @@ namespace PG.Web.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public IActionResult FilterPlaylists(string viewName, string viewGenre, string viewDuration)
         {
 

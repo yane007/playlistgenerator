@@ -1,0 +1,129 @@
+﻿
+#button-playlist-form {
+    position: relative;
+    background: #b1872d;
+    padding: 5px 10px;
+    color: #fff;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+#generate-playlist-topleft {
+    position: absolute;
+    margin-top: -35px;
+    margin-left: -50px;
+    background: #b1872d;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+#form-playlist {
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+    #form-playlist > div {
+        background-color: #b8b8b8;
+        width: 25rem
+    }
+
+#no-margin-bottom {
+    margin-bottom: 0px;
+}
+
+#last-genre {
+    padding-bottom: 1vw;
+}
+
+#top-tracks {
+    margin-left: 1.5vw;
+}
+
+#same-artist {
+    margin-left: 3vw;
+}
+
+
+
+
+
+.range {
+    display: inline-block;
+    margin: 36px 20px 20px
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    position: relative
+}
+
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 300px;
+        height: 2px;
+        border: none;
+        border-radius: 3px
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: none;
+        height: 12px;
+        width: 12px;
+        border-radius: 510%;
+        background: #141414;
+        border: 2px solid #515151;
+        margin-top: -5px;
+        cursor: pointer
+    }
+
+.focused::-webkit-slider-thumb {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.15)
+}
+
+.clicked::-webkit-slider-thumb {
+    -webkit-transform: scale(1.5)
+}
+
+.disabled::-webkit-slider-thumb {
+    -webkit-transform: scale(0.9);
+    box-shadow: 0 0 0 3px #141414;
+    background: #515151 !important;
+    border-color: #515151 !important
+}
+
+input[type=range]:focus {
+    outline: none
+}
+
+.rangeM input[type=range].disabled::-webkit-slider-runnable-track {
+    background: #515151 !important
+}
+
+.rangeM input[type=range]::-webkit-slider-thumb {
+    background: #393436;
+    border-color: #393436
+}
+
+.range:hover input[type=range]:before {
+    color: white;
+    content: '50';
+    position: absolute;
+    font-family: Roboto Slab;
+    top: -49px;
+    background: #393436;
+    padding: 8px 0 3px;
+    font-size: 14px;
+    width: 30px;
+    text-align: center;
+    border-radius: 100% 100% 0 0
+}
+
+.range:hover input[type=range]:after {
+    content: '';
+    position: absolute;
+    top: -19px;
+    left: 50px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 8px solid #393436;
+    font-family: Roboto Slab
+}
