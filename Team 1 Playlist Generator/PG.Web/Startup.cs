@@ -69,6 +69,11 @@ namespace PG.Web
                 client.BaseAddress = new Uri("https://pixabay.com/");
             });
 
+            services.AddHttpClient<IHttpBingMapsClientService, HttpBingMapsClientService>(client =>
+            {
+                client.BaseAddress = new Uri("https://dev.virtualearth.net/");
+            });
+
             services.AddDefaultIdentity<User>(options =>
             {
                 options.Password.RequireDigit = false;

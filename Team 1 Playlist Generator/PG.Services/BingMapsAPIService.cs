@@ -2,6 +2,7 @@
 using DeezerApiData.Models.BingApi.LocationBingApi;
 using PG.Data.Context;
 using PG.Services.Contract;
+using PG.Services.Contracts.Helpers;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -12,25 +13,26 @@ namespace PG.Services
 {
     public class BingMapsAPIService : IBingMapsAPIService
     {
-        public BingMapsAPIService()
+        private readonly IHttpBingMapsClientService _httpBingMapsClientService;
+
+        public BingMapsAPIService(IHttpBingMapsClientService httpBingMapsClientService)
         {
+            _httpBingMapsClientService = httpBingMapsClientService;
         }
 
         public async Task<int> FindDuration(string start, string end)
         {
-            HttpClient client = new HttpClient();
+            var startCoords = await GetCoords(start, _httpBingMapsClientService);
+            var endCoords = await GetCoords(end, _httpBingMapsClientService);
 
-            var startCoords = await GetCoords(start, client);
-            var endCoords = await GetCoords(end, client);
-
-            int distance = await GetDistance(startCoords, endCoords, client);
+            int distance = await GetDistance(startCoords, endCoords, _httpBingMapsClientService);
 
             return distance;
         }
 
-        private static async Task<int> GetDistance(string coords, string endCoords, HttpClient client)
+        private static async Task<int> GetDistance(string coords, string endCoords, IHttpBingMapsClientService client)
         {
-            var distanceMatrixDurationUrl = $"https://dev.virtualearth.net/REST/v1/Routes/DistanceMatrix?timeUnit=second&origins={coords}&destinations={endCoords}&travelMode=driving&key=AqYHIDdNVo4xufKpBNAuFfBrGtqJw_fJm45HlPU25Mrc-YSBHO8VcDK5zuHaXt4D";
+            var distanceMatrixDurationUrl = $"REST/v1/Routes/DistanceMatrix?timeUnit=second&origins={coords}&destinations={endCoords}&travelMode=driving&key=AqYHIDdNVo4xufKpBNAuFfBrGtqJw_fJm45HlPU25Mrc-YSBHO8VcDK5zuHaXt4D";
 
             HttpResponseMessage response = await client.GetAsync(distanceMatrixDurationUrl);
 
@@ -42,9 +44,9 @@ namespace PG.Services
             return distance;
         }
 
-        private async Task<string> GetCoords(string placeURL, HttpClient client)
+        private async Task<string> GetCoords(string placeURL, IHttpBingMapsClientService client)
         {
-            placeURL = $"https://dev.virtualearth.net/REST/v1/Locations/{placeURL}?key=AqYHIDdNVo4xufKpBNAuFfBrGtqJw_fJm45HlPU25Mrc-YSBHO8VcDK5zuHaXt4D";
+            placeURL = $"REST/v1/Locations/{placeURL}?key=AqYHIDdNVo4xufKpBNAuFfBrGtqJw_fJm45HlPU25Mrc-YSBHO8VcDK5zuHaXt4D";
 
             HttpResponseMessage response = await client.GetAsync(placeURL);
 

@@ -98,15 +98,15 @@ namespace PG.Tests.PlaylistServiceShould
         [TestMethod]
         public async Task UpdatePublicAccessCorrectlyThrowsWhenNoPlaylistFound()
         {
-            var options = Utils.GetOptions(nameof(UpdatePublicAccessCorrectlyToPublic));
+            var options = Utils.GetOptions(nameof(UpdatePublicAccessCorrectlyThrowsWhenNoPlaylistFound));
             var pixabayServiceMock = new Mock<IPixabayService>();
 
-            using (var assertContext = new PGDbContext(options))
-            {
-                var sut = new PlaylistService(assertContext, pixabayServiceMock.Object);
+            var assertContext = new PGDbContext(options);
 
-                await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.UpdatePublicAccess(1));
-            }
+            var sut = new PlaylistService(assertContext, pixabayServiceMock.Object);
+
+            await Assert.ThrowsExceptionAsync<NotFoundException>(() => sut.UpdatePublicAccess(1));
+
         }
     }
 }

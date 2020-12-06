@@ -253,3 +253,23 @@
 12/06/2020 23:11:25 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3010 ms
 12/06/2020 23:11:25 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3415 ms
 12/06/2020 23:11:31 Syncing done
+12/06/2020 23:22:53 Application starting up
+12/06/2020 23:22:54 Syncing genres
+12/06/2020 23:22:54 - Getting index page -
+12/06/2020 23:22:55 HTTP "GET" "/" responded 200 in 576.8442 ms
+12/06/2020 23:22:55 HTTP "GET" "/js/playlistView.js" responded 404 in 2.9409 ms
+12/06/2020 23:22:55 HTTP "GET" "/js/playlistView.js" responded 404 in 10.9335 ms
+12/06/2020 23:22:55 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3563 ms
+12/06/2020 23:22:55 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3499 ms
+12/06/2020 23:22:57 HTTP "GET" "/Playlists/Create" responded 200 in 109.5672 ms
+12/06/2020 23:22:57 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5554 ms
+12/06/2020 23:23:04 Playlist with title 'Kodavfdsbsfd' has been created.
+12/06/2020 23:23:05 HTTP "POST" "/Playlists/Create" responded 302 in 2049.4651 ms
+12/06/2020 23:23:05 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 38.3133 ms
+12/06/2020 23:23:05 HTTP "GET" "/js/playlistView.js" responded 404 in 0.5941 ms
+12/06/2020 23:23:05 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3112 ms
+12/06/2020 23:23:05 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3304 ms
+12/06/2020 23:23:06 HTTP "GET" "/Playlists/MyPlaylists" responded 200 in 13.3101 ms
+12/06/2020 23:23:06 HTTP "GET" "/js/playlistView.js" responded 404 in 0.6287 ms
+12/06/2020 23:23:06 HTTP "GET" "/fonts/pollerone/pollerone-webfont.woff" responded 404 in 0.3616 ms
+12/06/2020 23:23:06 HTTP "GET" "/fonts/pollerone/pollerone-webfont.ttf" responded 404 in 0.3670 ms
