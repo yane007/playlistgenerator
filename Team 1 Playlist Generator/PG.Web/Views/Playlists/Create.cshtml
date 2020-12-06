@@ -15,14 +15,14 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <p class="input-group-text">From:</p>
-                        <input asp-for="@Model.StartLocation" type="text" id="search_input" class="form-control" aria-describedby="button-addon2" required />
+                        <input asp-for="@Model.StartLocation" type="text" class="form-control" aria-describedby="button-addon2" required /> @*id="search_input"*@
                     </div>
-                    <span asp-validation-for="@Model.StartLocation" class="text-danger"></span>
+                    <span asp-validation-for="@Model.StartLocation" class="text-danger"></span> @*id="search_input2"*@
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <p class="input-group-text">To:</p>
-                        <input asp-for="@Model.EndLocation" id="search_input2" type="text" class="form-control" aria-describedby="button-addon2" required>
+                        <input asp-for="@Model.EndLocation" type="text" class="form-control" aria-describedby="button-addon2" required>
                     </div>
                     <span asp-validation-for="@Model.EndLocation" class="text-danger"></span>
                 </div>

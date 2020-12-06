@@ -229,16 +229,15 @@ namespace PG.Services
 
         }
 
-        public async Task GeneratePlaylist(int timeForTrip, string playlistTitle, int metalPercentagee,
-            int rockPercentagee, int popPercentagee, int chalgaPercentage, bool topTracks, bool sameArtist, User user)
+        public async Task GeneratePlaylist(int tripTime, string playlistTitle, int metalPercentagee,
+            int rockPercentagee, int popPercentagee, int chalgaPercentage, bool useTopTracks, bool allowSameArtist, User user)
         {
             var databasePlaylist = await Create(new PlaylistDTO { Title = playlistTitle });
 
-            int tripTime = timeForTrip;
             int allowedOffsetMore = 5 * 60; // 5 Min +
             int allowedOffsetLess = 5 * 60; // 5 Min -
 
-            //TODO: да се приемат колкото и да са
+            //TODO: да се приемат колкото и да са 
             var listGenres = new List<Tuple<string, int>>
             {
                 new Tuple<string, int> ("metal", metalPercentagee),
@@ -247,79 +246,52 @@ namespace PG.Services
                 new Tuple<string, int> ("chalga", chalgaPercentage),
             };
 
-            int genresSelected = await CheckSelectedGenres(listGenres, _context, databasePlaylist);
+            listGenres = FillGenresPercentageToMax(listGenres);
 
-            List<Tuple<string, int[], double>> namesOffsetsAndPercentages = SetOffsets(listGenres, allowedOffsetMore, allowedOffsetLess, genresSelected);
+            int countGenresSelected = await AddSelectedGenresToPlaylist(listGenres, _context, databasePlaylist);
 
-            bool useTopTracks = topTracks;
-            bool allowSameArtist = sameArtist;
+            List<Tuple<string, int[], double>> namesOffsetsAndPercentages = SetOffsets(
+                listGenres,
+                allowedOffsetMore,
+                allowedOffsetLess,
+                countGenresSelected);
+
 
             List<Song> finalPlaylist = new List<Song>();
 
+
             if (useTopTracks && allowSameArtist)
             {
-                foreach (var item in namesOffsetsAndPercentages)
-                {
-                    var genreSongs = GetGenreSongs(item.Item2, item.Item1, true);
-                    var extractedSongs = ExtractSongs(tripTime, item.Item2[0], item.Item2[1], item.Item3, genreSongs);
-
-                    foreach (var song in extractedSongs)
-                    {
-                        finalPlaylist.Add(song);
-                    }
-                }
-
-                Shuffle(finalPlaylist);
+                GenerateByTopTracksSameArtist(tripTime, namesOffsetsAndPercentages, finalPlaylist);
             }
             else if (useTopTracks && !allowSameArtist)
             {
-                foreach (var item in namesOffsetsAndPercentages)
-                {
-                    var genreSongs = GetGenreSongs(item.Item2, item.Item1, true);
-                    var extractedSongs = ExtractSongsUniqueArtist(tripTime, item.Item2[0], item.Item2[1], item.Item3, genreSongs);
-
-                    foreach (var song in extractedSongs)
-                    {
-                        finalPlaylist.Add(song);
-                    }
-                }
-
-                Shuffle(finalPlaylist);
+                GenerateByTopTracks(tripTime, namesOffsetsAndPercentages, finalPlaylist);
             }
             else if (!useTopTracks && allowSameArtist)
             {
-                foreach (var item in namesOffsetsAndPercentages)
-                {
-                    var genreSongs = GetGenreSongs(item.Item2, item.Item1, false);
-                    var extractedSongs = ExtractSongs(tripTime, item.Item2[0], item.Item2[1], item.Item3, genreSongs);
-
-                    foreach (var song in extractedSongs)
-                    {
-                        finalPlaylist.Add(song);
-                    }
-                }
-
-                Shuffle(finalPlaylist);
+                GenerateBySameArtist(tripTime, namesOffsetsAndPercentages, finalPlaylist);
             }
             else
             {
-                foreach (var item in namesOffsetsAndPercentages)
-                {
-                    var genreSongs = GetGenreSongs(item.Item2, item.Item1, false);
-                    var extractedSongs = ExtractSongsUniqueArtist(tripTime, item.Item2[0], item.Item2[1], item.Item3, genreSongs);
-
-                    foreach (var song in extractedSongs)
-                    {
-                        finalPlaylist.Add(song);
-                    }
-                }
-
-                Shuffle(finalPlaylist);
+                GenerateWithoutBoth(tripTime, namesOffsetsAndPercentages, finalPlaylist);
             }
 
+            AddDataToPlaylist(user, databasePlaylist, finalPlaylist);
+
+            user.Playlists.Add(databasePlaylist);
+
+            await AddPixabayImageToPlaylist(databasePlaylist);
+
+            await _context.SaveChangesAsync();
+        }
+
+        private static void AddDataToPlaylist(User user, Playlist databasePlaylist, List<Song> finalPlaylist)
+        {
             int realTotalDuration = 0;
             int totalRank = 0;
             int totalSongsCount = 0;
+
             foreach (var song in finalPlaylist)
             {
                 var relation = new PlaylistsSongs() { SongId = song.Id, PlaylistId = databasePlaylist.Id };
@@ -344,12 +316,129 @@ namespace PG.Services
             {
                 databasePlaylist.Rank = totalRank / totalSongsCount;
             }
+        }
 
-            user.Playlists.Add(databasePlaylist);
+        private List<Tuple<string, int>> FillGenresPercentageToMax(List<Tuple<string, int>> listGenres)
+        {
+            listGenres = listGenres.OrderByDescending(x => x.Item2).ToList();
 
-            await AddPixabayImageToPlaylist(databasePlaylist);
+            int genresTotalPercentage = CheckGenresTotalPercentage(listGenres);
 
-            await _context.SaveChangesAsync();
+            if (genresTotalPercentage == 100)
+            {
+                return listGenres;
+            }
+
+            else if (listGenres.Any() && genresTotalPercentage < 100)
+            {
+                int newGenrePercentage = 100 - genresTotalPercentage + listGenres[0].Item2;
+                listGenres[0] = new Tuple<string, int>(listGenres[0].Item1, newGenrePercentage);
+            }
+
+            else
+            {
+                while (genresTotalPercentage > 100)
+                {
+                    listGenres = TurnAllPercentagesDownByOne(listGenres);
+                    genresTotalPercentage = CheckGenresTotalPercentage(listGenres);
+                }
+
+                listGenres = FillGenresPercentageToMax(listGenres);
+            }
+
+            return listGenres;
+        }
+
+        private List<Tuple<string, int>> TurnAllPercentagesDownByOne(List<Tuple<string, int>> listGenres)
+        {
+            for (int i = 0; i < listGenres.Count; i++)
+            {
+                int newPercentage = listGenres[i].Item2 - 1;
+
+                if (newPercentage < 0)
+                {
+                    newPercentage = 0;
+                }
+
+                listGenres[i] = new Tuple<string, int>(listGenres[i].Item1, newPercentage);
+            }
+
+            return listGenres;
+        }
+
+        private int CheckGenresTotalPercentage(List<Tuple<string, int>> listGenres)
+        {
+            int totalPercentage = 0;
+            foreach (var item in listGenres)
+            {
+                totalPercentage += item.Item2;
+            }
+
+            return totalPercentage;
+        }
+
+        private void GenerateWithoutBoth(int tripTime, List<Tuple<string, int[], double>> namesOffsetsAndPercentages, List<Song> finalPlaylist)
+        {
+            foreach (var item in namesOffsetsAndPercentages)
+            {
+                var genreSongs = GetGenreSongs(item.Item2, item.Item1, false);
+                var extractedSongs = ExtractSongsUniqueArtist(tripTime, item.Item2[0], item.Item2[1], item.Item3, genreSongs);
+
+                foreach (var song in extractedSongs)
+                {
+                    finalPlaylist.Add(song);
+                }
+            }
+
+            Shuffle(finalPlaylist);
+        }
+
+        private void GenerateBySameArtist(int tripTime, List<Tuple<string, int[], double>> namesOffsetsAndPercentages, List<Song> finalPlaylist)
+        {
+            foreach (var item in namesOffsetsAndPercentages)
+            {
+                var genreSongs = GetGenreSongs(item.Item2, item.Item1, false);
+                var extractedSongs = ExtractSongs(tripTime, item.Item2[0], item.Item2[1], item.Item3, genreSongs);
+
+                foreach (var song in extractedSongs)
+                {
+                    finalPlaylist.Add(song);
+                }
+            }
+
+            Shuffle(finalPlaylist);
+        }
+
+        private void GenerateByTopTracks(int tripTime, List<Tuple<string, int[], double>> namesOffsetsAndPercentages, List<Song> finalPlaylist)
+        {
+            foreach (var item in namesOffsetsAndPercentages)
+            {
+                var genreSongs = GetGenreSongs(item.Item2, item.Item1, true);
+                var extractedSongs = ExtractSongsUniqueArtist(tripTime, item.Item2[0], item.Item2[1], item.Item3, genreSongs);
+
+                foreach (var song in extractedSongs)
+                {
+                    finalPlaylist.Add(song);
+                }
+            }
+
+            Shuffle(finalPlaylist);
+        }
+
+        private void GenerateByTopTracksSameArtist(int tripTime, List<Tuple<string, int[], double>> namesOffsetsAndPercentages, List<Song> finalPlaylist)
+        {
+            foreach (var item in namesOffsetsAndPercentages)
+            {
+                var genreSongs = GetGenreSongs(item.Item2, item.Item1, true);
+                var extractedSongs = ExtractSongs(tripTime, item.Item2[0], item.Item2[1], item.Item3, genreSongs);
+
+                foreach (var song in extractedSongs)
+                {
+                    finalPlaylist.Add(song);
+                }
+            }
+
+            Shuffle(finalPlaylist);
         }
 
         private async Task AddPixabayImageToPlaylist(Playlist databasePlaylist)
@@ -466,7 +555,7 @@ namespace PG.Services
             return toReturn;
         }
 
-        private static async Task<int> CheckSelectedGenres(List<Tuple<string, int>> data, PGDbContext _context, Playlist databasePlaylist)
+        private static async Task<int> AddSelectedGenresToPlaylist(List<Tuple<string, int>> data, PGDbContext _context, Playlist databasePlaylist)
         {
             int genresSelected = 0;
 

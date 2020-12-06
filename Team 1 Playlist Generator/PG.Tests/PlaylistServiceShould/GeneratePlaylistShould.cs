@@ -37,7 +37,6 @@ namespace PG.Tests.PlaylistServiceShould
 
             var arrangeContext = new PGDbContext(options);
 
-
             var chalgaDb = await arrangeContext.Genres.AddAsync(new Genre { Name = "chalga" });
 
             for (int i = 0; i < 10; i++)
@@ -56,7 +55,6 @@ namespace PG.Tests.PlaylistServiceShould
             var sut = new PlaylistService(
                 arrangeContext,
                 pixabayServiceMock.Object);
-
 
             await sut.GeneratePlaylist(timeForTrip, playlistTitle, metalPercentagee, rockPercentagee, popPercentagee, chalgaPercentage, topTracks, sameArtist, user);
             await arrangeContext.SaveChangesAsync();
