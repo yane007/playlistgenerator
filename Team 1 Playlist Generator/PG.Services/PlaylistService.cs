@@ -180,7 +180,7 @@ namespace PG.Services
         public async Task<IEnumerable<PlaylistDTO>> GetAllPlaylistsWithSettings(string nameLike, string genre, string duration)
         {
             int intDuration = 0;
-            if (duration == "")
+            if (duration == "" || duration == null)
             {
                 intDuration = int.MaxValue;
             }
@@ -189,7 +189,12 @@ namespace PG.Services
                 intDuration = int.Parse(duration);
             }
 
-            if (genre == "")
+            if (nameLike == null)
+            {
+                nameLike = "";
+            }
+
+            if (genre == "" || genre == null)
             {
                 var playlists = await _context.Playlists
                      .Include(x => x.PlaylistsSongs)
@@ -320,33 +325,42 @@ namespace PG.Services
 
         private List<Tuple<string, int>> FillGenresPercentageToMax(List<Tuple<string, int>> listGenres)
         {
-            listGenres = listGenres.OrderByDescending(x => x.Item2).ToList();
+            float total = listGenres.Select(x => x.Item2).Sum();
 
-            int genresTotalPercentage = CheckGenresTotalPercentage(listGenres);
-
-            if (genresTotalPercentage == 100)
+            for (int i = 0; i < listGenres.Count; i++)
             {
-                return listGenres;
-            }
-
-            else if (listGenres.Any() && genresTotalPercentage < 100)
-            {
-                int newGenrePercentage = 100 - genresTotalPercentage + listGenres[0].Item2;
-                listGenres[0] = new Tuple<string, int>(listGenres[0].Item1, newGenrePercentage);
-            }
-
-            else
-            {
-                while (genresTotalPercentage > 100)
-                {
-                    listGenres = TurnAllPercentagesDownByOne(listGenres);
-                    genresTotalPercentage = CheckGenresTotalPercentage(listGenres);
-                }
-
-                listGenres = FillGenresPercentageToMax(listGenres);
+                listGenres[i] = new Tuple<string, int> (listGenres[i].Item1, (int)Math.Round( listGenres[i].Item2 / total * 100));
             }
 
             return listGenres;
+
+            //listGenres = listGenres.OrderByDescending(x => x.Item2).ToList();
+
+            //int genresTotalPercentage = CheckGenresTotalPercentage(listGenres);
+
+            //if (genresTotalPercentage == 100)
+            //{
+            //    return listGenres;
+            //}
+
+            //else if (listGenres.Any() && genresTotalPercentage < 100)
+            //{
+            //    int newGenrePercentage = 100 - genresTotalPercentage + listGenres[0].Item2;
+            //    listGenres[0] = new Tuple<string, int>(listGenres[0].Item1, newGenrePercentage);
+            //}
+
+            //else
+            //{
+            //    while (genresTotalPercentage > 100)
+            //    {
+            //        listGenres = TurnAllPercentagesDownByOne(listGenres);
+            //        genresTotalPercentage = CheckGenresTotalPercentage(listGenres);
+            //    }
+
+            //    listGenres = FillGenresPercentageToMax(listGenres);
+            //}
+
+            //return listGenres;
         }
 
         private List<Tuple<string, int>> TurnAllPercentagesDownByOne(List<Tuple<string, int>> listGenres)

@@ -34,6 +34,7 @@ namespace PG.Web.APIControllers
         //GET api/playlists
         [SwaggerOperation(Description = "`Gets all playlists`")]
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetPlaylists()
         {
             var playlists = await _playlistService.GetAllPlaylists();
@@ -95,6 +96,15 @@ namespace PG.Web.APIControllers
             return Ok();
         }
 
+        [HttpGet("search")]
+        [AllowAnonymous]
+        [SwaggerOperation(Description = "`Get a playlists by query, genre and duration`")]
+        public async Task<IActionResult> SearchPlaylists(string query, string genre, string duration)
+        {
+            var playlist = await _playlistService.GetAllPlaylistsWithSettings(query, genre, duration);
+            var playlistViewModel = playlist.Select(x => x.ToViewModel());
 
+            return Ok(playlistViewModel);
+        }
     }
 }

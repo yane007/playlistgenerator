@@ -136,6 +136,15 @@ namespace PG.Web
                 });
             });
             services.AddRazorPages();
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: "_myAllowSpecificOrigins",
+                                  builder =>
+                                  {
+                                      builder.WithOrigins("http://localhost:3000");
+                                  });
+            });
         } 
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -163,6 +172,8 @@ namespace PG.Web
             });
 
             app.UseRouting();
+
+            app.UseCors("_myAllowSpecificOrigins");
 
             app.UseAuthentication();
             app.UseAuthorization();

@@ -17,6 +17,9 @@ namespace PG.Data.Context
         public DbSet<PlaylistsGenres> PlaylistsGenres { get; set; }
         public DbSet<Album> Albums { get; set; }
 
+        public DbSet<StoichkovHotel> StoichkovHotel { get; set; }
+        public DbSet<StoichkovRoom> StoichkovRoom { get; set; }
+
         public PGDbContext(DbContextOptions<PGDbContext> options) : base(options)
         {
 

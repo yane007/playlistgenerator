@@ -22,8 +22,8 @@ namespace PG.Services
 
         public async Task<int> FindDuration(string start, string end)
         {
-            var startCoords = await GetCoords(start, _httpBingMapsClientService);
-            var endCoords = await GetCoords(end, _httpBingMapsClientService);
+            string startCoords = await GetCoords(start, _httpBingMapsClientService);
+            string endCoords = await GetCoords(end, _httpBingMapsClientService);
 
             int distance = await GetDistance(startCoords, endCoords, _httpBingMapsClientService);
 
